@@ -1,0 +1,502 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="tabs_open_position">
+						<local_schema short_desc="Браузер ойнасида янги очилган табларни қаерда жойлаштирилиши.">
+							<longdesc>Агар &quot;after_current_tab&quot; бўлса, янги таблар жорий табдан кейин қўйилади. Агар &quot;end&quot; ўрнатилган бўлса, янги таблар таб рўйхати охиридан қўшилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_backup_files">
+						<local_schema short_desc="Заҳира файлларини кўрсатилиши">
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="Яширин файлларнинг кўрсатилиши">
+							<longdesc>Агар белгиланса, файл бошқарувчисида яширин файллар ҳам кўрсатилади. Яширин файллар, номи олдида нуқта бўлган ёки жилднинг .hidden файлида кўрсатилган файллардир.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="frames">
+						<local_schema short_desc="Балиқча анимациясидаги кадрлар">
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Босилганда ишга тушириладиган буйруқ">
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Балиқчанинг исми">
+							<longdesc>Исмсиз балиқча жуда зерикарли бўлади. Унга исм қўйинг.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="Ойналар рўйхатининг максимал ҳажми">
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="Ойналар рўйхатининг минимал ҳажми">
+						</local_schema>
+					</entry>
+					<entry name="move_unminimized_windows">
+						<local_schema short_desc="Ойналар тикланаётганда жорий иш ўрнига кўчириш">
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Барча иш ўринларидаги ойналарни кўрсатиш">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="Анимация тезлиги">
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="Бекитиш тугмаларини ёқиш">
+						</local_schema>
+					</entry>
+					<entry name="auto_hide">
+						<local_schema short_desc="Панелни бурчакка автоматик бекитиш">
+						</local_schema>
+					</entry>
+					<entry name="y_centered">
+						<local_schema short_desc="Панелни y ўқи бўйича марказлаштириш">
+						</local_schema>
+					</entry>
+					<entry name="x_centered">
+						<local_schema short_desc="Панелни x ўқи бўйича марказлаштириш">
+						</local_schema>
+					</entry>
+					<entry name="y_bottom">
+						<local_schema short_desc="Панелнинг Y координатаси, экран пастидан ъисобланади">
+						</local_schema>
+					</entry>
+					<entry name="y">
+						<local_schema short_desc="Панелнинг Y координатаси">
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="Панелнинг ўлчами">
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="Панелнинг жойлашиши">
+						</local_schema>
+					</entry>
+					<entry name="expand">
+						<local_schema short_desc="Экраннинг бутун кенглигича ёйиш">
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="Вертикал панелларда расмни айлантириш">
+							</local_schema>
+						</entry>
+						<entry name="stretch">
+							<local_schema short_desc="Расмни панелга мослаш">
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="Расмни панелга мослаш">
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="Орқа фон расми">
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="Орқа фон ранги шоффофлиги">
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="Орқа фон ранги">
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="Орқа фон тури">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="Танлагичдаги қаторлар сони">
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Барча иш ўринларини кўрсатиш">
+							<longdesc>Агар ўрнатилса, иш ўрниларини танлагичда барча иш ўринлари кўрсатилади. Акс ҳолда фақат жорий иш ўрни кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="Иш ўринларини номини кўрсатиш">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="internet_time">
+						<local_schema short_desc="Интернет вақтидан фойдаланиш">
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="UNIX вақтидан фойдаланиш">
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="Соат формати">
+						</local_schema>
+					</entry>
+					<entry name="expand_weather">
+						<local_schema short_desc="Об-ҳаво маълумоти рўйхатини ёйиш">
+							<longdesc>Агар ўрнатилса, тақвим ойнасидаги об-ҳаво маълумотлари кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_tasks">
+						<local_schema short_desc="Вазифалар рўйхатини ёйиш">
+							<longdesc>Агар ўрнатилса, тақвим ойнасидаги dfpbafkfh рўйхати кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_birthdays">
+						<local_schema short_desc="Туғилган кунлар рўйхатини ёйиш">
+							<longdesc>Агар ўрнатилса, тақвим ойнасидаги туғилган кунлар рўйхати кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_appointments">
+						<local_schema short_desc="Учрашувлар рўйхатини ёйиш">
+							<longdesc>Агар ўрнатилса, тақвим ойнасидаги учрашувлар рўйхати кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="Тақвимда ҳафта рақамини кўрсатиш">
+							<longdesc>Агар ўрнатилса, тақвимда ҳафта рақами кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="Вақтни ўрнатиш воситаси">
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="Гринвич (UTC) вақтидан фойдалниш">
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema>
+							<longdesc>Агар ўрнатилса, сичқонча соат устига олиб борилганда сана кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="Соатда санани кўрсатиш">
+							<longdesc>Агар бу ўрнатилса, соат билан бирга сана ҳам кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="Вақтни сония билан кўрсатиш">
+							<longdesc>Агар ўрнатилса, сониялар ҳам кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="Соатнинг бошқа формати">
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="Соат формати">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="network_icon_name">
+						<local_schema short_desc="Тармоқ серверлари нишончасининг номи">
+							<longdesc>Иш столидаги Тармоқ серверлари нишончаси номини ўзгартирмоқчи бўлсангиз, бу ердан ўрнатинг.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_name">
+						<local_schema short_desc="Иш столидаги Чиқиндилар қутиси нишончаси номи">
+							<longdesc>Иш столидаги Чиқиндилар қутиси нишончаси номини ўзгартирмоқчи бўлсангиз, бу ердан ўрнатинг.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="Иш столидаги Уй нишончаси номи">
+							<longdesc>Иш столидаги Уй жилди нишончаси номини ўзгартирмоқчи бўлсангиз, бу ердан ўрнатинг.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="Иш столидаги Компьютер нишончаси номи">
+							<longdesc>Иш столидаги Компьютер нишончаси номини ўзгартирмоқчи бўлсангиз, бу ердан ўрнатинг.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="Тармоқ серверлари нишончасини иш столида кўрсатиш">
+							<longdesc>Агар белгиланса, Тармоқ серверлари кўриниши нишончаси иш столида кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volumes_visible">
+						<local_schema short_desc="Иш столида уланган диск қисмларини кўрсатиш">
+							<longdesc>Агар белгиланса, уланган диск қисмлари нишончаси иш столида кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="Чиқиндилар қутиси нишончаси иш столида кўрсатилсин">
+							<longdesc>Агар белгиланса, Чиқиндилар қутиси нишончаси иш столида кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="&quot;Компьютер&quot; нишончасини иш столида кўрсатиш">
+							<longdesc>Агар белгиланса Компьютер нишончаси иш столида кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="&quot;Уй&quot; нишончасини иш столида кўрсатиш">
+							<longdesc>Агар белгиланса, Уй жилди нишончаси иш столида кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema short_desc="Дарахтсимон ён панелда фақат жилдларни кўрсатиш">
+								<longdesc>Агар белгиланган бўлса, Nautilus дарахтсимон ён панелда фақатжилдларни кўрсатади. Акс ҳолда жилдлар ҳам файллар ҳам кўрсатилади.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="Рўйхат кўринишидаги устунларнинг андоза тартиби">
+							<longdesc>Рўйхат кўринишидаги устунларнинг андоза тартиби.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="Рўйхат кўринишида кўринадиган андоза устунлар рўйхати">
+							<longdesc>Рўйхат кўринишида кўринадиган андоза устунлар рўйхати.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema>
+							<longdesc>Рўйхат кўриниш томонидан фойдаланиладиган андоза масштаб.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Янги ойналарда тескари саралашдан фойдаланиш">
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Андоза саралаш тартиби">
+							<longdesc>Рўйхат кўринишидаги андоза тартиб. Мавжуд қийматлар: &quot;name&quot;, &quot;size&quot;, &quot;type&quot; ва &quot;modification_date&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="compact_view">
+					<entry name="all_columns_have_same_width">
+						<local_schema short_desc="Барча устунлар бир хил кенгликда">
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Ихчам кўринишдаги андоза катталаштириш даражаси">
+							<longdesc>Ихчам кўриниш томонидан фойдаланиладиган андоза масштаб.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="thumbnail_size">
+						<local_schema short_desc="Андоза миниатюра нишончаси ўлчами">
+							<longdesc>Нишонча кўринишида миниатюра учун нишончанинг андоза ўлчами.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema>
+							<longdesc>Нишонча кўриниш томонидан фойдаланиладиган андоза масштаб.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_manual_layout">
+						<local_schema short_desc="Янги ойналарда нишончаларни қўлбола жойлаштиришдан фойдаланиш">
+						</local_schema>
+					</entry>
+					<entry name="default_use_tighter_layout">
+						<local_schema short_desc="Янги ойналарда нишончаларни зич жойлаштиришдан фойдаланиш">
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Янги ойналарда тескари саралашдан фойдаланиш">
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Андоза саралаш тартиби">
+							<longdesc>Нишонча кўринишидаги андоза тартиб. Мавжуд қийматлар: &quot;name&quot;, &quot;size&quot;, &quot;type&quot;, &quot;modification_date&quot; ва &quot;emblems&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="Ён панел кўриниши">
+							<longdesc>Янги очилган ойналарда кўрсатиладиган ён панел кўриниши.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="Янги ойналарда ён панелни кўрсатиш">
+							<longdesc>Агар белгиланган бўлса, янги очилган ойналарда ён панел ҳам кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="Янги ойналарда ҳолат панелини кўрсатиш">
+							<longdesc>Агар белгиланган бўлса, янги очилган ойналарда ҳолат панел кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="Янги ойналарда манзил панелини кўрсатиш">
+							<longdesc>Агар белгиланган бўлса, янги очилган ойналарни манзил панели кўринадиган бўлади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="Янги ойналарда асбоблар панелини кўрсатиш">
+							<longdesc>Агар белгиланган бўлса, янги очилган ойналарда асбоблар панели кўрсатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="Ён панелнинг кенглиги">
+							<longdesc>Янги ойналарда ён панелнинг андоза кенглиги.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="Санани кўриниши">
+							<longdesc>Файл санасининг кўриниши. Мавжуд қийматлар: &quot;locale&quot;, &quot;iso&quot; ва &quot;informal&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="Андоза жилд кўрувчи">
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="Андоза орқа фон файли номи">
+							<longdesc>Андоза ён панел орқа фони файлининг номи. Фақат side_pane_background_set калити ўрнатилган бўлса ишлатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="Андоза ён панел орқа фон ранги">
+							<longdesc>Андоза ён панел орқа фони файлининг номи. Фақат side_pane_background_set калити ўрнатилган бўлса ишлатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="Андоза орқа фон файли номи">
+							<longdesc>Андоза жилд орқа фони учун файл номи. Фақат background_set ўрнатилган бўлса, ишлатилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="Андоза орқа фон ранги">
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema short_desc="Фойдаланувчи орқа фони">
+						</local_schema>
+					</entry>
+					<entry name="search_bar_type">
+						<local_schema short_desc="Қидириш панели учун қидириш мезонлари">
+						</local_schema>
+					</entry>
+					<entry name="desktop_is_home_dir">
+						<local_schema short_desc="Nautilus иш столи сифатида фойдаланувчиларнинг уй жилдларидан фойдаланади">
+							<longdesc>Агар белгиланган бўлса, Nautilus иш столи сифатида фойдаланувчи уй директориясидан фойдаланади. Белгиланмаган бўлса, иш столи сифатида ~/Desktop фойдаланилади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="Иш столи шрифти">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema>
+							<longdesc>Агар белгиланган бўлса, Nautilus иш столида нишончаларни кўрсатади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="Ойналарда аввл жилдларни кўрсатиш">
+							<longdesc>Агар белгиланган бўлса, Nautilus нишонча ва рўйхат кўринишларида жилдларни файллардан олдин кўрсатади.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_advanced_permissions">
+						<local_schema short_desc="Файл диалоги ойнасида кенгайтирилган файл ҳуқуқларини кўрсатиш">
+						</local_schema>
+					</entry>
+					<entry name="preview_sound">
+						<local_schema short_desc="Сичқонча товуш нишончаси устига келтирилганда уни эшиттирилиши">
+						</local_schema>
+					</entry>
+					<entry name="directory_limit">
+						<local_schema short_desc="Жилдда бўладиган файлларнинг максимал сони">
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_limit">
+						<local_schema short_desc="Миниатюра учун ишлатиладиган расмларнинг максимал ўлчами">
+						</local_schema>
+					</entry>
+					<entry name="show_image_thumbnails">
+						<local_schema short_desc="Расм файлларнинг миниатюраси кўрсатилиши">
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Жорий Nautilus мавзуси (қўлланилмайди)">
+							<longdesc>Қўлланиладиган Nautilus мавзуси номи. Бу хусусият Nautilus 2.2 дан бошлаб ишлатилмайди. Унинг ўрнига нишонча мавзусидан фойдаланинг.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="click_policy">
+						<local_schema short_desc="Файлларни ишга тушириш/очишда қўлланиладиган чертиш тури">
+							<longdesc>Мавжуд қийматлар: файлларни бир марта чертиб очиш учун &quot;single&quot;, икки марта чертиб очиш учун &quot;double&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_directory_item_counts">
+						<local_schema short_desc="Жилддаги элементлар сонини кўрсатилиши">
+						</local_schema>
+					</entry>
+					<entry name="enable_delete">
+						<local_schema short_desc="Дарҳол олиб ташлашни ёқилиши">
+							<longdesc>Агар белгиланса, Nautilus файлни чиқиндилар қутисига ташламасдан, бутунлай олиб ташлайди. Бу имконият хавфли бўлганлиги учун эҳтиёт бўлиб фойдаланинг.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_trash">
+						<local_schema short_desc="Файллар олиб ташланаётганда ёки чиқиндилар қутиси тозаланаётганда тасдиқлашни сўралиши.">
+							<longdesc>Агар белгиланган бўлса, Nautilus файлни олиб ташлашда ёки чиқиндилар қутисини тозалашда тасдиқлашни сўрайди.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_open_folder">
+						<local_schema short_desc="&quot;Жилдни очиш&quot; сифатида ўрнатилган x-content/* турларининг рўйхати">
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_ignore">
+						<local_schema short_desc="&quot;Ҳеч нарса қилинмасин&quot; сифатида ўрнатилган x-content/* турларининг рўйхати">
+						</local_schema>
+					</entry>
+					<entry name="media_automount_open">
+						<local_schema short_desc="Авто уланган маълумот ташувчи учун жилдни автоматик очилиши">
+						</local_schema>
+					</entry>
+					<entry name="media_automount">
+						<local_schema short_desc="Маълумот ташувчини автоматик уланиши">
+						</local_schema>
+					</entry>
+					<entry name="always_use_location_entry">
+						<local_schema short_desc="Йўл панели ўрнида ҳар доим манзилни киритишдан фойдаланиш">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="show_backup_files">
+						<local_schema short_desc="Zapas faýllaryň görkezilişi">
+							<longdesc>Eger true bolsa, Emacsiň nusga faýllary ýaly zapas faýllar görkeziler. häzirçe, diňe telpek (~) bilen gutarýan faýllar zapas faýl saýylýar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="Gizlin faýllaryň görkezilişi">
+							<longdesc>Eger true bolsa, faýl müdirinde gizlin faýllar görkeziler. Gizlin faýllar nokatly faýllar ýa haltalariň .hidden faýllary dir.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="trash_icon_name">
+						<local_schema short_desc="Desktap üstinde ýerleşen zibil tymsalynyň ady">
+							<longdesc>Siz desktapda zibil tymsaly üçin şahsy bir ad goýjak bolsaňiz bu ad düzümlenip biler.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="Desktap üstinde ýerleşen öý tymsalynyň ady">
+							<longdesc>Siz desktapda öý tymsaly üçin şahsy bir ad goýjak bolsaňiz bu ad düzümlenip biler.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="Zibil tymsaly desktapda görkezilsin">
+							<longdesc>Eger bu true bolsa, öý zibile bir baglaýyş tymsal desktapda goýular.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="Kompýuter tymsaly desktapda görkezilsin">
+							<longdesc>Eger bu true bolsa, kompýuter ýeryne bir baglaýyş tymsal desktapda goýular.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="Öý tymsaly desktapda görkezilsin">
+							<longdesc>Eger bu true bolsa, öý halatasyna bir baglaýyş tymsal desktapda goýular.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema>
+								<longdesc>Eger true bolsa, Nautilus böwür jamda diňe halatalary görkezer. Ýogsa hem faýllary  we hem haltalary görkezer.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="List görnöşde ön bellenen sütün tertibi">
+							<longdesc>List görnöşde ön bellenen sütün tertibi</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="List görnöşinde ön bellenen görkezilýãn sütünler listi">
+							<longdesc>List görnöşinde ön bellenen görkezilýãn sütünler listi</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Ön bellenen list ulaldyş derejesi">
+							<longdesc>List görnöşinde ön bellenen ulaldyş derejesi</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Täze äpişgelerde tersine tertiblkemek">
+							<longdesc>Eger true bolsa, täze äpişgeler içinde faýllar tersine tertiblener. meselen, eger ad hesibine tertiblenen bolsalar, &quot;a&quot; dan &quot;z&quot; ýerine &quot;z&quot; dan &quot;a&quot; eçenli tertiblenerler.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Ön bellenen tertiblemek tertibi">
+							<longdesc>Täze äpişgelerde list görnöşinde ön bellenen tertiblemek hesibi. Mümkin mykdarlar &quot;ad&quot;, &quot;ululyk&quot;, &quot;hil&quot;, &quot;üýtgemek_tarihi&quot;, we &quot;alamatlar&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Ön bellenen tymsal ulaldyş derejesi">
+							<longdesc>Tymsal görnöşinde ön bellenen ulaldyş derejesi</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Täze äpişgelerde tersine tertiblkemek">
+							<longdesc>Eger true bolsa, täze äpişgeler içinde faýllar tersine tertiblener. meselen, eger ad hesibine tertiblenen bolsalar, &quot;a&quot; dan &quot;z&quot; ýerine &quot;z&quot; dan &quot;a&quot; eçenli tertiblenerler. eger ululyk hesibine tertiblenel bölsa ulalamak ýerine kiçilik hesibine tertiblenerler.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Ön bellenen tertiblemek tertibi">
+							<longdesc>Täze äpişgelerde tymsal görnöşinde ön bellenen tertiblemek hesibi. Mümkin mykdarlar &quot;ad&quot;, &quot;ululyk&quot;, &quot;hil&quot;, &quot;üýtgemek_tarihi&quot;, we &quot;alamatlar&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="captions">
+						<local_schema short_desc="Tymsallarýazyň mümkin ýazylar listi">
+							<longdesc>Tymsal görnöşi we desktapda bir tymsalyň astyndaky ýazylar.  Görkezilen ýazylar sany ulaldyş derejesine bagly dir. Mümkin mykdarlar: &quot;size&quot;, &quot;type&quot;, &quot;date_modified&quot;, &quot;date_changed&quot;, &quot;date_accessed&quot;, &quot;owner&quot;, &quot;group&quot;, &quot;permissions&quot;, &quot;octal_permissions&quot; and &quot;mime_type&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="Böwür jamynyň görnöşi">
+							<longdesc>Täze açylan äpişgelerde görkezmek üçin böwür jamiň görnöşi</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="Böwür zolakyny täze äpişgelerde görkez">
+							<longdesc>Eger true bolsa, tãze açylan ãpişgeleriň böwür jamy görkezilsin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="Durum zolakyny täze äpişgelerde görkez">
+							<longdesc>Eger true bolsa, tãze açylan ãpişgeleriň durum zolaky görkezilsin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="Ýer zolakyny täze äpişgelerde görkez">
+							<longdesc>Eger true bolsa, tãze açylan ãpişgeleriň ýer zolaky görkezilsin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="Esbap zolakyny täze äpişgelerde görkez">
+							<longdesc>Eger true bolsa, tãze açylan ãpişgeleriň esbap zolaky görkezilsin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="Böwür jamiň giňliki">
+							<longdesc>Täze äpişgelerde böwür jamiň ön bellenen giňliki</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="Ön Bellenen halta namaýyşçysy">
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="Ön Bellenen Böwür Jam Arkaplan Faýl ady">
+							<longdesc>Ön bellenen böwür jam arkaplaniň faýl ady. eger side_pane_background_set true bolsa ullanlýar</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="Ön Bellenen Böwür Jam Arkaplan Renki">
+							<longdesc>Ön bellenen böwür jam arkaplaniň faýl ady. eger side_pane_background_set true bolsa ullanlýar</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_set">
+						<local_schema short_desc="Şahsy Böwür Jam Arkaplani">
+							<longdesc>Şahsy ön bellenen böwür jamiň arkaplani düzümlenşi</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="Ön Bellenen Arkaplan Faýl ady">
+							<longdesc>Ön bellenen halta arkaplaniň faýl ady. Eger kground_set true bolsa ullanylýar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="Ön Bellenen Arkaplan Renki">
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema>
+							<longdesc>Şahsy ön bellenen haltaniň arkaplani düzümlenşi</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_is_home_dir">
+						<local_schema short_desc="Nautilus ullançylaryň öý haltasyndan desktapa ullanýar.">
+							<longdesc>Eger true bolsa, Nautilus ullançy öýi haltasyndan desktap üçin ullanar. Eger false bolsa, ol ~/Desktop haltasyndan ullanar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="Desktap kalamy">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="Nautilus desktapi çekmekini elleýär.">
+							<longdesc>Eger true bolsa, Nautilus tymsallary dekstapda çekip başarar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="Äpişgelerde haltalry ilkinjde görkez">
+							<longdesc>Eger true bolsa, Nautilus tymsal we list görnöşde haltalery faýllardan öňinçä görkezýãr</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="directory_limit">
+						<local_schema short_desc="Bir halta içinde iň kop ellenen faýllar">
+							<longdesc>Bu ululykdan ullakan ãpişgeler bu ululyka yakyn edilip kesiler. Ondan yzlanylýan maksat bu ki ullakan haltalarda nautilusi öldürip topbakiň beter ulalamakynyň ewine geçilsin. Menfy myjdar hiçbir hed goýmaýar. ???????????????????????????????</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Hãzirki nautilus temi (ullanylmýar)">
+						</local_schema>
+					</entry>
+					<entry name="executable_text_activation">
+						<local_schema short_desc="Işeňger faýllar janlaşdyrylanda olar bilen näme edilmeli">
+							<longdesc>Işeňger faýllar janlaşdyrylanda olar bilen näme edilmeli (birje ya iki tiklenende). ??????????????????????????????????????????????????????????</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_directory_item_counts">
+						<local_schema short_desc="Haltaniň içinde aýtemleriň görközilşi">
+						</local_schema>
+					</entry>
+					<entry name="show_icon_text">
+						<local_schema short_desc="Haltaniň içinde metinlön namaýyş ön namaýyş görközilşi">
+						</local_schema>
+					</entry>
+					<entry name="enable_delete">
+						<local_schema short_desc="Faýllary zöwwe pozmaki mümkin etmesi">
+							<longdesc>Eger true bolsa, Nautilus size bir faýly zibile göçirmãni ony duran ýerinde pozmak ymkanyny berer. Bu ymkan hatarly. Öndan ãtýaç bilen ullanyň.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_browser">
+						<local_schema short_desc="Ehli äpişgeler ahtaçy bolsalar klasik nautilus boluşyny etginleşdir">
+							<longdesc>Eger true bolsa, ehli Nautilus äpişgeleri ahtarçy äpişgeleri bolar. Bu Nautilusiň 2.6 den oň boluşidi, we bireme halk bu boluşi halaýa.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

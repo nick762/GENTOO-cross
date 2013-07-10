@@ -1,0 +1,3362 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="Grupo de trabalho SMB">
+						<longdesc>O grupo de trabalho de rede Windows ou o domínio a que o utilizador pertence. Para que um novo grupo de trabalho tenha efeito total o utilizador poderá ter de terminar a sessão e iniciá-la novamente.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="URL de configuração automática de proxy">
+						<longdesc>URL que disponibiliza valores de configuração da proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Porto de proxy SOCKS">
+						<longdesc>O porto na máquina, definido por &quot;/system/proxy/socks_host&quot;, através do qual efectuar proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Nome de máquina de proxy SOCKS">
+						<longdesc>O nome da máquina através da qual efectuar proxy socks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Porto do proxy FTP">
+						<longdesc>O porto na máquina, definido por &quot;/system/proxy/ftp_host&quot;, através do qual efectuar proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Nome de máquina da proxy FTP">
+						<longdesc>O nome da máquina através da qual efectuar proxy de FTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Porto de proxy de HTTP seguro">
+						<longdesc>O porto na máquina, definido por &quot;/system/proxy/secure_host&quot;, através do qual efectuar proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Nome de máquina de proxy de HTTP seguro">
+						<longdesc>O nome da máquina através da qual efectuar proxy de HTTP seguro.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Modo de configuração proxy">
+						<longdesc>Seleccione o modo de configuração de proxy. Valores suportados são &quot;none&quot; (nenhum), &quot;manual&quot;, &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Máquina não-proxy">
+						<longdesc>Esta chave contém uma lista de máquinas às quais a ligação deverá ser directa, e não através da proxy (caso esteja activa). Os valores podem ser nomes de máquinas, domínios (utilizando um caracter global tal como *.exemplo.pt), endereços IP (tanto IPv4 como IPv6) e endereços de rede com uma máscara de rede (algo como 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Senha da proxy HTTP">
+						<longdesc>Senha a indicar como autenticação ao efectuar proxy de HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Utilizador da proxy HTTP">
+						<longdesc>Utilizador a indicar como autenticação ao efectuar proxy de HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Autenticar ligações ao servidor proxy">
+						<longdesc>Se verdadeiro, ligações ao servidor proxy requerem autenticação. O conjunto utilizador/senha é definido por &quot;/system/http_proxy/authentication_user&quot; e &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Porto do proxy HTTP">
+						<longdesc>O porto na máquina, definido por &quot;/system/http_proxy/host&quot;, através do qual efectuar proxy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Nome de máquina da proxy HTTP">
+						<longdesc>O nome da máquina através da qual efectuar proxy de HTTP.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Utilizar proxy HTTP">
+						<longdesc>Activa as definições de proxy ao aceder por HTTP à Internet.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Domínios adicionais onde procurar serviços DNS-SD">
+						<longdesc>Lista separada por vírgulas de domínios DNS-SD que deverão ser visíveis na localização de rede &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Como apresentar o serviço DNS-SD local">
+						<longdesc>Valores possíveis são &quot;merged&quot;, &quot;separate&quot; e &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="tabs_open_position">
+						<local_schema short_desc="Onde colocar os separadores novos nas janelas de navegador.">
+							<longdesc>Se definido como &quot;after_current_tab&quot;, os novos separadores são inseridos após o separador actual. Se definido como &quot;end&quot;, os novos separadores são acrescentados ao final da lista de separadores.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_backup_files">
+						<local_schema short_desc="Se apresentar cópias de segurança de ficheiros">
+							<longdesc>Se definido como verdadeiro, cópias de segurança tais como as criadas pelo Emacs são apresentadas. De momento, apenas ficheiros que terminem com um til (~) são consideradas cópias de segurança.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="Se apresentar ficheiros escondidos">
+							<longdesc>Se definido verdadeiro, os ficheiros escondidos serão apresentados no gestor de ficheiros. Ficheiros escondidos são ficheiros cujo nome começa por um ponto ou se encontram listados no ficheiro .hidden da pasta.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>Tamanho máximo da cache de amostras, em megabytes. Definir como -1 para desactivar a limpeza.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>Idade máxima para as amostras na cache, em dias. Definir como -1 para desactivar a limpeza.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="Sons de resposta à introdução">
+							<longdesc>Se reproduzir ou não sons nos eventos de introdução.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="Nome do tema de som">
+							<longdesc>O tema de sons XDG a utilizar para os sons de eventos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="Sons para eventos">
+							<longdesc>Se reproduzir sons para eventos de utilizador.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Activar ESD">
+							<longdesc>Activar inicialização do servidor de som.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="Canais de mistura por omissão">
+							<longdesc>Os canais de mistura utilizados por omissão pelas ligações de teclas multimédia.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Dispositivo de mistura por omissão">
+							<longdesc>O dispositivo de mistura utilizado por omissão pelas ligações de teclas multimédia.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Tema de Ícone de Ficheiro">
+							<longdesc>Tema utilizado para apresentar ícones de ficheiros.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="at-spi-corba">
+						<local_schema short_desc="Activar a infrastrutura AT-SPI baseada em CORBA">
+							<longdesc>Em combminação com /desktop/gnome/interface/accessibility, esta chave é  necessária para activar a infrastrutura AT-SPI baseada em CORBA Caso o AT-SPI baseado em CORBA tenha sido realocado. É ignorada caso o AT-SPI baseado em CORBA não tenha sido realocado.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Apresentar o menu de &apos;Caracter de Controlo Unicode&apos;">
+							<longdesc>Se os menus de contexto das entradas e vistas de texto deverão ou não oferecer a inserção de caracteres de controlo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Apresentar o menu de &apos;Métodos de Introdução&apos;">
+							<longdesc>Se os menus de contexto das entradas e vistas de texto deverão ou não oferecer a alteração do método de introdução.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Tecla de atalho da barra de menu">
+							<longdesc>Atalho de teclado para abrir as barras de menus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Módulo para GtkFileChooser">
+							<longdesc>Módulo a utilizar como o modelo de sistema de ficheiros para o widget GtkFileChooser. Valores possíveis são &quot;gio&quot;, &quot;gnome-vfs&quot; e &quot;gtk+&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Barra de Estados à Direita">
+							<longdesc>Se apresentar ou não um medidor à direita na barra de estados.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Utilizar Fonte Personalizada">
+							<longdesc>Se utilizar ou não uma fonte personalizada nas aplicações gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Fonte mono-espaçada">
+							<longdesc>Nome de uma fonte mono-espaçada (largura fixa) a utilizar em locais tais como consolas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Fonte do documento">
+							<longdesc>Nome da fonte por omissão utilizada para ler documentos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="Módulo de MI do GTK">
+							<longdesc>Nome do módulo de método de introdução utilizado pelo GTK+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="Estilo de Estado do MI do GTK">
+							<longdesc>Nome do Estilo de Estado do método de introdução GTK+ utilizado pelo gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="Estilo de Pré-edição do MI do GTK">
+							<longdesc>Nome do Estilo de Pré-edição do método de introdução GTK+ utilizado pelo gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Fonte por omissão">
+							<longdesc>Nome da fonte por omissão utilizada pelo gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Tema Gtk+">
+							<longdesc>Nome base do tema por omissão utilizado pelo gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Tema Gtk+">
+							<longdesc>Nome base do tema por omissão utilizado pelo gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Tema de Ícones">
+							<longdesc>Tema de ícones a utilizar para o painel, nautilus, etc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Intervalo de Piscar do Cursor">
+							<longdesc>Duração do ciclo de piscar do cursor, em milisegundos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Cursor Pisca">
+							<longdesc>Se o cursor deverá ou não piscar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Tamanho de Ícones de Barra de Ferramentas">
+							<longdesc>Tamanho dos ícones nas barras de ferramentas, ou &quot;small-toolbar&quot; ou &quot;large-toolbar&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Barras de Ferramentas Destacáveis">
+							<longdesc>Se o utilizador pode ou não destacar barras de ferramentas e movê-las.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Barra de Menu Destacável">
+							<longdesc>Se o utilizador pode ou não destacar barras de menu e movê-las.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="Botões Têm Ícones">
+							<longdesc>Se os botões podem ou não apresentar um ícone junto ao texto do botão.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Menus Têm Ícones">
+							<longdesc>Se os menus podem ou não apresentar um ícone junto a uma entrada de menu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Estilo de Barra de Ferramentas">
+							<longdesc>Estilo de Barra de Ferramentas. Valores válidos são &quot;both&quot;, &quot;both-horiz&quot;, &quot;icons&quot;, e &quot;text&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Pode Alterar Atalhos">
+							<longdesc>Se o utilizador pode ou não indicar dinamicamente um novo atalho quando posicionado sobre um item de menu activo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Menus São Destacáveis">
+							<longdesc>Se os menus podem ou não ser destacáveis.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Activar Animações">
+							<longdesc>Se as animações deverão ou não ser apresentadas. Nota: Esta é uma chave global, altera o comportamento do gestor de janelas, painel, etc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Activar Acessibilidade">
+							<longdesc>Se as Aplicações deverão ter suporte de acessibilidade.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Tipo de Sombreado de Cor">
+							<longdesc>Como sombrear a cor de fundo. Valores possíveis são &quot;horizontal-gradient&quot;, &quot;vertical-gradient&quot;, e &quot;solid&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Cor Secundária">
+							<longdesc>Cor Direita ou de Fundo ao desenhar gradientes, não utilizado na cor sólida.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Cor Primária">
+							<longdesc>Cor Esquerda ou de Topo ao desenhar gradientes, ou cor sólida.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Opacidade da Imagem">
+							<longdesc>Opacidade com que desenhar a imagem de fundo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Nome de Ficheiro de Imagem">
+							<longdesc>Ficheiro a utilizar para a imagem de fundo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Opções da Imagem">
+							<longdesc>Determina como é renderizada a imagem definida pelo wallpaper_filename. Valores possíveis são &quot;none&quot;, &quot;wallpaper&quot;, &quot;centered&quot;, &quot;scaled&quot;, &quot;stretched&quot;, &quot;zoom&quot;, &quot;spanned&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Desenhar Fundo de Ambiente de Trabalho">
+							<longdesc>Permitir que o GNOME desenhe o fundo do ambiente.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Desactivar todos os geradores de amostras externos">
+							<longdesc>Definir como verdadeiro para desactivar todas as aplicações externas de geração de amostras, independentemente de serem ou não activadas/desactivadas independentemente.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="application@x-font-otf">
+						<entry name="enable">
+							<local_schema short_desc="Gerar ou não amostras de fontes OpenType">
+								<longdesc>Se verdadeiro, fontes OpenType serão apresentadas como amostra.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Comando de amostras para fontes OpenType">
+								<longdesc>Defina esta chave com o comando utilizado para criar amostras de fontes OpenType.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-pcf">
+						<entry name="enable">
+							<local_schema short_desc="Gerar ou não amostras de fontes PCF">
+								<longdesc>Se verdadeiro, fontes PCF serão apresentadas como amostra.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Comando de amostras para fontes PCF">
+								<longdesc>Defina esta chave com o comando utilizado para criar amostras de fontes PCF.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-type1">
+						<entry name="enable">
+							<local_schema short_desc="Gerar ou não amostras de fontes Type1">
+								<longdesc>Se verdadeiro, fontes Type1 serão apresentadas como amostra.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Comando de amostras para fontes Type1">
+								<longdesc>Defina esta chave com o comando utilizado para criar amostras de fontes Type1.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-ttf">
+						<entry name="enable">
+							<local_schema short_desc="Gerar ou não amostras de fontes TrueType">
+								<longdesc>Se verdadeiro, fontes TrueType serão apresentadas como amostra.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Comando de amostras para fontes TrueType">
+								<longdesc>Defina esta chave com o comando utilizado para criar amostras de fontes TrueType.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Se está ou não activo o trancar do teclado">
+							<longdesc>Se está ou não activo o trancar do teclado.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Permitir adiar intervalos">
+							<longdesc>Se o ecrã de intervalo pode ou não ser adiado.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Intervalo">
+							<longdesc>Número de minutos que o intervalo deve durar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Tempo a digitar">
+							<longdesc>Número de minutos a digitar antes de iniciar modo de intervalo.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="Desactivar os manipuladores de URLs e tipos MIME">
+							<longdesc>Impedir a execução de quaisquer aplicações de manipulação de URLs ou tipos MIME.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Desactivar o trancar de ecrã">
+							<longdesc>Impedir o utilizador de trancar o seu ecrã.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Desactivar a alternância de utilizadores">
+							<longdesc>Impedir o utilizador de alternar para outra conta enquanto esta sessão estiver activa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Desactivar a configuração de impressora">
+							<longdesc>Impedir o utilizador de alterar as configurações da impressora. Por exemplo, desactivaria o acesso aos diálogos de &quot;Configuração de Impressão&quot; de todas as aplicações.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Desactivar a impressão">
+							<longdesc>Impedir o utilizador de imprimir. Por exemplo, desactivaria o acesso ao diálogo &quot;Imprimir&quot; de todas as aplicações.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Desactivar a gravação de ficheiros em disco">
+							<longdesc>Impedir o utilizador de gravar ficheiros em disco. Por exemplo, desactivaria o acesso aos diálogos &quot;Gravar como&quot; de todas as aplicações.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Desactivar a linha de comando">
+							<longdesc>Impedir o utilizador de aceder à consola ou especificar uma linha de comando a ser executada. Por exemplo, isto irá desactivar o acesso ao diálogo de painel &quot;Executar Aplicação&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="session">
+					<entry name="required_components_list">
+						<local_schema short_desc="Componentes necessários de sessão">
+							<longdesc>Lista de componentes que são necessários como parte da sessão. (Cada elemento designa uma chave sob &quot;/desktop/gnome/session/required_components&quot;). As Preferências de Aplicações de Arranque normalmente não permitirão aos utilizadores remover um componente necessário da sessão, e o gestor de sessões irá automaticamente adicionar novamente, ao iniciar uma sessão, os componentes necessários, caso tenham sido removidos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_session">
+						<local_schema short_desc="Sessão por omissão">
+							<longdesc>Lista de aplicações que fazem parte da sessão por omissão.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="idle_delay">
+						<local_schema short_desc="Tempo até que a sessão seja considerada inactiva">
+							<longdesc>O número de minutos de inactividade até que a sessão seja considerada inactiva.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="required_components">
+						<entry name="filemanager">
+							<local_schema short_desc="Gestor de Ficheiros">
+								<longdesc>O gestor de ficheiros disponibiliza os ícones de ambiente de trabalho e permite-lhe interagir com os seus ficheiros gravados.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="panel">
+							<local_schema short_desc="Painel">
+								<longdesc>O painel disponibiliza a barra no topo e no fundo do ecrã que contêm menus, a lista de janelas, ícones de estado, o relógio, etc.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="windowmanager">
+							<local_schema short_desc="Gestor de Janelas">
+								<longdesc>O gestor de janelas é a aplicação que desenha a barra de título e margens em torno das janelas, e que lhe permite mover e redimensionar as janelas.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="font_rendering">
+					<entry name="rgba_order">
+						<local_schema short_desc="Ordem RGBA">
+							<longdesc>A ordem de elementos de subpixel num ecrã LCD; apenas utilizado quando o antialiasing está definido como &quot;rgba&quot;. Valores possíveis são: &quot;rgb&quot; para vermelho à esquerda (mais comum), &quot;bgr&quot; para azul à esquerda, &quot;vrgb&quot; para vermelho no topo, &quot;vbgr&quot; para vermelho no fundo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hinting">
+						<local_schema short_desc="Dicas de Fonte">
+							<longdesc>O tipo de dicas a utilizar ao renderizar fontes. Valores possíveis são: &quot;none&quot; para nenhumas dicas, &quot;slight&quot; para básicas, &quot;medium&quot; para moderadas, e &quot;full&quot; para dicas máximas (poderá causar distorção na forma das letras).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="antialiasing">
+						<local_schema short_desc="Antialiasing">
+							<longdesc>O tipo de antialiasing a utilizar ao renderizar fontes. Valores possíveis são: &quot;none&quot; nenhum antialiasing, &quot;grayscale&quot; para antialiasing padrão cinza e &quot;rgba&quot; para antialiasing de subpixel (apenas ecrãs LCD).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="dpi">
+						<local_schema short_desc="DPI">
+							<longdesc>A resolução utilizada para converter os tamanhos das fontes em tamanhos de pixel, em pontos por polegada.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Iniciar Aplicações de Tecnologia Assistiva">
+								<longdesc>Lista de aplicações de tecnologia assistiva a executar ao iniciar uma sessão no ambiente de trabalho GNOME.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>Emitir beep quando é premido um modificador.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Desactivar se forem premidas duas teclas simultaneamente.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="Intervalo mínimo em milisegundos">
+								<longdesc>Não aceitar uma tecla como premida excepto se premida por mais de @delay milisegundos.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Atraso inicial em milisegundos">
+								<longdesc>Quantos milisegundos aguardar antes das teclas de movimento do rato começarem a responder.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="Durante quanto tempo acelerar, em milisegundos">
+								<longdesc>Quantos milisegundos demora ir de 0 até à velocidade máxima.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Pixels por segundo">
+								<longdesc>Quantos pixels por segundo mover à velocidade máxima.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="intervalo mínimo em milisegundos">
+								<longdesc>Ignorar pressões múltiplas ma _mesma_ tecla no espaço de @delay milisegundos.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_enable">
+							<local_schema short_desc="Teclas de rato">
+								<longdesc>Se a funcionalidade de acessibilidade de teclado &quot;teclas de rato&quot; está activa ou não.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_enable">
+							<local_schema short_desc="Teclas lentas">
+								<longdesc>Se a funcionalidade de acessibilidade de teclado &quot;teclas lentas&quot; está activa ou não.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_enable">
+							<local_schema short_desc="Teclas saltantes">
+								<longdesc>Se a funcionalidade de acessibilidade de teclado &quot;teclas saltantes&quot; está activa ou não.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_enable">
+							<local_schema short_desc="Teclas coladas">
+								<longdesc>Se a funcionalidade de acessibilidade de teclado &quot;teclas coladas&quot; está activa ou não.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="keybindings">
+					<entry name="allowed_keys">
+						<local_schema short_desc="Teclas permitidas">
+							<longdesc>Se não-vazio, atalhos de teclado serão ignorados excepto se o seu directório GConf estiver na lista. Esta funcionalidade é útil para trancar a configuração.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="onscreenkeyboard">
+						<entry name="action">
+							<local_schema short_desc="Alternar o teclado no ecrã">
+								<longdesc>Comando utilizado para activar ou desactivar o teclado no ecrã.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="Alternar o teclado no ecrã">
+								<longdesc>Atalho para alternar o teclado no ecrã.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="O nome do atalho de teclado para alternar o teclado no ecrã">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="screenreader">
+						<entry name="action">
+							<local_schema short_desc="Alternar o leitor de ecrã">
+								<longdesc>Comando utilizado para activar ou desactivar o leitor de ecrã.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="O nome do atalho de teclado para alternar o leitor de ecrã">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="Alternar o leitor de ecrã">
+								<longdesc>Atalho para alternar o leitor de ecrã.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="magnifier">
+						<entry name="action">
+							<local_schema short_desc="Alternar a ampliação">
+								<longdesc>Comando utilizado para activar ou desactivar a ampliação.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="O nome do atalho de teclado para alternar a ampliação de ecrã">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="Alternar a ampliação">
+								<longdesc>Atalho para alternar a ampliação.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;h323&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;h323&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;h323&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;h323&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;callto&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;callto&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;callto&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;callto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;aim&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;aim&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;aim&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;aim&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;mailto&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;mailto&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;mailto&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;mailto&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;https&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;https&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;https&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;https&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;http&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;http&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;http&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;http&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;man&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;man&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;man&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;man&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;info&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;info&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;info&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;info&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;ghelp&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;ghelp&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;ghelp&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;ghelp&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Executar o comando numa consola">
+								<longdesc>Verdadeiro se o comando utilizado para manipular este tipo de URL deverá ser executado numa consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="O manipulador de URLs &quot;trash&quot;">
+								<longdesc>O comando utilizado para manipular URLs &quot;trash&quot;, se activo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Se o comando especificado deverá manipular URLs &quot;trash&quot;">
+								<longdesc>Verdadeiro se o comando especificado na chave &quot;command&quot; deverá manipular URLs &quot;trash&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="Tarefas necessitam de consola">
+								<longdesc>Se a aplicação de tarefas por omissão necessita de uma consola para ser executada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Tarefas por omissão">
+								<longdesc>Aplicação de tarefas por omissão</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="Calendário necessita de consola">
+								<longdesc>Se a aplicação de calendário por omissão necessita de uma consola para ser executada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Calendário por omissão">
+								<longdesc>Aplicação de calendário por omissão</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Nomes das áreas de trabalho (obsoleta)">
+								<longdesc>Uma lista com os nomes das primeiras áreas de trabalho do gestor de janelas. Esta chave tornou-se obsoleta a partir do GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="O número de áreas de trabalho (obsoleta)">
+								<longdesc>O número de áreas de trabalho que o gestor de janelas deverá utilizar. Esta chave tornou-se obsoleta a partir do GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Gestor de janelas do utilizador (obsoleta)">
+								<longdesc>Gestor de janelas a tentar primeiro. Esta chave tornou-se obsoleta a partir do GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Gestor de janelas de recurso (obsoleta)">
+								<longdesc>Gestor de janelas de recurso se o gestor de janelas do utilizador não for encontrado. Esta chave tornou-se obsoleta a partir do GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Navegador compreende remoto">
+								<longdesc>Se o navegador por omissão compreende netscape remoto.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Navegador necessita de consola">
+								<longdesc>Se o navegador por omissão necessita de uma consola para ser executado.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Navegador por omissão">
+								<longdesc>Navegador por omissão para todos os URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<entry name="screen_reader_enabled">
+							<local_schema short_desc="Leitor de ecrã">
+								<longdesc>Se o leitor de ecrã está activo ou não.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_magnifier_enabled">
+							<local_schema short_desc="Ampliação de ecrã">
+								<longdesc>Se a ampliação de ecrã está activa ou não.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_keyboard_enabled">
+							<local_schema short_desc="Teclado no ecrã">
+								<longdesc>Se o teclado no ecrã está activo ou não.</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Iniciar a aplicação preferida de tecnologia de assistência à Mobilidade">
+									<longdesc>GNOME deverá iniciar a aplicação preferida de tecnologia de assistência à Mobilidade ao iniciar a sessão.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Aplicação preferida de tecnologia de assistência à Mobilidade">
+									<longdesc>Aplicação preferida de tecnologia de assistência à Mobilidade a ser utilizada para iniciar sessão, menu ou linha de comando.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Iniciar a aplicação preferida de tecnologia de assistência Visual">
+									<longdesc>GNOME deverá iniciar a aplicação preferida de tecnologia de assistência Visual ao iniciar sessão.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Aplicação preferida de tecnologia de assistência Visual">
+									<longdesc>Aplicação preferida de tecnologia de assistência Visual a ser utilizada para iniciar sessão, menu ou linha de comando.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Aplicação visualizadora por omissão de componente">
+								<longdesc>A aplicação a utilizar para visualizar ficheiros que requerem um componente para que possam ser visualizadas. O parâmetro %s será substituído pelo URI do ficheiro, o parâmetro %c será substituído pelo IID do componente.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argumentos Exec">
+								<longdesc>Argumento utilizado para executar aplicações na consola definida pela tecla &apos;exec&apos;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Aplicação de consola">
+								<longdesc>Aplicação de consola a utilizar ao iniciar aplicações que requeiram uma.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Tamanho do cursor">
+								<longdesc>Tamanho do cursor referenciado pelo cursor_theme.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Tema do cursor">
+								<longdesc>Nome do tema de cursos. Utilizado apenas por Xservers que suportem Xcursor, tais como o XFree86 4.3 e posteriores.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Fonte do cursor">
+								<longdesc>Nome da fonte do cursor. Se indefinido, é utilizada a fonte por omissão. Este valor apenas é propagado servidor X ao iniciar cada sessão, pelo que alterá-lo a meio de uma sessão não terá qualquer efeito até à próxima vez que iniciar uma sessão.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Localizar Ponteiro">
+								<longdesc>Realça a localização actual do ponteiro quando a tecla de Control é premida e largada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Tempo do Clique-Duplo">
+								<longdesc>Duração de um clique-duplo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Tolerância de Arrasto">
+								<longdesc>Distância a percorrer antes de iniciar um arrasto.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Tolerância de Movimento">
+								<longdesc>Distância em pixels que o ponteiro tem de se mover antes de ser iniciado o movimento acelerado do rato. Um valor de -1 representa o valor por omissão do sistema.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Clique Único">
+								<longdesc>Multiplicador de aceleração para movimento do rato. Um valor de -1 significa valor por omissão do sistema.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Clique Único">
+								<longdesc>Clique único para abrir ícones.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Orientação dos botões do rato">
+								<longdesc>Trocar botões esquerdo e direito do rato para ratos esquerdinos.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="smartcard">
+						<entry name="removal_action">
+							<local_schema short_desc="Acção ao remover o smartcard">
+								<longdesc>Definir como um de &quot;none&quot;, &quot;lock_screen&quot;, ou &quot;force_logout&quot;. A acção será realizada quando o smartcard utilizado para iniciar sessão for removido.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="touchpad">
+						<entry name="touchpad_enabled">
+							<local_schema short_desc="Activar o touchpad">
+								<longdesc>Defina como VERDADEIRO para activar todos os touchpads.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="horiz_scroll_enabled">
+							<local_schema short_desc="Activar o rolamento horizontal">
+								<longdesc>Defina como VERDADEIRO para permitir rolamento horizontal com o mesmo método seleccionado com a chave scroll_method.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_method">
+							<local_schema short_desc="Seleccione o método de rolamento do touchpad">
+								<longdesc>Seleccione o método de rolamento do touchpad. Valores suportados são: 0: desactivado, 1: rolamento na margem, 2: rolamento com dois dedos</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="tap_to_click">
+							<local_schema short_desc="Activar os cliques de rato com o touchpad">
+								<longdesc>Defina como VERDADEIRO para ser possível enviar cliques do rato tocando no touchpad.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="disable_while_typing">
+							<local_schema short_desc="Desactivar o touchpad enquanto utiliza o teclado">
+								<longdesc>Defina como VERDADEIRO caso tenha problemas por tocar acidentalmente no touchpad enquanto utiliza o teclado.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Recordar o estado d NumLock">
+								<longdesc>Quando definido como verdadeiro, o GNOME irá recordar o estado da luz de NumLock entre as sessões.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Nome de Ficheiro de Campainha de Teclado Personalizada">
+								<longdesc>Nome do ficheiro do som de campainha a ser reproduzido.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>valores possíveis são &quot;on&quot;, &quot;off&quot;, and &quot;custom&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="indicator">
+							<entry name="enabledPlugins">
+								<local_schema short_desc="A lista de plugins de Indicador de Teclado activos">
+									<longdesc>A lista de plugins de Indicador de Teclado activos</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="backgroundColor">
+								<local_schema short_desc="A cor de fundo">
+									<longdesc>A cor de fundo do indicador de disposição</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="foregroundColor">
+								<local_schema short_desc="A cor de primeiro plano">
+									<longdesc>A cor de primeiro plano para o indicador de disposição</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="fontSize">
+								<local_schema short_desc="O tamanho da fonte">
+									<longdesc>O tamanho da fonte para o indicador de disposição</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="fontFamily">
+								<local_schema short_desc="A família de fonte">
+									<longdesc>A família de fonta para o indicador de disposição</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="showFlags">
+								<local_schema short_desc="Apresentar as bandeiras na applet">
+									<longdesc>Apresentar as bandeiras na applet para indicar a disposição actual</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="secondary">
+								<local_schema short_desc="Grupos secundários">
+									<longdesc>Grupos secundários</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="preview">
+							<entry name="height">
+								<local_schema short_desc="A Antevisão de Teclado, altura">
+									<longdesc>A Antevisão de Teclado, altura</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="width">
+								<local_schema short_desc="A Antevisão de Teclado, largura">
+									<longdesc>A Antevisão de Teclado, largura</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="y">
+								<local_schema short_desc="A Antevisão de Teclado, deslocamento Y">
+									<longdesc>A Antevisão de Teclado, deslocamento Y</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="x">
+								<local_schema short_desc="A Antevisão de Teclado, deslocamento X">
+									<longdesc>A Antevisão de Teclado, deslocamento X</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="general">
+							<entry name="disable_sysconfig_changed_warning">
+								<local_schema short_desc="Suprimir a mensagem de aviso &quot;sysconfig do X alterada&quot;">
+									<longdesc>Suprimir a mensagem de aviso &quot;sysconfig do X alterada&quot;</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="loadExtraItems">
+								<local_schema short_desc="Ler itens de configuração extra">
+									<longdesc>Ler disposições e opções exóticas e raramente utilizadas</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layoutNamesAsGroupNames">
+								<local_schema short_desc="Apresentar nomes de disposições em vez de nomes de grupos">
+									<longdesc>Apresentar nomes de disposições em vez de nomes de grupos (apenas para versões do XFree que suportem múltiplas disposições)</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="handleIndicators">
+								<local_schema short_desc="Gravar/repor indicadores juntamente com grupos de disposições">
+									<longdesc>Gravar/repor indicadores juntamente com grupos de disposições</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="groupPerWindow">
+								<local_schema short_desc="Manter e gerir grupos distintos por janela">
+									<longdesc>Manter e gerir grupos distintos por janela</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="defaultGroup">
+								<local_schema short_desc="Grupo por omissão, atribuido ao criar a janela">
+									<longdesc>Grupo por omissão, atribuido ao criar a janela</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="known_file_list">
+								<local_schema short_desc="lista de ficheiros modmap">
+									<longdesc>Uma lista de ficheiros modmap disponíveis no directório $HOME.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="update_handlers">
+								<local_schema short_desc="Manipuladores de Actualização do Teclado">
+									<longdesc>Uma colecção de scripts a executar sempre que o estado do teclado é relido. Útil para reaplicar ajustamentos baseados no xmodmap</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="kbd">
+							<entry name="options">
+								<local_schema short_desc="Opções de teclado">
+									<longdesc>Opções de teclado</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layouts">
+								<local_schema short_desc="Disposição de teclado">
+									<longdesc>Disposição do teclado</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="model">
+								<local_schema short_desc="Modelo do teclado">
+									<longdesc>Modelo do teclado</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="rotate">
+						<local_schema short_desc="Rodar em painéis verticais">
+							<longdesc>Se verdadeiro, a animação do peixe será apresentada rodada em painéis verticais.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed">
+						<local_schema short_desc="Pausa por imagem">
+							<longdesc>Esta chave especifica o número de segundos que cada imagem será apresentada.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="frames">
+						<local_schema short_desc="Imagens na animação do peixe">
+							<longdesc>Esta chave especifica o número de imagens que serão apresentadas na animação do peixe.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Comando a executar ao clicar">
+							<longdesc>Esta chave especifica o comando que se tentará executar ao clicar no peixe.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="image">
+						<local_schema short_desc="A imagem de animação do peixe">
+							<longdesc>Esta chave especifica o nome de ficheiro da imagem que será utilizada para a animação apresentada na applet de peixe, relativamente ao directório de imagens.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="O nome do peixe">
+							<longdesc>Um peixe sem nome é um peixe muito monótono. Reanime o seu peixe dando-lhe um nome.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="Tamanho máximo da lista de janelas">
+							<longdesc>A utilização desta chave foi tornada obsoleta no GNOME 2.20. O esquema é mantido para compatibilidade com versões anteriores.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="Tamanho mínimo da lista de janelas">
+							<longdesc>A utilização desta chave foi tornada obsoleta no GNOME 2.20. O esquema é mantido para compatibilidade com versões anteriores.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_unminimized_windows">
+						<local_schema short_desc="Mover janelas para a área actual, ao restaurar">
+							<longdesc>Se verdadeiro, ao restaurar uma janela, será trazida para a área actual. Caso contrário, utilizador irá para a área de trabalho da janela.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="group_windows">
+						<local_schema short_desc="Quando agrupar janelas">
+							<longdesc>Decide quando agrupar janelas da mesma aplicação na lista de janelas. Valores válidos são &quot;never&quot;, &quot;auto&quot; e &quot;always&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Apresentar janelas de todas as áreas">
+							<longdesc>Se verdadeiro, a lista de janelas apresentará janelas de todas as áreas, caso contrário apenas as janelas da área de trabalho actual.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="Velocidade da animação">
+							<longdesc>A velocidade a que devem ocorrer as animações de painel. Valores possíveis são &quot;slow&quot;, &quot;medium&quot; e &quot;fast&quot;. Esta chave apenas é relevante se a chave enable_animations for verdadeira.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide_size">
+						<local_schema short_desc="Pixels visíveis quando escondido">
+							<longdesc>Especifica o número de pixels visíveis quando o painel está automaticamente escondido num canto. Esta chave apenas é relevante se a chave auto_hide for verdadeira.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unhide_delay">
+						<local_schema short_desc="Atraso ao apresentar automaticamente">
+							<longdesc>Especifica o número de milisegundos de atraso após o ponteiro entrar na área do painel antes de este reaparecer automaticamente. Esta chave apenas é relevante se a chave auto_hide for verdadeira.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hide_delay">
+						<local_schema short_desc="Atraso ao esconder automaticamente">
+							<longdesc>Especifica o número de milisegndos de atraso após o ponteiro sair da área do painel antes de este se esconder automaticamente. Esta chave apenas é relevante se a chave auto_hide for verdadeira.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_arrows">
+						<local_schema short_desc="Activar setas nos botões de esconder">
+							<longdesc>Se verdadeiro, serão colocadas setas nos botões de esconder. Esta chave apenas tem significado se a chave enable_buttons for verdadeira.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="Activar botões de esconder">
+							<longdesc>Se verdadeiro, serão colocados botões de cada lado do painel que podem ser utilizados para mover o painel para a margem do ecrã, deixando apenas o botão visível.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Activar animações">
+							<longdesc>Se verdadeiro, esconder e apresentar este painel será animado em vez de acontecer instantaneamente.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide">
+						<local_schema short_desc="Esconder automaticamente o painel no canto">
+							<longdesc>Se verdadeiro, quando o ponteiro deixa a área do painel, este esconde-se automaticamente num canto do ecrã. Mover o ponteiro para esse canto irá fazer com que o painel reapareça.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_centered">
+						<local_schema short_desc="Centrar o painel no eixo-y">
+							<longdesc>Se verdadeiro, as chaves y e y_bottom são ignoradas e o painel é colocado no centro do eixo-y do ecrã. Se o painel for redimensionado será mantido nessa posição - isto é, o painel irá crescer para ambos os lados. Se falso, as chaves y e y_bottom determinam a localização do painel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_centered">
+						<local_schema short_desc="Centrar o painel no eixo-x">
+							<longdesc>Se verdadeiro, as chaves x e x_right são ignoradas e o painel é colocado no centro do eixo-x do ecrã. Se o painel for redimensionado será mantido nessa posição - isto é, o painel irá crescer para ambos os lados. Se falso, as chaves x e x_right determinam a localização do painel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_bottom">
+						<local_schema short_desc="A coordenada y do painel, a começar do fundo do ecrã">
+							<longdesc>A localização do painel ao longo do eixo-y, a começar no fundo do ecrã. Se definido como -1, o valor é ignorado e o valor da chave y será utilizado. Se o valor for maior do que 0, então o valor da chave y será ignorado. Esta chave apenas é relevante em modo não-expandido. Em modo expandido esta chave é ignorada e o painel é colocado na margem do ecrã indicada pela chave de orientação.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_right">
+						<local_schema short_desc="A coordenada x do painel, a começar do lado direito do ecrã">
+							<longdesc>A localização do painel ao longo do eixo-x, a começar no lado direito do ecrã. Se definido como -1, o valor é ignorado e o valor da chave x será utilizado. Se o valor for maior do que 0, então o valor da chave x será ignorado. Esta chave apenas é relevante em modo não-expandido. Em modo expandido esta chave é ignorada e o painel é colocado na margem do ecrã especificada pela chave de orientação.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y">
+						<local_schema short_desc="A coordenada Y do painel">
+							<longdesc>A localização do painel ao longo do eixo-y. Esta chave apenas é relevante em modo não-expandido. Em modo expandido esta chave é ignorada e o painel é colocado na margem do ecrã indicada pela chave de orientação.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x">
+						<local_schema short_desc="A coordenada X do painel">
+							<longdesc>A localização do painel ao longo do eixo-x. Esta chave apenas é relevante em modo não-expandido. Em modo expandido esta chave é ignorada e o painel é colocado na margem do ecrã especificada pela chave de orientação.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="Tamanho do painel">
+							<longdesc>A altura (largura para painel vertical) do painel. O painel irá determinar, durante a execução, um tamanho mínimo baseado no tamanho da fonte e outros indicadores. O tamanho máximo é fixado a um quarto da altura (ou largura) do ecrã.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="Orientação do painel">
+							<longdesc>A orientação do painel. Existem quatro valores possíveis; &quot;top&quot;, &quot;bottom&quot;, &quot;left&quot;, &quot;right&quot;. Em modo expandido a chave especifica em que margem de ecrã o painel está. Em modo não-expandido a diferença entre &quot;top&quot; e &quot;bottom&quot; é menos importante - ambas indicam que este é um painel horizontal - mas ainda dão uma dica útil sobre como alguns objectos de painel se devem comportar. Por exemplo, num painel &quot;top&quot; um botão de menu irá apresentar o seu menu abaixo do painel, e num painel &quot;bottom&quot; o menu será apresentado acima do painel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand">
+						<local_schema short_desc="Expandir para ocupar a largura completa do ecrã">
+							<longdesc>Se verdadeiro, o painel irá ocupar toda a largura do ecrã (altura se for um painel vertical). Neste modo, o painel apenas pode ser colocado na margem do ecrã. Se falso, o painel apenas será largo o suficiente para acomodar as applets, iniciadores e botões.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monitor">
+						<local_schema short_desc="O monitor Xinerama em que o painel se encontra">
+							<longdesc>Numa configuração Xinerama, poderá ter painéis em cada monitor individual. Esta chave identifica o monitor actual em que o painel é apresentado.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screen">
+						<local_schema short_desc="O ecrã X em que o painel se encontra">
+							<longdesc>Com uma configuração de múltiplo-ecrã, pode ter painéis em cada ecrã individual. Esta chave identifica o ecrã actual em que o painel é apresentado.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Nome para identificar o painel">
+							<longdesc>Este é um nome legível que pode utilizar para identificar um painel. O seu propósito principal é o de servir como o título de janela do painel que é util ao navegar entre painéis.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="Rodar a imagem em painéis verticais">
+								<longdesc>Se verdadeiro, a imagem de fundo será rodada quando o painel tem orientação vertical.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stretch">
+							<local_schema short_desc="Esticar a imagem para o painel">
+								<longdesc>Se verdadeiro, a imagem será dimensionada para o painel. O rácio de aspecto da imagem não será mantido.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="Dimensionar a imagem ao painel">
+								<longdesc>Se verdadeiro, a imagem será dimensionada (mantendo o rácio de aspecto da imagem) à altura do painel (se horizontal).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="Imagem de fundo">
+								<longdesc>Especifica o ficheiro a ser utilizado para a imagem de fundo. Se a imagem contiver um canal alfa será composta sobre a imagem de fundo do ambiente.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="Opacidade da cor do fundo">
+								<longdesc>Especifica a opacidade do formato de cor de fundo. Se a cor não for completamente opaca (um valor menor do que 65535), a cor será composta sobre a imagem de fundo do ambiente.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="Cor do fundo">
+								<longdesc>Especifica a cor de fundo para o painel no formato #RGB.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="Tipo de fundo">
+								<longdesc>Que tipo de fundo deve ser utilizado para este painel. Valores possíveis são &quot;gtk&quot; - será utilizado o widget GTK+ de fundo por omissão, &quot;color&quot; - a chave de cor será utilizada como cor de fundo ou &quot;image&quot; - a imagem especificada pela chave de imagem será utilizada como fundo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="general">
+					<entry name="profiles_migrated">
+						<local_schema short_desc="Configuração dos perfis antigos migrada">
+							<longdesc>Um parâmetro boleano que indica se a configuração anterior do utilizador em /apps/panel/profiles/default foi ou não copiada para a nova localização em /apps/panel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_id_list">
+						<local_schema short_desc="Lista de ID de objectos de painel">
+							<longdesc>Uma lista de IDs de objectos de painel. Cada ID identifica um objecto individual de painel (por ex: um iniciador, botão de acção ou botão/barra de menu). As definições de cada um destes objectos estão armazenadas em /apps/panel/objects/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_id_list">
+						<local_schema short_desc="Lista de ID de applets de painel">
+							<longdesc>Uma lista de IDs de applet de painel. Cada ID identifica uma applet individual de painel. As definições de cada uma destas applets estão armazenadas em /apps/panel/applets/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id_list">
+						<local_schema short_desc="Lista de ID de painel">
+							<longdesc>Uma lista de IDs de painel. Cada ID identifica um painel individual de nível de topo. As definições de cada um destes painéis estão armazenadas em /apps/panel/toplevels/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_autocompletion">
+						<local_schema short_desc="Activar o completar automaticamente no diálogo &quot;Executar Aplicação&quot;">
+							<longdesc>Se verdadeiro, estará disponível o completar automaticamente no diálogo de &quot;Executar Aplicação&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_program_list">
+						<local_schema short_desc="Expandir a listagem de aplicações no diálogo &quot;Executar Aplicação&quot;">
+							<longdesc>Se verdadeiro, a listagem de &quot;Aplicações Conhecidas&quot; no diálogo de &quot;Executar Aplicação&quot; é expandida ao abrir o diálogo. Esta chave apenas é relevante se a chave enable_program_list for verdadeira.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_program_list">
+						<local_schema short_desc="Activar a listagem de aplicações no diálogo &quot;Executar Aplicação&quot;">
+							<longdesc>Se verdadeiro, é disponibilizada a listagem de &quot;Aplicações Conhecidas&quot; no diálogo de &quot;Executar Aplicação&quot;. Se a lista é ou não expandida quando o diálogo é apresentado é controlado pela chave show_program_list.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global">
+					<entry name="disable_force_quit">
+						<local_schema short_desc="Desactivar a Saída Forçada">
+							<longdesc>Se verdadeiro, o painel não permitirá que um utilizador force uma aplicação a terminar removendo o acesso ao botão de forçar a saída.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_log_out">
+						<local_schema short_desc="Desactivar o Terminar Sessão">
+							<longdesc>Se verdadeiro, o painel não permitirá que um utilizador termine uma sessão removendo o acesso de menu às entradas de terminar sessão.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Obsoleto">
+							<longdesc>Esta chave é obsoleta já que não pode ser utilizada para implementar correctamente o trancar. Deverá antes ser utilizada a chave /desktop/gnome/lockdown/disable_lock_screen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disabled_applets">
+						<local_schema short_desc="IIDs de applets a desactivar a leitura">
+							<longdesc>Uma lista de IIDs de applet que o painel irá ignorar. Desta forma poderá desactivar a leitura de certas applets ou a apresentação de menus. Por exemplo, para desactivar a applet mini-commander adicione &apos;OAFIID:GNOME_MiniCommanderApplet&apos; a esta lista. O painel terá de ser reiniciado para que esta alteração tenha efeito.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked_down">
+						<local_schema short_desc="Trancar completamente o painel">
+							<longdesc>Se verdadeiro, o painel não permitirá quaisquer alterações à configuração do painel. No entanto applets individuais poderão ter de ser trancadas separadamente. O painel terá de ser reiniciado para que esta alteração tenha efeito.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="highlight_launchers_on_mouseover">
+						<local_schema short_desc="Realçar iniciadores quando rato estiver sobre estes">
+							<longdesc>Se verdadeiro, um iniciador é realçado quando o utilizador move o ponteiro do rato sobre este.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_panel_remove">
+						<local_schema short_desc="Confirmar a remoção de painel">
+							<longdesc>Se verdadeiro, é apresentado um diálogo a pedir a confirmação do utilizador para remover um painel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="drawer_autoclose">
+						<local_schema short_desc="Fechar a gaveta automaticamente">
+							<longdesc>Se verdadeiro, uma gaveta fechar-se-á automaticamente quando o utilizador clicar num iniciador contido nesta.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="window_screenshot_key">
+						<local_schema short_desc="Obsoleto">
+						</local_schema>
+					</entry>
+					<entry name="screenshot_key">
+						<local_schema short_desc="Obsoleto">
+						</local_schema>
+					</entry>
+					<entry name="run_key">
+						<local_schema short_desc="Obsoleto">
+						</local_schema>
+					</entry>
+					<entry name="menu_key">
+						<local_schema short_desc="Obsoleto">
+						</local_schema>
+					</entry>
+					<entry name="enable_key_bindings">
+						<local_schema short_desc="Obsoleto">
+						</local_schema>
+					</entry>
+					<entry name="panel_hide_delay">
+						<local_schema short_desc="Obsoleto">
+						</local_schema>
+					</entry>
+					<entry name="panel_animation_speed">
+						<local_schema short_desc="Obsoleto">
+						</local_schema>
+					</entry>
+					<entry name="panel_show_delay">
+						<local_schema short_desc="Obsoleto">
+						</local_schema>
+					</entry>
+					<entry name="panel_minimized_size">
+						<local_schema short_desc="Obsoleto">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Activar animações">
+						</local_schema>
+					</entry>
+					<entry name="keep_menus_in_memory">
+						<local_schema short_desc="Obsoleto">
+						</local_schema>
+					</entry>
+					<entry name="tooltips_enabled">
+						<local_schema short_desc="Activar dicas">
+							<longdesc>Se verdadeiro, são apresentadas as dicas para objectos em painéis.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="objects">
+					<entry name="action_type">
+						<local_schema short_desc="Tipo de botão de acção">
+							<longdesc>O tipo de acção que este botão representa. Valores possíveis são &quot;lock&quot;, &quot;logout&quot;, &quot;run&quot;, &quot;search&quot; e &quot;screenshot&quot;. Esta chave apenas é relevante se o object_type for &quot;action-applet&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="launcher_location">
+						<local_schema short_desc="Localização do iniciador">
+							<longdesc>A localização do ficheiro .desktop que descreve este iniciador. Esta chave apenas é relevante se o object_type for &quot;launcher-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menu_path">
+						<local_schema short_desc="Caminho do conteúdo de menu">
+							<longdesc>O caminho a partir do qual é construido o conteúdo dos menus. Esta chave apenas é relevante se a chave use_menu_path for verdadeira e a chave object_type for &quot;menu-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_menu_path">
+						<local_schema short_desc="Utilizar caminho personalizado para o conteúdo dos menus">
+							<longdesc>Se verdadeiro, a chave menu_path é utilizada como o caminho a partir do qual deve ser construido o conteúdo dos menus. Se falso, a chave menu_path é ignorada. Esta chave apenas é relevante se object_type for &quot;menu-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_icon">
+						<local_schema short_desc="Ícone utilizado para o botão de objecto">
+							<longdesc>A localização do ficheiro de imagem utilizado como ícone para o botão do objecto. Esta chave apenas é relevante se o object_type for &quot;drawer-object&quot; ou &quot;menu-object&quot; e a chave use_custom_icon for verdadeira.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_icon">
+						<local_schema short_desc="Utilizar ícone personalizado para botão de objecto">
+							<longdesc>Se verdadeiro, a chave custom_icon é utilizada como o ícone personalizado para o botão. Se falso, a chave custom_icon é ignorada. Esta chave apenas é relevante se a chave object_type for &quot;menu-object&quot; ou &quot;drawer-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="tooltip">
+						<local_schema short_desc="Dica apresentada para a gaveta ou menu">
+							<longdesc>O texto a apresentar numa dica para esta gaveta. Esta chave apenas é relevante se o object_type for &quot;drawer-object&quot; ou &quot;menu-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="attached_toplevel_id">
+						<local_schema short_desc="Painel anexo a gaveta">
+							<longdesc>O identificador do painel anexo a esta gaveta. Esta chave apenas é relevante se o object_type for &quot;drawer-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_iid">
+						<local_schema short_desc="IID da Applet">
+						</local_schema>
+					</entry>
+					<entry name="bonobo_iid">
+						<local_schema short_desc="IID de Applet Bonobo">
+							<longdesc>Esta chave está obsoleta devido à migração para uma nova biblioteca para as applets. O ID de implementação Bonobo da applet - por ex. &quot;OAFIID:GNOME_ClockApplet&quot;. Esta chave apenas é relevante se a chave object_type for &quot;bonobo-applet&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked">
+						<local_schema short_desc="Trancar o objecto no painel">
+							<longdesc>Se verdadeiro, o utilizador não poderá mover a applet sem primeiro destrancar o objecto utilizando o item de menu &quot;Destrancar&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="panel_right_stick">
+						<local_schema short_desc="Interpretar a posição relativamente à margem inferior/direita">
+							<longdesc>Se verdadeiro, a posição do objecto é interpretada relativamente à margem direita (ou inferior, se vertical) do painel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="position">
+						<local_schema short_desc="A posição do objecto no painel">
+							<longdesc>A posição deste objecto de painel. A posição é especificada pelo número de pixels a partir da margem esquerda (ou superior, se vertical) do painel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id">
+						<local_schema short_desc="Painel de nível de topo que contém objecto">
+							<longdesc>O identificador do painel de nível de topo que contém este objecto.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_type">
+						<local_schema short_desc="Tipo de objecto do painel">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="Linhas no alternador de áreas">
+							<longdesc>Esta chave especifica em quantas linhas (para disposição horizontal) ou colunas (para disposição vertical) o alternador de áreas os apresenta. Esta chave apenas é relevante se a chave display_all_workspaces for verdadeira.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Apresentar todas as áreas">
+							<longdesc>Se verdadeiro, o alternador de áreas apresentará todas as áreas. Caso contrário apenas a área de trabalho actual.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="Apresentar nomes das áreas">
+							<longdesc>Se verdadeiro, as áreas no alternador de áreas de trabalho apresentarão os seus nomes. Caso contrário apresentarão as janelas na área. Esta definição apenas funciona quando o gestor de janelas é o Metacity.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="speed_unit">
+						<local_schema short_desc="Unidade de velocidade">
+							<longdesc>A unidade a utilizar ao apresentar a velocidade do vento.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="Unidade de temperatura">
+							<longdesc>A unidade a utilizar ao apresentar a temperatura.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cities">
+						<local_schema short_desc="Lista de localizações">
+							<longdesc>Uma lista de localizações a apresentar na janela de calendário.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="internet_time">
+						<local_schema short_desc="Utilizar a hora Internet">
+							<longdesc>A utilização desta chave foi tornada obsoleta no GNOME 2.6 em favor da chave &apos;format&apos;. O esquema é mantido para compatibilidade com versões anteriores.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="Utilizar a hora UNIX">
+							<longdesc>A utilização desta chave foi tornada obsoleta no GNOME 2.6 em favor da chave &apos;format&apos;. O esquema é mantido para compatibilidade com versões anteriores.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="Formato de hora">
+							<longdesc>A utilização desta chave foi tornada obsoleta no GNOME 2.6 em favor da chave &apos;format&apos;. O esquema é mantido para compatibilidade com versões anteriores.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_locations">
+						<local_schema short_desc="Expandir a lista de localizações">
+							<longdesc>Se verdadeiro, expandir a lista de localizações na janela de calendário.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_weather">
+						<local_schema short_desc="Expandir a lista de informação meteorológica">
+							<longdesc>Se verdadeiro, expandir a lista de informação meteorológica na janela de calendário.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_tasks">
+						<local_schema short_desc="Expandir a lista de tarefas">
+							<longdesc>Se verdadeiro, expandir a lista de tarefas na janela de calendário.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_birthdays">
+						<local_schema short_desc="Expandir a lista de aniversários">
+							<longdesc>Se verdadeiro, expandir a lista de aniversários na janela de calendário.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_appointments">
+						<local_schema short_desc="Expandir a lista de compromissos">
+							<longdesc>Se verdadeiro, expandir a lista de compromissos na janela de calendário.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="Apresentar os números das semanas no calendário">
+							<longdesc>Se verdadeiro, apresentar os números das semanas no calendário.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="Ferramenta de configuração de horas">
+							<longdesc>A utilização desta chave foi tornada obsoleta no GNOME 2.22 pela utilização de uma ferramenta interna de configuração da hora. O esquema é mantido para compatibilidade com versões anteriores.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="Utilizar UTC">
+							<longdesc>A utilização desta chave foi tornada obsoleta no GNOME 2.28 em favor da utilização de fuso-horários. O esquema é mantido para compatibilidade com versões anteriores.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_temperature">
+						<local_schema short_desc="Apresentar a temperatura no relógio">
+							<longdesc>Se verdadeiro, apresentar a temperatura ao lado do ícone de meteorologia.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_weather">
+						<local_schema short_desc="Apresentar a meteorologia no relógio">
+							<longdesc>Se verdadeiro, apresentar um ícone de meteorologia.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema short_desc="Apresentar data na dica">
+							<longdesc>Se verdadeiro, apresentar a data numa dica quando o rato está sobre o relógio.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="Apresentar data no relógio">
+							<longdesc>Se verdadeiro, além da hora apresentar a data no relógio.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="Apresentar hora com segundos">
+							<longdesc>Se verdadeiro, apresentar os segundos nas horas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="Formato personalizado do relógio">
+							<longdesc>Esta chave especifica o formato utilizado pela applet de relógio quando a chave de formato está definida como &quot;custom&quot;. Pode utilizar especificadores de conversão válidos para o strftime() para obter um formato específico. Consulte o manual do strftime() para mais informações.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="Formato de hora">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gweather">
+				<dir name="prefs">
+					<entry name="radar">
+						<local_schema short_desc="Url para o mapa de radar">
+							<longdesc>O url personalizado de onde obter o mapa de radar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_radar_url">
+						<local_schema short_desc="Utilizar url personalizado para o mapa de radar">
+							<longdesc>Se verdadeiro, obter um mapa de radar da localização especificada pela chave &quot;radar&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="coordinates">
+						<local_schema short_desc="Coordenadas da localização">
+						</local_schema>
+					</entry>
+					<entry name="location4">
+						<local_schema short_desc="Previsão metereológica para uma cidade">
+						</local_schema>
+					</entry>
+					<entry name="location3">
+						<local_schema short_desc="Localização do radar">
+						</local_schema>
+					</entry>
+					<entry name="location2">
+						<local_schema short_desc="Localização de zona">
+						</local_schema>
+					</entry>
+					<entry name="location1">
+						<local_schema short_desc="Cidade mais próxima">
+						</local_schema>
+					</entry>
+					<entry name="location0">
+						<local_schema short_desc="Informação de localização metereológica">
+						</local_schema>
+					</entry>
+					<entry name="enable_radar_map">
+						<local_schema short_desc="Apresentar mapa de radar">
+							<longdesc>Obter um mapa de radar a cada actualização.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_detailed_forecast">
+						<local_schema short_desc="Obsoleto">
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="Unidade de temperatura">
+							<longdesc>A unidade de temperatura a utilizar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed_unit">
+						<local_schema short_desc="Unidade de velocidade">
+							<longdesc>A unidade de velocidade do vento a utilizar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pressure_unit">
+						<local_schema short_desc="Unidade de pressão">
+							<longdesc>A unidade de pressão atmosférica a utilizar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="distance_unit">
+						<local_schema short_desc="Unidade de distância">
+							<longdesc>A unidade de visibilidade a utilizar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_metric">
+						<local_schema short_desc="Utilizar o sistema métrico">
+							<longdesc>Utilizar o sistema métrico em vez das unidades inglesas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update_interval">
+						<local_schema short_desc="Intervalo de actualização">
+							<longdesc>O intervalo, em segundos, entre actualizações automáticas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update">
+						<local_schema short_desc="Actualizar os dados automaticamente">
+							<longdesc>Determina se a applet actualiza ou não automaticamente as suas estatísticas de metereologia.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="control-center">
+				<entry name="cc_exit_shell_on_action_upgrade_uninstall">
+					<local_schema short_desc="Sair da consola ao realizar acção de actualização ou desinstalação">
+						<longdesc>Indica se fechar ou não a consola quando é realizada uma acção de actualização ou desinstalação.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_add_remove">
+					<local_schema short_desc="Sair da consola ao realizar acção de adicionar ou remover">
+						<longdesc>Indica se fechar ou não a consola quando é realizada uma acção de adicionar ou remover.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_help">
+					<local_schema short_desc="Sair da consola ao realizar acção de ajuda">
+						<longdesc>Indica se fechar ou não a consola quando é realizada uma acção de ajuda.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_start">
+					<local_schema short_desc="Sair da consola ao realizar acção de iniciar">
+						<longdesc>Indica se fechar ou não a consola quando é realizada uma acção de iniciar.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_static_action">
+					<local_schema short_desc="echar o control-center ao activar uma tarefa">
+						<longdesc>se verdadeiro, o control-center será fechado ao activar uma &quot;Tarefa Comum&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_actions_list">
+					<local_schema short_desc="Nomes das tarefas e ficheiros .desktop associados">
+					</local_schema>
+				</entry>
+				<dir name="network">
+					<entry name="current_location">
+						<local_schema short_desc="Localização de rede actual">
+							<longdesc>Defina esta chave para o nome da sua localização actual. É utilizada para determina a configuração adequada de proxy de rede.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="appearance">
+					<entry name="more_themes_url">
+						<local_schema short_desc="URL de mais temas">
+							<longdesc>URL de onde obter mais temas para a área de trabalho. Se definida como uma expressão vazia, não será apresentado o link.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="more_backgrounds_url">
+						<local_schema short_desc="URL de mais imagens de fundo">
+							<longdesc>URL de onde obter mais fundos para a área de trabalho. Se definida como uma expressão vazia, não será apresentado o link.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="Limite das Reticências no Texto">
+							<longdesc>Um inteiro que especifica como partes de um nome de ficheiro demasiado extenso devem ser substituídas por reticências na área de trabalho. Se o número for maior do que 0, o nome do ficheiro não excederá o número de linhas indicado. Se o número for 0 ou inferior, nenhum limite será imposto sobre o número de linhas apresentadas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_name">
+						<local_schema short_desc="Nome do ícone de servidores de rede">
+							<longdesc>Este nome pode ser definido caso deseje um nome personalizado para o ícone servidores de rede na área de trabalho.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_name">
+						<local_schema short_desc="Nome do ícone de área de trabalho para o lixo">
+							<longdesc>Este nome pode ser definido caso deseje um nome personalizado para o ícone de lixo na área de trabalho.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="Nome do ícone de área de trabalho para a pasta pessoal">
+							<longdesc>Este nome pode ser definido caso deseje um nome personalizado para o ícone de pasta pessoal na área de trabalho.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="Nome do ícone de área de trabalho para o computador">
+							<longdesc>Este nome pode ser definido caso deseje um nome personalizado para o ícone de computador na área de trabalho.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="Ícone de Servidores na Rede visível na área de trabalho">
+							<longdesc>Se definido como verdadeiro, será colocado na área de trabalho um ícone a apontar a vista de Servidores da Rede.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volumes_visible">
+						<local_schema short_desc="Apresentar as unidades montadas na área de trabalho">
+							<longdesc>Se definido como verdadeiro, serão colocados na área de trabalho ícones que apontam para as unidades montadas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="Ícone de lixo visível na área de trabalho">
+							<longdesc>Se definido como verdadeiro, será colocado na área de trabalho um ícone a apontar para o lixo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="Ícone de computador visível na área de trabalho">
+							<longdesc>Se definido como verdadeiro, será colocado na área de trabalho um ícone a apontar para o computador.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="Ícone de pasta pessoal visível na área de trabalho">
+							<longdesc>Se definido como verdadeiro, será colocado na área de trabalho um ícone a apontar para a pasta pessoal do utilizador.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema short_desc="Apenas apresentar pastas na árvore do painel lateral">
+								<longdesc>Se definido como verdadeiro, o Nautilus apenas apresentará pastas no painel lateral de árvore. Caso contrário apresentará pastas e ficheiros.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="Ordenação por omissão na vista de lista">
+							<longdesc>Ordenação por omissão na vista de lista.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="Lista por omissão de colunas visíveis na vista de lista">
+							<longdesc>Lista por omissão de colunas visíveis na vista de lista.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Nível de zoom de lista por omissão">
+							<longdesc>Nível de zomm por omissão utilizado na vista de lista.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Inverter ordenação nas novas janelas">
+							<longdesc>Se verdadeiro, os ficheiros nas novas janelas serão ordenados inversamente. Isto é, se ordenados por nome, em vez de ordenados de &quot;a&quot; a &quot;z&quot;, serão ordenados de &quot;z&quot; a &quot;a&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Ordenação por omissão">
+							<longdesc>A ordenação por omissão para itens na vista em lista. Valores possíveis são &quot;name&quot;, &quot;size&quot;, &quot;type&quot;, e &quot;modification_date&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="compact_view">
+					<entry name="all_columns_have_same_width">
+						<local_schema short_desc="Todas as colunas têm a mesma largura">
+							<longdesc>Se esta preferência estiver definida, todas as colunas na vista compacta têm a mesma largura. Caso contrário, a largura de cada coluna é determinada individualmente.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Nível de zoom por omissão da vista compacta">
+							<longdesc>Nível de zoom por omissão utilizado na vista compacta.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="Limite das Reticências no Texto">
+							<longdesc>Uma expressão que especifica como partes de um nome de ficheiro demasiado extenso deverá ser substituído por reticências, dependendo do nível de zoom. Cada uma das entradas da lista está no formato &quot;Nível de Zoom:Inteiro&quot;. Para cada nível de zoom especificado, se o inteiro indicado for maior do que 0, o nome do ficheiro não excederá o número indicado de linhas. Se o inteiro for 0 ou inferior, não é imposto nenhum limite no nível de zoom especificado. Uma entrada por omissão no formato &quot;Inteiro&quot; sem qualquer nível de zoom especificado é também permitido. Define o número máximo de linhas para todos os outros níveis de zoom. Exemplos: 0 - apresentar sempre nomes de ficheiros extensos; 3 - abreviar nomes de ficheiros se excederem três linhas; smallest:5,smaller:4,0 - abreviar os nomes dos ficheiros se excederem cinco linhas no nível de zoom &quot;smallest&quot;. Abreviar os nomes dos ficheiros se excederem quatro linhas no nível de zoom &quot;smaller&quot;. Não abreviar os nomes dos ficheiros nos restantes níveis de zoom. Níveis de zoom disponíveis: &quot;smallest&quot; (33%), &quot;smaller&quot; (50%), &quot;small&quot; (66%), &quot;standard&quot; (100%), &quot;large&quot; (150%), &quot;larger&quot; (200%), &quot;largest&quot; (400%)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_size">
+						<local_schema short_desc="Tamanho de Ícones de Amostra por Omissão">
+							<longdesc>O tamanho por omissão do ícone de uma amostra na vista de ícones.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Nível de zoom de ícones por omissão">
+							<longdesc>Nível de zoom por omissão utilizado na vista de ícones.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_manual_layout">
+						<local_schema short_desc="Utilizar disposição manual nas novas janelas">
+							<longdesc>Se verdadeiro, por omissão as novas janelas utilizarão disposição manual.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="labels_beside_icons">
+						<local_schema short_desc="Colocar etiquetas ao lado dos ícones">
+							<longdesc>Se verdadeiro, serão colocadas etiquetas ao lado dos ícones em vez de por baixo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_tighter_layout">
+						<local_schema short_desc="Utilizar disposição mais apertada nas novas janelas">
+							<longdesc>Se verdadeiro, por omissão os ícones serão dispostos mais juntos nas novas janelas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Inverter ordenação nas novas janelas">
+							<longdesc>Se verdadeiro, os ficheiros nas novas janelas serão ordenados inversamente. Isto é, se ordenados por nome, em vez de ordenados de &quot;a&quot; a &quot;z&quot;, serão ordenados de &quot;z&quot; a &quot;a&quot;; se ordenados por tamanho, em vez de incrementalmente serão ordenados decrementalmente.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Ordenação por omissão">
+							<longdesc>A ordenação por omissão para itens na vista de ícones. Valores possíveis são &quot;name&quot;, &quot;size&quot;, &quot;type&quot;, &quot;modification_date&quot; e &quot;emblems&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="captions">
+						<local_schema short_desc="Lista de legendas possíveis nos ícones">
+							<longdesc>Uma lista de legendas de um ícone na vista de ícones e na área de trabalho. O número de legendas apresentadas depende do nível de zoom. Valores possíveis são: &quot;size&quot;, &quot;type&quot;, &quot;date_modified&quot;, &quot;date_changed&quot;, &quot;date_accessed&quot;, &quot;owner&quot;, &quot;group&quot;, &quot;permissions&quot;, &quot;octal_permissions&quot; and &quot;mime_type&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="Vista de painel lateral">
+							<longdesc>A vista de painel lateral a apresentar em novas janelas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="Apresentar painel lateral nas novas janelas">
+							<longdesc>Se definido como verdadeiro, novas janelas terão o painel lateral visível.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="Apresentar barra de estados nas novas janelas">
+							<longdesc>Se definido como verdadeiro, novas janelas terão a barra de estados visível.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="Apresentar barra de localização nas novas janelas">
+							<longdesc>Se definido como verdadeiro, novas janelas terão a barra de localização visível.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="Apresentar barra de ferramentas nas novas janelas">
+							<longdesc>Se definido como verdadeiro, novas janelas terão a barra de ferramentas visível.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="Largura do painel lateral">
+							<longdesc>A largura por omissão do painel lateral nas novas janelas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="Formato de Datas">
+							<longdesc>O formato das datas dos ficheiros. Valores possíveis são &quot;locale&quot;, &quot;iso&quot;, e &quot;informal&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="Vista de pasta por omissão">
+							<longdesc>Quando uma pasta é visitada este visualizador é utilizado excepto se tiver seleccionado outro visualizador para essa pasta específica. Valores possíveis são &quot;list_view&quot;, &quot;icon_view&quot; e &quot;compact_view&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="Nome de Ficheiro de Fundo por Omissão do Painel Lateral">
+							<longdesc>Nome de ficheiro para o fundo por omissão do painel lateral. Apenas utilizado se side_pane_background_set for verdadeiro.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="Cor de Fundo por Omissão do Painel Lateral">
+							<longdesc>Nome de ficheiro para o fundo por omissão do painel lateral. Apenas utilizado se side_pane_background_set for verdadeiro.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_set">
+						<local_schema short_desc="Fundo Personalizado Definido para o Painel Lateral">
+							<longdesc>Se foi definido um fundo de painel lateral por omissão personalizado.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="Nome de Ficheiro de Fundo por Omissão">
+							<longdesc>Nome do ficheiro para o fundo por omissão de directórios. Apenas utilizado se background_set for verdadeiro.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="Cor de Fundo por Omissão">
+							<longdesc>Cor por omissão do fundo das pastas. Apenas utilizado se background_set for verdadeiro.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema short_desc="Fundo Personalizado">
+							<longdesc>Se foi definido um fundo de directório por omissão personalizado.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search_bar_type">
+						<local_schema short_desc="Critério de procura para a barra de procura">
+							<longdesc>Critério ao coincidir ficheiros procurados na barra de procura. Se definido como &quot;search_by_text&quot;, o Nautilus irá Procurar ficheiros apenas por nome. Se definido como &quot;search_by_text_and_properties&quot;, o Nautilus irá procurar os ficheiros por nome e propriedades.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_is_home_dir">
+						<local_schema short_desc="Nautilus utiliza a pasta pessoal do utilizador como área de trabalho">
+							<longdesc>Se definido como verdadeiro, o Nautilus utilizará a pasta pessoal do utilizador como a sua área de trabalho. Se falso, utilizará ~/Desktop como a área de trabalho.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="Fonte de ambiente">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="Nautilus gere o desenho da área de trabalho">
+							<longdesc>Se definido como verdadeiro, o Nautilus desenhará ícones na área de trabalho.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="Apresentar primeiro pastas nas janelas">
+							<longdesc>Se definido como verdadeiro, o Nautilus apresenta as pastas antes de apresentar os ficheiros, nas vistas de lista e ícones.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_advanced_permissions">
+						<local_schema short_desc="Apresentar as permissões avançadas no diálogo de propriedades do ficheiro">
+							<longdesc>Se definido como verdadeiro, o Nautilus permitir-lhe-á editar e visualizar as permissões de ficheiros de uma forma mais tipo-unix, permitindo-lhe aceder a algumas opções mais esotéricas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="preview_sound">
+						<local_schema short_desc="Se antever sons ao mover o rato sobre um ícone">
+							<longdesc>Compromisso de velocidade na antevisão de ficheiros de som ao colocar o rato sobre o ícone de um ficheiro. Se &quot;always&quot; reproduzir sempre o som, mesmo se o ficheiro estiver num servidor remoto. Se &quot;local_only&quot; apenas reproduzir ficheiros locais. Se &quot;never&quot; não serão reproduzidos quaisquer sons.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="directory_limit">
+						<local_schema short_desc="Número máximo de ficheiros manipulados numa pasta">
+							<longdesc>Pastas acima deste tamanho serão truncadas para cerca deste tamanho. O objectivo desta opção é evitar que intencionalmente se encha a pilha e mate o Nautilus com pastas muito grandes. Um valor negativo indica sem limite. O limite é aproximado devido à leitura por blocos das pastas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_limit">
+						<local_schema short_desc="Tamanho máximo de imagem para amostragem">
+							<longdesc>Imagens de tamanho acima deste (em bytes) não serão amostradas. O objectivo desta definição é evitar amostrar imagens grandes que demoram muito tempo a ler ou ocupam muita memória.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_image_thumbnails">
+						<local_schema short_desc="Quando apresentar amostras de ficheiros de imagem">
+							<longdesc>Compromisso de velocidade ao antever ficheiros de imagem como amostras. Se &quot;always&quot; apresentar sempre a amostra, mesmo se o ficheiro estiver num servidor remoto. Se &quot;local_only&quot; apenas apresentar a amostra para ficheiros locais. Se &quot;never&quot; não serão criadas quaisquer amostras, sendo sempre utilizado um ícone genérico.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Tema actual do Nautilus (obsoleto)">
+							<longdesc>Nome do tema Nautilus a utilizar. Tornado obsoleto a partir do Nautilus 2.2. Utilize o tema de ícones.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_back_button">
+						<local_schema short_desc="Botão do rato para activar o comando &quot;Retroceder&quot; na janela de navegação">
+							<longdesc>Para utilizadores com ratos que têm botões &quot;Avançar&quot; e &quot;Retroceder&quot;, esta chave determina que botão activa o comando &quot;Retroceder&quot; numa janela de navegador. Valores possíveis estão no intervalo entre 6 e 14.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_forward_button">
+						<local_schema short_desc="Botão do rato para activar o comando &quot;Avançar&quot; na janela de navegação">
+							<longdesc>Para utilizadores com ratos que têm botões &quot;Avançar&quot; e &quot;Retroceder&quot;, esta chave determina que botão activa o comando &quot;Avançar&quot; numa janela de navegador. Valores possíveis estão no intervalo entre 6 e 14.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_use_extra_buttons">
+						<local_schema short_desc="Utilizar os eventos dos botões de rato adicionais nas janelas de navegação do Nautilus">
+							<longdesc>Para utilizadores com ratos que têm botões &quot;Avançar&quot; e &quot;Retroceder&quot;, esta chave determina se é realizada alguma acçãop dentro do Nautilus quando um deles for premido.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="install_mime_activation">
+						<local_schema short_desc="Apresentar o instalador de pacotes para tipos mime desconhecidos">
+							<longdesc>Se apresentar ou não ao utilizador um diálogo do instalador de pacotes caso seja aberto um tipo mime desconhecido, para que se procure uma aplicação para o manipular.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="executable_text_activation">
+						<local_schema short_desc="O que fazer com ficheiros de texto executáveis ao activá-los">
+							<longdesc>O que fazer com ficheiros de texto executáveis ao activá-los (clique único ou duplo). Valores possíveis são &quot;launch&quot; para os iniciar como aplicações, &quot;ask&quot; para perguntar o que fazer através de um diálogo e &quot;display&quot; para os apresentar como ficheiros de texto.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="click_policy">
+						<local_schema short_desc="Tipo de clique utilizado para iniciar/abrir ficheiros">
+							<longdesc>Valores possíveis são &quot;single&quot; para iniciar ficheiros com um único clique ou &quot;double&quot; para os iniciar com um clique-duplo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_directory_item_counts">
+						<local_schema short_desc="Quando apresentar o número de itens numa pasta">
+							<longdesc>Compromisso de velocidade ao apresentar o número de itens numa pasta. Se &quot;always&quot; apresentar sempre a contagem de itens, mesmo se a pasta estiver num servidor remoto. Se &quot;local_only&quot; apenas apresentar as contagens para pastas locais. Se &quot;never&quot; não serão apresentadas quaisquer contagens de itens.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_icon_text">
+						<local_schema short_desc="Quando apresentar texto de antevisão nos ícones">
+							<longdesc>Compromisso de velocidade ao antever o conteúdo de ficheiros de texto no ícone do ficheiro. Se &quot;always&quot; apresentar sempre as antevisões, mesmo se o ficheiro estiver num servidor remoto. Se &quot;local_only&quot; apenas apresentar antevisões para ficheiros locais. Se &quot;never&quot; não serão lidos dados para a antevisão.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_delete">
+						<local_schema short_desc="Se activar remoção imediata">
+							<longdesc>Se definido como verdadeiro, o Nautilus terá uma funcionalidade que lhe permite apagar um ficheiro imediatamente no local, em vez de o mover para o lixo. Esta funcionalidade pode ser perigosa, pelo que tenha cuidado.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_trash">
+						<local_schema short_desc="Se pedir confirmação ao apagar ficheiros ou esvaziar o Lixo">
+							<longdesc>Se definido como verdadeiro, o Nautilus pedirá confirmação quando tentar apagar ficheiros ou esvaziar o Lixo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="navigation_window_saved_maximized">
+						<local_schema short_desc="Se a janela de navegação deverá estar maximizada.">
+							<longdesc>Se a janela de navegação deverá estar maximizada por omissão.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="navigation_window_saved_geometry">
+						<local_schema short_desc="A expressão de geometria de uma janela de navegação.">
+							<longdesc>Uma expressão que contém a geometria gravada e a expressão de coordenadas das janelas de navegação.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_open_folder">
+						<local_schema short_desc="Lista de tipos de x-content/* definidos para &quot;Abrir Pasta&quot;">
+							<longdesc>Lista de tipos x-content/* para os quais o utilizador escolheu &quot;Abrir Pasta&quot; na applet de preferências. Será aberta uma janela de pasta ao ser inserido um media de um desses tipos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_ignore">
+						<local_schema short_desc="Lista de tipos de x-content/* definidos para &quot;Não Fazer Nada&quot;">
+							<longdesc>Lista de tipos x-content/* para os quais o utilizador escolheu &quot;Não Fazer Nada&quot; na applet de preferências. Nada será questionado nem será iniciada nenhuma aplicação ao ser inserido um media de um desses tipos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_start_app">
+						<local_schema short_desc="Lista de tipos de x-content/* para os quais será iniciada uma aplicação">
+							<longdesc>Lista de tipos x-content/* para os quais o utilizador escolheu iniciar uma aplicação na applet de preferências. A aplicação preferida de cada tipo será iniciada ao ser inserido um media de um desses tipos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_never">
+						<local_schema short_desc="Nunca questionar nem executar/iniciar automaticamente aplicações quando é inserido um media">
+							<longdesc>Se definido como verdadeiro, o Nautilus nunca questionará sobre aplicações de execução ou abertura automática ao ser inserido um media.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount_open">
+						<local_schema short_desc="Se abrir automaticamente ou não uma pasta para o media montado automaticamente">
+							<longdesc>Se definido como verdadeiro, o Nautilus irá abrir automaticamente uma pasta quando um media for montado automaticamente. Apenas se aplica a media onde não foi detectado nenhum x-content/* conhecido; para media em que foi detectado um x-content/* conhecido, será executada a acção configurável pelo utilizador.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount">
+						<local_schema short_desc="Se montar ou não o media automaticamente">
+							<longdesc>Se definido como verdadeiro, o Nautilus irá montar automaticamente media visíveis pelo utilizador tal como discos rígidos e media removível, ao iniciar e ao serem inseridos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_location_entry">
+						<local_schema short_desc="Utilizar sempre a entrada de localização em vez da barra de caminho">
+							<longdesc>Se definido como verdadeiro, as janelas de navegação do Nautilus irão sempre utilizar uma entrada de texto para a barra de localização, em vez de uma barra de caminho.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_browser">
+						<local_schema short_desc="Activa o comportamento clássico do Nautilus, em que todas as janelas são de navegação">
+							<longdesc>Se definido como verdadeiro, todas as janelas Nautilus serão janelas de navegação. Esta é a forma como o Nautilus se comportava antes da versão 2.6 e algumas pessoas preferem este comportamento.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="exit_with_last_window">
+						<local_schema short_desc="O Nautilus irá terminar quando a última janela for encerrada.">
+							<longdesc>Se definido como verdadeiro, o Nautilus irá termina quando todas as janelas forem encerradas. Esta é a definição por omissão. Se definido como falso, pode ser iniciado sem qualquer janela, pelo que o nautilus pode servir como daemon para monitorizar a montagem de media ou tarefas semelhantes.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Atalho de teclado para repor tamanho normal da fonte">
+							<longdesc>Tecla de atalho para repor o tamanho normal da fonte. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Atalho de teclado para reduzir o tamanho da fonte">
+							<longdesc>Tecla de atalho para reduzir o tamanho da fonte. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Atalho de teclado para aumentar o tamanho da fonte">
+							<longdesc>Tecla de atalho para aumentar o tamanho da fonte. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Atalho de teclado para iniciar a ajuda">
+							<longdesc>Tecla de atalho para iniciar a ajuda. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 12">
+							<longdesc>Tecla de atalho para ir para o separador 12. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 11">
+							<longdesc>Tecla de atalho para ir para o separador 11. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 10">
+							<longdesc>Tecla de atalho para ir para o separador 10. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 9">
+							<longdesc>Tecla de atalho para ir para o separador 9. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 8">
+							<longdesc>Tecla de atalho para ir para o separador 8. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 7">
+							<longdesc>Tecla de atalho para ir para o separador 7. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 6">
+							<longdesc>Tecla de atalho para ir para o separador 6. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 5">
+							<longdesc>Tecla de atalho para ir para o separador 5. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 4">
+							<longdesc>Tecla de atalho para ir para o separador 4. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 3">
+							<longdesc>Tecla de atalho para ir para o separador 3. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 2">
+							<longdesc>Tecla de atalho para ir para o separador 2. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Atalho de teclado para ir para o separador 1">
+							<longdesc>Tecla de atalho para ir para o separador 1. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Atalho para destacar o separador actual.">
+							<longdesc>Tecla de atalho para destacar o separador actual. Expressa como uma expressão no mesmo formato que o utilizado nos ficheiros de recursos do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Atalho para mover o separador actual à direita.">
+							<longdesc>Tecla de atalho para mover à direita o separador actual. Expressa como uma expressão no mesmo formato que o utilizado nos ficheiros de recursos do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Atalho para mover o separador actual à esquerda.">
+							<longdesc>Tecla de atalho para mover à esquerda o separador actual. Expressa como uma expressão no mesmo formato que o utilizado nos ficheiros de recursos do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Atalho de teclado para ir para o separador seguinte">
+							<longdesc>Tecla de atalho para ir para o separador seguinte. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Atalho de teclado para ir para o separador anterior">
+							<longdesc>Tecla de atalho para ir para o separador anterior. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Atalho de teclado para reiniciar e limpar a consola">
+							<longdesc>Tecla de atalho para reiniciar e limpar a consola. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Atalho de teclado para reiniciar a consola">
+							<longdesc>Tecla de atalho para reiniciar a consola. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Atalho de teclado para definir o título da consola">
+							<longdesc>Tecla de atalho para definir o título da consola. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Atalho de teclado para alternar a visibilidade da barra de menu">
+							<longdesc>Tecla de atalho para alternar a visibilidade da barra de menu. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Atalho de teclado para alternar modo de ecrã completo">
+							<longdesc>Tecla de atalho para alternar para modo de ecrã completo. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Atalho de teclado para colar texto">
+							<longdesc>Tecla de atalho para colar o conteúdo da área de transferência. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Atalho de teclado para copiar texto">
+							<longdesc>Tecla de atalho para copiar texto para a área de transferência. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Atalho de teclado para fechar uma janela">
+							<longdesc>Tecla de atalho para fechar uma janela. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Atalho de teclado para fechar um separador">
+							<longdesc>Tecla de atalho utilizada para fechar um separador. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="Atalho de teclado para gravar o conteúdo do separador actual num ficheiro">
+							<longdesc>Tecla de atalho para gravar o conteúdo do separador actual num ficheiro. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Atalho de teclado para criar um novo perfil">
+							<longdesc>Tecla de atalho para apresentar o diálogo de criação de perfil. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Atalho de teclado para abrir uma nova janela">
+							<longdesc>Tecla de atalho para abrir uma nova janela. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Atalho de teclado para abrir um novo separador">
+							<longdesc>Tecla de atalho para abrir um novo separador. Expressa como uma expressão no mesmo formato que a utilizada nos ficheiros de recurso do GTK+. Se definir a opção para a expressão especial &quot;disabled&quot;, não existirá um atalho para esta acção.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_skey">
+							<local_schema short_desc="Realçar questões S/Key">
+								<longdesc>Apresentar um diálogo quando é detectado um pedido de resposta a uma questão de S/Key e este é clicado. Inserir uma senha no diálogo irá enviá-la para a consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="Se utilizar ou não a fonte de sistema">
+								<longdesc>Se verdadeiro, a consola irá utilizar a fonte por omissão do ambiente de trabalho, caso seja monoespaçada (caso contrário, a mais semelhante).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Se utilizar ou não as cores do tema para o widget de consola">
+								<longdesc>Se verdadeiro, o tema de cores utilizado para as caixas de introdução de texto será utilizado na consola, em vez das cores indicadas pelo utilizador.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Efeito da tecla Delete">
+								<longdesc>Define que código gera a tecla delete. Valores possíveis são &quot;ascii-del&quot; para o caracter ASCII DEL, &quot;control-h&quot; para o Control-H (o caracter ASCII BS), &quot;escape-sequence&quot; para a sequência de escape normalmente associada ao backspace ou delete. &quot;escape-sequence&quot; é normalmente considerada a definição correcta para a tecla de Delete.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Efeito da tecla de Backspace">
+								<longdesc>Define que código gera a tecla de backspace. Valores possíveis são &quot;ascii-del&quot; para o caracter ASCII DEL, &quot;control-h&quot; para o Control-H (o caracter ASCII BS), &quot;escape-sequence&quot; para a sequência de escape normalmente associada ao backspace ou delete. &quot;ascii-del&quot; é normalmente considerada a definição correcta para a tecla de Basckspace.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Quanto escurecer a imagem de fundo">
+								<longdesc>Um valore entre 0.0 e 1.0 que indica quanto escurecer a imagem de fundo. 0.0 significa não escurecer, 1.0 significa escurecer totalmente. Na implementação actual, apenas são possíveis dois níveis de escurecimento, pelo que a definição se comporta como uma boleana, em que 0.0 desactiva o efeito de escurecimento.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Se rolar ou não a imagem de fundo">
+								<longdesc>Se verdadeiro, rolar a imagem de fundo junto com o texto; se falso, manter a imagem numa posição fixa e rolar o texto sobre esta.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Imagem de fundo">
+								<longdesc>Nome de ficheiro de uma imagem de fundo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Tipo de fundo">
+								<longdesc>Tipo de fundo de consola. Pode ser &quot;solid&quot; para uma cor sólida, &quot;image&quot; para uma imagem, ou &quot;transparent&quot; para transparência real se estiver em execução um gestor de janelas composto ou, caso contrário, pseudo-transparência.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Fonte">
+								<longdesc>Um nome de fonte Pango. Exemplos são &quot;Sans 12&quot; ou &quot;Monospace Bold 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Paleta para aplicações de consola">
+								<longdesc>Consolas têm uma paleta de 16 cores que as aplicações dentro da consola podem utilizar. Esta é essa paleta, no formato de uma lista de nomes de cores separados por vírgulas. Nomes de cores deverão ser no formato hexadecimal, por ex: &quot;#FF00FF&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Ícone para a janela de consola">
+								<longdesc>Ícones a utilizar para separadores/janelas que contenham este perfil.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Comando personalizado a utilizar em vez da consola">
+								<longdesc>Executar este comando em vez da consola, se use_custom_command for verdadeiro.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="A aparência do cursor">
+								<longdesc>Os valores possíveis são &quot;block&quot; para utilizar um bloco como cursor, &quot;ibeam&quot; para utilizar um cursor que é uma linha vertical, ou &quot;underline&quot; para utilizar um cursor que é um sublinhado.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Se piscar ou não o cursor">
+								<longdesc>Os valores possíveis são &quot;system&quot; para utilizar as definições globais de piscar de cursor, ou &quot;on&quot; ou &quot;off&quot; para definir o modo explicitamente.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Se executar ou não um comando personalizado em vez da consola">
+								<longdesc>Se verdadeiro, o valor da definição de custom_command será utilizado em vez de iniciar uma consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Se actualizar ou não os registos de sessão ao iniciar um comando de consola">
+								<longdesc>Se verdadeiro, os registos de sistema de início de sessão utmp e wtmp serão actualizados ao iniciar um comando dentro da consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Se iniciar ou não o comando dentro da consola como um início de sessão">
+								<longdesc>Se verdadeiro, o comando dentro da consola será iniciado como uma consola de início de sessão. (argv[0] terá um hífen à sua frente).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="O que fazer com a consola quando o comando filho termina">
+								<longdesc>Valores possíveis são &quot;close&quot; para fechar a consola e &quot;restart&quot; para reiniciar o comando.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Se rolar ou não para o fundo quando existem novos resultados">
+								<longdesc>Se verdadeiro, sempre que existirem novos resultados a consola irá rolar até ao fundo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Se rolar ou não para o fundo ao premir uma tecla">
+								<longdesc>Se verdadeiro, premir uma tecla coloca a barra de rolamento no fundo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="Se deverá ou não ser mantido um número ilimitado de linhas para rolar atrás">
+								<longdesc>Se verdadeiro, as linhas para rolar atrás nunca serão descartadas. O histórico de rolar atrás é mantido temporariamente no disco, pelo que o sistema poderá ficar sem espaço em disco caso seja escrito muito texto na consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Número de linhas a manter para rolar atrás">
+								<longdesc>Número de linhas a manter para rolar atrás. Pode rolar atrás numa consola este número de linhas; linhas que não caibam na pilha de rolar atrás são descartadas. Se scrollback_unlimited for verdadeira, este valor é ignorado.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Posição da barra de rolamento">
+								<longdesc>Onde colocar a barra de rolamento da consola. Valores possíveis são &quot;left&quot;, &quot;right&quot; e &quot;hidden&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="Número de linhas por omissão">
+								<longdesc>Número de linhas nas novas janelas de consola. Não tem efeito se a chave use_custom_default_size não estiver activa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="Número de colunas por omissão">
+								<longdesc>Número de colunas nas novas janelas de consola. Não tem efeito se a chave use_custom_default_size não estiver activa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="Se utilizar ou não o tamanho personalizado de consola para as novas janelas">
+								<longdesc>Se verdadeiro, as novas janelas de consola terão o tamanho personalizado especificado pelas chaves default_size_columns e default_size_rows.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Caracteres que são considerados &quot;parte de uma palavra&quot;">
+								<longdesc>Ao seleccionar texto por palavra, sequências destes caracteres são considerados uma palavra. Intervalos podem ser dados como &quot;A-Z&quot;. Hífens literais (que não exprimam um intervalo) deverão ser o primeiro caracter indicado.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Se silenciar ou não a campainha de consola">
+								<longdesc>Se verdadeiro, não emitir um ruido quando as aplicações enviam a sequência escape para a campainha de consola.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Se permitir ou não texto negrito">
+								<longdesc>Se verdadeiro, permitir que aplicações na consola tornem o texto negrito.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Título da consola">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="O que fazer com título dinâmico">
+								<longdesc>Se a aplicação na consola definir o título (normalmente os utilizadores têm a sua consola configurada para o definir), o título dinamicamente definido pode apagar o título configurado, ficar antes deste, após este, ou substitui-lo. Os valores possíveis são &quot;replace&quot;, &quot;before&quot;, &quot;after&quot;, e &quot;ignore&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="Se o texto a negrito deverá ou não utilizar a mesma cor que o texto normal">
+								<longdesc>Se verdadeiro, o texto negrito será apresentado utilizando a mesma cor do texto normal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="Cor por omissão do texto negrito na consola">
+								<longdesc>Cor por omissão do texto negrito na consola, como uma especificação de cor (podem ser dígitos hexadecimais estilo HTML ou um nome de cor tal como &quot;red&quot;). Esta chave é ignorada se bold_color_same_as_fg for verdadeiro.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Cor por omissão do fundo da consola">
+								<longdesc>Cor por omissão do fundo da consola, como uma especificação de cor (podem ser dígitos hexadecimais estilo HTML ou um nome de cor tal como &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Cor por omissão do texto na consola">
+								<longdesc>Cor por omissão do texto na consola, como uma especificação de cor (podem ser dígitos hexadecimais estilo HTML ou um nome de cor tal como &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Se apresentar ou não a barra de menu em novas janelas/separadores">
+								<longdesc>Verdadeiro se a barra de menu deve ser apresentada em novas janelas, para janelas/separadores com este perfil.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Nome legível do perfil">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Se pedir ou não confirmação ao fechar janelas de consola">
+							<longdesc>Se pedir confirmação ao fechar uma janela de consola que tenha mais do que um separador aberto.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Lista de codificações disponíveis">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Se o atalho por omissão GTK de acesso à barra de menu está activo">
+							<longdesc>Normalmente pode aceder à barra de menu com F10. Isto pode também ser personalizado via gtkrc (gtk-menu-bar-accel = &quot;whatever&quot;). Esta opção permite que o atalho por omissão de barra de menu seja desactivado.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Se a barra de menu tem teclas de acesso">
+							<longdesc>Se ter ou não atalhos Alt+letra para a barra de menu. Isto pode interferir com algumas aplicações em execução dentro da consola pelo que é possível desactivar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Perfil a utilizar para novas consolas">
+							<longdesc>Perfil a ser utilizado ao abrir uma nova janela ou separador. Tem de existir na profile_list.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Lista de perfis">
+							<longdesc>Lista de perfis conhecidos do gnome-terminal. A lista contém expressões que denominam subdirectórios relativos a /apps/gnome-terminal/profiles.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-session">
+				<dir name="options">
+					<entry name="logout_prompt">
+						<local_schema short_desc="Perguntar ao terminar sessão">
+							<longdesc>Se activo, o gnome-session questionará o utilizador antes de terminar uma sessão.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_save_session">
+						<local_schema short_desc="Gravar sessões">
+							<longdesc>Se activo, o gnome-session irá gravar a sessão automaticamente.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome_settings_daemon">
+				<entry name="volume_step">
+					<local_schema short_desc="Incremento de volume">
+						<longdesc>Incremento de volume como uma percentagem de volume.</longdesc>
+					</local_schema>
+				</entry>
+				<dir name="gtk-modules">
+					<entry name="gail:atk-bridge">
+						<local_schema short_desc="Módulos GTK+ de suporte à acessibilidade">
+							<longdesc>Esta chave determina os módulos GTK+ a ler para suportar a acessibilidade.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybindings">
+					<entry name="next">
+						<local_schema short_desc="Faixa seguinte">
+							<longdesc>Atalho para ir para a faixa seguinte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="previous">
+						<local_schema short_desc="Faixa anterior">
+							<longdesc>Atalho para ir para a faixa anterior.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="stop">
+						<local_schema short_desc="Parar a reprodução">
+							<longdesc>Atalho para parar a reprodução.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pause">
+						<local_schema short_desc="Pausar a reprodução">
+							<longdesc>Atalho para pausar a reprodução.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="play">
+						<local_schema short_desc="Reproduzir (ou reproduzir/pausar)">
+							<longdesc>Atalho para iniciar a reprodução (ou alternar reprodução/pausa).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media">
+						<local_schema short_desc="Iniciar o reprodutor de media">
+							<longdesc>Atalho para iniciar o reprodutor de media.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="www">
+						<local_schema short_desc="Iniciar o navegador web">
+							<longdesc>Atalho para iniciar o navegador web.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="calculator">
+						<local_schema short_desc="Iniciar a calculadora">
+							<longdesc>Atalho para iniciar a calculadora.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Iniciar o navegador de ajuda">
+							<longdesc>Atalho para iniciar o navegador de ajuda.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screensaver">
+						<local_schema short_desc="Trancar o ecrã">
+							<longdesc>Atalho para trancar o ecrã.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="email">
+						<local_schema short_desc="Iniciar o cliente de email">
+							<longdesc>Atalho para iniciar o cliente de email.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search">
+						<local_schema short_desc="Procurar">
+							<longdesc>Atalho para iniciar a ferramenta de procura.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home">
+						<local_schema short_desc="Pasta pessoal">
+							<longdesc>Atalho para abrir a Pasta Pessoal.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="eject">
+						<local_schema short_desc="Ejectar">
+							<longdesc>Atalho para ejectar um disco óptico.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="power">
+						<local_schema short_desc="Terminar a sessão">
+							<longdesc>Atalho para terminar a sessão.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_up">
+						<local_schema short_desc="Aumentar o volume">
+							<longdesc>Atalho para aumentar o volume do sistema.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_down">
+						<local_schema short_desc="Reduzir o volume">
+							<longdesc>Atalho para reduzir o volume do sistema.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_mute">
+						<local_schema short_desc="Silenciar o volume">
+							<longdesc>Atalho para silenciar o volume do sistema.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="touchpad">
+						<local_schema short_desc="Alternar o touchpad">
+							<longdesc>Atalho para activar ou desactivar o touchpad.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="plugins">
+					<dir name="xsettings">
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin xsettings">
+								<longdesc>Definir como Verdadeiro para activar o plugin para gerir as definições de xsettings.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="xrdb">
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin xrdb">
+								<longdesc>Definir como Verdadeiro para activar o plugin para gerir as definições de xrdb.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="xrandr">
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin XRandR">
+								<longdesc>Definir como Verdadeiro para activar o plugin para gerir as definições de XRandR.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="typing-break">
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin de pausas de utilização">
+								<longdesc>Definir como Verdadeiro para activar o plugin para gerir as definições de pausas de utilização.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="sound">
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin de som">
+								<longdesc>Definir como Verdadeiro para activar o plugin para gerir as caches de amostras de som.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="smartcard">
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin smartcard">
+								<longdesc>Definir como Verdadeiro para permitir que o plugin tranque o ecrã ao ser removido o smartcard.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mouse">
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin de rato">
+								<longdesc>Definir como Verdadeiro para activar o plugin para gerir as definições de rato.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="media-keys">
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin de teclas de media">
+								<longdesc>Definir como Verdadeiro para activar o plugin para gerir as definições de teclas multimedia.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin de teclado">
+								<longdesc>Definir como Verdadeiro para activar o plugin para gerir as definições de teclado.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keybindings">
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin de atalhos de teclado">
+								<longdesc>Definir como Verdadeiro para activar o plugin para gerir as definições de atalhos de teclado.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="housekeeping">
+						<entry name="ignore_paths">
+							<local_schema short_desc="Caminhos de montagem a ignorar">
+								<longdesc>Especifique uma lista de caminhos de montagem a ignorar caso fiquem com pouco espaço livre.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="min_notify_period">
+							<local_schema short_desc="Período mínimo de notificação para avisos repetidos">
+								<longdesc>Especifique um período em minutos. Avisos subsequentes para uma unidade não serão apresentados mais frequentemente do que este período.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_size_gb_no_notify">
+							<local_schema short_desc="Tolerância de notificação de espaço livre">
+								<longdesc>Especifique uma quantidade em GB. Se a quantidade de espaço livre for superior a esta, não será apresentado qualquer aviso.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify_again">
+							<local_schema short_desc="Tolerância de notificação subsequente de percentagem livre">
+								<longdesc>Especifique a percentagem que deverá diminuir de espaço livre para que seja emitido novo aviso.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify">
+							<local_schema short_desc="Tolerância de notificação de percentagem livre">
+								<longdesc>Tolerância de percentagem de espaço livre para o aviso inicial de pouco espaço disponível. Se a percentagem de espaço livre descer abaixo desta, será apresentado um aviso.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin de limpeza">
+								<longdesc>Definir como Verdadeiro para activar o plugin de limpeza, para esvaziar caches temporárias de ficheiros.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="font">
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin de fontes">
+								<longdesc>Definir como Verdadeiro para activar o plugin para gerir as definições de fonte.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="clipboard">
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin de área de transferência">
+								<longdesc>Definir como Verdadeiro para activar o plugin para gerir as definições de área de transferência.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="background">
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin de imagem de fundo">
+								<longdesc>Definir como Verdadeiro para activar o plugin para gerir as definições de fundo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="a11y-keyboard">
+						<entry name="active">
+							<local_schema short_desc="Activar o plugin de acessibilidade de teclado">
+								<longdesc>Definir como Verdadeiro para activar o plugin para gerir as definições de acessibilidade do teclado.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="xrandr">
+					<entry name="default_configuration_file">
+						<local_schema short_desc="Ficheiro com a configuração por omissão do RandR">
+							<longdesc>O plugin XRandR irá procurar a configuração por omissão no ficheiro especificado por esta chave. Este é similar ao ~/.config/monitors.xml que normalmente é armazenado nas pastas pessoais dos utilizadores. Se um utilizador não possuir tal ficheiro, ou possuir um que não corresponda à configuração de monitores do utilizador, então será utilizado o ficheiro definido por esta chave.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="turn_on_laptop_monitor_at_startup">
+						<local_schema short_desc="Ligar o monitor do portátil após arranque de sistema">
+							<longdesc>Ligar monitor do portátil após arranque de sistema se o utilizador conectar um monitor externo ao arrancar o sistema.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="turn_on_external_monitors_at_startup">
+						<local_schema short_desc="Ligar monitor externo após arranque de sistema">
+							<longdesc>Ligar monitor externo após arranque de sistema se o utilizador conectar um monitor externo ao arrancar o sistema.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_notification_icon">
+						<local_schema short_desc="Apresentar Ecrãs na Área de Notificação">
+							<longdesc>Se deverá ou não ser apresentado no painel um ícone de notificação com informação relacionada com os monitores.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="yelp">
+				<entry name="fixed_font">
+					<local_schema short_desc="Fonte para texto fixa">
+						<longdesc>Fonte para texto de largura fixa.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="variable_font">
+					<local_schema short_desc="Fonte para texto">
+						<longdesc>Fonte para texto de largura variável.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_system_fonts">
+					<local_schema short_desc="Utilizar as fontes de sistema">
+						<longdesc>Utilizar as fontes por omissão definidas pelo sistema.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_caret">
+					<local_schema short_desc="Utilizar cursor">
+						<longdesc>Utilizar um cursor controlável pelo teclado ao visualizar as páginas.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="metacity">
+				<dir name="window_keybindings">
+					<entry name="move_to_center">
+						<local_schema short_desc="Mover a janela para o centro do ecrã">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_w">
+						<local_schema short_desc="Mover a janela para o lado oeste (esquerdo) do ecrã">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_e">
+						<local_schema short_desc="Mover a janela para o lado leste (direito) do ecrã">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_s">
+						<local_schema short_desc="Mover a janela para o lado sul (inferior) do ecrã">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_n">
+						<local_schema short_desc="Mover a janela para o lado norte (topo) do ecrã">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_se">
+						<local_schema short_desc="Mover a janela para o canto sudeste (inferior direito)">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_sw">
+						<local_schema short_desc="Mover a janela para o canto sudoeste (inferior esquerdo)">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_ne">
+						<local_schema short_desc="Mover a janela para o canto nordeste (superior direito)">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_nw">
+						<local_schema short_desc="Mover a janela para o canto noroeste (superior esquerdo)">
+						</local_schema>
+					</entry>
+					<entry name="maximize_horizontally">
+						<local_schema short_desc="Maximizar janela horizontalmente">
+						</local_schema>
+					</entry>
+					<entry name="maximize_vertically">
+						<local_schema short_desc="Maximizar janela verticalmente">
+						</local_schema>
+					</entry>
+					<entry name="lower">
+						<local_schema short_desc="Baixar janela abaixo de outras janelas">
+						</local_schema>
+					</entry>
+					<entry name="raise">
+						<local_schema short_desc="Elevar janela acima de outras janelas">
+						</local_schema>
+					</entry>
+					<entry name="raise_or_lower">
+						<local_schema short_desc="Elevar a janela se estiver tapada por outra janela, caso contrário baixá-la">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_down">
+						<local_schema short_desc="Mover a janela uma área de trabalho abaixo">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_up">
+						<local_schema short_desc="Mover a janela uma área de trabalho acima">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_right">
+						<local_schema short_desc="Mover a janela uma área de trabalho para a direita">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_left">
+						<local_schema short_desc="Mover a janela uma área de trabalho para a esquerda">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_12">
+						<local_schema short_desc="Mover janela para a área de trabalho 12">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_11">
+						<local_schema short_desc="Mover janela para a área de trabalho 11">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_10">
+						<local_schema short_desc="Mover janela para a área de trabalho 10">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_9">
+						<local_schema short_desc="Mover janela para a área de trabalho 9">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_8">
+						<local_schema short_desc="Mover janela para a área de trabalho 8">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_7">
+						<local_schema short_desc="Mover janela para a área de trabalho 7">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_6">
+						<local_schema short_desc="Mover janela para a área de trabalho 6">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_5">
+						<local_schema short_desc="Mover janela para a área de trabalho 5">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_4">
+						<local_schema short_desc="Mover janela para a área de trabalho 4">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_3">
+						<local_schema short_desc="Mover janela para a área de trabalho 3">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_2">
+						<local_schema short_desc="Mover janela para a área de trabalho 2">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_1">
+						<local_schema short_desc="Mover janela para a área de trabalho 1">
+						</local_schema>
+					</entry>
+					<entry name="toggle_on_all_workspaces">
+						<local_schema short_desc="Alternar se a janela está em todas as áreas de trabalho ou apenas numa">
+						</local_schema>
+					</entry>
+					<entry name="begin_resize">
+						<local_schema short_desc="Redimensionar a janela">
+						</local_schema>
+					</entry>
+					<entry name="begin_move">
+						<local_schema short_desc="Mover a janela">
+						</local_schema>
+					</entry>
+					<entry name="close">
+						<local_schema short_desc="Fechar a janela">
+						</local_schema>
+					</entry>
+					<entry name="minimize">
+						<local_schema short_desc="Minimizar a janela">
+						</local_schema>
+					</entry>
+					<entry name="toggle_shaded">
+						<local_schema short_desc="Alternar estado sombreado">
+						</local_schema>
+					</entry>
+					<entry name="unmaximize">
+						<local_schema short_desc="Restaurar a janela">
+						</local_schema>
+					</entry>
+					<entry name="maximize">
+						<local_schema short_desc="Maximizar a janela">
+						</local_schema>
+					</entry>
+					<entry name="toggle_above">
+						<local_schema short_desc="Alternar se uma janela será ou não sempre visível sobre as outras janelas">
+						</local_schema>
+					</entry>
+					<entry name="toggle_maximized">
+						<local_schema short_desc="Alternar estado de maximização">
+						</local_schema>
+					</entry>
+					<entry name="toggle_fullscreen">
+						<local_schema short_desc="Alternar modo de ecrã completo">
+						</local_schema>
+					</entry>
+					<entry name="activate_window_menu">
+						<local_schema short_desc="Activar o menu de janela">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybinding_commands">
+					<entry name="command_window_screenshot">
+						<local_schema short_desc="O comando de captura de janela">
+							<longdesc>A chave /apps/metacity/global_keybindings/run_command_window_screenshot define um atalho de teclado que invoca o comando especificado por esta definição.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command_screenshot">
+						<local_schema short_desc="O comando de captura de ecrã">
+							<longdesc>A chave /apps/metacity/global_keybindings/run_command_screenshot define um atalho de teclado que invoca o comando especificado por esta definição.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Comandos a executar em resposta a um atalho de teclado">
+							<longdesc>As chaves /apps/metacity/global_keybindings/run_command_N definem atalhos de teclado que correspondem a estes comandos. Premir o atalho de teclado para run_command_N irá executar o command_N.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global_keybindings">
+					<entry name="run_command_terminal">
+						<local_schema short_desc="Executar uma consola">
+						</local_schema>
+					</entry>
+					<entry name="run_command_window_screenshot">
+						<local_schema short_desc="Efectuar uma captura de uma janela">
+						</local_schema>
+					</entry>
+					<entry name="run_command_screenshot">
+						<local_schema short_desc="Efectuar uma captura de ecrã">
+						</local_schema>
+					</entry>
+					<entry name="panel_run_dialog">
+						<local_schema short_desc="Apresentar a caixa de diálogo de painel do &quot;Executar Aplicação&quot;">
+						</local_schema>
+					</entry>
+					<entry name="panel_main_menu">
+						<local_schema short_desc="Apresentar o menu principal do painel">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="Esconder todas as janelas normais e colocar foco na área de trabalho">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels_backward">
+						<local_schema short_desc="Mover para trás imediatamente entre painéis e o ambiente">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels">
+						<local_schema short_desc="Mover imediatamente entre painéis e o ambiente">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows_backward">
+						<local_schema short_desc="Mover para trás imediatamente entre janelas">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows">
+						<local_schema short_desc="Mover imediatamente entre janelas">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group_backward">
+						<local_schema short_desc="Mover para trás imediatamente entre janelas de uma aplicação">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group">
+						<local_schema short_desc="Mover imediatamente entre janelas de uma aplicação">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels_backward">
+						<local_schema short_desc="Mover para trás entre painéis e a área de trabalho, utilizando uma janela de popup">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels">
+						<local_schema short_desc="Mover entre painéis e a área de trabalho, utilizando uma janela de popup">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows_backward">
+						<local_schema short_desc="Mover para trás entre janelas, utilizando uma janela de popup">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows">
+						<local_schema short_desc="Mover entre janelas, utilizando uma janela de popup">
+						</local_schema>
+					</entry>
+					<entry name="switch_group_backward">
+						<local_schema short_desc="Mover para trás entre janelas de uma aplicação, utilizando uma janela de popup">
+						</local_schema>
+					</entry>
+					<entry name="switch_group">
+						<local_schema short_desc="Mover entre janelas de uma aplicação, utilizando uma janela de popup">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_down">
+						<local_schema short_desc="Mover para a área de trabalho abaixo da actual">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_up">
+						<local_schema short_desc="Mover para a área de trabalho acima da actual">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_right">
+						<local_schema short_desc="Mover para a área de trabalho à direita da actual">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_left">
+						<local_schema short_desc="Mover para a área de trabalho à esquerda da actual">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_12">
+						<local_schema short_desc="Mover para a área de trabalho 12">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_11">
+						<local_schema short_desc="Mover para a área de trabalho 11">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_10">
+						<local_schema short_desc="Mover para a área de trabalho 10">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_9">
+						<local_schema short_desc="Mover para a área de trabalho 9">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_8">
+						<local_schema short_desc="Mover para a área de trabalho 8">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_7">
+						<local_schema short_desc="Mover para a área de trabalho 7">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_6">
+						<local_schema short_desc="Mover para a área de trabalho 6">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_5">
+						<local_schema short_desc="Mover para a área de trabalho 5">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_4">
+						<local_schema short_desc="Mover para a área de trabalho 4">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_3">
+						<local_schema short_desc="Mover para a área de trabalho 3">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_2">
+						<local_schema short_desc="Mover para a área de trabalho 2">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_1">
+						<local_schema short_desc="Mover para a área de trabalho 1">
+						</local_schema>
+					</entry>
+					<entry name="run_command">
+						<local_schema short_desc="Executar um comando definido">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="workspace_names">
+					<entry name="name">
+						<local_schema short_desc="Nome da área de trabalho">
+							<longdesc>O nome de uma área de trabalho.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="general">
+					<entry name="disable_workarounds">
+						<local_schema short_desc="Desabilitar funcionalidades inválidas requeridas por aplicações antigas ou estragadas">
+							<longdesc>Algumas aplicações ignoram as especificações de formas que resultam num funcionamento incorrecto do gestor de janelas. Esta opção coloca o Metacity num modo de correcção estrita, o que disponibiliza um interface de utilizador mais consistente, desde que não seja necessário utilizar nenhuma aplicação que seja problemática.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="application_based">
+						<local_schema short_desc="(Não implementado) Navegação funciona em termos de aplicações e não janelas">
+							<longdesc>Se verdadeiro, o Metacity funcionará em termos de aplicações e não de janelas. O conceito é algo abstracto, mas em geral uma configuração baseada em aplicações é mais tipo Mac e menos tipo Windows. Ao colocar o foco numa janela em modo aplicação, todas as janelas da aplicação são elevadas. Também, em modo aplicação, cliques de foco não são passados para janelas noutras aplicações. O modo aplicação está ainda, no entanto, quase todo por implementar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reduced_resources">
+						<local_schema short_desc="Se verdadeiro, trocar usabilidade por menor utilização de recursos">
+							<longdesc>Se verdadeiro, o metacity transmitirá ao utilizador menos resposta utilizando molduras de linhas, evitando animações ou por outros meios. Isto representa para muitos utilizadores uma redução significativa na usabilidade, mas poderá permitir que aplicações antigas funcionem e pode também ser um bom compromisso para servidores de consola. No entanto, a funcionalidade de molduras de linhas estará inactiva quando a acessibilidade estiver activa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="compositing_manager">
+						<local_schema short_desc="Gestor de Composições">
+							<longdesc>Determina se o Metacity é ou não um gestor de composições.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell_type">
+						<local_schema short_desc="Tipo de Campainha Visual">
+							<longdesc>Indica ao Metacity como implementar a indicação visual de que a campainha de sistema ou o indicador de &apos;campainha&apos; de outra aplicação tocou. Actualmente existem dois valores válidos, &quot;fullscreen&quot;, que causa um flash branco-preto de ecrã completo, e &quot;frame_flash&quot; que faz com que a barra de título da aplicação que emitiu a campainha emita um flash. Se a aplicação que tocou a campainha for desconhecida (é normalmente o caso para o &quot;beep de sistema&quot; por omissão), irá emitir flash a barra de título da aplicação com o foco.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="audible_bell">
+						<local_schema short_desc="Campainha de Sistema é Audível">
+							<longdesc>Determina se as aplicações ou o sistema podem gerar &apos;beeps&apos; audíveis; pode ser utilizado em conjunto com a campainha visual para permitir &apos;beeps&apos; silenciosos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell">
+						<local_schema short_desc="Activar Campainha Visual">
+							<longdesc>Activa um indicador visual de quando uma aplicação ou o sistema emitem uma &apos;campainha&apos; ou &apos;beep&apos;; útil para os deficientes auditivos e para utilizar em ambientes ruidosos.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="num_workspaces">
+						<local_schema short_desc="Número de áreas de trabalho">
+							<longdesc>Número de áreas de trabalho. Tem de ser maior do que zero, e tem um máximo fixo (para impedir que torne o seu ambiente de trabalho inutilizável por pedir demasiadas áreas de trabalho).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_font">
+						<local_schema short_desc="Fonte de título de janela">
+							<longdesc>Uma expressão de descrição de fonte que descreve uma fonte para as barras de título. O tamanho da descrição apenas será utilizada se a opção titlebar_font_size estiver definida como 0. Esta opção será desabilitada se a opção titlebar_uses_desktop_font estiver definida como verdadeira.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_uses_system_font">
+						<local_schema short_desc="Utilizar fonte de sistema standard nos títulos das janelas">
+							<longdesc>Se verdadeiro, ignora a opção titlebar_font e utiliza a fonte standard da aplicação para os títulos da janela.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Tema actual">
+							<longdesc>O tema determina a aparência das margens das janelas, barras de título, etc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise_delay">
+						<local_schema short_desc="Atraso em milisegundos para a opção de elevar automaticamente">
+							<longdesc>O atraso temporal antes de elevar uma janela caso auto_raise esteja definido como verdadeiro. O atraso é especificado em milésimas de segundo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise">
+						<local_schema short_desc="Eleva automaticamente a janela com o foco">
+							<longdesc>Se verdadeiro, e o modo de foco for &quot;sloppy&quot; ou &quot;mouse&quot; então a janela com foco será automaticamente elevada após um atraso especificado pela chave auto_raise_delay. Isto não está relacionado com clicar numa janela para a elevar, nem com entrar numa janela durante um processo de arrastar-e-largar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_right_click_titlebar">
+						<local_schema short_desc="Acção do clique-direito na barra de título">
+							<longdesc>Esta opção determina o efeito do clique-direito na barra de título. As opções actualmente válidas são &apos;toggle_shade&apos;, que sombreia/remove sombra na janela, &apos;toggle_maximize&apos; que maximiza/restaura a janela, &apos;toggle_maximize_horizontally&apos; e &apos;toggle_maximize_vertically&apos; que irão maximizar/restaurar a janela apenas nessa direcção, &apos;minimize&apos; que irá minimizar a janela, &apos;shade&apos; que irá enrolar a janela, &apos;menu&apos; que irá apresentar o menu da janela, &apos;lower&apos; que irá colocar a janela por detrás de todas as outras e &apos;none&apos; que não fará qualquer acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_middle_click_titlebar">
+						<local_schema short_desc="Acção do clique-do-meio na barra de título">
+							<longdesc>Esta opção determina o efeito do clique-do-meio na barra de título. As opções actualmente válidas são &apos;toggle_shade&apos;, que sombreia/remove sombra na janela, &apos;toggle_maximize&apos; que maximiza/restaura a janela, &apos;toggle_maximize_horizontally&apos; e &apos;toggle_maximize_vertically&apos; que irão maximizar/restaurar a janela apenas nessa direcção, &apos;minimize&apos; que irá minimizar a janela, &apos;shade&apos; que irá enrolar a janela, &apos;menu&apos; que irá apresentar o menu da janela, &apos;lower&apos; que irá colocar a janela por detrás de todas as outras e &apos;none&apos; que não fará qualquer acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_double_click_titlebar">
+						<local_schema short_desc="Acção do duplo-clique na barra de título">
+							<longdesc>Esta opção determina o efeito do clique-duplo na barra de título. As opções actualmente válidas são &apos;toggle_shade&apos;, que sombreia/remove sombra na janela, &apos;toggle_maximize&apos; que maximiza/restaura a janela, &apos;toggle_maximize_horizontally&apos; e &apos;toggle_maximize_vertically&apos; que irão maximizar/restaurar a janela apenas nessa direcção, &apos;minimize&apos; que irá minimizar a janela, &apos;shade&apos; que irá enrolar a janela, &apos;menu&apos; que irá apresentar o menu da janela, &apos;lower&apos; que irá colocar a janela por detrás de todas as outras e &apos;none&apos; que não fará qualquer acção.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="raise_on_click">
+						<local_schema short_desc="Se elevar deverá ou não ser um efeito secundário de outras acções do utilizador">
+							<longdesc>Definir esta opção como &quot;false&quot; poderá originar um comportamento com erros, pelo que se desaconselha a alteração do valor por omissão, que é &quot;true&quot;. Muitas acções (por ex. clicar na área de cliente, mover ou redimensionar a janela) normalmente elevam a janela como efeito colateral. Definir esta opção como &quot;false&quot;, o que é fortemente desencorajado, irá desassociar o elevar de outras acções do utilizador, e ignorar pedidos de elevação gerados por aplicações. Consulte http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Mesmo quando esta opção é &quot;false&quot;, as janelas ainda podem ser elevadas com um alt-clique-esquerdo em qualquer local da janela, um clique normal nas decorações da janela, ou por mensagens especiais de pagers, tais como pedidos de activação de applets de lista de tarefas. Esta opção está de momento desactivada no modo clique-para-transmitir-foco. Note que a lista de formas de elevar janelas quando raise_on_click for &quot;false&quot; não inclui pedidos programáticos de aplicações para elevar janelas; tais pedidos serão ignorados independentemente do motivo do pedido. Se for um programador de aplicações e tiver um utilizador a queixar-se que a sua aplicação não funciona com esta definição desactivada, diga-lhe que é _dele_ a culpa de quebrar o seu gestor de janelas e que terá de alterar esta opção de volta para &quot;true&quot; ou viver com o erro que deseja e originou.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_new_windows">
+						<local_schema short_desc="Controla como as novas janelas obtém o foco">
+							<longdesc>Esta opção disponibiliza controlo adicional sobre como as janelas novas obtêm o foco. Existem dois valores possíveis; &quot;smart&quot; aplica o modo normal de foco do utilizador, e &quot;strict&quot; resulta em janelas iniciadas a partir de uma consola não receberem o foco.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_mode">
+						<local_schema short_desc="Modo de foco de janela">
+							<longdesc>O modo de foco de janela indica como as janelas são activadas. Tem três valores possíveis; &quot;click&quot; significa que a janela tem de ser clicada para obter o foco, &quot;sloppy&quot; significa que a janela fica com foco quando o rato entra na janela, e &quot;mouse&quot; significa que a janela fica com o foco quando o rato entra na janela e o perde quando o rato sai.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="button_layout">
+						<local_schema short_desc="Disposição dos botões na barra de título">
+							<longdesc>Disposição dos botões na barra de título. O valor deverá ser uma expressão, tal como &quot;menu:minimize,maximize,spacer,close&quot;; o dois-pontos separa o canto esquerdo da janela do direito, e os nomes dos botões são separados por vírgulas. Não são permitidos botões duplicados. Nomes de botões desconhecidos são ignorados para que possam ser adicionados botões em versões futuras do metacity sem gerar erros em versões antigas. Pode ser utilizada uma etiqueta especial de espaçamento (spacer) para inserir algum espaço entre dois botões adjacentes.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="resize_with_right_button">
+						<local_schema short_desc="Se redimensionar ou não com o botão direito do rato">
+							<longdesc>Definir como verdadeiro para redimensionar com o botão direito e apresentar o menu com o botão do meio enquanto é premida a tecla indicada em &quot;mouse_button_modifier&quot;; definir como falso para que funcione de forma inversa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_button_modifier">
+						<local_schema short_desc="Modificador a utilizar para acções de clique de janela modificada">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

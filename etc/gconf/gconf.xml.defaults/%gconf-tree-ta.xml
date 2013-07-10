@@ -1,0 +1,3323 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB பணிகுழு">
+						<longdesc>பயனர் விண்டோஸ் பிணைய பணி குழு அல்லது களத்தின் பகுதியாக உள்ளார். புதிய பணிக்குழு முழுவதும் பணி செய்ய பயனர் வெளியேற வேண்டும் அல்லது மீண்டும் உள் அனுமதி பெற வேண்டும்.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="தானாக ப்ராக்ஸி சேவகனை அமைக்கும் URL">
+						<longdesc>ப்ராக்ஸி அமைப்பின் மதிப்பை தரும் URL</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS ப்ராக்ஸி வழி">
+						<longdesc>&quot;/system/proxy/socks_host&quot; இனால் குறிப்பிடப்பட்ட வழியை ப்ராக்ஸி பயன்படுத்துகிறது</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS ப்ராக்ஸி புரவலன் பெயர்">
+						<longdesc>socks வழியாக ப்ராக்ஸிக்கான கணினி பெயர்</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP ப்ராக்ஸி வழி">
+						<longdesc>&quot;/system/proxy/ftp_host&quot; இனால் குறிப்பிடப்பட்ட வழியை ப்ராக்ஸி பயன்படுத்துகிறது</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP ப்ராக்ஸி புரவலன் பெயர்">
+						<longdesc>FTP ப்ராக்ஸி க்கான கணினி பெயர்</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="பாதுகாப்பான HTTP ப்ராக்ஸி வழி">
+						<longdesc>&quot;/system/proxy/secure_host&quot; இனால் குறிப்பிடப்பட்ட வழியை ப்ராக்ஸி பயன்படுத்துகிறது</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="பாதுகாப்பான HTTP ப்ராக்ஸி புரவலன் பெயர்">
+						<longdesc>பாதுகாப்பான HTTP ப்ராக்ஸி க்கான கணினி பெயர்</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="ப்ராக்ஸி அமைப்பு பாங்கு">
+						<longdesc>ப்ராக்ஸி அமைப்பு வழியை தேர்வு செய்யவும். &quot;none&quot;, &quot;manual&quot;, &quot;auto&quot; மதிப்புகளுக்கு ஆதரவு உண்டு</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="ப்ராக்ஸி இல்லாத புரவலன்">
+						<longdesc>இந்த பட்டியல் ப்ராக்ஸியை(செயலிலிருந்தும்) நேரடியாக பயன்படுத்தாத கணினியின் பட்டியலை காட்டுகிறது. இதில் புரவலன் பெயர், டொமைன்(குழுக்குறிகளை பயன்படுத்தும் உம் *.foo.com) புரவலன் IP முகவரி (both IPv4 மற்றும்IPv6) மற்றும் வலைப்பின்னல் முகவரியுடன் வலைமூடியும் இருக்கும் (உதாரணம் 192.168.0.0/24)</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP ப்ராக்ஸி கடவுச்சொல்">
+						<longdesc>HTTP ப்ராக்ஸி பயன்படுத்தும்போது பயன்படுத்த வேண்டிய கடவுச்சொல்</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP ப்ராக்ஸி பயனீட்டாளர் பெயர்">
+						<longdesc>HTTP ப்ராக்ஸியை பயன்படுத்தும் போது அனுமதி பெற பயன்படுத்த வேண்டிய பயனீட்டாளர் பெயர்</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="ப்ராக்ஸி வேகன் இணைப்பின் அனுமதியை சரிபார்">
+						<longdesc>உண்மையெனில் பதிலாள் சேவையகத்தை இணைக்க அங்கீகாரம் தேவை.  &quot;/system/http_proxy/authentication_user&quot; and &quot;/system/http_proxy/authentication_password&quot;ஆல்பயனர்பெயர்/கடவுச்சொல் சேர்க்கை பெட்டியில் குறிப்பிடப்பட்டிருக்கும்.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP ப்ராக்ஸி வழி">
+						<longdesc>&quot;/system/http_proxy/host&quot; இனால் குறிப்பிடப்பட்ட வழியை ப்ராக்ஸி பயன்படுத்துகிறது</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP ப்ராக்ஸி புரவலன் பெயர்">
+						<longdesc>HTTP ப்ராக்ஸி க்கான கணினி பெயர்</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP ப்ராக்ஸியை பயன்படுத்து">
+						<longdesc>HTTP அணுகும் போது ப்ராக்ஸி அமைப்பை செயல்படுத்து</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="DNS-SD சேவைகளுக்கு கூடுதல் களங்கள்">
+						<longdesc>DNS-SD களங்களின் கால்புள்ளியால் பிரிக்கப்பட்ட பட்டியல் &quot;network:///&quot; இடத்தில் தெரிய வேண்டும்.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="உள் DNS-SD சேவையை காட்டுவது எப்படி">
+						<longdesc>இயன்ற மதிப்புகள் &quot;merged&quot;, &quot;separate&quot; மற்றும் &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="tabs_open_position">
+						<local_schema short_desc="உலாவி சாளரங்களில் திறக்கும் கீற்றுகளை எந்த இடத்தில் வைப்பது">
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="மறைந்த கோப்புகளை காட்ட வேண்டுமா">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>இடையகத்தில் சிறுபடங்களின் அதிகபட்ச அளவு மெகாபைட்டில். -1 என்று அமைத்து துடைப்பதை செயல்நீக்கு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>இடையகத்தில் சிறுபடங்களின் அதிகபட்ச வயது ஒரு நாளில். -1 என்று அமைத்து துடைப்பதை செயல்நீக்கு</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="பின்னூட்ட ஒலிகளை உள்ளீடு செய்">
+							<longdesc>ஒலிகளை பயனர் நிகழ்வின்போது இயக்க வேண்டுமா.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="ஒலி தீம் பெயர்">
+							<longdesc>இந்த XDG ஒலி தீம் நிகழ்வு ஒலிகளுக்கு பயன்படுத்தப்படுகிறது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="நிகழ்வுகளுக்கான ஒலி">
+							<longdesc>ஒலிகளை பயனர் நிகழ்வின்போது விளையாடுவதா இல்லையா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="ESD ஐ இயலுமைப்படுத்து">
+							<longdesc>ஒலிச் சேவையக தொடங்குதலை இயலுமைப்படுத்துக.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="முன்னிருப்பு கலவை ட்ராக்கள்">
+							<longdesc>பல்லூடக விசை பைண்டிங்கால் முன்னிருப்பு கலவை ட்ராக்கள் பயன்படுத்தப்படுகிறது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="முன்னிருப்பு கலவை சாதனம்">
+							<longdesc>பல்லூடக விசை பைண்டிங்கால் பயன்படுத்தப்படும் முன்னிருப்பு கலவை சாதனம் </longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="கோப்பு குறும்படம் தோற்றம்">
+							<longdesc>கோப்பு குறும்படங்களை காண்பிப்பதற்கு பயன்படுத்தவேண்டிய தோற்றம்.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="at-spi-corba">
+						<local_schema short_desc="கார்பா அடிப்படையிலான அட்ஸ்பி கட்டுமானத்தை செயல்படுத்துக.">
+						</local_schema>
+					</entry>
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="&apos;யுனிக்கோட் கட்டுப்பாடு எழுத்து&apos; பட்டியை காட்டு">
+							<longdesc>சூழல் பட்டிகளின் உள்ளீடுகள் மற்றும் உரை பார்வைகள் கட்டுப்பாடு எழுத்துக்களை நுழைக்க வேண்டுமா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="&apos;உள்ளீடு முறைகள்&apos; பட்டியை காட்டு">
+							<longdesc>சூழல் பட்டிகளின் உள்ளீடுகள் மற்றும் உரை பார்வைகள் உள்ளீடு முறைகளை மாற்ற வேண்டுமா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="பட்டி பட்டை மாற்றி">
+							<longdesc>விசைப்பலகை குறுக்குவழி பட்டி பட்டைகளை திறக்கிறது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="GtkFileChooser க்கான பகுதி">
+							<longdesc>GtkFileChooser சிறு சாளரம் கோப்பு அமைப்பு மாதிரியாக பயன்படுத்த வேண்டிய பகுதி. மதிப்புகள் &quot;gio&quot;, &quot;gnome-vfs&quot; மற்றும் &quot;gtk+&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="நிலைப்பட்டை வலது பக்கத்தில்">
+							<longdesc>நிலைப்பட்டி மீட்டரை வலது பக்கத்தில் காட்ட வேண்டுமா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="தனிப்பட்ட எழுத்துரு பயன்படுத்துக">
+							<longdesc>gtk+ பயன்பாட்டிற்கான தனிப்பயன் எழுத்துருவை பயன்படுத்த வேண்டுமா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Monospace எழுத்துரு">
+							<longdesc>முனையத்தில் பயன்படுத்தப்படும் நிலையால இடைவெளி(fixed-width) உள்ள எழுத்துருவின் பெயர்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="ஆவண எழுத்துரு">
+							<longdesc>ஆவணத்தைப் படிப்பதற்கான முன்னிருப்பு எழுத்துருவின் பெயர்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="GTK IM தொகுதி">
+							<longdesc>GTK+ உள்ளிடு முறை நிலை பாணி பயன்படுத்தும் பெயர்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="GTK IM நிகழ்நிலை பாணி">
+							<longdesc>GTK+ உள்ளிடு முறை நிலை பாணி பயன்படுத்தும் பெயர் </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="GTK IM முன்திருத்தம் பாணி">
+							<longdesc>GTK+ உள்ளிடு முறை முன் திருத்த பாணி பயன்படுத்தும் பெயர் </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="கொடாநிலை எழுத்துரு">
+							<longdesc>gtk+ பயன்படுத்தும் கொடாநிலை எழுத்துரு.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Gtk+ தோற்றம்">
+							<longdesc>gtk+.பயன்படுத்தும் இயல்பான கருவின் அடிப்படைபெயர்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Gtk+ தோற்றம்">
+							<longdesc>gtk+.பயன்படுத்தும் இயல்பான கருவின் அடிப்படைபெயர்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="குறும்படம் தோற்றம்">
+							<longdesc>பலகை, நாடிலஸ் ஆகியவைகளில் புழங்கவேண்டிய குறும்படத் தோற்றம்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="நிலை காட்டி சிமிட்டம் நேரம்">
+							<longdesc>கர்சர் சிமிட்டும் கால அளவு, மில்லிசெகண்டில்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="நிலை காட்டி சிமிட்டம்">
+							<longdesc>நிலை காட்டி சிமிட்ட வேண்டுமா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="கருவிப்பட்டையின் குறும்படம் அளவு">
+							<longdesc>கருவிப்பட்டையில் சின்னத்தின் அளவு &quot;small-toolbar&quot; அல்லது &quot;large-toolbar&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="கழட்டக்கூடிய கருவிப்பட்டை">
+							<longdesc>பயனீட்டாளர் கருவிப்பட்டியை தனியாக பிரித்து நகர்த்தலாமா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="கழட்டக்கூடிய பட்டி-பட்டை">
+							<longdesc>பயனீட்டாளர் மெனுவை தனிப்படுத்தி நகர்த்தலாமா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="பொத்தான்கள் குறும்படங்களை கொண்டுள்ளது">
+							<longdesc>மெனுவிற்கு அருகில் அதற்கான சின்னத்தை காட்ட வேண்டிமா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="பட்டிகளில் குறும்படங்கள்">
+							<longdesc>மெனுவிற்கு அருகில் அதற்கான சின்னத்தை காட்ட வேண்டிமா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="கருவிப் பட்டை பாணி">
+							<longdesc>கருவிப்பட்டை தோற்றம். சரியான மதிப்புகள் &quot;both&quot;, &quot;both_horiz&quot;, &quot;icon&quot;, மற்றும் &quot;text&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="முடுகு விசைகளை மாற்றலாம்">
+							<longdesc>பயனர் செயலிலுள்ள பட்டி உருப்படியின் மேல் ஒரு புதிய மாற்றியில் எவ்வாறாயினும் தட்டச்சு செய்யலாம்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="பட்டிகளில் பிக்கக்கூடியவை">
+							<longdesc>மெனு பிளக்கும் வசதி வேண்டுமா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="அசைவூட்டம் இயலுமைப்படுத்துக">
+							<longdesc>உயிர்சித்திரம் காட்டப்பட வேண்டுமா.குறிப்பு: இது பொதுவான விசை, இது சாளர மேலாளரின் நடத்தை மற்றும் பலகத்தை மாற்றும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="அனுமதியை இயலுமைப்படுத்துக">
+							<longdesc>பயன்பாட்டிற்கு அணுகல் ஆதரவு தேவையா.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="வண்ண நிழலாக்குதல் வகை">
+							<longdesc>பின்னணி நிறத்தின் அளவை எப்படி மாற்றுவது. மதிப்புகள் &quot;horizontal-gradient&quot;, &quot;vertical-gradient&quot;, மற்றும் &quot;solid&quot; இருக்கும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="இரண்டாம் வண்ணம்">
+							<longdesc>வலது அல்லது கீழ் வண்ணம் சரிவு வண்ணத்தை பயன்படுத்தும் போது அல்லது நிலையான வண்ணத்தில்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="முதல் வண்ணம்">
+							<longdesc>இடது அல்லது மேல் வண்ணம் சரிவாக வண்ணம் தரும்போது அல்லது நிலையான வண்னத்தில்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="படம் ஒளி புகாமை">
+							<longdesc>பின்னணி படத்தை வரைய தேவையான ஒளிபுகு தன்மை</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="ஓவியம் கோப்பு பெயர்">
+							<longdesc>பின்னணி படத்திற்கு பயன்படுத்த வேண்டிய கோப்பு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="ஓவியம் விருப்பங்கள்">
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="பின்னணி கணிமேசையை வரையவும்">
+							<longdesc>பணிமேடை பின்னணியை கனோம் வரையட்டும்</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="வெளி சிறுபடங்களை செயல்படுத்தாதே">
+							<longdesc>வெளி சிறுபட நிரல்களை செயல்படுத்தாமல் இருக்க இதை உண்மை என அமைக்க வேண்டும், தனித்தனியே செயலிழக்க செய்யலாம்/செயல்படுத்தலாம்</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="application@x-font-otf">
+						<entry name="enable">
+							<local_schema short_desc="OpenType எழுத்துருக்களை சிறுபடமாக்க வேண்டுமா">
+								<longdesc>உண்மையெனில், OpenType எழுத்துருக்கள் சிறுபடமாக்கப்படும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="OpenType எழுத்துருக்களுக்கான சிறுபட கட்டளை">
+								<longdesc>OpenType எழுத்துருக்களுக்கு சிறுபடம் உருவாக்க இந்த விசையை கட்டளையாக அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-pcf">
+						<entry name="enable">
+							<local_schema short_desc="PCF எழுத்துருக்களை சிறுபடமாக்க வேண்டுமா">
+								<longdesc>உண்மையெனில், PCF எழுத்துருக்கள் சிறுபடமாக்கப்படும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="PCF எழுத்துருக்களுக்கான சிறுபட கட்டளை">
+								<longdesc>PCF எழுத்துருக்களுக்கு சிறுபடம் உருவாக்க இந்த விசையை கட்டளையாக அமை.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-type1">
+						<entry name="enable">
+							<local_schema short_desc="Type1 எழுத்துருக்களை சிறுபடமாக்க வேண்டுமா">
+								<longdesc>உண்மையெனில், Type1 எழுத்துருக்கள் சிறுபடமாக்கப்படும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Type1 எழுத்துருக்களுக்கான சிறுபட கட்டளை">
+								<longdesc>Type1 எழுத்துருக்களுக்கு சிறுபடம் உருவாக்க இந்த விசையை கட்டளையாக அமை.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-ttf">
+						<entry name="enable">
+							<local_schema short_desc="TrueType எழுத்துருக்களை சிறுபடமாக்க வேண்டுமா">
+								<longdesc>உண்மையெனில், TrueType எழுத்துருக்கள் சிறுபடமாக்கப்படும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="TrueType எழுத்துருக்களுக்கான சிறுபட கட்டளை">
+								<longdesc>TrueType எழுத்துருக்களுக்கு சிறுபடம் உருவாக்க இந்த விசையை கட்டளையாக அமை.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="விசைப்பலகை பூட்டு செயல்படுத்தப்பட்டதா">
+							<longdesc>விசைப்பலகை பூட்டு செயல்படுத்தப்பட்டதா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="நிறுத்ததை தாமதிக்க அனுமதி">
+							<longdesc>விசைப்பலகை நிறுத்த திரையை தாமதிக்க முடியுமா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="இடைவேளை நேரம்">
+							<longdesc>தட்டச்சு நிறுத்தம் முடியும் நிமிடம்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="நேரம் உள்ளீடுக">
+							<longdesc>நிறுத்த பாங்கு துவங்குவதற்கு முன் உள்ள நிமிடங்களின் எண்ணிக்கை</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="URL மற்றும் MIME வகை கையாளர்கள் செயல்நீக்கு">
+							<longdesc>எந்த URL அல்லது MIME வகை கையாளுதல் பயன்பாடுகளையும் தடுக்கிறது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="திரை பூட்டை செயல்நீக்கு">
+							<longdesc>இந்த திரையை பயனர் பூட்டுவதை தடுக்கிறது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="அச்சிடுவதை முடக்குக">
+							<longdesc>பயனருடைய அமர்வு செயலிலிருக்கும் போது வேறு கணக்கிற்கு மாற்றுவதை தடுக்கிறது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="அச்சிடும் அமைப்பை முடக்குக">
+							<longdesc>பயனீட்டாளர் அச்சுப்பொறி அமைப்பை மாற்றுவதை தடுக்கும். உதாரணம் , இது அனைத்து பயன்பாட்டிலும் உள்ள &quot;அச்சுப்பொறி அமைப்பு&quot; உரையாடல் பெட்டியை செயலிழக்க செய்யும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="அச்சிடுவதை முடக்குக">
+							<longdesc>பயனீட்டாளர் அச்சடிப்பதை தடுக்கும். உதாரணமாக , இது அனைத்து பயன்பாட்டிலும் உள்ள &quot;அச்சடி&quot; உரையாடல் பெட்டியை செயல்நீக்கம் செய்யாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="கோப்புகளை வட்டுவில் சேமிப்பதை முடக்குக">
+							<longdesc>பயனீட்டாளர் கோப்பை வட்டில் சேமிப்பதை தடுக்கும். உதாரணம், இது &quot;எனச்சேமி&quot; உரையாடலை செயலிழக்க செய்யும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="கட்டளை வரிசையை முடக்குக">
+							<longdesc>பயனீட்டாளர் முனையத்தை பயன்படுத்துவதை தடுக்க அதற்காக கட்டளைவரியை உள்ளிடவும். உதாரணம், &quot;Run Application&quot; உரையாடல் பலகத்தை அணுகுவதை செயலிழக்க செய்யும்</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="session">
+					<entry name="required_components_list">
+						<local_schema short_desc="தேவையான அமர்வு கூறுகள்">
+							<longdesc>அமர்வின் பாகமாக அவசியம் இருக்க வேண்டிய உருப்புகளின் பட்டியல். (ஒவ்வொரு உருப்படியும் &quot;/desktop/gnome/session/required-components&quot; இன் கீழ் ஒரு விசையை குறிக்கிறது. அமர்வு தேர்வுகள் சாதாரணமாக பயனர்களை அவசியம் வேன்டிய உருப்படியை நீக்க அனுமதிக்காது. அப்படி நீக்கினால் மீண்டும் அமர்வு மேலாளரால் அவை தானியங்கியாக சேர்க்கப்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_session">
+						<local_schema short_desc="முன்னிருப்பு அமர்வு">
+							<longdesc>முன்னிருப்பு அமர்வுக்கு பங்களிக்கும் பயன்பாடுகள்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="idle_delay">
+						<local_schema short_desc="அமர்வுக்கு முன் வெறுமையாக இருக்கும்">
+							<longdesc>அமர்வு வெறுமையாக இருப்பதற்கு முன் செயலிழக்கப்பட்ட நிமிடங்கள்</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="required_components">
+						<entry name="filemanager">
+							<local_schema short_desc="சாளர மேலாளர்">
+								<longdesc>கோப்பு மேலாளர்  மேல்மேசை சின்னங்களை  அளித்து உங்கள் சேமித்த கோப்புகளுடன் ஊடாட அனுமதிக்கிறது.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="panel">
+							<local_schema short_desc="பலகம்">
+								<longdesc>பலகம் ஒரு பட்டியை திரையின்  மேல் அல்லது கீழ் தருகிறது. இதில்  சாளர பட்டியல் இருப்பு நிலை சின்னங்கள், கடிகாரம் முதலியன இருக்கும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="windowmanager">
+							<local_schema short_desc="சாளரமேலாளர்">
+								<longdesc>சாளரம் மேலாளர் தலைப்பு பட்டி  மற்றும் சாளரங்கள் ஓரத்தில் எல்லைகள் மற்றும் சாளரங்களை  நகர்த்தவும் மற்றும் மறுஅளவு செய்யவும் உதவும் நிரல் </longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="font_rendering">
+					<entry name="rgba_order">
+						<local_schema short_desc="ஆர்ஜிபிஏ வரிசை">
+							<longdesc>ஆர்ஜிபிஏ வரிசை என ஆன்டி அலயஸிங்க் ஐ அமைத்திருந்தால் மட்டும் எல்சிடி திரையில் காட்ட வேண்டிய துணை படத்துணுக்கு வரிசை. மதிப்புகள் &quot;ஆர்ஜிபி&quot; என்பது சிவப்பு இடது கோடியில் இருக்க. இதுவே அதிகமாக பயன்படுகிறது. &quot;பி ஜிஆர்&quot; நீலம் இடது கோடியில். &quot;விஆர்ஜிபி&quot; சிவப்பு மேலே இருக்க. &quot;விபிஜிஆர்&quot; சிவப்பு கீழே இருக்க.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hinting">
+						<local_schema short_desc="விளிம்பு பலப்படுத்தல்">
+							<longdesc>எழுத்துருக்களை வரையும் போது பயன்படுத்த விளிம்பு பலமாக்கம். மதிப்புகள்:&quot;ஏதுமில்லை&quot; பலமாக்கல் தெவை இல்லை. &quot;சற்று&quot;: அடிப்படை பலமாக்கம். &quot;நடுத்தரம்&quot; &quot;முழு&quot; அதிக பட்ச பலமாக்கம்.( எழுத்துருவே மாறிவிடலாம்.)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="antialiasing">
+						<local_schema short_desc="ஆன்டி அலயஸிங்">
+							<longdesc>எழுத்துருக்களை வரையும்போது பயன்படுத்த ஆன்டி அலயசிங்க். மதிப்புகள்: &quot;ஏதுமில்லை&quot; ஆன்டி அலயசிங்க் தேவை இல்லை. &quot;சாம்பல் சாயல்&quot; செந்தர &quot;சாம்பல் சாயல் ஆன்டி அலயசிங்க்.  ஆர்ஜிபிஏ துணைபடத்துணுக்கு ஆன்டி அலயசிங்க்  (எல்சிடி திரைகளுக்கு மட்டில்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="dpi">
+						<local_schema short_desc="டிபிஐ (DPI)">
+							<longdesc>எழுத்துரு அளவுகளை பிசெலுக்கு மாற்ற தெளிவுத்திறன். ஒரு அங்குலத்துக்கு புள்ளிகள்.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="கைகொடுக்கும் தொழில்நுட்ப பயன்பாடுகள் துவக்கம்">
+								<longdesc>க்னோம் மேல்மேசைக்குள் நுழையும் போது பங்கெடுத்துக்கொள்ளும் தொழில்நுட்ப பயன்பாடுகளின் பட்டியலிடவும்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>மாற்றி அழுத்தும்போது ஒலிக்கவும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>ஒரே நேரத்தில் இரண்டு விசைகள் அழுத்தப்படும்போது முடக்குசெய்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="மில்லிநொடிகளில் ஆகக்குறைந்த இடைவெளி">
+								<longdesc>@delay மில்லிநொடிகளுக்கு அழுத்தப்படும் வரை, விசை அழுத்தப்பட்டதாக ஏற்றுக்கொள்ள வேண்டாம்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="மில்லிநொடிகளில் ஆரம்ப தாமதம்">
+								<longdesc>சுட்டி நகர்த்தல் விசைகளை தொடங்குவதற்கு எத்தனை மில்லிநொடிகள் காத்திருக்க வேண்டும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="மில்லி விநாடிகளில் முடுக்கத்திற்கு எத்தனை நொடிகள்">
+								<longdesc>0 விலிருந்து ஆகக்கூடிய வேகத்தை அடைவதற்கு எத்தனை மில்லிநொடிகள் எடுக்கும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="நொடியில் எத்தனை பிக்செல்கள்">
+								<longdesc>ஆகக்கூடிய வேகத்தில் எத்தனை பிக்செல்கள் ஓர் நொடியில் நகர்த்த வேண்டும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="மில்லிநொடிகளில் ஆகக்குறைந்த இடைவெளி">
+								<longdesc>_same_ keyக்குள் மில்லி விநாடிகளில் @delayயில் பல செயல்களை தவிர்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_enable">
+							<local_schema short_desc="சுட்டி விசைகள்">
+								<longdesc>சுட்டி விசைகள் விசைப்பலகை அணுகல் வசதி செயல்படுத்தப்பட்டுள்ளதா</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_enable">
+							<local_schema short_desc="மெதுவான விசைகள்">
+								<longdesc>மெதுவான விசைகள் விசைப்பலகை அணுகல் வசதி செயல்படுத்தப்பட்டுள்ளதா</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_enable">
+							<local_schema short_desc="பவுன்ஸ் விசைகள்">
+								<longdesc>பவுன்ஸ் விசைகள் விசைப்பலகை அணுகல் வசதி செயல்படுத்தப்பட்டுள்ளதா</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_enable">
+							<local_schema short_desc="விசைகள் ஒட்டுபவை">
+								<longdesc>ஒட்டு விசைகள் விசைப்பலகை அணுகல் வசதி செயல்படுத்தப்பட்டுள்ளதா</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="keybindings">
+					<entry name="allowed_keys">
+						<local_schema short_desc="அனுமதிக்கப்பட்ட விசைகள்">
+							<longdesc>வெற்று இல்லையெனில், விசைபிணைவுகள் அதன் GConf அடைவு பட்டியலில் இல்லையெனில் தவிர்க்கப்படும். இது பூட்டுக்கு பயனுள்ளது.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="onscreenkeyboard">
+						<entry name="action">
+							<local_schema short_desc="திரை விசைப்பலகையை மாற்று">
+								<longdesc>திரை விசைப்பலகையை ஆன் அல்லது ஆஃப் செய்வதற்கான கட்டளை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="திரை விசைப்பலகையை மாற்று">
+								<longdesc>திரை விசைப்பலகையை மாற்ற பிணைக்கிறது.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="விசைப்பலகை குறுக்குவழியின் பெயர் திரையில் விசைப்பலகையை மாற்றுகிறது">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="screenreader">
+						<entry name="action">
+							<local_schema short_desc="திரைபடிப்பானை மாற்று">
+								<longdesc>திரை வாசிப்பியை ஆன் அல்லது ஆஃப் செய்வதற்கான கட்டளை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="திரைப்படிப்பானை நிலை மாற்ற விசைப்பலகை குறுக்குவழியின் பெயர்  ">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="திரைபடிப்பானை மாற்று">
+								<longdesc>திரை வாசிப்பியை மாற்ற பிணைக்கிறது.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="magnifier">
+						<entry name="action">
+							<local_schema short_desc="பெரிதாக்கியை மாற்று">
+								<longdesc>பெரிதாக்கியை ஆன் அல்லது ஆஃப் செய்ய பயன்படுத்தப்படும் கட்டளை.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="விசைப்பலகை குறுக்குவழியின் பெயர் பெரிதாக்கியை மாற்றுகிறது">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="பெரிதாக்கியை மாற்று">
+								<longdesc>பெரிதாக்கியை மாற்ற பிணைக்கிறது.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;h323&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;h323&quot; URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;h323&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot;கையாள்வதற்கான URL">
+								<longdesc>&quot;callto&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;callto&quot;  URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;aim&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;aim&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;aim&quot; URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;aim&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;mailto&quot;ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;mailto&quot;URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;mailto&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;https&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;https&quot; URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;ghelp&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;http&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;http&quot; URL ஐ கையாளுமா">
+								<longdesc>&quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;http&quot; URL ஐ கையாளுமெனில்,உண்மை.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;man&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;man&quot; URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;man&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;info&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;info&quot; URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;info&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;ghelp&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;ghelp&quot; URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;ghelp&quot; URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="கட்டளையை முனையத்தில் இயக்கு">
+								<longdesc>இந்த வகை URL ஐ முனையத்தில் இயக்க முடியுமெனில் உண்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; கையாள்வதற்கான URL">
+								<longdesc>&quot;trash&quot; ஐ கையாள பயன்படும் URL செயல்படுத்தப்பட்டது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="குறிப்பிட்ட கட்டளை &quot;trash&quot; URL ஐ கையாளுமா">
+								<longdesc>உண்மை, &quot;command&quot; விசையில் குறிக்கப்பட்ட கட்டளை &quot;trash&quot;  URL ஐ கையாளுமெனில்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="முனையம் வேண்டும் பணிகள்">
+								<longdesc>முன்னிருப்பு மேலோடி இயக்குவதற்கு முனையம் வேண்டுமா</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="முன்னிருப்பு பணிகள்">
+								<longdesc>முன்னிருப்பு பணிகள் பயன்பாடு</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="நாள்காட்டிக்கு முனையம் வேண்டும்">
+								<longdesc>முன்னிருப்பு நாள்காட்டி பயன்பாட்டை இயக்குவதற்கு முனையம் வேண்டுமா</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="முன்னிருப்பு நாள்காட்டி">
+								<longdesc>முன்னிருப்பு நாள்காட்டி பயன்பாடு</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="பணிஇடங்களின் பெயர்கள் (எதிரிடையானது)">
+								<longdesc>முதல் சாளர மேலாளர் பணியிடங்களின் பெயர்களிடங்கிய பட்டியல். GNOME 2.12லிருந்து இந்த விசை எதிரிடையானது.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="எத்தனை பணிஇடங்கள் (எதிரிடையானது)">
+								<longdesc>சாளரமேலாளர் எத்தனை பணிஇடங்களை பயன்படுத்தவேண்டும். GNOME 2.12லிருந்து இந்த விசை எதிரிடையானது.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="பயனர் சாளரமேலாளர் (எதிரிடையானது)">
+								<longdesc>சாளர மேலாளர் முதலில் முயற்சிக்கட்டும். GNOME 2.12லிருந்து இந்த விசை எதிரிடையானது.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="பின்சார்ந்த சாளரமேலாளர் (எதிரிடையானது)">
+								<longdesc>பயனர் சாளரமேலாளர் காணாவிட்டால், பின்சார்ந்த சாளரமேலாளர். GNOME 2.12லிருந்து இந்த விசை எதிரிடையானது.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="மேலோடிக்கு தொலைவு விளங்கும்">
+								<longdesc>முன்னிருப்பு உலாவிக்கு நெட்ஸ்கேப் தொலைகருவி புரியுமா</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="மேலோடிக்கு முனையம் வேண்டும்">
+								<longdesc>முன்னிருப்பு உலாவியை இயக்குவதற்கு முனையம் வேண்டுமா</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="கொடாநிலை மேலோடி">
+								<longdesc>அனைத்து URLகளுக்கும் முன்னிருப்பு உலாவி.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<entry name="screen_reader_enabled">
+							<local_schema short_desc="திரைபடிப்பான்">
+								<longdesc>திரைப்படிப்பான் செயல்படுத்தப்பட்டுள்ளதா</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_magnifier_enabled">
+							<local_schema short_desc="திரை பெரிதாக்கி">
+								<longdesc>திரை பெரிதாக்கி செயல்படுத்தப்பட்டுள்ளதா</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_keyboard_enabled">
+							<local_schema short_desc="திரை விசைப்பலகை">
+								<longdesc>திரையில் விசைப்பலகை செயல்படுத்தப்பட்டுள்ளதா</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="விருப்பப்பட்ட நடமாடும் உதவி தொழில்நுட்ப பயன்பாடுகளை துவக்கு">
+									<longdesc>புகுபதிவின் போது விருப்பப்பட்ட நடமாடும் தொழில்நுட்ப பயன்பாடுகள் GNOME துவக்க</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="விருப்பப்பட்ட நடமாடும் தொழில்நுட்ப பயன்பாடுகள்">
+									<longdesc>விருப்பப்பட்ட நடமாடும் தொழில்நுட்ப பயன்பாடுகள் புகுபதிவு, மெனு அல்லது கட்டளைவரியில் பயன்படுத்த வேண்டும்.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="விருப்பப்பட்ட விஷுவல்  தொழில்நுட்ப பயன்பாடுகள் துவக்கம்">
+									<longdesc>GNOME புகுபதிவின் போது விருப்பப்பட்ட விஷுவல் உதவி தொழில்நுட்ப பயன்பாட்டை துவக்குகிறது.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="விருப்பப்பட்ட விஷுவல் உதவி தொழில்நுட்ப பயன்பாடுகள்">
+									<longdesc>விருப்பப்பட்ட விஷுவல் உதவி தொழில்நுட்ப பயன்பாடுகள் புகுபதிவி, மெனு அல்லது கட்டளைவரியில் பயன்படுத்தப்படும்.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="இயல்பான ான பொருள் காட பயன்பாடுகள்ின்">
+								<longdesc>கோப்புகளை பார்க்க தேவைப்படும் பயன்பாடுகளுக்கு பொருள்கள் தேவை. அளவுரு %s அதன் URI யால் மாற்றப்படும், அளவுரு %c அதன் பொருள் அடையாளத்தால் மாற்றப்படும்</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="செயற்பாடு மாறிகள்">
+								<longdesc>&apos;exec&apos; விசையால் குறிப்பிடப்பட்ட முனையத்தில் இயங்கும் நிரல்களின் அளவுரு</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="முனைய செயல்பாடு">
+								<longdesc>தேவைப்படும் போது பயன்பாட்டை துவக்க முனையத்தை பயன்படுத்து</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="நிலை காட்டி அளவு">
+								<longdesc>நிலைக்காட்டி-திட்டத்தால் நிலைகாட்டியின் அளவு குறிப்பிடப்பட்டது.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="நிலை காட்டி தோற்றம்">
+								<longdesc>நிலைகாட்டி திட்ட பெயர். XFree86 4.3 அல்லது அதற்கு அடுத்தது போன்ற Xservers ஆல் மட்டுமே பயன்படுத்தப்பட்டு Xcursorக்கு துணை புரிகிறது.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="நிலை காட்டி எழுத்துரு">
+								<longdesc>கர்சரின் எழுத்துரு பெயர். அமைக்கப்படவில்லை எனில் இயல்பான எழுத்துரு பயன்படுத்தப்படும். இந்த மதிப்பு X சேவகனுக்கு அனுப்பபட்டு அமர்வின் துவக்கத்தில் பிரதிபலிக்கும், அமர்வின் இடையில் மாற்றம் செய்தால் அடுத்த முறை துவங்கும் போது செயல்படும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="சுட்டியைக் காட்டுக">
+								<longdesc>கண்ரோல் விசை அழுத்தப்படும் போதும் விடுவிக்கப்படும் போதும் தற்போதைய காட்டியின் இடம் தனிப்படுத்தி காட்டப்படும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="இரட்டை அமுக்கு நேரம்">
+								<longdesc>இரண்டு சொடுக்குதலின் அளவு</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="இழு்பு துவக்க நிலை">
+								<longdesc>இழுக்கத்துவங்கும் போது இடைவெளி</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="இயக்க துவக்கநிலை">
+								<longdesc>காட்டி சுட்டி முடக்கம் துவங்கும் போது இருக்கும் இடைவெளியின் அளவு பிக்செல்லில் காட்டப்படும்.  -1 கணினியில் இயல்பான மதிப்பு</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="ஓர் அழுத்தம்">
+								<longdesc>சுட்டி நகர்வதற்கான முடக்க பெருக்கி. -1 கணினி இயல்பாக எடுத்துக்கொள்ளும் மதிப்பு</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="ஓர் அழுத்தம்">
+								<longdesc>சின்னத்தை திறக்க ஒருமுறை க்ளிக் செய்யவும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="சுட்டி பட்டனின் அமைப்பு">
+								<longdesc>வலது இடது சுண்டெலி பொத்தான்களை இடக்கை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="smartcard">
+						<entry name="removal_action">
+							<local_schema short_desc="ஸ்மார்ட் கார்ட் நீக்க செயல்">
+								<longdesc>இதை &quot;இல்லை&quot;, &quot;திரையை_பூட்டு&quot;, அல்லது &quot;வெளியேற்றத்தை_வலியுறுத்து&quot; ஆகியவற்றில் ஒண்றாக அமைக்கவும். உள்நுழைய பயன்படுத்திய ஸ்மார்ட் கார்டை  நீக்கினால் இந்த செயல் நிகழும்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="touchpad">
+						<entry name="touchpad_enabled">
+							<local_schema short_desc="தொடுதிட்டை  செயல்படுத்து">
+								<longdesc> எல்லா தொடு  திட்டுக்களை,யும்  செயல் படுத்த இதை உண்மை என அமைக்கவும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="horiz_scroll_enabled">
+							<local_schema short_desc="கிடைமட்ட உருளலை இயலுமை செய்க">
+								<longdesc>_m உருளல் முறைமை விசையுடன் தெந்தெடுத்த அதே முறையில் கிடைமட்ட உருளலை இயலுமை செய்ய  இதை உண்மை என அமைக்கவும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_method">
+							<local_schema short_desc="தொடுதிட்டால் உருளல் செயலை தேர்ந்தெடு">
+								<longdesc>தொடுதிட்டால் உருளல் செயலை தேர்ந்தெடு. ஆதரவுள்ள மதிப்புகள்: 0: செயல்நீக்கப்பட்டது, 1 : விளிம்பு உருளல் , மற்றும் 2: இரு-விரல் உருளல்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="tap_to_click">
+							<local_schema short_desc="தொடுதிட்டால் சொடுக்கி சொடுக்கலை செயல்படுத்து">
+								<longdesc>சொடுக்கி சொடுக்கலை திட்டு தட்டலால் செய்ய இதை உண்மை என அமைக்கவும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="disable_while_typing">
+							<local_schema short_desc="தட்டச்சும்போது தொடுதிட்டை செயல்நீக்கு">
+								<longdesc>தட்டச்சும்போது தவறுதலாக தொடு திட்டை தொடுபவராக இருந்தால் இதை உண்மை என அமைக்கவும்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="எழுத்து பூட்டு நிலையை நினைவு கொள்">
+								<longdesc>உண்மை என்று அமைக்கப்பட்டால், GNOME அமர்வுகளுக்கிடையே எண் பூட்டின் LED நிலையை அறியும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="விசைப்பலகை மணி இயல்பான கோப்பு பெயர்">
+								<longdesc>விளையாட வேண்டிய மணி ஓசையின் கோப்புப் பெயர்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>செயல்படக்கூடிய மதிப்புகள் &quot;இயக்கு&quot;,&quot;நீக்கு&quot;, மற்றும் &quot;தனிப்பயன்&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="indicator">
+							<entry name="enabledPlugins">
+								<local_schema short_desc="செயல்படுத்திய விசைப்பலகையை சுட்டும் சொருகிகளின் பட்டியல்">
+									<longdesc>செயல்படுத்திய விசைப்பலகையை சுட்டும் சொருகிகளின் பட்டியல்</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="backgroundColor">
+								<local_schema short_desc="பின்னணி வண்ணம்">
+									<longdesc>விசைப்பலகை அமைவு காட்டிக்கு பின்னணி வண்ணம்</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="foregroundColor">
+								<local_schema short_desc="முன்னணி வண்ணம்">
+									<longdesc>விசைப்பலகை அமைவு காட்டிக்கு முன்னணி வண்ணம்</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="fontSize">
+								<local_schema short_desc="எழுத்துரு அளவு">
+									<longdesc>விசைப்பலகை அமைவு காட்டிக்கு எழுத்துரு அளவு</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="fontFamily">
+								<local_schema short_desc="எழுத்துரு குடும்பம்">
+									<longdesc>விசைப்பலகை அமைவு காட்டிக்கு எழுத்துரு குடும்பம்</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="showFlags">
+								<local_schema short_desc="கொடிகளை குறும்பயனில் காட்டு">
+									<longdesc>தற்போதைய அமைப்பை கொடி கூடிய குறும்பயனில் காண்பிக்கவும்</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="secondary">
+								<local_schema short_desc="இரண்டாம் நிலை குழுக்கள்">
+									<longdesc>இரண்டாம் நிலை குழுக்கள்</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="preview">
+							<entry name="height">
+								<local_schema short_desc="விசைப்பலகை முன்பார்வை, உயரம்">
+									<longdesc>விசைப்பலகை முன்பார்வை, உயரம்</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="width">
+								<local_schema short_desc="விசைப்பலகை முன்பார்வை, அகலம்">
+									<longdesc>விசைப்பலகை முன்பார்வை, அகலம்</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="y">
+								<local_schema short_desc="விசைப்பலகை முன்பார்வை, Y offset">
+									<longdesc>விசைப்பலகை முன்பார்வை, Y offset</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="x">
+								<local_schema short_desc="விசைப்பலகை முன்பார்வை, X offset">
+									<longdesc>விசைப்பலகை முன்பார்வை, X offset</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="general">
+							<entry name="disable_sysconfig_changed_warning">
+								<local_schema short_desc="&quot;X sysconfig changed&quot;  எச்சரிக்கை செய்திகளை அடக்குக.">
+									<longdesc>&quot;X sysconfig changed&quot;  எச்சரிக்கை செய்திகளை அடக்குக.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="loadExtraItems">
+								<local_schema short_desc="கூடுதல் கட்டமைப்பு உருப்படிகளை ஏற்று">
+									<longdesc>அரிதாக பயன்படுத்தப்பட்ட அமைப்புகள் மற்றும் விருப்பங்களை ஏற்று</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layoutNamesAsGroupNames">
+								<local_schema short_desc="குழுப்பெயர்களுக்கு பதில் அமைப்பு பெயர்களைக் காட்டுக.">
+									<longdesc>குழுப்பெயர்களுக்கு பதில் அமைப்பு பெயர்களைக் காட்டுக. (பல அமைப்புகளை ஆதரிக்கும் எக்ஸ் ஃப்ரீ பதிப்புகளுக்கு மட்டும்)</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="handleIndicators">
+								<local_schema short_desc="சேமி /மீட்டெடு சுட்டிகள் அமைப்பு குழுக்களுடன்.">
+									<longdesc>சேமி /மீட்டெடு சுட்டிகள் அமைப்பு குழுக்களுடன்.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="groupPerWindow">
+								<local_schema short_desc="ஒரு சாளரத்திற்கு தனி குழுவினை வைத்து மேலாண்மை செய்யவும்">
+									<longdesc>ஒரு சாளரத்திற்கு தனி குழுவினை வைத்து மேலாண்மை செய்யவும்</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="defaultGroup">
+								<local_schema short_desc="முன்னிருப்பு குழு, சாளரம் உருவாக்கும் போது வழங்கப்பட்டது">
+									<longdesc>முன்னிருப்பு குழு, சாளரம் உருவாக்கும் போது வழங்கப்பட்டது</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="known_file_list">
+								<local_schema short_desc="modmap கோப்பு பட்டியல்">
+									<longdesc>$HOME அடைவிலுள்ள modmap கோப்புகளின் பட்டியல்</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="update_handlers">
+								<local_schema short_desc="விசைப்பலகை மேம்பாடு கையாளிகள்">
+									<longdesc>ஒரு தொகுப்பு ஸ்கிரிப்ட்கள், விசைப்பலகை நிலையை மீட்டு ஏற்றும் போதெல்லாம் இயக்க. எக்ஸ்மாட்மாப் அடிப்படையான சரிசெய்தல்களை மீண்டும் பயன்படுத்த உபயோகமாகும்.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="kbd">
+							<entry name="options">
+								<local_schema short_desc="விசைப்பலகை விருப்பங்கள்">
+									<longdesc>விசைப்பலகை விருப்பங்கள்</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layouts">
+								<local_schema short_desc="விசைப்பலகை அமைப்பு">
+									<longdesc>விசைப்பலகை அமைப்பு</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="model">
+								<local_schema short_desc="விசைப்பலகை மாதிரி">
+									<longdesc>விசைப்பலகை மாதிரி</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="rotate">
+						<local_schema short_desc="செங்குத்தான பலகத்தில் சுழற்று">
+							<longdesc>உண்மையெனில், மீன் இயக்க சித்திரம் செங்குத்து பலகத்தில் சுழற்றப்படுவதை காட்டும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed">
+						<local_schema short_desc="ஒவ்வொறு சட்டத்திலும் நிறுத்தம்">
+							<longdesc>இந்த விசை ஒவ்வொரு சட்டமும் எவ்வளவு நேரம் காட்டப்பட வேண்டும் என்பதை குறிப்பிடும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="frames">
+						<local_schema short_desc="மீன் இயக்க சித்திரத்தில் உள்ள சட்டங்கள்">
+							<longdesc>இந்த விசை மீன் இயக்க சித்திரத்தில் உள்ள சட்டங்களின் எண்ணிக்கையை குறிப்பிட பயன்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="க்ளிக் செய்யும் போது செயல்படவேண்டிய கட்டளை">
+							<longdesc>இந்த விசை மீனை க்ளிக் செய்தபிறகு நிகழ்த்த வேண்டிய கட்டளையை குறிப்பிடும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="image">
+						<local_schema short_desc="மீனின் அசைவூட்டம் பிக்ஸ்படம்">
+							<longdesc>இந்த விசை மீன் குறுநிரல் பிக்ஸ்மேப் அடைவில் உள்ள இயக்க சித்திரத்தின் கோப்பின் பெயரை குறிப்பிட பயன்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="மீனின் பெயர்">
+							<longdesc>பெயரில்லாத மீன் சோம்பேரி மீண். பெயரிட்டு மீனுக்கு உயிர்தரவும்.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="ஆகக்கூடிய சாளர பட்டியல் அளவு">
+							<longdesc>க்னோம் 2.6 இல் இந்த விசையின் பயன்பாடு மறுக்கப்பட்டது . பழைய பதிப்புகளுக்கு ஆதரவு தருவதற்காக இந்த திட்டம் தொடரப்படுகிறது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="ஆகக்குறைந்த சாளர பட்டியல் அளவு">
+							<longdesc>க்னோம் 2.6 இல் இந்த விசையின் பயன்பாடு மறுக்கப்பட்டது . பழைய பதிப்புகளுக்கு ஆதரவு தருவதற்காக இந்த திட்டம் தொடரப்படுகிறது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_unminimized_windows">
+						<local_schema short_desc="மறைந்த சாளரங்களை காண்பிக்கும்போது தற்போதைய வேலையிடத்திட்கு நக்ர்த்தவும்">
+							<longdesc>உண்மையெனில், சாளரத்தை பெரிதாக்கும் போது தற்போதைய பணியிடத்திற்கு நகர்த்து. அல்லது பணி இடத்தை வேறு சாளரத்திற்கு கொண்டு செல்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="group_windows">
+						<local_schema short_desc="எப்பொழுது சாளரங்களை தொகுப்பது">
+							<longdesc>சாளரங்களை ஒரே பயன்பாட்டின் குழுக்களாக எப்போது ஆக்குவது என்பதை தீர்மானிக்கும். மதிப்புகள் &quot;எப்போதுமில்லை&quot;, &quot;தானாக&quot; மற்றும் &quot;எப்போதும்&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="அனைத்து வேலையிடங்களில் உள்ள சாளரங்களை காட்டுக">
+							<longdesc>உண்மையெனில் சாளர பட்டியல் எல்லா பணியிடங்களையும் காட்டும், அல்லது இது சாளரத்தின் தற்போதைய பணியிடத்தை மட்டும் காட்டும்.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="அசைவூட்டத்தின் வேகம்">
+							<longdesc>பலக உயிர்சித்திரம் நிகழ வேண்டிய வேகம். மதிப்புகள் &quot;மெதுவாக&quot;, &quot;நடுநிலையாக&quot;, மற்றும் &quot;வேகமாக&quot;. உயிர்சித்திரத்தை செயல்படுத்து விசை உண்மையெனில் இந்த விசை செயல்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide_size">
+						<local_schema short_desc="தெரியக்கூடிய பிக்செல்கள் மறைக்கப்பட்டது">
+							<longdesc>பலகம் தானாக ஓரத்தில் மறைந்த பின் உள்ள பிக்செல்லின் எண்ணிக்கையை குறிக்கும். இந்த விசை தானாக_மறை விசையோடு தொடர்புடையது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unhide_delay">
+						<local_schema short_desc="பலகை தன்னியக்கதாக காண்பிக்கும் நேரம்">
+							<longdesc>பலகம் தானாக மறுபடி காட்டப்படும் போது அம்புக்குறி பலக பகுதிக்குள் நுழைந்த பின்னும் உள்ள மில்லிசெகண்டை குறிப்பிடும். இந்த விசை தானாக_மறை விசை செயலில் இருக்கும் போது செயல்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hide_delay">
+						<local_schema short_desc="பலகை தன்னியக்கதாக மறைக்கும் நேரம்">
+							<longdesc>பலகம் தானாக மறுபடி காட்டப்படும் போது அம்புக்குறி பலக பகுதியிலிருந்து வெளியேறிய பின் உள்ள மில்லிசெகண்டை குறிப்பிடும். இந்த விசை தானாக_மறை விசை செயலில் இருக்கும் போது செயல்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_arrows">
+						<local_schema short_desc="மறைவு பொத்தான்களிள் அம்புகள் காட்டுக">
+							<longdesc>உண்மையெனில், அம்புக்குறி பட்டனில் மேல் வைக்கப்படும். இந்த வைசை பட்டனை செயல்படுத்து விசையோடு தொடர்புடையது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="மறைப்பு பொத்தானை காட்டுக">
+							<longdesc>உண்மையெனில், பட்டன் பலகத்தின் ஒவ்வொரு ஓரத்திலும் வைக்கப்படும் இதலால் பகலத்தை திரையின் ஓரத்திற்கு நகர்த்த முடியும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="அசைவூட்டங்களை இயலுமைப்படுத்துக">
+							<longdesc>உண்மையெனில், மறைத்தல் மற்றும் காட்டல் ஆகியவை அப்போது காட்டபடுவதற்கு பதிலாக இயக்க சித்திரமாக காட்டப்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide">
+						<local_schema short_desc="தன்னியக்கதாக பலகையை ஒரு மூலையில் மறைக்கவும்">
+							<longdesc>உண்மையெனில்  அம்புக்குறியை விடுவிக்கும் போது பலகம் தானாக மறைக்கப்பட்டு திரையின் ஓரத்திற்கு சென்றுவிரும். அம்புக்குறியை திரையின் ஓரத்திற்கு கொண்டு சென்றால் பலகம் மீண்டும் தெரியும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_centered">
+						<local_schema short_desc="y-அச்சுவில் பலகையை நடுப்படுத்துக">
+							<longdesc>உண்மையெனில் y மற்றும் yகீழ்விசைகள் தவிர்க்கப்பட்டு பலகம் y-அச்சின் திரையின் மையத்தில் வைக்கப்படும். பலகத்தின் அளவை மாற்றினால் அது அதே நிலையில் நிற்கும். அதாவது பலகம் எல்லா திசைகளிலும் விரியும். பொய்யெனில் y மற்றும் yகீழ்விசைகள் பலகத்தின் இடத்தை குறிப்பிடும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_centered">
+						<local_schema short_desc="x-அச்சுவில் பலகையை நடுப்படுத்துக">
+							<longdesc>உண்மையெனில் x விசை மற்றும் x வலது விசை தவிர்க்கப்பட்டு பலகம் x-அச்சின் திரையின் மையத்தில் வைக்கப்படும். பலகத்தின் அளவை மாற்றினால் அது அதே நிலையில் நிற்கும். அதாவது பலகம் எல்லா திசைகளிலும் விரியும். பொய்யெனில் x விசை மற்றும் x வலது விசை பலகத்தின் இடத்தை குறிப்பிடும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_bottom">
+						<local_schema short_desc="பலகத்தின் Y ஆயத்தொலைவு, திரையின் கீழ் பக்கம் துவங்கி">
+							<longdesc>திரையின் வலது பக்கம் துவங்கி y-அச்சில் பலகம் இருக்குமிடம். மதிப்பை -1 என அமைத்தால் அது உதாசீனப்படுத்தப்பட்டு y விசை பயன்படுத்தப்படும். மதிப்பு 0 க்கு மேல் இருந்தால் y விசை மதிப்பு உதாசீனப்படுத்தப்படும்.  இது இயக்க பாங்கோடு தொடர்புடையது. விரிவாக்க பாங்கில் இந்த விசை தவிர்க்கப்படும் மற்றும் பலகம் திரையில் ஓரத்தில் திசை விசையை பொருத்து வைக்கப்படும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_right">
+						<local_schema short_desc="பலகத்தின் X ஆயத்தொலைவு, திரையின் வலது பக்கம் துவங்கி">
+							<longdesc>திரையின் வலது பக்கம் துவங்கி x-அச்சில் பலகம் இருக்குமிடம். மதிப்பை -1 என அமைத்தால் அது உதாசீனப்படுத்தப்பட்டு x விசை பயன்படுத்தப்படும். மதிப்பு 0 க்கு மேல் இருந்தால் x விசை மதிப்பு உதாசீனப்படுத்தப்படும்.  இது இயக்க பாங்கோடு தொடர்புடையது. விரிவாக்க பாங்கில் இந்த விசை தவிர்க்கப்படும் மற்றும் பலகம் திரையில் ஓரத்தில் திசை விசையை பொருத்து வைக்கப்படும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y">
+						<local_schema short_desc="இப்பலகையின் Y இட-மதிப்பு">
+							<longdesc>y-அச்சில் பலகம் இருக்குமிடம். இது இயக்க பாங்கோடு தொடர்புடையது. விரிவாக்க பாங்கில் இந்த விசை தவிர்க்கப்படும் மற்றும் பகலம் திரையில் ஓரத்தில் திசை விசையை பொருத்து வைக்கப்படும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x">
+						<local_schema short_desc="இப்பலகையின் X இட-மதிப்பு">
+							<longdesc>x-அச்சில் பலகம் இருக்குமிடம். இது இயக்க பாங்கோடு தொடர்புடையது. விரிவாக்க பாங்கில் இந்த விசை தவிர்க்கப்படும் மற்றும் பகலம் திரையில் ஓரத்தில் திசை விசையை பொருத்து வைக்கப்படும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="பலகையின் அளவு">
+							<longdesc>பலகத்தின் உயரம்(செங்குத்து பலகத்தின் அகலம்). பலகம் இயக்கத்திலிருக்கும் போது எழுத்துரு அளவு மற்றும் மற்ற காட்டிகள் பற்றிய விவரங்களை கண்டறியும். அதிக பட்ச அளவு திரையின் உயரத்தின் கால் பகுதியாக இருக்கும்(அல்லது அகலம்)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="பலகையின் திசை அமைவு">
+							<longdesc>பலகத்தின் அமைப்பு. மதிப்புகள் &quot;மேல்&quot;,&quot;கீழ்&quot;,&quot;இடது&quot; மற்றும் &quot;வலது&quot;.விரிவாக்க  பாங்கில் எந்த திரை ஓர பலகம் செயல்பாட்டில் உள்ளது என்பதை காட்டும். விரிக்காத பாங்கு கிடைமட்ட பாங்கை குறிப்பதால் &quot;மேல்&quot; மற்றும் &quot;கீழ்&quot; முக்கியமில்லை - ஆனால் இது பலக பொருள்கள் எவ்வாறு நடந்துகொள்ளும் என்பதை காட்டும். உதாரணம் &quot;மேல்&quot; பலகம் மெனு பட்டன் அதன் மெனுவை பலகத்தின் கீழே காட்டும் ஆனால் &quot;கீழ்&quot; பலகம் மெனு பலகத்தின் மேலே காட்டப்படும்,</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand">
+						<local_schema short_desc="திரை அகலத்திட்கு பொருந்துமாரு பெரிதாக்குக">
+							<longdesc>உண்மையெனில், பலகம் திரை அகலத்தை முழுமையாக ஆக்ரமிக்கும்(செங்குத்து பகலமெனில் உயரம்).இந்த பாங்கில் பலகம் திரையின் மூலையில் வைக்கப்படும்.பொய்யெனில் பலகத்தால் குறுநிரல், துவக்கி மற்றும் பட்டனுக்கு்கு மட்டுமே இடமளிக்க முடியும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monitor">
+						<local_schema short_desc="பலகம் காட்ட வேண்டிய ஸ்னிராமா ">
+							<longdesc>ஸ்னிரமா நிறுவலில், ஒவ்வொரு திரையிலும் பலகம் இருக்கும். இந்த விசை தற்போது திரையில் காட்டப்படும் பலகத்தை குறிக்கும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screen">
+						<local_schema short_desc="பலகை காண்பிக்கப்படும் X திரை">
+							<longdesc>பல-திரை அமைப்புகளோடு, ஒவ்வொரு திரையிலும் பலகத்தை வைத்துக்கொள்ள முடியும். இந்த விசை பலகம் தற்போது காட்ட வேண்டிய விசையை குறிக்கும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="பலகையை அடையாளம் காட்டும் பெயர்">
+							<longdesc>இந்து படிக்ககூடிய பெரை பலகத்தின் பெயரை குறிக்க பயன்படுத்தலாம்.இதன் முக்கிய குறிக்கோள் பலகத்தின் பெயருக்கு ஏற்ப அதை பயன்படுத்துவதே </longdesc>
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="செங்குத்தான-பலகத்தில் பிம்பத்தை சுழற்று">
+								<longdesc>உண்மையெனில், பலகத்தை செங்குத்தாக சுழற்றும் போது பின்னனி பிம்பமும் சுழலும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stretch">
+							<local_schema short_desc="ஓவியத்தை பலகையில் நீட்டிப் போடுக">
+								<longdesc>உண்மையெனில், பலகத்தின் அளவுக்கேற்ப பிம்பம் அளவுமாற்றம் செய்யப்படும். விகிதத்தை நினைவில் கொள்ளாது</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="ஓவியத்தை பலகையின் அளவுக்கு பொருத்துக">
+								<longdesc>உண்மையெனில், பிம்பம் பகத்தில் உயரத்திற்கேற்ப.(விகிதத்தை நினைவில் கொண்டு செயல்படும்) அளவு மாற்றம் செய்யப்படும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="பின்னணி ஓவியம்">
+								<longdesc>பின்னனியாக பயன்படுத்த வேண்டிய பிம்பத்தை குறிப்பிடும். பிம்பத்தில் ஆல்பா அது மேல் மேசையில் கூட்டாக தெரியும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="பின்னணி வண்ணத்தின் ஒளி-புகாமை">
+								<longdesc>பின்னனி வண்ணத்தின் ஒலி புகும் தன்மையை காட்டும்.நிறம் ஒலிபுகுதன்மை இல்லாமல் இருந்தால்(மதிப்பு 65535 ஐ விட குறைவாக இருந்தால்), வண்ணம் மேல்மேசையில் பின்னனி வண்ணத்தோடு இணைந்து காட்டப்படும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="பின்னணி வண்ணம்">
+								<longdesc>#RGB முறைமையில் பலகையின் பின்னணி வண்ணத்தை கொடுக்கவும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="பின்னணி வகை">
+								<longdesc>இந்த பலகம் பயன்படுத்த வேண்டிய பின்னனியின் வகை. மதிப்புகள் &quot;gtk&quot; - பொதுவான GTK+ சிறுசாளர பின்னனி பயன்படுத்தப்படும். &quot;நிறம்&quot; விசை பின்னனி வண்ணத்தை குறிக்க பயன்படும் அல்லது &quot;பிம்பம்&quot; - குறிப்பிட்ட பிம்பத்தின் பின்னனியை குறிக்க பயன்படும்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="general">
+					<entry name="profiles_migrated">
+						<local_schema short_desc="பழைய வடிவுருக்கள் வடிவமைப்பு நகர்ந்துவிட்டன">
+							<longdesc>பயனரின் முந்தைய வடிவமைப்பு  /apps/panel/profiles/default இலிருந்து /apps/panel இடத்தில் பிரதி எடுக்கப்பட்டதை காட்ட பூலியன் குறி</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_id_list">
+						<local_schema short_desc="பலகை பொருள் ID பட்டியல்">
+							<longdesc>பலக பொருள் அடையாள பட்டியல். ஒவ்வொரு அடையாள எண்ணும் தனி பலக பொருளை  குறிக்கும். உதாரணம்: ஒரு துவக்கி, செயல் பொத்தான், பட்டியல் பொத்தான்/பலகை. இவற்றின் அமைப்பு //apps/panel/objects/$(id) அடைவில் சேமிக்கப்பட்டிருக்கும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_id_list">
+						<local_schema short_desc="பலகை குறும்பயன் ID பட்டியல்">
+							<longdesc>குறுநிரல் அடையாள பட்டியல். ஒவ்வொரு அடையாள எண்ணும் தனி பலக குறுநிரலை குறிக்கும். இதன் அமைப்பு /apps/panel/applets/$(id) அடைவில் சேமிக்கப்பட்டிருக்கும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id_list">
+						<local_schema short_desc="பலகை ID பட்டியல்">
+							<longdesc>பலக அடையாள பட்டியல். ஒவ்வொரு அடையாள எண்ணும் தனி மேல்மட்ட பலகத்தை குறிக்கும். இதன் அமைப்பு /apps/panel/toplevels/$(id) அடைவில் சேமிக்கப்பட்டிருக்கும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_autocompletion">
+						<local_schema short_desc=" &quot;பயன்பாட்டை இயக்கு&quot; உரையாடலில் தானியங்கி பூர்த்தி செயலை இயலுமைப்படுத்துக.">
+							<longdesc>உண்மையானால் தானியங்கி பூர்த்தி &quot;Run Application&quot;  உரையாடலில் இயலுமைப்படுத்தப்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_program_list">
+						<local_schema short_desc="&quot;பயன்பாட்டை இயக்கு&quot; உரையாடலில் இந்த நிரலை விரிக்கவும்">
+							<longdesc>உண்மையெனில் &quot;தெரிந்த பயன்பாடு&quot; பட்டியலில் &quot;பயன்பாட்டை இயக்கு&quot; விரிந்து உரையால் பெட்டி திறக்கப்படும். enable_program_list உண்மையாக இருந்தால் மட்டுமே இந்து செயல்படும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_program_list">
+						<local_schema short_desc="இந்த நிரல் பட்டியலில் &quot;பயன்பாட்டை இயக்கும்&quot; உரையாடல்">
+							<longdesc>உண்மையெனில் &quot;தெரிந்த பயன்பாடு&quot; பட்டியலில் &quot;பயன்பாட்டை இயக்கு&quot; விரிந்து உரையால் பெட்டி திறக்கப்படும். show_program_list கட்டுப்பாட்டை பொருத்து விரியும்</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global">
+					<entry name="disable_force_quit">
+						<local_schema short_desc="கட்டாயப்படுத்தி நிருத்துவதை முடக்குக">
+							<longdesc>உண்மையெனில், பலகம் பயனீட்டாளர் பயன்பாட்டிலிருந்து வெளியேறாமல் வெளியேறச்செய் பட்டனை செயலிழக்கச்செய்யும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_log_out">
+						<local_schema short_desc="விலகுவதை முடக்குக">
+							<longdesc>உண்மையெனில், பலகம் பயனீட்டாளர் வெளியேறாமல் வெளியேறு செயலிழக்கச்செய்யும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="கைவிடப்பட்டது">
+							<longdesc>இந்த விசை சரியாக பூட்டுவதற்கு பயன்படாததால் நீக்கப்பட்டது./desktop/gnome/lockdown/disable_lock_screen விசை அதற்கு பதில் பயன்படுத்தப்பட வேண்டும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disabled_applets">
+						<local_schema short_desc="ஏற்றத்தை செயல் நீக்க குறுநிரல் IIDs ">
+							<longdesc>பலகம் தவிர்க்கும் IIDக்களின் பட்டியல். இந்த முறையில் மெனுவில் பல ஆப்லட்டுகள் காட்டப்படுவதையும் ஏற்றப்படுவதையும் தவிர்க்கலாம், உதாரணம் mini-commander குறுநிரலை செயலிழக்கச்செய்ய  &apos;OAFIID:GNOME_MiniCommanderApplet&apos; ஐ பட்டியலில் சேர்த்து, பலகத்தை மீண்டும் துவக்கவும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked_down">
+						<local_schema short_desc="பலகம் முழுமையாக பூட்டபட்டிறூக்கிறது">
+							<longdesc>உண்மையெனில் பலக அமைப்பில் மாற்றங்களை அனுமதிக்காது. தனிப்பட்ட குறுநிரல்கள் தனியாக பூட்டப்படவேண்டும். விளைவை உறுதி செய்ய பலகத்தை மீண்டும் துவக்க வேண்டும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="highlight_launchers_on_mouseover">
+						<local_schema short_desc="சுட்டி மேலிருக்கும்போது தொடங்கர்களை தனிப்படுத்தி காட்டுக">
+							<longdesc>உண்மையெனில், பயனீட்டாளர் அம்புக்குறியை நகர்த்தும் போது தனிப்படுத்திக்காட்டப்படும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_panel_remove">
+						<local_schema short_desc="பலகை அழிப்பதை உறுதிசெய்யவும்">
+							<longdesc>உண்மையெனில், பலகத்தை நீக்க தியை உறுதிப்படுத்செய்தியை காட்டும்தும் </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="drawer_autoclose">
+						<local_schema short_desc="இழுப்பறையை தன்னியக்கதாக மூடுக">
+							<longdesc>உண்மையெனில், துவக்கியை பயன்படுத்தும் போது இழுத்தல் தானாக மூடப்படும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="window_screenshot_key">
+						<local_schema short_desc="கைவிடப்பட்டது">
+						</local_schema>
+					</entry>
+					<entry name="screenshot_key">
+						<local_schema short_desc="கைவிடப்பட்டது">
+						</local_schema>
+					</entry>
+					<entry name="run_key">
+						<local_schema short_desc="கைவிடப்பட்டது">
+						</local_schema>
+					</entry>
+					<entry name="menu_key">
+						<local_schema short_desc="கைவிடப்பட்டது">
+						</local_schema>
+					</entry>
+					<entry name="enable_key_bindings">
+						<local_schema short_desc="கைவிடப்பட்டது">
+						</local_schema>
+					</entry>
+					<entry name="panel_hide_delay">
+						<local_schema short_desc="கைவிடப்பட்டது">
+						</local_schema>
+					</entry>
+					<entry name="panel_animation_speed">
+						<local_schema short_desc="கைவிடப்பட்டது">
+						</local_schema>
+					</entry>
+					<entry name="panel_show_delay">
+						<local_schema short_desc="கைவிடப்பட்டது">
+						</local_schema>
+					</entry>
+					<entry name="panel_minimized_size">
+						<local_schema short_desc="கைவிடப்பட்டது">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="அசைவூட்டங்களை இயலுமைப்படுத்துக">
+						</local_schema>
+					</entry>
+					<entry name="keep_menus_in_memory">
+						<local_schema short_desc="கைவிடப்பட்டது">
+						</local_schema>
+					</entry>
+					<entry name="tooltips_enabled">
+						<local_schema short_desc="உதவிக்கருவிகளை இயலுமைப்படுத்துக">
+							<longdesc>உண்மையெனில், கருவிக்குறிப்புகள் பொருள் பலகத்தில் காட்டப்படும்.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="objects">
+					<entry name="action_type">
+						<local_schema short_desc="செயல் பொத்தான் வகை">
+							<longdesc>இந்த பட்டன் குறிப்பிடும் செயல்பாட்டு வகை. மதிப்புகள் &quot;பூட்டப்படது&quot;, &quot;வெளிச்செல்&quot;, &quot;தேடு&quot; மற்றும் &quot;திரைக்காப்பு&quot; ஆகியவையாக இருக்கும். இந்த விசை பொருள்வகை &quot;செயல்-குறுநிரல்&quot; என இருக்கும் போது மட்டுமே செயல்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="launcher_location">
+						<local_schema short_desc="தொடங்கர் இடம்">
+							<longdesc>.desktop கோப்பு இருக்குமிடம் துவக்கியை விளக்கும். இந்த விசை பொருள்வகை &quot;துவக்கி-பொருள்&quot; ளோடு தொடர்புடையது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menu_path">
+						<local_schema short_desc="பட்டி உள்ளடக்கம் பாதை">
+							<longdesc>மெனு உள்ளடக்கங்கள் உருவாக்க பயன்பட்ட பாதை. use_menu_path மற்றும் object_type விசைகள் &quot;menu-object&quot; விசையோடு தொடர்புடையது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_menu_path">
+						<local_schema short_desc="பட்டி உள்ளடக்கங்களுக்கு தனிப்பயன் பாதை பயன்படுத்துக">
+							<longdesc>உண்மையெனில் மெனு_பாதை விசை மெனு உள்ளடகத்திற்கான பாதையாக பயன்படுத்தப்படும். பொய் எனில் மெனு_பாதை தவிர்க்கப்படும். இந்த விசை பொருள் வகை &quot;மெனு_பொருளாக&quot; இருந்தால் மட்டுமே பயன்படும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_icon">
+						<local_schema short_desc="இப்பொருளின் பொத்தான் பயன்படுத்தும் குறும்படம்">
+							<longdesc>இந்த பொருளுக்கான பட்டனாக தேர்வு செய்யப்பட்ட பிம்பம் உள்ள இடம். இந்த விசை பொருள்_வகை &quot;பெறுநர்-பொருள்&quot; அல்லது &quot;மெனு-பொருள்&quot; மற்றும் use_custom_icon விசை உண்மை யோடு தொடர்புடையது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_icon">
+						<local_schema short_desc="பலகை பொத்தானுக்கு தனிப்பயன் குறும்படம் பயன்படுத்தவும்">
+							<longdesc>உண்மையெனில், தனி_சின்ன விசை தனி சின்னத்திற்கான பட்டனாக பயன்படுத்தப்படும். பொய் எனில், தனி_சின்னம் தவிர்க்கப்படும். இந்த விசை பொருள்வகை விசை &quot;மெனு_பொருள்&quot; அல்லது &quot;பெறுநர் பொருளாக&quot; இருந்தால் மட்டுமே செயல்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="tooltip">
+						<local_schema short_desc="இழுப்பறைக்கோ பட்டிக்கோ கருவி-உதவி காண்பிக்கப்பட்டது">
+							<longdesc>இந்த இழுப்பு அல்லது மெனுவில் காட்டப்பட வேண்டிய உரை. object_type  விசை &quot;drawer-object&quot; அல்லது &quot;menu-object&quot; குறித்தால் மட்டுமே பயன்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="attached_toplevel_id">
+						<local_schema short_desc="பலகை இழுப்பறைக்கு இணைந்தது">
+							<longdesc>பலகத்தின் இந்த அடையாளம் பெறுநரோடு பொருத்தப்பட்டிருக்கும். இந்த விசை பொருள் வகை &quot;பெறுநர் பொருள்&quot; என இருந்தால் மட்டுமே செயல்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_iid">
+						<local_schema short_desc="குறும்பயன் IID ">
+						</local_schema>
+					</entry>
+					<entry name="bonobo_iid">
+						<local_schema short_desc="போனபோ IID குறும்பயன்">
+							<longdesc>குறுநிரல்களுக்கு தனி நூலகம் அமைக்கப்பட்டதில் இந்த விசை கைவிடப்பட்டது. குறுநிரல்டின் போனபோ செயல்பாட்டு ID. உம் OAFIID:GNOME_ClockApplet&quot;.இந்த விசை பொருள் வகை &quot;போனபோ குறுநிரல்டாக&quot; இருந்தால் மட்டுமே செயல்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked">
+						<local_schema short_desc="பொருளை பலகையில் ஒட்டுக">
+							<longdesc>உண்மையெனில், பயனீட்டாளர் பலகத்தின் பூட்டை &quot;பூட்டை திற&quot; தேர்வை பயன்படுத்தி திறந்த பின்பு குறுநிரல்டை நகர்த்த முடியும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="panel_right_stick">
+						<local_schema short_desc="நிலையை கீழ்/வலது மூலையோடு தொடர்புபடுத்து">
+							<longdesc>உண்மையெனில், பொருளின் நிலை பலகத்தின் இடது பக்க (அல்லது கீழ் செங்குத்து) மூலையோடு தொடர்புடையதாக கொள்ளப்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="position">
+						<local_schema short_desc="பலகையில் பொருளின் இடம்">
+							<longdesc>இந்த பலக பொருளின் நிலை. நிலை இடமிருந்து பிக்செல்லின் எண்ணிக்கையை குறிக்கும்(மேல் செங்குத்து)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id">
+						<local_schema short_desc="உயர்ந்த நிலை பலகம் பொருள்களை கொண்டுள்ளது ">
+							<longdesc>உயர்ந்த நிலை பலகம் பொருள்களை கொண்டுள்ளது இனங்காட்டி</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_type">
+						<local_schema short_desc="பலகை பொருள் வகை">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="வேலையிடம் மாற்றியில் வரிசைகள்">
+							<longdesc>இந்த விசை எத்தனை வரிசை(கிடைமட்டம்) அல்லது நெடுவரிசை (செங்குத்து) வரிகள் பணியிடமாற்றியால் பணியிடத்தில் காட்ட முடியும் என்பதை காட்டும். display_all_workspaces  என்பதை உண்மை என அமைத்தால் இந்த தகவல்கள் காட்டப்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="அனைத்து வேலையிடங்களை காட்டுக">
+							<longdesc>உண்மையெனில், பணியிடமாற்றி அனைத்து பணியிடங்களையும் காட்டும், இல்லையெனில் தற்போதைய பணியிடத்தை மட்டும் காட்டும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="வேலையிடங்களின் பெயர்களைக் காட்டுக">
+							<longdesc>உண்மையெனில் பணியிடமாற்றி பணியிடங்களின் பெயரை காட்டும். இல்லையெனில் சாளரங்களை பணியிடத்தில் காட்டும். இது மெடாசிடியாக் சாளர மேலாளர் இருந்தால் மட்டுமே செல்லுபடியாகும்.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="speed_unit">
+						<local_schema short_desc="வேக அலகு">
+							<longdesc>காற்றின் வேகத்தை காட்டும் போது பயன்படுத்த அலகு.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="வெப்ப அலகு">
+							<longdesc>வெப்ப நிலையை காட்டும் போது பயன்படுத்த அலகு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cities">
+						<local_schema short_desc="இடங்களின் பட்டியல் ">
+							<longdesc>நாட்காட்டி சாளரத்தில் காட்ட இடங்கள் பட்டியல்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="internet_time">
+						<local_schema short_desc="இணைய நேரத்தை பயன்படுத்து">
+							<longdesc>&apos;வடிவமைப்பு&apos; விசைக்கு ஆதரவாக க்னோம் 2.6 இந்த விசையின் பயன்பாடு மறுக்கப்பட்டது . பழைய பதிப்புகளுக்கு ஆதரவு தருவதற்காக இந்த வசதி தொடரப்படுகிறது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="UNIX நேரம் பயன்படுத்துக">
+							<longdesc>&apos;வடிவமைப்பு&apos; விசைக்கு ஆதரவாக க்னோம் 2.6 இந்த விசையின் பயன்பாடு மறுக்கப்பட்டது . பழைய பதிப்புகளுக்கு ஆதரவு தருவதற்காக இந்த வசதி தொடரப்படுகிறது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="மணி வடிவமைப்பு">
+							<longdesc>&apos;வடிவமைப்பு&apos; விசைக்கு ஆதரவாக க்னோம் 2.6 இந்த விசையின் பயன்பாடு மறுக்கப்பட்டது . பழைய பதிப்புகளுக்கு ஆதரவு தருவதற்காக இந்த வசதி தொடரப்படுகிறது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_locations">
+						<local_schema short_desc="இடங்கள் பட்டியலை விரிக்கவும்.">
+							<longdesc>உண்மையானால் இடங்கள் பட்டியலை நாட்காட்டி சாளரத்தில் விரிக்கவும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_weather">
+						<local_schema short_desc="வானிலை தகவல் பட்டியலை விரிக்கவும்.">
+							<longdesc>உண்மையானால் வானிலை தகவல் பட்டியலை நாட்காட்டி சாளரத்தில் விரிக்கவும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_tasks">
+						<local_schema short_desc="வேலைகள் பட்டியலை விரிக்கவும்.">
+							<longdesc>உண்மையானால் வேலைகள் பட்டியலை நாட்காட்டி சாளரத்தில் விரிக்கவும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_birthdays">
+						<local_schema short_desc="பிறந்த நாட்கள் பட்டியலை விரிக்கவும்.">
+							<longdesc>உண்மையானால் பிறந்த நாட்கள் பட்டியலை நாட்காட்டி சாளரத்தில் விரிக்கவும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_appointments">
+						<local_schema short_desc="நேர ஒதுக்கீடுகள் பட்டியலை விரிக்கவும்.">
+							<longdesc>உண்மையானால் நேர ஒதுக்கீடுகள் பட்டியலை நாட்காட்டி சாளரத்தில் விரிக்கவும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="நாட்காட்டியில் வார எண்களை காட்டுக">
+							<longdesc>உண்மையானால் நாட்காட்டியில் வார எண்களை காட்டவும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="நேரம் அமைத்தல் கருவி">
+							<longdesc>உள்ளமை நேர வடிவமைப்பு கருவிக்கு ஆதரவாக க்னோம் 2.6 இல் இந்த விசையின் பயன்பாடு மறுக்கப்பட்டது . பழைய பதிப்புகளுக்கு ஆதரவு தருவதற்காக இந்த வசதி தொடரப்படுகிறது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="UTC பயன் படுத்தவும்">
+							<longdesc>&apos;நேர மண்டலம்&apos; க்கு ஆதரவாக க்னோம் 2.28 இந்த விசையின் பயன்பாடு மறுக்கப்பட்டது . பழைய பதிப்புகளுக்கு ஆதரவு தருவதற்காக இந்த வசதி தொடரப்படுகிறது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_temperature">
+						<local_schema short_desc="வெப்பநிலையை கடிகாரத்தில் காட்டுக">
+							<longdesc>உண்மையானால் வெப்ப நிலையை வானிலை சின்னத்துக்கு அடுத்து காட்டவும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_weather">
+						<local_schema short_desc="வானிலையை கடிகாரத்தில் காட்டுக">
+							<longdesc>உண்மை என்றால், வானிலை சின்னத்தை காட்டுக.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema short_desc="தேதியை கருவி-உதவியில் காண்பி">
+							<longdesc>உண்மையெனில், சுட்டியை கடிகாத்திற்கு அருகில் கொண்டு செல்லும்போது தேதி குறிப்பை காட்டு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="தேதியை கடிகாரத்தில் காட்டுக">
+							<longdesc>மெய்யென்றால், கடிகாரத்தில் தேதியையும் காட்டுக</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="நொடிகளுடன் நேரம் காட்டுக">
+							<longdesc>உண்மை என்றால், நேரத்தில் நொடிகள் காட்டுக.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="கடிகாரத்தின் தனிப்பயன் வடிவமைப்பு">
+							<longdesc>வடிவமைப்பு விசை &quot;தனிப்பயன்&quot; என்று அமைக்கப்படும் போது கடிகார குறுநிரல் இந்த விசையை பயன்படுத்தும் குறிப்பிட்ட அமைப்பை பெற்றுக்கொள்ள strftime() ஆல் புரிந்துகொள்ளக்கூடிய மாற்று குறிப்புகளை தரவும். மேலும் அதிக விவரங்களுக்கு strftime() கையேட்டை பார்க்கவும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="மணி வடிவமைப்பு">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gweather">
+				<dir name="prefs">
+					<entry name="radar">
+						<local_schema short_desc="ராடார் வரைபடத்திற்கான வலைமனை">
+							<longdesc>ரேடார் வரைப்படம் பெறப்படும் தனிப் பயன் யுஆர்எல்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_radar_url">
+						<local_schema short_desc="ராடார் வரைபடத்திற்கு தனிப்பயன் முகவரியைப் பயன்படுத்து">
+							<longdesc>உண்மையானால், &quot;ரேடார்&quot; விசை மூலம் குறிப்பிட்ட இடத்திலிருந்து ரேடார் வரைப்படம் தருவிக்கவும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="coordinates">
+						<local_schema short_desc="இடப்புள்ளிகள்">
+						</local_schema>
+					</entry>
+					<entry name="location4">
+						<local_schema short_desc="நகர வானிலை முன்னறிக்கை">
+						</local_schema>
+					</entry>
+					<entry name="location3">
+						<local_schema short_desc="ராடார் இடம்">
+						</local_schema>
+					</entry>
+					<entry name="location2">
+						<local_schema short_desc="மண்டலத்தின் இடம்">
+						</local_schema>
+					</entry>
+					<entry name="location1">
+						<local_schema short_desc="அருகிலுள்ள பெருநகரம்">
+						</local_schema>
+					</entry>
+					<entry name="location0">
+						<local_schema short_desc="தட்பவெட்ப இடத்தின் தகவல். ">
+						</local_schema>
+					</entry>
+					<entry name="enable_radar_map">
+						<local_schema short_desc="ராடார் வரைபடத்தை காட்டு">
+							<longdesc>ஒவ்வொரு மேலேற்றத்தின் போதும் ரேடார் வரைப்படத்தை அமை.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_detailed_forecast">
+						<local_schema short_desc="உபயோகிக்கத்தில் இல்லை">
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="வெப்பநிலை அலகு">
+							<longdesc>வெப்பத்தை அறிய பயன்படுத்தும் அலகு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed_unit">
+						<local_schema short_desc="வேகம் அலகு">
+							<longdesc>காற்றின் வேகத்தை அறிய பயன்படுத்தும் அலகு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pressure_unit">
+						<local_schema short_desc="அழுத்தம் அலகு">
+							<longdesc>அழுத்தத்தை அறிய பயன்படுத்தும் அலகு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="distance_unit">
+						<local_schema short_desc="தொலைவு அலகு">
+							<longdesc>காட்சிக்கு பயன்படுத்தும் அலகு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_metric">
+						<local_schema short_desc="மெட்ரிக் அலகு முறையை உபயோகி">
+							<longdesc>ஆங்கில முறைக்கு பதில் மெட்ரிக் முறை அலகுகளைப் பயன்படுத்து</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update_interval">
+						<local_schema short_desc="இற்றைபடுத்தல் இடைவெளி">
+							<longdesc>தானாக இற்றைபடுத்தலின் இடைவேளை நொடிகளில்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update">
+						<local_schema short_desc="தகவலை தானாக இற்றைபடுத்து">
+							<longdesc>சிறு நிரல்களே தானியங்கி சூழல்களின் புள்ளி விவரங்களைப் இற்றை படுத்துமாா என்பதைக் குறிப்பிடுகிறது.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="control-center">
+				<entry name="cc_exit_shell_on_action_upgrade_uninstall">
+					<local_schema short_desc="மேம்படுத்து அல்லது நிறுவல் நீக்கு செயல் முடிந்தவுடன் ஷெல் இலிருந்து வெளியேறு">
+						<longdesc>மேம்பாடு அல்லது நிறுவல் நீக்கம் செயல் நடந்தால் ஷெல் ஐ மூடுவதா என காட்டுகிறது.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_add_remove">
+					<local_schema short_desc="சேர் நீக்கு செயல் முடிந்தவுடன் ஷெல் இலிருந்து வெளியேறு">
+						<longdesc>சேர் அல்லது நீக்கு செயல் முடிந்தால் ஷெல் ஐ மூடுவதா என காட்டுகிறது.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_help">
+					<local_schema short_desc="உதவி செயல் முடிந்தவுடன் ஷெல் இலிருந்து வெளியேறு">
+						<longdesc>உதவி செயல் முடிந்தால் ஷெல் ஐ மூடுவதா என காட்டுகிறது</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_start">
+					<local_schema short_desc="துவக்கு செயல் முடிந்தவுடன் ஷெல் இலிருந்து வெளியேறு">
+						<longdesc>துவக்க செயல் நடந்தால் ஷெல் ஐ மூடுவதா என காட்டுகிறது</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_static_action">
+					<local_schema short_desc="ஒரு வேலை முடிந்ததும் கட்டுப்பாட்டு மையத்தை மூடு">
+						<longdesc>உண்மை எனில் கட்டுப்பாட்டு மையம்  &quot;Common Task&quot; செயலானதும் மூடப்படும்.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_actions_list">
+					<local_schema short_desc="வேலைகளின் பெயர்கள் மற்றும் தொடர்புள்ள desktop கோப்புகள்">
+					</local_schema>
+				</entry>
+				<dir name="network">
+					<entry name="current_location">
+						<local_schema short_desc="நடப்பு பிணைய இடம்">
+							<longdesc>உங்கள் நடப்பு இட பெயருக்கு இதனை அமை. இது தொடர்புடைய பிணைய ப்ராக்ஸி கட்டமைப்பை வரையறுக்க பயன்படுகிறது.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="appearance">
+					<entry name="more_themes_url">
+						<local_schema short_desc="கூடுதல் தீம்கள் URL">
+							<longdesc>எங்கு பணிமேடை தீம்களை பெறுவதற்கான URL. ஒரு வெற்று சரமாக அமைத்தால் இணைப்பு தோன்றாது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="more_backgrounds_url">
+						<local_schema short_desc="கூடுதல் பின்னணிகள் இணைய முகவரி">
+							<longdesc>எங்கு பணிமேடை பின்னணிகளை பெறுவதற்கான URL. ஒரு வெற்று சரமாக அமைத்தால் இணைப்பு தோன்றாது.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="உரை நீள்வட்ட வரையறை">
+							<longdesc>மேல்மேசையில் எப்படி கோப்பின் பெயர்கள் நீள்வட்டத்தால் மாற்றப்பட வேண்டும் என நிர்ணயிக்கும்  ஒரு முழு எண். எண் 0 ஐ விட அதிகமானால் கோப்பின் பெயர் குறிப்பிட்ட வரிகளுக்கு மேல் போகாது.  அது 0 அல்லது அதற்கும் குறைவானால் தடை ஏதும் இராது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_name">
+						<local_schema short_desc="பிணைய சேவையக சின்னத்தின் பெயர்">
+							<longdesc>உங்கள் மேல் மேசையில் உள்ள பிணைய சேவையகங்களுக்கான சின்னத்திற்கு நீங்கள் விரும்பிய பெயரை அமைக்கலாம்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_name">
+						<local_schema short_desc="மேல்மேசை குப்பைதொட்டி அடைவின் பெயர்">
+							<longdesc>உங்கள் மேல் மேசையில் உள்ள குப்பை தொட்டிக்கு நீங்கள் விரும்பிய பெயரை தர இந்த பெயரை அமைக்க வேண்டும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="மேல்மேசை இல்ல அடைவின் சின்னம்">
+							<longdesc>உங்கள் மேல் மேசையில் உள்ள இல்ல அடைவிற்கு நீங்கள் விரும்பிய பெயரை தர இந்த பெயரை அமைக்க வேண்டும்்டும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="மேல்மேசை கணின் சின்னத்தின் பெயர்">
+							<longdesc> கணிப்பொறியோடு தொடர்புடைய சின்னங்கள் மேல்மேசையை வந்து அடையும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="மேல்மேசையில் தெரியும் பிணைய சேவையக சின்னம்.">
+							<longdesc>உண்மை என அமைத்தால், பிணைய சேவையகங்களோடு தொடர்புடைய சின்னம் மேல்மேசையில் வந்து சேரும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volumes_visible">
+						<local_schema short_desc="ஏற்றப்பட்ட ஊடகங்களை மேல்மேசையில் காட்டு">
+							<longdesc>உண்மை என அமைத்தால், ஏற்றப்பட்ட மென்பொருள்களோடு தொடர்புடைய சின்னங்கள் மேல்மேசையில் வந்து சேரும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="மேல் மேசையில் தெரியும் குப்பை தொட்டி">
+							<longdesc>உண்மை என அமைத்தால், குப்பை தொட்டியோடுோடு தொடர்புடைய சின்னங்கள் மேல்மேசையில் வந்து சேரும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="மேசையில் தெரியும் கணினி சின்னம்">
+							<longdesc>உண்மை என அமைத்தால், கணிப்பொறியோடு தொடர்புடைய சின்னங்கள் மேல்மேசையை வந்து அடையும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="மேல்மேசையில் தெரியும் இல்ல அடைவு">
+							<longdesc>உண்மை என அமைத்தால், இல்ல அடைவோடு தொடர்புடைய சின்னங்கள் மேல்மேசையில் வந்து சேரும்</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema short_desc="கிளை பக்கபட்டியில் மட்டும் அடைவுகளை காட்டு">
+								<longdesc>உண்மை என அமைத்தால், Nautilus கிளை உள்ள பக்கத்தில் உள்ள அடைவை மட்டும் காட்டும். இல்லையெனில் எல்லா அடைவுகளையும் கோப்புகளையும் காட்டும்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="இயல்பான நெடுவரிசை பட்டியல் காட்சி">
+							<longdesc>முன்னிருப்பு நிரல் பட்டியல் காட்சி வரிசை.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="பட்டியல் காட்சியில் தெரிய வேண்டிய நெடுவரிசைகளின் பட்டியல்">
+							<longdesc>பட்டியல் காட்சியில் தெரிய வேண்டிய நிரல்களின் பட்டியல்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="இயல்பான பட்டியல் அளவு மட்டம்">
+							<longdesc>பட்டியல் காட்சியால் பயன்படுத்தப்படும் முன்னிருப்பு அளவிடும் நிலை.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="புதிய சாளரங்களை தலைகீழாக அடுக்கு">
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="இயல்பான அடுக்கல் முறைமை">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="compact_view">
+					<entry name="all_columns_have_same_width">
+						<local_schema short_desc="எல்லா பத்திகளிலும் ஒரே அகலம்">
+							<longdesc>இந்த தேர்வை அமைத்தால், கையடக்க பார்வையில்  எல்லா பத்திகளும் ஒரே அகலத்தில் இருக்கும். இல்லையானால் ஒவ்வொரு பத்தியின் அகலத்தையும் தனித்தனியே அமைக்க வேண்டும். </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="இயல்பான கையடக்க அணுகல் அளவு ">
+							<longdesc>கையடக்க காட்சியால் பயன்படுத்தப்படும் முன்னிருப்பு அளவிடும் நிலை.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="உரை நீள்வட்ட வரையறை">
+							<longdesc>காட்சி அணுகல் அளவை பொறுத்து எப்படி கோப்பின் பெயர்கள் நீள்வட்டத்தால் மாற்றப்பட வேண்டும் என நிர்ணயிக்கும்  ஒரு சரம். பட்டியலில் ஒவ்வொரு உள்ளீடும் இந்த முழு எண் பாங்கில் இருக்கும்: &quot;அணுகல் மட்டம்:முழு எண்&quot;  .ஒவ்வொரு அணுகல் மட்டத்துக்கும் தரப்படும் முழு எண் 0 க்கு அதிகமானால் கோப்பின் பெயர் குறிப்பிட்ட வரிகளுக்கு மேல் போகாது.  அது 0 க்கும் குறைவானால் தடை ஏதும் இராது. ஒரு முன்னிருப்பு &quot; முழு எண்&quot;  உள்ளீடும் நிர்ணயிக்கும் அணுகல் மட்டம் இல்லாமல் அனுமதிக்கப்படும்.  இது மற்ற அணுகல் மட்டங்களில் அதிக பட்ச வரிகளின் எண்ணிக்கையை நிர்ணயிக்கிறது. எ-டு: 0 - எப்போதும் மிக நீள கோப்பு பெயரை காட்டுக; 3 - மூன்று வரிகளுக்கு மேலான பெயரை சுருக்கு; மிகமிகச் சிறியது:5,மிகச் சிறியது:4,0 - அணுகல் அளவு &quot; மிகமிகச் சிறியது&quot;  ஆனால் ஐந்து வரிகளுக்கு மேலான பெயரை சுருக்கு; அணுகல் அளவு &quot; மிகச் சிறியது&quot;  ஆனால் நான்கு வரிகளுக்கு மேலான பெயரை சுருக்கு; மற்ற அணுகல் அளவுகளுக்கு பெயரை சுருக்காதே. கிடைப்பில் உள்ள அணுகல் அளவுகள்: மிகமிகச் சிறியது (33%), மிகச் சிறியது (50%),  சிறியது (66%), செந்தரம் (100%), பெரியது (150%), மிகப் பெரியது (200%), மிகமிகப் பெரியது (400%)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_size">
+						<local_schema short_desc="முன்னிருப்பு சிறுசின்ன அளவு">
+							<longdesc>பட்டியல் காட்சியில் தெரிய வேண்டிய நிரல்களின் பட்டியல்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="இயல்பான சின்ன அளவு ">
+							<longdesc>சின்னத்தின் காட்சியால் பயன்படுத்தப்படும் முன்னிருப்பு அளவிடும் நிலை.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="labels_beside_icons">
+						<local_schema short_desc="சின்ங்களுக்கு பக்கத்தில் விளக்க சீட்டை வைக்கவும்">
+							<longdesc>உண்மையெனில், பெயர்கள் சின்னங்களுக்கு கீழே இல்லாமல் ஓரத்தில் பொருத்தப்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_tighter_layout">
+						<local_schema short_desc="புதிய சாளரத்தில் இறுக்கமான உருவரையை பயன்படுத்து">
+							<longdesc>உண்மையெனில் சின்னங்கள் புதிய சாளரத்தில் அருகருகே அடுக்கப்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="புதிய சாளரங்களை தலைகீழாக அடுக்கு">
+							<longdesc>உண்மை என அமைத்தால் கோப்புகள் தலைகீழ் அகரவரிசைப்படி அடுக்கப்படும், அதாவது பெயர்வாரியாக &quot;a&quot; லிருந்து &quot;z&quot; க்கு பதில் &quot;z&quot; டிலிருந்து &quot;a&quot; வரை அடுக்கப்படும். அளவுவாரியாக பெரிய அளவு கோப்பிலிருந்து சிறிய அளவு கோப்பாக அடுக்கப்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="இயல்பான அடுக்கல் முறைமை">
+						</local_schema>
+					</entry>
+					<entry name="captions">
+						<local_schema short_desc="சின்னங்களுக்கான தலைப்புகள்">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="பக்க பட்டி காட்சி">
+							<longdesc>புதிதாக திறந்த சாளரத்டை காட்டும் பக்க பலகம்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="புதிய சாளரத்தில் பக்க பலகத்தை காட்டு">
+							<longdesc>உண்மை என அமைத்தால், புதிதாக திறந்த சாளரங்களில் பக்க பலகம் தெரியும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="நிலைப்பட்டியை புதிய சாளரத்தில் காட்டு">
+							<longdesc>உண்மை என அமைத்தால், புதிதாக திறந்த சாளரங்களில் நிலைப்பட்டை தெரியும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="இடப்பட்டியை புதிய சாளரத்தில் காட்டு">
+							<longdesc>உண்மை என அமைத்தால் , புதிதாக திறந்த சாளரங்களில் இடப்பட்டி தெரியும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="கருவிப்பட்டியை புதிய சாளரத்தில் காட்டு">
+							<longdesc>உண்மை என அமைத்தால், புதிதாக திறந்த சாளரங்களில் நிலைபட்டி தெரியும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="பக்க பலகத்தில் அகலம்">
+							<longdesc>புதிய சாளரத்தில் பக்க பலகத்தில் இயல்பான அகலம்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="தேதி வடிவம்">
+							<longdesc>கோப்பு தேதியின் வடிவமைப்பு. மதிப்புகள் &quot;locale&quot;, &quot;iso&quot;, மற்றும்&quot;informal&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="இயல்பான அடைவு காட்சி">
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="இயல்பான பக்க பலகம் பின்னனி கோப்பின் பெயர்">
+							<longdesc>முன்னிருப்பு பக்க பலக பின்னணி கோப்பின் பெயர், side_pane_background_set என்பது உண்மை என்றிருக்கும் போது மட்டும் பயன்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="இயல்பான பக்க பலகம் பின்னனி வண்ணம்">
+							<longdesc>முன்னிருப்பு பக்க பலக பின்னணி கோப்பின் பெயர், side_pane_background_set என்பது உண்மை என்றிருக்கும் போது மட்டும் பயன்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_set">
+						<local_schema short_desc="தனாக பக்க பலக பின்னனி அமைத்தல்">
+							<longdesc>தனிப்பயன் இயல்பு அளவை பக்க பலகத்தின் பின்னனிக்கு அமைக்க வேண்டுமா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="இயல்பான பின்னனி கோப்பின் பெயர்">
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="இயல்பான பின்னனி நிறம்">
+							<longdesc>முன்னிருப்பு கோப்பு பின்னணிக்கு வண்ணம் . பின்னணி அமை இல் உண்மை என அமைந்தால் மட்டுமே பயன்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema short_desc="தனிப்பயன் பின்னணி">
+							<longdesc>தனிப்பயன் இயல்பு பின்னனிக்கு அமைக்க வேண்டுமா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_is_home_dir">
+						<local_schema short_desc="நாடுலஸ் பயனீட்டாளர்களின் இல்ல அடைவை மேல்மேசையாக பயன்படுத்துகிறது.">
+							<longdesc>உண்மை என அமைத்தால், நாடுலஸ் பயனீட்டாளரின் இல்ல அடைவை மேல்மேசைக்கு கொண்டு செல்லும். இல்லையெனில் ~/Desktop ஐ மேல் மேசையாக பயன்படுத்தும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="மேல்மேசை எழுத்துரு">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="நாடுலஸ் மேல்மேசையில் வரைவதை கையாள்கிறது">
+							<longdesc>உண்மை என அமைத்தால், நாடுலஸ் சின்னங்களை மேசைக்கு கொண்டு செல்லும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="சாளரத்தில் அடைவுகளை முதலில் காட்டு">
+							<longdesc>உண்மை என அமைத்தால், நாடுலஸ் முதலில் அடைவுகளை காட்டிவிட்டு பின் சின்னங்களை காட்டும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_advanced_permissions">
+						<local_schema short_desc="கோப்பு பண்புகள் உரையாடலில் மேம்பட்ட அனுமதிகளை காட்டு ">
+							<longdesc>உண்மை என அமைத்தால், நாடுலஸ் விருப்பங்கள் உரையாடல் பெட்டியில் உள்ள சில தேர்வுகளை யூனிக்ஸ் வழியில் திருத்த அனுமதிக்கும். இதனால் சில அபூர்வ தேர்வுகள் கிடைக்கும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="preview_sound">
+						<local_schema short_desc="சின்னங்களை நகர்த்தும் போது ஒலி எழுப்ப வேண்டுமா">
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_limit">
+						<local_schema short_desc="சிறுபிம்பமாக்க தேவையான அதிகபட்ச பிம்ப அளவு">
+							<longdesc>இந்த அளவுக்கு(in bytes) மேல் பிம்பங்களின் அளவு இருந்தால் அவைகளை சிறு பிம்பங்களாக முடியாது. இந்த அமைப்புக்கு காரணம் சின்னங்கள் பெரிய பிம்பங்களை பதிவிறக்கம் செய்துகொள்ள அதிக நேரம் எடுத்துக்கொள்வதே.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_image_thumbnails">
+						<local_schema short_desc="பிம்பங்களின்சிறு பிம்பங்களை காட்ட வேண்டுமா">
+						</local_schema>
+					</entry>
+					<entry name="mouse_back_button">
+						<local_schema short_desc="உலாவி சாளரத்தில் &quot;பின்னே&quot;  கட்டளையை செயல்படுத்த சுட்டி பொத்தான் ">
+							<longdesc>சொடுக்கியில் &quot;முன்னே&quot; மற்றும்&quot;பின்னே&quot;  பொத்தான்கள் உள்ள பயனர்களுக்கு இந்த விசை இரண்டில் எந்த பொத்தானை அழுத்தினால் &quot;பின்னே&quot; கட்டளை உலாவி சாளரத்தில்  நிகழ வேண்டும் என நிர்ணயிக்கிறது. இருக்கக்கூடிய மதிப்புகள் 6 முதல் 14 வரை.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_forward_button">
+						<local_schema short_desc="உலாவி சாளரத்தில் &quot;முன்னே&quot;  கட்டளையை செயல்படுத்த சுட்டி பொத்தான் ">
+							<longdesc>சொடுக்கியில் &quot;முன்னே&quot; மற்றும்&quot;பின்னே&quot;  பொத்தான்கள் உள்ள பயனர்களுக்கு இந்த விசை இரண்டில் எந்த பொத்தானை அழுத்தினால் &quot;முன்னே&quot; கட்டளை உலாவி சாளரத்தில்  நிகழ வேண்டும் என நிர்ணயிக்கிறது. இருக்கக்கூடிய மதிப்புகள் 6 முதல் 14 வரை.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_use_extra_buttons">
+						<local_schema short_desc="நாடுலஸ் உலாவி சாளரத்தில் கூடுதல் சொடுக்கி பொத்தான்களை பயன்படுத்துக ">
+							<longdesc>சொடுக்கியில் &quot;முன்னே&quot; மற்றும்&quot;பின்னே&quot;  பொத்தான்கள் உள்ள பயனர்களுக்கு இந்த விசை இரண்டில் ஒன்றை அழுத்தினாலும் நாடுலஸ் உள்ளே என்ன செயல் நிகழ வேண்டும் என நிர்ணயிக்கிறது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="install_mime_activation">
+						<local_schema short_desc="தெரியாத மைம் வகைகளுக்கு பொதி நிறுவியை காட்டுவதா">
+							<longdesc>தெரியாத மைம் வகையை திறந்தால் அதை கையாள ஒரு  பயன்பாட்டை தேட பொதி நிறுவி உரையாடலை பயனருக்கு காட்டவா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="executable_text_activation">
+						<local_schema short_desc="இயக்க உரைக்கோப்புகள் செயல்படுத்தும் போது என்ன செய்யப்பட வேண்டும்">
+							<longdesc>இயக்க உரை கோப்புகள் செயல்படுத்தப்படும் போது என்ன செய்ய வேண்டும்(ஒரு அல்லது இரண்டு க்ளிக்), மதிப்புகள்  &quot;launch&quot; துவக்கு &quot;ask&quot; என்ன செய்ய என கேள் மற்றும் &quot;display&quot; காட்டு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="click_policy">
+						<local_schema short_desc="கோப்புகளை திறக்க/துவக்க பயன்படுத்தப்படும் உருவரை">
+							<longdesc>&quot;ஒன்று &quot; என்பது ஒரே க்ளிக்கின் அடைவை திறக்கவும் &quot;இரண்டு&quot; இரண்டு முறை க்ளிக் செய்து திறக்கவும் பயன்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_directory_item_counts">
+						<local_schema short_desc="அடைவில் உள்ள உருப்படிகளின் எண்ணிக்கையை காட்ட வேண்டுமா">
+						</local_schema>
+					</entry>
+					<entry name="show_icon_text">
+						<local_schema short_desc="உரையின் முன்தோற்றத்தை சின்னத்தில் காட்ட வேண்டுமா">
+						</local_schema>
+					</entry>
+					<entry name="enable_delete">
+						<local_schema short_desc="உடன நீக்கலை செயல்படுத்த வேண்டுமா">
+							<longdesc>உண்மை என அமைத்தால், நாடுலஸ் குப்பைக்கு கொண்டு செல்லாமால் நேரடியாக கோப்புகளை நீக்கும். இது கொஞ்சம் ஆபத்தானது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_trash">
+						<local_schema short_desc="கோப்பை குப்பைக்கு நகர்த்தும் போது உறுதிச்செய்தியை கேட்க வேண்டுமா">
+							<longdesc>உண்மை என அமைத்தால், நாடுலஸ் கோப்புகளை குப்பைக்கு அனுப்பும் முன் உறுதிப்படுத்திக்கொள்ளும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="navigation_window_saved_maximized">
+						<local_schema short_desc="திசை காட்டி சாளரத்தை பெரிதாக்க வேண்டுமா.">
+							<longdesc>முன்னிருப்பாக திசை காட்டி சாளரத்தை பெரிதாக்க வேண்டுமா.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="navigation_window_saved_geometry">
+						<local_schema short_desc="வழிகாணும் சாளரத்திற்கான ஜியோமிதி சரம்">
+							<longdesc>திசை காட்டி சாளரத்துக்கான சேமித்த ஜியோமிதி மற்றும் ஆயத்தொலைவு சரங்களை கொண்ட சரம்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_open_folder">
+						<local_schema short_desc="பயனர்  தேர்வு  &quot;அடைவை திற &quot;  என அமைந்த x-உள்ளடக்க/* வகைகளின் பட்டியல்.">
+							<longdesc>பயனர்  தேர்வு  &quot;அடைவை திற &quot;  என அமைந்த x-உள்ளடக்க/* வகைகளின் பட்டியல்.. இந்த வகை வகையில் பொருந்தும் ஊடகத்தை  உள்ளிட்டால் ஒரு அடைவு சாளரம் திறக்கப்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_ignore">
+						<local_schema short_desc="பயனர்  தேர்வு &quot;ஒன்றும் செய்யாதே&quot; என அமைந்த x-உள்ளடக்க/* வகைகளின் பட்டியல்.">
+							<longdesc>பயனர்  தேர்வு &quot;ஒன்றும் செய்யாதே&quot; என அமைந்த x-உள்ளடக்க/* வகைகளின் பட்டியல். இந்த வகையில் பொருந்தும்  ஊடகத்தை உள்ளிட்டால் எந்த தூண்டியும் காட்டப்படாது, எந்த நிரலும் துவக்கப்படாது. </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_start_app">
+						<local_schema short_desc="விரும்பிய பயன்பாடு துவக்க எக்ஸ்- உள்ளடக்க /* வகை பட்டியல் ">
+							<longdesc>x-உள்ளடக்க/* வகைகளின் பட்டியல். பயனர்  தேர்வு இதில் நிரலைத்துவக்கு . இந்த வகையில் பொருந்தும் ஊடகத்தை  உள்ளிட்டால் முன் தேர்வு செய்த நிரல் துவங்கும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_never">
+						<local_schema short_desc="ஊடகம் உள்ளிட்டால் ஒருபோதும் தானியங்கியாக நிரல்களை  துவக்காதே அல்லது தூண்டாதே">
+							<longdesc>உண்மை என அமைத்தால், நாடுலஸ் ஊடகத்தை உள்ளிடும் போது தானியங்கி துவக்கம் அல்லது இயக்கம் எதையும் செய்யாது செய்யக்கேளாது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount_open">
+						<local_schema short_desc="தானியங்கியாக ஏற்றிய  ஊடகத்துக்கு தானியங்கியாக ஒரு கோப்பை திறக்கவா">
+							<longdesc>உண்மை என அமைத்தால் நாடுலஸ்  ஊடகம்  தானியங்கியாக ஏற்றும் போது தானியங்கியாக ஒரு அடைவையும் ஏற்றும். இது செல்லுபடியாவது x வகை/* உள்ளடக்கம் இல்லை என தெரிந்த ஊடகத்துக்குத்தான், x வகை உள்ளடக்கம் இருந்தால் பயனர் நிர்ணயித்தபடி செயல் நிகழும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount">
+						<local_schema short_desc="ஊடகத்தை தானியங்கியாக ஏற்றுவதா">
+							<longdesc>உண்மை என அமைத்தால் நாடுலஸ் பயனர் நீக்க கூடிய ஊடகம் போன்ற பார்க்கக்கூடிய  ஊடகங்களை துவக்கத்தின்போதும் மற்றும் ஊடகம் உள்ளிட்ட போதும் தானியங்கியாக திறக்கும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_location_entry">
+						<local_schema short_desc="பாதை பட்டைக்கு பதிலாக எப்போதும் இட உள்ளீட்டை பயன்படுத்தவும்">
+							<longdesc>உண்மை என அமைத்தால், நாடுலஸ் உலாவி சாளரங்கள் பாதைபட்டிக்கு பதில் எப்போதும் உரை வகை உள்ளீட்டை மட்டும் இட கருவிப்பட்டிக்கு பயன்படுத்தும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_browser">
+						<local_schema short_desc="பழைய நாடுலஸ் சாளரங்களை திறக்க வேண்டிய இடத்தில் செயல்படுத்து">
+							<longdesc>உண்மை என அமைத்தால், நாடுலஸ் சாளரம் உலாவி சாளரமாக வேலை செய்யும். பதிப்பு 2.6 இல் இந்த வசதி பயனீட்டாளர் விருப்பதிற்காக </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="exit_with_last_window">
+						<local_schema short_desc="கடைசி சாளரம் நாசமானதும் நாடுலஸ் வெளியேறும்">
+							<longdesc>உண்மை என அமைத்தால் எல்லா சாளரங்களும் நாசமானதும் நாடுலஸ் வெளியேறும். இது முன்னிருப்பு அமைப்பு. இதை பொய் என அமைத்தால் அதை எந்த சாளரமும் இல்லாமல் துவக்கலாம். இதனால் நாடுலஸை ஊடக தானியங்கி கண்காணிப்பாளராகவும் அது போன்ற மற்ற வேலைகளுக்கும் ஒரு கிங்கரனாக பயன்படுத்தலாம். </longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="எழுத்துரு அளவை இயல்பாக பயன்படும் விசைப்பலகை குறுக்கு விசை">
+							<longdesc>எழுத்துருவை இயல்பான அளவாக்குவதற்கான விசைப்பலகை குறுக்கு விசை .GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="எழுத்துரு அளவை சிறிதாக்க பயன்படும் விசைப்பலகை குறுக்கு விசை">
+							<longdesc>எழுத்துருவை சிறிதாக்குவதற்கான விசைப்பலகை குறுக்கு விசை .GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="எழுத்துருவை பெரிதாக்க பயன்படும் விசைப்பலகை குறுக்கு விசை">
+							<longdesc>எழுத்துருவை பெரிதாக்குவதற்கான விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="உதவியை துவக்க பயன்படும் விசைப்பலகை குறுக்கு விசை">
+							<longdesc>உதவியை துவக்குவதற்கான குறுக்கு விசை.GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="கீற்று 12 க்கு நகர குறுக்கு விசை">
+							<longdesc>கீற்று 12 க்கு நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="கீற்று 11 க்கு நகர குறுக்கு விசை">
+							<longdesc>அடுத்த கீற்று 11 க்கு  நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="கீற்று 10 க்கு நகர குறுக்கு விசை">
+							<longdesc>அடுத்த கீற்று 10 க்கு நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="கீற்று 9 க்கு நகர குறுக்கு விசை">
+							<longdesc>கீற்று 9 க்கு நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="கீற்று 8 க்கு நகர குறுக்கு விசை">
+							<longdesc>கீற்று 8 க்கு நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="கீற்று 7 க்கு நகர குறுக்கு விசை">
+							<longdesc>கீற்று 7 க்கு நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="கீற்று 6 க்கு நகர குறுக்கு விசை">
+							<longdesc>கீற்று 6 க்கு நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="கீற்று 5 க்கு நகர குறுக்கு விசை">
+							<longdesc>கீற்று 5 க்கு நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="கீற்று 4 க்கு நகர குறுக்கு விசை">
+							<longdesc>கீற்று 4 க்கு நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="கீற்று 3 க்கு நகர குறுக்கு விசை">
+							<longdesc>கீற்று 3 க்கு நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="கீற்று 2 க்கு நகர குறுக்கு விசை">
+							<longdesc>கீற்று 2 க்கு நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="கீற்று 1 க்கு நகர குறுக்கு விசை">
+							<longdesc> கீற்று 1 க்கு நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட  ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="நடப்பு கீற்றை நீக்கும் மாற்றி">
+							<longdesc>கீற்றை தனியாக பிரிக்க பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட முறைமையிலேயே சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;இயலுமை நீக்கு&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் விசை பிணைப்பு செயல்படாது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="நடப்பு கீற்றை வலப்பக்கம் நகர்த்தும் மாற்றி.">
+							<longdesc>முனையத்தின் இப்போதைய கீற்றை வலது பக்கம் நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட முறைமையிலேயே சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;இயலுமை நீக்கு&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் விசை பிணைப்பு செயல்படாது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="நடப்பு கீற்றை இடப்பக்கம் நகர்த்தும் மாற்றி.">
+							<longdesc>முனையத்தின் இப்போதைய கீற்றை இடது பக்கம் நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட முறைமையிலேயே சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;இயலுமை நீக்கு&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் விசை பிணைப்பு செயல்படாது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="அடுத்த கீற்றுக்கு  நகர குறுக்கு விசை">
+							<longdesc>அடுத்த கீற்றுக்கு நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="முந்தைய கீற்றுக்கு  நகர குறுக்கு விசை">
+							<longdesc>முந்தைய கீற்றுக்கு நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="முனையத்தை மீட்டமைக்க தூய்மைப்படுத்த பயன்படும் விசைப்பலகை குறுக்கு விசைகள்">
+							<longdesc>முனையத்தை தூயமையாக்க பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="முனையத்தை மீட்டமைக்க பயன்படும் விசைப்பலகை குறுக்கு விசைகள்">
+							<longdesc>முனையத்தை மீட்டமைக்கு நகர பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="முனையத்தின் தலைப்பை அமைக்க உதவும் விசைப்பலகை குறுக்குவிசைகள்">
+							<longdesc>முனையத்தின் தலைப்பை நகர்த்த பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="மெனுபார் காட்சிக்கு குறுக்கு விசை">
+							<longdesc>காட்சி மெனு பட்டிக்கு நகர பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="முழு திரை காட்சிக்கு நகர குறுக்கு விசை">
+							<longdesc>முழுத்திரைக்கு நகர பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="உரையை ஒட்ட பயன்படும் விசைப்பலகை குறுக்கு விசை">
+							<longdesc>தற்காலிக நினைவிடத்தில் சேமித்தவைகளை ஒட்ட பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="உரையை நகலெடுக்க பயன்படும் விசைப்பலகை குறுக்கு விசை">
+							<longdesc>உரையை தற்காலிக நினைவிடத்தில் வைப்பதற்கான விசைப்பலகை குறுக்கு விசைGTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="சாளரத்தை மூட பயன்படும் விசைப்பலகை குறுக்கு விசை">
+							<longdesc>சாளரத்தை மூடுவதற்கான விசைப்பலகை குறுக்கு விசைகள்.GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="டாபை மூட பயன்படும் விசைப்பலகை குறுக்கு விசை">
+							<longdesc>கீற்று  ஐ மூடுவதற்கான விசைப்பலகை குறுக்கு விசைகள்.GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="நடப்பு கீற்றின் உள்ளடக்கத்தை கோப்புக்கு எழுத பயன்படும் விசைப்பலகை குறுக்கு விசை">
+							<longdesc>நடப்பு கீற்றின் உள்ளடக்கத்தை கோப்புக்கு எழுத பயன்படும் விசைப்பலகை குறுக்கு விசை. GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;செயலிழக்கச்செய்&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="புதிய விவரங்களை உருவாக்க பயன்படும் விசைப்பலகை குறுக்கு விசை">
+							<longdesc>விவரங்களை உருவாக்குவதற்கான உரையாடலை அமைக்க பயன்படும் விசைப்பலகை குறுக்கு விசைகள். GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="புதிய சாளரத்தை திறக்க பயன்படும் விசைப்பலகை குறுக்கு விசை">
+							<longdesc>புதிய சாளரத்தை திறப்பதற்கான விசைப்பலகை குறுக்கு விசை .GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="புதிய கீற்று பை திறக்க பயன்படும் விசைப்பலகை குறுக்கு விசை">
+							<longdesc>புதிய கீற்றை திறப்பதற்கான விசைப்பலகை குறுக்கு விசை .GTK+ மூல கோப்பில் பயன்படுத்தப்பட்ட ஒழுங்கில் சரம் பயன்படுத்தப்படும். சிறப்பு சரங்களை &quot;மறை&quot; என்ற தேர்வை நீங்கள் பயன்படுத்தி இருந்தால் குறுக்கு விசைகள் செயல்படாது</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_skey">
+							<local_schema short_desc="S/Key சவால்களை முன்னிலைப்படுத்து">
+								<longdesc>S/Key சவால் விடை கேள்வி உணரப்படும் போதும் க்ளிக் செய்யும் போதும்  உரையாடல் பெட்டி தோன்றும். இந்த உரைடல்  கடவுச்சொல்லை தட்டச்சு செய்தால் உரையாடல் முனையத்திற்கு அனுப்பப்படும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="கணினி எழுத்துருக்களை பயன்படுத்த வேண்டுமா">
+								<longdesc>உண்மையெனில் மேல் மேசையின் பொது தகுதர எழுத்துருவை பயன்படுத்தும்(அல்லது அதற்கு ஒப்பான எழுத்துருவை பயன்படுத்தும்)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="முனைய சிறுசாளரத்தில் உள்ள நிரலை பயன்படுத்த வேண்டுமா">
+								<longdesc>உண்மையெனில் , பயனீட்டாளர் கொடுத்துள்ள நிறத்திற்கு பதில், உரை உள்ளிட பயன்பட்ட கருப்பொருளே பயன்படுத்தப்படும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="டெலீட் விசை விளைவுகள்">
+								<longdesc>டெலீட் விசை உருவாக்கும் நிரலை அமைக்கவும். மதிப்புகள்&quot;ascii-del&quot; ASCII DEL எழுத்துக்கு, &quot;control-h&quot; Control-H க்கு(AKA  ASCII BS எழுத்து), &quot;escape-sequence&quot; தவிர்தல் வரிக்குஅல்லது நீக்கு. &quot;ascii-del&quot; பொதுவாக பயன்படும் எழுத்து</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="பேக்ஸ்பேஸ் விசை விளைவுகள்">
+								<longdesc>பேக்ஸ்பேஸ் விசை உருவாக்கும் நிரலை அமைக்கவும். மதிப்புகள்&quot;ascii-del&quot; ASCII DEL எழுத்துக்கு, &quot;control-h&quot; Control-H க்கு(AKA  ASCII BS எழுத்து), &quot;escape-sequence&quot; தவிர்தல் வரிக்குஅல்லது நீக்கு. &quot;ascii-del&quot; பொதுவாக பயன்படும் எழுத்து</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="பின்னணி வண்ணத்தை எந்த அளவுக்கு அதிகரிக்க வேண்டும்">
+								<longdesc>0.0 மற்றும் 1.0 விற்கு இடைப்பட்ட மதிப்பு பின்னணி நிறத்தின் அளவை குறிக்கும். 0.0 எனில் சற்று வெளிய நிறமாகவும் 1.0 எனில் அதிக அடர்வுள்ள நிறமாகவும் இருக்கும். தற்போதைய செயலாக்கத்தில் இந்த இரண்டு வகை வண்ண வெளிப்பாடுகளை மட்டுமே பயன்படுத்த முடியும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="பின்னணி பிம்பங்களை உருள்பட்டியுடன் நகர்த்த வேண்டுமாை">
+								<longdesc>உண்மையெனில், பின்னணி வண்ணத்தை உரையோடு நகர்த்து.பொய் எனில், பின்னணி பிம்பத்தை நிலையாக வைத்து உரையை மட்டும் நகர்த்து.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="பின்னணி வகை">
+								<longdesc>கோப்பு பெயர் பின்னணி வண்ணம்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="பின்னணியின் வகை:">
+								<longdesc>முனையத்தின் பின்னணி வகை. &quot;solid&quot; நிலையான வண்ணம் &quot;image&quot; பிம்பம் அல்லது &quot;transparent&quot; கட்டுமான சாளர மேலாளர் நடப்பில் இருப்பின் உண்மையில் ஒளி புகும் தன்மைஅல்லது போலி ஒளி புகும் தன்மை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="எழுத்து வகை">
+								<longdesc>பாங்கோ எழுத்துரு பெயர். உதாரணம் &quot;Sans 12&quot; அல்லது &quot;Monospace Bold 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="முனைய பயன்பாடுகளுக்கான வண்ணப்பெட்டி">
+								<longdesc>முனையத்தில் 16-வண்ண நிரப்பெட்டி பயன்பாட்டு உள்ளது. இந்த நிறப்பெட்டி கோலனால் பிரிக்கப்பட்ட நிறத்தின் பெயர்களை கொண்டது. வண்ணத்தின் பெயர் எண்ம குறியீட்டில் இருக்க வேண்டும் உம் &quot;#FF00FF&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="முனைய சாளரத்தின் சின்னம்">
+								<longdesc>தத்தல்/சாளரம் இவற்றிற்கு பயன்படும் சின்னம்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="செல் கட்டளைக்கு பதிலாக பயன்படுத்த வேண்டிய தனி கட்டளை">
+								<longdesc>use_custom_command உண்மையெனில் இந்த கட்டளையை இயக்கவும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="நிலைக்காட்டி தோற்றம்">
+								<longdesc>மதிப்புகள் இப்படி இருக்கலாம்: &quot;தொகுதி&quot; ஒரு தொகுதி நிலைக்காட்டியை பயன்படுத்த, &quot;ஐபீம்&quot; ஒரு செங்குத்தான கோடு நிலைக்காட்டியை பயன்படுத்த, &quot;கீழ்கோடு&quot; ஒரு கீழ்கோடு நிலைக்காட்டியை பயன்படுத்த,</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="கர்சர் சிமிட்ட வேண்டுமா">
+								<longdesc>முழு நிலைக்காட்டி அமைவுகள் வாய்ப்புள்ள மதிப்புகள் &quot;system&quot;, அல்லது &quot;on&quot; அல்லது &quot;off&quot; முறைமையை அமைக்கிறது.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="செல் கட்டளைக்கு பதில் தனி கட்டளைகளை இயக்க வேண்டுமா">
+								<longdesc>உண்மையெனில், செல்லில் இயக்குவதற்கு பதில் தனிப்பயன்_கட்டளையில் மதிப்பு பயன்படுத்தப்படும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="முனையத்தை துவக்கும் போது உள்நுழைந்த தகவலை பதிவு செய்ய வேண்டுமா">
+								<longdesc>உண்மையெனில் கணினி உள்நுழைதல் utmp மற்றும் wtmp ஆகிய தகவல்களை கணினி பதிவு செய்யும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="முனையத்தில் நுழையும் போது சில கட்டளைகளை துவக்க வேண்டுமா">
+								<longdesc>உண்மையெனில், முனைய்த்தில் உள்ள கட்டளை உள்நுழை செல்லில் துவங்கும் (argv[0] யில் சிறப்பு குறி இருக்கும்)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="சேய் கட்டளை இருக்கும் போது முனையத்தை கொண்டு என்ன செய்வது">
+								<longdesc> &quot;மூடு&quot; எனில் முனையம் மூடப்படும், மற்றும் &quot;மீண்டும்&quot; முனையம் மீண்டும் துவங்கும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="புதிய விளைவுகள் வரும் போது பட்டனை உருட்ட வேண்டுமா">
+								<longdesc>உண்மையெனில், புதிய விளைவின் போது முனையம் கீழே நகரும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="விசையை நகர்த்தும் போது பட்டனை சுழற்ற வேண்டுமா?">
+								<longdesc>உண்மையெனில், கீழே உள்ள பயன்பாடு மெனுவுக்காக விசையை அழுத்தவும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="உருள்பட்டியில் பின் செல்ல வரையரை இல்லா வரிகள் இருக்க வேண்டுமா">
+								<longdesc>உண்மை எனில் பின் உருளும் வரிகள் எப்போதும் எரியப்பட மாட்டாது. பின் உருளல் வரலாறு வட்டில் தற்காலிகமாக சேமிக்கப்படும். ஆகவே இதனால் முனையத்தில் நிறைய வெளிப்பாடு இருப்பின் கணினி வட்டு இடத்தை முழுதும் இழக்கலாம்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="உருள்பட்டியில் உள்ள வரிகளின் எண்ணிக்கை">
+								<longdesc>உருள்பட்டியில் பின் பார்வைக்கு வைக்க வேண்டிய வரிகளின் எண்ணிக்கை. முனையத்தில் இந்த எண்கள் வரை பின் நோக்கி  உங்களால் நகர முடியும் . இந்த எண்ணுக்குள் அடங்கா வரிகள் எறியப்படும். scrollback_unlimited தேர்வு உண்மையானால் இந்த மதிப்பு உதாசீனம் செய்யப்படும். </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="உருள்பட்டியின் நிலை">
+								<longdesc>முனைய உருள்பட்டியை எங்கே அமைப்பது. மதிப்புகள் &quot;இடது&quot;, &quot;வலது&quot;, மற்றும் &quot;மறைக்கப்பட்ட&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="முன்னிருப்பு வரிசைகளின் எண்">
+								<longdesc>புதிதாக உருவாக்கிய முனைய சாளரங்களில் வரிகளின் எண்ணிக்கை.  தனிப்பயன் முன்னிருப்பு அளவை பயன்படுத்து ஐ செயலாக்கி இராவிடில் இதனால் பயனில்லை.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="முன்னிருப்பு நெடு வரிசைகளின் எண்">
+								<longdesc>புதிதாக உருவாக்கிய முனைய சாளரங்களில் நெடு வரிசைகளின் எண்ணிக்கை. தனிப்பயன் முன்னிருப்பு அளவை பயன்படுத்து ஐ செயலாக்கி இராவிடில் இதனால் பயனில்லை.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="புதிய சாளரங்களுக்கு  தனிப்பயன் முனைய அளவை பயன்படுத்த வேண்டுமா">
+								<longdesc>உண்மை எனில் புதிதாக உருவாக்கப்பட்ட முனைய சாளரங்கள் முன்னிருப்பு பத்தி அளவு, முன்னிருப்பு வரி அளவு ஆகியவை குறிக்கும் தனிப்பயன் அளவில் இருக்கும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="&quot;வார்த்தையின் பகுதிகளாக&quot; எழுத்துக்கள் ஏற்கப்பட்டன">
+								<longdesc>வார்தையாக உரையை தேர்வு செய்யும் போது, ஒவ்வொரு வார்த்தையும் ஒவ்வொரு எழுத்தாக எடுத்துக்கொள்ளப்படும்.வரம்புகள்  &quot;A-Z&quot; வரை இருக்கு,. மேல்கோள் குறி (வரம்பை குறிக்கவில்லை) .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="முனைய எச்சரிகை மணியில் ஒலிக்க வேண்டுமா">
+								<longdesc>உண்மையெனில், முனைய எச்சரிக்கைக்கு பயன்பாடு மூலம் செய்தி அனுப்பாதே</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="எல்லா தடித்த உரைகளையும் அனுமதிக்கவா">
+								<longdesc>உண்மை எனில், முனையத்தில் உள்ள பயன்பாடுகளின் உரையை தடித்த எழுத்தாக்கு</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="முனையத்தின் தலைப்பு">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="செயல்பாட்டு தலைப்பை கொண்டு என்ன செய்வது">
+								<longdesc>முனையத்தில் உள்ள பயன்பட்டுக்கு தலைப்பு அமைக்கப்பட்டால்(இதை செல்லை பயன்படுத்தி செய்ய முடியும்), நீங்கள் தலைப்பை அமைக்கும் போது ஏற்கெனவே அமைக்கப்பட்ட தலைப்பு அழிக்கப்படும். மதிப்புகள் &quot;மாற்று&quot;,&quot;முன்&quot;,&quot;பின்&quot; மற்றும் &quot;தவிர்&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="சாதாரண உரையின் வண்னத்திலேயே தடிமனான உரையும் இருக்க வேண்டுமா">
+								<longdesc>உண்மை எனில் தடித்த உரை சாதாரண உரையின் வண்னத்திலேயே அமைக்கப்படும்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="முனையத்தில் தடித்த உரையில் இயல்பான வண்ணம்">
+								<longdesc>முனையத்தின் தடித்த உரையில் வண்ணம், வண்ண குறிப்புகள் ( HTML- பாணி அறும எண்ணாகவோ  அல்லது நிறத்தின் பெயர் -&quot;red&quot; போல - ஆகவோ இருக்கலாம். bold_color_same_as_fg என்பது உண்மை என்ற பட்சத்தில் இதை உதாசீனம் செய்யலாம்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="முனையத்தின் இயல்பான பின்னணி வண்ணம்">
+								<longdesc>முனையத்தின் இயல்பான பின்னணி வண்ணம், வண்ண குறிப்புகள் ( HTML- பாணிலோ அல்லது எண்ம மதிப்பாகவோ அல்லது நிறத்தின் பெயர் &quot;red&quot; ஆகவோ இருக்கலாம்).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="முனையத்தில் உரையில் இயல்பான வண்ணம்">
+								<longdesc>முனையத்தின் இயல்பான உரையில் வண்ணம், வண்ண குறிப்புகள் ( HTML- பாணிலோ அல்லது எண்ம மதிப்பாகவோ அல்லது நிறத்தின் பெயர் &quot;red&quot; ஆகவோ இருக்கலாம்</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="புதிய சாளரம் அல்லது கீற்று  இல் மெனுபட்டியை காட்ட வேண்டுமா">
+								<longdesc>உண்மை மெனுபட்டி தனி சாளரத்தில் காட்டப்பட வேண்டுமெனில், இந்த் விவரத்திற்கு windows/tabs</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="மனிதனால் படிக்ககூடிய பெயர் விவரம்">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="சாளரத்தை மூட உறுதிப்படுத்தல் செய்தி தேவையா">
+							<longdesc>ஒன்றுக்கும் மேற்பட்ட முனைய சாளரங்கள் பயன்பாட்டில் இருக்கும் போது அவைகளை மூட முயன்றால் உறுதிப்படுத்தல் செய்தியை கேட்க வேண்டுமா</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="கிடைக்கக்கூடிய குறியீடுகளின் பட்டியல்">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="GTK குறுக்கு விசைகள் மெனு பட்டியில் செயல்படுத்தப்பட்டதா">
+							<longdesc>பொதுவாக F10 ஐ பயன்படுத்தி உங்களால் மெனு பாரை அனுக முடியும். gtkrc(gtk-menu-bar-accel = &quot;whatever&quot;) ஐ கொண்டு இதை தனிப்பயனாக்க முடியும். இந்த தேர்வு நிலையான மெனு பட்டியலை செயலிழக்கச்செய்யும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="மெனுபட்டியில் செயல்பாட்டி விசைகள் உள்ளதா">
+							<longdesc>Alt+letter அனுமதி விசைகள் மெனுபட்டியை செயல்படுத்த தேவையா.இது சேவகனில் உள்ள சில செயல்பாடுகளில் குறுக்கிட்டு அவைகளை நிறுத்தி வைக்கும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="புதிய முனையம் பயன்படுத்த வேண்டிய விவரம்">
+							<longdesc>புதிய சாளரத்தை திறக்கும் போது பயன்படுத்த வேண்டிய விவரம். விவரப்பட்டியலில் இருக்கும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="விவரங்களின்பட்டியல்">
+							<longdesc>gnome-terminal லுக்கு தெரியந்த விவரங்களின் பட்டியல்.இந்த பட்டியலில் /apps/gnome-terminal/profiles. ஓடு தொடர்புடைய  சரங்களின் பெயர்களும் உப அடைவுகளும் இருக்கும்</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-session">
+				<dir name="options">
+					<entry name="logout_prompt">
+						<local_schema short_desc="வெளிச்செல் ப்ராம்ட்">
+							<longdesc>செயல்படுத்தப்பட்ட,gnome அமர்வுகளை பயன்படுத்தி அமர்வுகளை முடி.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_save_session">
+						<local_schema short_desc="அமர்வுகளை சேமிக்கவும்">
+							<longdesc>செயல்படுத்தப்பட்டால், க்னோம் அமர்வை தானியங்கியாக சேமிக்கும்.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome_settings_daemon">
+				<entry name="volume_step">
+					<local_schema short_desc="ஒலி அளவின் படி">
+						<longdesc>ஒலியின் சதவிகித படி ஒலி.</longdesc>
+					</local_schema>
+				</entry>
+				<dir name="gtk-modules">
+					<entry name="gail:atk-bridge">
+						<local_schema short_desc="அணுகல் சேவைக்கு GTK+ தொகுதிகள்">
+							<longdesc>இந்த விசை GTK+ தொகுதிகளை ஏற்றுவதற்கான அணுகல் சேவை.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybindings">
+					<entry name="next">
+						<local_schema short_desc="அடுத்த தடம் .">
+							<longdesc>அடுத்த வழித்தடத்தை தாவிச்செல் .</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="previous">
+						<local_schema short_desc="முந்தய தடம் .">
+							<longdesc>முந்தய வழித்தடத்தை தாவிச்செல் .</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="stop">
+						<local_schema short_desc="திருப்பி இசைத்தலை நிறுத்து.">
+							<longdesc>திருப்பி இசைத்தலை நிறுத்த பிணைப்பு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pause">
+						<local_schema short_desc="ஒலி அளவை தாமதி.">
+							<longdesc>திருப்பி இசைத்தலை தாமதிக்க பிணைப்பு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="play">
+						<local_schema short_desc="துவக்கு (துவக்க/ தாமதிக்க)">
+							<longdesc>இசைப்பதை துவக்க (அல்லது துவக்க/ தாமதிக்க என மாற்ற)  பிணைப்பு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media">
+						<local_schema short_desc="ஊடக இயக்கியை துவக்கு.">
+							<longdesc>ஊடக இயக்கியை துவக்க பிணைப்பு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="www">
+						<local_schema short_desc="வலை மேலோடியை துவக்கு">
+							<longdesc>வலை மேலோடியை துவக்க பிணைப்பு </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="calculator">
+						<local_schema short_desc="கணக்கிடும் கருவியை துவக்கு">
+							<longdesc>கணக்கிடும் கருவியை துவக்க பிணைப்பு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="உதவி மேலோடியை துவக்கு">
+							<longdesc>உதவி மேலோடியை துவக்க பிணைப்பு.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screensaver">
+						<local_schema short_desc="திரையை பூட்டு">
+							<longdesc>திரையை பூட்ட பிணைப்பு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="email">
+						<local_schema short_desc="மின்னஞ்சல் சார்ந்தோனை துவக்கு">
+							<longdesc>மின்னஞ்சல் சார்ந்தோனை துவக்க பிணைப்பு </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search">
+						<local_schema short_desc="தேடு">
+							<longdesc>தேடல் கருவியை துவக்க பிணைப்பு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home">
+						<local_schema short_desc="இல்ல அடைவுக்குப் போகவும்.">
+							<longdesc>இல்ல அடைவை திறக்க பிணைப்பு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="eject">
+						<local_schema short_desc="வெளியேற்று">
+							<longdesc>ஒளி வட்டை வெளியேற்ற பிணைப்பு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="power">
+						<local_schema short_desc="வெளியேறு.">
+							<longdesc>வெளியேற  பிணைப்பு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_up">
+						<local_schema short_desc="ஒலி அளவை உயர்த்து">
+							<longdesc>கணினி ஒலி அளவை அதிகரிக்க பிணைப்பு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_down">
+						<local_schema short_desc="ஒலி அளவை குறை">
+							<longdesc>கணினி ஒலி அளவை குறைக்க பிணைப்பு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_mute">
+						<local_schema short_desc="ஒலியை நிறுத்து">
+							<longdesc>கணினி ஒலியை நிறுத்த பிணைப்பு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="touchpad">
+						<local_schema short_desc="தொடுதிட்டை நிலை மாற்று">
+							<longdesc>தொடுதிட்டை செயல்படுத்து அல்லது செயல்நீக்கு க்கு பிணைப்பு</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="plugins">
+					<dir name="xsettings">
+						<entry name="active">
+							<local_schema short_desc="எக்ஸ் அமைப்பு  சொருகியை இயலுமை செய்க">
+								<longdesc>xஅமைப்புகளை மேலாள  சொருகியை இயலுமை செய்ய உண்மை என்று அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="xrdb">
+						<entry name="active">
+							<local_schema short_desc="xrdb சொருகியை செயல்படுத்து">
+								<longdesc>xrdb அமைப்பை மேலாள  சொருகியை இயலுமை செய்ய உண்மை என்று அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="xrandr">
+						<entry name="active">
+							<local_schema short_desc="XRandR சொருகியை இயலுமை செய்க">
+								<longdesc>XRandR அமைப்பை மேலாள  சொருகியை இயலுமை செய்ய உண்மை என்று அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="typing-break">
+						<entry name="active">
+							<local_schema short_desc="தட்டச்சு முறிவு  சொருகியை இயலுமை செய்க">
+								<longdesc>தட்டச்சு முறிவுகள் அமைப்பை மேலாள  சொருகியை இயலுமை செய்ய உண்மை என்று அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="sound">
+						<entry name="active">
+							<local_schema short_desc="ஒலி சொருகி செயல்படுத்து">
+								<longdesc>ஒலி அமைப்பை மேலாள சொருகியை செயல்படுத்த உண்மை என்று அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="smartcard">
+						<entry name="active">
+							<local_schema short_desc="smartcard சொருகியை இயலுமை செய்க">
+								<longdesc>ஸ்மார்ட் கார்டை எடுக்கும் போது திரையை பூட்டும் அமைப்பை மேலாள  சொருகியை இயலுமை செய்ய உண்மை என்று அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mouse">
+						<entry name="active">
+							<local_schema short_desc="சொடுக்கி சொருகி செயல்படுத்து">
+								<longdesc>சொடுக்கி அமைப்பை மேலாள  சொருகியை இயலுமை செய்ய உண்மை என்று அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="media-keys">
+						<entry name="active">
+							<local_schema short_desc="ஊடக விசை சொருகியை இயலுமை செய்க">
+								<longdesc>பல்லூடக விசைகள் அமைப்பை மேலாள  சொருகியை இயலுமை செய்ய உண்மை என்று அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="active">
+							<local_schema short_desc="பிழைத்திருத்த  சொருகியை இயலுமை செய்க">
+								<longdesc>விசைபலகை அமைப்பை மேலாள  சொருகியை இயலுமை செய்ய உண்மை என்று அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keybindings">
+						<entry name="active">
+							<local_schema short_desc="விசை பிணைப்பு  சொருகியை இயலுமை செய்க">
+								<longdesc>விசை பிணைப்புகள் அமைப்பை மேலாள  சொருகியை இயலுமை செய்ய உண்மை என்று அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="housekeeping">
+						<entry name="ignore_paths">
+							<local_schema short_desc="தவிர்க்க வேண்டிய ஏற்றப்பாதைகள்">
+								<longdesc>வட்டு இடம் குறையும் போது தவிர்க்க வேண்டிய ஏற்றப்பாதைகள்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="min_notify_period">
+							<local_schema short_desc="மீண்டும் மீண்டும் அறிவிக்க குறைந்த பட்ச நேர இடைவெளி">
+								<longdesc>நேரத்தை நிமிடங்களில் குறிக்கவும். ஒரு தொகுதிக்காக  பின் வரும் எச்சரிக்கைகள் இந்த நேரத்துக்கும் குறைவாக தோன்றா.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_size_gb_no_notify">
+							<local_schema short_desc="அறிவிப்பு தவிர்க்க  விளிம்புக்கு காலி இடம்.">
+								<longdesc>இடத்தை ஜிபி அளவில் குறிக்கவும். இதற்கு அதிகமாக காலி இடம் இருப்பின் எச்சரிக்கை காட்டப்பட மாட்டாது. </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify_again">
+							<local_schema short_desc="அடுத்த காலி சதவிகித அறிவிப்பு விளிம்பு">
+								<longdesc>அடுத்த எச்சரிக்கைக்கு முன் குறைய வேண்டிய வட்டு இடத்தை சதவிகிதமாக குறிக்கவும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify">
+							<local_schema short_desc="அறிவிப்பு விளிம்புக்கு காலி சதவிகிதம்.">
+								<longdesc>வட்டு இடம் குறையும் போது முதல் முறை எச்சரிக்க இட விளிம்பின் சதவிகிதம். இதற்குக்கீழே காலி இடம் குறைந்தால் அறிவிப்பு வெளியாகும்.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="active">
+							<local_schema short_desc="வீட்டு பராமரிப்பு சொருகியை செயல்படுத்து">
+								<longdesc>வீட்டுப்பராமரிப்பு  சொருகியை இயலுமை செய்ய உண்மை என்று அமை. இது தற்காலிக கோப்பு இடையகத்தை சுருக்கும்.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="font">
+						<entry name="active">
+							<local_schema short_desc="எழுத்துரு சொருகியை இயலுமை செய்க">
+								<longdesc>எழுத்துரு அமைப்பை  மேலாள  சொருகியை இயலுமை செய்ய உண்மை என்று அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="clipboard">
+						<entry name="active">
+							<local_schema short_desc="ஒட்டுப்பலகை சொருகியை இயலுமை செய்க.">
+								<longdesc>ஒட்டு பலகை அமைப்பை மேலாள  சொருகியை இயலுமை செய்ய உண்மை என்று அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="background">
+						<entry name="active">
+							<local_schema short_desc="பின்னணி பட சொருகியை செயலாக்கு">
+								<longdesc>மேல்மேசை பின்னணி அமைப்பை மேலாள  சொருகியை இயலுமை செய்ய உண்மை என்று அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="a11y-keyboard">
+						<entry name="active">
+							<local_schema short_desc="விசைப்பலகை அணுகல்-முறை சொருகி">
+								<longdesc>அணுகல் விசைகள் அமைப்பை மேலாள  சொருகியை இயலுமை செய்ய உண்மை என்று அமை</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="xrandr">
+					<entry name="default_configuration_file">
+						<local_schema short_desc="RandR க்கு முன்னிருப்பு அமைப்பு">
+							<longdesc>RandR சொருகி இந்த விசை குறிப்பிடும் கோப்பில்  முன்னிருப்பு அமைப்பு ஒன்றை தேடும். வழக்கமாக பயனரின் இல்ல அடைவில் அமைக்கப்படும் ~/.config/monitors.xml  போன்றதே இது. பயனர் அந்த கோப்பை வைத்து இல்லாவிட்டால் அல்லது அது பயனரின் அமைக்கப்பட்ட திரைகளுக்கு பொருந்தாவிட்டால் இந்த விசை குறிப்பிடும் கோப்பை பயன்படுத்தும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="turn_on_laptop_monitor_at_startup">
+						<local_schema short_desc="மடிக்கணினி திரையை கணினி துவங்கியபின் இயக்கு">
+							<longdesc>கணினி துவங்கும் போது வெளித்திரையை இணைத்தால் மடிக் கணினி துவங்கியபின் திரையை இயக்கு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="turn_on_external_monitors_at_startup">
+						<local_schema short_desc="வெளித்திரையை கணினி துவங்கியபின் இயக்கு">
+							<longdesc>கணினி துவங்கும் போது வெளித்திரையை இணைத்தால் அதை கணினி துவங்கியபின் இயக்கு</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_notification_icon">
+						<local_schema short_desc="அறிவிப்பு இடத்தில் காட்சிகளை காட்டுகிறது.">
+							<longdesc>பலகத்தில் தொடர்புடைய விஷயங்களுடன் ஒரு அறிவிப்பு சின்னம் காட்டப்பட வேண்டுமா.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="yelp">
+				<entry name="fixed_font">
+					<local_schema short_desc="நிலையான உரைக்கான எழுத்துரு">
+						<longdesc>நிலையான அகலத்தில் உரைக்கான எழுத்துரு.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="variable_font">
+					<local_schema short_desc="உரைக்கான எழுத்துரு">
+						<longdesc>மாறும் அகலத்தில் உரைக்கான எழுத்துரு.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_system_fonts">
+					<local_schema short_desc="கணினி எழுத்துருக்களை பயன்படுத்து">
+						<longdesc>கணினிக்கு முன்னிருப்பு எழுத்துரு அமைவினை பயன்படுத்து</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_caret">
+					<local_schema short_desc="இடக்குறியை பயன்படுத்து">
+						<longdesc>பக்கங்களை பார்க்கும் போது விசைப்பலகை இடக்குறியை .பயன்படுத்து</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="metacity">
+				<dir name="window_keybindings">
+					<entry name="move_to_center">
+						<local_schema short_desc="சாளரத்தை திரையின் மையத்துக்கு நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_w">
+						<local_schema short_desc="சாளரத்தை திரையின் மேற்கே (இடது) பக்கம் நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_e">
+						<local_schema short_desc="சாளரத்தை திரையின் கிழக்கே (வலது) பக்கம் நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_s">
+						<local_schema short_desc="சாளரத்தை திரையின் தெற்கே (கீழே) நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_n">
+						<local_schema short_desc="சாளரத்தை திரையின் வடக்கே (மேலே) நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_se">
+						<local_schema short_desc="தென் கிழக்கு (கீழ் வலது) மூலைக்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_sw">
+						<local_schema short_desc="தென் மேற்கு (கீழ் இடது) மூலைக்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_ne">
+						<local_schema short_desc="வட கிழக்கு (மேல் வலது) மூலைக்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_nw">
+						<local_schema short_desc="வட மேற்கு (மேல் இடது) மூலைக்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="maximize_horizontally">
+						<local_schema short_desc="சாளரத்தை செங்குத்தாக பெரிதாக்கு ">
+						</local_schema>
+					</entry>
+					<entry name="maximize_vertically">
+						<local_schema short_desc="சாளரத்தை இடவலமாக பெரிதாக்கு ">
+						</local_schema>
+					</entry>
+					<entry name="lower">
+						<local_schema short_desc="மற்ற சாளரத்திற்கு கீழே சாளரத்தை வைக்கவும்">
+						</local_schema>
+					</entry>
+					<entry name="raise">
+						<local_schema short_desc="மற்ற சாளரத்திற்கு மேல் இந்த சாளரத்தை உயர்த்து">
+						</local_schema>
+					</entry>
+					<entry name="raise_or_lower">
+						<local_schema short_desc="வேறொரு சாளரத்தால் மறைக்கப்பட்டிருந்தால் சாளரத்தை உயர்த்து, அல்லது கீழிறக்கு">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_down">
+						<local_schema short_desc="ஒருபணியிடத்திற்கு கீழே சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_up">
+						<local_schema short_desc="ஒருபணியிடத்திற்கு மேலே சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_right">
+						<local_schema short_desc="ஒருபணியிடத்திற்கு வலதுபக்கம் சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_left">
+						<local_schema short_desc="ஒருபணியிடத்திற்கு இடது பக்கம் சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_12">
+						<local_schema short_desc="பணியிடம் 12 க்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_11">
+						<local_schema short_desc="பணியிடம் 11 க்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_10">
+						<local_schema short_desc="பணியிடம் 10 க்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_9">
+						<local_schema short_desc="பணியிடம் 9 க்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_8">
+						<local_schema short_desc="பணியிடம் 8 க்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_7">
+						<local_schema short_desc="பணியிடம் 7 க்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_6">
+						<local_schema short_desc="பணியிடம் 6 க்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_5">
+						<local_schema short_desc="பணியிடம் 5 க்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_4">
+						<local_schema short_desc="பணியிடம் 4 க்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_3">
+						<local_schema short_desc="பணியிடம் 3 க்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_2">
+						<local_schema short_desc="பணியிடம் 2 க்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_1">
+						<local_schema short_desc="பணியிடம் 1 க்கு சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="toggle_on_all_workspaces">
+						<local_schema short_desc="சாளரம் அனைத்து பணியிடங்களிலும் இருக்குமா அல்லது ஒரே பணியிடத்திலா என்பதை நிலை மாற்றுகிறது.">
+						</local_schema>
+					</entry>
+					<entry name="begin_resize">
+						<local_schema short_desc="சாளரத்தின் அளவை மாற்று">
+						</local_schema>
+					</entry>
+					<entry name="begin_move">
+						<local_schema short_desc="சாளரத்தை நகர்த்தவும்">
+						</local_schema>
+					</entry>
+					<entry name="close">
+						<local_schema short_desc="சாளரம் மூடவும்">
+						</local_schema>
+					</entry>
+					<entry name="minimize">
+						<local_schema short_desc="சாளரத்தை சிறிதாக்கு">
+						</local_schema>
+					</entry>
+					<entry name="toggle_shaded">
+						<local_schema short_desc="எப்போதும் நிழை நிலைக்கு செல்">
+						</local_schema>
+					</entry>
+					<entry name="unmaximize">
+						<local_schema short_desc="சாளரத்தை மீட்டெடு ">
+						</local_schema>
+					</entry>
+					<entry name="maximize">
+						<local_schema short_desc="சாளரத்தை பெரிதாக்கு">
+						</local_schema>
+					</entry>
+					<entry name="toggle_above">
+						<local_schema short_desc="மற்ற சாளரங்களுக்கு மேலே சாளரத்தை வைக்கவேண்டுமா என்பதை நிலை மாற்றுகிறது">
+						</local_schema>
+					</entry>
+					<entry name="toggle_maximized">
+						<local_schema short_desc="எப்போதும் பெரிய சாளர நிலைக்கு செல்">
+						</local_schema>
+					</entry>
+					<entry name="toggle_fullscreen">
+						<local_schema short_desc="எப்போதும் முழுதிரை பாங்கிற்கு செல்">
+						</local_schema>
+					</entry>
+					<entry name="activate_window_menu">
+						<local_schema short_desc="சாளர மெனுவை செயல்படுத்து">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybinding_commands">
+					<entry name="command_window_screenshot">
+						<local_schema short_desc="சாளர திரைவெட்டு கட்டளை">
+							<longdesc>The /apps/metacity/global_keybindings/run_command_window_screenshot விசை இந்த கட்டளை செயல்படுத்த வேண்டிய கீபைன்டிங்கை குறிக்கும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command_screenshot">
+						<local_schema short_desc="திரைவெட்டு கட்டளை">
+							<longdesc> /apps/metacity/global_keybindings/run_command_screenshot கட்டளை அமைப்பை துவக்க பயன்படும் கீபைன்டிங்கை குறிக்கும்</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="கீபைண்டிங்களுக்கு இணங்க இயக்க கட்டளைகள்">
+							<longdesc>/apps/metacity/global_keybindings/run_command_N கீபைன்டிங்கை அதனோடு தொடர்புடைய கட்டளையோடு இணைக்கும்.இந்த கட்டளைக்காக run_command_N கீபைன்டிங்கை அழுத்துவதால் command_N இயங்கும்.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global_keybindings">
+					<entry name="run_command_terminal">
+						<local_schema short_desc="முனையம் ஒன்றை இயக்கு">
+						</local_schema>
+					</entry>
+					<entry name="run_command_window_screenshot">
+						<local_schema short_desc="சாளரத்தின் திரைவெட்டை பதிவு செய்">
+						</local_schema>
+					</entry>
+					<entry name="run_command_screenshot">
+						<local_schema short_desc="திரைவெட்டை பதிவு செய்">
+						</local_schema>
+					</entry>
+					<entry name="panel_run_dialog">
+						<local_schema short_desc="பலகத்தின் &quot; பயன்பாட்டை இயக்கு&quot;  உரையாடல் பெட்டியை காட்டு">
+						</local_schema>
+					</entry>
+					<entry name="panel_main_menu">
+						<local_schema short_desc="பலக முதன்மை மெனுவை காட்டு">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="எல்லா வழக்கமான சாளரங்களையும் மறைந்து மேல்மேசையில் குவிப்பை காட்டு">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels_backward">
+						<local_schema short_desc="பலகம் மற்றும் மேல்மேசையில் பின்னோக்கி நகரவும்">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels">
+						<local_schema short_desc="பலகம் மற்றும் மேல்மேசையில் உடனடியாக நகரவும்">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows_backward">
+						<local_schema short_desc="சாளரத்திற்கிடையில் உடனடியாக பின்னோக்கி  நகரவும்">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows">
+						<local_schema short_desc="சாளரத்திற்கிடையில் உடனடியாக நகரவும்">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group_backward">
+						<local_schema short_desc="மேல்மேசையில் ஒரு பயன்பாட்டின் சாளரங்களிடையே உடனடியாக பின்னோக்கி நகரவும்">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group">
+						<local_schema short_desc="ஒரு பயன்பாட்டின் சாளரங்களிடையே உடனடியாக நகரவும்">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels_backward">
+						<local_schema short_desc="பலகம் மற்றும் மேல்மேசை இடையே துள்ளு சாளரம் மூலமாக பின்னோக்கி  நகரவும்">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels">
+						<local_schema short_desc="பலகம் மற்றும் மேல்மேசை இடையே துள்ளு சாளரம் மூலமாக நகரவும்">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows_backward">
+						<local_schema short_desc="சாளரங்களிடையே துள்ளு சாளரம் மூலமாக பின்னோக்கி நகரவும்">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows">
+						<local_schema short_desc="சாளரங்களிடையே துள்ளு சாளரம் மூலமாக நகரவும்">
+						</local_schema>
+					</entry>
+					<entry name="switch_group_backward">
+						<local_schema short_desc="மேல்மேசையில் ஒரு பயன்பாட்டின் சாளரங்களிடையே துள்ளு சாளரம் மூலமாக பின்னோக்கி நகரவும்">
+						</local_schema>
+					</entry>
+					<entry name="switch_group">
+						<local_schema short_desc="ஒரு பயன்பாட்டின் சாளரங்களிடையே துள்ளு சாளரம் மூலமாக நகரவும்">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_down">
+						<local_schema short_desc="பணியிடத்தை நடப்பு பணியிடத்தின் கீழ் பக்கமாக நகர்த்து.">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_up">
+						<local_schema short_desc="பணியிடத்தை நடப்பு பணியிடத்தின் மேல்  பக்கமாக நகர்த்து">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_right">
+						<local_schema short_desc="பணியிடத்தை நடப்பு பணியிடத்தின் வலது பக்கமாக நகர்த்து">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_left">
+						<local_schema short_desc="பணியிடத்தை நடப்பு பணியிடத்தின் இடது பக்கமாக நகர்த்து">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_12">
+						<local_schema short_desc="பணியிடம் 11 க்கு மாறு">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_11">
+						<local_schema short_desc="பணியிடம் 11 க்கு மாறு">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_10">
+						<local_schema short_desc="பணியிடம் 10 க்கு மாறு">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_9">
+						<local_schema short_desc="பணியிடம் 9 க்கு மாறு">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_8">
+						<local_schema short_desc="பணியிடம் 8 க்கு மாறு">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_7">
+						<local_schema short_desc="பணியிடம் 7 க்கு மாறு">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_6">
+						<local_schema short_desc="பணியிடம் 6 க்கு மாறு">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_5">
+						<local_schema short_desc="பணியிடம் 5 க்கு மாறு">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_4">
+						<local_schema short_desc="பணியிடம் 4 க்கு மாறு">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_3">
+						<local_schema short_desc="பணியிடம் 3 க்கு மாறு">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_2">
+						<local_schema short_desc="பணியிடம் 2 க்கு மாறு">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_1">
+						<local_schema short_desc="பணியிடம் 1க்கு மாறு">
+						</local_schema>
+					</entry>
+					<entry name="run_command">
+						<local_schema short_desc="குறிப்பிட்ட கட்டளையை இயக்கு">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="workspace_names">
+					<entry name="name">
+						<local_schema short_desc="பணியிடத்தின் பெயர்">
+							<longdesc>பணியிடத்தின் பெயர்</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="general">
+					<entry name="disable_workarounds">
+						<local_schema short_desc="பழைய மற்றும் உடைந்த பயன்பாடுகளாள் செயல்நீக்கம் செய்யப்பட்ட காணாமல் போன வசதிகள்">
+							<longdesc>சில நிரல்கள் சாளர மேலாளர் குறிப்பிடும் வரையரைகளை மீறுவதால் பிரச்சினைகள் ஏற்படுகிறன. இந்த தேர்வு மெட்டாசிட்டி ஐ வெகு சரியான பாங்கில் அமைக்கும். இதனால் சரியில்லாத பயன்பாடுகள் தவிர பயனருக்கு எப்போதுமே சரியான பயன்பாடு இடைமுகம் கிடைக்கும். </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="application_based">
+						<local_schema short_desc="(செயல்படுத்தப்படாத) உலாவல் பயன்பாட்டின் படி சாளரத்தின் படி அல்ல">
+							<longdesc>உண்மையெனில், மெட்டாசிட்டி சாளரத்தில் இல்லாமல் பயன்பாட்டில் இயங்கும். இந்த கொள்கை சிறிது சிக்கலானது என்றாலும், மேக் போன்ற பயன்பாடு-சார்ந்த அமைப்புக்கு மிக பயனுள்ளது, சாளரத்தை பயன்பாடு-சார்ந்து அமைக்கும் போது பயன்பாடோடு தொடர்புடைய சாளரங்கள் மேலெழும்பும்.மேலும் இது மற்ற சாளரங்களை பாதிக்காது. ஆனால் இதன் அமைப்பு சற்றே கேள்விக்குட்பட்டது. ஆனால் அமைப்புகள் பயன்பாடு சார்ந்த மற்றும் சாளரம் சார்ந்தவைகளின் விளக்கத்தை தெரிந்துகொள்வது நல்லது. மேலும் பயன்பாடு-சார்ந்தவை முடிக்கப்படாத நிலையில் உள்ளது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reduced_resources">
+						<local_schema short_desc="உண்மையெனில், குறைவான வளத்தை பயன்படுத்தும்">
+							<longdesc>உண்மையெனில், மெட்டாசிட்டி குறைவான கருத்து மற்றும் குறைந்த நேர் மாற்றத்திற்கும் வசதி செய்து தரும், கம்பி சட்டங்களை பயன்படுத்தி, அசைவூட்டங்களை தவிர்க்கும். இதனால் பயனீட்டாளரின் பயன்பாடுகளில் குறிப்பிடும்படி குறைகள்  இருக்கும் , ஆனால் பழைய பயன்பாடுகள் மற்றும் முனைய சேவைகள் பாகுபாடு பாராமல் வேலை செய்ய அனுமதிக்கும். எனினும் வயர்ப்ரேம் வசதி அணுகல் தேர்வு இருப்பின் செயலிழக்கப்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="compositing_manager">
+						<local_schema short_desc="பலவின் ஆக்க மேலாளர்">
+							<longdesc>மெட்டாசிட்டி பலவின் ஆக்க மேலாளரா என நிர்ணயிக்கிறது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell_type">
+						<local_schema short_desc="காட்சி மணி வகை">
+							<longdesc>மணி ஒலிப்பதை காட்சியாக காட்டுவது எப்படி என்பதை மெட்டாசிட்டி குறிப்பிடும். தற்போது இரண்டு மதிப்புகள் உள்ளது &quot;முழுதிரை: முழுதிரையும் கருப்பு வெள்ளையாக தெரியும். &quot;சட்ட_காட்சி&quot; தலைப்புப்பட்டியில் பயன்பாட்டின் சின்னம் மணியோசையை அனுப்பும். மணியோசையை அனுப்பிய பயன்பாடு தெரியாத பயன்பாடு(இது இயல்பான &quot;கணினி ஒலிக்கு&quot; பொருந்தும்)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="audible_bell">
+						<local_schema short_desc="கணினி ஒலி கேட்கும்படி">
+							<longdesc>கணினி அல்லது பயன்பாட்டால் மணியை காட்டுவதற்கு பதில் கேட்கக்கூடிய ஒலியை உருவாக்க முடியுமா. </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell">
+						<local_schema short_desc="்சி மணகாட்சியாக ியை செயல்படுத்து">
+							<longdesc>கணினி ஒரு பெல் அல்லது பீப் எச்சரிக்கை தரும் போது ஒரு காட்சி குறிப்பை தரும். இது காது சரியாக கேட்காதவர்களுக்கும் சத்தமான சூழலில் வேலை செய்பவர்களுக்கும் உபயோகமாகும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="num_workspaces">
+						<local_schema short_desc="பணியிடங்களின் எண்ணிக்கை">
+							<longdesc>பணிக்களங்களின் எண். இது பூஜ்யமாக இருக்க வேண்டும்.  அதிகபட்சம் வரையறுக்கப்பட்டு இருக்க வேண்டும். இல்லாவிடில் தவறுதலாக் மிக அதிக பணிக்களம் கேட்கப்பட்டால் மேல்மேசை பயன்படுத்த முடியாததாகி விடும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_font">
+						<local_schema short_desc="சாளர தலைப்பு எழுத்துரு">
+							<longdesc>சாளரத்தின் தலைப்புப்பட்டிக்கான  எழுத்துருவை விளக்கும் எழுத்துரு விளக்க சரம். titlebar_font_size தேர்வில் 0 ஐ அமைத்தால் மட்டும் விளக்க சரத்தில் உள்ள அளவு பயன்படுத்தப்படும். மேலும் titlebar_uses_desktop_font தேர்வை உண்மை என அமைத்தால் இந்த தேர்வு செயல்படாது. </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_uses_system_font">
+						<local_schema short_desc="சாளர தலைப்பிம் நிலையான கணினி எழுத்துருவை பயன்படுத்து">
+							<longdesc>உண்மையெனில், titlebar_font தேர்வை தவிர்கும். நிலையான எழுத்துருவை சாளர தலைப்பில் காட்டும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="தற்போதைய கருப்பொருள்">
+							<longdesc>கருப்பொருள் ஓரம், தலைப்புப்பட்டி போன்றவைகளின் தோற்றத்தை கண்டறியும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise_delay">
+						<local_schema short_desc="தானாக துவக்க தேர்வில் தாமதம் மில்லிசெகண்டில்">
+							<longdesc>(_r)தானாக துவங்குதல் உண்மையென்று அமைக்கப்பட்டால் சாளரம் எடுத்துக்கொள்ளும் தாமத நேரம். தாமதம் 1000 நொடிகளில் குறிக்கப்பட்டுள்ளது</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise">
+						<local_schema short_desc="குறிக்கப்பட்ட சாளரத்தை தானாக ஏற்று">
+							<longdesc>உண்மையெனில், குவியும் பாணி &quot;sloppy&quot; அல்லது &quot;mouse&quot; எனில் சிறிது தாமதத்திற்கு பிறகு சாளரம் தானாக மேலெழும் (தாமதம் auto_raise_delay விசையால் குறிக்கப்படும்). இதற்கும் ஒரு சாளரத்தை சொடுக்கி மேலெழச் செய்வதற்கும் அல்லது இழுத்து விடுதலில் ஒரு சாளரத்தில் நுழைவதற்கும் சம்பந்தமில்லை.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_right_click_titlebar">
+						<local_schema short_desc="தலைப்புப்பட்டியை வலது சொடுக்கு செய்யும் போது நிகழவேண்டியது">
+							<longdesc>இந்த தேர்வு தலைப்பு பட்டியில் வலது சொடுக்கு செய்வதின் பலனை நிர்ணயிக்கிறது. இப்போதைய செல்லுபடியாகும் விருப்பங்கள் &apos;toggle_shade&apos;, -இது சாளரத்தை நிழல் அல்லது நிழலற்றதாக ஆக்கும். &apos;toggle_maximize&apos; சாளரத்தை பெரிதாக்கும் அல்லது பெரிதாகியதை மீட்கும், &apos;toggle_maximize_horizontally&apos; மற்றும் &apos;toggle_maximize_vertically&apos; என்பது பெரிதாக்கல்/ சிறியதாக்கலை அந்த திசையில் மட்டும் செய்யும்,&apos;minimize&apos; சாளரத்தை சிறிதாக்கும் அல்லது சிறிதாக்கியதை மீட்கும், &apos;shade&apos; சாளரத்தை மேலுக்கு சுருட்டும், &apos;menu&apos; சாளர மெனுவை காட்டும்,  &apos;lower&apos; சாளரத்தை மற்ற சாளரங்களின் பின்னே இறக்கும்  மற்றும்  &apos;none&apos; -எதுவும் செய்யாது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_middle_click_titlebar">
+						<local_schema short_desc="தலைப்புப்பட்டியை நடு சொடுக்கு செய்யும் போது நிகழவேண்டியது">
+							<longdesc>இந்த தேர்வு தலைப்பு பட்டியில் நடு சொடுக்கு செய்வதின் பலனை நிர்ணயிக்கிறது. இப்போதைய செல்லுபடியாகும் விருப்பங்கள் &apos;toggle_shade&apos;, -இது சாளரத்தை நிழல் அல்லது நிழலற்றதாக ஆக்கும். &apos;toggle_maximize&apos; சாளரத்தை பெரிதாக்கும் அல்லது பெரிதாகியதை மீட்கும், &apos;toggle_maximize_horizontally&apos; மற்றும் &apos;toggle_maximize_vertically&apos; என்பது பெரிதாக்கல்/ சிறியதாக்கலை அந்த திசையில் மட்டும் செய்யும்,&apos;minimize&apos; சாளரத்தை சிறிதாக்கும் அல்லது சிறிதாக்கியதை மீட்கும், &apos;shade&apos; சாளரத்தை மேலுக்கு சுருட்டும், &apos;menu&apos; சாளர மெனுவை காட்டும்,  &apos;lower&apos; சாளரத்தை மற்ற சாளரங்களின் பின்னே இறக்கும்  மற்றும்  &apos;none&apos; -எதுவும் செய்யாது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_double_click_titlebar">
+						<local_schema short_desc="தலைப்புப்பட்டியை இரண்டு-சொடுக்கு செய்யும் போது நிகழவேண்டியது">
+							<longdesc>இந்த தேர்வு தலைப்பு பட்டியில் இரட்டை சொடுக்கு செய்வதின் பலனை நிர்ணயிக்கிறது. இப்போதைய செல்லுபடியாகும் விருப்பங்கள் &apos;toggle_shade&apos;, -இது சாளரத்தை நிழல் அல்லது நிழலற்றதாக ஆக்கும். &apos;toggle_maximize&apos; சாளரத்தை பெரிதாக்கும் அல்லது பெரிதாகியதை மீட்கும், &apos;toggle_maximize_horizontally&apos; மற்றும் &apos;toggle_maximize_vertically&apos; என்பது பெரிதாக்கல்/ சிறியதாக்கலை அந்த திசையில் மட்டும் செய்யும்,&apos;minimize&apos; சாளரத்தை சிறிதாக்கும் அல்லது சிறிதாக்கியதை மீட்கும், &apos;shade&apos; சாளரத்தை மேலுக்கு சுருட்டும், &apos;menu&apos; சாளர மெனுவை காட்டும்,  &apos;lower&apos; சாளரத்தை மற்ற சாளரங்களின் பின்னே இறக்கும்  மற்றும்  &apos;none&apos; -எதுவும் செய்யாது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="raise_on_click">
+						<local_schema short_desc="முன்னிருத்தம் மற்றா பயனர் ஊடாடலுக்கு பக்க விளைவாக இருக்க வேண்டுமா?">
+							<longdesc>இந்த தேர்வை அமைத்தல் பிழையான நடத்தையை தரலாம். பயனர் முன்னிருப்பான உண்மை தேர்வை மாற்ற வேண்டாம் என பலமாக பரிந்துரைக்கப்படுகிறது. சார்ந்தோன் இடத்தில் சொடுக்குதல், சாளர நகர்வு, மறு அளவாக்கம் ஆகிய பல செயல்கள் சாதாரணமாக சாளரத்தை முன்னிலையாக்கும். மற்ற பயனர் செயல்களில் இருந்து இணைப்பு நீக்க இந்த தேவை இல்லை என அமைத்தல் -இது வேண்டாம் என பலமாக பரிந்துரைக்கப்படுகிறது- மற்ற பயனர் செயல்கள் நிரல்களின் வேண்டுதல்கள் ஆகியவை சாளரத்தை உயர்த்துவதிலிருந்து தடுக்கும். http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. ஐ யும் பார்க்கவும்.(அப்படியானாலும் சாளரத்தில் எங்கேயும் ஆல்ட்+ இடது சொடுக்கு, சாளர அலங்காரத்தில் சொடுக்கு, டாஸ்க்லிஸ்ட் குறுநிரலிலிருந்து செயல்பாடு வேண்டுகோள் போன்ற விளிப்பான்களிடமிருந்து சிறப்புச்செய்திகள் ஆகியவற்றால் சாளரத்தை முன்னிலையாக்கலாம்.) இந்த தேர்வு இப்போது ¨முன்னிலைபடுத்த சொடுக்கு¨ பாங்கில் செயலிழக்கபட்டுள்ளது. raise_on_click தேர்வு இல்லை என அமைக்கப்பட்டால் பாதிக்கப்படும் வழிகளில் நிரல்களின் வேண்டுதல்கள் இல்லை என அறியவும். அவை எப்போதுமே உதாசீனப்படுத்தப்படும். நீங்கள் செயல்பாடு உருவாக்குபவர் ஆயின், பயனர் செயல்பாடு வேலை செய்யவில்லை என கூறினால் அவரை இந்த சாளர மேலாளரை மாற்றியதால் இது நிகழ்ந்தது என்றும் இந்த தேர்வை உண்மை என அமைக்க வேண்டும் அல்லது பிழையுடன் (&quot;bug&quot;) வாழ வேண்டும் என கூறுங்கள். </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_new_windows">
+						<local_schema short_desc="புதிய சாளரம் எப்படி முன்னிலை பெறும் என கட்டுப்படுத்துகிறது">
+							<longdesc>இந்த தேர்வு புதிதாக உருவாக்கிய சாளரங்கல் மீது மேலும் கூடுதல் கட்டுப்பாடு தருகிறது. இதில் இரண்டு மதிப்புகள் இருக்கக்கூடும். &quot;smart&quot;  என்பது பயனரின் வழக்கமான குவிப்பு பாங்கை தரும். &quot;strict&quot; என்பது முனையத்திலிருந்து துவக்கிய சாளரத்துக்கு முன்னிலை தராது.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_mode">
+						<local_schema short_desc="சாளர குறி பாங்கு">
+							<longdesc>சாளர துவக்க குறி சாளரங்கள் எவ்வாறு செயல்படுத்தப்படுகிறது என்பதை குறிப்பிடும். இதில் மூன்றுவித மதிப்புகள் இருக்கும்,&quot;க்ளிக்&quot; எனில் க்ளிக் செய்யும் போது சாளரம் குறியை நகர்த்தும்.&quot;sloppy&quot; எனில் சுட்டி சாளரத்தில் நுழையும் போது செயல்படும் மற்றும்  &quot;mouse&quot; எனில் சுட்டி சாளரதில் நுழையும் போது செயல்படும்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="button_layout">
+						<local_schema short_desc="தலைப்புப்பட்டியில் பட்டன்கள் அடுக்கப்பட்ட நிலை">
+							<longdesc>தலைப்புப்பட்டியில் பட்டன்கள் அடுக்கப்பட்ட நிலை.&quot;menu:minimize,maximize,spacer,close&quot; என மதிப்புகள் இருக்க வேண்டும்; அரைப்புள்ளி சாளரத்தின் இடது மூலையிலிருந்து வலது மூலையை தனிப்படுத்த பயன்படும். மேலும் பட்டன் பெயர்கள் கமா வால் பிரிக்கப்பட்டிருக்கும் பொய் பட்டனுக்கு அனுமதி இல்லை. தெரியாத பட்டன் பெயர்கள் பழைய பதிப்புகளை உடைக்காமல் தவிர்க்கப்பட்டு மெட்டா சிட்டியின் அடுத்த பதிப்பின் சேர்க்கப்படும். இரு அடுத்தடுத்த பட்டன்களின் இடையே கொஞ்சம் இடைவெளியை நுழைக்க ஒரு விசேஷ குறிப்பை பயன்படுத்தலாம்.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="resize_with_right_button">
+						<local_schema short_desc="வலது பொத்தானால் மறுஅளவு செய்யவா">
+							<longdesc>உண்மை என அமைத்தால் &quot;mouse_button_modifier&quot; இல தரப்பட்ட விசையை அழுத்திக்கொண்டு வலது பட்டனால் அளவை மாற்றலாம், நடு பட்டனால் மெனுவை காட்டலாம்.; இது மாறாக செயல்பட பொய் என அமை.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_button_modifier">
+						<local_schema short_desc="சாளர க்ளிக் செயல்பாட்டின் போது பயன்பட வேண்டிய மாற்றி">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

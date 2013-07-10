@@ -1,0 +1,3384 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB töögrupp">
+						<longdesc>Windows&apos;i võrgunduse töögrupi või domeeni nimi, kuhu see kasutaja kuulub. Selleks et kasutaja saaks täielikult ära kasutada uue töögrupi privileege, peaks ta kõigepealt välja ja seejärel uuesti sisse logima.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Automaatne proksi seadistamise URL">
+						<longdesc>URL, mis tagab proxi seadistuste väärtused.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS proksi port">
+						<longdesc>Port, defineeritud &quot;/system/proxy/socks_host&quot; poolt, mille kaudu proxyt kasutatakse.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS proksiserveri aadress">
+						<longdesc>Socks proxi masina nimi</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP proksi port">
+						<longdesc>Port, defineeritud &quot;/system/proxy/ftp_host&quot; poolt, mille kaudu proxyt kasutatakse.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP proksiserveri aadress">
+						<longdesc>FTP proxi masina nimi</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Turvalise HTTP proksi port">
+						<longdesc>Port, defineeritud &quot;/system/proxy/secure_host&quot; poolt, mille kaudu proxyt kasutatakse.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Turvalise HTTP proksiserveri aadress">
+						<longdesc>Turvalise HTTP proxi masina nimi</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Proksi seadistusrežiim">
+						<longdesc>Vali proksi konfiguratsiooni mood. Toetatud väärtused on &quot;pole&quot;, &quot;käsitsi&quot;, &quot;automaatne&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Proksi kasutamiskeeluga serverid">
+						<longdesc>See võti sisaldab nimekirja hostidest kuhu ühendutakse otse, ilma et kasutataks proxyt (isegi kui see on aktiivne). Väärtused võivad olla hostinimed, domeenid (kasutades vormi *.foo.com), IP-aadressid (nii IPv6 kui IPv6) ja võrguaadressid koos võrgumaskiga (näiteks 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP proksi salasõna">
+						<longdesc>Parool, mida HTTP proxile autentimiseks saata.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP proksi kasutajanimi">
+						<longdesc>Kasutajanimi mida saadetakse autentimiseks HTTP proxile.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Proksiserveri ühenduste autentimine">
+						<longdesc>Kui tõene, siis ühendused proxy-serverisse vajavad autentimist. Kasutajanimi/salasõna on defineeritud võtmetega &quot;/system/http_proxy/authentication_user&quot; ja &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP proksi port">
+						<longdesc>Port, defineeritud &quot;/system/http_proxy/host&quot; poolt, mille kaudu proxyt kasutatakse.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP proksiserveri aadress">
+						<longdesc>HTTP proxi masina nimi</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP proksi kasutamine">
+						<longdesc>Lubab proksi seaded, kui HTTP-le pääsetakse ligi Interneti kaudu.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Lisadomeenid DNS-SD teenuste otsimiseks">
+						<longdesc>Komadega eraldatud rida DNS-SD domeenidest, mis peaksid olema nähtavad võrgukohas &quot;network:///&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Kuidas kuvada kohalikku DNS-SD teenust">
+						<longdesc>Võimalikud väärtused on &quot;kokkupandud&quot;, &quot;eraldatud&quot; ja &quot;keelatud&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="tabs_open_position">
+						<local_schema short_desc="Kuhu paigutatakse sirvija akendes avatavad uued kaardid.">
+							<longdesc>Kui väärtuseks on &quot;after_current_tab&quot;, siis paigutatakse uued kaardid käesoleva kaardi järele. Kui väärtuseks on &quot;end&quot;, siis paigutatakse uued kaardid kaartide nimekirja lõppu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_backup_files">
+						<local_schema short_desc="Kas varufaile näidatakse või mitte">
+							<longdesc>Kui märgitud, siis kuvatakse ka varufaile (näiteks Emacs&apos;i poolt looduid. Hetkel liigitatakse varufailide alla failid, mille nimi lõpeb &quot;~&quot; märgiga.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="Kas peidetud faile näidatakse või mitte">
+							<longdesc>Kui tõene, näitab failihaldur peidetud faile. Peidetud failid algavad punktiga või on loetletud kataloogi failis nimega .hidden</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>Puhverdatud pisipiltide suurim suurus megabaitides. Kustutamise keelamiseks määra väärtuseks -1.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>Puhverdatud pisipiltide suurim eluiga päevades. Kustutamise keelamiseks määra väärtuseks -1.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="Sisestuse tagasiside helid">
+							<longdesc>Kas sisestussündmuste puhul mängitakse helisid või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="Heliteema nimi">
+							<longdesc>Sündmuste helide jaoks kasutatav XDG heliteema.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="Sündmuste helid">
+							<longdesc>Kas kasutajasündmuste puhul mängitakse helisid.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Lubada ESD">
+							<longdesc>Heliserveri lubamine käivitamisel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="Mikseri vaikimisi rajad">
+							<longdesc>Multimeedia klahvivajutuste korral vaikimisi miksimiseks kasutatav rada.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Vaikimisi mikserseade">
+							<longdesc>Multimeedia klahvivajutuste korral vaikimisi kasutatav mikserseade.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Failiikooni teema">
+							<longdesc>Failiikoonide kuvamiseks kasutatav teema.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="at-spi-corba">
+						<local_schema short_desc="CORBA-l põhineva AT-SPI infrastruktuuri lubamine">
+							<longdesc>Seda võtit on koos /desktop/gnome/interface/accessibility võtmega vaja CORBA-l põhineva AT-SPI infrastruktuuri kasutamiseks, kui viimane on ümber paigutatud. Seda eiratakse, kui CORBA-l põhinev AT-SPI infrastruktuuri ei ole ümberpaigutatud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="&apos;Unikoodi juhtsümbolite&apos; menüü näitamine">
+							<longdesc>Kas kirjete ja tekstivaadete kontekstimenüüd peavad pakkuma juhtmärkide lisamise võimalust või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="&apos;Sisendmeetodite&apos; menüü näitamine">
+							<longdesc>Kas kirjete ja tekstivaadete kontekstimenüüd peavad pakkuma sisestusmeetodi muutmise võimalust või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Menüüriba kiirklahv">
+							<longdesc>Kiirklahv menüüribade avamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="GtkFileChooser&apos;i moodul">
+							<longdesc>GtkFileChooser vidina jaoks kasutatav failisüsteemi moodul. Võimalikud väärtused on &quot;gio&quot;, &quot;gnome-vfs&quot; ja &quot;gtk+&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Olekuriba on paremal">
+							<longdesc>Kas olekuriba mõõdikut näidatakse paremal või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Kohandatud kirjatüübi kasutamine">
+							<longdesc>Kas gtk+ rakendustes kasutatakse vaikimisi kirjatüüpi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Monospace kirjatüüp">
+							<longdesc>Monospace (määratud laiusega) kirjatüüp kasutamiseks terminalitaolistes kohtades.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Dokumendi kirjatüüp">
+							<longdesc>Dokumentide lugemisel kasutatava vaikimisi kirjatüübi nimi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="GTK SM Moodul">
+							<longdesc>GTK+ poolt kasutatav sisestusmeetodi mooduli nimi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="GTK SM Oleku laad">
+							<longdesc>gtk+ poolt kasutatav GTK+ oleku sisestusmeetodi laad.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="GTK SM Eelredigeerimise laad">
+							<longdesc>gtk+ poolt kasutatav GTK+ eelredigeerimise sisestusmeetodi laad.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Vaikimisi kirjatüüp">
+							<longdesc>GTK+ poolt vaikimisi kasutatava kirjatüübi nimi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Gtk+ Teema">
+							<longdesc>GTK+ vaikimisi teema põhinimetus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Gtk+ Teema">
+							<longdesc>GTK+ vaikimisi teema põhinimetus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Ikoonide teema">
+							<longdesc>Ikoonide teema, mida kasutatakse paneelil, nautiluses jne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Kursori plinkimise aeg">
+							<longdesc>Kursori vilkumistsükli pikkus millisekundites.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Kursori plinkimine">
+							<longdesc>Kas kursor peaks plinkima või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Tööriistariba ikooni suurus">
+							<longdesc>Ikoonide suurus tööriistaribal, kas &quot;small-toolbar&quot; (väike tööriistariba) või &quot;large-toolbar&quot; (suur tööriistariba).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Tööriistariba on lahtihaagitav">
+							<longdesc>Kas kasutaja tohib tööriistaribasid lahti haakida ja ringi tõsta või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Menüüriba on lahtihaagitav">
+							<longdesc>Kas kasutaja tohib menüüribasid lahti haakida ja ringi tõsta või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="Nuppudel on ikoonid">
+							<longdesc>Kas nuppudel võib tekstile lisaks kuvada ka ikooni või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Menüüdes on ikoonid">
+							<longdesc>Kas menüüdes võib menüükirje järel ikooni kuvada või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Tööriistariba stiil">
+							<longdesc>Tööriistariba laad. Võimalikud väärtused on &quot;both&quot; (ikoonid ja tekst), &quot;both-horiz&quot; (ikoonid ja tekst rõhtsalt), &quot;icons&quot; (ainult ikoonid), ja &quot;text&quot; (ainult tekst).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Kiirklahve on võimalik muuta">
+							<longdesc>Kas kasutajal on võimalik menüü kuvamise ajal aktiivse menüükirje kiirklahve dünaamiliselt muuta või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Menüüd on küljestrebitavad">
+							<longdesc>Kas menüüsid peaks olema võimalik lahti rebida või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Animatsioonide lubamine">
+							<longdesc>Kas animatsioone kuvatakse. Märkus: see on globaalne klahv, see muudab ka aknahalduri, paneeli jne. käitumist.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Hõlbustuste lubamine">
+							<longdesc>Kas rakendustel peab olema hõlbustuste tugi või mitte.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Värvi varjutamise laad">
+							<longdesc>Kuidas taustavärvust varjutatakse. Võimalikud väärtused on &quot;horizontal-gradient&quot; (rõhtsa üleminekuga), &quot;vertical-gradient&quot; (püstise üleminekuga) ja &quot;solid&quot; (ühtlane värvus).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Teisene värv">
+							<longdesc>Hajusülemineku parempoolne või alumine värvus, ei kasutata ühtlase värvuse jaoks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Peamine värv">
+							<longdesc>Hajusülemineku vasakpoolne või ülemine värvus, või hoopis ühtlane värvus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Pildi läbipaistmatus">
+							<longdesc>Poolläbipaistev värv, millega taustapilt kaetakse.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Pildi failinimi">
+							<longdesc>Taustapildiks kasutatav fail.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Pildi valikud">
+							<longdesc>Võtmega wallpaper_filename määratud pildi renderdamise viis. Võimalikud väärtused on &quot;none&quot; (taustapilt puudub), &quot;wallpaper&quot; (tavaline), &quot;centered&quot; (keskel), &quot;scaled&quot; (skaleeritud), &quot;stretched&quot; (venitatud), &quot;zoom&quot; (suurendatud) või &quot;spanned&quot; (mahutatud).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Töölaua tausta joonistamine">
+							<longdesc>Kas GNOME joonistab töölaua tausta.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Kõikide väliste pisipilditegijate keelamine">
+							<longdesc>Märgi see võti kõikide väliste pisipilditegijate keelamiseks sõltumata nende üksikult lubamisest/keelamisest.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="application@x-font-otf">
+						<entry name="enable">
+							<local_schema short_desc="Kas OpenType kirjatüüpidest tuleb pisipilte teha">
+								<longdesc>Kui märgitud, siis tehakse OpenType kirjatüüpidest pisipildid.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="OpenType kirjatüüpidest pisipiltide tegemise käsk">
+								<longdesc>Käsk, millega tehakse OpenType kirjatüüpidest pisipilte.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-pcf">
+						<entry name="enable">
+							<local_schema short_desc="Kas PCF kirjatüüpidest tuleb pisipilte teha">
+								<longdesc>Kui märgitud, siis tehakse PCF kirjatüüpidest pisipildid.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="PCF kirjatüüpidest pisipiltide tegemise käsk">
+								<longdesc>Käsk, millega tehakse PCF kirjatüüpidest pisipilte.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-type1">
+						<entry name="enable">
+							<local_schema short_desc="Kas Type1 kirjatüüpidest tuleb pisipilte teha">
+								<longdesc>Kui märgitud, siis tehakse Type1 kirjatüüpidest pisipildid.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Type1 kirjatüüpidest pisipiltide tegemise käsk">
+								<longdesc>Käsk, millega tehakse Type1 kirjatüüpidest pisipilte.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-ttf">
+						<entry name="enable">
+							<local_schema short_desc="Kas TrueType kirjatüüpidest tuleb pisipilte teha">
+								<longdesc>Kui märgitud, siis tehakse TrueType kirjatüüpidest pisipildid.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="TrueType kirjatüüpidest pisipiltide tegemise käsk">
+								<longdesc>Käsk, millega tehakse TrueType kirjatüüpidest pisipilte.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Kas klaviatuuri lukustamine on lubatud või mitte">
+							<longdesc>Kas klaviatuuri lukustamine on lubatud või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Puhkepauside edasilükkamine on lubatud">
+							<longdesc>Kas puhkepausi on võimalik edasi lükata või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Puhkepausi kestus">
+							<longdesc>Puhkepausi pikkus minutites</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Tippimisaeg">
+							<longdesc>Tippimiseks kuluvate minutite arv enne puhkepausi aktiveerimist.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="URL-ide ja MIME käsitlejate keelamine">
+							<longdesc>URL-ide ja MIME-tüüpide käsitlemise rakenduste käivitamise keelamine.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Ekraani lukustamise keelamine">
+							<longdesc>Kasutajal oma ekraani lukustamise keelamine.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Kasutajate vahel lülitumise keelamine">
+							<longdesc>Kasutajal teisele kasutajale lülitumise keelamine kui tal on seanss aktiivne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Printeri seadistamise keelamine">
+							<longdesc>Kasutajal printeri sätete muutmise keelamine. Sellega on näiteks võimalik keelata kõigi rakenduste printeri sätete dialoogid.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Printimise keelamine">
+							<longdesc>Kasutajal printimise keelamine. Sellega on näiteks võimalik keelata kõigi rakenduste printimisdialoogid.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Failide kettalesalvestamise keelamine">
+							<longdesc>Kasutajal failide kettale salvestamise keelamine. Sellega on näiteks võimalik keelata kõigi rakenduste &quot;Salvesta kui&quot; dialoogid.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Käsurea keelamine">
+							<longdesc>Kasutajal terminalile ja käsureale ligipääsu keelamine. Sellega on näiteks võimalik keelata paneeli &quot;Käivita rakendus...&quot; dialoog.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="session">
+					<entry name="required_components_list">
+						<local_schema short_desc="Vajalikut seansikomponendid">
+							<longdesc>Seansi osaks olevate komponentide nimekiri. (Iga kirje kohta on &quot;/desktop/gnome/session/required_components&quot; all samanimeline võti.) Käivitatavate rakenduste eelistused tavaliselt ei luba kasutajal seansist vajalikke komponente eemaldada ja seansihaldur taastab sisselogimise ajal automaatselt kasutaja poolt eemaldatud vajalikud komponendid.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_session">
+						<local_schema short_desc="Vaikimisi seanss">
+							<longdesc>Vaikimisi seansi osaks olevate rakenduste nimekiri.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="idle_delay">
+						<local_schema short_desc="Seansi jõudeoleku saavutamiseks kuluv aeg">
+							<longdesc>Mitu minutit peab mööduma selleks, et seanss loetaks jõudeolevaks.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="required_components">
+						<entry name="filemanager">
+							<local_schema short_desc="Failihaldur">
+								<longdesc>Failihaldur tagab töölauaikoonide funktsionaalsuse ja võimaldab salvestatud failidega tegeleda.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="panel">
+							<local_schema short_desc="Paneel">
+								<longdesc>Paneel tekitab ekraani üla- või allosas oleva riba. Nendel ribadel võivad asuda menüüd, akende nimekiri, olekuikoonid, kell jms.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="windowmanager">
+							<local_schema short_desc="Aknahaldur">
+								<longdesc>Aknahaldur on programm, mis joonistab akendele raame ja pealkirjaribasid, samuti hoolitseb selle eest, et akende suurust oleks võimalik muuta.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="font_rendering">
+					<entry name="rgba_order">
+						<local_schema short_desc="RGBA järjestus">
+							<longdesc>Alampikslite elementide järjestus LCD-ekraanil. Kasutatakse ainult juhul, kui sakisilumise väärtuseks on määratud &quot;rgba&quot;. Võimalikud väärtused: &quot;rgb&quot; - punane on vasakul (enimkasutatav), &quot;bgr&quot; - sinine on vasakul, &quot;vrgb&quot; - punane on üleval, &quot;vbgr&quot; - punane on all.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hinting">
+						<local_schema short_desc="Varjundamine">
+							<longdesc>Fontide renderdamisel kasutatav varjundamise tüüp. Võimaliku väärtused on &quot;none&quot; varjundamise keelamiseks, &quot;slight&quot; lihtsa, &quot;medium&quot; keskmise ja &quot;full&quot; maksimaalse varjundamise jaoks (võib põhjustada tähekujude moondumist).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="antialiasing">
+						<local_schema short_desc="Sakisilumine">
+							<longdesc>Kirjatüüpide renderdamisel kasutatav sakisilumise meetod. Võimalikud väärtused on: &quot;none&quot; sakisilumise keelamiseks, &quot;grayscale&quot; standardseks halltoonides sakisilumiseks ja &quot;rgba&quot; alampiksli sakisilumiseks (ainult LCD ekraanidel).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="dpi">
+						<local_schema short_desc="DPI">
+							<longdesc>Eraldusvõime, mida kasutatakse kirjasuuruste pikslitesse teisendamisel. Ühik punkti tollile.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Käivitatavad abistava tehnika rakendused">
+								<longdesc>Abistava tehnika rakenduste loend, mis käivitatakse GNOME töölauale sisselogimisel.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>Piiksumine muuteklahvi vajutamisel.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Keelamine kahe klahvi samaaegselt vajutamisel.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="Vähim ajavahemik millisekundites">
+								<longdesc>Klahvivajutust, mille korral klahvi pärast vajutamist ei hoita all kauem kui selles võtmes määratud arv millisekundeid, ei arvestata.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Lähteviivitus millisekundites">
+								<longdesc>Kui mitu millisekundit tuleb enne hiire liigutamise klahvide toimimahakkamist oodata.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="Kiirenduse kestus millisekundites">
+								<longdesc>Kui palju millisekundeid kulub nullist maksimumkiiruse saavutamiseks.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Piksleid sekundis">
+								<longdesc>Kui palju piksleid sekundis liigutakse maksimumkiirusel.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="Vähim ajavahemik millisekundites">
+								<longdesc>Määratud aja (millisekundites) jooksul _sama_ klahvi mitmekordset vajutamist eiratakse.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_enable">
+							<local_schema short_desc="Hiireklahvid">
+								<longdesc>Kas hiireklaviatuuri hõlbustus on sisse lülitatud või mitte.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_enable">
+							<local_schema short_desc="Aeglased klahvid">
+								<longdesc>Kas aeglaste klahvide hõlbustus on sisse lülitatud või mitte.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_enable">
+							<local_schema short_desc="Põrkeklahvid">
+								<longdesc>Kas hüpikklahvide hõlbustus on sisse lülitatud või mitte.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_enable">
+							<local_schema short_desc="Kleepuvad klahvid">
+								<longdesc>Kas kleepuvate klahvide hõlbustus on sisse lülitatud või mitte.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="keybindings">
+					<entry name="allowed_keys">
+						<local_schema short_desc="Lubatud klahvid">
+							<longdesc>Mittetühja väärtuse korral eiratakse neid kiirklahve, mille GConf kataloog pole nimekirjas. See on kasulik lukustamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="onscreenkeyboard">
+						<entry name="action">
+							<local_schema short_desc="Ekraaniklaviatuur sisse/välja">
+								<longdesc>Ekraaniklaviatuuri sisse-/väljalülitamise käsk.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="Ekraaniklaviatuur sisse/välja">
+								<longdesc>Klahviseos ekraaniklaviatuuri sisse/välja lülitamiseks.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="Ekraaniklaviatuuri sisse/välja lülitamise kiirklahvi nimi">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="screenreader">
+						<entry name="action">
+							<local_schema short_desc="Ekraanilugeja sisse/välja">
+								<longdesc>Ekraanilugeja sisse-/väljalülitamise käsk.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="Ekraanilugeja sisse/välja lülitamise kiirklahvi nimi">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="Ekraanilugeja sisse/välja">
+								<longdesc>Klahviseos ekraanilugeja sisse/välja lülitamiseks.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="magnifier">
+						<entry name="action">
+							<local_schema short_desc="Ekraaniluup sisse/välja">
+								<longdesc>Ekraaniluubi sisse-/väljalülitamise käsk.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="Luubi sisse/välja lülitamise kiirklahvi nimi">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="Ekraaniluup sisse/välja">
+								<longdesc>Klahviseos ekraaniluubi sisse/välja lülitamiseks.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;h323&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;h323&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;h323&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;callto&quot; URLide  käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;callto&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;callto&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;aim&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;aim&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;aim&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;mailto&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;mailto&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;mailto&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;https&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;https&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;https&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;http&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;http&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;http&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;man&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;man&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;man&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;info&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;info&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;info&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;ghelp&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;ghelp&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;ghelp&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Käivita käsk terminalis">
+								<longdesc>Tõene, kui käsku, mis määratud seda tüüpi URLide käsitlemiseks, tuleks käivitada terminalis .</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URLi käsitleja">
+								<longdesc>Käsk &quot;trash&quot; URLide käsitlemiseks, kui lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Kas määratud käsk peaks käsitlema &quot;trash&quot; URLe">
+								<longdesc>Tõene, kui &quot;käsk&quot; võtmes määratud käsk käsitleb &quot;trash&quot; URLe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="Ülesanded vajavad terminali">
+								<longdesc>Kas vaikimisi ülesanneterakendus vajab töötamiseks terminali.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Vaikimisi ülesanded">
+								<longdesc>Vaikimisi ülesanneterakendus</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="Kalender vajab terminali">
+								<longdesc>Kas vaikimisi kalendrirakendus vajab töötamiseks terminali.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Vaikimisi kalender">
+								<longdesc>Vaikimisi kalendrirakendus</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Tööalade nimed (aegunud)">
+								<longdesc>Esmase aknahalduri tööalade nimede loend. See valik on alates GNOME 2.12 versioonist aegunud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="Tööalade arv (aegunud)">
+								<longdesc>Aknahalduri poolt kasutatavate tööalade arv. See valik on alates GNOME 2.12 versioonist aegunud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Kasutaja aknahaldur (aegunud)">
+								<longdesc>Aknahaldur, mida proovitakse esimesena. See võti on alates GNOME 2.12-st aegunud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Tagavara-aknahaldur (aegunud)">
+								<longdesc>Aknahaldur, mis käivitatakse juhul, kui kasutaja aknahaldurit ei leita. See võti on alates GNOME 2.12 versioonist aegunud.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Veebilehitseja mõistab kaugkorraldusi">
+								<longdesc>Kas veebilehitseja mõistab netscape kaugkorraldusi.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Veebilehitseja vajab terminali">
+								<longdesc>Kas veebilehitseja vajab töötamiseks terminali.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Vaikimisi veebilehitseja">
+								<longdesc>Vaikimisi veebilehitseja kõikide URL-ide jaoks.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<entry name="screen_reader_enabled">
+							<local_schema short_desc="Ekraanilugeja">
+								<longdesc>Kas ekraanilugeja on sisse lülitatud või mitte.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_magnifier_enabled">
+							<local_schema short_desc="Ekraaniluup">
+								<longdesc>Kas ekraaniluup on sisse lülitatud või mitte.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_keyboard_enabled">
+							<local_schema short_desc="Ekraaniklaviatuur">
+								<longdesc>Kas ekraaniklaviatuur on sisse lülitatud või mitte.</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Eelistatud mobiilse abistava tehnika rakenduse käivitamine">
+									<longdesc>Kas GNOME käivitab sisselogimisel eelistatud rakenduse mobiilse abistava tehnika toe jaoks.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Eelistatud rakendus mobiilse abistava tehnika toe jaoks">
+									<longdesc>Eelistatud rakendus mobiilse abistava tehnika toe jaoks sisselogimisel, menüüdes ja käsureal.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Eelistatud visuaalse abistava tehnika rakenduse käivitamine">
+									<longdesc>Kas GNOME käivitab sisselogimisel eelistatud rakenduse visuaalse abistava tehnika toe jaoks.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Eelistatud rakendus visuaalse abistava tehnika toe jaoks">
+									<longdesc>Eelistatud rakendus visuaalse abistava tehnika toe jaoks sisselogimisel, menüüdes ja käsureal.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Vaikimisi komponentide vaatamise rakendus">
+								<longdesc>Rakendus, mida kasutada failide puhul, mille vaatamiseks on vaja kasutada komponenti. Parameeter %s asendatakse faili URI&apos;ga, parameeter %c komponendi IID&apos;ga.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Käivitamise argumendid">
+								<longdesc>Argumendid terminalis töötavatele programmidele, kirjeldatakse &apos;exec&apos; võtmega.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Terminalirakendus">
+								<longdesc>Terminali vajavate rakenduste käivitamiseks kasutatav terminaliprogramm.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Kursori suurus">
+								<longdesc>cursor_theme poolt viidatava kursori suurus.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Kursori teema">
+								<longdesc>Kursoriteema nimi. Kasutatakse ainult Xcursori toega Xserverite poolt, näiteks XFree86 4.3 ja hilisemad.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Kursori kirjatüüp">
+								<longdesc>Kursori kirjatüübi nimi. Kui see on määramata, siis kasutatakse vaikimisi kirjatüüpi. Seda väärtust edastatakse X&apos;i serverile ainult seansi alguses, seega pole selle muutmist võimalik rakendada seda enne järgmise seansi algust.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Kursori asukoha tuvastamine">
+								<longdesc>Kursori asukoha rõhutamine Control klahvi vajutamise ja lahtilaskmise korral.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Topeltklõpsu kestus">
+								<longdesc>Topeltklõpsu kestus.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Lohistamise lävi">
+								<longdesc>Vahemaa, millest alates lohistamine aset leiab.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Vajutuse lävi">
+								<longdesc>Pikslites määratud vahemaa, mille kursor peab läbima enne, kui hiireklahvi vajutus aktiveeritakse. Väärtus -1 tähendab süsteemset vaikesätet.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Üksikklõps">
+								<longdesc>Hiire liikumise kiirenduskordaja. Väärtus -1 märgib süsteemi vaikeväärtust.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Üksikklõps">
+								<longdesc>Ikoonide avamiseks kasutatakse üksikklõpsu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Hiirenupu suund">
+								<longdesc>Vasaku ja parema hiirenupu vahetamine vasakukäeliste hiire jaoks.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="smartcard">
+						<entry name="removal_action">
+							<local_schema short_desc="Smartcardi eemaldamise tegevus">
+								<longdesc>Määra selle väärtuseks &quot;none&quot; (puudub), &quot;lock_screen&quot; (lukustatakse ekraan) või &quot;force_logout&quot; (väljalogimise nõudmine). See tegevus käivitatakse, kui eemaldatakse smartcard, mida kasutati sisselogimiseks.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="touchpad">
+						<entry name="touchpad_enabled">
+							<local_schema short_desc="Puuteplaadi lubamine">
+								<longdesc>Kui märgitud, siis on kõik puuteplaadid lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="horiz_scroll_enabled">
+							<local_schema short_desc="Rõhtsa kerimise lubamine">
+								<longdesc>Kui märgitud, siis on rõhtne kerimine lubatud scroll_method võtmega määratud moel.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_method">
+							<local_schema short_desc="Puuteplaadi kerimismeetodi valimine">
+								<longdesc>Puuteplaadi kerimismeetod. Võimalikud väärtused on 0: keelatud, 1: kerimine servalt ja 2: kahe sõrmega kerimine</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="tap_to_click">
+							<local_schema short_desc="Hiireklõpsude lubamine puuteplaadilt">
+								<longdesc>Kui märgitud, siis tõlgendatakse puuteplaadil toksimist hiireklõpsudena.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="disable_while_typing">
+							<local_schema short_desc="Puuteplaadi keelamine tippimise ajaks">
+								<longdesc>Märgi see väärtus juhul, kui sind segab, et sa tippimise ajal kogemata puuteplaati puudutad.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="NumLock oleku meelespidamine">
+								<longdesc>Kui märgitud, siis GNOME jätab seansside vahel NumLock klahvi oleku meelde.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Klaviatuurikõlli kohandatud failinimi">
+								<longdesc>Kellahelina helifaili nimi.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>võimalikud väärtused on &quot;on&quot; (sees), &quot;off&quot; (väljas) ja &quot;custom&quot; (kohandatud).</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="indicator">
+							<entry name="enabledPlugins">
+								<local_schema short_desc="Lubatud klaviatuurinäidiku pluginate nimekiri">
+									<longdesc>Lubatud klaviatuurinäidiku pluginate nimekiri</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="backgroundColor">
+								<local_schema short_desc="Taustavärvus">
+									<longdesc>Paigutuse näidiku taustavärvus</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="foregroundColor">
+								<local_schema short_desc="Teksti värvus">
+									<longdesc>Paigutuse näidiku teksti värvus</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="fontSize">
+								<local_schema short_desc="Kirjatüübi suurus">
+									<longdesc>Paigutuse näidiku kirjatüübi suurus</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="fontFamily">
+								<local_schema short_desc="Kirjatüübi perekond">
+									<longdesc>Paigutuse näidiku kirjatüübi perekond</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="showFlags">
+								<local_schema short_desc="Rakendis lippude näitamine">
+									<longdesc>Rakendis lippude näitamine hetkel aktiivse paigutuse kohta</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="secondary">
+								<local_schema short_desc="Teisejärgulised grupid">
+									<longdesc>Teisejärgulised grupid</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="preview">
+							<entry name="height">
+								<local_schema short_desc="Klaviatuuri eelvaade, kõrgus">
+									<longdesc>Klaviatuuri eelvaade, kõrgus</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="width">
+								<local_schema short_desc="Klaviatuuri eelvaade, laius">
+									<longdesc>Klaviatuuri eelvaade, laius</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="y">
+								<local_schema short_desc="Klaviatuuri eelvaade, Y-telje nihe">
+									<longdesc>Klaviatuuri eelvaade, Y-telje nihe</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="x">
+								<local_schema short_desc="Klaviatuuri eelvaade, X-telje nihe">
+									<longdesc>Klaviatuuri eelvaade, X-telje nihe</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="general">
+							<entry name="disable_sysconfig_changed_warning">
+								<local_schema short_desc="&quot;X sysconfig changed&quot; teadete peitmine">
+									<longdesc>&quot;X sysconfig changed&quot; teadete peitmine</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="loadExtraItems">
+								<local_schema short_desc="Seadistuste lisavalikute laadimine">
+									<longdesc>Eksootiliste, harva kasutatavate paigutuste ja valikute laadimine</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layoutNamesAsGroupNames">
+								<local_schema short_desc="Grupinimede asemel paigutuste nimede näitamine ">
+									<longdesc>Grupinimede asemel paigutuste nimede näitamine (ainult mitme paugutuse toega XFree versioonidele)</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="handleIndicators">
+								<local_schema short_desc="Näidikute salvestamine ja taastamine koos paigutuste gruppidega">
+									<longdesc>Näidikute salvestamine ja taastamine koos paigutuste gruppidega</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="groupPerWindow">
+								<local_schema short_desc="Iga akna kohta hoitakse ja hallatakse eraldi gruppi">
+									<longdesc>Iga akna kohta hoitakse ja hallatakse eraldi gruppi</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="defaultGroup">
+								<local_schema short_desc="Vaikimisi grupp, mis on seotud akna loomisega">
+									<longdesc>Vaikimisi grupp, mis on seotud akna loomisega</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="known_file_list">
+								<local_schema short_desc="modmap-failide loend">
+									<longdesc>$HOME kataloogis olevate modmap-failide nimekiri.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="update_handlers">
+								<local_schema short_desc="Klaviatuuriuuenduste käsitlejad">
+									<longdesc>Kogumik skripte, mida käivitatakse klaviatuuri oleku ümberlaadimisel. See on kasulik näiteks xmodmap&apos;il põhinevate sätete rakendamiseks</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="kbd">
+							<entry name="options">
+								<local_schema short_desc="Klaviatuuri valikud">
+									<longdesc>Klaviatuuri valikud</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layouts">
+								<local_schema short_desc="Klaviatuuri paigutus">
+									<longdesc>klaviatuuri paigutus</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="model">
+								<local_schema short_desc="Klaviatuuri mudel">
+									<longdesc>klaviatuuri mudel</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="rotate">
+						<local_schema short_desc="Pööra vertikaalsel paneelil">
+							<longdesc>Kui märgitud, siis kalaanimatsiooni kuvatakse pööratuna vertikaalpaneeli jaoks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed">
+						<local_schema short_desc="Paus kaadrite vahel">
+							<longdesc>Selle võtmega määratakse iga kaadri kuvamiseks kulutatav sekundite arv.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="frames">
+						<local_schema short_desc="Kala animatsiooni kaadrite arv">
+							<longdesc>Selle võtmega määratakse kaadrite arv, mida kala animatsioonis kuvatakse.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Klõpsamisel käivitatav käsk">
+							<longdesc>Selle võtmega määratakse käsk, mida proovitakse kala peal klõpsamise korral käivitada.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="image">
+						<local_schema short_desc="Kala animatsiooni pilt">
+							<longdesc>See võti määrab kalarakendi animatsiooni jaoks kasutatava pildifaili nime suhtelisena pixmap kataloogi suhtes.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Kala nimi">
+							<longdesc>Ilma nimeta kala on üsna igav kala. Puhu oma kalale eluvaim sisse ja pane talle nimi!</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="Aknaloendi suurim suurus">
+							<longdesc>Selle võtme kasutamine on alates GNOME versioonist 2.20 aegunud. See skeem on alles jäetud vanemate versioonidega ühildumise eesmärgil.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="Aknaloendi väikseim suurus.">
+							<longdesc>Selle võtme kasutamine on alates GNOME versioonist 2.20 aegunud. See skeem on alles jäetud vanemate versioonidega ühildumise eesmärgil.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_unminimized_windows">
+						<local_schema short_desc="Tõsta aknad minimeeritud olekust taastamisel aktiivsesse tööalasse">
+							<longdesc>Kui märgitud, siis tõstetakse aken minimeeritud olekust taastamisel aktiivsesse tööalasse. Vastasel korral vahetatakse tööala taastatava akna tööala vastu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="group_windows">
+						<local_schema short_desc="Millal aknaid grupeerida">
+							<longdesc>Määrab, millal grupeerida sama rakenduse aknad aknaloendis. Võimalikud väärtused on mitte kunagi &quot;never&quot;, automaatselt &quot;auto&quot; ja alati &quot;always&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Näita kõikide tööalade aknaid">
+							<longdesc>Kui märgitud, siis aknaloendis näidatakse kõikide tööalade aknaid, vastasel juhul näidatakse ainult aktiivse tööala aknaid.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="Animatsiooni kiirus">
+							<longdesc>Paneeli animatsioonide kiirus. Võimalikud väärtused on  &quot;slow&quot; (aeglane), &quot;medium&quot; (keskmine kiirus) and &quot;fast&quot; (kiire). See võti on relevantne ainult juhul, kui enable_animations võti on märgitud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide_size">
+						<local_schema short_desc="Nähavate pikslite arv peidetuna">
+							<longdesc>Pikslite arv, mis jääb automaatselt peidetud paneelil nurgas nähtavale. See võti on relevantne ainult juhul, kui võti auto_hide on märgitud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unhide_delay">
+						<local_schema short_desc="Paneeli automaatse peidust väljatoomise viivitus">
+							<longdesc>Viivitus, mis jääb kursori liikumise peidetud paneelile ja paneeli automaatse näitamise vahele (millisekundites). See võti on relevantne ainult juhul, kui võti auto_hide on märgitud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hide_delay">
+						<local_schema short_desc="Paneeli automaatpeitmise viivitus">
+							<longdesc>Viivitus, mis jääb kursori paneelilt lahkumise ja paneeli automaatse peitmise vahele (millisekundites). See võti on relevantne ainult juhul, kui võti auto_hide on märgitud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_arrows">
+						<local_schema short_desc="Peitmisnuppudel on noolekesed lubatud">
+							<longdesc>Kui märgitud, siis joonistatakse peitmisnuppude peale nooled. See võti on relevantne ainult juhul, kui enable_buttons võti on märgitud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="Peitmisnuppude peitmine lubatud">
+							<longdesc>Kui märgitud, siis joonistatakse paneeli servadele nupud, millega on võimalik paneeli ekraani servale kokku kerida nii, et ainult lahtikerimise nupp jääb nähtavale.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Luba animatsioonid">
+							<longdesc>Kui märgitud, siis selle paneeli peitmine ja nähtavale toomine toimub animeerituna, vastasel juhul toimub see vahetult.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide">
+						<local_schema short_desc="Paneeli automaatne nurkapeitmine">
+							<longdesc>Kui märgitud, siis kursori paneelipiirkonnast lahkumisel peidetakse paneel ekraaninurka. Kui kursor sellesse nurka tagasi tuuakse, siis ilmub paneel taas nähtavale.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_centered">
+						<local_schema short_desc="Paneeli tsentreerimine y-teljel">
+							<longdesc>Kui märgitud, siis võtmeid y ja y_bottom eiratakse ning paneel asetatakse ekraani y-telje keskele. Paneeli suuruse muutumisel jääb siis paneeli asukoht samaks ja kasvamine/kahanemine toimub mõlema ääre peal võrdselt. Kui märkimata, siis võtmed y ja y_right määravad paneeli asukoha.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_centered">
+						<local_schema short_desc="Paneeli tsentreerimine x-teljel">
+							<longdesc>Kui märgitud, siis võtmeid x ja x_right eiratakse ning paneel asetatakse ekraani x-telje keskele. Paneeli suuruse muutumisel jääb siis paneeli asukoht samaks ja kasvamine/kahanemine toimub mõlema ääre peal võrdselt. Kui märkimata, siis võtmed x ja x_right määravad paneeli asukoha.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_bottom">
+						<local_schema short_desc="Paneeli Y-koordinaat kaugusena ekraani alumisest servast">
+							<longdesc>Paneeli asukoht y-teljel, kaugus ekraani alumisest servast. Väärtust -1 eiratakse ja selle asemel kasutatakse võtme y väärtust. Nullist suurema väärtuse korral võtme y väärtust eiratakse. See võti on relevantne ainult laiendamata režiimis. Laiendatud režiimi korral seda võtit eiratakse ja paneel asetatakse võtmega orientation määratud ekraani serva.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_right">
+						<local_schema short_desc="Paneeli X-koordinaat kaugusena ekraani paremast servast">
+							<longdesc>Paneeli asukoht x-teljel, kaugus ekraani paremast servast. Väärtust -1 eiratakse ja selle asemel kasutatakse võtme x väärtust. Nullist suurema väärtuse korral võtme x väärtust eiratakse. See võti on relevantne ainult laiendamata režiimis. Laiendatud režiimi korral seda võtit eiratakse ja paneel asetatakse võtmega orientation määratud ekraani serva.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y">
+						<local_schema short_desc="Paneeli Y-koordinaat">
+							<longdesc>Paneeli asukoht y-teljel. See võti on relevantne ainult laiendamata režiimis. Laiendatud režiimi korral seda võtit eiratakse ja paneel asetatakse võtmega orientation määratud ekraani serva.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x">
+						<local_schema short_desc="Paneeli X-koordinaat">
+							<longdesc>Paneeli asukoht x-teljel. See võti on relevantne ainult laiendamata režiimis. Laiendatud režiimi korral seda võtit eiratakse ja paneel asetatakse võtmega orientation määratud ekraani serva.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="Paneeli suurus">
+							<longdesc>Paneeli kõrgus (püstpaneeli puhul laius). Paneel tuvastab töötamise ajal vähima võimaliku suuruse, mis põhineb kirjatüübi suurusel ja teistel näitajatel. Suurimaks suuruseks on määratud veerand ekraani kõrgust (või laiust).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="Paneeli asukoht">
+							<longdesc>Paneeli asukoht. Võimalikud väärtused on &quot;top&quot; (üleval), &quot;bottom&quot; (all), &quot;left&quot; (vasakul) ja &quot;right&quot; (paremal). Laiendatud režiimis määrab see ekraani serva, kus paneel asub. Laiendamata režiimis on väärtuste &quot;top&quot; ja &quot;bottom&quot; vahe vähetähtis - mõlemad määravad, et tegemist on rõhtsa paneeliga. Siiski annavad mõlemad väärtused paneeli objektidele kasulikke käitumisvihjeid. Näiteks &quot;top&quot; väärtuse puhul avaneb menüünupust avatud hüpikmenüü paneelist allapoole, seevastu &quot;bottom&quot; väärtusega paneeli puhul aga ülespoole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand">
+						<local_schema short_desc="Laiendamine kogu ekraanilaiuse ulatuses">
+							<longdesc>Kui märgitud, siis võtab paneel enda alla kogu ekraani laiuse (püstpaneeli puhul kõrguse). Selles režiimis on paneeli võimalik paigutada ainult ekraani serva. Kui märkimata, siis on paneel täpselt nii lai kui on vajalik paneelil olevate rakendite, käivitajate ja nuppude hoidmiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monitor">
+						<local_schema short_desc="Xinerama monitor, kus paneeli kuvatakse">
+							<longdesc>Xinerama seadistustega võivad igal monitoril olla oma paneelid. Selle võtmega määratakse monitor, kus paneeli kuvatakse.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screen">
+						<local_schema short_desc="X&apos;i ekraan, kus paneeli kuvatakse">
+							<longdesc>Mitme ekraaniga seadistuse puhul võivad igal ekraanil olla omad paneelid. Selle võtmega määratakse ekraan, kus paneeli kuvatakse.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Paneeli nimi">
+							<longdesc>Paneeli identifitseerimiseks mõeldud inimloetav nimi. Selle peamine eesmärk on paneelide vahel navigeerimisel toimida paneeliakna tiitlina.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="Pildi pööramine vertikaalpaneelidel">
+								<longdesc>Kui märgitud, siis taustapilti pööratakse vastavalt paneeli suunale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stretch">
+							<local_schema short_desc="Pildi venitamine paneelile">
+								<longdesc>Kui märgitud, siis skaleeritakse pilt vastavalt paneeli mõõtmetele, kusjuures kuvasuhet ei säilitata.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="Pildi sobitamine paneelile">
+								<longdesc>Kui märgitud, siis skaleeritakse pilt (koos kuvasuhte säilitamisega) vastavalt paneeli kõrgusele (rõhtpaneeli puhul).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="Taustapilt">
+								<longdesc>Selle võtmega määratakse taustapildina kasutatav fail. Kui pilt sisaldab alfakanalit, siis see kombineeritakse töölaua taustapildiga.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="Taustavärvi katvus">
+								<longdesc>Määrab taustavärvuse katvuse. Kui värvus pole täielikult kattev (väärtus on väiksem kui 65535), siis sulatatakse värvus taustapildiga kokku.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="Taustavärv">
+								<longdesc>Paneeli taustavärvus #RGB vormingus.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="Tausta tüüp">
+								<longdesc>Millist tausta selle paneeli puhul kasutatakse. Võimalikud väärtused on &quot;gtk&quot; GTK+ vidina vaikimisi tausta jaoks, &quot;color&quot; - võtmega color määratud taustavärvuse jaoks ja &quot;image&quot; - võtmega image määratud taustapildi jaoks.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="general">
+					<entry name="profiles_migrated">
+						<local_schema short_desc="Vanad profiilisätted migreeritud">
+							<longdesc>Tõeväärtus-tüüpi väli näitamaks, kas kasutaja eelmised sätted /apps/panel/profiles/default asukohas on kopeeritud uuele asukohale /apps/panel alla.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_id_list">
+						<local_schema short_desc="Paneeli objektide ID-de nimekiri">
+							<longdesc>Paneeli objektide ID-de loend. Iga ID identifitseerib ühte paneeliobjekti (näiteks käivitaja, tegevusnupp, menüüriba või -nupp). Iga objekti sätted on salvestatud rajale /apps/panel/objects/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_id_list">
+						<local_schema short_desc="Paneeli rakendite ID-de nimekiri">
+							<longdesc>Paneeli rakendite ID-de loend. Iga ID identifitseerib ühte paneelirakendit. Iga rakendi sätted on salvestatud rajale /apps/panel/applets/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id_list">
+						<local_schema short_desc="Paneeli ID-de nimekiri">
+							<longdesc>Paneelide ID-de loend. Iga ID identifitseerib ühte ülataseme paneeli. Iga paneeli sätted on salvestatud rajale /apps/panel/toplevels/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_autocompletion">
+						<local_schema short_desc="Automaatse lõpetamise lubamine &quot;Rakenduse käivitamise&quot; dialoogis">
+							<longdesc>Kui märgitud, siis &quot;Rakenduse käivitamise&quot; dialoogis on automaatlõpetamine lubatud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_program_list">
+						<local_schema short_desc="Programmide loendi laiendamine &quot;Rakenduse käivitamise&quot; dialoogis">
+							<longdesc>Kui märgitud, siis &quot;Rakenduse käivitamise&quot; all olev &quot;Teadaolevate rakenduste&quot; loend on dialoogi avamise ajal laiendatud. See võti on relevantne ainult juhul, kui enable_program_list võti on märgitud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_program_list">
+						<local_schema short_desc="Programmide loendi lubamine &quot;Rakenduse käivitamise&quot; dialoogis">
+							<longdesc>Kui märgitud, siis on &quot;Rakenduse käivitamise&quot; all olev &quot;Teadaolevate rakenduste&quot; loend saadaval. See võti on relevantne ainult juhul, kui show_program_list võti on märgitud.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global">
+					<entry name="disable_force_quit">
+						<local_schema short_desc="Jõuga sulgemine keelatud">
+							<longdesc>Kui märgitud, siis paneel eemaldab ligipääsu rakenduse jõuga sulgemise nupule ja seega ei luba kasutajal rakendusi jõuga sulgeda.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_log_out">
+						<local_schema short_desc="Väljalogimise keelamine">
+							<longdesc>Kui märgitud, siis paneel eemaldab ligipääsu väljalogimise menüükirjetele ja seega ei luba kasutajal välja logida.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Aegunud">
+							<longdesc>See võti on aegunud ja seda pole võimalik korrektse lukustuse jaoks kasutada. Selle asemel peaks kasutama võtit /desktop/gnome/lockdown/disable_lock_screen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disabled_applets">
+						<local_schema short_desc="Rakendite, mille laadimine on keelatud, IID&apos;d">
+							<longdesc>Paneeli poolt eiratavate rakendite IID&apos;de loend. Selle abil on võimalik keelata rakendite laadimist või näitamist menüüs. Näiteks Pisi-käsurea rakendi keelamiseld tuleb sellesse loendisse lisada &apos;OAFIID:GNOME_MiniCommanderApplet&apos;. Muudatuse rakendamiseks tuleb paneel taaskäivitada.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked_down">
+						<local_schema short_desc="Paneeli täielik lukustamine">
+							<longdesc>Kui märgitud, siis paneel ei luba teha ühtegi muudatust oma seadistustes. Üksikuid rakendeid saab samuti eraldi lukustada. Selle valiku rakendamiseks tuleb paneel taaskäivitada.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="highlight_launchers_on_mouseover">
+						<local_schema short_desc="Käivitajate esiletõstmine hiire üleliikumisel">
+							<longdesc>Kui märgitud, siis käivitaja tõstetakse hiirekursori üleliikumisel esile.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_panel_remove">
+						<local_schema short_desc="Paneeli eemaldamise kinnitus">
+							<longdesc>Kui märgitud, siis kuvatakse paneeli eemaldamise korral kinnitusdialoogi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="drawer_autoclose">
+						<local_schema short_desc="Sahtli automaatne sulgemine">
+							<longdesc>Kui märgitud, siis sahtel suletakse automaatselt pärast seda, kui kasutaja klõpsab sahtlis olevat käivitajat.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="window_screenshot_key">
+						<local_schema short_desc="Aegunud">
+						</local_schema>
+					</entry>
+					<entry name="screenshot_key">
+						<local_schema short_desc="Aegunud">
+						</local_schema>
+					</entry>
+					<entry name="run_key">
+						<local_schema short_desc="Aegunud">
+						</local_schema>
+					</entry>
+					<entry name="menu_key">
+						<local_schema short_desc="Aegunud">
+						</local_schema>
+					</entry>
+					<entry name="enable_key_bindings">
+						<local_schema short_desc="Aegunud">
+						</local_schema>
+					</entry>
+					<entry name="panel_hide_delay">
+						<local_schema short_desc="Aegunud">
+						</local_schema>
+					</entry>
+					<entry name="panel_animation_speed">
+						<local_schema short_desc="Aegunud">
+						</local_schema>
+					</entry>
+					<entry name="panel_show_delay">
+						<local_schema short_desc="Aegunud">
+						</local_schema>
+					</entry>
+					<entry name="panel_minimized_size">
+						<local_schema short_desc="Aegunud">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Luba animatsioonid">
+						</local_schema>
+					</entry>
+					<entry name="keep_menus_in_memory">
+						<local_schema short_desc="Aegunud">
+						</local_schema>
+					</entry>
+					<entry name="tooltips_enabled">
+						<local_schema short_desc="Luba kohtspikrid">
+							<longdesc>Kui märgitud, siis paneelil olevatele objektidele näidatakse vihjeid.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="objects">
+					<entry name="action_type">
+						<local_schema short_desc="Tegevusnupu liik">
+							<longdesc>Selle nupu poolt teostatava toimingu liik. Võimalikud väärtused on &quot;lock&quot; (lukustamine), &quot;logout&quot; (väljalogimine), &quot;run&quot; (käivitamine), &quot;search&quot; (otsing) ja &quot;screenshot&quot; (kuvatõmmise võtmine). See võti on relevantne ainult juhul, kui võtme object_type väärtus on &quot;action-applet&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="launcher_location">
+						<local_schema short_desc="Käivitaja asukoht">
+							<longdesc>Käivitajat kirjeldava .desktop faili asukoht. See võti on relevantne ainult juhul, kui object_type võtme väärtuseks on &quot;launcher-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menu_path">
+						<local_schema short_desc="Menüüsisu rada">
+							<longdesc>Rada, millelt menüü sisu kokku pannakse. See võti on relevantne ainult juhul, kui use_menu_path võti on märgitud ja object_type võtme väärtus on &quot;menu-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_menu_path">
+						<local_schema short_desc="Kohandatud raja kasutamine menüü sisu jaoks">
+							<longdesc>Kui märgitud, siis menu_path võtit kasutatakse rajana, millelt menüü sisu tuleb kokku panna. Kui märkimata, siis menu_path võtit eiratakse. See võti on relevantne ainult juhul, kui object_type võtme väärtus on &quot;menu-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_icon">
+						<local_schema short_desc="Objektide nupu poolt kasutatav ikoon">
+							<longdesc>Objektinupu ikooni jaoks kasutatava pildi asukoht. See võti on relevantne ainult juhul, kui object_type võtme väärtusteks on &quot;drawer-object&quot; või &quot;menu-object&quot; ja kui use_custom_icon võti on märgitud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_icon">
+						<local_schema short_desc="Kohtandatud ikooni kasutamine objektinupu jaoks">
+							<longdesc>Kui märgitud, siis kasutatakse nupu ikooniks custom_icon võtmes määratud kohandatud ikooni. Kui märkimata, siis custom_icon võtit eiratakse. See võti on relevantne ainult juhul, kui object_type võtme väärtusteks on &quot;menu-object&quot; või &quot;drawer-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="tooltip">
+						<local_schema short_desc="Sahtli või menüü jaoks kuvatav vihje">
+							<longdesc>Selle sahtli või menüü vihjetekstina kuvatav tekst. See võti on relevantne ainult juhul, kui object_type võtme väärtusteks on &quot;drawer-object&quot; või &quot;menu-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="attached_toplevel_id">
+						<local_schema short_desc="Paneel on ühendatud sahtli külge">
+							<longdesc>Selle sahtli külge ühendatud paneeli identifikaator. See võti on relevantne ainult juhul, kui object_type võtme väärtuseks on &quot;drawer-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_iid">
+						<local_schema short_desc="Rakendi IID">
+						</local_schema>
+					</entry>
+					<entry name="bonobo_iid">
+						<local_schema short_desc="Rakendi Bonobo IID">
+							<longdesc>See võti on aegunud. Bonobo implementatsioon rakendi ID-st - näiteks &quot;OAFIID:GNOME_ClockApplet&quot;. See võti on relevantne ainult juhul, kui object_type võtme väärtuseks on &quot;bonobo-applet&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked">
+						<local_schema short_desc="Objekti lukustamine paneelile">
+							<longdesc>Kui märgitud, siis pole kasutajal võimalik rakendit mujale tõsta ilma objekti lukust lahti võtmata.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="panel_right_stick">
+						<local_schema short_desc="Interpreteeritav asukoht on suhteline alumise/parempoolse serva suhtes">
+							<longdesc>Kui märgitud, siis objekti asukohta interpreteeritakse suhtelisena paneeli parempoolse (püstpaneelide puhul alumise) serva suhtes.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="position">
+						<local_schema short_desc="Objekti asukoht paneelil">
+							<longdesc>Selle paneeliobjekti asukoht, mis määratakse pikslites kaugusena paneeli vasakust (püstpaneelipuhul ülemisest) servast.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id">
+						<local_schema short_desc="Objekti sisaldav ülataseme paneel">
+							<longdesc>Seda objekti sisaldava ülemise taseme paneeli identifikaator.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_type">
+						<local_schema short_desc="Paneeliobjekti tüüp">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="Töölauahalduri ridade arv">
+							<longdesc>Selle võtmega määratakse, mitmes reas (rõhtasendi puhul) või veerus (püstasendi puhul) tööalade lüliti tööalasid näitab. See võti kehtib ainult juhul, kui võti display_all_workspaces on märgitud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Kõikide tööalade näitamine">
+							<longdesc>Kui märgitud, siis näidatakse tööalahalduris kõiki tööalasid. Vastasel juhul näidatakse ainult aktiivset tööala.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="Tööalade nimede näitamine">
+							<longdesc>Kui märgitud, siis näidatakse tööalahalduris tööalade nimesid. Vastasel juhul näidatakse tööalades asuvaid aknaid. See säte töötab ainult Metacity aknahalduri korral.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="speed_unit">
+						<local_schema short_desc="Kiirusühik">
+							<longdesc>Tuule kiiruse näitamiseks kasutatav ühik.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="Temperatuuriühik">
+							<longdesc>Temperatuuride näitamiseks kasutatav ühik.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cities">
+						<local_schema short_desc="Asukohtade loetelu">
+							<longdesc>Kalendriaknas kuvatavate asukohtade nimekiri.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="internet_time">
+						<local_schema short_desc="Internetiaja kasutamine">
+							<longdesc>Selle võtme kasutamine on tänu &apos;format&apos; võtmele alates GNOME versioonist 2.6 aegunud. See skeem on alles jäetud vanemate versioonidega ühildumise eesmärgil.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="UNIXi aeg">
+							<longdesc>Selle võtme kasutamine on tänu &apos;format&apos; võtmele alates GNOME versioonist 2.6 aegunud. See skeem on alles jäetud vanemate versioonidega ühildumise eesmärgil.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="Tunnivorming">
+							<longdesc>Selle võtme kasutamine on tänu &apos;format&apos; võtmele alates GNOME versioonist 2.6 aegunud. See skeem on alles jäetud vanemate versioonidega ühildumise eesmärgil.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_locations">
+						<local_schema short_desc="Asukohtade nimekirja laiendamine">
+							<longdesc>Kui märgitud, siis kalendri aknas on olev ülesannete nimekiri laiendatud kujul.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_weather">
+						<local_schema short_desc="Ilmateate nimekirja laiendamine">
+							<longdesc>Märkimise korral on kalendri aknas olev ilmateate nimekiri laiendatud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_tasks">
+						<local_schema short_desc="Ülesannete nimekirja laiendamine">
+							<longdesc>Märkimise korral on kalendri aknas olev ülesannete nimekiri laiendatud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_birthdays">
+						<local_schema short_desc="Sünnipäevade nimekirja laiendamine">
+							<longdesc>Märkimise korral on kalendri aknas olev sünnipäevade nimekiri laiendatud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_appointments">
+						<local_schema short_desc="Sündmuste nimekirja laiendamine">
+							<longdesc>Märkimise korral on kalendri aknas olev sündmuste nimekiri laiendatud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="Nädalanumbrite näitamine kalendris">
+							<longdesc>Kui märgitud, siis kuvatakse kalendris nädalate numbreid.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="Aja seadistusprogramm">
+							<longdesc>Selle võtme kasutamine on tänu sisemise ajasätete vahendile alates GNOME versioonist 2.22 aegunud. See skeem on alles jäetud vanemate versioonidega ühildumise eesmärgil.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="UTC aeg">
+							<longdesc>Selle võtme kasutamine on tänu ajavööndite kasutamisele alates GNOME versioonist 2.28 aegunud. See skeem on alles jäetud vanemate versioonidega ühildumise eesmärgil.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_temperature">
+						<local_schema short_desc="Kellarakendis näidatakse temperatuuri">
+							<longdesc>Kui märgitud, siis näidatakse ilmaikooni kõrval temperatuuri.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_weather">
+						<local_schema short_desc="Kellarakendis näidatakse ilmaandmeid">
+							<longdesc>Kui märgitud, siis näitatakse ilmaikooni.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema short_desc="Vihjel kuupäeva näitamine">
+							<longdesc>Kui märgitud, siis näitatakse kuupäeva vihjel, kui hiir on kellarakendi kohal.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="Kellarakendis kuupäeva näitamine">
+							<longdesc>Kui märgitud, siis lisaks kellaajale näidatakse ka kuupäeva.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="Aja näitamine koos sekunditega">
+							<longdesc>Kui märgitud, siis näitatakse kellaaja juures sekundeid.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="Kohandatud kellavorming">
+							<longdesc>Selle võtmega määratakse kellarakendi poolt kasutatav vorming juhul, kui vorminguvõtme väärtuseks on määratud &quot;custom&quot;. See vorming on sarnane strftime() funktsiooni vormingule. Lähemat teavet saab vaadata käsiraamatu strftime() lehelt.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="Tunnivorming">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gweather">
+				<dir name="prefs">
+					<entry name="radar">
+						<local_schema short_desc="Radarikaardi url">
+							<longdesc>Kohandatud url radarikaardi hankimiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_radar_url">
+						<local_schema short_desc="Kasuta radarikaardi jaoks oma aadressi">
+							<longdesc>Kui märgitud, siis võetakse radarikaart &quot;radar&quot; võtmega määratud asukohast.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="coordinates">
+						<local_schema short_desc="Asukoha koordinaadid">
+						</local_schema>
+					</entry>
+					<entry name="location4">
+						<local_schema short_desc="Ilm linna jaoks">
+						</local_schema>
+					</entry>
+					<entry name="location3">
+						<local_schema short_desc="Radari asukoht">
+						</local_schema>
+					</entry>
+					<entry name="location2">
+						<local_schema short_desc="Tsooni asukoht">
+						</local_schema>
+					</entry>
+					<entry name="location1">
+						<local_schema short_desc="Lähim linn">
+						</local_schema>
+					</entry>
+					<entry name="location0">
+						<local_schema short_desc="Ilmaasukoha andmed">
+						</local_schema>
+					</entry>
+					<entry name="enable_radar_map">
+						<local_schema short_desc="Näita _radarikaarti">
+							<longdesc>Radarikaardi hankimine iga uuenduse korral.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_detailed_forecast">
+						<local_schema short_desc="Enam ei kasutata">
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="Temperatuuriühik">
+							<longdesc>Temperatuuriühik.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed_unit">
+						<local_schema short_desc="Kiirusühik">
+							<longdesc>Tuulekiiruse ühik.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pressure_unit">
+						<local_schema short_desc="Rõhuühik">
+							<longdesc>Rõhuühik.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="distance_unit">
+						<local_schema short_desc="Kaugusühik">
+							<longdesc>Nähavusühik.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_metric">
+						<local_schema short_desc="Kasuta meetermõõdustikku">
+							<longdesc>Kasuta meetermõõdustikku inglise mõõdustiku asemel</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update_interval">
+						<local_schema short_desc="Uuendamise intervall:">
+							<longdesc>Vahemik sekundites automaatsete uuenduste vahel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update">
+						<local_schema short_desc="Andmete automaatne uuendamine">
+							<longdesc>Selle abil määratakse, kas rakend uuendab ilmastatistikat automaatselt või mitte.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="control-center">
+				<entry name="cc_exit_shell_on_action_upgrade_uninstall">
+					<local_schema short_desc="Kestprogrammist väljumine uuendamise või paigaldatud komponendi eemaldamise korral">
+						<longdesc>Määrab, kas pärast uuendamist või paigalduse eemaldamist kestprogramm sulgetakse või mitte.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_add_remove">
+					<local_schema short_desc="Kestprogrammist väljumine lisamise või eemaldamise korral">
+						<longdesc>Määrab, kas pärast lisamist või eemaldamist kestprogramm sulgetakse või mitte.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_help">
+					<local_schema short_desc="Kestprogrammist väljumine abiteabe käivitamise korral">
+						<longdesc>Määrab, kas pärast abitegevuse lõppemist kestprogramm sulgetakse või mitte.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_start">
+					<local_schema short_desc="Kestprogrammist väljumine käivitamistoimingu korral">
+						<longdesc>Määrab, kas pärast abitegevuse käivitamist kestprogramm sulgetakse või mitte.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_static_action">
+					<local_schema short_desc="Ülesande aktiveerimise korral juhtimiskeskuse sulgemine">
+						<longdesc>Kui määratud, siis juhtimiskeskus suletakse &quot;Sagedasti kasutatava&quot; ülesande aktiveerimisel.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_actions_list">
+					<local_schema short_desc="Ülesannete nimed ja nendega seotud .desktop failid">
+					</local_schema>
+				</entry>
+				<dir name="network">
+					<entry name="current_location">
+						<local_schema short_desc="Praegune võrguasukoht">
+							<longdesc>Määra siin oma praeguse asukoha nimi. Seda kasutatakse sobilike proksisätete tuvastamiseks.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="appearance">
+					<entry name="more_themes_url">
+						<local_schema short_desc="Lisateemade URL">
+							<longdesc>Töölaua lisateemade hankimise URL. Tühjaksjäetuna seda viita ei kuvata.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="more_backgrounds_url">
+						<local_schema short_desc="Lisataustade URL">
+							<longdesc>Töölaua lisataustapiltide hankimise URL. Tühjaksjäetuna seda viita ei kuvata.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="Teksti väljajätmise piirang">
+							<longdesc>Number, mis määrab, kuidas töölaual olevate liigpikkade failinimede kuvamisel failinime osasid kolme punktiga asendatakse. Kui number on nullist suurem, siis ei lasta failinimel ületada seda arvu ridu. Kui number on null või väiksem, siis failinime kuvamisel piirangut ei rakendata.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_name">
+						<local_schema short_desc="Võrguserverite ikooni nimi">
+							<longdesc>See nimi määratakse juhul, kui soovitakse töölaual oleva võrguserverite ikooni nime kohandada.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_name">
+						<local_schema short_desc="Prügikastiikooni nimi töölaual">
+							<longdesc>See nimi määratakse juhul, kui soovitakse töölaual oleva prügikastiikooni nime kohandada.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="Kodukataloogi ikooni nimi töölaual">
+							<longdesc>See nimi määratakse juhul, kui soovitakse töölaual oleva kodukataloogiikooni nime kohandada.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="Arvutiikooni nimi töölaual">
+							<longdesc>See nimi määratakse juhul, kui soovitakse töölaual oleva arvutiikooni nime kohandada.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="Võrguserverite ikoon on töölaual nähtav">
+							<longdesc>Kui märgitud, siis on võrguserveritele viitav ikoon töölaual nähtav.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volumes_visible">
+						<local_schema short_desc="Haagitud kettaseadmete näitamine töölaual">
+							<longdesc>Kui märgitud, siis on haagitud kettaseadmete ikoonid töölaual nähtaval.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="Prügikastiikoon on töölaual nähtav">
+							<longdesc>Kui märgitud, siis on prügikastile viitav ikoon töölaual nähtav.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="Arvutiikoon on töölaual nähtav">
+							<longdesc>Kui märgitud, siis on arvutiikoon töölaual nähtav.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="Kodukataloogi ikoon on töölaual nähtav">
+							<longdesc>Kui märgitud, siis on kodukataloogile viitav ikoon töölaual nähtav.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema short_desc="Külgpaani puuvaates kuvatakse ainult katalooge">
+								<longdesc>Kui märgitud, näitab Nautilus külgpaanis ainult katalooge. Vastasel juhul näitab Nautilus katalooge ja faile.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="Nimekirjavaate vaikimisi veerujärjestus">
+							<longdesc>Nimekirjavaate vaikimisi suurendus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="Loendivaates vaikimisi nähtaval olevate veergude loetelu">
+							<longdesc>Nimekirjavaate vaikimisi nähtavate veergude loetelu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Nimekirjavaate vaikimisi suurendus">
+							<longdesc>Nimekirjavaate vaikimisi suurendus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Uutes akendes järjestatakse kirjed pööratud järjestuses">
+							<longdesc>Kui märgitud, siis uutes akendes sorditakse failid pööratud järjestuses. See tähendab, et kui failid on sorditud näiteks nime alusel, siis tavapärase &quot;a&quot;-st kuni &quot;ü&quot;-ni sortimise asemel sorditakse järjestuses &quot;ü&quot;-st kuni &quot;a&quot;-ni.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Vaikimisi järjestus">
+							<longdesc>Loendivaate kirjete vaikimisi sortimisjärjekord. Võimalikud väärtused on &quot;name&quot; (nime järgi), &quot;size&quot; (suuruse järgi), &quot;type&quot; (liigi järgi) ja &quot;modification_date&quot; (muutmisaja järgi).</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="compact_view">
+					<entry name="all_columns_have_same_width">
+						<local_schema short_desc="Kõigile veergudele sama laius">
+							<longdesc>Kui märgitud, siis on kompaktvaate kõik veerud sama laiusega. Vastasel juhul määratakse iga veeru laius eraldi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Kompaktvaate vaikimisi suurendusaste">
+							<longdesc>Kompaktvaate vaikimisi suurendus.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="Teksti väljajätmise piirang">
+							<longdesc>Selle sõnega määratakse, kuidas liigpikkade failinimede osasid tuleb sõltuvalt suurendusastmest kolme punktiga asendada. Iga loetelu kirje on kujul &quot;Suurendusaste:Täisarv&quot;. Iga nullist suurema arvuga suurendusastme korral ei ületa failinimi määratud arvu ridu. Kui arv on null või väiksem, siis määratud suurendusastmele piiranguid ei rakendata. Lubatud on ka vaikimisi täisarvuline kirje ilma määratud suurendusastmeta, see kirjeldab suurima ridade arvu kõikidele suurendusastmetele. Näited: 0 - liigpikki failinimesid kuvatakse alati; 3 - failinimesid lühendatakse, kui need ületavad kolme rida; smallest:5,smaller:4,0 - failinimesid lühendatakse suurendusastme &quot;smallest&quot; korral, kui need ületavad viite rida. Suurendusastme &quot;smaller&quot; korral lühendatakse failinimesid, kui need ületavad nelja rida. Ülejäänud suurendusastmete korral failinimesid ei lühendata. Saadaolevad suurendusastmed: väikseim (33%), väiksem (50%), väike (66%), tavaline (100%), suur (150%), suurem (200%), suurim (400%)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_size">
+						<local_schema short_desc="Vaikimisi pisipildi ikooni suurus">
+							<longdesc>Ikoonivaates oleva pisipildi ikooni vaikimisi suurus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Ikoonide vaikimisi suurendusaste">
+							<longdesc>Ikoonivaate vaikimisi suurendus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_manual_layout">
+						<local_schema short_desc="Käsitsipaigutuse kasutamine uutes akendes">
+							<longdesc>Kui märgitud, siis kasutavad uued aknad vaikimisi käsitsi ikoonipaigutust.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="labels_beside_icons">
+						<local_schema short_desc="Sildid asetatakse ikoonide kõrvale">
+							<longdesc>Kui märgitud, siis näidatakse silte ikooni kõrval, mitte all.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_tighter_layout">
+						<local_schema short_desc="Tihepaigutuse kasutamine uutes akendes">
+							<longdesc>Kui märgitud, paigutatakse ikoonid uutes aknendes tihedamasse rivisse.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Uutes akendes järjestatakse kirjed pööratud järjestuses">
+							<longdesc>Kui märgitud, siis uutes akendes sorditakse failid pööratud järjestuses. See tähendab, et kui failid on sorditud näiteks nime alusel, siis tavapärase &quot;a&quot;-st kuni &quot;ü&quot;-ni sortmise asemel sorditakse järjestuses &quot;ü&quot;-st kuni &quot;a&quot;-ni. Kui sorditakse suuruse alusel, siis kasvava järjestuse asemel sorditakse kahanevas järjestuses.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Vaikimisi järjestus">
+							<longdesc>Ikoonivaate kirjete vaikimisi sortimisjärjekord. Võimalikud väärtused on &quot;name&quot; (nimi), &quot;size&quot; (suurus), &quot;type&quot; (liik), &quot;modification_date&quot; (muutmisaeg), ja &quot;emblems&quot; (embleemid).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="captions">
+						<local_schema short_desc="Võimalike ikoonipealkirjade nimekiri">
+							<longdesc>Ikoonivaates olevate ikoonipealkirjade loetelu. Tegelik võimaluste arv sõltub suurendusastmest. Võimalikud väärtused on &quot;size&quot; (suurus), &quot;type&quot; (tüüp), &quot;date_modified&quot; (viimase muutmise aeg), &quot;date_changed&quot; (omaduste viimase muutmise aeg), &quot;date_accessed&quot; (viimase kasutamise aeg), &quot;owner&quot; (omanik), &quot;group&quot; (omanikgrupp), &quot;permissions&quot; (pääsuõigused), &quot;octal_permissions&quot; (pääsuõigused kaheksandsüsteemis) ja &quot;mime_type&quot; (mime-tüüp).</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="Külgpaanivaade">
+							<longdesc>Külgpaanivaate kasutamine uutes akendes.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="Uutes akendes külgpaani näitamine">
+							<longdesc>Kui märgitud, siis uutel akendel näidatakse külgpaani.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="Uutes akendes olekuriba näitamine">
+							<longdesc>Kui märgitud, siis uutel akendel näidatakse olekuriba.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="Uutes akendes asukohariba näitamine">
+							<longdesc>Kui märgitud, siis uutel akendel näidatakse asukohariba.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="Uutes akendes tööriistariba näitamine">
+							<longdesc>Kui märgitud, siis uutel akendel on tööriistariba nähtaval.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="Külgpaani laius">
+							<longdesc>Külgpaani vaikimisi laius uutes akendes.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="Kuupäeva vorming">
+							<longdesc>Failiaegade vorming. Võimalikud väärtused on &quot;locale&quot;, &quot;iso&quot;, ja &quot;informal&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="Kataloogide vaikimisi vaataja">
+							<longdesc>Kui ei ole määratud teisiti, siis kataloogi külastamisel kasutatakse vaatamiseks seda vaadet. Võimalikud väärtused on &quot;list_view&quot; (nimekirjavaade), &quot;icon_view&quot; (ikoonivaade) ja &quot;compact_view&quot; (kompaktvaade).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="Külgpaani vaikimisi tausta failinimi">
+							<longdesc>Külgpaani vaikimisi tausta failinimi. Kasutatakse ainult siis, kui võti side_pane_background_set on märgitud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="Külgpaani vaikimisi taustavärv">
+							<longdesc>Külgpaani vaikimisi tausta failinimi. Kasutatakse ainult siis, kui võti side_pane_background_set on märgitud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_set">
+						<local_schema short_desc="Külgpaani kohaldatud taustapilt">
+							<longdesc>Kas külgpaani vaikimisi taust on seatud või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="Vaikimisi tausta failinimi">
+							<longdesc>Kataloogi vaikimisi tausta failinimi. Kasutatakse ainult siis, kui võti background_set on märgitud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="Vaikimisi taustavärv">
+							<longdesc>Kataloogi vaikimisi tausta värvus. Kasutatakse ainult siis, kui võti background_set on märgitud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema short_desc="Kohandatud taust">
+							<longdesc>Kas kataloogi vaikimisi taust on seatud või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search_bar_type">
+						<local_schema short_desc="Otsingu tingimused otsinguribal">
+							<longdesc>Otsingutulemuste filtreerimiskriteerium. Kui väärtuseks on määratud &quot;search_by_text&quot;, siis otsib Nautilus faile ainult failinime alusel. Kui väärtuseks on määratud &quot;search_by_text_and_properties&quot;, siis otsib Nautilus faile failinime ja faili omaduste alusel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_is_home_dir">
+						<local_schema short_desc="Nautilus kasutab kodukataloogi kui töölauda">
+							<longdesc>Kui märgitud, kasutab Nautilus kasutaja kodukataloogi kui töölauda. Kui valik on aktiveerimata, kasutatakse töölauana kataloogi ~/Desktop.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="Töölaua kirjatüüp">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="Nautilus näitab töölauda">
+							<longdesc>Kui märgitud, näitab Nautilus töölaual ikoone.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="Akendes kataloogide esimesena näitamine">
+							<longdesc>Kui märgitud, siis Nautilus näitab ikooni- ja nimekirjavaates katalooge failidest eespool.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_advanced_permissions">
+						<local_schema short_desc="Laiendatud pääsuõiguste näitamine faili omaduste dialoogis">
+							<longdesc>Kui märgitud, siis Nautilus võimaldab failieelistuste dialoogis redigeerida faili pääsuõigusi UNIX-i moodi, koos mõningate esoteeriliste valikutega.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="preview_sound">
+						<local_schema short_desc="Kas kursori liikumisel üle ikooni on eelvaatehääled lubatud">
+							<longdesc>Kompromiss kiiruse nimel hiirekursori liikumisel helifailide ikoonide kohale. Kui väärtuseks on &quot;always&quot;, siis esitatakse heli alati, ka siis, kui fail asub kaugserveris. Kui väärtuseks on &quot;local_only&quot;, siis esitatakse heli ainult kohalike failide korral. Kui väärtuseks on &quot;never&quot;, siis heli ei esitata.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="directory_limit">
+						<local_schema short_desc="Suurim käidetavate failide arv kataloogi kohta">
+							<longdesc>Sellest väärtusest suurema mahuga kataloogid kärbitakse sellele suurusele lähedasele suurusele. Kärpimise eesmärk on vältida olukorda, kus Nautilus massiivsete kataloogide töötlemisele liiga palju aega ja ressurssi kulutab. Negatiivne väärtus tähendab, et piirangut pole. Väärtus on ligikaudne kuna katalooge loetakse tükkhaaval.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_limit">
+						<local_schema short_desc="Pildifaili maksimaalne suurus pisipildi näitamiseks">
+							<longdesc>Sellest suurusest (baitides) suurematest piltidest pisipilte ei tehta. Selle valiku eesmärk on välistada olukorrad, kus suurtest piltidest pisipiltide tegemine võtab kaua aega ja kasutab palju mälu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_image_thumbnails">
+						<local_schema short_desc="Kas pildifailidel näidatakse pisipilte või mitte">
+							<longdesc>Kompromiss kiiruse nimel pildifailide eelvaateikoonide loomisel. Kui väärtuseks on &quot;always&quot;, siis näidatakse pildist tehtud pisipilti alati (ka siis, kui fail asub kaugserveris). Kui väärtuseks on &quot;local_only&quot;, siis näidatakse pisipilti ainult kohalike failide korral. Kui väärtuseks on &quot;never&quot;, siis pisipilti ei näidata.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Praegune Nautiluse teema (aegunud)">
+							<longdesc>Nautiluse teema, mida kasutada. See on alates Nautiluse versioonist 2.2 aegunud, palun kasuta selle asemel ikooniteemat.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_back_button">
+						<local_schema short_desc="Hiirenupp, millega aktiveeritakse brauseriaknas käsk &quot;Tagasi&quot;">
+							<longdesc>Mõnel hiirel on &quot;Edasi&quot; ja &quot;Tagasi&quot; nupud. See võti määrab, mis nupp aktiveerib brauseriaknas käsu &quot;Tagasi&quot;. Võimalikud on väärtused vahemikus 6 kuni 14.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_forward_button">
+						<local_schema short_desc="Hiirenupp, millega aktiveeritakse brauseriaknas käsk &quot;Edasi&quot;">
+							<longdesc>Mõnel hiirel on &quot;Edasi&quot; ja &quot;Tagasi&quot; nupud. See võti määrab, mis nupp aktiveerib brauseriaknas käsu &quot;Edasi&quot;. Võimalikud on väärtused vahemikus 6 kuni 14.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_use_extra_buttons">
+						<local_schema short_desc="Nautiluse aknas kasutatakse hiire lisanuppe">
+							<longdesc>Mõnel hiirel on &quot;Edasi&quot; ja &quot;Tagasi&quot; nupud. See võti määrab, mida teeb Nautilus nende nuppude vajutamisel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="install_mime_activation">
+						<local_schema short_desc="Tundmatute mime-tüüpide jaoks pakipaigaldaja näitamine">
+							<longdesc>Kas tundmatute mime-tüüpide avamisel tuleb sobiva rakenduse leidmiseks näidata pakipaigaldaja dialoogi või mitte.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="executable_text_activation">
+						<local_schema short_desc="Mida tehakse käivitatavate tekstifailidega neile klõpsamisel">
+							<longdesc>Mida tehakse käivitatavate tekstifailidega nende aktiveerimisel (üksiku- või topeltklõpsuga). Võimalikud väärtused on &quot;launch&quot; nende programmina käivitamiseks, &quot;ask&quot; küsimusedialoogi kuvamiseks ja &quot;display&quot; nende tekstifailina kuvamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="click_policy">
+						<local_schema short_desc="Hiireklõpsu liik, millega faile avatakse">
+							<longdesc>Võimalikud väärtused on &quot;single&quot; failide ühe klõpsuga käivitamiseks, või &quot;double&quot; topeltklõpsuga käivitamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_directory_item_counts">
+						<local_schema short_desc="Kas kataloogis olevate kirjete arvu näidatakse või mitte">
+							<longdesc>Kompromiss kiiruse nimel kataloogis olevate kirjete arvu näitamisel. Kui väärtuseks on &quot;always&quot;, siis näidatakse kirjete arvu alati (ka siis, kui kataloog asub kaugserveris). Kui väärtuseks on &quot;local_only&quot;, siis näidatakse kirjete arvu ainult kohalike failisüsteemide korral. Kui väärtuseks on &quot;never&quot;, siis kirjete arvu ei näidata.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_icon_text">
+						<local_schema short_desc="Kas ikoonide eelvaadet näidatakse või mitte">
+							<longdesc>Kompromiss kiiruse nimel tekstifailide eelvaateikoonide loomisel. Kui väärtuseks on &quot;always&quot;, siis näidatakse teksti eelvaadet alati (ka siis, kui fail asub kaugserveris). Kui väärtuseks on &quot;local_only&quot;, siis näidatakse eelvaadet ainult kohalike failide korral. Kui väärtuseks on &quot;never&quot;, siis eelvaadet ei näidata.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_delete">
+						<local_schema short_desc="Kas kohene kustutamine on lubatud">
+							<longdesc>Kui märgitud, siis lubab Nautilus faile kustutada ilma neid prügikasti viskamata. See omadus võib olla ohtlik ja seda tuleks kasutada ettevaatlikult.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_trash">
+						<local_schema short_desc="Kas failide kustutamisel ja prügikasti tühjendamisel küsitakse kinnitust või mitte">
+							<longdesc>Kui märgitud, siis Nautilus küsib enne failide kustutamist või prügikasti tühjendamist kinnitust.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="navigation_window_saved_maximized">
+						<local_schema short_desc="Kas navigatsiooniaken peaks olema maksimeeritud.">
+							<longdesc>Kas navigatsiooniaken peaks vaikimisi olema maksimeeritud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="navigation_window_saved_geometry">
+						<local_schema short_desc="Navigeerimisakna geomeetriastring.">
+							<longdesc>Sõne, mis sisaldab navigatsiooniakende salvestatud geometriat.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_open_folder">
+						<local_schema short_desc="Nimekiri x-content/* liikidest, millele on määratud &quot;Avatakse kataloog&quot;">
+							<longdesc>Nimekiri x-content/* liikidest, millede kohta kasutaja on eelistuste rakendist valinud &quot;Avatakse kataloog&quot;. Nendele liikidele vastava meediumi sisestamisel avatakse kataloogiaken.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_ignore">
+						<local_schema short_desc="Nimekiri x-content/* liikidest, millele on määratud &quot;Ei tehta midagi&quot;">
+							<longdesc>Nimekiri x-content/* liikidest, millede kohta kasutaja on eelistuste rakendist valinud &quot;Ei tehta midagi&quot;. Nendele liikidele vastava meediumi sisestamisel ei küsita kasutajalt mingit kinnitust ega käivitata ühtegi rakendust.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_start_app">
+						<local_schema short_desc="Nimekiri x-content/* liikidest, mille puhul tuleb käivitada eelistatav rakendus">
+							<longdesc>Nimekiri x-content/* liikidest, millede kohta kasutaja on eelistuste rakendist valinud käivitatava rakenduse. Nendele liikidele vastava meediumi sisestamisel käivitatakse eelistatud rakendus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_never">
+						<local_schema short_desc="Automaatkäivitusega programmide käivitamise kohta ei küsita meediumi sisestamisel kinnitust">
+							<longdesc>Kui märgitud, siis ei küsi Nautilus meediumi sisestamise korral automaatselt käivitatavate programmide käivitamisel kasutajalt kunagi kinnitust.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount_open">
+						<local_schema short_desc="Kas automaatselt külge haagitud meediumi kataloog avatakse automaatselt või mitte">
+							<longdesc>Kui märgitud, siis avab Nautilus meediumi automaatsel haakimisel kataloogi. See rakendub ainult meediumile, mille kohta pole x-content/* tüüpi tuvastatud. Tuvastatud x-content tüübiga meediumi korral rakendatakse aga kasutaja poolt määratud tegevus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount">
+						<local_schema short_desc="Kas ühendatav meedium haagitakse automaatselt külge või mitte">
+							<longdesc>Kui märgitud, siis haagib Nautilus käivitumisel või meediumi sisestamisel automaatselt külge kõik külgehaagitavad meediumid (näiteks kasutajale nähtavad kõvakettad või irdmeediumid).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_location_entry">
+						<local_schema short_desc="Rajariba asemel alati asukohakirje kasutamine">
+							<longdesc>Kui märgitud, siis Nautiluse sirvimisaknad kasutavad asukoha tööribal rajariba asemel alati tekstilist sisendit.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_browser">
+						<local_schema short_desc="Nautiluse klassikalise käitumise lubamine, kus kõik aknad on sirvijad">
+							<longdesc>Kui märgitud, näitab Nautilus kõiki aknaid sirvijana. Nii toimis Nautilus enne versiooni 2.6 ning osa kasutajaid eelistab seda võimalust.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="exit_with_last_window">
+						<local_schema short_desc="Nautilus sulgub, kui viimane aken suletakse.">
+							<longdesc>Kui tõene, lõpetab Nautilus töö, kui kõik aknad suletakse. See on vaikimisi säte. Kui väär, saab Nautilust käivitada ilma akendeta, nii võib Nautilust kasutada teenusprotsessina, mis monitoorib meediumide isehaakimist või täidab sarnaseid ülesandeid.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Kiirklahv kirjatüübi tavasuurusele viimiseks">
+							<longdesc>Klaviatuuri kiirklahv kirjatüübi suuruse algsele suurusele viimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Kiirklahv kirjasuuruse vähendamiseks">
+							<longdesc>Klaviatuuri kiirklahv kirjatüübi suuruse vähendamiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Kiirklahv kirjasuuruse suurendamiseks">
+							<longdesc>Klaviatuuri kiirklahv kirjatüübi suuruse suurendamiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Kiirklahv abi kuvamiseks">
+							<longdesc>Klaviatuuri kiirklahv abiteabe kuvamiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Kiirklahv 12. kaardile lülitumiseks">
+							<longdesc>Kiirklahv 12. kaardi aktiveerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Selle tegevuse kiirklahvi keelamiseks tuleb väärtuseks määrata &quot;disabled&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Kiirklahv 11. kaardile lülitumiseks">
+							<longdesc>Kiirklahv 11. kaardi aktiveerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Selle tegevuse kiirklahvi keelamiseks tuleb väärtuseks määrata &quot;disabled&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Kiirklahv 10. kaardile lülitumiseks">
+							<longdesc>Kiirklahv 10. kaardi aktiveerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Selle tegevuse kiirklahvi keelamiseks tuleb väärtuseks määrata &quot;disabled&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Kiirklahv 9. kaardile lülitumiseks">
+							<longdesc>Kiirklahv 9. kaardi aktiveerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Selle tegevuse kiirklahvi keelamiseks tuleb väärtuseks määrata &quot;disabled&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Kiirklahv 8. kaardile lülitumiseks">
+							<longdesc>Kiirklahv 8. kaardi aktiveerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Selle tegevuse kiirklahvi keelamiseks tuleb väärtuseks määrata &quot;disabled&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Kiirklahv 7. kaardile lülitumiseks">
+							<longdesc>Kiirklahv 7. kaardi aktiveerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Selle tegevuse kiirklahvi keelamiseks tuleb väärtuseks määrata &quot;disabled&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Kiirklahv 6. kaardile lülitumiseks">
+							<longdesc>Kiirklahv 6. kaardi aktiveerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Selle tegevuse kiirklahvi keelamiseks tuleb väärtuseks määrata &quot;disabled&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Kiirklahv 5. kaardile lülitumiseks">
+							<longdesc>Kiirklahv 5. kaardi aktiveerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Selle tegevuse kiirklahvi keelamiseks tuleb väärtuseks määrata &quot;disabled&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Kiirklahv 4. kaardile lülitumiseks">
+							<longdesc>Kiirklahv 4. kaardi aktiveerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Selle tegevuse kiirklahvi keelamiseks tuleb väärtuseks määrata &quot;disabled&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Kiirklahv 3. kaardile lülitumiseks">
+							<longdesc>Kiirklahv 3. kaardi aktiveerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Selle tegevuse kiirklahvi keelamiseks tuleb väärtuseks määrata &quot;disabled&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Kiirklahv 2. kaardile lülitumiseks">
+							<longdesc>Kiirklahv 2. kaardi aktiveerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Selle tegevuse kiirklahvi keelamiseks tuleb väärtuseks määrata &quot;disabled&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Kiirklahv 1. kaardile lülitumiseks">
+							<longdesc>Kiirklahv 1. kaardi aktiveerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Selle tegevuse kiirklahvi keelamiseks tuleb väärtuseks määrata &quot;disabled&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Kiirklahv käesoleva kaardi lahtihaakimiseks">
+							<longdesc>Klaviatuuri kiirklahv käesoleva kaardi lahtihaakimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Kiirklahv käesoleva kaardi liigutamiseks paremale">
+							<longdesc>Klaviatuuri kiirklahv käesoleva kaardi liigutamiseks paremale. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Kiirklahv käesoleva kaardi liigutamiseks vasakule">
+							<longdesc>Klaviatuuri kiirklahv käesoleva kaardi liigutamiseks vasakule. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Kiirklahv järgmisele kaardile lülitumiseks">
+							<longdesc>Klaviatuuri kiirklahv järgmise kaardi aktiveerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Kiirklahv eelmisele kaardile lülitumiseks">
+							<longdesc>Klaviatuuri kiirklahv eelmise kaardi aktiveerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Kiirklahv terminali tühjendamiseks ja algsätete taastamiseks">
+							<longdesc>Klaviatuuri kiirklahv terminali tühjendamiseks ja lähtestamiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Kiirklahv terminali algsätete taastamiseks">
+							<longdesc>Klaviatuuri kiirklahv terminali lähtestamiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Kiirklahv terminali pealkirja seadmiseks">
+							<longdesc>Klaviatuuri kiirklahv teminali tiitli määramiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Kiirklahv menüüriba peitmiseks ja nähtavale toomiseks">
+							<longdesc>Klaviatuuri kiirklahv menüüriba peitmiseks või nähtavale toomiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Kiirklahv täisekraanivaate sisse- ja väljalülitamiseks">
+							<longdesc>Klaviatuuri kiirklahv täisekraanirežiimi sisse- ja väljalülitamiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Kiirklahv teksti asetamiseks">
+							<longdesc>Klaviatuuri kiirklahv lõikelaua sisu terminali asetamiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Kiirklahv teksti kopeerimiseks">
+							<longdesc>Klaviatuuri kiirklahv valitud teksti lõikelauale kopeerimiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Kiirklahv akna sulgemiseks">
+							<longdesc>Klaviatuuri kiirklahv akna sulgemiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Kiirklahv kaardi sulgemiseks">
+							<longdesc>Klaviatuuri kiirklahv kaardi sulgemiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="Kiirklahv avatud kaardi sisu salvestamiseks faili">
+							<longdesc>Klaviatuuri kiirklahv avatud kaardi sisu salvestamiseks faili. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Kiirklahv uue profiili loomiseks">
+							<longdesc>Klaviatuuri kiirklahv profiili loomise dialoogi käivitamiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Kiirklahv uue akna avamiseks">
+							<longdesc>Klaviatuuri kiirklahv uue akna avamiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Kiirklahv uue kaardi avamiseks">
+							<longdesc>Klaviatuuri kiirklahv uue kaardi avamiseks. Väljendatakse samasuguses vormingus nagu GTK+ abifailides kasutatakse. Kui seada selle valiku väärtuseks &quot;keelatud&quot;, siis selle tegevuse jaoks kiirklahvi ei ole.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_skey">
+							<local_schema short_desc="S/Key väljakutsete esiletõstmine">
+								<longdesc>Dialoogiakna avamine, kui S/Key väljakutse vastus on tuvastatud ja sellele on klõpsatud. Dialoogiaknasse sisestatud parool saadetakse terminalile.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="Kas kasutada süsteemset kirjatüüpi või mitte">
+								<longdesc>Kui märgitud, siis kasutab terminal desktop-global standardset kirjatüüpi juhul, kui see on täheruut (vastasel juhul aga sellele kõige sarnasemat kirjatüüpi).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Kas terminalividina jaoks kasutatakse teemast võetud värve või mitte">
+								<longdesc>Määramise korral kasutatakse terminali tekstisisestuskastides kasutaja poolt määratud värvuste asemel teema värviskeemi.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Delete klahvi toime">
+								<longdesc>Delete klahvi poolt genereeritava koodi määramine. Võimalikud väärtused on &quot;ascii-del&quot; ASCII DEL koodi jaoks, &quot;control-h&quot; Control-H (ehk ASCII BackSpace kood), &quot;escape-sequence&quot; BackSpace või Delete klahvi tüüpilise paojada jaoks. Üldjuhul tagab normaalse käitumise väärtus &quot;escape-sequence&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Backspace klahvi toime">
+								<longdesc>Backspace klahvi poolt genereeritava koodi määramine. Võimalikud väärtused on &quot;ascii-del&quot; ASCII DEL koodi jaoks, &quot;control-h&quot; Control-H (ehk ASCII BackSpace kood), &quot;escape-sequence&quot; BackSpace või Delete klahvi tüüpilise paojada jaoks. Üldjuhul tagab normaalse käitumise väärtus &quot;ascii-del&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Kui palju peab taustapilti tumendama">
+								<longdesc>0.0 ja 1.0 vahel olev väärtus, mille abil määratakse taustapildi tumendamise aste. 1.0 tähendab täielikku tumendust. Käesoleva teostuse puhul on võimalik ainult 2 tumendusastme väärtust, seega käsitletakse seda kui tõeväärtust, kus 0.0 keelab tumendusefekti.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Kas taustapilti kerida või mitte">
+								<longdesc>Kui märgitud, siis keritakse taustapilti koos tekstiga, vastasel juhul taustapilt teksti kerimisel kaasa ei liigu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Taustapilt">
+								<longdesc>Taustapildi faili nimi.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Tausta tüüp">
+								<longdesc>Terminali tausta liik. Võimalikud väärtused on &quot;solid&quot; ühtlase värvuse jaoks, &quot;image&quot; pildi jaoks ja &quot;transparent&quot; läbipaistvuse jaoks (kui ei kasutata komposiitaknahaldurit, siis pseudoläbipaistvuse jaoks).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Kirjatüüp">
+								<longdesc>Pango kirjatüübi nimi. Näiteks &quot;Sans 12&quot; või &quot;Monospace Bold 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Palett terminalirakenduste jaoks">
+								<longdesc>Terminalides töötavate rakenduste käsutuses on on 16-värvusega palett, mis on kirjeldatud koolonitega eraldatud nimekirjana. Värvuste nimed võivad olla ka kuueteistkümnendkujul (näiteks &quot;#FF00FF&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Terminaliakna ikoon">
+								<longdesc>Ikoon, mida selle profiili puhul kasutatakse kaartidel ja akendel</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Kestprogrammi käivitamise asemel kasutatav käsk">
+								<longdesc>Kui use_custom_command on märgitud, siis käivitatakse kestprogrammi asemel see käsk.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Kursori kuju">
+								<longdesc>Võimalikud väärtused on &quot;block&quot; kastikujulise kursori, &quot;ibeam&quot; püstkriipsukujulise kursori ja &quot;underline&quot; allkriipsukujulise kursori jaoks.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Kas kursor plingib">
+								<longdesc>Võimalikud väärtused on &quot;system&quot; globaalsete kursorivilkumise sätete kasutamiseks, &quot;on&quot; vilkumise sisselülitamiseks ja &quot;off&quot; väljalülitamiseks.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="_Oma käsu käivitamine kesta asemel">
+								<longdesc>Kui märgitud, siis custom_command võtme väärtust kasutatakse kestprogrammi käivitamiseks.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Kas terminalikäsu käivitamisel uuendatakse sisselogimise kirjeid või mitte">
+								<longdesc>Kui märgitud, siis terminalis käsu käivitamisel uuendatakse süsteemi sisselogimiskirjeid utmp ja wtmp.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Kas terminali käsk käivitatakse sisselogimise kestana või mitte">
+								<longdesc>Kui märgitud, siis terminalis käivitatav käsk käivitatakse kestprogrammina (argv[0] ette lisatakse sidekriips).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Mida peab terminal alamkäsu lõpetamise korral ette võtma">
+								<longdesc>Võimalikud väärtused on &quot;close&quot; terminali sulgemiseks ja &quot;restart&quot; käsu taaskäivitamiseks.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Kas uue väljundi puhul tuleb kerida alla või mitte">
+								<longdesc>Kui märgitud, siis uue väljundi tekkimisel keritakse terminali sisu kõige alumisse otsa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Kas klahvivajutuse puhul tuleb kerida alla või mitte">
+								<longdesc>Kui märgitud, siis klahvivajutusel hüpatakse kerimisriba allaossa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="Kas tagasikerimise puhvris hoitakse piiramatut arvu ridu või mitte">
+								<longdesc>Kui märgitud, siis ei kustutata tagasikerimise puhvrist ühtegi rida. Tagasikerimise ajalugu salvestatakse ajutiselt kettale ja kui terminalis tekib väga palju ridu, siis võib kettaruum otsa saada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Tagasikerimise puhvri ridade arv">
+								<longdesc>Ridade arv, mida hoitakse tagasikerimiseks. Selle arvu võrra on terminalilt läbijooksnud ridu võimalik tagasi kerida. Kõik sellest puhvrist väljapoole jäävad read kustutatakse mälust. Kui scrollback_unlimited on märgitud, siis seda väärtust eiratakse.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Kerimisriba asukoht">
+								<longdesc>Terminali kerimisriba asukoht. Võimalikud asukohad on &quot;left&quot; (vasakul), &quot;right&quot; (paremal) ja &quot;hidden&quot; (peidus).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="Vaikimisi ridade arv">
+								<longdesc>Uute akende ridade arv. Toimib ainult juhul, kui use_custom_default_size on lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="Vaikimisi veergude arv">
+								<longdesc>Uute akende veergude arv. Toimib ainult juhul, kui use_custom_default_size on lubatud.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="Kas uutel akendel ja kaartidel kasutatakse terminalile kohandatud suurust või mitte">
+								<longdesc>Kui märgitud, siis luuakse uued terminaliaknad võtmetes default_size_columns ja default_size_rows määratud suurusega.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Märgid, mida arvestatakse kui &quot;sõna osa&quot;">
+								<longdesc>Teksti sõnahaaval valimisel arvestatakse osade märkide jadad sõnadeks. Vahemikku saab määrata vormingus &quot;A-Ü&quot;. Poolitusmärk (mida ei kasutata vahemiku määramiseks) peab olema esimese märgina.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Kas vaigistada terminali kellaheli">
+								<longdesc>Kui märgitud, siis terminal ei reageeri piiksu tegemiseks mõeldud koodijadale.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Kas paks kiri on lubatud">
+								<longdesc>Kui märgitud, siis on terminalis töötavatel rakendustel võimalik jämedat kirja väljastada.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Terminali pealkiri">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Mida teha dünaamilise pealkirjaga">
+								<longdesc>Kui terminalis olev rakendus määrab pealkirja (kõige tüüpilisem sellekohane näide on kestprogramm). Võimalikud väärtused on &quot;replace&quot; (pealkiri asendatakse), &quot;before&quot; (dünaamiline pealkiri asetatakse määratud pealkirja ette), &quot;after&quot; (dünaamiline pealkiri asetatakse määratud pealkirja järele), ja &quot;ignore&quot; (dünaamilist pealkirja eiratakse).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="Kas rasvast kirja peab näitama sama värviga kui tavalist kirja">
+								<longdesc>Kui märgitud, siis renderdatakse rasvast kirja sama värviga, mida kasutatakse tavalise kirja puhul.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="Terminali rasvase kirja vaikimisi värv">
+								<longdesc>Terminali rasvase kirja vaikimisi värv värvikirjeldusena (võib kasutada nii HTML-stiilis kuueteistkümnendarve kui ingliskeelseid värvinimetusi nagu &quot;red&quot;). Kui bold_color_same_as_fg on märgitud, siis seda väärtust eiratakse.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Terminali vaikimisi taustavärv">
+								<longdesc>Terminali tausta vaikimisi värv värvikirjeldusena (võib kasutada nii HTML-stiilis kuueteistkümnendarve kui ingliskeelseid värvinimetusi nagu &quot;red&quot;)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Terminali teksti vaikimisi värv">
+								<longdesc>Terminali teksti vaikimisi värv värvikirjeldusena (võib kasutada nii HTML-stiilis kuueteistkümnendarve kui ingliskeelseid värvinimetusi nagu &quot;red&quot;)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Kas uutel akendel ja kaartidel näidatakse menüüriba või mitte">
+								<longdesc>Kui märgitud, siis selle profiili akende/kaartide uutel akendel tuleb menüüriba näidata.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Profiili inimloetav nimi">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Kas terminaliakende sulgemisel peab kinnitust küsima">
+							<longdesc>Kas rohkem kui ühte kaarti omava terminaliakna sulgemisel peab kasutajalt kinnitust küsima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Saadaolevate kooditabelite loend">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Kast standardne GTK kiirklahv menüüriba kasutamiseks on lubatud">
+							<longdesc>Tavaliselt saab menüüribale ligi F10 klahvi abil. Seda saab ka kohandada gtkrc abil (gtk-menu-bar-accel = &quot;misiganes&quot;). Selle võtme abil saab standardset menüüriba kiirklahvi keelata.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Kas menüüribal on ligipääsuklahv">
+							<longdesc>Kas menüüriba menüüsid saab avada Alt+märk liikumisklahvide abil. See võib takistada mõne terminalis töötava rakenduse kasutamist ja seetõttu on seda võimalik välja lülitada.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Profiil, mida kasutada uutes terminalides">
+							<longdesc>Uue akna või kaardi avamisel kasutatav profiil. See peab olema võtmes profile_list loetletud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Profiilide nimekiri">
+							<longdesc>Gnome terminalile teadaolevate profiilide loend. Sisaldab alamkataloogide nimesid kataloogi /apps/gnome-terminal/profiles suhtes.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-session">
+				<dir name="options">
+					<entry name="logout_prompt">
+						<local_schema short_desc="Väljalogimisviip">
+							<longdesc>Kui määratud, siis gnome-session küsib kasutaja nõusolekut enne seansi lõpetamist.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_save_session">
+						<local_schema short_desc="Salvesta seansid">
+							<longdesc>Kui lubatud, salvestab gnome-session seansi automaatselt.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome_settings_daemon">
+				<entry name="volume_step">
+					<local_schema short_desc="Helitugevuse samm">
+						<longdesc>Helitugevuse reguleerimise samm protsentides.</longdesc>
+					</local_schema>
+				</entry>
+				<dir name="gtk-modules">
+					<entry name="gail:atk-bridge">
+						<local_schema short_desc="Hõlbustuste toetamiseks määratud GTK+ moodulid">
+							<longdesc>Selle võtmega määratakse hõlbustuste toetamiseks laaditavaf GTK+ moodulid.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybindings">
+					<entry name="next">
+						<local_schema short_desc="Järgmisele loole hüppamine">
+							<longdesc>Klahviseos järgmise loo peale hüppamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="previous">
+						<local_schema short_desc="Eelmisele loole hüppamine">
+							<longdesc>Klahviseos eelmise loo peale hüppamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="stop">
+						<local_schema short_desc="Esitamise lõpetamine">
+							<longdesc>Klahviseos meediaesituse seiskamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pause">
+						<local_schema short_desc="Esitamise paus">
+							<longdesc>Klahviseos meediaesituse pausimiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="play">
+						<local_schema short_desc="Esitamine (või esitamine/paus)">
+							<longdesc>Klahviseos esitamise alustamiseks (või esitamiseks/pausimiseks)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media">
+						<local_schema short_desc="Meediaesitaja käivitamine">
+							<longdesc>Klahviseos meediaesitaja käivitamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="www">
+						<local_schema short_desc="Veebisirvija käivitamine">
+							<longdesc>Klahviseos veebisirvija käivitamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="calculator">
+						<local_schema short_desc="Kalkulaatori käivitamine">
+							<longdesc>Klahviseos kalkulaatori käivitamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Abiteabe sirvija käivitamine">
+							<longdesc>Klahviseos abiteabe sirvija käivitamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screensaver">
+						<local_schema short_desc="Ekraani lukustamine">
+							<longdesc>Klahviseos ekraani lukustamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="email">
+						<local_schema short_desc="E-posti kliendi käivitamine">
+							<longdesc>Klahviseos e-posti kliendi käivitamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search">
+						<local_schema short_desc="Otsing">
+							<longdesc>Klahviseos otsinguvahendi käivitamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home">
+						<local_schema short_desc="Kodukataloog">
+							<longdesc>Klahviseos kodukataloogi avamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="eject">
+						<local_schema short_desc="Sahtli lahtilükkamine">
+							<longdesc>Klahviseos optilise ketta väljastamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="power">
+						<local_schema short_desc="Väljalogimine">
+							<longdesc>Klahviseos väljalogimiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_up">
+						<local_schema short_desc="Heli valjemaks">
+							<longdesc>Klahviseos süsteemi helivaljuse suurendamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_down">
+						<local_schema short_desc="Heli vaiksemaks">
+							<longdesc>Klahviseos süsteemi helivaljuse vähendamiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_mute">
+						<local_schema short_desc="Heli tummaks">
+							<longdesc>Klahviseos süsteemi helivaljuse nullimiseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="touchpad">
+						<local_schema short_desc="Puuteplaadid sisse/välja">
+							<longdesc>Klahviseos puuteplaatide lubamiseks ja keelamiseks.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="plugins">
+					<dir name="xsettings">
+						<entry name="active">
+							<local_schema short_desc="Xsettings plugina lubamine">
+								<longdesc>Kui märgitud, siis on pluginal lubatud xsettings sätteid hallata.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="xrdb">
+						<entry name="active">
+							<local_schema short_desc="Xrdb plugina lubamine">
+								<longdesc>Kui märgitud, siis on pluginal lubatud xrdb sätteid hallata.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="xrandr">
+						<entry name="active">
+							<local_schema short_desc="XRandR plugina lubamine">
+								<longdesc>Kui märgitud, siis on pluginal lubatud XRandR sätteid hallata.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="typing-break">
+						<entry name="active">
+							<local_schema short_desc="Tippimise vaheaeja plugina lubamine">
+								<longdesc>Kui märgitud, siis on pluginal lubatud tippimise vaheaegu hallata.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="sound">
+						<entry name="active">
+							<local_schema short_desc="Heliplugina lubamine">
+								<longdesc>Kui märgitud, siis on pluginal lubatud helipuhvrit hallata.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="smartcard">
+						<entry name="active">
+							<local_schema short_desc="Smartcard plugina lubamine">
+								<longdesc>Märgi see, et lubada pluginal lukustada ekraan smartcardi eemaldamisel.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mouse">
+						<entry name="active">
+							<local_schema short_desc="Hiireplugina lubamine">
+								<longdesc>Kui märgitud, siis on pluginal lubatud hiiresätteid hallata.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="media-keys">
+						<entry name="active">
+							<local_schema short_desc="Meediaklahvide plugina lubamine">
+								<longdesc>Kui märgitud, siis on pluginal lubatud multimeediaklahvide sätteid hallata.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="active">
+							<local_schema short_desc="Klaviatuuriplugina lubamine">
+								<longdesc>Kui märgitud, siis on pluginal lubatud klaviatuurisätteid hallata.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keybindings">
+						<entry name="active">
+							<local_schema short_desc="Kiirklahvide plugina lubamine">
+								<longdesc>Kui märgitud, siis on pluginal lubatud klahviseoseid hallata.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="housekeeping">
+						<entry name="ignore_paths">
+							<local_schema short_desc="Eiratavad haakepunktid">
+								<longdesc>Määra haakepunktid, mille kettaruumi vähesust eiratakse.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="min_notify_period">
+							<local_schema short_desc="Kordushoiatuste intervall">
+								<longdesc>Määra aeg minutites. Kordushoiatused sama köite kohta ei ilmu tihedamini kui määratud vahemik.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_size_gb_no_notify">
+							<local_schema short_desc="Vaba kettaruumi teavitusläve piir">
+								<longdesc>Määra maht GB-des. Kui vaba ruumi on rohkem, kui see väärtus, ei näidata mingit hoiatust.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify_again">
+							<local_schema short_desc="Vaba kettaruumi protsendi muutus enne kordushoiatust">
+								<longdesc>Mitme protsendini peab vaba kettaruum enne kordushoiatuse näitamist kahanema.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify">
+							<local_schema short_desc="Vaba kettaruumi protsendi teavituslävi">
+								<longdesc>Vaba kettaruumi lävi protsentides, mil kuvatakse esimene hoiatus. Kui vaba kettaruumi jääb määratud protsendist vähem, kuvatakse hoiatus.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="active">
+							<local_schema short_desc="Majapidamisplugina lubamine">
+								<longdesc>Kui määratud, siis on majahoidjaplugin lubatud. Selle plugina abil eemaldatakse ajutiste failide puhvrid.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="font">
+						<entry name="active">
+							<local_schema short_desc="Kirjatüübi plugina lubamine">
+								<longdesc>Kui märgitud, siis on pluginal lubatud kirjatüüpide sätteid hallata.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="clipboard">
+						<entry name="active">
+							<local_schema short_desc="Lõikelauaplugina lubamine">
+								<longdesc>Kui märgitud, siis on pluginal lubatud lõikelaua sätteid hallata.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="background">
+						<entry name="active">
+							<local_schema short_desc="Taustaplugina lubamine">
+								<longdesc>Kui märgitud, siis on pluginal lubatud töölaua tausta sätteid hallata.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="a11y-keyboard">
+						<entry name="active">
+							<local_schema short_desc="Hõlbustustega klaviatuuriplugina lubamine">
+								<longdesc>Kui märgitud, siis on pluginal lubatud klahviatuurihõlbustuste sätteid hallata.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="xrandr">
+					<entry name="default_configuration_file">
+						<local_schema short_desc="RandR vaikesätete fail">
+							<longdesc>XRandR plugin otsib vaikesätteid failist, mis määratakse selle võtmega. See on samasugune fail, nagu ~/.config/monitors.xml kasutaja kodukataloogis. Kui kasutajal ei ole mainitud faili, või see fail ei sobi kasutaja monitoride arvuga, kasutatakse hoopis käesoleva võtmega määratud faili.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="turn_on_laptop_monitor_at_startup">
+						<local_schema short_desc="Pärast süsteemi alglaadimist lülitatakse sülearvuti monitor sisse">
+							<longdesc>Pärast süsteemi alglaadimist lülitatakse sisse sülearvuti monitor, kui alglaadimisel ühendatakse väline monitor.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="turn_on_external_monitors_at_startup">
+						<local_schema short_desc="Pärast süsteemi alglaadimist lülitatakse väline monitor sisse">
+							<longdesc>Kui kasutaja ühendab süsteemi alglaadimisel välise monitori, lülitatakse see alglaadimise järel sisse.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_notification_icon">
+						<local_schema short_desc="Kuvade näitamine teavitusalas">
+							<longdesc>Kas kuvaga seotud teavitusikooni tuleb paneelil näidata või mitte.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="yelp">
+				<entry name="fixed_font">
+					<local_schema short_desc="Kirjatüüp fikseeritud laiusega teksti jaoks">
+						<longdesc>Kirjatüüp fikseeritud laiusega teksti jaoks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="variable_font">
+					<local_schema short_desc="Kirjatüüp teksti jaoks">
+						<longdesc>Kirjatüüp muutuva laiusega teksti jaoks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_system_fonts">
+					<local_schema short_desc="Süsteemi kirjatüüpide kasutamine">
+						<longdesc>Süsteemsete vaikekirjatüüpide kasutamine.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_caret">
+					<local_schema short_desc="Kasuta tekstikursorit">
+						<longdesc>Lehtede vaatamisel kasuta klaviatuuriga juhitavat tekstikursorit.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="metacity">
+				<dir name="window_keybindings">
+					<entry name="move_to_center">
+						<local_schema short_desc="Akna tõstmine ekraani keskele">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_w">
+						<local_schema short_desc="Akna tõstmine ekraani läänekülge (vasakusse)">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_e">
+						<local_schema short_desc="Akna tõstmine ekraani idakülge (paremasse)">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_s">
+						<local_schema short_desc="Akna tõstmine ekraani lõunakülge (alumisse)">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_n">
+						<local_schema short_desc="Akna tõstmine ekraani põhjakülge (ülemisse)">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_se">
+						<local_schema short_desc="Akna tõstmine ekraani kagunurka (alumisse paremasse)">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_sw">
+						<local_schema short_desc="Akna tõstmine ekraani edelanurka (alumisse vasakusse)">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_ne">
+						<local_schema short_desc="Akna tõstmine ekraani kirdenurka (ülemisse paremasse)">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_nw">
+						<local_schema short_desc="Akna tõstmine ekraani loodenurka (ülemisse vasakusse)">
+						</local_schema>
+					</entry>
+					<entry name="maximize_horizontally">
+						<local_schema short_desc="Akna maksimeerimine horisontaalselt">
+						</local_schema>
+					</entry>
+					<entry name="maximize_vertically">
+						<local_schema short_desc="Akna maksimeerimine vertikaalselt">
+						</local_schema>
+					</entry>
+					<entry name="lower">
+						<local_schema short_desc="Akna viimine teiste taha">
+						</local_schema>
+					</entry>
+					<entry name="raise">
+						<local_schema short_desc="Akna tõstmine teiste akende kohale">
+						</local_schema>
+					</entry>
+					<entry name="raise_or_lower">
+						<local_schema short_desc="Akna tõstmine, kui seda katab teine aken, või taha viimine">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_down">
+						<local_schema short_desc="Akna tõstmine ühe tööala võrra allapoole">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_up">
+						<local_schema short_desc="Akna tõstmine ühe tööala võrra ülespoole">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_right">
+						<local_schema short_desc="Akna tõstmine ühe tööala võrra paremale">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_left">
+						<local_schema short_desc="Akna tõstmine ühe tööala võrra vasakule">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_12">
+						<local_schema short_desc="Akna tõstmine 12. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_11">
+						<local_schema short_desc="Akna tõstmine 11. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_10">
+						<local_schema short_desc="Akna tõstmine 10. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_9">
+						<local_schema short_desc="Akna tõstmine 9. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_8">
+						<local_schema short_desc="Akna tõstmine 8. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_7">
+						<local_schema short_desc="Akna tõstmine 7. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_6">
+						<local_schema short_desc="Akna tõstmine 6. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_5">
+						<local_schema short_desc="Akna tõstmine 5. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_4">
+						<local_schema short_desc="Akna tõstmine 4. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_3">
+						<local_schema short_desc="Akna tõstmine 3. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_2">
+						<local_schema short_desc="Akna tõstmine 2. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_1">
+						<local_schema short_desc="Akna tõstmine 1. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="toggle_on_all_workspaces">
+						<local_schema short_desc="Akna määramine ühele või kõigile tööaladele">
+						</local_schema>
+					</entry>
+					<entry name="begin_resize">
+						<local_schema short_desc="Akna suuruse muutmine">
+						</local_schema>
+					</entry>
+					<entry name="begin_move">
+						<local_schema short_desc="Akna liigutamine">
+						</local_schema>
+					</entry>
+					<entry name="close">
+						<local_schema short_desc="Akna sulgemine">
+						</local_schema>
+					</entry>
+					<entry name="minimize">
+						<local_schema short_desc="Akna minimeerimine">
+						</local_schema>
+					</entry>
+					<entry name="toggle_shaded">
+						<local_schema short_desc="Varjutatud oleku sisse- ja väljalülitamine">
+						</local_schema>
+					</entry>
+					<entry name="unmaximize">
+						<local_schema short_desc="Akna suuruse taastamine">
+						</local_schema>
+					</entry>
+					<entry name="maximize">
+						<local_schema short_desc="Akna maksimeerimine">
+						</local_schema>
+					</entry>
+					<entry name="toggle_above">
+						<local_schema short_desc="Alati kõige pealmiseks olemise sisse- ja väljalülitamine">
+						</local_schema>
+					</entry>
+					<entry name="toggle_maximized">
+						<local_schema short_desc="Maksimeeritud oleku sisse- ja väljalülitamine">
+						</local_schema>
+					</entry>
+					<entry name="toggle_fullscreen">
+						<local_schema short_desc="Täisekraanivaate sisse- ja väljalülitamine">
+						</local_schema>
+					</entry>
+					<entry name="activate_window_menu">
+						<local_schema short_desc="Aknamenüü aktiveerimine">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybinding_commands">
+					<entry name="command_window_screenshot">
+						<local_schema short_desc="Akna ekraanitõmmise käsk">
+							<longdesc>/apps/metacity/global_keybindings/run_command_window_screenshot võti määrab klahvikombinatsiooni, mis käivitab selle sättega määratud käsu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command_screenshot">
+						<local_schema short_desc="Ekraanitõmmise võtmise käsk">
+							<longdesc>/apps/metacity/global_keybindings/run_command_screenshot määrab klahvikombinatsiooni, mis käivitab selle sättega määratud käsu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Käsud mida käivitada kiirklahvidele reageerides">
+							<longdesc>/apps/metacity/global_keybindings/run_command_N võtmed määravad klahvikombinatsioonid, mis nendele käskudele vastavad. Klahvikombinatsiooni run_command_N vajutamine käivitab käsu command_N.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global_keybindings">
+					<entry name="run_command_terminal">
+						<local_schema short_desc="Terminali käivitamine">
+						</local_schema>
+					</entry>
+					<entry name="run_command_window_screenshot">
+						<local_schema short_desc="Kuvatõmmise võtmine aknast">
+						</local_schema>
+					</entry>
+					<entry name="run_command_screenshot">
+						<local_schema short_desc="Kuvatõmmise võtmine">
+						</local_schema>
+					</entry>
+					<entry name="panel_run_dialog">
+						<local_schema short_desc="Paneeli dialoogi &quot;Rakenduse käivitamine&quot; näitamine">
+						</local_schema>
+					</entry>
+					<entry name="panel_main_menu">
+						<local_schema short_desc="Paneeli peamenüü näitamine">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="Tavaliste akende peitmine ja töölaua fokuseerimine">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels_backward">
+						<local_schema short_desc="Paneeli ja töölaua vahel kohenene tagasisuunas liikumine">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels">
+						<local_schema short_desc="Paneeli ja töölaua vahel kohenene liikumine">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows_backward">
+						<local_schema short_desc="Akende vahel kohenene tagasisuunas liikumine">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows">
+						<local_schema short_desc="Akende vahel kohenene liikumine">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group_backward">
+						<local_schema short_desc="Rakenduse akende vahel kohenene tagasisuunas liikumine">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group">
+						<local_schema short_desc="Rakenduse akende vahel kohenene liikumine">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels_backward">
+						<local_schema short_desc="Paneelide ja töölaua vahel tagasisuunas liikumine, hüpikaknaga">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels">
+						<local_schema short_desc="Paneelide ja töölaua vahel liikumine, hüpikaknaga">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows_backward">
+						<local_schema short_desc="Akende vahel tagasisuunas liikumine, hüpikaknaga">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows">
+						<local_schema short_desc="Akende vahel liikumine, hüpikaknaga">
+						</local_schema>
+					</entry>
+					<entry name="switch_group_backward">
+						<local_schema short_desc="Rakenduse akende vahel tagasisuunas liikumine, hüpikaknaga">
+						</local_schema>
+					</entry>
+					<entry name="switch_group">
+						<local_schema short_desc="Rakenduse akende vahel liikumine, hüpikaknaga">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_down">
+						<local_schema short_desc="Lülitumine selle tööala all olevale tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_up">
+						<local_schema short_desc="Lülitumine selle tööala kohal olevale tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_right">
+						<local_schema short_desc="Lülitumine sellest tööalast paremal olevale tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_left">
+						<local_schema short_desc="Lülitumine sellest tööalast vasakul olevale tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_12">
+						<local_schema short_desc="Lülitumine 12. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_11">
+						<local_schema short_desc="Lülitumine 11. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_10">
+						<local_schema short_desc="Lülitumine 10. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_9">
+						<local_schema short_desc="Lülitumine 9. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_8">
+						<local_schema short_desc="Lülitumine 8. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_7">
+						<local_schema short_desc="Lülitumine 7. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_6">
+						<local_schema short_desc="Lülitumine 6. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_5">
+						<local_schema short_desc="Lülitumine 5. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_4">
+						<local_schema short_desc="Lülitumine 4. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_3">
+						<local_schema short_desc="Lülitumine 3. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_2">
+						<local_schema short_desc="Lülitumine 2. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_1">
+						<local_schema short_desc="Lülitumine 1. tööalale">
+						</local_schema>
+					</entry>
+					<entry name="run_command">
+						<local_schema short_desc="Käivita defineeritud käsk">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="workspace_names">
+					<entry name="name">
+						<local_schema short_desc="Tööala nimi">
+							<longdesc>Tööala nimi.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="general">
+					<entry name="disable_workarounds">
+						<local_schema short_desc="Keela väärvõimalused, mis on vajalikud vanadele või rikkis rakendustele">
+							<longdesc>Mõned rakendused eiravad spetsifikatsiooni nii et see avaldub aknahalduri valekäitumises. See valik seab Metacity rangelt korrektsesse režiimi, mis annab ühtlasema kasutajakeskkonna, kui valestikäituvaid rakendusi pole vaja.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="application_based">
+						<local_schema short_desc="(Pole teostatud) Navigeerimine töötab rakenduste, mitte akende kaupa">
+							<longdesc>Kui märgitud, haldab Metacity akende asemel rakendusi. Põhimõte on pisut abstraktne, aga üldiselt on rakenduste baasil süsteem rohkem Maci ja vähem Windowsi moodi. Kui sa fokuseerid akna rakenduste-baasil režiimis, tõstetakse kõik selle rakenduse aknad. Lisaks rakenduste-baasil režiimis ei edastata fokuseerimise klõpse teiste rakenduste akendele. Rakenduste-baasil režiim on hetkel siiski veel teostamata.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reduced_resources">
+						<local_schema short_desc="Kui märgitud, tehakse kasutatavause arvelt kompromiss ressursside säästmisekst">
+							<longdesc>Kui märgitud, annab metacity kasutajale vähem tagasisidet kasutades sõrestikvaadet, hoidudes animatsioonides ja teistest tagasiside viisidest. See vähendab mõne kasutaja jaoks oluliselt kasutatavust, aga võib jätta ammused pärandprogrammid tööle, lisaks võib olla kasulik kompromiss terminaliserveris. Siiski on hõlbustuste sisselülitamise korral sõrestikvaade keelatud.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="compositing_manager">
+						<local_schema short_desc="Komposiithaldur">
+							<longdesc>Määrab, kas Metacity on komposiithaldur</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell_type">
+						<local_schema short_desc="Visuaalpiiksu tüüp">
+							<longdesc>Teatab Metacityle, kuidas visuaalselt näidata, et süsteemi või mõne muu rakenduse &apos;kell&apos; helises. Praegu on sellel kaks võimalikku väärtust, &quot;fullscreen&quot;, mis teeb täisekraani must-valge välgatuse, ja &quot;frame_flash&quot;, mis paneb signaali saatnud rakenduse tiitliriba vilkuma. Kui kella signaali saatnud rakendus on teadmata (nagu see tavaliselt vaikimisi &quot;süsteemipiiksul&quot; on), vilgutatakse parasjagu fokuseeritud akna tiitliriba.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="audible_bell">
+						<local_schema short_desc="Süsteemipiiks on kuuldav">
+							<longdesc>Määrab, kas süsteemi rakendused saavad tekitada kuuldavaid &quot;piikse&quot;; võib kasutada koos &quot;visuaalkellukesega&quot;, et võimaldada vaikseid &quot;piikse&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell">
+						<local_schema short_desc="Luba visuaalkelluke">
+							<longdesc>Lülitab sisse visuaalse süsteemi piiksu näitaja; on kasulik lärmakas keskkonnas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="num_workspaces">
+						<local_schema short_desc="Tööalade arv">
+							<longdesc>Tööalade arv. Peab olema suurem kui null ja omab fikseeritud maksimaalsuurust, et ära hoida kogemata töölaua rikkumist liiga paljude tööalade eraldamise tagajärjel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_font">
+						<local_schema short_desc="Akna pealkirja kirjatüüp">
+							<longdesc>Kirjastiili kirjelduse sõne, mis kirjeldab akna tiitliriba kirjastiili. Selle kirjelduse suurust kasutatakse ainult siis, kui titlebar_font_size väärtuseks on 0. Lisaks, see valik on kasutu, kui titlebar_uses_desktop_font väärtus on määratud tõeseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_uses_system_font">
+						<local_schema short_desc="Kasuta standardset süsteemifonti akende tiitlites">
+							<longdesc>Kui märgitud, siis titlebar_font valikut eiratakse ja akende tiitliribal kasutatakse standardset rakenduste kirjastiili.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Praegune teema">
+							<longdesc>Teema määrab aknaääriste, tiitliriba jm väljanägemise.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise_delay">
+						<local_schema short_desc="Automaattõstmise valiku viivitus millisekundites">
+							<longdesc>Viivitus millisekundites enne akna tõstmist, kui auto_raise on määratud tõeseks.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise">
+						<local_schema short_desc="Automaatselt tõstab fookuses oleva akna">
+							<longdesc>Kui märgitud ja fookuse režiim on &quot;sloppy&quot; või &quot;mouse&quot;, siis tõstetakse fokuseeritud aken automaatselt pärast auto_raise_delay võtme määratud viivitust. See ei ole seotud aknal klõpsamisega selle tõstmiseks ega lohistamisel aknasse sisenemisega.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_right_click_titlebar">
+						<local_schema short_desc="Pealkirjariba paremklõpsamisel tehtav tegevus">
+							<longdesc>See valik määrab tiitliriba paremklõpsu toimingu. Praegu sobivad võimalused &apos;toggle_shade&apos;, mis akna kas varjutab või toob välja, &apos;toggle_maximize&apos; mis maksimeerib/taastab akna, &apos;toggle_maximize_horizontally&apos; ja &apos;toggle_maximize_vertically&apos; mis maksimeerib/taastab suuruse ainult ühes suunas, &apos;minimize&apos; mis minimeerib akna, &apos;shade&apos; mis kerib akna ülse, &apos;menu&apos; mis näitab akna menüüd, &apos;lower&apos; mis saadab akna kõigi teiste taha ja &apos;none&apos; mis ei tee midagi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_middle_click_titlebar">
+						<local_schema short_desc="Pealkirjaribal keskmise klahviga klõpsamisel tehtav tegevus">
+							<longdesc>See valik määrab tiitliriba kesk-klõpsu toimingu. Praegu sobivad võimalused &apos;toggle_shade&apos;, mis akna kas varjutab või toob välja, &apos;toggle_maximize&apos; mis maksimeerib/taastab akna, &apos;toggle_maximize_horizontally&apos; ja &apos;toggle_maximize_vertically&apos; mis maksimeerib/taastab suuruse ainult ühes suunas, &apos;minimize&apos; mis minimeerib akna, &apos;shade&apos; mis kerib akna ülse, &apos;menu&apos; mis näitab akna menüüd, &apos;lower&apos; mis saadab akna kõigi teiste taha ja &apos;none&apos; mis ei tee midagi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_double_click_titlebar">
+						<local_schema short_desc="Pealkirjariba topeltklõpsamisel tehtav tegevus">
+							<longdesc>See valik määrab tiitliriba topeltklõpsu toimingu. Praegu sobivad võimalused &apos;toggle_shade&apos;, mis akna kas varjutab või toob välja, &apos;toggle_maximize&apos; mis maksimeerib/taastab akna, &apos;toggle_maximize_horizontally&apos; ja &apos;toggle_maximize_vertically&apos; mis maksimeerib/taastab suuruse ainult ühes suunas, &apos;minimize&apos; mis minimeerib akna, &apos;shade&apos; mis kerib akna ülse, &apos;menu&apos; mis näitab akna menüüd, &apos;lower&apos; mis saadab akna kõigi teiste taha ja &apos;none&apos; mis ei tee midagi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="raise_on_click">
+						<local_schema short_desc="Kas akna tõstmine peaks kaasnema kasutaja teiste tegevustega">
+							<longdesc>Selle valiku väärtuseks false määramine võib põhjustada vigast käitumist, nii on selle vaikimisi väärtuse true muutmine rangelt mittesoovitatav. Paljud tegevused (nt kliendialal klõpsamine, akna liigutamine või suuruse muutmine) tõstavad kõrvaltoimena akna. Selle väärtuseks false määramine, mis on rangelt mittesoovitatav, keelab akna tõstmise teiste kasutaja tegevuste peale ja eirab rakenduste tõstmispäringuid. Vaata http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Isegi kui selle valiku väärtus on false, saab aknaid tõsta tehes alt+vasakklõps suvalises kohas aknal, hariliku klõpsamisega aknaääristel või eriteadetega lehesüsteemidelt, nagu aktiveerimispäringud rakenduste nimekirja rakendilt. See valik on praegu keelatud fokuseerimiseks-klõpsa režiimis. Akende tõstmise päringuid rakenduse seest eiratakse sõltumata päringu põhjusest. Kui sa oled arendaja ja mõni kasutaja kurdab, et rakendused ei tööta, kui see säte on keelatud, siis ütle neile, et see on _nende_ viga, et nad rikkusid aknahalduri ja neil tuleb selle valiku väärtuseks määrata uuesti &quot;true&quot; võib elada &quot;veaga&quot;, mille nad ise põhjustasid.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_new_windows">
+						<local_schema short_desc="Määrab, kuidas uued aknad saavad fookuse">
+							<longdesc>See valik võimaldab lisakontrolli uute akende fookuse haaramisele. Sellel on kaks võimalikku väärtust; &quot;smart&quot; rakendab kasutaja tavalisi fokuseerimise sätteid ja &quot;strict&quot; määrab, et terminalist käivitatud aknaid ei fookuseerita.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_mode">
+						<local_schema short_desc="Aknafookuse režiim">
+							<longdesc>Akna fookuse režiim määrab kuidas aknaid aktiveeritakse. Sellel on kolm võimalikku väärtus; &quot;click&quot; tähendab et akna fokuseerimiseks tuleb sellel klõpsata, &quot;sloppy&quot; tähendab et aken fokuseeritakse, kui hiir siseneb aknasse ja &quot;mouse&quot; tähendab, et aken aktiveeritakse kui hiir siseneb aknasse ja deaktiveeritakse, kui hiir lahkub aknast.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="button_layout">
+						<local_schema short_desc="Tiitliriba nuppude järjestus">
+							<longdesc>Tiitliriba nuppude järjestus. Väärtus peaks olema sarnane sõnele &quot;menu:minimize,maximize,spacer,close&quot;; koolon eraldab akna vasakut nurka paremast, nuppude nimed eraldatakse komaga. Topeltnupud pole lubatud. Tundmatute nuppude nimesid eiratakse vaikides, et metacity järgmistes versioonides saaks lisada uusi nuppe ilma rikkumata ühilduvust vanade versioonidega. Erilist Kahe nupu vahele ruumi tegemiseks saab kasutada erilist ruumimärki.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="resize_with_right_button">
+						<local_schema short_desc="Kas paremklahv muudab suurust">
+							<longdesc>Kui märgitud, muudab paremklahv suurust ja keskklahvi vajutamisel, kui all hoitakse &quot;mouse_button_modifier&quot; võtme määratud klahvi, näitab menüüd; kui mitte märkida, toimib see vastupidi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_button_modifier">
+						<local_schema short_desc="Modifikaator, mida kasutatakse muudetud aknaklõpsamise tegevustel">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="notification-daemon">
+				<entry name="default_sound">
+					<local_schema short_desc="Vaikimisi heli">
+						<longdesc>Vaikimisi kasutatav helifail, kui teavitus </longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sound_enabled">
+					<local_schema short_desc="Heli lubatud">
+						<longdesc>Teavituste helitoe sisse ja välja lülitamine.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="theme">
+					<local_schema short_desc="Praegune teema">
+						<longdesc>Teavituste kuvamiseks kasutatav teema.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="popup_location">
+					<local_schema short_desc="Hüpiku asukoht">
+						<longdesc>Teavituste virna vaikimisi asukoht tööalal. Lubatud väärtused: &quot;top_left&quot; (üleval vasakul),&quot;top_right&quot; (üleval paremal),&quot;bottom_left&quot; (all vasakul) ja &quot;bottom_right&quot; (all paremal)</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

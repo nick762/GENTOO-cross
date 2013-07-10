@@ -1,0 +1,3384 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB ਵਰਕਗਰੁੱਪ">
+						<longdesc>Windows ਨੈੱਟਵਰਕ ਵਰਕਗਰੁੱਪ ਜਾਂ ਡੋਮੇਨ, ਜਿਸ ਦਾ ਯੂਜ਼ਰ ਭਾਗ ਹੈ। ਇੱਕ ਨਵੇਂ ਵਰਕਗਰੁੱਪ ਨੂੰ ਪੂਰੀ ਤਰਾਂ ਸਰਗਰਮ ਹੋਣ ਲਈ ਯੂਜ਼ਰ ਲਾਗਆਉਟ ਅਤੇ ਮੁੜ ਲਾਗਇਨ ਕਰ ਸਕਦਾ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="ਆਟੋਮੈਟਿਕ ਪਰਾਕਸੀ ਸੰਰਚਨਾ URL">
+						<longdesc>URL, ਜੋ ਕਿ ਪਰਾਕਸੀ ਸੰਰਚਨਾ ਮੁੱਲ ਉਪਲੱਬਧ ਕਰਵਾਉਦਾ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS ਪਰਾਕਸੀ ਪੋਰਟ">
+						<longdesc>ਮਸ਼ੀਨ &apos;ਤੇ ਪੋਰਟ&quot;/system/proxy/socks_host&quot; ਨੇ ਦਿੱਤੀ ਹੈ, ਜਿਸ ਰਾਹੀਂ ਤੁਸੀਂ ਪਰਾਕਸੀ ਚਲਾ ਰਹੇ ਹੋ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS ਪਰਾਕਸੀ ਹੋਸਟ ਨਾਂ">
+						<longdesc>ਪਰਾਕਸੀ ਸਾਕਟ ਲਈ ਮਸ਼ੀਨ ਨਾਂ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP ਪਰਾਕਸੀ ਪੋਰਟ">
+						<longdesc>ਮਸ਼ੀਨ &apos;ਤੇ ਪੋਰਟ &quot;/system/proxy/ftp_host&quot; ਨੇ ਦਿੱਤੀ ਹੈ, ਜਿਸ ਰਾਹੀਂ ਤੁਸੀਂ ਪਰਾਕਸੀ ਚਲਾ ਰਹੇ ਹੋ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP ਪਰਾਕਸੀ ਹੋਸਟ ਨਾਂ">
+						<longdesc>ਪਰਾਕਸੀ FTP ਕਰਨ ਵਾਲੀ ਮਸ਼ੀਨ ਦਾ ਨਾਂ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="ਸੁਰੱਖਿਅਤ HTTP ਪਰਾਕਸੀ ਪੋਰਟ">
+						<longdesc>ਮਸ਼ੀਨ &apos;ਤੇ ਪੋਰਟ &quot;/system/proxy/secure_host&quot; ਨੇ ਦਿੱਤੀ ਹੈ, ਜਿਸ ਰਾਹੀਂ ਤੁਸੀਂ ਪਰਾਕਸੀ ਚਲਾ ਰਹੇ ਹੋ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="ਸੁਰੱਖਿਅਤ HTTP ਪਰਾਕਸੀ ਹੋਸਟ ਨਾਂ">
+						<longdesc>ਮਸ਼ੀਨ ਦਾ ਨਾਂ, ਜਿਸ ਰਾਹੀ ਪਰਾਕਸੀ ਸੁਰੱਖਿਅਤ HTTP ਕਰਨੀ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="ਪਰਾਕਸੀ ਸੰਰਚਨਾ ਮੋਡ">
+						<longdesc>ਪਰਾਕਸੀ ਸੰਰਚਨਾ ਮੋਡ ਦੀ ਚੋਣ ਸੰਭਵ ਮੁੱਲ ਹਨ &quot;ਕੁਝ ਨਹੀਂ&quot;, &quot;ਦਸਤੀ&quot;, &quot;ਆਟੋ&quot;।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="ਕੋਈ ਪਰਾਕਸੀ ਹੋਸਟ ਨਹੀਂ">
+						<longdesc>ਇਹ ਕੁੰਜੀ ਉਹਨਾਂ ਹੋਸਟਾਂ ਦੀ ਸੂਚੀ ਉਪਲੱਬਧ ਕਰਵਾਉਦੀ ਹੈ, ਜੋ ਸਿੱਧੇ ਜੁਡ਼ੇ ਹਨ, ਨਾ ਕਿ ਪਰਾਕਸੀ (ਜੇ ਸਰਗਰਮ ਹੈ)। ਮੁੱਲ ਹੋਸਟ ਨਾਂ, ਡੋਮੇਨ (ਸ਼ੁਰੂਆਤੀ wildcard ਜਿਵੇਂ ਕਿ *.foo.com ਵਰਤ ਕੇ ), IP ਹੋਸਟ ਐਡਰੈਸ (ਦੋਵੇਂ IPv4 ਅਤੇ IPv6) ਅਤੇ ਨੈਟਵਰਕ ਸਿਰਨਾਵੇਂ ਨਾਲ ਨੈੱਟਮਾਸਕ (ਜਿਵੇਂ ਕਿ 192.168.0.0/24)</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP ਪਰਾਕਸੀ ਪਾਸਵਰਡ">
+						<longdesc>ਪਰਮਾਣਿਕਤਾ ਨੂੰ ਦੇਣ ਲਈ ਪਾਸਵਰਡ, ਜਦੋਂ ਕਿ HTTP ਪਰਾਕਸੀ ਦੀ ਕਾਰਵਾਈ ਕੀਤੀ ਜਾ ਰਹੀ ਹੋਵੇ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP ਪਰਾਕਸੀ ਯੂਜ਼ਰ ਨਾਂ">
+						<longdesc>ਯੂਜ਼ਰ ਨਾਂ, ਪਰਮਾਣਕਤਾ ਨੂੰ ਲੰਘਣ ਲਈ, ਜਦੋਂ ਕਿ HTTP ਪਰਾਕਸੀਇੰਗ ਕਰ ਰਹੇ ਹੋ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="ਪਰਮਾਣਿਤ ਪਰਾਕਸੀ ਸਰਵਰ ਕੁਨੈਕਸ਼ਨ">
+						<longdesc>ਜੇਕਰ ਸਹੀ ਹੈ ਤਾਂ, ਪਰਾਕਸੀ ਸਰਵਰ ਤੇ ਕੁਨੈਕਸ਼ਨ ਸਮੇ ਪਰਮਾਣਕਿਤਾ ਲਈ ਦੀ ਲੋਡ਼ ਪਵੇਗੀ। ਯੂਜ਼ਰ ਨਾਂ/ਪਾਸਵਰਡ ਡੱਬਾ &quot;/system/http_proxy/authentication_user&quot; ਅਤੇ &quot;/system/http_proxy/authentication_password&quot; ਨੇ ਦਿੱਤਾ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP ਪਰਾਕਸੀ ਪੋਰਟ">
+						<longdesc>ਮਸ਼ੀਨ &apos;ਤੇ ਪੋਰਟ &quot;/system/http_proxy/host&quot; ਦਿੱਤੀ ਹੈ, ਜਿਸ ਰਾਹੀਂ ਤੁਸੀਂ ਪਰਾਕਸੀ ਚਲਾ ਰਹੇ ਹੋ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP ਪਰਾਕਸੀ ਹੋਸਟ ਨਾਂ">
+						<longdesc>ਮਸ਼ੀਨ ਦਾ ਨਾਂ, ਜਿਸ ਰਾਹੀ ਪਰਾਕਸੀ HTTP ਕਰਨੀ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP ਪਰਾਕਸੀ ਵਰਤੋਂ">
+						<longdesc>ਪਰਾਕਸੀ ਸੈਟਿੰਗ ਯੋਗ ਕਰੋ, ਜਦੋ ਕਿ ਇੰਟਰਨੈੱਟ &apos;ਤੇ HTTP ਨੂੰ ਵਰਤਦੇ ਹੋ।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="ਇਸ ਵਿੱਚ DNS-SD ਸਰਵਿਸਾਂ ਦੀ ਖੋਜ ਲਈ ਹੋਰ ਡੋਮੇਨਾਂ">
+						<longdesc>DNS-SD ਡੋਮੇਨਾਂ ਦੀ ਕਾਮਿਆਂ ਨਾਲ ਵੱਖ ਕੀਤੀ ਸੂਚੀ, ਜੋ ਕਿ &quot;network:///&quot; ਟਿਕਾਣੇ ਉੱਤੇ ਵਿਖਾਈ ਦੇਣੀ ਚਾਹੀਦੀ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="ਲੋਕਲ DNS-SD ਸਰਵਿਸ ਨੂੰ ਕਿਵੇਂ ਵੇਖਾਉਣਾ ਹੈ">
+						<longdesc>ਸੰਭਵ ਮੁੱਲ ਹਨ &quot;merged (ਰਲਵੇਂ)&quot;, &quot;separate(ਵੱਖਰੇ)&quot; ਅਤੇ &quot;disabled(ਆਯੋਗ)&quot;</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="tabs_open_position">
+						<local_schema short_desc="ਬਰਾਊਜ਼ਰ ਵਿੰਡੋਜ਼ ਵਿੱਚ ਨਵੀਆਂ ਖੁਲ੍ਹੀਆਂ ਟੈਬਾਂ ਦੀ ਸਥਿਤੀ।">
+							<longdesc>ਜੇ &quot;after_current_tab&quot; ਚੋਣ ਕੀਤੀ ਤਾਂ ਮੌਜੂਦਾ ਟੈਬ ਦੇ ਬਾਅਦ ਨਵੀਆਂ ਟੈਬਾਂ ਖੋਲ੍ਹੀਆਂ ਜਾਣਗੀਆਂ। ਜੇ &quot;end&quot; ਚੋਣ ਕੀਤੀ ਤਾਂ ਨਵੀਆਂ ਟੈਬਾਂ ਨੂੰ ਟੈਬ ਲਿਸਟ ਦੇ ਅੰਤ ਵਿੱਚ ਖੋਲ੍ਹਿਆ ਜਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_backup_files">
+						<local_schema short_desc="ਕੀ ਬੈਕਅੱਪ ਫਾਇਲਾਂ ਵੇਖਾਈਆਂ ਜਾਣ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਬੈਕਅੱਪ ਫਾਇਲਾਂ (ਜਿਵੇ ਕਿ ਈਮਸ਼ਜ) ਵੇਖਾਈਆ ਜਾਣਗੀਆਂ। ਹੁਣ ਸਿਰਫ (~) ਫਾਇਲਾਂ ਹੀ ਬੈਕ ਅਪ ਫਾਇਲਾਂ ਮੰਨੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="ਕੀ ਲੁੱਕਵੀਆਂ ਫਾਇਲਾਂ ਵੇਖਾਈਆਂ ਜਾਣ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਲੁਕਵੀਆਂ ਫਾਇਲ਼ਾਂ ਫਾਇਲ ਮੈਨੇਜਰ ਵਿੱਚ ਵੇਖਾਈਆਂ ਜਾਣਗੀਆਂ। ਇਹ ਉਹ ਫਾਇਲ਼ਾਂ ਹਨ ਜੋ ਕਿ ਜਾਂ ਤਾਂ ਡਾਟ ਫਾਇਲਾਂ ਹਨ ਜਾਂ ਫੋਲਡਰ ਦੀਆਂ .hidden ਫਾਇਲ ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>ਕੈਸ਼ ਵਿੱਚ ਥੰਮਨੇਲ ਲਈ ਵੱਧੋ-ਵੱਧ ਸਾਈਜ਼ ਮੈਗਾਬਾਈਟ (MB) ਵਿੱਚ। ਸਾਫ਼ ਕਰਨਾ ਆਯੋਗ ਕਰਨ ਵਾਸਤੇ -1 ਸੈੱਟ ਕਰੋ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>ਕੈਸ਼ ਵਿੱਚ ਥੰਮਨੇਲ ਲਈ ਵੱਧੋ-ਵੱਧ ਉਮਰ ਦਿਨਾਂ ਵਿੱਚ। ਸਾਫ਼ ਕਰਨਾ ਆਯੋਗ ਕਰਨ ਵਾਸਤੇ -1 ਸੈੱਟ ਕਰੋ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="ਇੰਪੁੱਟ ਫੀਡਬੈਕ ਸਾਊਂਡ">
+							<longdesc>ਕੀ ਇੰਪੁੱਟ ਘਟਨਾਵਾਂ ਲਈ ਸਾਊਂਡ ਚਲਾਉਣੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="ਸਾਊਂਡ ਥੀਮ ਨਾਂ">
+							<longdesc>ਘਟਨਾਵਾਂ ਸਾਊਂਡ ਲਈ ਵਰਤਣ ਵਾਸਤੇ XDG ਸਾਊਂਡ ਥੀਮ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="ਘਟਨਾਵਾਂ ਲਈ ਆਵਾਜ਼">
+							<longdesc>ਕੀ ਯੂਜ਼ਰ ਘਟਨਾਵਾਂ ਲਈ ਅਵਾਜ਼ਾਂ ਨੂੰ ਚਲਾਉਣਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="ESD ਯੋਗ">
+							<longdesc>ਸ਼ੁਰੂਆਤ &apos;ਤੇ ਸਾਊਡ ਸਰਵਰ ਨੂੰ ਯੋਗ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਮਿਕਸਰ ਟਰੈਕ">
+							<longdesc>ਮਲਟੀਮੀਡਿਆ ਸਵਿੱਚ-ਬਾਈਡਿੰਗ ਰਾਹੀਂ ਵਰਤਣ ਲਈ ਡਿਫਾਲਟ ਮਿਕਸਰ ਟਰੈਕ ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਮਿਕਸਰ ਜੰਤਰ">
+							<longdesc>ਮਲਟੀਮੀਡਿਆ ਸਵਿੱਚ-ਬਾਈਡਿੰਗ ਰਾਹੀਂ ਵਰਤਣ ਲਈ ਡਿਫਾਲਟ ਮਿਕਸਰ ਜੰਤਰ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="ਫਾਇਲ ਆਈਕਾਨ ਥੀਮ">
+							<longdesc>ਥੀਮ, ਫਾਇਲ ਆਈਕਾਨ ਵੇਖਾਉਣ ਲਈ</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="at-spi-corba">
+						<local_schema short_desc="CORBA-ਆਧਾਰਿਤ AT-SPI ਢਾਂਚਾ ਚਾਲੂ ਕਰੋ">
+							<longdesc>/desktop/gnome/interface/accessibility ਦੇ ਨਾਲ ਇਹ ਕੁੰਜੀ ਨੂੰ CORBA-ਅਧਾਰਿਤ AT-SPI ਢਾਂਚੇ ਨੂੰ ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ, ਜੇ CORBA-ਅਧਾਰਿਤ AT-SPI ਢਾਂਚੇ ਨੂੰ ਮੁੜ-ਸਥਿਤ ਕੀਤਾ ਗਿਆ। ਇਸ ਨੂੰ ਅਣਡਿੱਠਾ ਕੀਤਾ ਜਾਵੇਗਾ, ਜੇ CORBA-ਅਧਾਰਿਤ AT-SPI ਢਾਂਚੇ ਨੂੰ ਬਦਲਿਆ ਨਾ ਗਿਆ ਹੋਵੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="&apos;ਯੂਨੀਕੋਡ ਕੰਟਰੋਲ ਅੱਖਰ&apos; ਮੇਨੂ ਵੇਖੋ">
+							<longdesc>ਕੀ ਇੰਦਰਾਜ਼ਾਂ ਅਤੇ ਟੈਕਸਟ ਝਲਕ ਦੇ ਪਰਸੰਗ ਮੇਨੂ ਲਈ ਕੰਟਰੋਲ ਅੱਖਰ ਦੇਣ ਲਈ ਸਹਾਇਕ ਹੋਵੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="&apos;ਇੰਪੁੱਟ ਢੰਗ&apos; ਮੇਨੂ ਵੇਖੋ">
+							<longdesc>ਕੀ ਇੰਦਰਾਜ਼ਾਂ ਅਤੇ ਟੈਕਸਟ ਝਲਕ ਦੇ ਪਰਸੰਗ ਮੇਨੂ ਲਈ ਇੰਪੁੱਟ ਢੰਗ ਬਦਲਣਾ ਸਹਾਇਕ ਹੋਵੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="ਮੇਨੂ ਪੱਟੀ ਐਕਸਰਲੇਟਰ">
+							<longdesc>ਮੇਨੂ ਪੱਟੀਆਂ ਖੋਲ੍ਹਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="ਜੀਟੀਕੇ ਫਾਇਲ ਚੋਣਕਾਰ ਲਈ ਮੋਡੀਊਲ">
+							<longdesc>GtkFileChooser ਵਿਦਗਿਟ ਲਈ ਫਾਇਲ ਸਿਸਟਮ ਵਰਤਣ ਲਈ ਮੋਡੀਊਲ ਸੰਭਵ ਮੁੱਲ &quot;gio&quot;, &quot;gnome-vfs&quot; ਅਤੇ &quot;gtk+&quot; ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="ਸੱਜੇ ਪਾਸੇ ਹਾਲਤ-ਪੱਟੀ">
+							<longdesc>ਕੀ ਸੱਜੇ ਪਾਸੇ ਹਾਲਤ-ਪੱਟੀ ਮੀਟਰ ਵੇਖਾਏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="ਸੋਧੇ ਫੋਂਟ ਵਰਤੋਂ">
+							<longdesc>ਕੀ gtk+ ਐਪਲੀਕੇਸ਼ਨਾਂ ਲਈ ਸੋਧੋ ਫੋਂਟ ਵਰਤਣੇ ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="ਮੋਨੋਸਪੇਸ ਫੋਂਟ">
+							<longdesc>ਮੋਨੋਸਪੇਸਡ (ਨਿਸ਼ਚਿਤ ਚੌਡ਼ਾਈ) ਫੋਂਟ ਦਾ ਨਾਂ, ਟਰਮੀਨਲ ਆਦਿ ਸਥਿਤੀਆਂ ਵਿੱਚ ਵਰਤਣ ਲਈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="ਡੌਕੂਮੈਂਟ ਫੋਂਟ">
+							<longdesc>ਡੌਕੂਮੈਂਟ ਪੜ੍ਹਨ ਲਈ ਵਰਤੇ ਜਾਣ ਵਾਲੇ ਡਿਫਾਲਟ ਫੋਂਟਾਂ ਦਾ ਨਾਂ ਹੈ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="GTK IM ਮੋਡੀਊਲ">
+							<longdesc>GTK+ ਰਾਹੀਂ ਵਰਤੇ ਜਾਣ ਵਾਲੇ ਇੰਨਪੁੱਟ ਢੰਗ ਮੋਡੀਊਲ ਦਾ ਨਾਂ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="GTK IM ਹਾਲਤ ਸਟਾਈਲ">
+							<longdesc>gtk+ ਰਾਹੀਂ ਵਰਤੇ ਜਾਣ ਵਾਲੇ GTK+ ਇੰਨਪੁੱਟ ਢੰਗ ਸਥਿਤੀ ਸਟਾਈਲ ਦਾ ਨਾਂ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="GTK IM ਪਰੀਆਡਿਟ ਸਟਾਈਲ">
+							<longdesc>gtk+ ਰਾਹੀਂ ਵਰਤੇ ਜਾਣ ਵਾਲੇ GTK+ ਇੰਨਪੁੱਟ ਢੰਗ ਪਰੀਆਡਿਟ ਸਟਾਈਲ ਦਾ ਨਾਂ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਫੋਂਟ">
+							<longdesc>gtk+ ਵਲੋਂ ਵਰਤੇ ਜਾਂਦੇ ਡਿਫਾਲਟ ਫੋਂਟ ਦਾ ਨਾਂ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Gtk+ ਥੀਮ">
+							<longdesc>gtk+ ਰਾਹੀਂ ਵਰਤੇ ਜਾਣ ਵਾਲੇ ਡਿਫਾਲਟ ਥੀਮ ਲਈ ਆਧਾਰ-ਨਾਂ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Gtk+ ਥੀਮ">
+							<longdesc>gtk+ ਰਾਹੀਂ ਵਰਤੇ ਜਾਣ ਵਾਲੇ ਡਿਫਾਲਟ ਥੀਮ ਲਈ ਆਧਾਰ-ਨਾਂ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="ਆਈਕਾਨ ਥੀਮ">
+							<longdesc>ਪੈਨਲ, ਨਟਾਲਿਸ ਆਦਿ ਲਈ ਵਰਤਣ ਲਈ ਆਈਕਾਨ ਥੀਮ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="ਕਰਸਰ ਝਪਕਣ ਸਮਾਂ">
+							<longdesc>ਕਰਸਰ ਝਪਕਣ ਦੀ ਲੰਬਾਈ, ਮਿਲੀਸਕਿੰਟ ਵਿੱਚ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="ਝਪਕਦੀ ਕਰਸਰ">
+							<longdesc>ਕੀ ਕਰਸਰ ਝਪਕਣੀ ਚਾਹੀਦੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="ਟੂਲਬਾਰ ਆਈਕਾਨ ਅਕਾਰ">
+							<longdesc>ਟੂਲਬਾਰ ਵਿੱਚ ਆਈਕਾਨ ਦਾ ਸਾਈਜ਼, ਜਾਂ ਤਾਂ &quot;ਛੋਟਾ-ਟੂਲਬਾਰ&quot; ਜਂ &quot;ਵੱਡਾ-ਟੂਲਬਾਰ&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="ਟੂਲਬਾਰ ਵੱਖ ਹੋਣ ਯੋਗ">
+							<longdesc>ਕੀ ਯੂਜ਼ਰ ਟੂਲਬਾਰ ਨੂੰ ਵੱਖ ਕਰਕੇ ਅਤੇ ਏਧਰ-ਓਧਰ ਕਰ ਸਕੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="ਮੇਨੂ ਪੱਟੀ ਵੱਖ ਹੋਣ ਯੋਗ">
+							<longdesc>ਕੀ ਯੂਜ਼ਰ ਮੇਨੂ ਪੱਟੀ ਨੂੰ ਵੱਖ ਕਰਕੇ ਅਤੇ ਏਧਰ-ਓਧਰ ਕਰ ਸਕੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="ਬਟਨ &apos;ਚ ਆਈਕਾਨ">
+							<longdesc>ਕੀ ਬਟਨਾਂ ਵਿੱਚ ਬਟਨ ਟੈਕਸਟ ਨਾਲ ਆਈਕਾਨ ਵੇਖਾਇਆ ਜਾਵੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="ਮੇਨੂ ਵਿੱਚ ਆਈਕਾਨ ਹੋਣ">
+							<longdesc>ਕੀ ਮੇਨੂ ਵਿੱਚ ਮੇਨੂ-ਐਂਟਰੀ ਨਾਲ ਇੱਕ ਆਈਕਾਨ ਵੇਖਾਇਆ ਜਾਵੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="ਟੂਲਬਾਰ ਸਟਾਈਲ">
+							<longdesc>ਟੂਲਬਾਰ ਸਟਾਈਲ ਹੈ। ਸੰਭਵ ਮੁੱਲ ਹਨ &quot;ਦੋਂਵੇ&quot;, &quot;ਦੋਂਵੇ ਲੇਟਵੇਂ&quot;, &quot;ਆਈਕਾਨ&quot; ਅਤੇ &quot;ਟੈਕਸਟ&quot;।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="ਐਸਲ ਤਬਦੀਲ ਕਰ ਸਕਦੇ ਹਨ">
+							<longdesc>ਕੀ ਯੂਜ਼ਰ ਮੌਕੇ ਤੇ ਨਵਾਂ ਐਕਸਲੇਟਰ ਬਣਾ ਸਕੇ, ਜਦੋਂ ਸਥਿਤੀ ਇੱਕ ਸਰਗਰਮ ਮੇਨੂ-ਆਈਟਮ ਉੱਤੇ ਹੋਵੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="ਮੇਨੂ ਵਿੱਚ ਭਾਗ ਹੋਣ">
+							<longdesc>ਕੇ ਮੀਨੂ ਵੱਖ ਹੋਣ ਯੋਗ ਹੋਵੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="ਐਨੀਮੇਸ਼ਨ ਯੋਗ ਕਰੋ">
+							<longdesc>ਕੀ ਸਜੀਵਤਾ ਵੇਖਾਈ ਜਾਵੇ। ਇਹ ਗਲੋਬ ਕੁੰਜੀ ਹੈ, ਇਹ ਵਿੰਡੋ ਮੈਨੇਜਰ, ਪੈਨਲ ਆਦਿ ਦਾ ਰਵੱਈਆ ਬਦਲ ਸਕਦੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="ਅਸੈਸਬਿਲਟੀ ਯੋਗ ਕਰੋ">
+							<longdesc>ਕੀ ਐਪਲੀਕੇਸ਼ਨ ਲਈ ਅਸੈਸਟਿਵ ਸਹਿਯੋਗ ਹੋਵੇ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="ਰੰਗ ਸ਼ੇਡਿੰਗ ਕਿਸਮ">
+							<longdesc>ਬੈਕਗਰਾਊਂਡ ਦੇ ਰੰਗ ਦਾ ਸ਼ੇਡ ਕਿਵੇਂ ਹੋਵੇ ਸੰਭਵ ਮੁੱਲ ਹਨ &quot;ਲੇਟਵਾਂ ਢਾਲਵਾਂ&quot;, &quot;ਲੰਬਕਾਰੀ ਢਾਲਵਾਂ&quot; ਅਤੇ &quot;ਇਕਸਾਰ&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="ਸੈਕੰਡਰੀ ਰੰਗ">
+							<longdesc>ਜਦੋਂ ਢਾਲਵਾਂ ਬਣਾਇਆ ਜਾਵੇ ਤਾਂ ਸੱਜਿਉ ਤੋਂ ਜਾਂ ਥੱਲਿਉ ਜਾਂ ਇਕਸਾਰ ਰੰਗ ਲਈ ਨਹੀਂ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="ਮੁੱਖ ਰੰਗ">
+							<longdesc>ਜਦੋਂ ਢਾਲਵਾਂ ਬਣਾਇਆ ਜਾਵੇ ਤਾਂ ਖੱਬੇ ਤੋਂ ਜਾਂ ਉਪੱਰੋ ਜਾਂ ਇਕਸਾਰ ਰੰਗ ਵਰਤਣਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="ਤਸਵੀਰ ਧੁੰਦਲਾਪਨ">
+							<longdesc>ਧੁੰਦਲਾਪਨ, ਜਿਸ ਨਾਲ ਬੈਕਗਰਾਊਂਡ ਦੀ ਤਸਵੀਰ ਨੂੰ ਬਣਾਇਆ ਜਾਵੇ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="ਤਸਵੀਰ ਫਾਇਲ-ਨਾਂ">
+							<longdesc>ਬੈਕਗਰਾਊਂਡ ਚਿੱਤਰ ਦੇ ਤੌਰ ਤੇ ਵਰਤਣ ਲਈ ਫਾਇਲ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="ਤਸਵੀਰ ਚੋਣਾਂ">
+							<longdesc>ਦੱਸੋ ਕਿ ਬੈਕਗਰਾਊਂਡ ਫਾਇਲ-ਨਾਂ ਦਾ ਚਿੱਤਰ ਨੂੰ ਕਿਵੇਂ ਪੇਸ਼ ਕਰਨਾ ਹੈ, ਸੰਭਵ ਮੁੱਲ ਹਨ &quot;ਕੋਈ ਨਹੀਂ&quot;, &quot;ਵਾਲਪੇਪਰ&quot;, &quot;ਕੇਂਦਰੀ&quot;,&quot;ਸਕੇਲ ਕੀਤਾ&quot;,&quot;ਤਣਿਆ&quot;, &quot;ਜ਼ੂਮ&quot;, &quot;ਭਰਿਆ&quot;।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="ਡੈਸਕਟਾਪ ਬੈਕਗਰਾਊਂਡ ਬਣਾਓ">
+							<longdesc>ਕੀ ਗਨੋਮ ਡੈਸਕਟਾਪ ਬੈਕਗਰਾਊਂਡ ਬਣਾਏ</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="ਹਰੇਕ ਬਾਹਰੀ ਥੰਬਨੇਲਰ ਨੂੰ ਅਯੋਗ ਕਰੋ">
+							<longdesc>ਹਰੇਕ ਬਾਹਰੀ ਥੰਬਨੇਲਰ ਨੂੰ ਅਯੋਗ ਕਰੋ ਨੂੰ ਸੱਚ ਨਿਰਧਾਰਿਤ ਕਰਨ ਲਈ, ਇਹ ਵੇਖੇ ਬਿਨਾਂ ਕਿ ਇੱਕਲਾ-ਇੱਕਲਾ ਅਯੋਗ/ਯੋਗ ਹੈ ਜਾਂ ਨਹੀਂ।</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="application@x-font-otf">
+						<entry name="enable">
+							<local_schema short_desc="ਕੀ ਫੋਂਟ ਓਪਨ-ਟਾਈਪ(OpenType) ਨੂੰ ਥੰਬਨੇਲ ਕਰਨਾ ਹੈ">
+								<longdesc>ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ ਤਾਂ, ਓਪਨ-ਟਾਈਪ (OpenType) ਫੋਂਟ ਥੰਬਨੇਲ ਬਣ ਜਾਣਗੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="ਫੋਂਟ ਓਪਨਟਾਈਪ (OpenType) ਲਈ ਥੰਬਨੇਲ ਕਮਾਂਡ">
+								<longdesc>ਕਮਾਂਡ, ਜੋ ਫੋਂਟ ਓਪਨ-ਟਾਈਪ (OpenType) ਲਈ ਥੰਬਨੇਲ ਬਣਾਉਦੀ ਹੈ, ਨੂੰ ਇਹ ਸਵਿੱਚ ਦਿਓ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-pcf">
+						<entry name="enable">
+							<local_schema short_desc="ਕੀ ਫੋਂਟ ਪੀਸੀਐਫ(PCF) ਨੂੰ ਥੰਬਨੇਲ ਕਰਨਾ ਹੈ">
+								<longdesc>ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ ਤਾਂ, ਪੀਸੀਐਫ (PCF) ਫੋਂਟ ਥੰਬਨੇਲ ਬਣ ਜਾਣਗੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="ਫੋਂਟ ਪੀਸੀਐਫ (PCF) ਲਈ ਥੰਬਨੇਲ ਕਮਾਂਡ">
+								<longdesc>ਕਮਾਂਡ, ਜੋ ਫੋਂਟ ਪੀਸੀਐਫ (PCF) ਲਈ ਥੰਬਨੇਲ ਬਣਾਉਦੀ ਹੈ, ਨੂੰ ਇਹ ਸਵਿੱਚ ਦਿਓ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-type1">
+						<entry name="enable">
+							<local_schema short_desc="ਕੀ ਫੋਂਟ ਟਾਈਪ1 (Type1) ਨੂੰ ਥੰਬਨੇਲ ਕਰਨਾ ਹੈ">
+								<longdesc>ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ ਤਾਂ, Type1 ਫੋਂਟ ਥੰਬਨੇਲ ਬਣ ਜਾਣਗੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="ਫੋਂਟ ਟਾਈਪ1 (Type1) ਲਈ ਥੰਬਨੇਲ ਕਮਾਂਡ">
+								<longdesc>ਕਮਾਂਡ, ਜੋ ਫੋਂਟ ਟਾਈਪ ੧ (Type1) ਲਈ ਥੰਬਨੇਲ ਬਣਾਉਦੀ ਹੈ, ਨੂੰ ਇਹ ਸਵਿੱਚ ਦਿਓ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-ttf">
+						<entry name="enable">
+							<local_schema short_desc="ਕੀ ਫੋਂਟ ਟਰੂ-ਟਾਈਪ(TrueType) ਨੂੰ ਥੰਬਨੇਲ ਕਰਨਾ ਹੈ">
+								<longdesc>ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ ਤਾਂ, ਟਰੂ-ਟਾਇਪ (TrueType) ਫੋਂਟ ਥੰਬਨੇਲ ਬਣ ਜਾਣਗੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="ਫੋਂਟ ਟਰੂ-ਟਾਈਪ (TrueType) ਲਈ ਥੰਬਨੇਲ ਕਮਾਂਡ">
+								<longdesc>ਕਮਾਂਡ, ਜੋ ਫੋਂਟ ਟਰੂ-ਟਾਈਪ (TrueType) ਲਈ ਥੰਬਨੇਲ ਬਣਾਉਦੀ ਹੈ, ਨੂੰ ਇਹ ਸਵਿੱਚ ਦਿਓ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="ਕੀ ਕੀ-ਬੋਰਡ ਨੂੰ ਲਾਕ ਕਰਨ ਨੂੰ ਯੋਗ ਕਰਨਾ ਹੈ">
+							<longdesc>ਕੀ ਕੀ-ਬੋਰਡ ਨੂੰ ਲਾਕ ਕਰਨ ਨੂੰ ਯੋਗ ਕਰਨਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="ਅੰਤਰਾਲ ਨੂੰ ਟਾਲਣ ਦੀ ਇਜ਼ਾਜਤ ਦਿਓ">
+							<longdesc>ਕੀ ਟਾਇਪਇੰਗ ਬਰੇਕ ਸਕਰੀਨ ਨੂੰ ਟਾਲਿਆ ਜਾ ਸਕੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="ਬਰੇਕ ਟਾਈਮ">
+							<longdesc>ਮਿੰਟਾਂ ਦੀ ਗਿਣਤੀ, ਜਦੋਂ ਕਿ ਟਾਇਪ ਅੰਤਰਾਲ ਰਹਿ ਸਕੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="ਟਾਇਪ ਸਮਾਂ">
+							<longdesc>ਮਿੰਟਾਂ ਦੀ ਗਿਣਤੀ, ਜਦੋਂ ਕਿ ਟਾਇਪ ਕਰਨ ਮਗਰੋਂ ਅੰਤਰਾਲ ਮੋਡ ਸ਼ੁਰੂ ਹੋ ਸਕੇ</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="URL ਅਤੇ MIME ਟਾਈਪ ਹੈਂਡਲਰ ਆਯੋਗ">
+							<longdesc>ਕਿਸੇ ਵੀ URL ਜਾਂ MIME ਟਾਈਪ ਹੈਂਡਲਰ ਐਪਲੀਕੇਸ਼ਨ ਚਲਾਉਣ ਤੋਂ ਪਾਬੰਦੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="ਸਕਰੀਨ ਲਾਕ ਆਯੋਗ">
+							<longdesc>ਯੂਜ਼ਰ ਵਲੋਂ ਆਪਣੀ ਸਕਰੀਨ ਤਾਲਾਬੰਦ ਕਰਨ ਤੋਂ ਰੋਕੋ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="ਯੂਜ਼ਰ ਸਵਿੱਚ ਕਰਨਾ ਆਯੋਗ">
+							<longdesc>ਯੂਜ਼ਰ ਨੂੰ ਆਪਣਾ ਸ਼ੈਸ਼ਨ ਸਰਗਰਮ ਰੱਖਣ ਦੌਰਾਨ ਹੋਰ ਅਕਾਊਂਟ ਵਿੱਚ ਬਦਲਣ ਤੋਂ ਰੋਕਦੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="ਪਰਿੰਟਰ ਸੈੱਟਅੱਪ ਆਯੋਗ">
+							<longdesc>ਯੂਜ਼ਰ ਨੂੰ ਪਰਿੰਟਰ ਦਾ ਸੈੱਟਅੱਪ ਨੂੰ ਸੋਧਣ ਤੋਂ ਰੋਕ ਦਿਓ। ਜਿਵੇਂ ਕਿ, ਹਰੇਕ ਕਾਰਜ ਵਿੱਚ &quot;ਪਰਿੰਟਰ ਸੈੱਟਅੱਪ&quot; ਡਾਈਲਾਗ ਨੂੰ ਅਯੋਗ ਕਰ ਦੇਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="ਪਰਿੰਟਿੰਗ ਅਯੋਗ ਕਰੋ">
+							<longdesc>ਯੂਜ਼ਰ ਨੂੰ ਪਰਿੰਟਿੰਗ ਤੋਂ ਰੋਕ ਦਿਉ। ਜਿਵੇਂ ਕਿ, ਹਰੇਕ ਐਪਲੀਕੇਸ਼ਨ ਵਿੱਚੋਂ &quot;ਪਰਿੰਟ ਕਰੋ&quot; ਡਾਈਲਾਗ ਲਈ ਅਸੈੱਸ ਆਯੋਗ ਕਰ ਦਿਓ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="ਫਾਇਲ ਨੂੰ ਡਿਸਕ &apos;ਤੇ ਸੰਭਾਲਣ ਅਯੋਗ ਕਰੋ">
+							<longdesc>ਯੂਜ਼ਰ ਨੂੰ ਫਾਇਲ ਨੂੰ ਡਿਸਕ ਉੱਤੇ ਸੰਭਾਲਣ ਤੋਂ ਰੋਕੇ। ਜਿਵੇਂ ਕਿ, ਹਰੇਕ ਐਪਲੀਕੇਸ਼ਨ ਵਿੱਚ &quot;ਇੰਜ ਸੰਭਾਲੋ&quot; ਡਾਈਲਾਗ ਲਈ ਪਹੁੰਚ ਆਯੋਗ ਕਰ ਦਿਓ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="ਕਮਾਂਡ ਲਾਇਨ ਨੂੰ ਅਯੋਗ ਕਰੋ">
+							<longdesc>ਯੂਜ਼ਰ ਨੂੰ ਟਰਮੀਨਲ ਜਾਂ ਖਾਸ ਕਮਾਂਡ ਲਾਈਨਾਂ ਨੂੰ ਚਲਾਉਣ ਨੂੰ ਸੋਧਣ ਤੋਂ ਰੋਕ ਦਿਓ ਜਿਵੇਂ ਕਿ, ਪੈਨਲ ਵਿੱਚ &quot;ਐਪਲੀਕੇਸ਼ਨ ਚਲਾਓ&quot; ਡਾਈਲਾਗ ਤੋਂ ਪਹੁੰਚ ਨੂੰ ਅਯੋਗ ਕਰ ਦਿਓ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="session">
+					<entry name="required_components_list">
+						<local_schema short_desc="ਲੋੜੀਦੇ ਸ਼ੈਸ਼ਨ ਭਾਗ">
+							<longdesc>ਭਾਗਾਂ ਦੀ ਲਿਸਟ, ਜੋ ਕਿ ਗਨੋਮ ਦੇ ਭਾਗ ਵਜੋਂ ਲੋੜੀਦੇ ਹਨ। (ਹਰ ਭਾਗ ਨੂੰ &quot;/desktop/gnome/session/required_components&quot; ਵਿੱਚ ਰੱਖਿਆ ਹੈ)। ਸ਼ੁਰੂਆਤ ਐਪਲੀਕੇਸ਼ਨ ਪਸੰਦ ਟੂਲ ਯੂਜ਼ਰ ਨੂੰ ਆਮ ਤੌਰ ਉੱਤੇ ਸ਼ੈਸ਼ਨ ਵਿੱਚੋਂ ਲੋੜੀਦੇ ਭਾਗ ਹਟਾਉਣ ਨਹੀਂ ਦੇਵੇਗਾ ਅਤੇ ਸ਼ੈਸ਼ਨ ਮੈਨੇਜਰ ਆਟੋਮੈਟਿਕ ਲੋੜੀਦੇ ਭਾਗਾਂ ਨੂੰ ਸ਼ੈਸ਼ਨ ਵਿੱਚ ਲਾਗਇਨ ਸਮੇਂ ਜੋੜ ਦੇਵੇਗਾ, ਜੇ ਉਹ ਹਟਾਏ ਗਏ ਹੋਣ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_session">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਸ਼ੈਸ਼ਨ">
+							<longdesc>ਐਪਲੀਕੇਸ਼ਨਾਂ ਦੀ ਲਿਸਟ, ਜੋ ਕਿ ਡਿਫਾਲਟ ਸ਼ੈਸ਼ਨ ਦਾ ਭਾਗ ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="idle_delay">
+						<local_schema short_desc="ਵੇਹਲਾ ਗਿਣਨ ਤੋਂ ਪਹਿਲਾਂ ਸ਼ੈਸ਼ਨ ਦਾ ਸਮਾਂ">
+							<longdesc>ਗ਼ੈਰ-ਸਰਗਰਮੀ ਦੇ ਮਿੰਟਾਂ ਦੀ ਗਿਣਤੀ, ਜਦੋਂ ਕਿ ਸ਼ੈਸ਼ਨ ਨੂੰ ਵੇਹਲਾ ਗਿਣਿਆ ਜਾਵੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="required_components">
+						<entry name="filemanager">
+							<local_schema short_desc="ਫਾਇਲ ਮੈਨੇਜਰ">
+								<longdesc>ਫਾਇਲ ਮੈਨੇਜਰ ਡੈਸਕਟਾਪ ਆਈਕਾਨ ਦਿੰਦਾ ਹੈ ਅਤੇ ਤੁਹਾਨੂੰ ਤੁਹਾਡੀਆਂ ਸੰਭਾਲੀਆਂ ਫਾਇਲਾਂ ਵਰਤਣ ਲਈ ਸਹਾਇਕ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="panel">
+							<local_schema short_desc="ਪੈਨਲ">
+								<longdesc>ਪੈਨਲ ਸਕਰੀਨ ਦੇ ਉੱਤੇ ਜਾਂ ਥੱਲੇ ਇੱਕ ਪੱਟੀ ਦਿੰਦਾ ਹੈ, ਜਿਸ ਵਿੱਚ ਮੇਨੂ, ਵਿੰਡੋ ਲਿਸਟ, ਹਾਲਤ ਆਈਕਾਨ ਅਤੇ ਘੜੀ ਆਦਿ ਹੁੰਦੇ ਹਨ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="windowmanager">
+							<local_schema short_desc="ਵਿੰਡੋ ਮੈਨੇਜਰ">
+								<longdesc>ਵਿੰਡੋ ਮੈਨੇਜਰ ਪਰੋਗਰਾਮ ਹੈ, ਜੋ ਕਿ ਵਿੰਡੋ ਦੇ ਦੁਆਲੇ ਟਾਈਟਲ-ਪੱਟੀ ਅਤੇ ਬਾਰਡਰ ਬਣਾਉਦਾ ਹੈ ਅਤੇ ਤੁਹਾਨੂੰ ਵਿੰਡੋ ਹਿਲਾਉਣ ਅਤੇਸਾਈਜ਼ ਬਦਲਣ ਦੇ ਕੰਮ ਆਉਦਾ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="font_rendering">
+					<entry name="rgba_order">
+						<local_schema short_desc="RGBA ਕ੍ਰਮ">
+							<longdesc>LCD ਸਕਰੀਨ ਉੱਤੇ ਸਬ-ਪਿਕਸਲ ਐਲੀਮੈਂਟ ਦਾ ਕ੍ਰਮ; ਕੇਵਲ ਤਾਂ ਹੀ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਜਦੋਂ ਐਂਟੀਅਲਾਸਿੰਗ ਨੂੰ &quot;rgba&quot; ਸੈੱਟ ਕੀਤਾ ਹੋਵੇ। ਸੰਭਵ ਮੁੱਲ ਹਨ: ਖੱਬੇ ਤੋਂ ਲਾਲ ਲਈ &quot;rgb&quot; (ਸਭ ਤੋਂ ਆਮ), ਖੱਬੇ ਤੋਂ ਨੀਲੇ ਲਈ &quot;bgr&quot;, ਉੱਤੇ ਤੋਂ ਲਾਲ ਲਈ &quot;vrgb&quot;, ਤਲ ਤੋਂ ਲਾਲ ਲਈ &quot;vbgr&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hinting">
+						<local_schema short_desc="ਹਿੰਟਿੰਗ">
+							<longdesc>ਫੋਂਟ ਰੈਡਰਿੰਗ ਕਰਨ ਦੌਰਾਨ ਹਿੰਟਿੰਗ ਦੀ ਟਾਈਪ ਹੈ। ਸੰਭਵ ਮੁੱਲ ਹਨ: ਨਾ ਹਿੰਟਿੰਗ ਲਈ &quot;none (ਕੋਈ ਨਹੀਂ)&quot;, ਬੇਸਿਕ ਲਈ &quot;slight (ਹਲਕੀ)&quot;, ਮੱਧਮ ਲਈ &quot;medium (ਮੱਧਮ)&quot; ਅਤੇ ਵੱਧ ਤੋਂ ਵੱਧ ਹਿੰਟਿੰਗ ਲਈ &quot;full (ਪੂਰੀ)&quot; (ਅੱਖਰ ਬਣਨ ਸਮੇਂ ਕਰੂਪ ਹੋ ਸਕਦੇ ਹਨ)।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="antialiasing">
+						<local_schema short_desc="ਐਂਟੀ-ਅਲਾਈਸਿੰਗ">
+							<longdesc>ਫੋਂਟ ਰੈਡਰਿੰਗ ਲਈ ਵਰਤਣ ਵਾਸਤੇ ਐਂਟੀਅਲਾਈਸਿੰਗ ਦੀ ਟਾਈਪ ਹੈ। ਸੰਭਵ ਮੁੱਲ ਹਨ: ਬਿਨਾਂ ਐਂਟੀਅਲਾਈਸਿੰਗ ਲਈ &quot;none (ਕੋਈ ਨਹੀਂ)&quot;, ਸਟੈਂਡਰਡ  ਗਰੇਸਕੇਲ ਐਂਟੀਅਲਾਈਸਿੰਗ ਵਾਸਤੇ &quot;grayscale (ਗਰੇਸਕੇਲ)&quot; ਅਤੇ ਸਬ-ਪਿਕਸਲ ਐਂਟੀਅਲਾਈਸਿੰਗ ਲਈ &quot;rgba&quot; (ਕੇਵਲ LCD ਸਕਰੀਨਾਂ ਲਈ ਹੀ)।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="dpi">
+						<local_schema short_desc="DPI">
+							<longdesc>ਫੋਂਟ ਸਾਈਜ਼ ਨੂੰ ਪਿਕਸਲ ਸਾਈਜ਼ &apos;ਚ ਬਦਲਣ ਲਈ ਵਰਤਣ ਜਾਣ ਵਾਲਾ ਰੈਜ਼ੋਲੂਸ਼ਨ ਡਾਟ ਪ੍ਰਤੀ ਇੰਚ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="ਸ਼ੁਰੂਆਤੀ ਅਸੈੱਸਟਿਵ ਤਕਨਾਲੋਜੀ ਐਪਲੀਕੇਸ਼ਨ">
+								<longdesc>ਜਦੋਂ ਗਨੋਮ ਡੈਸਕਟਾਪ ਵਿੱਚ ਲਾਗਇਨ ਕਰਨ ਸਮੇਂ ਸ਼ੁਰੂ ਹੋਣ ਵਾਲੇ ਅਸੈਸਟਿਵ ਐਪਲੀਕੇਸ਼ਨਾਂ ਦੀ ਲਿਸਟ</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>ਬੀਪ (ਅਵਾਜ਼), ਜਦੋਂ ਕਿ ਸੋਧ ਦਬਾਈ ਜਾਵੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>ਅਯੋਗ, ਜਦੋਂ ਦੋ ਕੀ(ਬਟਨ) ਇੱਕਠੀਆਂ ਦਬਾਈਆਂ ਜਾਣ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="ਘੱਟੋ-ਘੱਟ ਅੰਤਰਾਲ ਮਿਲੀਸਕਿੰਟ ਵਿੱਚ">
+								<longdesc>ਕਿਸੇ ਕੁੰਜੀ ਨੂੰ ਮਾਨਤਾ ਨਾ ਦਿਓ, ਜਦੋਂ ਤੱਕ ਕਿ ਇਹਨਾਂ ਨੂੰ @delay ਮਿਲੀ ਸਕਿੰਟ ਲਈ ਦਬਾਇਆ ਨਹੀਂ ਜਾਂਦਾ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="ਮਿਲੀਸਕਿੰਟ &apos;ਚ ਸ਼ੁਰੂਆਤੀ ਦੇਰੀ">
+								<longdesc>ਮਾਊਸ-ਸਵਿੱਚ ਕੰਮ ਕਰਨ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਕਿੰਨੇ ਮਿਲੀਸਕਿੰਟ ਉਡੀਕ ਕਰਨੀ ਪਵੇਗੀ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="ਐਲਸਰਲੇਟ ਲਈ ਕਿੰਨੇ ਮਿਲੀਸਕਿੰਟ ਚਾਹੀਦੇ ਹਨ">
+								<longdesc>0 ਤੋਂ ਅਧਿਕਤਮ ਗਤੀ ਉੱਤੇ ਜਾਣ ਲਈ ਇਹ ਕਿੰਨੇ ਮਿਲੀਸਕਿੰਟ ਲੈਂਦਾ ਹੈ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="ਪਿਕਸਲ ਪ੍ਰਤੀ ਸਕਿੰਟ">
+								<longdesc>ਅਧਿਕਤਮ ਗਤੀ ਤੇ ਕਿੰਨੇ ਪਿਕਸਲ ਪ੍ਰਤੀ ਸਕਿੰਟ ਲੋਡ਼ੀਦੇ ਹਨ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="ਘੱਟੋ-ਘੱਟ ਅੰਤਰਾਲ ਮਿਲੀਸਕਿੰਟ ਵਿੱਚ">
+								<longdesc>ਇਕੋਂ ਸਮੇਂ ਦੱਬੀ _ਇੱਕੋ_ ਸਵਿੱਚ ਨੂੰ ਕਈ ਵਾਰ ਦੱਬਣਾ @delay ਮਿਲੀਸਕਿੰਟ ਅੰਤਾਰਲ ਨਾਲ ਅਣਡਿੱਠਾ ਕਰੋ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_enable">
+							<local_schema short_desc="ਮਾਊਸ ਸਵਿੱਚਾਂ">
+								<longdesc>ਕੀ ਮਾਊਂਸ ਸਵਿੱਚ ਕੀਬੋਰਡ ਸੁਲੱਭਤਾ ਫੀਚਰ ਚਾਲੂ ਕਰਨਾ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_enable">
+							<local_schema short_desc="ਹੌਲੀ ਸਵਿੱਚਾਂ">
+								<longdesc>ਕੀ ਹੌਲੀ ਸਵਿੱਚ ਕੀਬੋਰਡ ਸੁਲੱਭਤਾ ਫੀਚਰ ਚਾਲੂ ਕਰਨਾ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_enable">
+							<local_schema short_desc="ਬਾਊਂਸ ਸਵਿੱਚਾਂ">
+								<longdesc>ਕੀ ਬਾਊਂਸ ਸਵਿੱਚ ਕੀਬੋਰਡ ਸੁਲੱਭਤਾ ਫੀਚਰ ਚਾਲੂ ਕਰਨਾ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_enable">
+							<local_schema short_desc="ਸਟਿੱਕੀ ਸਵਿੱਚ">
+								<longdesc>ਕੀ ਸਟਿੱਕੀ ਸਵਿੱਚ ਕੀਬੋਰਡ ਸੁਲੱਭਤਾ ਫੀਚਰ ਚਾਲੂ ਕਰਨਾ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="keybindings">
+					<entry name="allowed_keys">
+						<local_schema short_desc="ਮਨਜ਼ੂਰ ਸਵਿੱਚਾਂ">
+							<longdesc>ਜੇ ਗ਼ੈਰ-ਖਾਲੀ ਹੋਵੇ ਤਾਂ, ਕੀਬਾਈਡਿੰਗ ਨੂੰ ਅਣਡਿੱਠਾ ਕੀਤਾ ਜਾਵੇਗਾ, ਜਦੋਂ ਤੱਕ ਕਿ ਉਹਨਾਂ ਦੀ GConf ਡਾਇਰੈਕਟਰੀ ਲਿਸਟ ਵਿੱਚ ਨਾ ਹੋਵੇ। ਇਹ ਲਾਕ-ਕਰਨ ਲਈ ਫਾਇਦੇਮੰਦ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="onscreenkeyboard">
+						<entry name="action">
+							<local_schema short_desc="ਆਨ-ਸਕਰੀਨ ਕੀਬੋਰਡ ਬਦਲੋ">
+								<longdesc>ਆਨਸਕਰੀਨ ਕੀਬੋਰਡ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰਨ ਵਾਸਤੇ ਵਰਤਣ ਲਈ ਕਮਾਂਡ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="ਆਨ-ਸਕਰੀਨ ਕੀਬੋਰਡ ਬਦਲੋ">
+								<longdesc>ਆਨਸਕਰੀਨ ਕੀਬੋਰਡ ਬਦਲਣ ਲਈ ਬਾਈਡਿੰਗ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="ਆਨਲਾਈਨ ਸਕਰੀਨ ਕੀਬੋਰਡ ਨੂੰ ਬਦਲਣ ਵਾਸਤੇ ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਦਾ ਨਾਂ">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="screenreader">
+						<entry name="action">
+							<local_schema short_desc="ਸਕਰੀਨ ਰੀਡਰ ਬਦਲੋ">
+								<longdesc>ਸਕਰੀਨ-ਰੀਡਰ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰਨ ਵਾਸਤੇ ਵਰਤਣ ਲਈ ਕਮਾਂਡ ਲਾਈਨ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="ਸਕਰੀਨ ਰੀਡਰ ਬਦਲਣ ਲਈ ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਦਾ ਨਾਂ">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="ਸਕਰੀਨ ਰੀਡਰ ਬਦਲੋ">
+								<longdesc>ਸਕਰੀਨ ਰੀਡਰ ਬਦਲਣ ਲਈ ਬਾਈਡਿੰਗ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="magnifier">
+						<entry name="action">
+							<local_schema short_desc="ਵੱਡਦਰਸ਼ੀ ਬਦਲੋ">
+								<longdesc>ਵੱਡਦਰਸ਼ੀ ਨੂੰ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰਨ ਵਾਸਤੇ ਵਰਤਣ ਲਈ ਕਮਾਂਡ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="ਵੱਡਦਰਸ਼ੀ ਬਦਲਣ ਵਾਸਤੇ ਵਰਤਣ ਵਾਸਤੇ ਕੀਬਰੋਡ ਸ਼ਾਰਟਕੱਟ ਦਾ ਨਾਂ">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="ਵੱਡਦਰਸ਼ੀ ਬਦਲੋ">
+								<longdesc>ਵੱਡਦਰਸ਼ੀ ਬਦਲਣ ਲਈ ਬਾਈਡਿੰਗ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;h323&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;h323&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;h323&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;callto&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;callto&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;callto&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ|</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਕਮਾਂਡ ਲਾਈਨ &quot;aim&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ, ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;aim&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿੱਤਾ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ,&quot;aim&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;mailto&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;mailto&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;mailto&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;https&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;https&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;https&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;http&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;http&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;http&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;man&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;man&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;man&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;info&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;info&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;info&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;ghelp&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;ghelp&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;ghelp&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ਕਮਾਂਡ ਟਰਮੀਨਲ ਵਿੱਚ ਚਲਾਓ">
+								<longdesc>ਸਹੀ, ਜੇਕਰ ਕਾਰਜ, ਜੋ ਕਿ ਇਸ URL ਨੂੰ ਵਰਤਦਾ ਹੈ, ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; (ਰੱਦੀ) URL ਲਈ ਹੈਂਡਲਰ">
+								<longdesc>ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਕਮਾਂਡ ਲਾਈਨ &quot;trash&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ਕੀ ਦਿੱਤੀ ਕਮਾਂਡ ਨੂੰ &quot;trash (ਰੱਦੀ)&quot; URL ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ">
+								<longdesc>ਸਹੀ ਕਰ ਦਿਉ ਤਾਂ ਕਿ ਕਾਰਜ, ਜੋ ਕਿ &quot;command(ਕਮਾਂਡ)&quot; ਵਿੱਚ ਦਿੱਤਾ, &quot;trash&quot; URL ਨੂੰ ਵਰਤ ਸਕੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="ਟਾਸਕ ਨੂੰ ਟਰਮੀਨਲ ਲੋਡ਼ੀਦਾ ਹੈ">
+								<longdesc>ਕੀ ਡਿਫਾਲਟ ਟਾਸਕ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਚੱਲਣ ਲਈ ਟਰਮੀਨਲ ਲੋਡ਼ੀਦਾ ਹੈ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ਡਿਫਾਲਟ ਟਾਸਕ">
+								<longdesc>ਡਿਫਾਲਟ ਟਾਸਕ ਐਪਲੀਕੇਸ਼ਨ</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="ਕੈਲੰਡਰ ਨੂੰ ਟਰਮੀਨਲ ਲੋਡ਼ੀਦਾ ਹੈ">
+								<longdesc>ਕੀ ਡਿਫਾਲਟ ਕੈਲੰਡਰ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਚੱਲਣ ਲਈ ਟਰਮੀਨਲ ਲੋਡ਼ੀਦਾ ਹੈ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ਡਿਫਾਲਟ ਕੈਲੰਡਰ">
+								<longdesc>ਡਿਫਾਲਟ ਕੈਲੰਡਰ ਐਪਲੀਕੇਸ਼ਨ</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="ਵਰਕਸਪੇਸਾਂ ਦਾ ਨਾਂ (ਬਰਤਰਫ਼)">
+								<longdesc>ਪਹਿਲੇ ਵਰਕਸਪੇਸ ਵਿੱਚ ਵਿੰਡੋ ਮੈਨੇਜਰ ਦੀ ਨਾਂ ਸੂਚੀ ਹੈ। ਇਹ ਕੁੰਜੀ ਗਨੋਮ 2.12 ਵਿੱਚ ਬਰਤਰਫ਼ ਕਰ ਦਿੱਤੀ ਗਈ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="ਵਰਕਸਪੇਸਾਂ ਦੀ ਗਿਣਤੀ (ਬਰਤਰਫ਼)">
+								<longdesc>ਵਰਕਸਪੇਸਾਂ ਦੀ ਗਿਣਤੀ ਜੋ ਕਿ ਵਿੰਡੋ ਪਰਬੰਧਕ ਵਰਤ ਸਕਦੇ ਹਨ। ਇਹ ਕੁੰਜੀ ਨੂੰ ਗਨੋਮ 2.12 ਵਿੱਚ ਬਰਤਰਫ਼ ਕੀਤਾ ਜਾ ਚੁੱਕਿਆ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="ਯੂਜ਼ਰ ਵਿੰਡੋ ਮੈਨੇਜਰ (ਬਰਤਰਫ਼)">
+								<longdesc>ਵਿੰਡੋ ਮੈਨੇਜਰ ਨਾਲ ਪਹਿਲਾਂ ਕੋਸ਼ਿਸ਼ ਕਰੋ। ਇਹ ਕੁੰਜੀ ਨੂੰ ਗਨੋਮ 2.12 ਵਿੱਚ ਬਰਤਰਫ਼ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="ਫਾਲਬੈਕ ਵਿੰਡੋ ਮੈਨੇਜਰ (ਬਰਤਰਫ਼)">
+								<longdesc>ਫਾਲਬੈਕ ਵਿੰਡੋ ਮੈਨੇਜਰ, ਜੇਕਰ ਯੂਜ਼ਰ ਪਰਬੰਧਕ ਨਾ ਲੱਭਿਆ ਜਾ ਸਕੇ। ਇਹ ਕੁੰਜੀ ਗਨੋਮ 2.12 ਵਿੱਚ ਬਰਤਰਫ਼ ਕੀਤੀ ਜਾ ਚੁੱਕੀ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="ਬਰਾਊਜ਼ਰ ਰਿਮੋਟ ਨੂੰ ਸਮਝਦਾ ਹੈ">
+								<longdesc>ਕੀ ਡਿਫਾਲਟ ਬਰਾਊਜ਼ਰ ਨੈਟਸਕੇਪ ਰਿਮੋਟ ਨੂੰ ਸਮਝਦਾ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="ਬਰਾਊਜ਼ਰ ਨੂੰ ਟਰਮੀਨਲ ਲੋਡ਼ੀਦਾ ਹੈ">
+								<longdesc>ਕੀ ਡਿਫਾਲਟ ਬਰਾਊਜ਼ਰ ਨੂੰ ਚੱਲਣ ਲਈ ਟਰਮੀਨਲ ਲੋਡ਼ੀਦਾ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ਡਿਫਾਲਟ ਬਰਾਊਜ਼ਰ">
+								<longdesc>ਸਭ URL ਲਈ ਡਿਫਾਲਟ ਬਰਾਊਜ਼ਰ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<entry name="screen_reader_enabled">
+							<local_schema short_desc="ਸਕਰੀਨ ਰੀਡਰ">
+								<longdesc>ਕੀ ਸਕਰੀਨ ਰੀਡਰ ਨੂੰ ਚਾਲੂ ਕਰਨਾ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_magnifier_enabled">
+							<local_schema short_desc="ਸਕਰੀਨ ਵੱਡਦਰਸ਼ੀ">
+								<longdesc>ਕੀ ਵੱਡਦਰਸ਼ੀ ਨੂੰ ਚਾਲੂ ਕਰਨਾ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_keyboard_enabled">
+							<local_schema short_desc="ਆਨ-ਸਕਰੀਨ ਕੀਬੋਰਡ">
+								<longdesc>ਕੀ ਆਨਸਕਰੀਨ ਕੀਬੋਰਡ ਚਾਲੂ ਕਰਨਾ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="ਪਸੰਦੀਦਾ ਮੋਬਾਇਲ ਅਸੈਸਟਿਵ ਤਕਨੀਕੀ ਕਾਰਜ ਚਾਲੂ">
+									<longdesc>ਲਾਗਇਨ ਦੌਰਾਨ ਪਸੰਦੀਦਾ ਮੋਬਾਇਲ ਅਸੈਸਟਿਵ ਤਕਨੀਕੀ ਕਾਰਜ ਗਨੋਮ ਵਲੋਂ ਸ਼ੁਰੂ ਕਰਨ ਲਈ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="ਪਸੰਦੀਦਾ ਮੋਬਾਇਲ ਅਸੈਸਟਿਵ ਤਕਨੀਕੀ ਕਾਰਜ">
+									<longdesc>ਲਾਗਇਨ, ਮੇਨੂ ਜਾਂ ਕਮਾਂਡ ਲਾਇਨ ਵਾਸਤੇ ਪਸੰਦੀਦਾ ਮੋਬਾਇਲ ਅਸੈਸਟਿਵ ਤਕਨੀਕੀ ਕਾਰਜ</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="ਪਸੰਦੀਦਾ ਦਿੱਖ ਅਸੈਸਟਿਵ ਤਕਨੀਕੀ ਕਾਰਜ ਚਾਲੂ">
+									<longdesc>ਲਾਗਇਨ ਦੌਰਾਨ ਪਸੰਦੀਦਾ ਦਿੱਖ ਅਸੈਸਟਿਵ ਤਕਨੀਕੀ ਕਾਰਜ ਗਨੋਮ ਵਲੋਂ ਸ਼ੁਰੂ ਕਰਨ ਲਈ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="ਪਸੰਦੀਦਾ ਦਿੱਖ ਅਸੈਸਟਿਵ ਤਕਨੀਕੀ ਕਾਰਜ">
+									<longdesc>ਲਾਗਇਨ, ਮੇਨੂ ਜਾਂ ਕਮਾਂਡ ਲਾਇਨ ਵਾਸਤੇ ਪਸੰਦੀਦਾ ਦਿੱਖ ਅਸੈਸਟਿਵ ਤਕਨੀਕੀ ਕਾਰਜ</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="ਡਿਫਾਲਟ ਭਾਗ ਦਰਸ਼ਕ ਐਪਲੀਕੇਸ਼ਨ">
+								<longdesc>ਫਾਇਲਾਂ ਨੂੰ ਵੇਖਣ ਲਈ ਵਰਤਣ ਵਾਲਾ ਕਾਰਜ, ਜੋ ਕਿ ਹਿੱਸੇ ਵੇਖਣ ਦੇ ਲਈ ਜ਼ਰੂਰੀ ਹੈ। ਪੈਰਾਮੀਟਰ %s ਨੂੰ ਫਾਇਲ ਦੇ URI ਨਾਲ ਤਬਦੀਲ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ, ਪੈਰਾਮੀਟਰ %c ਨੂੰ ਹਿੱਸੇ IID ਨਾਲ ਤਬਦੀਲ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Exec ਆਰਗੂਮੈਂਟ">
+								<longdesc>ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲਣ ਵਾਲੇ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਆਰਗੂਮੈਂਟ &apos;exec&apos; ਕੀ ਨਾਲ ਪ੍ਰਭਾਸ਼ਿਤ ਕੀਤਾ ਜਾਂਦਾ ਹੈ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ਟਰਮੀਨਲ ਐਪਲੀਕੇਸ਼ਨ">
+								<longdesc>ਵਰਤਣ ਲਈ ਟਰਮੀਨਲ ਕਾਰਜ, ਜਦੋਂ ਕਿ ਸ਼ੁਰੂਆਤੀ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਇਹ ਲੋਡ਼ੀਦਾ ਹੋਵੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="ਕਰਸਰ ਅਕਾਰ">
+								<longdesc>ਕਰਸਰ ਥੀਮ ਵਲੋਂ ਦਿੱਤਾ ਕਰਸਰ ਅਕਾਰ(_T)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="ਕਰਸਰ ਥੀਮ">
+								<longdesc>ਕਰਸਰ ਥੀਮ ਨਾਂ। ਉਹਨਾਂ Xservers ਵਲੋਂ ਹੀ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਜੋ Xcursor ਸਹਿਯੋਗੀ ਹੋਵੇ, ਜਿਵੇਂ ਕਿ XFree86 4.3 ਅਤੇ ਨਵਾਂ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="ਕਰਸਰ ਫੋਂਟ">
+								<longdesc>ਕਰਸਰ ਲਈ ਫੋਂਟ ਨਾਂ, ਜੇਕਰ ਨਾ ਦਿੱਤਾ ਤਾਂ ਡਿਫਾਲਟ ਫੋਂਟ ਹੀ ਵਰਤੇ ਜਾਣਗੇ ਇਹ ਤਾਂ X ਸਰਵਰ ਨੂੰ ਸ਼ੁਰੂ ਵੇਲੇ ਹੀ ਮਿਲ ਜਾਂਦੇ ਹਨ, ਇਸ ਕਰਕੇ ਸ਼ੈਸ਼ਨ ਵਿੱਚਕਾਰ ਬਦਲਣ ਨਾਲ ਕੋਈ ਫਰਕ ਨਹੀਂ ਪੈਦਾ, ਜਦ ਤੱਕ ਮੁਡ਼ ਚਾਲੂ ਨਹੀ ਕਰਦੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="ਪੁਆਇੰਟਰ ਲੱਭੋ">
+								<longdesc>ਕਰਸਰ ਟਿਕਾਣੇ ਨੂੰ ਉਭਾਰਿਆ ਜਾਵੇ, ਜਦੋਂ ਕਿ Control ਦੱਬੀ ਅਤੇ ਛੱਡੀ ਜਾਵੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="ਦੋ ਵਾਰ ਦਬਾਉਣ ਦਾ ਸਮਾਂ">
+								<longdesc>ਡਬਲ-ਕਲਿੱਕ ਦੀ ਲੰਬਾਈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="ਚੱਕਣ ਦਾ ਥਰਸ਼ਹੋਲਡ">
+								<longdesc>ਚੁੱਕਣਾ ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਦੂਰੀ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="ਗਤੀ ਥਰੈਸ਼ਹੋਲਡ">
+								<longdesc>ਦੂਰੀ ਪਿਕਸਲਾਂ ਵਿੱਚ ਜੋ ਕਿ ਸੰਕੇਤਕ ਨੂੰ ਤਹਿ ਕਰਨੀ ਪਵੇ ਤਾਂਕਿ ਐਕਸਲੇਟਿਡ ਮਾਊਸ ਗਤੀ ਸਰਗਰਮ ਹੋ ਸਕੇ ਮੁੱਲ -1 ਮੁੱਲ ਸਿਸਟਮ ਦਾ ਡਿਫਾਲਟ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="ਸਿੰਗਲ ਕਲਿੱਕ">
+								<longdesc>ਮਾਊਸ ਗਤੀ ਲਈ ਐਕਸਲੇਸ਼ਨ ਬਹੁਲਕ ਹੈ। ਮੁੱਲ -1 ਸਿਸਟਮ ਦਾ ਮੂਲ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="ਸਿੰਗਲ ਕਲਿੱਕ">
+								<longdesc>ਆਈਕਾਨ ਖੋਲ੍ਹਣ ਲਈ ਸਿੰਗਲ ਕਲਿੱਕ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="ਮਾਊਸ ਬਟਨ ਦੀ ਸਥਿਤੀ">
+								<longdesc>ਖੱਬੇ-ਹੱਥ ਵਾਲੇ ਮਾਊਸ ਲਈ ਖੱਬਾ ਅਤੇ ਸੱਜਾ ਮਾਊਸ ਬਟਨਾਂ ਨੂੰ ਬਦਲੋ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="smartcard">
+						<entry name="removal_action">
+							<local_schema short_desc="ਸਮਾਰਟਕਾਰਡ ਹਟਾਉਣ ਕਾਰਵਾਈ">
+								<longdesc>&quot;none (ਕੋਈ ਨਹੀਂ)&quot;, &quot;lock_screen (ਸਕਰੀਨ ਲਾਕ ਕਰੋ)&quot;, ਜਾਂ &quot;force_logout (ਧੱਕੇ ਨਾਲ ਲਾਗਆਉਟ)&quot; ਵਿੱਚੋਂ ਇੱਕ ਸੈੱਟ ਕਰੋ। ਇਹ ਕਾਰਵਾਈ ਕੀਤੀ ਜਾਵੇਗੀ, ਜਦੋਂ ਲਾਗਇਨ ਲਈ ਵਰਤਿਆ ਸਮਾਰਟ ਕਾਰਡ ਹਟਾਇਆ ਜਾਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="touchpad">
+						<entry name="touchpad_enabled">
+							<local_schema short_desc="ਟੱਚਪੈਂਡ ਚਾਲੂ">
+								<longdesc>ਇਹ ਚੋਣ ਕਰੋ, ਜੇ ਸਭ ਟੱਚਪੈਡ ਨੂੰ ਚਾਲੂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="horiz_scroll_enabled">
+							<local_schema short_desc="ਹਰੀਜੱਟਲ ਸਕਰੋਲਿੰਗ ਯੋਗ">
+								<longdesc>ਇਹ ਚੋਣ ਕਰੋ, ਜੇ scroll_method ਸਵਿੱਚ ਵਾਂਗ ਚੁਣੇ ਢੰਗ ਮੁਤਾਬਕ ਹਰੀਜੱਟਲ ਸਕਰੋਲ ਕਰਨ ਨੂੰ ਮਨਜ਼ੂਰ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_method">
+							<local_schema short_desc="ਟੱਚਪੈਡ ਸਕਰੋਲ ਢੰਗ ਚੁਣੋ">
+								<longdesc>ਟੱਚਪੈਡ ਸਕਰੋਲ ਢੰਗ ਚੁਣੋ। ਸਹਾਇਖ ਮੁੱਲ ਹਨ: 0: ਆਯੋਗ, 1: ਕੋਨਾ ਸਕਰੋਲ, ਅਤੇ 2: ਦੋ-ਉਂਗਲਾਂ ਨਾਲ ਸਕਰੋਲਿੰਗ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="tap_to_click">
+							<local_schema short_desc="ਟੱਚਪੈਡ ਨਾਲ ਮਾਊਂਸ ਕਲਿੱਕ ਯੋਗ">
+								<longdesc>ਇਹ ਚੋਣ ਕਰੋ, ਜੇ ਤੁਸੀਂ ਟੱਚਪੈਡ ਨੂੰ ਦਬਾ ਕੇ ਮਾਊਂਸ ਕਲਿੱਕ ਦਾ ਪ੍ਰਭਾਵ ਯੋਗ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="disable_while_typing">
+							<local_schema short_desc="ਲਿਖਣ ਦੌਰਾਨ ਟੱਚਪੈਡ ਆਯੋਗ ਕਰੋ">
+								<longdesc>ਇਹ ਚੋਣ ਕਰੋ, ਜੇ ਤੁਹਾਨੂੰ ਲਿਖਣ ਦੌਰਾਨ ਗਲਤੀ ਨਾਲ ਟੱਚਪੈਚ ਛੋਹਣ ਦੀ ਸਮੱਸਿਆ ਆਉਂਦੀ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="ਨਮ-ਲਾਕ (NumLock) ਹਾਲਤ ਯਾਦ ਰੱਖੋ">
+								<longdesc>ਜਦੋਂ ਸਹੀਂ ਦਿੱਤਾ ਗਿਆ ਤਾਂ ਗਨੋਮ ਨਮ-ਲਾਕ LED ਦੀ ਹਾਲਤ ਸ਼ੈਸ਼ਨ ਦੌਰਾਨ ਯਾਦ ਰੱਖੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="ਕੀ-ਬੋਰਡ ਘੰਟੀ ਲਈ ਪਸੰਦੀਦਾ ਫਾਇਲ-ਨਾਂ">
+								<longdesc>ਘੰਟੀ ਦੀ ਅਵਾਜ਼ ਚਲਾਉਣ ਲਈ ਫਾਇਲ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>ਸੰਭਵ ਮੁੱਲ ਹਨ &quot;ਚਾਲੂ&quot;, &quot;ਬੰਦ&quot; ਅਤੇ &quot;ਪਸੰਦੀਦਾ&quot;।</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="indicator">
+							<entry name="enabledPlugins">
+								<local_schema short_desc="ਚਾਲੂ ਕੀ-ਬੋਰਡ ਇੰਡੀਕੇਟਰ ਪਲੱਗਇਨ ਦੀ ਲਿਸਟ">
+									<longdesc>ਚਾਲੂ ਕੀ-ਬੋਰਡ ਇੰਡੀਕੇਟਰ ਪਲੱਗਇਨ ਦੀ ਲਿਸਟ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="backgroundColor">
+								<local_schema short_desc="ਬੈਕਗਰਾਊਂਡ ਰੰਗ">
+									<longdesc>ਲੇਆਉਟ ਇੰਡੀਕੇਟਰ ਲਈ ਬੈਕਗਰਾਊਂਡ ਰੰਗ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="foregroundColor">
+								<local_schema short_desc="ਫਾਰਗਰਾਊਂਡ ਰੰਗ">
+									<longdesc>ਲੇਆਉਟ ਇੰਡੀਕੇਟਰ ਲਈ ਫਾਰਗਰਾਊਂਡ ਰੰਗ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="fontSize">
+								<local_schema short_desc="ਫੋਂਟ ਸਾਈਜ਼">
+									<longdesc>ਲੇਆਉਟ ਇੰਡੀਕੇਟਰ ਲਈ ਫੋਂਟ ਸਾਈਜ਼</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="fontFamily">
+								<local_schema short_desc="ਫੋਂਟ ਫੈਮਲੀ">
+									<longdesc>ਲੇਆਉਟ ਇੰਡੀਕੇਟਰ ਲਈ ਫੋਂਟ ਫੈਮਲੀ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="showFlags">
+								<local_schema short_desc="ਐਪਲਿਟ ਵਿੱਚ ਝੰਡੇ ਵੇਖੋ">
+									<longdesc>ਮੌਜੂਦਾ ਲੇਆਉਟ ਨੂੰ ਵੇਖਾਉਦੇ ਝੰਡੇ ਐਪਲਿਟ ਵਿੱਚ ਵੇਖੋ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="secondary">
+								<local_schema short_desc="ਸੈਕੰਡਰੀ ਗਰੁੱਪ">
+									<longdesc>ਸੈਕੰਡਰੀ ਗਰੁੱਪ</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="preview">
+							<entry name="height">
+								<local_schema short_desc="ਕੀ-ਬੋਰਡ ਝਲਕ, ਉਚਾਈ">
+									<longdesc>ਕੀ-ਬੋਰਡ ਝਲਕ, ਉਚਾਈ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="width">
+								<local_schema short_desc="ਕੀ-ਬੋਰਡ ਝਲਕ, ਚੌੜਾਈ">
+									<longdesc>ਕੀ-ਬੋਰਡ ਝਲਕ, ਚੌੜਾਈ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="y">
+								<local_schema short_desc="ਕੀ-ਬੋਰਡ ਝਲਕ, Y ਆਫਸੈਟ">
+									<longdesc>ਕੀ-ਬੋਰਡ ਝਲਕ, Y ਆਫਸੈਟ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="x">
+								<local_schema short_desc="ਕੀ-ਬੋਰਡ ਝਲਕ, X ਆਫਸੈੱਟ">
+									<longdesc>ਕੀ-ਬੋਰਡ ਝਲਕ, X ਆਫਸੈੱਟ</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="general">
+							<entry name="disable_sysconfig_changed_warning">
+								<local_schema short_desc="&quot;X sysconfig changed (X sysconfig ਬਦਲੀ)&quot; ਚੇਤਾਵਨੀ ਸੁਨੇਹਾ ਦਬਾਉ">
+									<longdesc>&quot;X sysconfig changed (X sysconfig ਬਦਲੀ)&quot; ਚੇਤਾਵਨੀ ਸੁਨੇਹਾ ਦਬਾਉ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="loadExtraItems">
+								<local_schema short_desc="ਵਾਧੂ ਸੰਰਚਨਾ ਆਈਟਮਾਂ ਲੋਡ ਕਰੋ">
+									<longdesc>ਪੁਰਾਣੇ, ਘੱਟ ਵਰਤੇ ਜਾਂਦੇ ਲੇਆਉਟ ਅਤੇ ਚੋਣਾਂ ਲੋਡ ਕਰੋ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layoutNamesAsGroupNames">
+								<local_schema short_desc="ਗਰੁੱਪ ਨਾਂ ਦੀ ਬਜਾਏ ਲੇਆਉਟ ਨਾਂ ਵੇਖਾਓ">
+									<longdesc>ਗਰੁੱਪ ਨਾਂ ਦੀ ਬਜਾਏ ਲੇਆਉਟ ਨਾਂ ਵੇਖੋ (XFree ਵਲੋਂ ਸਹਾਇਕ ਬਹੁ ਲੇਆਉਟ ਦੇ ਵਰਜਨ ਲਈ ਹੀ)</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="handleIndicators">
+								<local_schema short_desc="ਲੇਆਉਟ ਗਰੁੱਪਾਂ ਨਾਲ ਇੰਡੀਕੇਟਰ ਸੰਭਾਲੋ/ਰੀ-ਸਟੋਰ ਕਰੋ">
+									<longdesc>ਲੇਆਉਟ ਗਰੁੱਪਾਂ ਨਾਲ ਇੰਡੀਕੇਟਰ ਸੰਭਾਲੋ/ਰੀ-ਸਟੋਰ ਕਰੋ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="groupPerWindow">
+								<local_schema short_desc="ਹਰੇਕ ਵਿੰਡੋ ਲਈ ਵੱਖਰਾ ਗਰੁੱਪ ਰੱਖਦਾ ਅਤੇ ਪਰਬੰਧ ਕਰਦਾ ਹੈ">
+									<longdesc>ਹਰੇਕ ਵਿੰਡੋ ਲਈ ਵੱਖਰਾ ਗਰੁੱਪ ਰੱਖਦਾ ਅਤੇ ਪਰਬੰਧ ਕਰਦਾ ਹੈ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="defaultGroup">
+								<local_schema short_desc="ਡਿਫਾਲਟ ਗਰੁੱਪ, ਜੋ ਕਿ ਵਿੰਡੋ ਨਿਰਮਾਣ ਲਈ ਦਿੱਤਾ ਗਿਆ ਹੈ।">
+									<longdesc>ਡਿਫਾਲਟ ਗਰੁੱਪ, ਜੋ ਕਿ ਵਿੰਡੋ ਨਿਰਮਾਣ ਲਈ ਦਿੱਤਾ ਗਿਆ ਹੈ।</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="known_file_list">
+								<local_schema short_desc="modmap ਫਾਇਲ ਲਿਸਟ">
+									<longdesc>$HOME ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਉਪਲੱਬਧ modmap ਫਾਇਲਾਂ ਦੀ ਲਿਸਟ ਹੈ।</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="update_handlers">
+								<local_schema short_desc="ਕੀ-ਬੋਰਡ ਅੱਪਡੇਟ ਹੈਂਲਡਰ">
+									<longdesc>ਚਲਾਉਣ ਲਈ ਸਕ੍ਰਿਪਟਾਂ ਦਾ ਭੰਡਾਰ ਹੈ, ਜੋ ਕਿ ਕੀ-ਬੋਰਡ ਹਾਲਤ ਮੁੜ-ਲੋਡ ਕਰਨ ਦੌਰਾਨ ਚੱਲਦੀਆਂ ਹਨ। xmodmap ਆਧਾਰ ਬਦਲਾਅ ਮੁੜ-ਲਾਗੂ ਕਰਨ ਦੌਰਾਨ ਲਾਭਦਾਇਕ ਹੈ।</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="kbd">
+							<entry name="options">
+								<local_schema short_desc="ਕੀ-ਬੋਰਡ ਚੋਣਾਂ">
+									<longdesc>ਕੀ-ਬੋਰਡ ਚੋਣਾਂ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layouts">
+								<local_schema short_desc="ਕੀ-ਬੋਰਡ ਲੇਆਉਟ">
+									<longdesc>ਕੀ-ਬੋਰਡ ਲੇਆਉਟ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="model">
+								<local_schema short_desc="ਕੀ-ਬੋਰਡ ਮਾਡਲ">
+									<longdesc>ਕੀ-ਬੋਰਡ ਮਾਡਲ</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="rotate">
+						<local_schema short_desc="ਲੰਬਕਾਰੀ ਪੈਨਲ ਵਿਚ ਲੈ ਜਾਓ">
+							<longdesc>ਜੇ ਸੱਚ ਹੈ ਤਾਂ ਮੱਛੀ ਦੀ ਐਨੀਮੇਸ਼ਨ ਲੰਬਕਾਰ ਪੈਨਲ ਵਿਚ ਘੁੰਮੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed">
+						<local_schema short_desc="ਦੇਰੀ ਪ੍ਰਤੀ ਫਰੇਮ">
+							<longdesc>ਇਹ ਕੁੰਜੀ ਸਕਿੰਟਾਂ ਦੀ ਗਿਣਤੀ ਤਹਿ ਕਰਦੀ ਹੈ, ਜਿਸ ਲਈ ਇੱਕ ਫਰੇਮ ਵੇਖਾਇਆ ਜਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="frames">
+						<local_schema short_desc="ਮੱਛੀ ਸਜੀਵਤਾ ਵਿਚ ਫਰੇਮ">
+							<longdesc>ਇਹ ਕੁੰਜੀ ਮੱਛੀ ਸਜੀਵਤਾ ਵਿੱਚ ਦਿਸਣ ਵਾਲੇ ਫਰੇਮਾਂ ਦੀ ਗਿਣਤੀ ਤਹਿ ਕਰਦੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="ਦਬਾਉਣ ਉੱਤੇ ਚੱਲਣ ਵਾਲੀ ਕਮਾਂਡ">
+							<longdesc>ਇਹ ਕੁੰਜੀ ਮੱਛੀ ਦੇ ਕਲਿੱਕ ਕਰਨ ਚੱਲਣ ਵਾਲੀ ਕਮਾਂਡ ਤਹਿ ਕਰਦੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="image">
+						<local_schema short_desc="ਮੱਛੀ ਦੀ ਸਜੀਵਤਾ ਦਾ ਪੈਕਸਮੈਪ">
+							<longdesc>ਇਹ ਕੁੰਜੀ ਮੱਛੀ ਐਪਲਿਟ ਦੀ ਪੈਕਸਪੈਮ ਡਾਇਰੈਕਟਰੀ ਦੀ ਥਾਂ ਦਿੱਸਣ ਵਾਲੀ ਸਜੀਵਤਾ ਦੀ ਫਾਇਲ ਦਾ ਨਾਂ ਤਹਿ ਕਰਦੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="ਮੱਛੀ ਦਾ ਨਾਂ">
+							<longdesc>ਮੱਛੀ ਨਾਂ ਬਿਨਾਂ ਸੋਹਣੀ ਹੈ, ਨਾਂ ਦੇ ਕੇ ਮੱਛੀ ਨੂੰ ਸੰਜੀਵ ਕਰੋ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="ਵੱਧ ਤੋਂ ਵੱਧ ਵਿੰਡੋ ਲਿਸਟ ਸਾਈਜ਼">
+							<longdesc>ਇਸ ਕੁੰਜੀ ਦਾ ਗਨੋਮ 2.20 ਵਿਚ &apos;ਫਾਰਮੈਟ&apos; ਕੁੰਜੀ ਦੇ ਤੌਰ ਉੱਤੇ ਬਰਤਰਫ਼ ਕੀਤੀ ਗਈ ਹੈ। ਸਕੀਮਾ ਨੂੰ ਪੁਰਾਣੇ ਵਰਜਨਾਂ ਨਾਲ ਅਨੁਕੂਲਤਾ ਲਈ ਹੀ ਸ਼ਾਮਿਲ ਕੀਤਾ ਗਿਆ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="ਘੱਟੋ-ਘੱਟ ਵਿੰਡੋ ਲਿਸਟ ਆਕਾਰ">
+							<longdesc>ਇਸ ਕੁੰਜੀ ਦਾ ਗਨੋਮ 2.20 ਵਿਚ &apos;ਫਾਰਮੈਟ&apos; ਕੁੰਜੀ ਦੇ ਤੌਰ ਉੱਤੇ ਬਰਤਰਫ਼ ਕੀਤੀ ਗਈ ਹੈ। ਸਕੀਮਾ ਨੂੰ ਪੁਰਾਣੇ ਵਰਜਨਾਂ ਨਾਲ ਅਨੁਕੂਲਤਾ ਲਈ ਹੀ ਸ਼ਾਮਿਲ ਕੀਤਾ ਗਿਆ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_unminimized_windows">
+						<local_schema short_desc="ਜਦੋਂ ਵਿੰਡੋ ਨੂੰ ਵੱਡਾ ਕੀਤਾ ਜਾਏ ਤਾਂ ਮੌਜੂਦਾ ਵਰਕਸਪੇਸ ਵਿਚ ਵੇਖੋ">
+							<longdesc>ਜੇ ਇਹ ਸਹੀ ਹੈ, ਤਾਂ ਛੋਟੀ ਨਾ ਕੀਤੀ ਵਿੰਡੋ, ਨੂੰ ਮੌਜੂਦਾ ਵਰਕਸਪੇਸ ਵਿੱਚ ਲੈ ਆਉ। ਨਹੀਂ ਤਾਂ ਵਿੰਡੋ ਦੇ ਵਰਕਸਪੇਸ ਵਿੱਚ ਚਲੇ ਜਾਓ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="group_windows">
+						<local_schema short_desc="ਵਿੰਡੋਜ਼ ਗਰੁੱਪ ਕਦੋਂ ਬਣਾਉਣਾ ਹੈ">
+							<longdesc>ਵਿੰਡੋ ਲਿਸਟ ਵਿੱਚ ਇਕੋ ਕੰਮ ਦੇ ਵਿੰਡੋ ਦਾ ਗਰੁੱਪ ਕਦੋਂ ਬਣਾਉਣਾ ਹੈ, ਇਹ ਦੱਸੋ। ਸੰਭਵ ਮੁੱਲ ਹਨ &quot;ਕਦੇ ਨਹੀਂ&quot;, &quot;ਆਟੋ&quot; ਅਤੇ &quot;ਹਮੇਸ਼ਾ&quot;।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="ਸਭ ਵਰਕਸਪੇਸਾਂ ਵਿਚੋਂ ਵਿੰਡੋ ਵੇਖੋ">
+							<longdesc>ਜੇ ਇਹ ਸਹੀ ਹੈ, ਤਾਂ ਵਿੰਡੋ ਲਿਸਟ ਸਾਰੇ ਵਰਕਸਪੇਸਾਂ ਦੀਆਂ ਝਰੋਖੇ ਵੇਖਾਵੇਗੀ। ਨਹੀਂ ਤਾਂ ਮੌਜੂਦਾ ਵਰਕਸਪੇਸ ਵਿਚਲੀਆਂ ਝਰੋਖੇ ਨੂੰ ਹੀ ਵੇਖਿਆ ਜਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="ਐਨੀਮੇਸ਼ਨ ਸਪੀਡ">
+							<longdesc>ਗਤੀ, ਜਿਸ ਉੱਤੇ ਪੈਨਲ ਸਜੀਵਤਾ ਚੱਲੇ। ਉਪਲੱਬਧ ਮੁੱਲ ਹਨ &quot;ਹੌਲੀ&quot;, &quot; ਮੱਧਮ&quot; ਅਤੇ &quot; ਤੇਜ਼&quot;। ਇਹ ਤਾਂ ਹੀ ਕੰਮ ਕਰੇਗੀ ਜੇਕਰ ਸਜੀਵਤਾ-ਯੋਗ (enable_animations) ਕੁੰਜੀ ਸੱਚ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide_size">
+						<local_schema short_desc="ਓਹਲੇ ਹੋਣ ਉੱਤੇ ਉਪਲੱਬਧ ਪਿਕਸਲ">
+							<longdesc>ਜਦੋਂ ਕਿ ਪੈਨਲ ਆਟੋਮੈਟਿਕ ਹੀ ਇੱਕ ਕੋਨੇ &apos;ਚ ਲੁਕਵਾਂ ਹੋਵੇ ਤਾਂ ਵੇਖਣਯੋਗ ਪਿਕਸਲਾਂ ਦੀ ਗਿਣਤੀ ਤਹਿ ਕਰੋ। ਇਹ ਮੁੱਲ ਤਾਂ ਹੀ ਸਹੀ ਹੈ ਜੇ ਆਟੋ-ਓਹਲੇ (auto_hide) ਕੁੰਜੀ ਸੱਚ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unhide_delay">
+						<local_schema short_desc="ਪੈਨਲ ਆਟੋ-ਪ੍ਰਗਟ ਹੋਣ ਅੰਤਰਾਲ">
+							<longdesc>ਦੇਰੀ ਦਾ ਸਮਾਂ ਮਿਲੀਸਕਿੰਟਾਂ ਵਿੱਚ ਤਹਿ ਕਰੋ, ਜਦੋਂ ਕਿ ਸੰਕੇਤਕ ਪੈਨਲ ਵਿੱਚ ਦਾਖਿਲ ਹੋਵੇ ਅਤੇ ਪੈਨਲ ਮੁੜ ਕੇ ਦਿੱਸੇ। ਇਹ ਕੁੰਜੀ ਤਾਂ ਹੀ ਕੰਮ ਕਰੇਗੀ ਜੇਕਰ ਸਵੈ-ਓਹਲੇ (auto_hide) ਕੁੰਜੀ ਸੱਚ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hide_delay">
+						<local_schema short_desc="ਪੈਨਲ ਆਟੋ-ਓਹਲੇ ਅੰਤਰਾਲ">
+							<longdesc>ਦੇਰੀ ਦਾ ਸਮਾਂ ਮਿਲੀਸਕਿੰਟਾਂ ਵਿੱਚ ਤਹਿ ਕਰੋ, ਜਦੋ ਕਿ ਸੰਕੇਤਕ ਪੈਨਲ ਨੂੰ ਛੱਡੇ ਅਤੇ ਪੈਨਲ ਲੁਕ ਜਾਵੇ। ਇਹ ਕੁੰਜੀ ਤਾਂ ਹੀ ਕੰਮ ਕਰੇਗੀ ਜੇਕਰ ਸਵੈ-ਓਹਲੇ (auto_hide) ਕੁੰਜੀ ਸੱਚ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_arrows">
+						<local_schema short_desc="ਓਹਲੇ ਬਟਨਾਂ ਉੱਪਰ ਤੀਰ ਯੋਗ">
+							<longdesc>ਜੇਕਰ ਸਹੀ ਹੈ ਤਾਂ, ਲੁਕਵੇ ਬਟਨਾਂ ਉਪੱਰ ਤੀਰ ਲਗਾ ਦਿੱਤੇ ਜਾਣਗੇ। ਇਹ ਕੁੰਜੀ ਤਾਂ ਹੀ ਕੰਮ ਕਰੇਗੀ ਜੇ enable_buttons ਕੁੰਜੀ ਸਹੀ ਹੋਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="ਓਹਲੇ ਬਟਨ ਯੋਗ">
+							<longdesc>ਜੇਕਰ ਸਹੀ ਹੈ ਤਾਂ, ਬਟਨ ਪੈਨਲ ਦੇ ਹਰੇਕ ਪਾਸੇ ਰੱਖ ਦਿੱਤੇ ਜਾਣਗੇ, ਜੋ ਕਿ ਪੈਨਲ ਨੂੰ ਸਕਰੀਨ ਦੇ ਕਿਨਾਰੇ ਵਿੱਚ ਜਾਣ ਲਈ ਵਰਤੇ ਜਾਣਗੇ, ਸਿਰਫ ਬਟਨ ਹੀ ਰਹਿ ਜਾਏਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="ਐਨੀਮੇਸ਼ਨ ਚਾਲੂ">
+							<longdesc>ਜੇਕਰ ਸਹੀ ਹੈ ਤਾਂ, ਪੈਨਲ ਦੇ ਓਹਲੇ ਹੋਣ ਅਤੇ ਪ੍ਰਗਟ ਹੋਣ ਨੂੰ ਸਜੀਵ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ ਨਾਕਿ ਯੱਕਦਮ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide">
+						<local_schema short_desc="ਪੈਨਲ ਕੋਨੇ ਵਿੱਚ ਆਟੋਮੈਟਿਕ ਓਹਲੇ">
+							<longdesc>ਜੇਕਰ ਇਹ ਸਹੀ ਹੈ ਤਾਂ ਪੈਨਲ ਪਰਦੇ ਦੇ ਕਿਨਾਰੇ ਵਿੱਚ ਆਟੋ-ਓਹਲੇ ਕੀਤਾ ਜਾਵੇਗਾ, ਜਦੋ ਵੀ ਸੰਕੇਤਕ ਪੈਨਲ ਖੇਤਰ ਨੂੰ ਛੱਡ ਜਾਵੇਗਾ। ਉਸ ਕਿਨਾਰੇ ਤੇ ਸੰਕੇਤਕ ਆਉਣ ਤੇ ਪੈਨਲ ਫਿਰ-ਉਭਰ ਆਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_centered">
+						<local_schema short_desc="y-ਧੁਰੇ ਤੇ ਕੇਂਦਰੀ ਪੱਟੀ">
+							<longdesc>ਜੇਕਰ ਇਹ ਸਹੀ ਹੈ ਤਾਂ y ਅਤੇ y_right ਕੁੰਜੀ ਨੂੰ ਰੱਦ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ ਅਤੇ ਪੈਨਲ ਨੂੰ ਪਰਦੇ ਦੇ y-ਧੁਰੇ ਦੇ ਮੱਧ ਵਿੱਚ ਰੱਖਿਆ ਜਾਵੇਗਾ। ਜੇਕਰ ਆਕਾਰ ਵੀ ਬਦਲਿਆ ਗਿਆ ਤਾਂ ਵੀ ਸਥਿਤੀ ਇਹੀ ਰਹੇਗੀ ਭਾਵ ਕਿ ਦੋਵੇਂ ਪਾਸੇ ਫੈਲ ਜਾਵੇਗਾ। ਜੇਕਰ ਗਲਤ ਹੈ ਤਾਂ, y ਅਤੇ y_right ਕੁੰਜੀ ਪੈਨਲ ਦਾ ਟਿਕਾਣਾ ਤਹਿ ਕਰਦਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_centered">
+						<local_schema short_desc="x-ਧੁਰੇ ਤੇ ਕੇਂਦਰੀ ਪੱਟੀ">
+							<longdesc>ਜੇਕਰ ਇਹ ਸਹੀ ਹੈ ਤਾਂ x ਅਤੇ x_right ਕੁੰਜੀ ਨੂੰ ਰੱਦ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ ਅਤੇ ਪੈਨਲ ਨੂੰ ਸਕਰੀਨ ਦੇ x-ਧੁਰੇ ਦੇ ਮੱਧ ਵਿੱਚ ਰੱਖਿਆ ਜਾਵੇਗਾ। ਜੇਕਰ ਆਕਾਰ ਵੀ ਬਦਲਿਆ ਗਿਆ ਤਾਂ ਵੀ ਸਥਿਤੀ ਇਹੀ ਰਹੇਗੀ ਭਾਵ ਕਿ ਦੋਵੇਂ ਪਾਸੇ ਫੈਲ ਜਾਵੇਗਾ। ਜੇਕਰ ਗਲਤ ਹੈ ਤਾਂ, x ਅਤੇ x_right ਕੁੰਜੀ ਦੇ ਪੈਨਲ ਦੇ ਟਿਕਾਣੇ ਨੂੰ ਤਹਿ ਕਰੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_bottom">
+						<local_schema short_desc="ਪੈਨਲ ਦਾ Y ਧੁਰਾ, ਸਕਰੀਨ ਦੇ ਹੇਠਲੇ ਕੋਨੇ ਤੋਂ ਸ਼ੁਰੂ">
+							<longdesc>y-ਧੁਰੇ ਦੇ ਅਨੁਸਾਰ ਪੈਨਲ ਦੀ ਸਥਿਤੀ, ਜੋ ਕਿ ਸਕਰੀਨ ਦੇ ਹੇਠਲੇ ਪਾਸਿਓ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ। ਜੇ ਇਹ -1 ਸੈੱਟ ਕੀਤਾ ਤਾਂ, ਮੁੱਲ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ ਅਤੇ y ਦਾ ਮੁੱਲ ਹੀ ਵਰਤਿਆ ਜਾਵੇਗਾ। ਜੇ ਮੁੱਲ 0 ਤੋਂ ਵੱਧ ਹੈ ਤਾਂ y ਕੁੰਜੀ ਦੇ ਮੁੱਲ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਇਹ ਕੁੰਜੀ ਸਿਰਫ਼ ਅਚਾਨਕ ਢੰਗ ਲਈ ਹੀ ਢੁੱਕਵੀਂ ਹੈ। ਫੈਲਾ-ਢੰਗ ਵਿੱਚ ਇਹ ਕੁੰਜੀ ਅਣਡਿੱਠੀ ਕਰ ਦਿੱਤੀ ਜਾਵੇਗੀ ਅਤੇ ਪੈਨਲ ਨੂੰ ਸਥਿਤੀ ਕੁੰਜੀ ਵਲੋਂ ਦਿੱਤੇ ਕੋਨੇ ਵਿੱਚ ਹੀ ਰੱਖਿਆ ਜਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_right">
+						<local_schema short_desc="ਪੈਨਲ ਦਾ X ਧੁਰਾ, ਸਕਰੀਨ ਦੇ ਸੱਜੇ ਪਾਸਿਓ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ">
+							<longdesc>x-ਧੁਰੇ ਦੇ ਅਨੁਸਾਰ ਪੈਨਲ ਦੀ ਸਥਿਤੀ, ਜੋ ਕਿ ਸਕਰੀਨ ਦੇ ਸੱਜੇ ਪਾਸਿਓ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ। ਜੇ ਇਹ -1 ਸੈੱਟ ਕੀਤਾ ਤਾਂ, ਮੁੱਲ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ ਅਤੇ x ਦਾ ਮੁੱਲ ਹੀ ਵਰਤਿਆ ਜਾਵੇਗਾ। ਜੇ ਮੁੱਲ 0 ਤੋਂ ਵੱਧ ਹੈ ਤਾਂ x ਕੁੰਜੀ ਦੇ ਮੁੱਲ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਇਹ ਕੁੰਜੀ ਸਿਰਫ਼ ਅਚਾਨਕ ਢੰਗ ਲਈ ਹੀ ਢੁੱਕਵੀਂ ਹੈ। ਫੈਲਾ-ਢੰਗ ਵਿੱਚ ਇਹ ਕੁੰਜੀ ਅਣਡਿੱਠੀ ਕਰ ਦਿੱਤੀ ਜਾਵੇਗੀ ਅਤੇ ਪੈਨਲ ਨੂੰ ਸਥਿਤੀ ਕੁੰਜੀ ਵਲੋਂ ਦਿੱਤੇ ਕੋਨੇ ਵਿੱਚ ਹੀ ਰੱਖਿਆ ਜਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y">
+						<local_schema short_desc="ਪੈਨਲ ਦਾ Y-ਧੁਰਾ">
+							<longdesc>y-ਧੁਰੇ ਦੇ ਅਨੁਸਾਰ ਪੈਨਲ ਦੀ ਸਥਿਤੀ। ਇਹ ਕੁੰਜੀ ਸਿਰਫ ਉਦੋਂ ਹੀ ਕੰਮ ਕਰੇਗੀ, ਜਦੋਂ ਨਾ-ਫੈਲਾ ਮੋਡ ਚੱਲ ਰਿਹਾ ਹੋਵੇਗਾ। ਫੈਲਾ ਮੋਡ ਵਿੱਚ ਇਸ ਕੁੰਜੀ ਨੂੰ ਨਿਕਾਰ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ ਅਤੇ ਪੈਨਲ ਨੂੰ ਸਕਰੀਨ ਦੇ ਕਿਨਾਰੇ ਉੱਤੇ ਲਗਾ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ, ਜਿਸ ਨੂੰ ਕਿ ਸਥਿਤੀ-ਕੁੰਜੀ ਤਹਿ ਕਰਦੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x">
+						<local_schema short_desc="ਪੈਨਲ ਦਾ X-ਧੁਰਾ">
+							<longdesc>x-ਧੁਰੇ ਦੇ ਅਨੁਸਾਰ ਪੈਨਲ ਦੀ ਸਥਿਤੀ। ਇਹ ਕੁੰਜੀ ਸਿਰਫ ਉਦੋਂ ਹੀ ਕੰਮ ਕਰੇਗੀ, ਜਦੋਂ ਨਾ-ਫੈਲਾ ਮੋਡ ਚੱਲ ਰਿਹਾ ਹੋਵੇਗਾ। ਫੈਲਾ ਮੋਡ ਵਿੱਚ ਇਸ ਕੁੰਜੀ ਨੂੰ ਨਿਕਾਰ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ ਅਤੇ ਪੈਨਲ ਨੂੰ ਸਕਰੀਨ ਦੇ ਕਿਨਾਰੇ ਉੱਤੇ ਲਗਾ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ, ਜਿਸ ਨੂੰ ਕਿ ਸਥਿਤੀ-ਕੁੰਜੀ ਤਹਿ ਕਰਦੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="ਪੈਨਲ ਅਕਾਰ">
+							<longdesc>ਪੈਨਲ ਦੀ ਉਚਾਈ (ਲੰਬਕਾਰੀ ਪੈਨਲ ਲਈ ਚੌੜਾਈ)। ਪੈਨਲ ਚੱਲਣ ਸਮੇ ਫੋਟ ਦੇ ਅਕਾਰ ਅਤੇ ਹੋਰ ਸਥਿਤੀਆਂ ਮੁਤਾਬਕ ਘੱਟੋ-ਘੱਟ ਅਕਾਰ ਨੂੰ ਲੱਭਦਾ ਹੈ। ਵੱਧ ਤੋ ਵੱਧ ਅਕਾਰ ਪਰਦੇ ਦੀ ਉਚਾਈ (ਚੌੜਾਈ) ਦਾ ਚੌਥਾ ਹਿੱਸਾ ਹੋ ਸਕਦਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="ਪੈਨਲ ਸਥਿਤੀ">
+							<longdesc>ਪੈਨਲ ਦੀ ਸਥਿਤੀ ਹੈ। ਉਪਲੱਬਧ ਮੁੱਲ ਹਨ &quot;ਉੱਤੇ&quot;, &quot;ਥੱਲੇ&quot;, &quot;ਖੱਬੇ&quot;, &quot;ਸੱਜੇ&quot;। ਫੈਲਾ ਮੋਡ ਵਿੱਚ ਕੁੰਜੀ ਤਹਿ ਕਰਦੀ ਹੈ ਕਿ ਸਕਰੀਨ ਦੇ ਕਿਸ ਪਾਸੇ ਪੈਨਲ ਹੋਵੇ। ਨਾ-ਫੈਲਾ ਮੋਡ &quot;ਉੱਤੇ&quot; ਅਤੇ &quot;ਹੇਠਾਂ&quot; ਵਿੱਚ ਵੱਖਰੇਵਾਂ ਘੱਟ ਜ਼ਰੂਰੀ ਹੈ, ਕਿਉਂਕਿ ਦੋਵੇਂ ਦਿਖਾਉਦੇ ਹਨ ਕਿ ਇਹ ਲੇਟਵਾਂ ਪੈਨਲ ਹੈ, ਪਰ ਇਹ ਜ਼ਰੂਰ ਦੱਸਦੇ ਹਨ ਕਿ ਪੈਨਲ ਇਕਾਈ ਕਿਵੇਂ ਰਵੱਈਆ ਕਰਨਗੇ, ਜਿਵੇਂ ਕਿ &quot;ਉੱਤੇ&quot; ਪੈਨਲ ਵਿੱਚ ਲਿਸਟ ਬਟਨ ਆਪਣੀ ਲਿਸਟ ਨੂੰ ਥੱਲੇ ਵੱਲ ਖੋਲੇਗਾ , ਜਦੋਂ ਕਿ &quot;ਥੱਲੇ&quot; ਪੈਨਲ ਉਹੀ ਲਿਸਟ ਨੂੰ ਪੈਨਲ ਤੋਂ ਉੱਤੇ ਵੱਲ ਖੋਲ੍ਹੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand">
+						<local_schema short_desc="ਸਾਰੀ ਸਕਰੀਨ ਦੀ ਚੌੜਾਈ ਤੱਕ ਫੈਲਾਓ">
+							<longdesc>ਜੇਕਰ ਇਹ ਸਹੀ ਹੈ ਤਾਂ ਪੈਨਲ ਨੂੰ ਪੂਰੀ ਸਕਰੀਨ ਦੀ ਚੌੜਾਈ ਵਿੱਚ ਰੱਖਿਆ ਜਾਵੇਗਾ (ਲੰਬਕਾਰੀ ਦਿਸ਼ਾ ਵਿੱਚ ਪੂਰੀ ਉਚਾਈ)। ਇਸ ਮੋਡ ਵਿੱਚ ਪੈਨਲ ਸਕਰੀਨੇ ਦੇ ਕਿਨਾਰੇ ਤੇ ਹੀ ਰੱਖਿਆ ਜਾ ਸਕੇਗਾ। ਜੇਕਰ ਗਲਤ ਹੈ ਤਾਂ, ਪੈਨਲ ਸਿਰਫ ਐਪਲਿਟ, ਸ਼ੁਰੂਆਤੀਾਂ ਅਤੇ ਬਟਨਾਂ ਨੂੰ ਸੰਭਾਲਣ ਜਿੰਨਾ ਹੀ ਵੱਡਾ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monitor">
+						<local_schema short_desc="ਜ਼ਾਇਨਰਾਮਾ ਨਿਗਰਾਨ, ਜਿੱਥੇ ਪੈਨਲ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ">
+							<longdesc>ਜ਼ੈਨਾਰਾਮਾ ਸੈੱਟਅੱਪ ਵਿੱਚ, ਹਰੇਕ ਮਾਨੀਟਰ ਵਿੱਚ ਵੱਖਰਾ ਪੈਨਲ ਹੋ ਸਕਦਾ ਹੈ। ਇਹ ਕੁੰਜੀ ਮੌਜੂਦਾ ਮਾਨੀਟਰ, ਜਿਸ ਉੱਤੇ ਪੈਨਲ ਦਿੱਸ ਰਿਹਾ ਹੈ, ਦੀ ਸ਼ਨਾਖਤ ਕਰਦੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screen">
+						<local_schema short_desc="X ਸਕਰੀਨ, ਜਿੱਥੇ ਪੈਨਲ ਦਿੱਸਦਾ ਹੈ">
+							<longdesc>ਬਹੁ-ਸਕਰੀਨ ਸੈੱਟਅੱਪ ਨਾਲ, ਹਰੇਕ ਵੱਖਰੀ ਸਕਰੀਨ ਲਈ ਵੱਖਰਾ ਪੈਨਲ ਹੋ ਸਕਦਾ ਹੈ। ਇਹ ਕੁੰਜੀ ਮੌਜੂਦਾ ਸਕਰੀਨ ਉੱਤੇ ਦਿੱਸ ਰਹੇ ਪੈਨਲ ਦੀ ਸ਼ਨਾਖਤ ਕਰਦੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="ਪੈਨਲ ਦੀ ਪਛਾਣ ਲਈ ਨਾਂ">
+							<longdesc>ਇਹ ਮਨੁੱਖ ਦੇ ਪੜ੍ਹਨਯੋਗ ਨਾਂ, ਜੋ ਕਿ ਪੈਨਲ ਦੀ ਸ਼ਨਾਖਤ ਦੇ ਕੰਮ ਆਉਦਾ ਹੈ। ਇਸਦਾ ਮਕਸਦ ਪੈਨਲ ਝਰੋਖੇ ਦੇ ਸਿਰਲੇਖ ਦੇ ਤੌਰ ਤੇ ਦਿੱਸਣਾ ਹੈ ਤਾਂ ਕਿ ਪੈਨਲਾਂ ਵਿੱਚ ਘੁੰਮਣਾ ਆਸਾਨ ਰਹੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="ਲੰਬਕਾਰ ਪੈਨਲਾਂ ਵਿੱਚ ਚਿੱਤਰ ਘੁੰਮਾਓ">
+								<longdesc>ਜੇ ਸੱਚ ਹੈ ਤਾਂ ਪੈਨਲ ਦੇ ਲੰਬਰੂਪੀ ਹੋਣ ਨਾਲ ਬੈਕਗਰਾਊਂਡ ਦਾ ਚਿੱਤਰ ਵੀ ਘੁੰਮ ਜਾਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stretch">
+							<local_schema short_desc="ਚਿੱਤਰ ਨੂੰ ਪੈਨਲ ਵਿਚ ਤਾਣੋ">
+								<longdesc>ਜੇਕਰ ਇਹ ਸਹੀ ਹੈ ਤਾਂ ਚਿੱਤਰ ਨੂੰ ਪੈਨਲ ਦੇ ਮਾਪ ਅਨੁਸਾਰ ਮਿਲਾ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਚਿੱਤਰ ਦੇ ਆਕਾਰ ਅਨੁਪਾਤ ਦਾ ਖਿਆਲ ਨਹੀ ਰੱਖਿਆ ਜਾਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="ਚਿੱਤਰ ਪੈਨਲ ਵਿੱਚ ਮੇਚ">
+								<longdesc>ਜੇਕਰ ਇਹ ਸਹੀ ਹੈ ਤਾਂ ਚਿੱਤਰ ਨੂੰ ਪੈਨਲ ਦੇ ਉਚਾਈ ਅਨੁਸਾਰ ਮਿਲਾ ਦਿੱਤਾ ਜਾਵੇਗਾ। (ਚਿੱਤਰ ਦੇ ਆਕਾਰ ਅਨੁਪਾਤ ਦਾ ਖਿਆਲ ਰੱਖਿਆ ਜਾਵੇਗਾ) (ਜੇ ਖਿਤਿਜੀ ਹੈ)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="ਬੈਕਗਰਾਊਂਡ ਚਿੱਤਰ">
+								<longdesc>ਬੈਕਗਰਾਊਂਡ ਚਿੱਤਰ ਲਈ ਫਾਇਲ ਦਿਓ। ਜੇਕਰ ਚਿੱਤਰ ਐਲ਼ਫਾ ਚੈਨਲ ਰੱਖਦਾ ਹੈ, ਤਾਂ ਇਹ ਬੈਕਗਰਾਊਂਡ ਦਾ ਮਿਸ਼ਰਨ ਬਣ ਜਾਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="ਬੈਕਗਰਾਊਂਡ ਰੰਗ ਧੁੰਦਲਾਪਨ">
+								<longdesc>ਬੈਕਗਰਾਊਂਡ ਦੇ ਰੰਗ ਦੇ ਫਾਰਮੈਟ ਦਾ ਧੁੰਦਲਾਪਨ ਨਿਰਧਾਰਿਤ ਕਰੋ। ਜੇਕਰ ਰੰਗ ਪੂਰੀ ਤਰਾਂ ਧੁੰਦਲਾ ਨਹੀ ਹੈ (ਮੁੱਲ 65535 ਤੋਂ ਘੱਟ ਹੈ), ਤਾਂ ਰੰਗ ਬੈਕਗਰਾਊਂਡ ਦੇ ਚਿੱਤਰ ਵਿੱਚ ਘੁੱਲ ਜਾਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="ਬੈਕਗਰਾਊਂਡ ਰੰਗ">
+								<longdesc>ਪੈਨਲ ਦੀ ਬੈਕਗਰਾਊਂਡ ਦਾ ਰੰਗ ਤਿੰਨ ਰੰਗਾਂ (#RGB) ਵਿੱਚ ਦਿਓ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="ਬੈਕਗਰਾਊਂਡ ਕਿਸਮ">
+								<longdesc>ਇਸ ਪੈਨਲ ਲਈ ਕਿਸ ਕਿਸਮ ਬੈਕਗਰਾਊਂਡ ਵਰਤੀ ਜਾਏ। ਉਪਲੱਬਧ ਮੁੱਲ ਹਨ &quot;gtk&quot; -ਮੂਲ਼ GTK+ ਵਿਦਗਿਟ ਬੈਕਗਰਾਊਂਡ ਵਰਤੀ ਜਾਏਗੀ, &quot;ਰੰਗਦਾਰ&quot; - ਰੰਗ ਕੀ ਜੋ ਕਿ ਬੈਕਗਰਾਊਂਡ ਦੇ ਰੰਗ ਦੇ ਤੌਰ ਤੇ ਵਰਤੀ ਜਾਵੇਗੀ ਜਾਂ &quot;ਚਿੱਤਰ&quot; - ਚਿੱਤਰ, ਜੋ ਕਿ ਚਿੱਤਰ ਸਵਿੱਚ ਤਹਿ ਕਰਦੀ ਹੈ, ਵੇਖਾਇਆ ਜਾਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="general">
+					<entry name="profiles_migrated">
+						<local_schema short_desc="ਪੁਰਾਣੀ ਪਰੋਫਾਇਲ ਸੰਰਚਨਾ ਤਬਦੀਲ ਕੀਤੀ">
+							<longdesc>ਬੁਲੀਅਨ ਨਿਸ਼ਾਨ ਇਹ ਵੇਖਾਉਦਾ ਹੈ ਕਿ ਕੀ ਯੂਜ਼ਰ ਦੀ ਪੁਰਾਣੀ ਸੰਚਰਨਾ ਨੂੰ /apps/panel/profiles/default ਤੋਂ ਨਵੇਂ ਟਿਕਾਣੇ /apps/ ਤੇ ਭੇਜਿਆ ਜਾਵੇ ਕਿ ਨਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_id_list">
+						<local_schema short_desc="ਪੈਨਲ ਇਕਾਈ ID ਲਿਸਟ">
+							<longdesc>ਪੈਨਲ ਇਕਾਈ ID ਦੀ ਲਿਸਟ ਹੈ। ਹਰੇਕ ID ਇੱਕ ਵੱਖਰੇ ਪੈਨਲ ਆਈਟਮ (ਜਿਵੇਂ ਕਿ ਇੱਕ ਲਾਂਚਰ, ਕਾਰਵਾਈ ਬਟਨ ਜਾਂ ਮੇਨੂ ਬਟਨ/ਪੱਟੀ) ਦੀ ਸ਼ਨਾਖਤ ਕਰਦਾ ਹੈ। ਇਹਨਾਂ ਸਭ ਆਈਟਮਾਂ ਵਿੱਚੋਂ ਹਰ ਆਈਟਮ ਦੀ ਸਥਾਪਨ /apps/panel/objects/$(id) ਵਿੱਚ ਸੰਭਾਲੀ ਗਈ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_id_list">
+						<local_schema short_desc="ਪੈਨਲ ਐਪਲਿਟ ID ਲਿਸਟ">
+							<longdesc>ਪੈਨਲ ਐਪਲਿਟ ID ਦੀ ਲਿਸਟ ਹੈ। ਹਰੇਕ ID ਇੱਕ ਵੱਖਰੇ ਪੈਨਲ ਐਪਲਿਟ ਦੀ ਸ਼ਨਾਖਤ ਕਰਦਾ ਹੈ। ਇਹਨਾਂ ਐਪਲਿਟ ਵਿੱਚੋਂ ਹਰ ਲਈ ਸਥਾਪਨ ਨੂੰ /apps/panel/applets/$(id) ਵਿੱਚ ਸੰਭਾਲਿਆ ਗਿਆ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id_list">
+						<local_schema short_desc="ਪੈਨਲ ID ਲਿਸਟ">
+							<longdesc>ਪੈਨਲ ID ਦੀ ਲਿਸਟ ਹੈ। ਹਰੇਕ ID ਇੱਕ ਵੱਖਰੇ ਉੱਤਲੇ ਪੈਨਲ ਦੀ ਸ਼ਨਾਖਤ ਕਰਦਾ ਹੈ। ਇਹਨਾਂ ਪੈਨਲਾਂ ਵਿੱਚੋਂ ਹਰੇਕ ਦੇ ਸਥਾਪਨ ਨੂੰ /apps/panel/toplevels/$(id) ਵਿੱਚ ਸੰਭਾਲਿਆ ਗਿਆ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_autocompletion">
+						<local_schema short_desc="&quot;ਐਪਲੀਕੇਸ਼ਨ ਚਲਾਓ&quot; ਡਾਈਲਾਗ ਵਿੱਚ ਆਟੋ-ਪੂਰਨਤਾ ਯੋਗ">
+							<longdesc>ਜੇਕਰ ਸੱਚ ਹੈ ਤਾਂ &quot;ਐਪਲੀਕੇਸ਼ਨ ਚਲਾਓ&quot; ਡਾਈਲਾਗ ਵਿੱਚ ਆਟੋ-ਪੂਰਨਾ ਉਪਲੱਬਧ ਹੋਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_program_list">
+						<local_schema short_desc="&quot;ਐਪਲੀਕੇਸ਼ਨ ਚਲਾਓ&quot; ਡਾਈਲਾਗ ਵਿੱਚ ਪਰੋਗਰਾਮ ਲਿਸਟ ਫੈਲਾਓ">
+							<longdesc>ਜੇ ਸੱਚ ਹੈ ਤਾਂ, &quot;ਜਾਣੇ ਐਪਲੀਕੇਸ਼ਨ&quot; ਦੀ ਸੂਚੀ &quot;ਐਪਲੀਕੇਸ਼ਨ ਚਲਾਓ&quot; ਡਾਈਲਾਗ ਵਿੱਚ ਆ ਜਾਏਗੀ, ਜਦੋਂ ਕਿ ਡਾਈਲਾਗ ਖੁੱਲੇਗਾ। ਇਹ ਕੁੰਜੀ ਤਾਂ ਹੀ ਕੰਮ ਕਰੇਗੀ ਜੇਕਰ enable_program_list ਸਹੀਂ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_program_list">
+						<local_schema short_desc="&quot;ਐਪਲੀਕੇਸ਼ਨ ਚਲਾਓ&quot; ਡਾਈਲਾਗ ਵਿੱਚ ਪਰੋਗਰਾਮ ਲਿਸਟ ਯੋਗ">
+							<longdesc>ਜੇ ਸੱਚ ਹੈ ਤਾਂ, &quot;ਜਾਣੇ ਐਪਲੀਕੇਸ਼ਨ&quot; ਦੀ ਲਿਸਟ &quot;ਐਪਲੀਕੇਸ਼ਨ ਚਲਾਓ&quot; ਡਾਈਲਾਗ ਵਿੱਚ ਆ ਜਾਏਗਾ, ਜਦੋਂ ਕਿ ਡਾਈਲਾਗ ਖੁੱਲੇਗਾ। ਕੀ ਲਿਸਟ ਨੂੰ ਫੈਲਾਉਣਾ ਹੈ, ਜਦੋਂ ਕਿ ਵੇਖਾਏ ਡਾਈਲਾਗ ਨੂੰ show_program_list ਸਵਿੱਚ ਨਾਲ ਕੰਟਰੋਲ ਕੀਤਾ ਜਾਏ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global">
+					<entry name="disable_force_quit">
+						<local_schema short_desc="ਧੱਕੇ ਨਾਲ ਬੰਦ ਕਰੋ ਆਯੋਗ">
+							<longdesc>ਜੇਕਰ ਸੱਚ ਹੈ ਤਾਂ, ਪੈਨਲ ਵਰਤਣ ਵਾਲੇ ਨੂੰ ਕੋਈ ਕਾਰਜ ਨੂੰ ਧੱਕੇ ਨਾਲ ਬੰਦ ਕਰਨ ਵਾਲਾ ਬਟਨ ਵਰਤ ਕੇ ਬੰਦ ਕਰਨ ਦੀ ਇਜ਼ਾਜਤ ਨਹੀ ਦੇਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_log_out">
+						<local_schema short_desc="ਲਾਗ ਆਉਟ ਆਯੋਗ">
+							<longdesc>ਜੇਕਰ ਸੱਚ ਹੈ ਤਾਂ, ਪੈਨਲ ਵਰਤਣ ਵਾਲੇ ਨੂੰ ਮੇਨੂ ਇੰਦਰਾਜ਼ ਰਾਹੀ ਬਾਹਰੀ-ਦਰ (ਲਾਗਆਉਟ) ਰਾਹੀਂ ਬਾਹਰ ਜਾਣ ਦੀ ਇਜ਼ਾਜਤ ਨਹੀ ਦੇਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="ਬਰਤਰਫ਼">
+							<longdesc>ਇਹ ਕੁੰਜੀ ਬਰਤਰਫ਼ ਕੀਤੀ ਗਈ ਹੈ ਕਿਉਂਕਿ ਇਹ ਪੂਰੀ ਤਰ੍ਹਾਂ ਲਾਕ ਕਰਨ ਲਈ ਨਹੀਂ ਸਥਾਪਿਤ ਨਹੀਂ ਕੀਤੀ ਗਈ ਹੈ। /desktop/gnome/lockdown/disable_lock_screen ਕੁੰਜੀ ਨੂੰ ਇਸ ਦੀ ਬਜਾਏ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disabled_applets">
+						<local_schema short_desc="ਐਪਲਿਟ IIDs ਲੋਡਿੰਗ ਨੂੰ ਰੋਕਿਆ ਜਾ ਸਕੇ">
+							<longdesc>ਐਪਲਿਟ IIDs ਦੀ ਸੂਚੀ ਜਿਨਾਂ ਨੂੰ ਪੈਨਲ ਰੱਦ ਕਰ ਦੇਵੇਗਾ। ਇਸਤਰਾਂ ਤੁਸੀ ਕੁਝ ਐਪਲਿਟਾਂ ਨੂੰ ਮੇਨੂ ਵਿੱਚ ਵੇਖਣ ਜਾਂ ਲੋਡ ਹੋਣ ਤੋ ਰੋਕ ਸਕਦੇ ਹੋ। ਜਿਵੇ ਕਿ ਮਿੰਨੀ ਕਮਾਂਡਰ ਐਪਲਿਟ ਨੂੰ ਰੱਦ ਕਰਨ ਲਈ ਇਸ ਸੂਚੀ ਵਿੱਚ &apos;OAFIID:GNOME_MiniCommanderApplet&apos; ਜੋੜੋ। ਇਸ ਨੂੰ ਲਾਗੂ ਕਰਨ ਲਈ ਪੈਨਲ ਨੂੰ ਮੁੜ ਸ਼ੁਰੂ ਕਰਨਾ ਪਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked_down">
+						<local_schema short_desc="ਪੂਰਾ ਪੈਨਲ ਤਾਲਾਬੰਦ">
+							<longdesc>ਜੇਕਰ ਸੱਚ ਹੈ ਤਾਂ, ਪੈਨਲ ਕੋਈ ਵੀ ਤਬਦੀਲੀ ਜੋ ਕਿ ਪੈਨਲ ਦੀ ਸੰਰਚਨਾ ਨਾਲ ਸਬੰਧ ਹੋਏਗੀ ਨੂੰ ਤਬਦੀਲ ਨਹੀ ਕਰਨ ਦੀ ਇਜ਼ਾਜਤ ਨਹੀ ਦੇਵੇਗਾ। ਵੱਖਰੇ ਐਪਲਿਟਾਂ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ਤੇ ਤਾਲਾਬੰਦ ਕਰਨਾ ਪਵੇਗਾ। ਲਾਗੂ ਕਰਨ ਲਈ ਪੈਨਲ ਨੂੰ ਮੁੜ ਚਾਲੂ ਕਰਨ ਪਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="highlight_launchers_on_mouseover">
+						<local_schema short_desc="ਮਾਊਸ ਕੋਲ ਆਉਣ ਤੇ ਸ਼ੁਰੂਆਤੀ ਨੂੰ ਉਭਾਰੋ">
+							<longdesc>ਜੇ ਇਹ ਸਹੀ ਹੈ ਤਾਂ ਸ਼ੁਰੂਆਤੀ ਹਮੇਸ਼ਾ ਉਭਾਰੇਗਾ, ਜਦੋਂ ਵੀ ਸੰਕੇਤਕ ਇਸ ਉੱਤੇ ਆਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_panel_remove">
+						<local_schema short_desc="ਪੈਨਲ ਹਟਾਉਣ ਬਾਰੇ ਪੁਸ਼ਟੀ">
+							<longdesc>ਜੇ ਸਹੀ ਹੈ ਤਾਂ, ਡਾਈਲਾਗ ਯੂਜ਼ਰ ਕੋਲੋਂ ਪੈਨਲ ਵਿੱਚੋਂ ਹਟਾਉਣ ਨੂੰ ਯਕੀਨੀ ਬਣਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="drawer_autoclose">
+						<local_schema short_desc="ਆਟੋ-ਬੰਦ ਹੋਣ ਵਾਲਾ ਦਰਾਜ਼">
+							<longdesc>ਜੇ ਸੱਚ ਹੈ ਤਾਂ, ਦਰਾਜ ਆਟੋਮੈਟਿਕ ਬੰਦ ਹੋ ਜਾਵੇਗਾ, ਜਦੋਂਕਿ ਇੱਕ ਸ਼ੁਰੂਆਤੀ ਨੂੰ ਦਬਾਇਆ ਗਿਆ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="window_screenshot_key">
+						<local_schema short_desc="ਬਰਤਰਫ਼">
+						</local_schema>
+					</entry>
+					<entry name="screenshot_key">
+						<local_schema short_desc="ਬਰਤਰਫ਼">
+						</local_schema>
+					</entry>
+					<entry name="run_key">
+						<local_schema short_desc="ਬਰਤਰਫ਼">
+						</local_schema>
+					</entry>
+					<entry name="menu_key">
+						<local_schema short_desc="ਬਰਤਰਫ਼">
+						</local_schema>
+					</entry>
+					<entry name="enable_key_bindings">
+						<local_schema short_desc="ਬਰਤਰਫ਼">
+						</local_schema>
+					</entry>
+					<entry name="panel_hide_delay">
+						<local_schema short_desc="ਬਰਤਰਫ਼">
+						</local_schema>
+					</entry>
+					<entry name="panel_animation_speed">
+						<local_schema short_desc="ਬਰਤਰਫ਼">
+						</local_schema>
+					</entry>
+					<entry name="panel_show_delay">
+						<local_schema short_desc="ਬਰਤਰਫ਼">
+						</local_schema>
+					</entry>
+					<entry name="panel_minimized_size">
+						<local_schema short_desc="ਬਰਤਰਫ਼">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="ਐਨੀਮੇਸ਼ਨ ਚਾਲੂ">
+						</local_schema>
+					</entry>
+					<entry name="keep_menus_in_memory">
+						<local_schema short_desc="ਬਰਤਰਫ਼">
+						</local_schema>
+					</entry>
+					<entry name="tooltips_enabled">
+						<local_schema short_desc="ਟੂਲ-ਟਿੱਪ ਚਾਲੂ">
+							<longdesc>ਜੇ ਸਹੀ ਕੀਤਾ ਗਿਆ ਤਾਂ ਪੈਨਲ ਵਿੱਚ ਇਕਾਈਆਂ ਦੇ ਉੱਤੇ ਸੰਕੇਤ ਦਿਸਣਗੇ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="objects">
+					<entry name="action_type">
+						<local_schema short_desc="ਐਕਸ਼ਨ ਬਟਨ ਟਾਈਪ">
+							<longdesc>ਕਾਰਵਾਈ ਦੀ ਕਿਸਮ, ਜੋ ਕਿ ਇਹ ਬਟਨ ਵੇਖਾ ਰਿਹਾ ਹੈ। ਸੰਭਵ ਮੁੱਲ ਹਨ &quot;ਲਾਕ&quot;, &quot;ਲਾਗਆਉਟ&quot;, &quot;ਚਲਾਉ&quot; , &quot;ਖੋਜ&quot; ਅਤੇ &quot;ਸਕਰੀਨ-ਸ਼ਾਟ&quot;। ਇਹ ਕੁੰਜੀ ਤਾਂ ਹੀ ਪ੍ਰਭਾਵੀ ਹੈ, ਜੇ object_type &quot;ਕਾਰਵਾਈ-ਐਪਲਿਟ&quot; ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="launcher_location">
+						<local_schema short_desc="ਸ਼ੁਰੂਆਤੀ ਟਿਕਾਣਾ">
+							<longdesc>ਫਾਇਲ .desktop ਦੀ ਸਥਿਤੀ ਨੂੰ ਸ਼ੁਰੂਆਤੀ ਨਾਲ ਦੱਸਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਇਹ ਕੁੰਜੀ ਤਾਂ ਹੀ ਪ੍ਰਭਾਵੀ ਹੈ, ਜੇ object_type &quot;ਸ਼ੁਰੂਆਤੀ-ਇਕਾਈ&quot; ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menu_path">
+						<local_schema short_desc="ਮੇਨੂ ਭਾਗ ਮਾਰਗ">
+							<longdesc>ਮਾਰਗ, ਜਿਥੋਂ ਕਿ ਮੇਨੂ ਦੇ ਹਿੱਸੇ ਬਣਾਏ ਜਾਂਦੇ ਹਨ। ਇਹ ਕੁੰਜੀ ਤਾਂ ਹੀ ਪ੍ਰਭਾਵੀ ਹੋਵੇਗੀ ਜੇ use_menu_path ਕੁੰਜੀ ਸੱਚ ਹੈ ਅਤੇ object_type ਕੁੰਜੀ &quot;ਮੇਨੂ-ਇਕਾਈ&quot; ਹੋਵੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_menu_path">
+						<local_schema short_desc="ਮੇਨੂ ਇਕਾਈਆਂ ਲਈ ਪਸੰਦੀਦਾ ਮਾਰਗ ਵਰਤੋਂ">
+							<longdesc>ਜੇਕਰ ਸੱਚ ਹੈ ਤਾਂ, menu_path ਕੁੰਜੀ ਉਸ ਰਾਹ ਦੇ ਤੌਰ ਤੇ ਵਰਤਿਆ ਜਾਵੇਗਾ ਜੋ ਮੇਨੂ ਦੇ ਹਿੱਸੇ ਬਣਾਉਣਗੇ। ਜੇਕਰ ਗਲਤ ਹੈ ਤਾਂ, menu_path ਕੁੰਜੀ ਨੂੰ ਰੱਦ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਇਹ ਕੁੰਜੀ ਤਾਂ ਹੀ  ਪ੍ਰਭਾਵੀ ਹੋਵੇਗੀ ਜੇ object_type &quot;ਮੇਨੂ-ਇਕਾਈ&quot; ਹੋਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_icon">
+						<local_schema short_desc="ਆਬਜੈਕਟ ਦੇ ਬਟਨ ਵਾਸਤੇ ਆਈਕਾਨ">
+							<longdesc>ਇਕਾਈ ਦੇ ਬਟਨ ਦੇ ਆਈਕਾਨ ਲਈ ਵਰਤਣ ਲਈ ਚਿੱਤਰ ਫਾਇਲ ਦੀ ਸਥਿਤੀ ਹੈ। ਇਹ ਤਾਂ ਹੀ ਪ੍ਰਭਾਵੀ ਹੋਵੇਗੀ, ਜੇ object_type ਕੁੰਜੀ &quot;ਦਰਾਜ਼-ਇਕਾਈ&quot; ਜਾਂ &quot;ਮੇਨੂ-ਇਕਾਈ&quot; ਅਤੇ use_custom_icon ਕੁੰਜੀ ਸੱਚ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_icon">
+						<local_schema short_desc="ਇਕਾਈ ਬਟਨ ਲਈ ਸੋਧਿਆ ਆਈਕਾਨ ਵਰਤੋਂ">
+							<longdesc>ਜੇਕਰ ਸੱਚ ਹੈ ਤਾਂ, custom_icon ਕੁੰਜੀ ਬਟਨ ਲਈ ਸੋਧ ਆਈਕਾਨ ਦੇ ਤੌਰ ਤੇ ਵਰਤੀ ਜਾਏਗੀ। ਜੇ ਗਲਤ ਹੈ ਤਾਂ custom_icon ਕੁੰਜੀ ਨੂੰ ਰੱਦ ਕਰ ਦਿੱਤਾ ਜਾਏਗਾ। ਇਹ ਕੁੰਜੀ ਤਾਂ ਹੀ ਪ੍ਰਭਾਵੀ ਹੈ ਜੇ object_type ਕੁੰਜੀ ਦਾ ਮੁੱਲ &quot;ਮੇਨੂ-ਇਕਾਈ&quot; ਜਾਂ &quot;ਦਰਾਜ਼-ਇਕਾਈ&quot; ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="tooltip">
+						<local_schema short_desc="ਦਰਾਜ਼ ਜਾਂ ਮੇਨੂ ਲਈ ਟੂਲ-ਟਿੱਪ ਵੇਖਾਇਆ">
+							<longdesc>ਇਸ ਦਰਾਜ਼ ਜ਼ਾਂ ਮੇਨੂ ਲਈ ਸੰਦ-ਸੰਕੇਤ ਵਿੱਚ ਵੇਖਾਉਣ ਲਈ ਪਾਠ। ਇਹ ਕੁੰਜੀ ਤਾਂ ਹੀ ਕੰਮ ਕਰੇਗੀ ਜੇਕਰ ਇਕਾਈ-ਕਿਸਮ ਕੁੰਜੀ &quot;ਮੇਨੂ-ਇਕਾਈ&quot; ਜਾਂ &quot;ਦਰਾਜ਼-ਇਕਾਈ&quot; ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="attached_toplevel_id">
+						<local_schema short_desc="ਦਰਾਜ਼ ਨਾਲ ਜੁੜਿਆ ਪੈਨਲ">
+							<longdesc>ਪੈਨਲ ਦਾ ਸ਼ੰਨਾਖਤੀ ਇਸ ਦਰਾਜ਼ ਨਾਲ ਜੁੜਿਆ ਹੈ। ਇਹ ਕੁੰਜੀ ਤਾਂ ਹੀ ਪ੍ਰਭਾਵੀ ਹੈ, ਜੇ object_type &quot;ਦਰਾਜ਼-ਇਕਾਈ&quot; ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_iid">
+						<local_schema short_desc="ਐਪਲਿਟ IID">
+						</local_schema>
+					</entry>
+					<entry name="bonobo_iid">
+						<local_schema short_desc="ਐਪਲਿਟ ਬੋਨਬੋ IID">
+							<longdesc>ਇਹ ਕੁੰਜੀ ਬਰਤਰਫ਼ ਕਰ ਦਿੱਤੀ ਗਈ, ਹੇਠ ਦਿੱਤੇ ਲਈ ਐਪਲਿਟ ਲਈ ਨਵੀਂ ਲਾਇਬਰੇਰੀ ਲਈ ਮਾਈਗਰੇਟ ਕੀਤਾ ਗਿਆ। ਐਪਲਿਟ ਦਾ ਬੋਨਬੋ ਸਥਾਪਿਤ ID -ਜਿਵੇਂ ਕਿ &quot;OAFIID:GNOME_ClockApplet&quot;। ਇਹ ਕੁੰਜੀ ਤਾਂ ਹੀ ਸੰਭਵ ਹੈ, ਜੇਕਰ object_type ਦੀ ਕੁੰਜੀ &quot;bonobo-applet&quot; ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked">
+						<local_schema short_desc="ਪੈਨਲ ਵਿੱਚ ਇਕਾਈ ਤਾਲਾਬੰਦ">
+							<longdesc>ਜੇਕਰ ਸੱਚ ਹੈ ਤਾਂ, ਉਪਭੋਗੀ ਇਕਾਈ ਨੂੰ &quot;ਤਾਲਾ-ਖੋਲ੍ਹੋ&quot; ਮੇਨੂ-ਇਕਾਈ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਤਾਲਾ ਖੋਲ੍ਹੇ ਬਿਨਾਂ ਐਪਲਿਟ ਨੂੰ ਹਿਲਾ ਨਹੀਂ ਸਕਦਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="panel_right_stick">
+						<local_schema short_desc="ਥੱਲੇ/ਸੱਜੇ ਦੀ ਮੁਤਾਬਕ ਮੱਧ ਦੀ ਸਥਿਤੀ">
+							<longdesc>ਜੇਕਰ ਸੱਚ ਹੈ ਤਾਂ, ਇਕਾਈ ਦੀ ਸਥਿਤੀ ਨੂੰ ਪੈਨਲ ਦੇ ਕਿਨਾਰੇ ਦੇ ਅਨੁਸਾਰ ਸੱਜਿਓ (ਜਾਂ ਲੰਬਕਾਰੀ ਵਿੱਚ ਥੱਲਿਓ) ਤਹਿ ਕੀਤੀ ਜਾਏਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="position">
+						<local_schema short_desc="ਪੈਨਲ &apos;ਤੇ ਇਕਾਈ ਦੀ ਸਥਿਤੀ">
+							<longdesc>ਇਹ ਪੈਨਲ ਇਕਾਈ ਦੀ ਸਥਿਤੀ ਹੈ। ਸਥਿਤੀ ਪੱਟੀ ਦੇ ਖੱਬਿਓ (ਜਾਂ ਉਪਰੋਂ ਜੇ ਲੰਬਰੂਪੀ ਹੋਵੇ) ਪਿਕਸਲਾਂ ਦੀ ਗਿਣਤੀ ਨਾਲ ਦਿੱਤੀ ਜਾ ਸਕਦੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id">
+						<local_schema short_desc="ਮੁੱਖ ਪੈਨਲ ਰਾਹੀਂ ਰੱਖੀ ਇਕਾਈ">
+							<longdesc>ਉੱਤਲੇ ਪੈਨਲ ਦਾ ਸ਼ਨਾਖਤੀ, ਜੋ ਕਿ ਇਹ ਇਕਾਈ ਰੱਖਦਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_type">
+						<local_schema short_desc="ਪੈਨਲ ਇਕਾਈ ਕਿਸਮ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ ਸਵਿੱਚਰ ਵਿੱਚ ਕਤਾਰਾਂ">
+							<longdesc>ਇਹ ਕੁੰਜੀ ਤਹਿ ਕਰਦੀ ਹੈ ਕਿ ਵਰਕਸਪੇਸ ਸਵਿੱਚਰ ਵਰਕਸਪੇਸ ਨੂੰ ਕਿੰਨੀਆ ਕਤਾਰਾਂ (ਲੇਟਵੇ ਰੂਪ ਵਿੱਚ) ਜਾਂ ਕਾਲਮਾਂ (ਲੰਬਕਾਰੀ ਰੂਪ ਵਿੱਚ) ਵਿੱਚ ਵੇਖਾਵੇ। ਇਹ ਸਿਰਫ ਤਾਂ ਹੀ ਸਹੀ ਹੈ, ਜੇਕਰ display_all_workspaces ਕੁੰਜੀ ਸੱਚ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="ਸਭ ਵਰਕਸਪੇਸ ਵੇਖੋ">
+							<longdesc>ਜੇ ਇਹ ਸਹੀ ਹੈ, ਤਾਂ ਵਰਕਸਪੇਸ ਸਵਿੱਚਰ ਸਾਰੇ ਵਰਕਸਪੇਸਾਂ ਨੂੰ ਵੇਖਾਵੇਗਾ। ਨਹੀਂ ਤਾਂ ਇਹ ਸਿਰਫ ਮੌਜੂਦਾ ਵਰਕਸਪੇਸ ਨੂੰ ਹੀ ਵੇਖਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ ਨਾਂ ਵੇਖੋ">
+							<longdesc>ਜੇ ਇਹ ਸਹੀ ਹੈ, ਤਾਂ ਵਰਕਸਪੇਸ ਸਵਿੱਚਰ ਸਾਰੇ ਵਰਕਸਪੇਸਾਂ ਦਾ ਨਾਂ ਵੀ ਨੂੰ ਵੇਖਾਵੇਗਾ। ਨਹੀ ਤਾਂ ਇਹ ਸਿਰਫ ਵਰਕਸਪੇਸ ਵਿੱਚ ਵਿੰਡੋ ਨੂੰ ਹੀ ਵੇਖਾਵੇਗਾ। ਇਹ ਸਥਾਪਨ ਤਾਂ ਹੀ ਕੰਮ ਕਰੇਗੀ, ਜਦੋਂ ਵਿੰਡੋ ਮੈਨੇਜਰ ਮੈਟਾਸਿਟੀ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="speed_unit">
+						<local_schema short_desc="ਸਪੀਡ ਯੂਨਿਟ">
+							<longdesc>ਜਦੋਂ ਹਵਾ ਸਪੀਡ ਵੇਖਣੀ ਹੋਵੇ ਤਾਂ ਵਰਤਣ ਲਈ ਯੂਨਿਟ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="ਤਾਪਮਾਨ ਯੂਨਿਟ">
+							<longdesc>ਜਦੋਂ ਤਾਪਮਾਨ ਵੇਖਣੇ ਹੋਣ ਤਾਂ ਵਰਤਣ ਵਾਸਤੇ ਯੂਨਿਟ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cities">
+						<local_schema short_desc="ਟਿਕਾਣਿਆਂ ਦੀ ਲਿਸਟ">
+							<longdesc>ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ, ਤਾਂ ਕੈਲੰਡਰ ਵਿੰਡੋ ਵਿੱਚ ਜਨਮਦਿਨ ਦੀ ਲਿਸਟ ਫੈਲਾਓ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="internet_time">
+						<local_schema short_desc="ਇੰਟਰਨੈੱਟ ਸਮਾਂ ਵਰਤੋਂ">
+							<longdesc>ਇਸ ਕੁੰਜੀ ਦਾ ਗਨੋਮ ੨.੬ ਵਿਚ &apos;ਫਾਰਮੈਟ&apos; ਕੁੰਜੀ ਦੇ ਤੌਰ ਤੇ ਵਰਤੋਂ ਬੰਦ ਹੈ। ਸਿਰਫ ਪੁਰਾਣੇ ਵਰਜਨਾਂ ਦੇ ਕਰਕੇ ਰੱਖੀ ਗਈ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="ਯੂਨੈਕਸ ਸਮਾਂ ਵਰਤੋਂ">
+							<longdesc>ਇਸ ਕੁੰਜੀ ਦਾ ਗਨੋਮ ੨.੬ ਵਿਚ &apos;ਫਾਰਮੈਟ&apos; ਕੁੰਜੀ ਦੇ ਤੌਰ ਤੇ ਵਰਤੋਂ ਬੰਦ ਹੈ। ਸਿਰਫ ਪੁਰਾਣੇ ਵਰਜਨਾਂ ਦੇ ਕਰਕੇ ਰੱਖੀ ਗਈ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="ਘੰਟਾ ਫਾਰਮੈਟ">
+							<longdesc>ਇਸ ਕੁੰਜੀ ਦਾ ਗਨੋਮ ੨.੬ ਵਿਚ &apos;ਫਾਰਮੈਟ&apos; ਕੁੰਜੀ ਦੇ ਤੌਰ ਤੇ ਵਰਤੋਂ ਬੰਦ ਹੈ। ਸਿਰਫ ਪੁਰਾਣੇ ਵਰਜਨਾਂ ਦੇ ਕਰਕੇ ਰੱਖੀ ਗਈ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_locations">
+						<local_schema short_desc="ਟਿਕਾਣਾ ਦੀ ਲਿਸਟ ਫੈਲਾਓ">
+							<longdesc>ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ, ਤਾਂ ਕੈਲੰਡਰ ਵਿੰਡੋ ਵਿੱਚ ਟਿਕਾਣੇ ਦੀ ਲਿਸਟ ਫੈਲਾਓ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_weather">
+						<local_schema short_desc="ਮੌਸਮ ਜਾਣਕਾਰੀ ਦੀ ਲਿਸਟ ਫੈਲਾਓ">
+							<longdesc>ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ, ਤਾਂ ਕੈਲੰਡਰ ਵਿੰਡੋ ਵਿੱਚ ਮੌਸਮ ਜਾਣਕਾਰੀ ਦੀ ਲਿਸਟ ਫੈਲਾਓ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_tasks">
+						<local_schema short_desc="ਟਾਸਕਾਂ ਦੀ ਲਿਸਟ ਫੈਲਾਓ">
+							<longdesc>ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ, ਤਾਂ ਕੈਲੰਡਰ ਵਿੰਡੋ ਵਿੱਚ ਟਾਸਕਾਂ ਦੀ ਲਿਸਟ ਫੈਲਾਓ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_birthdays">
+						<local_schema short_desc="ਜਨਮਦਿਨ ਦੀ ਲਿਸਟ ਫੈਲਾਓ">
+							<longdesc>ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ, ਤਾਂ ਕੈਲੰਡਰ ਵਿੰਡੋ ਵਿੱਚ ਜਨਮਦਿਨ ਦੀ ਲਿਸਟ ਫੈਲਾਓ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_appointments">
+						<local_schema short_desc="ਮੁਲਾਕਾਤ ਦੀ ਲਿਸਟ ਫੈਲਾਓ">
+							<longdesc>ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ, ਤਾਂ ਕੈਲੰਡਰ ਵਿੰਡੋ ਵਿੱਚ ਮੁਲਾਕਾਤਾਂ ਦੀ ਲਿਸਟ ਫੈਲਾਓ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="ਕੈਲੰਡਰ ਵਿੱਚ ਹਫਤਾ ਅੰਕ ਵੇਖੋ">
+							<longdesc>ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ, ਤਾਂ ਕੈਲੰਡਰ ਵਿੱਚ ਹਫਤਾ ਅੰਕ ਵੇਖੋ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="ਸਮਾਂ ਸੰਰਚਨਾ ਟੂਲ">
+							<longdesc>ਇਸ ਕੁੰਜੀ ਦਾ ਗਨੋਮ 2.22 ਵਿਚ &apos;ਫਾਰਮੈਟ&apos; ਕੁੰਜੀ ਦੇ ਤੌਰ ਤੇ ਵਰਤੋਂ ਬੰਦ ਹੈ। ਸਿਰਫ ਪੁਰਾਣੇ ਵਰਜਨਾਂ ਦੇ ਕਰਕੇ ਰੱਖੀ ਗਈ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="UTC ਵਰਤੋਂ">
+							<longdesc>ਇਹ ਕੁੰਜੀ ਗਨੋਮ ੨.੨੮ ਵਿੱਚ ਟਾਈਮ-ਜ਼ੋਨ ਲਈ ਬਰਤਰਫ਼ ਕੀਤੀ ਗਈ ਹੈ। ਸਿਰਫ ਪੁਰਾਣੇ ਵਰਜਨਾਂ ਦੇ ਕਰਕੇ ਰੱਖੀ ਗਈ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_temperature">
+						<local_schema short_desc="ਘੜੀ ਵਿੱਚ ਤਾਪਮਾਨ ਵੇਖੋ">
+							<longdesc>ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ, ਤਾਂ ਮੌਸਮ ਆਈਕਾਨ ਨਾਲ ਤਾਪਮਾਨ ਵੇਖੋ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_weather">
+						<local_schema short_desc="ਘੜੀ ਵਿੱਚ ਮੌਸਮ ਵੇਖੋ">
+							<longdesc>ਜੇ ਸੱਚ ਹੈ ਤਾਂ ਇੱਕ ਮੌਸਮ ਆਈਕਾਨ ਵੇਖੋ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema short_desc="ਟੂਲ-ਟਿੱਪ ਵਿੱਚ ਮਿਤੀ ਵੇਖੋ">
+							<longdesc>ਜੇ ਸੱਚ ਹੈ ਤਾਂ ਘੜੀ ਉੱਤੇ ਹੋਣ ਦੌਰਾਨ ਟੂਲ-ਟਿੱਪ ਵਿੱਚ ਮਿਤੀ ਵੇਖੋ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="ਘੜੀ ਵਿੱਚ ਮਿਤੀ ਵੇਖੋ">
+							<longdesc>ਜੇ ਸੱਚ ਹੈ ਤਾਂ, ਘੜੀ ਵਿਚ ਸਮਾਂ ਨਾਲ ਮਿਤੀ ਵੀ ਵੇਖਾਈ ਜਾਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="ਸਮਾਂ ਵਿੱਚ ਸਕਿੰਟ ਵੇਖੋ">
+							<longdesc>ਜੇ ਸੱਚ ਹੈ ਤਾਂ ਸਮਾਂ ਵਿੱਚ ਸਕਿੰਟ ਵੀ ਵੇਖਾਏ ਜਾਣਗੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="ਘੜੀ ਲਈ ਕਸਟਮ ਫਾਰਮੈਟ">
+							<longdesc>ਇਹ ਕੁੰਜੀ ਘੜੀ ਦੇ ਐਪਲਿਟ ਰਾਹੀਂ ਵਰਤੇ ਜਾਂਦੇ ਫਾਰਮੈਟ ਨੂੰ ਤਹਿ ਕਰਦੀ ਹੈ, ਜਦੋਂ ਕਿ ਫਾਰਮੈਟ ਕੁੰਜੀ ਨੂੰ &quot;ਸੋਧ&quot; ਉੱਤੇ ਦੱਸਿਆ ਜਾਂਦਾ ਹੈ। ਤੁਸੀਂ ਇੱਕ ਖਾਸ ਫਾਰਮੈਟ ਲੈਣ ਲਈ strftime() ਰਾਹੀਂ ਤਬਦੀਲੀ ਸਮਝ ਸਕਦੇ ਹੋ। ਹੋਰ ਵਧੇਰੇ ਜਾਣਕਾਰੀ ਲਈ strftime() ਵੇਖੋ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="ਘੰਟਾ ਫਾਰਮੈਟ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gweather">
+				<dir name="prefs">
+					<entry name="radar">
+						<local_schema short_desc="ਰਾਡਾਰ ਨਕਸ਼ਾ ਲਈ Url">
+							<longdesc>ਰਾਡਾਰ ਨਕਸ਼ਾ ਲਈ ਸੋਧਿਆ Url ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_radar_url">
+						<local_schema short_desc="ਰਾਡਾਰ ਨਕਸ਼ਾ ਲਈ ਸੋਧਿਆ Url ਵਰਤੋਂ">
+							<longdesc>ਜੇਕਰ ਸੱਚ ਹੈ ਤਾਂ, ਰਾਡਾਰ-ਨਕਸ਼ਾ, ਉਥੋ ਪ੍ਰਾਪਤ ਕੀਤਾ ਜਾਵੇਗਾ, ਜਿਥੋਂ ਕਿ &quot;ਰਾਡਾਰ&quot; ਕੁੰਜੀ ਦਿੱਤੀ ਜਾਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="coordinates">
+						<local_schema short_desc="ਟਿਕਾਣਾ ਕੋਆਰਡੀਨੇਟ">
+						</local_schema>
+					</entry>
+					<entry name="location4">
+						<local_schema short_desc="ਇੱਕ ਸ਼ਹਿਰ ਲਈ ਮੌਸਮ">
+						</local_schema>
+					</entry>
+					<entry name="location3">
+						<local_schema short_desc="ਰਾਡਾਰ ਟਿਕਾਣਾ">
+						</local_schema>
+					</entry>
+					<entry name="location2">
+						<local_schema short_desc="ਖੇਤਰ ਟਿਕਾਣਾ">
+						</local_schema>
+					</entry>
+					<entry name="location1">
+						<local_schema short_desc="ਨੇੜਲਾ ਸ਼ਹਿਰ">
+						</local_schema>
+					</entry>
+					<entry name="location0">
+						<local_schema short_desc="ਮੌਸਮ ਟਿਕਾਣਾ ਜਾਣਕਾਰੀ">
+						</local_schema>
+					</entry>
+					<entry name="enable_radar_map">
+						<local_schema short_desc="ਰਾਡਾਰ ਨਕਸ਼ਾ ਵੇਖੋ">
+							<longdesc>ਹਰੇਕ ਅੱਪਡੇਟ ਲਈ ਰਾਡਾਰ-ਨਕਸ਼ਾ ਲਵੋ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_detailed_forecast">
+						<local_schema short_desc="ਹੋਰ ਵਰਤੋਂ ਨਹੀਂ ਹੈ">
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="ਤਾਪਮਾਨ ਯੂਨਿਟ/">
+							<longdesc>ਤਾਪਮਾਨ ਲਈ ਵਰਤਣ ਲਈ ਇਕਾਈ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed_unit">
+						<local_schema short_desc="ਗਤੀ ਯੂਨਿਟ/">
+							<longdesc>ਹਵਾ ਗਤੀ ਲਈ ਇਕਾਈ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pressure_unit">
+						<local_schema short_desc="ਦਬਾਉ ਯੂਨਿਟ">
+							<longdesc>ਦਬਾਅ ਲਈ ਇਕਾਈ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="distance_unit">
+						<local_schema short_desc="ਦੂਰੀ ਯੂਨਿਟ">
+							<longdesc>ਵੇਖਣ ਲਈ ਇਕਾਈ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_metric">
+						<local_schema short_desc="ਮੀਟਰ ਇਕਾਈਆਂ ਵਰਤੋਂ">
+							<longdesc>ਅੰਗਰੇਜ਼ੀ ਇਕਾਈ ਦੀ ਬਜਾਏ ਮੀਟਰ ਇਕਾਈ ਵਰਤੋਂ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update_interval">
+						<local_schema short_desc="ਅੱਪਡੇਟ ਅੰਤਰਾਲ">
+							<longdesc>ਆਟੋਮੈਟਿਕ ਅੱਪਡੇਟ ਵਿਚਕਾਰ ਅੰਤਰਾਲ (ਸਕਿੰਟਾਂ ਵਿੱਚ)।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update">
+						<local_schema short_desc="ਡਾਟੇ ਦਾ ਅੱਪਡੇਟ ਆਟੋਮੈਟਿਕ ਹੀ ਕਰੋ">
+							<longdesc>ਦੱਸੋ ਕਿ ਐਪਲਿਟ ਆਪਣੇ ਮੌਸਮ ਅੰਕੜਿਆਂ ਦਾ ਆਟੋਮੈਟਿਕ ਅੱਪਡੇਟ ਕਰੇ ਜਾਂ ਨਾ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="control-center">
+				<entry name="cc_exit_shell_on_action_upgrade_uninstall">
+					<local_schema short_desc="ਅੱਪਗਰੇਡ ਜਾਂ ਅਣ-ਇੰਸਟਾਲ ਕਰਨ ਦੇ ਦੌਰਾਨ ਸ਼ੈੱਲ ਬੰਦ ਕਰੋ">
+						<longdesc>ਵੇਖਾਉਦਾ ਹੈ ਕਿ ਕੀ ਅੱਪਗਰੇਡ ਜਾਂ ਅਣ-ਇੰਸਟਾਲ ਕਾਰਵਾਈ ਦੇ ਦੌਰਾਨ ਸ਼ੈੱਲ ਬੰਦ ਹੋ ਜਾਵੇ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_add_remove">
+					<local_schema short_desc="ਜੋੜਨ ਜਾਂ ਹਟਾਉਣ ਕਾਰਵਾਈ ਦੌਰਾਨ ਸ਼ੈੱਲ ਬੰਦ ਕਰੋ">
+						<longdesc>ਵੇਖਾਉਦਾ ਹੈ ਕਿ ਕੀ ਸ਼ਾਮਿਲ ਕਰਨ ਜਾਂ ਹਟਾਉਣ ਦੀ ਕਾਰਵਾਈ ਦੇ ਦੌਰਾਨ ਸ਼ੈੱਲ ਬੰਦ ਹੋਵੇ ਜਾਵੇ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_help">
+					<local_schema short_desc="ਮੱਦਦ ਕਾਰਵਾਈ ਦੌਰਾਨ ਸ਼ੈੱਲ ਬੰਦ ਕਰੋ">
+						<longdesc>ਵੇਖਾਉਦਾ ਹੈ ਕਿ ਕੀ ਇੱਕ ਮੱਦਦ ਕਾਰਵਾਈ ਕਰਨ ਦੇ ਦੌਰਾਨ ਸ਼ੈੱਲ ਬੰਦ ਹੋ ਜਾਵੇ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_start">
+					<local_schema short_desc="ਕਾਰਵਾਈ ਸ਼ੁਰੂ ਕਰਨ ਦੇ ਦੌਰਾਨ ਸ਼ੈੱਲ ਬੰਦ ਕਰੋ">
+						<longdesc>ਵੇਖਾਉਦਾ ਹੈ ਕਿ ਕੀ ਇੱਕ ਕਾਰਵਾਈ ਸ਼ੁਰੂ ਹੋਣ ਦੇ ਦੌਰਾਨ ਸ਼ੈਲ ਬੰਦ ਹੋ ਜਾਵੇ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_static_action">
+					<local_schema short_desc="ਜਦੋਂ ਇੱਕ ਕੰਮ ਸਰਗਰਮ ਹੋਵੇ ਤਾਂ ਕੰਟਰੋਲ-ਕੇਂਦਰ ਬੰਦ ਕਰੋ">
+						<longdesc>ਜੇ ਠੀਕ ਹੋਇਆ ਤਾਂ ਕੰਟਰੋਲ-ਕੇਂਦਰ ਬੰਦ ਹੋ ਜਾਵੇਗਾ, ਜਦੋਂ &quot;ਆਮ ਟਾਸਕ&quot; ਐਕਟੀਵੇਟਡ ਹੋ ਗਈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_actions_list">
+					<local_schema short_desc="ਕੰਮ ਨਾਂ ਅਤੇ ਸਬੰਧਿਤ .desktop ਫਾਇਲਾਂ">
+					</local_schema>
+				</entry>
+				<dir name="network">
+					<entry name="current_location">
+						<local_schema short_desc="ਮੌਜੂਦਾ ਨੈੱਟਵਰਕ ਟਿਕਾਣਾ">
+							<longdesc>ਆਪਣੇ ਮੌਜੂਦਾ ਨਾਂ ਲਈ ਇਹ ਸੈੱਟ ਕਰੋ। ਇਸ ਨੂੰ ਨੈੱਟਵਰਕ ਪਰਾਕਸੀ ਸੰਰਚਨਾ ਦਾ ਅੰਦਾਜ਼ਾ ਲਾਉਣ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="appearance">
+					<entry name="more_themes_url">
+						<local_schema short_desc="ਹੋਰ ਥੀਮ URL">
+							<longdesc>URL, ਜਿੱਥੋ ਡੈਸਕਟਾਪ ਥੀਮ ਮਿਲ ਸਕਦੇ ਹਨ। ਜੇ ਇੱਕ ਖਾਲੀ ਲਾਈਨ ਦਿੱਤੀ ਤਾਂ ਲਿੰਕ ਮੌਜੂਦ ਨਹੀਂ ਰਹੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="more_backgrounds_url">
+						<local_schema short_desc="ਹੋਰ ਬੈਕਗਰਾਊਂਡ URL">
+							<longdesc>URL, ਜਿੱਥੋ ਡੈਸਕਟਾਪ ਬੈਕਗਰਾਊਂਡ ਮਿਲ ਸਕਦੀਆਂ ਹਨ। ਜੇ ਇੱਕ ਖਾਲੀ ਲਾਈਨ ਦਿੱਤੀ ਤਾਂ ਲਿੰਕ ਮੌਜੂਦ ਨਹੀਂ ਰਹੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="ਟੈਕਸਟ ਇੱਲੈਪਸ ਲਿਸਟ">
+							<longdesc>ਅੰਕ ਇਹ ਤਹਿ ਕਰਦਾ ਹੈ ਕਿ ਲੰਮੇ ਫਾਇਲ ਨਾਂ ਨੂੰ ਡੈਸਕਟਾਪ ਉੱਤੇ ਕਿਵੇਂ ਵੇਖਾਇਆ ਜਾਵੇ। ਜੇ ਅੰਕ ੦ ਤੋਂ ਵੱਧ ਹੈ ਤਾਂ ਫਾਇਲ ਨਾਂ ਦਿੱਤੀਆਂ ਲਾਈਨਾਂ ਦੀ ਗਿਣਤੀ ਤੋਂ ਵੱਧ ਨਹੀਂ ਹੋਵੇਗਾ। ਜੇ ਨੰਬਰ ੦ ਜਾਂ ਛੋਟਾ ਹੈ ਤਾਂ ਵੇਖਾਉਣ ਲਈ ਲਾਈਨਾਂ ਦੀ ਗਿਣਤੀ ਉੱਤੇ ਕੋਈ ਲਿਮਟ ਨਹੀਂ ਰੱਖੀ ਜਾਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_name">
+						<local_schema short_desc="ਨੈੱਟਵਰਕ ਸਰਵਰ ਆਈਕਾਨ ਨਾਂ">
+							<longdesc>ਜੇਕਰ ਤੁਸੀ ਡੈਸਕਟਾਪ ਵਿਚਲੇ ਨੈੱਟਵਰਕ ਸਰਵਰਾਂ ਦੇ ਆਈਕਾਨ ਦਾ ਨਾਂ ਬਦਲਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਇਹ ਨਾਂ ਰੱਖ ਸਕਦੇ ਹੋ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_name">
+						<local_schema short_desc="ਡੈਸਕਟਾਪ ਰੱਦੀ ਆਈਕਾਨ ਨਾਂ">
+							<longdesc>ਜੇਕਰ ਤੁਸੀ ਡੈਸਕਟਾਪ ਵਿਚਲੇ ਰੱਦੀ ਦੇ ਆਈਕਾਨ ਦਾ ਨਾਂ ਬਦਲਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਇਹ ਨਾਂ ਰੱਖ ਸਕਦੇ ਹੋ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="ਡੈਸਕਟਾਪ ਘਰ ਆਈਕਾਨ ਨਾਂ">
+							<longdesc>ਜੇਕਰ ਤੁਸੀ ਡੈਸਕਟਾਪ ਵਿਚਲੇ ਘਰ ਦੇ ਆਈਕਾਨ ਦਾ ਨਾਂ ਬਦਲਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਇਹ ਨਾਂ ਰੱਖ ਸਕਦੇ ਹੋ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="ਡੈਸਕਟਾਪ ਕੰਪਿਊਟਰ ਆਈਕਾਨ ਨਾਂ">
+							<longdesc>ਜੇਕਰ ਤੁਸੀ ਡੈਸਕਟਾਪ ਵਿੱਚਲੇ ਘਰ ਦੇ ਆਈਕਾਨ ਦਾ ਨਾਂ ਬਦਲਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਇਹ ਨਾਂ ਰੱਖ ਸਕਦੇ ਹੋ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="ਨੈੱਟਵਰਕ ਸਰਵਰ ਆਈਕਾਨ ਆਈਕਾਨ ਡੈਸਕਟਾਪ ਵਿੱਚ ਵੇਖਾਓ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਆਈਕਾਨ, ਜੋ ਕਿ ਨੈੱਟਵਰਕ ਸਰਵਰ ਝਲਕ ਨਾਲ ਸਬੰਧਤ ਹੈ, ਡੈਸਕਟਾਪ ਵਿੱਚ ਆ ਜਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volumes_visible">
+						<local_schema short_desc="ਵਾਲੀਅਮ ਮਾਊਟ ਆਈਕਾਨ ਡੈਸਕਟਾਪ ਵਿੱਚ ਵੇਖੋ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਵਾਲੀਅਮ ਮਾਊਟ ਆਈਕਾਨ, ਡੈਸਕਟਾਪ ਵਿੱਚ ਆ ਜਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="ਰੱਦੀ ਆਈਕਾਨ ਡੈਸਕਟਾਪ ਵਿੱਚ ਵੇਖਾਓ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਆਈਕਾਨ ਜੋ ਕਿ ਰੱਦੀ ਨਾਲ ਲਿੰਕ ਹੈ, ਡੈਸਕਟਾਪ (ਵੇਹੜੇ) ਵਿੱਚ ਰੱਖਿਆ ਜਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="ਕੰਪਿਊਟਰ ਆਈਕਾਨ ਡੈਸਕਟਾਪ ਵਿੱਚ ਵੇਖਾਓ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਆਈਕਾਨ, ਜੋ ਕਿ ਕੰਪਿਊਟਰ ਟਿਕਾਣੇ ਨਾਲ ਸਬੰਧਤ ਹੈ, ਡੈਸਕਟਾਪ ਵਿੱਚ ਆ ਜਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="ਘਰ ਆਈਕਾਨ ਡੈਸਕਟਾਪ ਵਿੱਚ ਵੇਖੋ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਆਈਕਾਨ, ਜੋ ਕਿ ਘਰ ਨਾਲ ਸਬੰਧਿਤ ਹੈ, ਡੈਸਕਟਾਪ ਵਿੱਚ ਆ ਜਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema short_desc="ਟਰੀ ਸਾਇਡ ਪੈਨ ਵਿੱਚ ਸਿਰਫ਼ ਫੋਲਡਰ ਹੀ ਵੇਖਾਓ">
+								<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਟੀਲਸ ਪੇਚਦਾਰ ਪਾਸੇ ਵਿੱਚ ਕੇਵਲ ਫੋਲਡਰਾਂ ਨੂੰ ਵੇਖਾਵੇਗਾ। ਨਹੀਂ ਤਾਂ ਇਹ ਫੋਲਡਰ ਅਤੇ ਫਾਇਲਾਂ ਦੋਵਾਂ ਨੂੰ ਵੇਖਾਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="ਲਿਸਟ ਝਲਕ ਵਿੱਚ ਡਿਫਾਲਟ ਕਾਲਮ ਕ੍ਰਮ ਹੈ।">
+							<longdesc>ਲਿਸਟ ਝਲਕ ਵਿੱਚ ਡਿਫਾਲਟ ਕਾਲਮ ਕ੍ਰਮ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="ਲਿਸਟ ਝਲਕ ਵਿੱਚ ਉਪਲੱਬਧ ਕਾਲਮਾਂ ਦੀ ਡਿਫਾਲਟ ਲਿਸਟ">
+							<longdesc>ਲਿਸਟ ਝਲਕ ਵਿੱਚ ਦਿੱਖ ਕਾਲਮਾਂ ਦੀ ਡਿਫਾਲਟ ਲਿਸਟ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਲਿਸਟ ਜ਼ੂਮ ਪੱਧਰ">
+							<longdesc>ਲਿਸਟ ਝਲਕ ਮੁਤਾਬਕ ਡਿਫਾਲਟ ਸਾਈਜ਼ ਪੱਧਰ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="ਨਵੀਂ ਵਿੰਡੋ ਵਿੱਚ ਉਲਟਕ੍ਰਮ ਅਨੁਸਾਰ ਵੇਖਾਓ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਵੀਆਂ ਵਿੰਡੋ ਵਿੱਚ ਫਾਇਲ਼ਾਂ ਉਲਟਕ੍ਰਮ ਅਨੁਸਾਰ ਹੋਣਗੀਆਂ। (ਜਿਵੇਂ ਕਿ ਨਾਂ ਅਨੁਸਾਰ ਕ੍ਰਮਬੱਧ ਕਰਨ &apos;ਤੇ ਇਹ &quot;a&quot; ਤੋਂ &quot;z&quot; ਨਹੀਂ ਬਲਕਿ &quot;z&quot; ਤੋਂ &quot;a&quot; ਹੋਣਗੀਆਂ)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਲੜੀਬੱਧ ਕ੍ਰਮ">
+							<longdesc>ਲਿਸਟ ਝਲਕ ਵਿੱਚ ਆਈਟਮ ਦਾ ਡਿਫਾਲਟ ਲੜੀਬੱਧ ਹੈ।। ਉਪਲਬੱਧ ਮੁੱਲ &quot;ਨਾਂ&quot;, &quot;ਸਾਈਜ਼&quot;, &quot;ਕਿਸਮ&quot;, ਅਤੇ &quot;ਸੋਧ ਤਾਰੀਖ&quot; ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="compact_view">
+					<entry name="all_columns_have_same_width">
+						<local_schema short_desc="ਸਭ ਕਾਲਮਾਂ ਦੀ ਇੱਕੋ ਚੌੜਾਈ">
+							<longdesc>ਜੇ ਇਹ ਪਸੰਦ ਸੈੱਟ ਕੀਤੀ ਗਈ ਤਾਂ, ਸਭ ਕਾਲਮਾਂ ਨੂੰ ਇਕੋ ਚੌੜਾਈ ਲਈ ਸੰਖੇਪ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਨਹੀਂ ਤਾਂ ਹਰੇਕ ਕਾਲਮ ਦੀ ਚੌੜਾਈ ਵੱਖਰੀ ਵੱਖਰੀ ਸੈੱਟ ਹੋਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਸੰਖੇਪ ਝਲਕ ਜ਼ੂਮ ਲੈਵਲ">
+							<longdesc>ਸੰਖੇਪ ਝਲਕ ਮੁਤਾਬਕ ਡਿਫਾਲਟ ਜ਼ੂਮ ਲੈਵਲ</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="ਟੈਕਸਟ ਇੱਲੈਪਸ ਲਿਸਟ">
+							<longdesc>ਲਾਈਨ ਦੱਸਦੀ ਹੈ ਕਿ ਬਹੁਤ ਲੰਮੇ ਫਾਇਲ ਨਾਵਾਂ ਦੇ ਭਾਗਾਂ ਨੂੰ ਕਿਵੇਂ ਵੇਖਾਇਆ ਜਾਵੇ, ਜੋ ਕਿ ਜ਼ੂਮ ਲੈਵਲ ਮੁਤਾਬਕ ਹੈ। ਹਰੇਕ ਲਿਸਟ ਐਂਟਰ &quot;Zoom Level:Integer&quot; ਰੂਪ ਵਿੱਚ ਹੈ। ਹਰੇਕ ਦਿੱਤੇ ਜ਼ੂਮ ਲੈਵਲ ਲਈ, ਜੇ ਅੰਕ 0 ਤੋਂ ਵੱਡਾ ਹੈ ਤਾਂ ਫਾਇਲ ਨਾਂ ਦਿੱਤੇ ਲਾਈਨ ਨੰਬਰ ਤੋਂ ਵੱਧੇਗਾ ਨਹੀਂ। ਜੇ ਅੰਕ 0 ਜਾਂ ਛੋਟਾ ਹੈ ਤਾਂ ਦਿੱਤੇ ਜ਼ੂਮ ਲੈਵਲ ਲਈ ਕੋਈ ਵੀ ਲਿਮਟ ਨਹੀਂ ਰੱਖੀ ਜਾਵੇਗੀ। &quot;Integer&quot; ਫਾਰਮ ਦੀ ਡਿਫਾਲਟ ਐਂਟਰੀ ਬਿਨਾਂ ਕਿਸੇ ਜ਼ੂਮ ਲੈਵਲ ਦਿੱਤੇ ਵੀ ਮਨਜ਼ੂਰ ਕਰਦੀ ਹੈ। ਇਹ ਸਭ ਹੋਰ ਜ਼ੂਮ ਲੈਵਲਾਂ ਲਈ ਲਾਈਨਾਂ ਦੀ ਵੱਧੋ-ਵੱਧ ਗਿਣਤੀ ਦਿੰਦੀ ਹੈ, ਜਿਵੇਂ ਕਿ: ੦ - ਹਮੇਸ਼ਾਂ ਲੰਮੇ ਫਾਇਲ ਨਾਂ ਵੇਖਾਓ; ੩ - ਫਾਇਲ ਨਾਂ ਛੋਟੇ ਕਰੋ, ਜੇ ਇਹ ਤਿੰਨ ਲਾਈਨਾਂ ਤੋਂ ਵੱਧ ਜਾਂਦੇ ਹਨ; ਸਭ ਤੋਂ ਛੋਟਾ:੫,ਬਹੁਤ ਛੋਟਾ:੪,੦ - ਫਾਇਲ ਨਾਂ ਛੋਟਾ ਕਰੋ, ਜੇ ਇਹ ਜ਼ਮੂ ਲੈਵਲ &quot;smallest&quot; ਲਈ ਪੰਜ ਲਾਈਨਾਂ ਤੋਂ ਵੱਧ ਜਾਂਦੇ ਹਨ।ਫਾਇਲ ਨਾਂ ਛੋਟਾ ਕਰੋ, ਜੇ ਇਹ ਜ਼ਮੂ ਲੈਵਲ &quot;smaller&quot; ਲਈ ਚਾਰ ਲਾਈਨਾਂ ਤੋਂ ਵੱਧ ਜਾਂਦੇ ਹਨ। ਹੋਰ ਜ਼ੂਮ ਲੈਵਲਾਂ ਲਈ ਫਾਇਲ ਨਾਂ ਛੋਟੇ ਨਾ ਕਰੋ। ਉਪਲੱਬਧ ਜ਼ੂਮ ਲੈਵਲ ਹਨ: ਸਭ ਤੋਂ ਛੋਟਾ (੩੩%), ਬਹੁਤ ਛੋਟਾ (੫੦%), ਛੋਟਾ(੬੬%), ਸਧਾਰਨ (੧੦੦%), ਵੱਡਾ (੧੫੦%), ਬਹੁਤ ਵੱਡਾ (੨੦੦%), ਸਭ ਤੋਂ ਵੱਡਾ (੪੦੦%)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_size">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਥੰਮਨੇਲ ਆਈਕਾਨ ਸਾਈਜ਼">
+							<longdesc>ਆਈਕਾਨ ਝਲਕ ਵਿੱਚ ਇੱਕ ਥੰਮਨੇਲ ਲਈ ਆਈਕਾਨ ਦਾ ਡਿਫਾਲਟ ਸਾਈਜ਼ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਆਈਕਾਨ ਜ਼ੂਮ ਪੱਧਰ">
+							<longdesc>ਆਈਕਾਨ ਝਲਕ ਮੁਤਾਬਕ ਸਾਈਜ਼ ਪੱਧਰ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_manual_layout">
+						<local_schema short_desc="ਸਭ ਵਿੰਡੋ ਦਾ ਦਸਤੀ ਢਾਂਚਾ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਵੀਂ ਵਿੰਡੋ ਦਸਤੀ ਲੇਆਉਟ ਨੂੰ ਡਿਫਾਲਟ ਰੂਪ ਵਿੱਚ ਵਰਤਣਗੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="labels_beside_icons">
+						<local_schema short_desc="ਲੇਬਲ ਆਈਕਾਨ &apos;ਤੇ ਪਿੱਛੇ ਰੱਖੋ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਲੇਬਲ ਆਈਕਾਨ ਨਾਲ ਪਾਸੇ ਤੇ ਵੇਖਾਏ ਜਾਣਗੇ ਨਾ ਕਿ ਉਹਨਾਂ ਦੇ ਹੇਠਾਂ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_tighter_layout">
+						<local_schema short_desc="ਨਵੀਆਂ ਵਿੰਡੋ ਦਾ ਸਖਤ ਢਾਂਚਾ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਵੀਂ ਵਿੰਡੋ ਵਿੱਚ ਆਈਕਾਨ ਡਿਫਾਲਟ ਤੌਰ ਤੇ ਕਸਵੇ ਹੋਣਗੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="ਨਵੀਂ ਵਿੰਡੋ ਵਿੱਚ ਉਲਟਕ੍ਰਮ ਅਨੁਸਾਰ ਵੇਖਾਓ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਵੀਂ ਵਿੰਡੋ ਵਿੱਚ ਫਾਇਲ਼ਾਂ ਉਲਟਕ੍ਰਮ ਅਨੁਸਾਰ ਹੋਣਗੀਆ। (ਜਿਵੇ ਕਿ ਨਾਂ ਅਨੁਸਾਰ ਲੜੀਬੱਧ ਕਰਨ ਤੇ ਇਹ &quot;a&quot; ਤੋਂ &quot;z&quot; ਨਹੀਂ, ਬਲਕਿ &quot;z&quot; ਤੋਂ &quot;a&quot; ਹੋਣਗੀਆਂ। ਜੇਕਰ ਸਾਈਜ਼ ਅਨੁਸਾਰ ਕ੍ਰਮਬੱਧ ਕਰਨ ਤੇ ਵੱਧਦੇ ਸਾਈਜ਼ ਅਨੁਸਾਰ ਨਹੀਂ, ਬਲਕਿ ਘੱਟਦੇ ਸਾਈਜ਼ ਅਨੁਸਾਰ ਹੋਣਗੀਆਂ)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਲੜੀਬੱਧ ਕ੍ਰਮ">
+							<longdesc>ਆਈਕਾਨ ਝਲਕ ਵਿੱਚ ਆਈਟਮ ਦਾ ਡਿਫਾਲਟ ਲੜੀਬੱਧ। ਉਪਲਬੱਧ ਮੁੱਲ &quot;ਨਾਂ&quot;, &quot;ਸਾਈਜ਼&quot;, &quot;ਕਿਸਮ&quot;, &quot;ਸੋਧ ਤਾਰੀਖ&quot;, ਅਤੇ &quot;ਨਿਸ਼ਾਨ&quot; ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="captions">
+						<local_schema short_desc="ਆਈਕਾਨ ਲਈ ਉਪਲਬੱਧ ਸੁਰਖੀਆਂ ਦੀ ਲਿਸਟ">
+							<longdesc>ਆਈਕਾਨ ਝਲਕ ਅਤੇ ਡੈਸਕਟਾਪ ਵਿੱਚ ਆਈਕਾਨ ਹੇਠ ਸੁਰਖੀ ਝਲਕ ਵੇਖਾਉ। ਸੁਰਖੀਆਂ ਦੀ ਗਿਣਤੀ ਜ਼ੂਮ ਦੇ ਸਾਈਜ਼ ਤੇ ਨਿਰਭਰ ਕਰਦਾ ਹੈ। ਉਪਲਬੱਧ ਮੁੱਲ ਹਨ: &quot;size&quot;, &quot;type&quot;, &quot;date_modified&quot;, &quot;date_changed&quot;, &quot;date_accessed&quot;, &quot;owner&quot;, &quot;group&quot;, &quot;permissions&quot;, &quot;octal_permissions&quot; ਅਤੇ &quot;mime_type&quot;</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="ਸਾਇਡ ਪੈਨ ਝਲਕ">
+							<longdesc>ਨਵੀਆਂ ਵਿੰਡੋ ਵੇਖਾਉਣ ਲ਼ਈ ਸਾਇਡ ਪੈਨ ਦਿੱਖ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="ਨਵੀਆਂ ਵਿੰਡੋ ਵਿੱਚ ਸਾਇਡ ਪੈਨ ਵੇਖੋ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਵੀਆਂ ਵਿੰਡੋ ਦੀ ਸਾਇਡ ਪੈਨ ਵੇਖਾਈ ਜਾਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="ਨਵੀਆਂ ਵਿੰਡੋ ਵਿੱਚ ਹਾਲਤ ਪੱਟੀ ਵੇਖੋ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਵੀਆਂ ਵਿੰਡੋ ਵਿੱਚ ਹਾਲਤ ਪੱਟੀ ਵੇਖਾਈ ਜਾਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="ਨਵੀਂ ਵਿੰਡੋ ਵਿੱਚ ਟਿਕਾਣਾ-ਪੱਟੀ ਵੇਖੋ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਵੀਆਂ ਵਿੰਡੋ ਵਿੱਚ ਟਿਕਾਣਾ ਪੱਟੀ ਵੀ ਵੇਖਾਈ ਜਾਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="ਨਵੀਆਂ ਵਿੰਡੋ ਵਿੱਚ ਟੂਲਬਾਰ ਵੇਖੋ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਵੀਆਂ ਵਿੰਡੋ ਵਿੱਚ ਟੂਲਬਾਰ ਨੂੰ ਵੇਖਾਇਆ ਜਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="ਸਾਇਡ ਪੈਨ ਦੀ ਚੌੜਾਈ">
+							<longdesc>ਨਵੀਂ ਵਿੰਡੋ ਵਿੱਚ ਸਾਇਡ ਪੈਨ ਦੀ ਡਿਫਾਲਟ ਚੌੜਾਈ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="ਤਾਰੀਖ ਫਾਰਮੈਟ">
+							<longdesc>ਫਾਇਲ ਤਾਰੀਖ ਲਈ ਫਾਰਮੈਟ ਹੈ। ਉਪਲਬੱਧ ਮੁੱਲ &quot;locale&quot;, &quot;iso&quot;, ਅਤੇ &quot;ਸਧਾਰਨ&quot; ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਫੋਲਡਰ ਦਰਸ਼ਕ">
+							<longdesc>ਜਦੋ ਇਕ ਫੋਲਡਰ ਖੋਲ੍ਹਿਆ ਜਾਂਦਾ ਹੈ ਤਾਂ ਇਹ ਦਰਸ਼ਕ ਹੀ ਵਰਤਿਆ ਜਾਵੇਗਾ, ਜਦੋਂ ਤਕ ਕਿ ਤੁਸੀ ਕੋਈ ਹੋਰ ਦਰਸ਼ਕ ਨਹੀਂ ਚੁਣਦੇ ਹੋ। ਉਪਲਬਧ ਚੋਣ ਹੈ &quot;ਲਿਸਟ ਝਲਕ&quot;, &quot;ਆਈਕਾਨ ਝਲਕ&quot; ਅਤੇ &quot;ਸੰਖੇਪ ਝਲਕ&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਸਾਇਡ ਪੈਨ ਦੀ ਬੈਕਗਰਾਊਂਡ ਫਾਇਲ ਨਾਂ">
+							<longdesc>ਫੋਲਡਰ ਦੀ ਸਾਇਡ ਪੈਨ ਦੀ ਬੈਕਗਰਾਊਂਡ ਲਈ ਡਿਫਾਲਟ ਫਾਇਲ ਨਾਂ। ਸਿਰਫ ਤਾਂ ਹੀ ਉਪਲਬੱਧ ਹੋਵੇਗਾ, ਜੇ side_pane_background_set ਚੋਣ ਕੀਤੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਸਾਇਡ ਪੈਨ ਦੀ ਬੈਕਗਰਾਊਂਡ ਰੰਗ">
+							<longdesc>ਫੋਲਡਰ ਦੀ ਸਾਇਡ ਪੈਨ ਦੀ ਬੈਕਗਰਾਊਂਡ ਲਈ ਡਿਫਾਲਟ ਫਾਇਲ ਨਾਂ। ਸਿਰਫ ਤਾਂ ਹੀ ਉਪਲਬੱਧ ਹੋਵੇਗਾ, ਜੇ side_pane_background_set ਚੋਣ ਕੀਤੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_set">
+						<local_schema short_desc="ਸਾਇਡ ਪੈਨ ਦੀ ਬੈਕਗਰਾਊਂਡ ਸੈੱਟ">
+							<longdesc>ਕੀ ਸੋਧੀ ਡਿਫਾਲਟ ਸਾਇਡ ਪੈਨ ਦੀ ਬੈਕਗਰਾਊਂਡ ਸੈੱਟ ਕਰਨੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਬੈਕਗਰਾਊਂਡ ਫਾਇਲ ਨਾਂ">
+							<longdesc>ਫੋਲਡਰ ਦੀ ਬੈਕਗਰਾਊਂਡ ਲਈ ਡਿਫਾਲਟ ਫਾਇਲ ਨਾਂ। ਸਿਰਫ ਤਾਂ ਹੀ ਉਪਲਬੱਧ ਹੋਵੇਗਾ, ਜੇ background_set ਚੋਣ ਕੀਤੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="ਡਿਫਾਲਟ ਬੈਕਗਰਾਊਂਡ ਰੰਗ">
+							<longdesc>ਡਿਫਾਲਟ ਫੋਲਡਰ ਬੈਕਗਰਾਊਂਡ ਲਈ ਰੰਗ। ਸਿਰਫ ਤਾਂ ਹੀ ਉਪਲਬੱਧ ਹੋਵੇਗਾ, ਜੇ background_set ਚੋਣ ਕੀਤੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema short_desc="ਕਸਟਮ ਬੈਕਗਰਾਊਂਡ">
+							<longdesc>ਕੀ ਸੋਧੇ ਡਿਫਾਲਟ ਫੋਲਡਰ ਦੀ ਬੈਕਗਰਾਊਂਡ ਸੈੱਟ ਕਰਨੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search_bar_type">
+						<local_schema short_desc="ਖੋਜ-ਪੱਟੀ ਲਈ ਖੋਜ ਸੀਮਾ">
+							<longdesc>ਜਦੋਂ ਖੋਜ-ਪੱਟੀ ਵਿੱਚ ਮਿਲਦੀ ਫਾਇਲ ਲੱਭਣ ਲਈ ਮਾਪ-ਢੰਡ। ਜੇਕਰ &quot;search_by_text (ਟੈਕਸਟ ਨਾਲ ਖੋਜ)&quot; ਦਿੱਤੀ ਤਾਂ, ਨਟੀਲਸ ਸਿਰਫ ਫਾਇਲਾਂ ਨੂੰ ਨਾਂ ਅਨੁਸਾਰ ਹੀ ਲੱਭੇਗਾ। ਜੇਕਰ &quot;search_by_text_and_properties (ਟੈਕਸਟ ਤੇ ਵਿਸ਼ੇਸ਼ਤਾ ਨਾਲ ਖੋਜ)&quot; ਦਿੱਤੀ ਤਾਂ, ਨਟੀਲਸ ਫਾਇਲਾਂ ਨੂੰ ਨਾਂ ਅਤੇ ਗੁਣਾਂ ਦੇ ਅਨੁਸਾਰ ਵੀ ਲੱਭੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_is_home_dir">
+						<local_schema short_desc="ਨਟੀਲਸ ਯੂਜ਼ਰ ਦੇ ਘਰ ਫੋਲਡਰ ਨੂੰ ਡੈਸਕਟਾਪ ਦੇ ਤੌਰ &apos;ਤੇ ਵਰਤੇਗਾ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਟੀਲਸ ਯੂਜ਼ਰ ਫੋਲਡਰ ਨੂੰ ਡੈਸਕਟਾਪ ਦੇ ਤੌਰ ਉੱਤੇ ਵਰਤੇਗਾ। ਨਹੀਂ ਤਾਂ ~/Desktop ਨੂੰ ਡੈਸਕਟਾਪ ਦੇ ਤੌਰ ਤੇ ਵਰਤੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="ਡੈਸਕਟਾਪ ਫੋਂਟ">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="ਨਟੀਲਸ ਡੈਸਕਟਾਪ ਦੇ ਡਰਾਇੰਗ ਨੂੰ ਵੇਖੇਗਾ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਟੀਲਸ ਡੈਸਕਟਾਪ ਵਿੱਚ ਆਈਕਾਨ ਵੇਖਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="ਵਿੰਡੋ ਵਿੱਚ ਫੋਲਡਰ ਪਹਿਲਾਂ ਵੇਖੋ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਟੀਲਸ ਆਈਕਾਨ ਅਤੇ ਲਿਸਟ ਝਲਕਾਂ ਵਿੱਚ ਫੋਲਡਰ ਨੂੰ ਫਾਇਲ ਤੋਂ ਪਹਿਲ ਦੇ ਆਧਾਰ ਤੇ ਵੇਖਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_advanced_permissions">
+						<local_schema short_desc="ਫਾਇਲ ਵਿਸ਼ੇਸ਼ਤਾ ਡਾਈਲਾਗ ਵਿੱਚ ਤਕਨੀਕੀ ਅਧਿਕਾਰ ਵੇਖੋ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਟੀਲਸ ਤੁਹਾਨੂੰ ਫਾਇਲ ਅਧਿਕਾਰਾਂ ਨੂੰ ਹੋਰ ਵੀ unix-ਵਰਗੇ ਢੰਗ, ਜਿਸ ਨਾਲ ਹੋਰ ਇਸੋਟੀਰਿਕ ਚੋਣਾਂ ਦੀ ਵਰਤੋਂ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ, ਵੇਖਾਏਗਾ ਅਤੇ ਸੋਧਣ ਦੇਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="preview_sound">
+						<local_schema short_desc="ਕੀ ਸਾਊਂਡ ਦੀ ਝਲਕ ਸੁਣਨੀ ਹੈ, ਜਦੋਂ ਕਿ ਮਾਊਸ ਇੱਕ ਆਈਕਾਨ ਉਤੇ ਹੋਵੇ">
+							<longdesc>ਆਵਾਜ਼ ਦੀ ਝਲਕ ਪੇਸ਼ ਕਰਨ ਦੀ ਗਤੀ, ਜਦੋਂ ਕਿ ਮਾਊਸ ਫਾਇਲ ਉੱਤੇ ਹੋਵੋ। ਜੇ &quot;ਹਮੇਸ਼ਾ&quot; ਚੋਣ ਕੀਤੀ ਤਾਂ ਹਮੇਸ਼ਾ ਆਵਾਜ਼ ਚਲੇਗੀ, ਭਾਵੇਂ ਕਿ ਫਾਇਲ ਰਿਮੋਟ ਸਰਵਰ &apos;ਤੇ ਹੋਵੋ। ਜੇ &quot;ਲੋਕਲ&quot; ਤਾਂ ਕੇਵਲ ਲੋਕਲ ਫਾਇਲ ਦੀ ਝਲਕ ਹੀ ਵਿਖਾਈ ਜਾਵੇਗੀ। ਜੇਕਰ &quot;ਕਦੇ ਨਹੀਂ&quot; ਦੀ ਚੋਣ ਕੀਤੀ ਤਾਂ ਆਵਾਜ਼ ਦੀ ਝਲਕ ਸੁਣਾਈ ਨਹੀਂ ਜਾਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="directory_limit">
+						<local_schema short_desc="ਇੱਕ ਫੋਲਡਰ ਦੀ ਵੱਧ ਤੋਂ ਵੱਧ ਫਾਇਲ ਸੰਭਾਲਣ ਸਮਰੱਥਾ">
+							<longdesc>ਜਿਨ੍ਹਾਂ ਫੋਲਡਰ ਦਾ ਸਾਈਜ਼ ਇਸ ਤੋਂ ਵੱਧ ਹੋਵੇਗਾ ਉਨਾਂ ਦੀ ਕਾਂਟ-ਛਾਂਟ ਕਰਕੇ ਇਸ ਦੇ ਨੇੜੇ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਇਹ ਇਸ ਕਰਕੇ ਕਿ ਵੱਡੇ ਫੋਲਡਰਾਂ ਕਰਕੇ ਨਟੀਲਸ ਨੂੰ ਖਤਮ ਨਾ ਕਰਨਾ ਪਵੇ। ਇਕ ਰਿਣਤਾਮਿਕ ਮੁੱਲ ਕੋਈ ਸੀਮਾ ਤੈਅ ਨਹੀਂ ਕਰਦਾ। ਸਾਈਜ਼ ਲਗਭਗ ਹੈ, ਕਿਉਂਕਿ ਫੋਲਡਰ ਸਾਈਜ਼ ਮੁਤਾਬਕ ਵੇਖੇ ਜਾਂਦੇ ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_limit">
+						<local_schema short_desc="ਥੰਮਨੇਲ ਵੇਖਾਉਣ ਲਈ ਵੱਧ ਤੋਂ ਵੱਧ ਸਾਈਜ਼">
+							<longdesc>ਇਸ ਸਾਈਜ਼ (ਬਾਈਟਾਂ &apos;ਚ) ਤੋਂ ਵੱਧ ਵਾਲੇ ਚਿੱਤਰਾਂ ਲਈ ਥੰਮਨੇਲ ਨਹੀਂ ਹੋਣਗੇ। ਇਹ ਸੈਟਿੰਗ ਦਾ ਮਕਸਦ ਵੱਡੇ ਚਿੱਤਰਾਂ ਦੇ ਥੰਮਨੇਲ ਤਿਆਰ ਕਰਨ ਤੋਂ ਰੋਕਣਾ ਹੈ ਜੋ ਕਿ ਲੋਡ ਲਈ ਬਹੁਤ ਸਮਾਂ ਜਾਂ ਮੈਮੋਰੀ ਲੈ ਸਕਦੇ ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_image_thumbnails">
+						<local_schema short_desc="ਚਿੱਤਰ ਫਾਇਲਾਂ ਲਈ ਥੰਮਨੇਲ ਕਦੋਂ ਵੇਖਾਉਣੇ ਹਨ">
+							<longdesc>ਚਿੱਤਰ ਦੀ ਝਲਕ ਥੰਮਨੇਲ ਪੇਸ਼ ਕਰਨ ਦੀ ਗਤੀ ਦੀ ਸਥਿਤੀ ਜਦੋਂ ਕਿ ਮਾਊਸ ਫਾਇਲ ਉਪਰ ਹੋਵੋ। ਜੇਕਰ &quot;ਹਮੇਸ਼ਾ&quot; ਦਿੱਤਾ ਤਾਂ ਹਮੇਸ਼ਾ ਛੋਟਾ ਚਿੱਤਰ ਦਿਸੇਗਾ, ਭਾਵੇਂ ਕਿ ਫਾਇਲ ਰਿਮੋਟ ਸਰਵਰ &apos;ਤੇ ਹੋਵੋ। ਜੇਕਰ &quot;ਕੇਵਲ ਲੋਕਲ&quot; ਤਾਂ ਕੇਵਲ ਲੋਕਲ ਫਾਇਲ ਦੀ ਹੀ ਝਲਕ ਦਿੱਸੇਗੀ। ਜੇਕਰ &quot;ਕਦੇ ਨਹੀਂ&quot; ਚੋਣ ਕੀਤੀ ਤਾਂ ਥੰਮਨੇਲ ਚਿੱਤਰਾਂ ਦੀ ਪਰਵਾਹ ਨਹੀਂ ਕੀਤੀ ਜਾਵੇਗੀ, ਸਿਰਫ਼ ਆਈਕਾਨ ਹੀ ਵੇਖਾਇਆ ਜਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="ਮੌਜੂਦਾ ਨਟੀਲਸ ਸਰੂਪ (ਬਰਤਰਫ਼)">
+							<longdesc>ਵਰਤਣ ਲਈ ਨਟੀਲਸ ਦਾ ਸਰੂਪ, ਇਹ ਨਟੀਲਸ 2.2 ਦੀ ਮਨਾਹੀ ਹੈ। ਆਈਕਾਨ ਸਰੂਪ ਵਰਤੋਂ ਜੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_back_button">
+						<local_schema short_desc="ਬਰਾਊਜ਼ਰ ਵਿੰਡੋ &quot;ਪਿੱਛੇ&quot; ਕਮਾਂਡ ਨੂੰ ਐਕਟੀਵੇਟ ਕਰਨ ਲਈ ਮਾਊਸ ਬਟਨ">
+							<longdesc>ਮਾਊਸ ਵਾਲੇ ਯੂਜ਼ਰ ਲਈ, ਜਿੰਨ੍ਹਾਂ ਲਈ &quot;ਅੱਗੇ&quot; ਅਤੇ ਪਿੱਛੇ&quot; ਬਟਨ ਹਨ, ਇਹ ਕੁੰਜੀ ਸੈੱਟ ਕਰਦੀ ਹੈਕ ਕਿਹੜਾ ਬਟਨ ਬਰਾਊਜ਼ਰ ਵਿੰਡੋ ਵਿੱਚ &quot;ਪਿੱਛੇ&quot; ਕਮਾਂਡ ਐਕਟੀਵੇਟ ਕਰਦਾ ਹੈ, ਸੰਭਵ ਮੁੱਲ ਰੇਜ਼ 6 ਅਤੇ 14 ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_forward_button">
+						<local_schema short_desc="ਬਰਾਊਜ਼ਰ ਵਿੰਡੋ &quot;ਅੱਗੇ&quot; ਕਮਾਂਡ ਨੂੰ ਐਕਟੀਵੇਟ ਕਰਨ ਲਈ ਮਾਊਸ ਬਟਨ">
+							<longdesc>ਮਾਊਸ ਵਾਲੇ ਯੂਜ਼ਰ ਲਈ, ਜਿੰਨ੍ਹਾਂ ਲਈ &quot;ਅੱਗੇ&quot; ਅਤੇ ਪਿੱਛੇ&quot; ਬਟਨ ਹਨ, ਇਹ ਕੁੰਜੀ ਸੈੱਟ ਕਰਦੀ ਹੈਕ ਕਿਹੜਾ ਬਟਨ ਬਰਾਊਜ਼ਰ ਵਿੰਡੋ ਵਿੱਚ &quot;ਅੱਗੇ&quot; ਕਮਾਂਡ ਐਕਟੀਵੇਟ ਕਰਦਾ ਹੈ, ਸੰਭਵ ਮੁੱਲ ਰੇਜ਼ 6 ਅਤੇ 14 ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_use_extra_buttons">
+						<local_schema short_desc="ਨਟੀਲਸ ਬਰਾਊਜ਼ਰ ਵਿੰਡੋ ਵਿੱਚ ਹੋਰ ਐਕਸਟਰਾ ਮਾਊਂਟ ਬਟਨ ਵਰਤੋਂ">
+							<longdesc>ਮਾਊਸ ਵਾਲੇ ਯੂਜ਼ਰ ਲਈ, ਜਿੰਨ੍ਹਾਂ ਲਈ &quot;ਅੱਗੇ&quot; ਅਤੇ ਪਿੱਛੇ&quot; ਬਟਨ ਹਨ, ਇਹ ਕੁੰਜੀ ਤਹਿ ਕਰਦੀ ਹੈ ਕਿ ਨਟੀਲਸ ਵਿੱਚ ਇਹਨਾਂ ਵਿੱਚੋਂ ਕੋਈ ਵੀ ਦੱਬਣ ਨਾਲ ਕੋਈ ਕਾਰਵਾਈ ਹੋਵੇਗੀ ਜਾਂ ਨਹੀਂ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="install_mime_activation">
+						<local_schema short_desc="ਅਣਜਾਣ ਮਾਈਮ ਟਾਈਪ ਲਈ ਪੈਕੇਜ ਇੰਸਟਾਲਰ ਵੇਖੋ">
+							<longdesc>ਕੀ ਯੂਜ਼ਰ ਨੂੰ ਪੈਕੇਜ ਇੰਸਟਾਲਰ ਡਾਇਲਾਗ ਵੇਖਾਉਣਾ ਹੈ, ਜਦੋਂ ਅਣਜਾਣ ਮਾਈਮ ਕਿਸਮ ਖੋਲ੍ਹਣੀ ਹੋਵੇ ਤਾਂ ਕਿ ਉਸ ਨੂੰ ਹੈਂਡਲ ਕਰਨ ਲਈ ਐਪਲੀਕੇਸ਼ਨ ਖੋਜੀ ਜਾ ਸਕੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="executable_text_activation">
+						<local_schema short_desc="ਕੀ ਕੀਤਾ ਜਾਏ, ਜਦੋਂ ਚੱਲਣਯੋਗ ਟੈਕਸਟ ਫਾਇਲ ਸਰਗਰਮ ਹੋਣ">
+							<longdesc>ਕੀ ਕਰਨਾ ਹੈ, ਜਦੋ ਕਿ ਚੱਲਣਯੋਗ ਟੈਕਸਟ ਫਾਇਲਾਂ ਸਰਗਰਮ ਹੋਣ (ਇਕ ਜਾਂ ਦੋ ਵਾਰ ਦਬਾਉਣ ਤੋਂ)। ਉਪਲਬੱਧ ਚੋਣ ਹੈ  &quot;ਚਲਾਉ&quot; -ਇਕ ਪਰੋਗਰਾਮ ਦੀ ਤਰਾਂ ਚਲਾਉਣ ਲਈ, &quot;ਪੁੱਛੋ&quot; -ਡਾਈਲਾਗ ਨਾਲ ਪੁੱਛਕੇ, ਅਤੇ &quot;ਵੇਖਾਓ&quot; -ਟੈਕਸਟ ਦੀ ਤਰਾਂ ਦਿਖਾਉ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="click_policy">
+						<local_schema short_desc="ਫਾਇਲਾਂ ਚਾਲੂ/ਖੋਲ੍ਹਣ ਲਈ ਕਲਿੱਕ ਦੀ ਕਿਸਮ">
+							<longdesc>ਫਾਇਲਾਂ ਇਕ ਵਾਰ ਦਬਾਉ ਤੇ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਸੰਭਵ ਮੁੱਲ &quot;ਇੱਕ-ਵਾਰ&quot; ਹੈ, ਜਾਂ ਦੋ ਵਾਰ ਦਬਾਉ ਤੇ ਸ਼ੁਰੂ ਕਰਨ ਲਈ &quot;ਦੋ-ਵਾਰ&quot; ਕਰੋ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_directory_item_counts">
+						<local_schema short_desc="ਕਦੋਂ ਫੋਲਡਰ ਵਿੱਚ ਆਈਟਮਾਂ ਦੀ ਗਿਣਤੀ ਵੇਖਾਈ ਜਾਵੇ">
+							<longdesc>ਫੋਲਡਰ ਵਿੱਚ ਆਈਟਮਾਂ ਦੀ ਗਿਣਤੀ ਪੇਸ਼ ਕਰਨ ਦੀ ਗਤੀ ਦੀ ਸਥਿਤੀ। ਜੇ &quot;ਹਮੇਸ਼ਾ&quot; ਦਿੱਤਾ ਤਾਂ ਹਮੇਸ਼ਾ ਆਈਟਮਾਂ ਦੀ ਗਿਣਤੀ ਵੇਖਾਈ ਜਾਵੇਗੀ, ਭਾਵੇਂ ਕਿ ਫੋਲਡਰ ਰਿਮੋਟ ਸਰਵਰ ਉੱਤੇ ਹੋਵੋ। ਜੇਕਰ &quot;ਕੇਵਲ ਲੋਕਲ&quot; ਤਾਂ ਕੇਵਲ ਲੋਕਲ ਫੋਲਡਰਾਂ ਵਿੱਚ ਗਿਣਤੀ ਹੋਵੇਗੀ। ਜੇਕਰ &quot;ਕਦੇ ਨਹੀਂ&quot; ਦੀ ਚੋਣ ਕੀਤੀ ਤਾਂ ਕਿਸੇ ਵੀ ਆਈਟਮ ਦੀ ਗਿਣਤੀ ਨਹੀਂ ਹੋਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_icon_text">
+						<local_schema short_desc="ਆਈਕਾਨ ਨਾਲ ਟੈਕਸਟ ਕਦੋਂ ਵੇਖਾਉਣਾ ਹੈ">
+							<longdesc>ਫਾਇਲ ਦੇ ਆਈਕਾਨ ਵਿੱਚ ਟੈਕਸਟ ਦੀ ਝਲਕ ਪੇਸ਼ ਕਰਨ ਦੀ ਗਤੀ। ਜੇਕਰ &quot;ਹਮੇਸ਼ਾ&quot; ਦਿੱਤਾ ਤਾਂ ਹਮੇਸ਼ਾ ਵੇਖਾਵੇਗਾ ਭਾਵੇਂ ਕਿ ਫਾਇਲ ਰਿਮੋਟ ਸਰਵਰ ਉੱਤੇ ਹੋਵੋ। ਜੇਕਰ &quot;ਕੇਵਲ ਲੋਕਲ&quot; ਤਾਂ ਕੇਵਲ ਲੋਕਲ ਫਾਇਲ ਦੀ ਝਲਕ ਹੀ ਵੇਖਾਈ ਜਾਵੇਗੀ। ਜੇਕਰ &quot;ਕਦੇ ਨਹੀਂ&quot; ਚੋਣ ਕੀਤੀ ਤਾਂ ਤਾਂ ਡਾਟੇ ਦੀ ਝਲਕ ਨਹੀਂ ਵੇਖਾਈ ਜਾਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_delete">
+						<local_schema short_desc="ਕੀ ਸਿੱਧਾ ਹਟਾਓਣ ਦੀ ਕਾਰਵਾਈ ਚਾਲੂ ਕਰਨੀ ਹੈ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਟੀਲਸ ਇਕ ਸਹੂਲਤ ਦੇਵੇਗਾ ਜਿਸ ਕਰਕੇ ਤੁਸੀ ਕੋਈ ਵੀ ਫਾਇਲ ਸਿੱਧੀ ਖਤਮ ਕਰ ਸਕਦੇ ਹੋ (ਰੱਦੀ ਵਿੱਚ ਨਹੀਂ ਜਾਵੇਗੀ)। ਇਹ ਸਹੂਲਤ ਖਤਰਨਾਕ ਹੋ ਸਕਦੀ ਹੈ, ਇਸ ਕਰਕੇ ਜ਼ਰਾ ਧਿਆਨ ਨਾਲ ਵਰਤੋਂ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_trash">
+						<local_schema short_desc="ਫਾਇਲਾਂ ਨੂੰ ਹਟਾਉਣ ਜਾਂ ਰੱਦੀ ਵਿੱਚ ਭੇਜਣ ਸਮੇਂ ਪੁੱਛਿਆ ਜਾਵੇ ਕਿ ਨਾ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਟੀਲਸ ਤੁਹਾਨੂੰ ਕੋਈ ਵੀ ਫਾਇਲਾਂ ਹਟਾਉਣ ਜਾਂ ਰੱਦੀ ਵਿੱਚ ਭੇਜਣ ਤੋਂ ਪਹਿਲਾਂ ਪੁੱਛੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="navigation_window_saved_maximized">
+						<local_schema short_desc="ਕੀ ਨੇਵੀਗੇਸ਼ਨ ਵਿੰਡੋ ਨੂੰ ਵੱਧੋ-ਵੱਧ ਬਣਾਉਣਾ ਹੈ।">
+							<longdesc>ਕੀ ਨੇਵੀਗੇਸ਼ਨ ਵਿੰਡੋ ਨੂੰ ਮੂਲ ਰੂਪ ਵਿੱਚ ਵੱਧੋ-ਵੱਧ ਬਣਾਉਣਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="navigation_window_saved_geometry">
+						<local_schema short_desc="ਨੇਵੀਗੇਸ਼ਨ ਵਿੰਡੋ ਲਈ ਜੁਮੈਟਰੀ ਲਾਈਨ ਹੈ।">
+							<longdesc>ਲਾਈਨ ਜੋ ਕਿ ਨੇਵੀਗੇਸ਼ਨ ਵਿੰਡੋਜ਼ ਲਈ ਸੰਭਾਲੀ ਜੁਮੈਟਰੀ ਤੇ ਧੁਰੇ ਨੂੰ ਰੱਖਦੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_open_folder">
+						<local_schema short_desc="&quot;ਫੋਲਡਰ ਖੋਲ੍ਹੋ&quot; ਸੈੱਟ ਕਰਨ ਲਈ x-content/* ਟਾਈਪ ਦੀ ਲਿਸਟ">
+							<longdesc>ਪਸੰਦੀਦਾ ਕੈਪਲਿਟ ਵਿੱਚ &quot;ਫੋਲਡਰ ਖੋਲ੍ਹੋ&quot; ਚੁਣਨ ਵਾਸਤੇ ਯੂਜ਼ਰ ਨੂੰ ਚੋਣ ਦੇਣ ਲਈ x-content/* ਟਾਈਪ ਦੀ ਲਿਸਟ ਹੈ।  ਦਿੱਤੀ ਟਾਈਪ ਲਈ ਫੋਲਡਰ ਵਿੰਡੋ ਇਸ ਕਿਸਮ ਨਾਲ ਮਿਲਦੇ ਮੀਡਿਆ ਨੂੰ ਪਾਉਣ ਨਾਲ ਸ਼ੁਰੂ ਕੀਤੀ ਜਾਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_ignore">
+						<local_schema short_desc="&quot;ਕੁਝ ਨਾ ਕਰੋ&quot; ਸੈੱਟ ਕਰਨ ਲਈ x-content/* ਟਾਈਪ ਦੀ ਲਿਸਟ">
+							<longdesc>ਪਸੰਦੀਦਾ ਕੈਪਲਿਟ ਵਿੱਚ &quot;ਕੁਝ ਨਾ ਕਰੋ&quot; ਚੁਣਨ ਵਾਸਤੇ ਯੂਜ਼ਰ ਨੂੰ ਚੋਣ ਦੇਣ ਲਈ x-content/* ਟਾਈਪ ਦੀ ਲਿਸਟ ਹੈ।  ਦਿੱਤੀ ਟਾਈਪ ਲਈ ਇਸ ਕਿਸਮ ਨਾਲ ਮਿਲਦੇ ਮੀਡਿਆ ਨੂੰ ਪਾਉਣ ਨਾਲ ਨਾ ਤਾਂ ਪੁੱਛਿਆ ਜਾਵੇਗਾ ਅਤੇ ਨਾ ਹੀ ਮਿਲਦੀ ਐਪਲੀਕੇਸ਼ਨ ਸ਼ੁਰੂ ਕੀਤੀ ਜਾਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_start_app">
+						<local_schema short_desc="x-content/* ਟਾਈਪ ਦੀ ਲਿਸਟ, ਜਿੱਥੇ ਪਸੰਦੀਦਾ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਲਾਂਚ ਕੀਤਾ ਜਾਵੇਗਾ">
+							<longdesc>ਪਸੰਦੀਦਾ ਕੈਪਲਿਟ ਵਿੱਚ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਸ਼ੁਰੂ ਕਰਨ ਵਾਸਤੇ ਯੂਜ਼ਰ ਨੂੰ ਚੋਣ ਦੇਣ ਲਈ x-content/* ਟਾਈਪ ਦੀ ਲਿਸਟ ਹੈ। ਦਿੱਤੀ ਟਾਈਪ ਲਈ ਪਸੰਦੀਦਾ ਐਪਲੀਕੇਸ਼ਨ ਇਸ ਕਿਸਮ ਨਾਲ ਮਿਲਦੇ ਮੀਡਿਆ ਲਈ ਸ਼ੁਰੂ ਕੀਤੀ ਜਾਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_never">
+						<local_schema short_desc="ਜਦੋਂ ਮੀਡਿਆ ਪਾਇਆ ਜਾਵੇ ਤਾਂ ਕਦੇ ਵੀ ਨਾ ਪੁੱਛੋ ਜਾਂ ਆਟੋ-ਰਨ/ਆਟੋ-ਸਟਾਰਟ ਪਰੋਗਰਾਮ ਸ਼ੁਰੂ ਨਾ ਕਰੋ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਟੀਲਸ ਮੀਡਿਆ ਪਾਉਣ ਨਾਲ ਕਦੇ ਵੀ ਆਟੋ-ਰਨ/ਆਟੋ-ਸਟਾਰਟ ਪਰੋਗਰਾਮਾਂ ਨੂੰ ਚਲਾਉਣ ਲਈ ਪੁੱਛੇਗਾ ਨਹੀਂ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount_open">
+						<local_schema short_desc="ਕੀ ਆਟੋ-ਮਾਊਂਟ ਮੀਡਿਆ ਲਈ ਇੱਕ ਫੋਲਡਰ ਆਟੋਮੈਟਿਕ ਹੀ ਖੋਲ੍ਹਣਾ ਹੈ">
+							<longdesc>ਜੇ ਸਹੀਂ ਕੀਤਾ ਤਾਂ, ਨਟੀਲਸ ਆਟੋਮੈਟਿਕ ਹੀ ਇੱਕ ਫੋਲਡਰ ਖੋਲ੍ਹੇਗੀ, ਜਦੋਂ ਇੱਕ ਮੀਡਿਆ ਆਟੋ-ਮਾਊਂਟ ਕੀਤਾ ਜਾਵੇਗਾ। ਇਹ ਕੇਵਲ ਮੀਡਿਆ ਲਈ ਲਾਗੂ ਹੁੰਦਾ ਹੈ, ਜਿੱਥੇ ਕੋਈ x-content/* ਟਾਈਪ ਦੀ ਪਛਾਣ ਨਹੀਂ ਹੁੰਦੀ, ਮੀਡਿਆ, ਜਦੋਂ ਕਿ x-content ਟਾਈਪ ਦੀ ਪਛਾਣ ਹੋ ਜਾਵੇ ਤਾਂ ਯੂਜ਼ਰ ਦੀ ਸੰਰਚਨਾ ਮੁਤਾਬਕ ਐਕਸ਼ਨ ਲਿਆ ਜਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount">
+						<local_schema short_desc="ਕੀ ਮੀਡਿਆ ਆਟੋਮੈਟਿਕ ਹੀ ਮਾਊਂਟ ਕਰਨਾ ਹੈ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ ਨਟੀਲਸ ਆਟੋਮੈਟਿਕ ਹੀ ਮੀਡਿਆ ਸ਼ੁਰੂ ਸਮੇਂ ਅਤੇ ਮੀਡਿਆ ਪਾਉਣ ਸਮੇਂ ਮਾਊਂਟ ਕਰੇਗੀ, ਜਿਵੇਂ ਕਿ ਯੂਜ਼ਰ-ਵੇਖਣਯੋਗ ਹਾਰਡ ਡਿਸਕ ਅਤੇ ਹਟਾਉਣਯੋਗ ਮੀਡਿਆ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_location_entry">
+						<local_schema short_desc="ਹਮੇਸ਼ਾ ਮਾਰਗ-ਪੱਟੀ ਦੀ ਬਜਾਏ ਟਿਕਾਣਾ ਇੰਦਰਾਜ਼ ਦੀ ਵਰਤੋਂ ਕਰੋ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਨਟੀਲਸ ਝਲਕਾਰਾ ਵਿੰਡੋ ਹਮੇਸ਼ਾ ਟਿਕਾਣਾ ਟੂਲਬਾਰ ਵਿੱਚ ਮਾਰਗ-ਪੱਟੀ ਦੀ ਬਜਾਏ ਟੈਕਸਟ ਇੰਪੁੱਟ ਐਂਟਰੀ ਦੀ ਵਰਤੋਂ ਕਰੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_browser">
+						<local_schema short_desc="ਨਟੀਲਸ ਦਾ ਡਿਫਾਲਟ ਰਵੱਈਆ ਯੋਗ ਕਰਦਾਹੈ, ਜਦੋਂ ਕਿ ਸਭ ਵਿੰਡੋ ਬਰਾਊਜ਼ਰ ਦੇ ਤੌਰ ਉੱਤੇ ਖੁੱਲਣੀਆਂ ਹੋਣ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ, ਸਭ ਨਟੀਲਸ ਵਿੰਡੋ ਬਰਾਊਜ਼ਰ ਵਿੰਡੋ ਬਣ ਜਾਣਗੀਆਂ। ਇਹ ਉਸ ਤਰਾਂ ਹੈ ਕਿ ਨਟੀਲਸ 2.6 ਵਰਜਨ ਤੋਂ ਪਹਿਲਾਂ ਕਿਵੇ ਕੰਮ ਕਰਦਾ ਸੀ ਅਤੇ ਕੁਝ ਲੋਕ ਹੁਣ ਵੀ ਉਂਝ ਹੀ ਪਸੰਦ ਕਰਦੇ ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="exit_with_last_window">
+						<local_schema short_desc="ਨਟੀਲਸ ਜਦੋਂ ਆਖਰੀ ਵਿੰਡੋ ਖਤਮ ਹੋਵੇ ਤਾਂ ਬੰਦ ਹੋਵੇਗਾ।">
+							<longdesc>ਜੇ ਸਹੀਂ ਸੈੱਟ ਕੀਤਾ ਤਾਂ ਨਟੀਲਸ ਸਭ ਵਿੰਡੋ ਖਤਮ ਹੋਣ ਤੋਂ ਬਾਅਦ ਬੰਦ ਹੋ ਜਾਵੇਗੀ। ਇਹ ਡਿਫਾਲਟ ਸੈਟਿੰਗ ਹੈ। ਜੇ ਇਹ ਗਲਤ ਰੱਖਿਆ ਤਾਂ ਇਹ ਬਿਨਾਂ ਕਿਸੇ ਵਿੰਡੋ ਦੇ ਸ਼ੁਰੂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ, ਤਾਂ ਨਟੀਲਸ ਮੀਡਿਆ ਆਟੋ-ਮਾਊਂਟ ਦੀ ਨਿਗਰਾਨੀ ਜਾਂ ਇੰਝ ਦੇ ਕੰਮਾਂ ਲਈ ਡੈਮਨ ਵਾਂਗ ਕੰਮ ਕਰੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="ਫੋਂਟ ਸਧਾਰਨ ਅਕਾਰ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਅੱਖਰਾਂ ਦਾ ਅਕਾਰ ਸਧਾਰਨ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ। ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;ਆਯੋਗ&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="ਫੋਂਟ ਛੋਟੇ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਅੱਖਰਾਂ ਦਾ ਅਕਾਰ ਛੋਟਾ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ। ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;ਆਯੋਗ&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="ਫੋਂਟ ਵੱਡੇ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਅੱਖਰਾਂ ਦਾ ਅਕਾਰ ਵੱਡਾ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ। ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;ਆਯੋਗ&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="ਮੱਦਦ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਸਹਾਇਤਾ ਚਾਲੂ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ। ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;ਆਯੋਗ&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="ਟੈਬ 12 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟੈਬ 12 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ। ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="ਟੈਬ 11 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟੈਬ 11 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ। ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="ਟੈਬ 10 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟੈਬ 10 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ। ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="ਟੈਬ 9 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟੈਬ 9 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ, ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="ਟੈਬ 8 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟੈਬ 8 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="ਟੈਬ 7 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟੈਬ 7 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="ਟੈਬ 6 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟੈਬ 6 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="ਟੈਬ 5 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟੈਬ 5 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="ਟੈਬ 4 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟੈਬ 4 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="ਟੈਬ 3 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟੈਬ 3 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="ਟੈਬ 2 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟੈਬ 2 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ। ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="ਟੈਬ 1 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟੈਬ 1 ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ। ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="ਮੌਜੂਦਾ ਟੈਬ ਨੂੰ ਵੱਖ ਕਰਨ ਲਈ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਮੌਜੂਦਾ ਟੈਬ ਨੂੰ ਵੱਖ ਕਰਨ ਲਈ ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ, ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;ਆਯੋਗ&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="ਮੌਜੂਦਾ ਟੈਬ ਨੂੰ ਸੱਜੇ ਭੇਜਣ ਲਈ ਐਕਸਲੇਟਰ ਹੈ।">
+							<longdesc>ਮੌਜੂਦਾ ਟੈਬ ਨੂੰ ਸੱਜੇ ਭੇਜਣ ਲਈ ਕੀ-ਬੋਰਡ ਐਕਸਲੇਟਰ ਸਵਿੱਚ ਹੈ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ ਦਿੱਤੀ &quot;ਆਯੋਗ&quot;, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="ਮੌਜੂਦਾ ਟੈਬ ਨੂੰ ਖੱਬੇ ਭੇਜਣ ਲਈ ਐਕਸਲੇਟਰ ਹੈ।">
+							<longdesc>ਮੌਜੂਦਾ ਟੈਬ ਨੂੰ ਖੱਬੇ ਕਰਨ ਲਈ ਲਈ ਕੀ-ਬੋਰਡ ਐਕਸਲੇਟਰ ਸਵਿੱਚ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;ਆਯੋਗ&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="ਟੈਬ ਅਗਲੀ ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਅਗਲੀ ਟੈਬ ਤੇ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="ਟੈਬ ਪਿਛਲੀ ਵਿੱਚ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਪਿਛਲੀ ਟੈਬ ਤੇ ਜਾਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ, ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="ਟਰਮੀਨਲ ਨੂੰ ਮੁਡ਼-ਸੈੱਟ ਅਤੇ ਸਾਫ਼ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟਰਮੀਨਲ ਨੂੰ ਮੁਡ਼-ਸੈੱਟ ਕਰਨ ਤੇ ਸਾਫ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ, ਜੇਕਰ ਤੁਸੀਂ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="ਟਰਮੀਨਲ ਨੂੰ ਮੁਡ਼-ਸੈੱਟ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟਰਮੀਨਲ ਨੂੰ ਮੁਡ਼-ਸੈੱਟ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ, ਜੇਕਰ ਤੁਸੀਂ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤਾ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="ਟਰਮੀਨਲ ਦਾ ਟਾਈਟਲ ਦੇਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟਰਮੀਨਲ ਦਾ ਟਾਈਟਲ ਦੇਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ, ਜੇਕਰ ਤੁਸੀਂ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="ਮੇਨੂ-ਪੱਟੀ ਦੀ ਦਿੱਖ ਤਬਦੀਲ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਮੇਨੂ-ਪੱਟੀ ਦੀ ਦਿੱਖ ਤਬਦੀਲ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ, ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="ਪੂਰੀ ਸਕਰੀਨ ਉੱਤੇ ਸਵਿੱਚ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟਰਮੀਨਲ ਨੂੰ ਪੂਰੀ ਸਕਰੀਨ ਉੱਤੇ ਤਬਦੀਲ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ, ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="ਟੈਕਸਟ ਚੇਪਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟਰਮੀਨਲ ਵਿੱਚ ਵਰਤਣ ਲਈ ਕਲਿਪਬੋਰਡ ਦੀ ਸਮੱਗਰੀ ਨੂੰ ਪਾਰਸ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ। ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ ਨਿਰਧਾਰਿਤ ਕਰ ਦਿੱਤੀ &quot;disabled (ਆਯੋਗ)&quot;, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="ਟੈਕਸਟ ਕਾਪੀ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਟੈਕਸਟ ਦੀ ਕਾਪੀ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;ਆਯੋਗ&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="ਵਿੰਡੋ ਬੰਦ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਵਿੰਡੋ ਬੰਦ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;ਆਯੋਗ&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="ਇੱਕ ਟੈਬ ਬੰਦ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟੈਬ ਬੰਦ ਕਰਨ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;ਆਯੋਗ&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="ਮੌਜੂਦਾ ਟੈਬ ਦੀ ਸਮੱਗਰੀ ਫਾਇਲ ਵਿੱਚ ਸੰਭਾਲਣ ਲਈ ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਟਰਮੀਨਲ ਦੀ ਮੌਜੂਦਾ ਸਮਗੱਰੀ ਨੂੰ ਫਾਇਲ ਵਿੱਚ ਸੰਭਾਲਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ, ਜੇਕਰ ਤੁਸੀਂ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;disabled (ਆਯੋਗ)&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="ਨਵਾਂ ਪਰੋਫਾਇਲ ਬਣਾਉਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਪਰੋਫਾਇਲ ਬਣਾਉਣ ਲਈ ਡਾਈਲਾਗ ਲਿਆਉਣ ਲਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ। ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ। ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ ਨਿਰਧਾਰਿਤ ਕਰ ਦਿੱਤੀ &quot;ਆਯੋਗ&quot;, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="ਨਵਾਂ ਵਿੰਡੋ ਖੋਲ੍ਹਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਨਵੀਂ ਵਿੰਡੋ ਖੋਲ੍ਹਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ। ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;ਆਯੋਗ&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="ਨਵੀਂ ਟੈਬ ਖੋਲ੍ਹਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ">
+							<longdesc>ਨਵੀ ਟੈਬ ਖੋਲ੍ਹਣ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਉਸੇ ਫਾਰਮੈਟ ਵਿੱਚ ਲਿਖੋ, ਜਿਸ ਵਿੱਚ GTK+ ਸਰੋਤ ਫਾਇਲ ਵਿੱਚ ਵਰਤੀਆਂ ਹਨ। ਜੇਕਰ ਤੁਸੀ ਚੋਣ ਸਮੇਂ ਖਾਸ ਸਤਰ &quot;ਆਯੋਗ&quot; ਦਿੱਤੀ, ਤਾਂ ਇਸ ਕਾਰਵਾਈ ਲਈ ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_skey">
+							<local_schema short_desc="ਸ਼ਾਰਟਕੱਟ ਸਵਿੱਚ ਹਾਈਲਾਈਟ">
+								<longdesc>ਡਾਈਲਾਗ ਖੋਲ੍ਹੋ, ਜਦੋਂ ਇੱਕ ਸ਼ਾਰਟਕੱਟ ਨਤੀਜਾ ਆਵੇ ਅਤੇ ਇਸ ਨੂੰ ਦਬਾਉ ਹੋਵੇ। ਡਾਈਲਾਗ ਵਿੱਚ ਦਿੱਤਾ ਗਿਆ ਪਾਸਵਰਡ ਟਰਮੀਨਲ ਨੂੰ ਭੇਜਿਆ ਜਾਵੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="ਕੀ ਸਿਸਟਮ ਫੋਂਟ ਵਰਤਣੇ ਹਨ">
+								<longdesc>ਜੇਕਰ ਸੱਚ ਹੈ ਤਾਂ, ਟਰਮੀਨਲ ਡੈਸਕਟਾਪ ਸਟੈਂਡਰਡ ਫੋਂਟ ਵਰਤੇਗਾ ਜੇ ਇਹ ਮੋਨੋਸਪੇਸ ਹੋਏ (ਅਤੇ ਇਸਤਰਾਂ ਦੇ ਜਿਆਦਾਤਰ ਫੋਂਟ, ਜੋ ਨਾਲ ਹੀ ਆਏ ਹਨ)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="ਕੀ ਟਰਮੀਨਲ ਵਿਦਜੈੱਟ ਲਈ ਸਰੂਪ ਤੋਂ ਰੰਗ ਵਰਤਣੇ ਹਨ">
+								<longdesc>ਜੇਕਰ ਇਹ ਸਹੀ ਹੈ ਤਾਂ, ਥੀਮ ਰੰਗ ਸਕੀਮ, ਜੋ ਕਿ ਟੈਕਸਟ ਐਂਟਰੀ ਡੱਬਿਆਂ ਲਈ ਵਰਤੀ ਜਾ ਰਹੀ ਸੀ, ਨੂੰ ਟਰਮੀਨਲ ਲਈ ਵਰਤਿਆ ਜਾਵੇਗਾ, ਯੂਜ਼ਰ ਦੇ ਚੁਣੇ ਰੰਗਾਂ ਨੂੰ ਰੱਦ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="ਹਟਾਉਣ ਸਵਿੱਚ ਦਾ ਪ੍ਰਭਾਵ">
+								<longdesc>ਦੱਸੋ ਕਿ delete ਸਵਿੱਚ ਕਿਹਡ਼ਾ ਕੋਡ ਬਣਾਏ, ਸੰਭਵ ਮੁੱਲ ਹਨ &quot;ascii-ਡੈਲ&quot; ASCII DEL ਅੱਖਰ ਲਈ, &quot;control-h&quot; ਕੰਟਰੋਲ-H (AKA ASCII BS ਅੱਖਰ), &quot;escape-sequence&quot; ਅਸਕੇਪ ਤਰਤੀਬ ਲਈ ਜੋ ਕਿ ਬੈਕਸਪੇਸ ਨਾਲ ਸਬੰਧਤ ਹਨ ਜਾਂ ਹਟਾਉਣ ਲਈ। ਆਮ ਤੌਰ ਤੇ delete ਲਈ &quot;ascii-del&quot; ਕੋਡ  ਠੀਕ ਮੰਨਿਆ ਗਿਆ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="ਬੈਕਸਪੇਸ ਕੀ ਦਾ ਪ੍ਰਭਾਵ">
+								<longdesc>ਦੱਸੋ ਕਿ ਬੈਕਸਪੇਸ ਸਵਿੱਚ ਕਿਹਡ਼ਾ ਕੋਡ ਬਣਾਏ, ਸੰਭਵ ਮੁੱਲ ਹਨ &quot;ascii-ਡੈਲ&quot; ASCII DEL ਅੱਖਰ ਲਈ, &quot;control-h&quot; ਕੰਟਰੋਲ-H (AKA ASCII BS ਅੱਖਰ), &quot;escape-sequence&quot; ਅਸਕੇਪ ਤਰਤੀਬ ਲਈ ਜੋ ਕਿ ਬੈਕਸਪੇਸ ਨਾਲ ਸਬੰਧਤ ਹਨ ਜਾਂ ਹਟਾਉਣ ਲਈ। ਆਮ ਤੌਰ ਤੇ ਬੈਕਸਪੇਸ ਲਈ &quot;ascii-del&quot; ਕੋਡ ਠੀਕ ਮੰਨਿਆ ਗਿਆ ਹੈ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="ਬੈਕਗਰਾਊਂਡ ਚਿੱਤਰ ਕਿੰਨਾ ਗੂਡ਼ਾ ਹੋਵੇ">
+								<longdesc>ਇੱਕ ਮੁੱਲ 0.0 ਅਤੇ 1.0 ਵਿੱਚਕਾਰ ਦਰਸਾਉਦਾ ਹੈ ਕਿ ਬੈਕਗਰਾਊਂਡ ਚਿੱਤਰ ਦਾ ਗੂਡ਼ਾਪਨ 0.0 ਦਾ ਅਰਥ ਹੈ ਕਿ ਕੋਈ ਗੂਡ਼ਾਪਨ ਨਹੀਂ, 1.0 ਦਾ ਅਰਥ ਹੈ ਕਿ ਪੂਰਾ ਗੂਡ਼ਾਪਨ।ਅਸਲ ਵਿੱਚ ਗੂਡ਼ਾਪਨ ਦੇ ਦੋ ਪੱਧਰ ਹੀ ਹਨ। ਸੋ ਇੱਕ ਬੂਲੀਅਨ ਦੀ ਤਰਾਂ ਕੰਮ ਕਰਦਾ ਹੈ ਜਦੋਂ ਕਿ 0.0 ਮੁੱਲ ਗੂਡ਼ਾਪਨ ਨੂੰ ਆਯੋਗ ਕਰ ਦੇਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="ਕੀ ਬੈਕਗਰਾਊਂਡ ਚਿੱਤਰ ਨੂੰ ਸਕਰੋਲ ਕਰਨਾ ਹੈ">
+								<longdesc>ਜੇ ਸੱਚ ਹੈ ਤਾਂ, ਅਗਲੇ ਪਾਠ ਨਾਲ ਬੈਕਗਰਾਊਂਡ ਵੀ ਏਧਰ-ਓਧਰ ਜਾਵੇਗੀ; ਜੇ ਕਰ ਗਲਤ ਹੈ,ਸਿਰਫ ਉਪਰਲਾ ਪਾਠ ਹੀ ਜਾਵੇਗਾ, ਚਿੱਤਰ ਸਥਿਰ ਰਹੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="ਬੈਕਗਰਾਊਂਡ ਚਿੱਤਰ">
+								<longdesc>ਬੈਕਗਰਾਊਂਡ ਚਿੱਤਰ ਲਈ ਫਾਇਲ ਨਾਂ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="ਬੈਕਗਰਾਊਂਡ ਕਿਸਮ">
+								<longdesc>ਟਰਮੀਨਲ ਦੀ ਬੈਕਗਰਾਊਂਡ ਦੀ ਕਿਸਮ। ਇਹ &quot;solid (ਸਮਰੂਪ)&quot; ਇੱਕ ਰੰਗ ਲਈ, &quot;image (ਚਿੱਤਰ)&quot; ਇੱਕ ਚਿੱਤਰ ਲਈ, ਜਾਂ &quot;transparent (ਪਾਰਦਰਸ਼ੀ)&quot; ਜਾਂ ਤਾਂ ਅਸਲੀ ਪਾਰਦਰਸ਼ਤਾ ਲਈ, ਜੇ ਕੰਪੋਜ਼ੀਸ਼ਨਿੰਗ ਵਿੰਡੋ ਮੈਨੇਜਰ ਚੱਲ ਰਿਹਾ ਹੈ ਜਾਂ pseudo-transparency</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="ਫੋਂਟ">
+								<longdesc>ਇੱਕ ਪੈਨਗੋ ਫੋਂਟ ਨਾਂ। ਜਿਵੇ ਕਿ &quot;Sans 12 (ਸ਼ੰਨਜ਼ ੧੨)&quot; ਜਾਂ &quot;Monospace Bold 14 (ਮੋਨੋਸਪੇਸ ਬੋਲਡ ੧੪)&quot;।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="ਟਰਮੀਨਲ ਕਾਰਜਾਂ ਲਈ ਰੰਗ-ਪੱਟੀ">
+								<longdesc>ਟਰਮੀਨਲ ਕੋਲ 16-ਰੰਗ ਰੰਗ-ਪੱਟੀ ਹੈ, ਜੋ ਕਿ ਇਸ ਅੰਦਰਲੇ ਕਾਰਜ ਵਰਤ ਸਕਦੇ ਹਨ। ਇਹ ਉਹ ਰੰਗ-ਪੱਟੀ ਹੈ, ਰੰਗਾਂ ਦੇ ਨਾਂ ਸੂਚੀ ਵਿੱਚ ਕਾਲਨ ਨਾਲ ਵੱਖਰੇ ਕੀਤੇ ਗਏ ਹਨਰੰਗ ਦਾ ਨਾਂ ਹੈਕਸਾ ਫਾਰਮੈਟ ਵਿੱਚ ਜਿਵੇ ਕਿ &quot;#FF00FF&quot; ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="ਟਰਮੀਨਲ ਵਿੰਡੋ ਲਈ ਆਈਕਾਨ">
+								<longdesc>ਇਸ ਪਰੋਫਾਇਲ ਵਿੱਚ ਟੈਬ/ਵਿੰਡੋ ਲਈ ਆਈਕਾਨ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="ਸ਼ੈਲ ਦੀ ਬਜਾਏ ਸੋਧ ਕਮਾਂਡ ਵਰਤੋਂ">
+								<longdesc>ਸ਼ੈਲ ਦੀ ਬਜਾਏ ਇਹ ਕਮਾਂਡ ਚਲਾਉ, ਜੇਕਰ ਸੋਧ-ਕਮਾਂਡ ਚਲਾਉਣ ਯੋਗ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="ਕਰਸਰ ਦਿੱਖ">
+								<longdesc>ਸੰਭਵ ਮੁੱਲ ਹਨ, ਬਲਾਕ ਕਰਸਰ ਲਈ &quot;block (ਬਲਾਕ)&quot;, ਵਰਟੀਕਲ ਲਾਈਨ ਕਰਸਰ ਲਈ &quot;ibeam (ਆਈਬੀਮ)&quot; ਜਾਂ ਇੱਕ ਹੇਠ ਲਾਈਨ ਕਰਸਰ ਲਈ &quot;underline (ਹੇਠ ਲਾਈਨ)&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="ਕੀ ਕਰਸਰ ਝਪਕਦੀ ਰੱਖਣੀ ਹੈ">
+								<longdesc>ਸੰਭਵ ਮੁੱਲ ਹਨ ਗਲੋਬਲ ਕਰਸਰ ਝਪਕਣ ਸੈਟਿੰਗ ਲਈ &quot;system (ਸਿਸਟਮ) ਜਾਂ &quot;on (ਚਾਲੂ)&quot; ਜਾਂ &quot;off (ਬੰਦ)&quot; ਖਾਸ ਮੋਡ ਸੈੱਟ ਕਰਨ ਵਾਸਤੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="ਕੀ ਸ਼ੈਲ ਦੀ ਬਜਾਏ ਸੋਧੀ ਕਮਾਂਡ ਚਲਾਉਣੀ ਹੈ">
+								<longdesc>ਜੇਕਰ ਇਹ ਸਹੀ ਹੈ ਤਾਂ, ਸੋਧ ਕਮਾਂਡ ਦਾ ਮੁੱਲ ਸ਼ੈਲ ਦੀ ਥਾਂ ਸੈੱਟ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ(_C)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="ਜਦੋਂ ਕਿ ਟਰਮੀਨਲ ਕਮਾਂਡ ਚਾਲੂ ਹੋਵੇ, ਤਾਂ ਲਾਗਇਨ ਰਿਕਾਰਡ ਅੱਪਡੇਟ ਕਰਨਾ ਹੈ">
+								<longdesc>ਜੇਕਰ ਸੱਚ ਹੈ ਤਾਂ, ਸਿਸਟਮ ਦੇ utmp ਅਤੇ wtmp ਰਿਕਾਰਡ ਦਾ ਅੱਪਡੇਟ ਕੀਤਾ ਜਾਵੇਗਾ, ਜਦੋਂ ਵੀ ਟਰਮੀਨਲ ਚਾਲੂ ਹੋਵੇ।।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="ਕੀ ਟਰਮੀਨਲ ਵਿੱਚ ਲਾਗਇਨ ਸ਼ੈਲ ਵਾਂਗ ਕਮਾਂਡ ਚਾਲੂ ਕਰਨੀ ਹੈ">
+								<longdesc>ਜੇਕਰ ਸੱਚ ਹੈ ਤਾਂ, ਕਮਾਂਡ ਜੋ ਕਿ ਟਰਮੀਨਲ ਵਿੱਚ ਹੈ, ਸੈਲ ਤੇ ਲਾਗਇਨ ਹੋਣ ਸਮੇਂ ਚਾਲੂ ਹੋ ਜਾਵੇਗੀ। (argv[0] ਵਿੱਚ ਇਸ ਦੇ ਅੱਗੇ ਹਾਈਫਨ ਹੋਵੇਗਾ)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="ਡਾਇਨਾਮਿਕ ਟਾਈਟਲ ਦਾ ਕੀ ਕਰਨਾ ਹੈ, ਜਦੋਂ ਕਿ ਚਲਾਇਡ ਕਮਾਂਡ ਮੌਜੂਦ ਹੋਵੇ">
+								<longdesc>ਸੰਭਵ ਮੁੱਲ ਹਨ &quot;ਬੰਦ ਕਰੋ&quot; ਟਰਮੀਨਲ ਨੂੰ ਬੰਦ ਕਰਨ ਲਈ ਅਤੇ &quot;ਮੁਡ਼ ਚਾਲੂ&quot; ਕਮਾਂਡ ਨੂੰ ਮੁਡ਼ ਚਾਲੂ ਕਰਨ ਲਈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="ਕੀ ਨਵੀਂ ਆਉਟਪੁੱਟ ਨਾਲ ਹੇਠਾਂ ਵੱਲ ਜਾਣਾ ਹੈ">
+								<longdesc>ਜੇਕਰ ਸੱਚ ਹੈ ਤਾਂ, ਜਦੋਂ ਵੀ ਟਰਮੀਨਲ ਤੇ ਆਉਟਪੁੱਟ ਆਵੇ ਤਾਂ ਹੇਠਾਂ ਜਾਉ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="ਕੀ ਇੱਕ ਸਵਿੱਚ ਦਬਾਉਣ ਨਾਲ ਹੇਠਾਂ ਵੱਲ ਜਾਣਾ ਹੈ">
+								<longdesc>ਜੇ ਸੱਚ ਹੈ ਤਾਂ, ਇੱਕ ਕੀ ਦਬਾਉਣ ਨਾਲ ਸਕਰੋਲ-ਪੱਟੀ ਹੇਠਾਂ ਚਲੀ ਜਾਵੇਗੀ </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="ਕੀ ਸਕਰੋਲਬੈਕ ਵਿੱਚ ਬੇਅੰਤ ਲਾਈਨਾਂ ਦੀ ਗਿਣਤੀ ਰੱਖਣੀ ਹੈ">
+								<longdesc>ਜੇ ਸਹੀਂ ਹੋਇਆ ਤਾਂ ਸਕਰੋਲਬੈਕ ਲਾਈਨ ਨੂੰ ਕਦੇ ਵੀ ਅਣਡਿੱਠਾ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕੇਗਾ। ਸਕਰੋਲਬੈਕ ਅਤੀਤ ਨੂੰ ਆਰਜ਼ੀ ਤੌਰ ਉੱਤੇ ਡਿਸਕ ਉੱਤੇ ਸੰਭਾਲਿਆ ਜਾਂਦਾ ਹੈ, ਇਸਕਰਕੇ ਇਹ ਸਿਸਟਮ ਉੱਤੇ ਥਾਂ ਖਤਮ ਹੋਣ ਦਾ ਕਾਰਨ ਬਣ ਸਕਦਾ ਹੈ, ਜੇ ਟਰਮੀਨਲ ਵਿੱਚ ਬਹੁਤ ਆਉਟਪੁੱਟ ਮਿਲੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="ਸਕਰੋਲਬੈਕ ਵਿੱਚ ਰੱਖਣ ਲਈ ਲਾਇਨਾਂ ਦੀ ਗਿਣਤੀ">
+								<longdesc>ਸਕਰੋਲਬੈਕ ਦੀਆਂ ਸਤਰਾਂ, ਜੋ ਕਿ ਰੱਖਣੀਆਂ ਹਨ। ਤੁਸੀਂ ਟਰਮੀਨਲ ਵਿੱਚ ਇਹਨਾਂ ਲਾਇਨਾਂ ਦੀ ਗਿਣਤੀ ਨਾਲ ਪਿੱਛੇ ਜਾ ਸਕਦੇ ਹੋ; ਜੋ ਸਤਰਾਂ ਸਕਰੋਲ-ਪੱਟੀ ਵਿੱਚ ਪੂਰੀਆ ਨਹੀਂ ਆਉਦੀਆਂ ਨੂੰ ਰੱਦ ਕਰ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ। ਜੇ scrollback_unlimited ਸਹੀਂ ਹੋਇਆ ਤਾਂ ਇਹ ਮੁੱਲ ਅਣਡਿੱਠਾ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="ਸਕਰੋਲ-ਪੱਟੀ ਦੀ ਸਥਿਤੀ">
+								<longdesc>ਟਰਮੀਨਲ ਸਰਕੋਲ ਪੱਟੀ ਕਿੱਥੇ ਰੱਖਣੀ ਹੈ। ਸੰਭਾਵਿਤ ਥਾਵਾਂ ਹਨ &quot;ਖੱਬੇ(left)&quot;, &quot;ਸੱਜੇ(right)&quot;, ਅਤੇ&quot;ਓਹਲੇ(hidden)&quot;।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="ਕਤਾਰਾਂ ਦੀ ਡਿਫਾਲਟ ਗਿਣਤੀ">
+								<longdesc>ਨਵੇਂ ਬਣਾਈ ਟਰਮੀਨਲ ਵਿੰਡੋ ਵਿੱਚ ਕਤਾਰਾਂ ਦੀ ਗਿਣਤੀ। ਜੇ use_custom_default_size ਚੋਣ ਨਾ ਕੀਤੀ ਗਈ ਹੋਵੇ ਤਾਂ ਇਸ ਦਾ ਕੋਈ ਪਰਭਾਵ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="ਕਾਲਮਾਂ ਦੀ ਡਿਫਾਲਟ ਗਿਣਤੀ">
+								<longdesc>ਨਵੇਂ ਬਣਾਈ ਟਰਮੀਨਲ ਵਿੰਡੋ ਵਿੱਚ ਕਾਲਮਾਂ ਦੀ ਗਿਣਤੀ। ਜੇ use_custom_default_size ਚਾਲੂ ਕੀਤੀ ਗਈ ਹੋਵੇ ਤਾਂ ਕੋਈ ਪਰਭਾਵ ਨਹੀਂ ਹੋਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="ਕੀ ਨਵੀਆਂ ਵਿੰਡੋਜ਼ ਲਈ ਪਸੰਦੀਦਾ ਟਰਮੀਨਲ ਸਾਈਜ਼ ਵਰਤਣਾ ਹੈ">
+								<longdesc>ਜੇ ਸੈੱਟ ਕੀਤਾ ਤਾਂ ਨਵੀਂ ਬਣਾਈ ਗਈ ਟਰਮੀਨਲ ਵਿੰਡੋ default_size_columns ਤੇ default_size_rows ਰਾਹੀਂ ਦਿੱਤੇ ਆਕਾਰ ਦੀ ਹੋਵੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="ਅੱਖਰ ਜੋ ਕਿ &quot;ਸ਼ਬਦ ਦਾ ਹਿੱਸਾ&quot; ਹੀ ਮੰਨੇ ਜਾਣ">
+								<longdesc>ਜਦੋਂ ਟੈਕਸਟ ਨੂੰ ਸ਼ਬਦਾਂ ਦੇ ਅਨੁਸਾਰ ਚੁਣਿਆ ਜਾਂਦਾ ਹੈ, ਤਾਂ ਅੱਖਰਾਂ ਦੀ ਤਰਤੀਬ ਨੂੰ ਇੱਕ ਸ਼ਬਦ ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ। ਸੀਮਾ ਇੰਝ ਦਿੱਤੀ ਜਾਦੀ ਹੈ, ਜਿਵੇਂ ਕਿ &quot;A-Z&quot;। ਅਨੁਸਾਰੀ ਹਾਈਫਨ (ਇਹ ਸੀਮਾ ਨਹੀਂ ਵੇਖਾ ਰਿਹਾ ਹੈ) ਪਹਿਲਾਂ ਅੱਖਰ ਦੇਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="ਕੀ ਟਰਮੀਨਲ ਘੰਟੀ ਨੂੰ ਖਾਮੋਸ਼ ਰੱਖਣਾ ਹੈ">
+								<longdesc>ਜੇ ਸੱਚ ਹੈ ਤਾਂ, ਰੌਲਾ ਨਹੀਂ ਪਾਵੇਗਾ, ਐਪਲੀਕੇਸ਼ਨ ਵਲੋਂ ਟਰਮੀਨਲ ਘੰਟੀ ਲਈ ਸੰਕੇਤ ਭੇਜਿਆ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="ਕੀ ਭਾਰੇ ਅੱਖਰ ਯੋਗ ਕਰਨੇ ਹਨ">
+								<longdesc>ਜੇ ਸੱਚ ਹੈ ਤਾਂ ਟਰਮੀਨਲ ਵਿੱਚ ਐਪਲੀਕੇਸ਼ਨ ਦੇ ਟੈਕਸਟ ਬੋਲਡ ਫੇਸ ਕਰ ਦਿੱਤੇ ਜਾਣਗੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="ਟਰਮੀਨਲ ਲਈ ਟਾਈਟਲ">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="ਡਾਇਨਾਮਿਕ ਟਾਈਟਲ ਦਾ ਕੀ ਕਰਨਾ ਹੈ">
+								<longdesc>ਜੇਕਰ ਟਰਮੀਨਲ ਵਿਚਲੇ ਐਪਲੀਕੇਸ਼ਨ ਨੇ ਟਾਈਟਲ ਬਦਲਿਆ ਕੀਤਾ (ਬਹੁਤਿਆਂ ਲੋਕਾਂ ਨੇ ਇਸ ਲਈ ਆਪਣੇ ਸ਼ੈਲ ਬਣਾਏ ਹੋਏ ਹਨ), ਤਾਂ ਸਫ਼ਰੀ-ਸੈੱਟ ਟਾਈਟਲ ਸੰਰਚਿਤ ਟਾਈਟਲ ਨੂੰ ਹਟਾ ਦੇਵੇਗਾ, ਇਸ ਤੋਂ ਪਹਿਲਾਂ, ਪਿਛੋਂ, ਜਾਂ ਤਬਦੀਲ। ਸੰਭਵ ਮੁੱਲ ਹਨ &quot;replace&quot;, &quot;before&quot;, &quot;after&quot;, ਅਤੇ &quot;ignore&quot;।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="ਕੀ ਗੂੜ੍ਹਾ ਟੈਕਸਟ ਸਧਾਰਨ ਟੈਕਸਟ ਵਾਲੇ ਰੰਗ ਹੀ ਵਰਤੇ">
+								<longdesc>ਜੇ ਸਹੀਂ ਕੀਤਾ ਤਾਂ ਗੂੜ੍ਹੇ ਟੈਕਸਟ ਨੂੰ ਸਧਾਰਨ ਟੈਕਸਟ ਦੇ ਰੰਗ ਨਾਲ ਹੀ ਰੈਂਡਰ ਕੀਤਾ ਜਾਵੇਗਾ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="ਟਰਮੀਨਲ ਵਿੱਚ ਗੂੜ੍ਹੇ ਟੈਕਸਟ ਲਈ ਡਿਫਾਲਟ ਰੰਗ">
+								<longdesc>ਟਰਮੀਨਲ ਵਿੱਚ ਗੂੜ੍ਹੇ ਟੈਕਸਟ ਲਈ ਡਿਫਾਲਟ ਰੰਗ, ਰੰਗ ਹਦਾਇਤਾਂ ਵਾਂਗ (HTML-ਸਟਾਇਲ ਵਾਂਗ ਹੈਕਸਾ ਅੱਖਰ ਵੀ ਹੋ ਸਕਦਾ ਹੈ ਜਾਂ ਰੰਗ ਦਾ ਨਾਂ ਵੀ ਜਿਵੇਂ ਕਿ &quot;red&quot;)। ਇਸ ਨੂੰ ਅਣਡਿੱਠਾ ਕੀਤਾ ਜਾਵੇਗਾ, ਜੇ bold_color_same_as_fg ਸੈੱਟ ਹੋਇਆ ਤਾਂ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="ਟਰਮੀਨਲ ਬੈਕਗਰਾਊਂਡ ਲਈ ਡਿਫਾਲਟ ਰੰਗ">
+								<longdesc>ਟਰਮੀਨਲ ਬੈਕਗਰਾਊਂਡ ਲਈ ਡਿਫਾਲਟ ਰੰਗ, ਰੰਗ ਹਦਾਇਤਾਂ ਵਾਂਗ(HTML-ਸਟਾਇਲ ਵਾਂਗ ਹੈਕਸਾ ਅੱਖਰ ਵੀ ਹੋ ਸਕਦਾ ਹੈ ਜਾਂ ਰੰਗ ਦਾ ਨਾਂ ਵੀ ਜਿਵੇਂ ਕਿ &quot;red&quot;)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="ਟਰਮੀਨਲ ਵਿੱਚ ਟੈਕਸਟ ਲਈ ਡਿਫਾਲਟ ਰੰਗ">
+								<longdesc>ਟਰਮੀਨਲ ਵਿੱਚ ਟੈਕਸਟ ਲਈ ਡਿਫਾਲਟ ਰੰਗ, ਰੰਗ ਹਦਾਇਤਾਂ ਵਾਂਗ(HTML-ਸਟਾਇਲ ਵਾਂਗ ਹੈਕਸਾ ਅੱਖਰ ਵੀ ਹੋ ਸਕਦਾ ਹੈ ਜਾਂ ਰੰਗ ਦਾ ਨਾਂ ਵੀ ਜਿਵੇਂ ਕਿ &quot;red&quot;)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="ਕੀ ਨਵੀਆਂ ਵਿੰਡੋਜ਼/ਟੈਬਾਂ ਵਿੱਚ ਮੇਨੂ-ਪੱਟੀ ਵੇਖਾਉਣੀ ਹੈ">
+								<longdesc>ਸਹੀਂ ਹੈ ਤਾਂ, ਨਵੀਆਂ ਵਿੰਡੋਜ਼ ਵਿੱਚ ਮੇਨੂ-ਪੱਟੀ ਵੇਖਾਈ ਜਾਵੇਗੀ (ਇਸ ਪਰੋਫਾਇਲ ਵਿੱਚ ਵਿੰਡੋ ਤੇ ਟੈਬ ਲਈ)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="ਪਰੋਫਾਇਲ ਦਾ ਮਾਨਵ-ਪਡ਼ਨ ਯੋਗ ਨਾਂ">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="ਕੀ ਟਰਮੀਨਲ ਵਿੰਡੋ ਬੰਦ ਕਰਨ ਸਮੇਂ ਪੁਸ਼ਟੀ ਕਰਵਾਈ ਜਾਵੇ">
+							<longdesc>ਜੇਕਰ ਇੱਕ ਟਰਮੀਨਲ ਵਿਡੋ ਵਿੱਚ ਇੱਕ ਤੋਂ ਵਧੇਰੇ ਟੈਬ ਖੁੱਲੇ ਹੋਣ ਤਾਂ ਵਿੰਡੋ ਬੰਦ ਕਰਨ ਸਮੇਂ ਕੀ ਇਸ ਦੀ ਪੁਸ਼ਟੀ ਕਰਵਾਈ ਜਾਵੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="ਉਪਲੱਬਧ ਇੰਕੋਡਿੰਗ ਦੀ ਲਿਸਟ">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="ਕੀ ਮੇਨੂ-ਪੱਟੀ ਪਹੁੰਚ ਲਈ ਸਟੈਂਡਰਡ GTK ਸ਼ਾਰਟਕੱਟ ਨੂੰ ਯੋਗ ਕਰਨਾ ਹੈ">
+							<longdesc>ਆਮਤੌਰ ਉੱਤੇ ਤੁਸੀਂ F10 ਨਾਲ ਮੇਨੂ-ਪੱਟੀ ਖੋਲ ਸਕਦੇ ਹੋ। ਇਸ ਨੂੰ ਸੋਧਿਆ ਵੀ ਜਾ ਸਕਦਾ ਹੈ gtkrc (gtk-menu-bar-accel = &quot;ਜੋ ਵੀ&quot;) ਨਾਲ। ਇਹ ਚੋਣ ਤੁਹਾਨੂੰ ਸਟੈਂਡਰਡ ਮੇਨੂ-ਪੱਟੀ ਐਕਸਲੇਟਰ ਨੂੰ ਆਯੋਗ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="ਕੀ ਮੇਨੂ-ਪੱਟੀ ਵਿੱਚ ਪਹੁੰਚ ਸਵਿੱਚ ਹੋਣ">
+							<longdesc>ਕੀ ਆਲਟ (Alt)+ ਅੱਖਰ (letter) ਮੇਨੂ-ਪੱਟੀ ਲਈ ਪਹੁੰਚ ਸਵਿੱਚ ਹੋਣ। ਇਹ ਟਰਮੀਨਲ ਵਿੱਚ ਚੱਲ ਰਹੇ ਕੁਝ ਕਾਰਜਾਂ ਨਾਲ ਟਕਰਾ ਪੈਦਾ ਕਰ ਸਕਦੀਆ ਹਨ, ਸੋ ਇਹਨਾਂ ਨੂੰ ਬੰਦ ਵੀ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="ਨਵੇਂ ਟਰਮੀਨਲ ਵਿੱਚ ਵਰਤਣ ਲਈ ਪਰੋਫਾਇਲ">
+							<longdesc>ਪਰੋਫਾਇਲ, ਜੋ ਕਿ ਨਵੀਂ ਵਿੰਡੋ ਜਾਂ ਟੈਬ ਖੋਲ੍ਹਣ ਸਮੇਂ ਵਰਤਣਾ ਹੈ। ਇਹ ਪਰੋਫਾਇਲ ਲਿਸਟ ਵਿੱਚ ਹੋਣਾ ਜ਼ਰੂਰੀ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="ਪਰੋਫਾਇਲਾਂ ਦੀ ਲਿਸਟ">
+							<longdesc>ਗਨੋਮ-ਟਰਮੀਨਲ ਦੀ ਜਾਣਕਾਰੀ ਵਿੱਚਲੇ ਪਰੋਫਾਇਲਾਂ ਦੀ ਲਿਸਟ ਹੈ। ਲਿਸਟ ਵਿੱਚ ਸਤਰਾਂ ਸਬ-ਡਾਇਰੈਕਟਰੀਆਂ /apps/gnome-terminal/profiles ਦੇ ਅਨੁਸਾਰ ਰੱਖਦੀਆਂ ਹਨ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-session">
+				<dir name="options">
+					<entry name="logout_prompt">
+						<local_schema short_desc="ਲਾਗਆਉਟ ਪੁਸ਼ਟੀ">
+							<longdesc>ਸੁਰੱਖਿਆ ਕਾਰਨਾਂ ਕਰਕੇ, ਗਨੋਮ-ਸ਼ੈਸ਼ਨ ਸ਼ੈਸ਼ਨ ਖਤਮ ਕਰਨ ਵੇਲੇ ਯੂਜ਼ਰ ਨੂੰ ਪੁੱਛੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_save_session">
+						<local_schema short_desc="ਸ਼ੈਸ਼ਨ ਸੰਭਾਲੋ">
+							<longdesc>ਜੇ ਚੋਣ ਕੀਤੀ ਤਾਂ ਗਨੋਮ-ਸ਼ੈਸ਼ਨ ਆਟੋਮੈਟਿਕ ਹੀ ਸ਼ੈਸ਼ਨ ਨੂੰ ਸੰਭਾਲ ਲਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome_settings_daemon">
+				<entry name="volume_step">
+					<local_schema short_desc="ਆਵਾਜ਼ ਵਾਧਾ">
+						<longdesc>ਆਵਾਜ਼ ਵਧੇ, ਜਿਵੇਂ ਅਵਾਜ਼ ਦੀ ਪ੍ਰਤੀਸ਼ਤ ਨਾਲ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<dir name="gtk-modules">
+					<entry name="gail:atk-bridge">
+						<local_schema short_desc="ਅਸੈੱਸਬਿਲਟੀ ਸਹਿਯੋਗ ਲਈ GTK+ ਮੋਡੀਊਲ">
+							<longdesc>ਇਹ ਕੁੰਜੀ ਪਛਾਣ ਕਰਦੀ ਹੈ ਕਿ ਕੀ GTK+ ਮੋਡੀਊਲ ਅਸੈਸਬਿਲਟੀ ਸਹਿਯੋਗ ਲੋਡ ਕਰੇ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybindings">
+					<entry name="next">
+						<local_schema short_desc="ਅਗਲਾ ਟਰੈਕ">
+							<longdesc>ਅਗਲਾ ਟਰੈਕ ਉੱਤੇ ਜਾਣ ਲਈ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="previous">
+						<local_schema short_desc="ਪਿਛਲਾ ਟਰੈਕ">
+							<longdesc>ਪਿਛਲੇ ਟਰੈਕ ਉੱਤੇ ਜਾਣ ਲਈ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="stop">
+						<local_schema short_desc="ਪਲੇਅਬੈਕ ਰੋਕੋ">
+							<longdesc>ਪਲੇਅਬੈਕ ਰੋਕਣ ਵਾਸਤੇ ਡਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pause">
+						<local_schema short_desc="ਪਲੇਅਬੈਕ ਪੌਜ਼">
+							<longdesc>ਪਲੇਅਬੈਕ ਪੌਜ਼ ਕਰਨ ਵਾਸਤੇ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="play">
+						<local_schema short_desc="ਚਲਾਓ (ਜਾਂ ਚਲਾਓ/ਵਿਰਾਮ)">
+							<longdesc>ਪਲੇਅਬੈਕ ਸਟਾਰਟ ਕਰਨ ਵਾਸਤੇ ਬਾਈਡਿੰਗ (ਜਾਂ ਪਲੇਅ/ਪੌਜ਼ ਬਦਲਣ ਵਾਸਤੇ)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media">
+						<local_schema short_desc="ਮੀਡਿਆ ਪਲੇਅਰ ਲਾਂਚ">
+							<longdesc>ਮੀਡਿਆ ਪਲੇਅਰ ਲਾਂਚ ਕਰਨ ਵਾਸਤੇ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="www">
+						<local_schema short_desc="ਵੈਬ-ਝਲਕਾਰਾ ਚਲਾਓ">
+							<longdesc>ਵੈਬ ਬਰਾਊਜ਼ਰ ਲਾਂਚ ਕਰਨ ਲਈ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="calculator">
+						<local_schema short_desc="ਕੈਲਕੂਲੇਟਰ ਲਾਂਚ ਕਰੋ">
+							<longdesc>ਕੈਲਕੂਲੇਟਰ ਲਾਂਚ ਕਰਨ ਲਈ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="ਮੱਦਦ-ਝਲਕਾਰਾ ਚਲਾਓ">
+							<longdesc>ਮੱਦਦ ਬਰਾਊਜ਼ਰ ਲਾਂਚ ਲਈ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screensaver">
+						<local_schema short_desc="ਪਰਦੇ ਨੂੰ ਤਾਲਾ">
+							<longdesc>ਸਕਰੀਨ ਲਾਕ ਕਰਨ ਵਾਸਤੇ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="email">
+						<local_schema short_desc="ਈਮੇਲ ਕਲਾਇਟ ਲਾਂਚ ਕਰੋ">
+							<longdesc>ਈਮੇਲ ਕਲਾਇਟ ਲਾਂਚ ਕਰਨ ਲਈ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search">
+						<local_schema short_desc="ਖੋਜ">
+							<longdesc>ਖੋਜ ਟੂਲ ਲਾਂਚ ਕਰਨ ਵਾਸਤੇ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home">
+						<local_schema short_desc="ਘਰ ਫੋਲਡਰ">
+							<longdesc>ਘਰ ਫੋਲਡਰ ਖੋਲ੍ਹਣ ਵਾਸਤੇ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="eject">
+						<local_schema short_desc="ਬਾਹਰ ਕੱਢੋ">
+							<longdesc>ਓਪਟੀਕਲ ਡਿਸਕ ਬਾਹਰ ਕੱਢਣ ਵਾਸਤੇ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="power">
+						<local_schema short_desc="ਲਾਗਆਉਟ">
+							<longdesc>ਲਾਗਆਉਟ ਲਈ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_up">
+						<local_schema short_desc="ਆਵਾਜ਼ ਵਧਾਓ">
+							<longdesc>ਸਿਸਟਮ ਵਾਲੀਅਮ ਵਧਾਉਣ ਵਾਸਤੇ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_down">
+						<local_schema short_desc="ਆਵਾਜ਼ ਘਟਾਓ">
+							<longdesc>ਸਿਸਟਮ ਵਾਲੀਅਮ ਘੱਟ ਕਰਨ ਵਾਸਤੇ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_mute">
+						<local_schema short_desc="ਆਵਾਜ਼ ਚੁੱਪ">
+							<longdesc>ਸਿਸਟਮ ਵਾਲੀਅਮ ਚੁੱਪ ਕਰਨ ਵਾਸਤੇ ਬਾਈਡਿੰਗ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="touchpad">
+						<local_schema short_desc="ਟੱਚਪੈਡ ਬਦਲੋ">
+							<longdesc>ਟੱਚਪੈਂਡ ਨਾਲ ਸਬੰਧ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰੋ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="plugins">
+					<dir name="xsettings">
+						<entry name="active">
+							<local_schema short_desc="xsetting ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>xsetting ਦੇ ਪਰਬੰਧ ਵਾਸਤੇ ਪਲੱਗਇਨ ਯੋਗ ਕਰਨ ਲਈ ਸਹੀਂ ਸੈੱਟ ਕਰੋ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="xrdb">
+						<entry name="active">
+							<local_schema short_desc="xrdb ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>xrdb ਸੈਟਿੰਗ ਦੇ ਪਰਬੰਧ ਵਾਸਤੇ ਪਲੱਗਇਨ ਯੋਗ ਕਰਨ ਲਈ ਸਹੀਂ ਸੈੱਟ ਕਰੋ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="xrandr">
+						<entry name="active">
+							<local_schema short_desc="XRandR ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>XRandR ਸੈਟਿੰਗ ਦੇ ਪਰਬੰਧ ਵਾਸਤੇ ਪਲੱਗਇਨ ਯੋਗ ਕਰਨ ਲਈ ਸਹੀਂ ਸੈੱਟ ਕਰੋ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="typing-break">
+						<entry name="active">
+							<local_schema short_desc="ਟਾਈਪਿੰਗ ਬਰੇਕ ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>ਟਾਈਪਿੰਗ ਬਰੇਕ ਦੇ ਪਰਬੰਧ ਵਾਸਤੇ ਪਲੱਗਇਨ ਯੋਗ ਕਰਨ ਲਈ ਸਹੀਂ ਸੈੱਟ ਕਰੋ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="sound">
+						<entry name="active">
+							<local_schema short_desc="ਸਾਊਂਡ ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>ਸਾਊਂਡ ਸੈਂਪਲ ਕੈਸ਼ ਦੇ ਪਰਬੰਧ ਵਾਸਤੇ ਪਲੱਗਇਨ ਯੋਗ ਕਰਨ ਲਈ ਸਹੀਂ ਸੈੱਟ ਕਰੋ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="smartcard">
+						<entry name="active">
+							<local_schema short_desc="ਸਮਾਰਟਕਾਰਡ ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>ਸਹੀਂ ਸੈੱਟ ਕਰੋ, ਜੇ ਸਮਾਰਟ ਕਾਰਡ ਹਟਾਉਣ ਉੱਤੇ ਲਾਕ ਕੀਤੀ ਸਕਰੀਨ ਦੇ ਪਰਬੰਧ ਵਾਸਤੇ ਪਲੱਗਇਨ ਵਰਤਣੀ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mouse">
+						<entry name="active">
+							<local_schema short_desc="ਮਾਊਂਸ ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>ਮਾਊਂਸ ਸੈਟਿੰਗ ਦੇ ਪਰਬੰਧ ਲਈ ਪਲੱਗਇਨ ਯੋਗ ਕਰਨ ਵਾਸਤੇ ਸਹੀਂ ਸੈੱਟ ਕਰੋ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="media-keys">
+						<entry name="active">
+							<local_schema short_desc="ਮੀਡਿਆ ਸਵਿੱਚਾਂ ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>ਮਲਟੀ-ਮੀਡਿਆ ਸਵਿੱਚ ਸੈਟਿੰਗ ਦੇ ਪਰਬੰਧ ਵਾਸਤੇ ਪਲੱਗਇਨ ਯੋਗ ਕਰਨ ਲਈ ਸਹੀਂ ਸੈੱਟ ਕਰੋ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="active">
+							<local_schema short_desc="ਕੀਬੋਰਡ ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>ਕੀਬੋਰਡ ਸੈਟਿੰਗ ਦੇ ਪਰਬੰਧ ਵਾਸਤੇ ਪਲੱਗਇਨ ਯੋਗ ਕਰਨ ਲਈ ਸਹੀਂ ਸੈੱਟ ਕਰੋ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keybindings">
+						<entry name="active">
+							<local_schema short_desc="ਕੀ-ਬਾਈਡਿੰਗ ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>ਕੀਬਾਈਡਿੰਗ ਦੇ ਪਰਬੰਧ ਵਾਸਤੇ ਪਲੱਗਇਨ ਯੋਗ ਕਰਨ ਲਈ ਸਹੀਂ ਸੈੱਟ ਕਰੋ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="housekeeping">
+						<entry name="ignore_paths">
+							<local_schema short_desc="ਅਣਡਿੱਠਾ ਕਰਨ ਲਈ ਮਾਊਂਟ ਪਾਥ">
+								<longdesc>ਮਾਊਂਟ ਪਾਥ ਦੀ ਲਿਸਟ ਦਿਓ, ਜੋ ਕਿ ਘੱਟ ਥਾਂ ਹੋਣ ਦੀ ਸੂਚਨਾ ਦੇਣ ਲਈ ਅਣਡਿੱਠਾ ਕੀਤਾ ਜਾਣਗੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="min_notify_period">
+							<local_schema short_desc="ਦੁਹਰਾਉ ਚੇਤਾਵਨੀ ਲਈ ਘੱਟੋ-ਘੱਟ ਸੂਚਨਾ ਸਮਾਂ">
+								<longdesc>ਸਮਾਂ ਮਿੰਟਾਂ ਵਿੱਚ ਦਿਉ। ਵਾਲੀਅਮ ਲਈ ਅਗਲੀ ਚੇਤਾਵਨੀ ਇਸ ਸਮੇਂ ਤੋਂ ਪਹਿਲਾਂ ਨਹੀਂ ਵੇਖਾਈ ਜਾਵੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_size_gb_no_notify">
+							<local_schema short_desc="ਖਾਲੀ ਥਾਂ ਨਾ ਸੂਚਨਾ ਥਰੈਸ਼ਹੋਲਡ">
+								<longdesc>ਮਾਤਰਾ GB ਵਿੱਚ ਦਿਓ। ਜੇ ਖਾਲੀ ਥਾਂ ਦੀ ਮਾਤਰਾ ਇਸ ਤੋਂ ਵੱਧ ਹੋਵੇ ਤਾਂ ਕੋਈ ਵੀ ਚੇਤਾਵਨੀ ਨਹੀਂ ਵੇਖਾਈਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify_again">
+							<local_schema short_desc="ਅਗਲਾ ਖਾਲੀ ਫੀਸਦੀ ਸੂਚਨਾ ਥਰੈਸ਼ਹੋਲਡ">
+								<longdesc>ਫੀਸਦੀ ਦਿਓ, ਜਿਸ ਲਈ ਖਾਲੀ ਡਿਸਕ ਥਾਂ ਅਗਲੀ ਚੇਤਾਵਨੀ ਤੋਂ ਪਹਿਲਾਂ ਘੱਟ ਜਾਵੇ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify">
+							<local_schema short_desc="ਖਾਲੀ ਫੀਸਦੀ ਸੂਚਨਾ ਥਰੈਸ਼ਹੋਲਡ">
+								<longdesc>ਘੱਟ ਡਿਸਕ ਥਾਂ ਦੀ ਸ਼ੁਰੂਆਤੀ ਚੇਤਾਵਨੀ ਦੇਣ ਲਈ ਫੀਸਦੀ ਖਾਲੀ ਥਾਂ ਥਰੈਸ਼ਹੋਲਡ ਹੈ। ਜੇ ਫੀਸਦੀ ਖਾਲੀ ਥਾਂ ਇਸ ਤੋਂ ਘੱਟ ਜਾਵੇਗੀ ਤਾਂ ਚੇਤਾਵਨੀ ਵੇਖਾਈ ਜਾਵੇਗੀ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="active">
+							<local_schema short_desc="ਹਾਊਸ-ਕੀਪਿੰਗ ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>ਹਾਊਸ-ਕੀਪਿੰਗ ਪਲੱਗਇਨ ਚਾਲੂ ਕਰਨ ਲਈ ਸਹੀਂ ਸੈੱਟ ਕਰੋ, ਫਾਇਲ ਕੈਸ਼ੇ ਨੂੰ ਸਾਫ਼ ਕਰਨ ਵਾਸਤੇ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="font">
+						<entry name="active">
+							<local_schema short_desc="ਫੋਂਟ ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>ਫੋਂਟ ਸੈਟਿੰਗ ਦਾ ਪਰਬੰਧ ਕਰਨ ਵਾਸਤੇ ਪਲੱਗਇਨ ਯੋਗ ਕਰਨ ਲਈ ਸਹੀਂ ਸੈੱਟ ਕਰੋ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="clipboard">
+						<entry name="active">
+							<local_schema short_desc="ਕਲਿੱਪਬੋਰਡ ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>ਕਲਿੱਪਬੋਰਡ ਸੈਟਿੰਗ ਦਾ ਪਰਬੰਧ ਕਰਨ ਵਾਸਤੇ ਪਲੱਗਇਨ ਯੋਗ ਕਰਨ ਲਈ ਸਹੀ ਸੈੱਟ ਕਰੋ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="background">
+						<entry name="active">
+							<local_schema short_desc="ਬੈਕਗਰਾਊਂਡ ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>ਡੈਸਕਟਾਪ ਬੈਕਗਰਾਊਂਡ ਸੈਟਿੰਗ ਦੇ ਪਰਬੰਧ ਵਾਸਤੇ ਪਲੱਗਇਨ ਯੋਗ ਕਰਨ ਵਾਸਤੇ ਸਹੀਂ ਸੈੱਟ ਕਰੋ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="a11y-keyboard">
+						<entry name="active">
+							<local_schema short_desc="ਅਸੈੱਸਬਿਲਟੀ ਕੀਬੋਰਡ ਪਲੱਗਇਨ ਯੋਗ">
+								<longdesc>ਅਸੈੱਸਬਿਲਟੀ ਕੀਬੋਰਡ ਸੈਟਿੰਗ ਦੇ ਪਰਬੰਧ ਵਾਸਤੇ ਪਲੱਗਇਨ ਯੋਗ ਕਰਨ ਲਈ ਸਹੀਂ ਸੈੱਟ ਕਰੋ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="xrandr">
+					<entry name="default_configuration_file">
+						<local_schema short_desc="RandR ਲਈ ਡਿਫਾਲਟ ਸੰਰਚਨਾ ਫਾਇਲ">
+							<longdesc>XRandR ਪਲੱਗਇਨ ਇਸ ਕੁੰਜੀ ਰਾਹੀਂ ਦਿੱਤੀ ਡਿਫਾਲਟ ਸੰਰਚਨਾ &apos;ਚ ਫਾਇਲ ਲੱਭੇਗੀ। ਇਹ ~/.config/monitors.xml ਵਰਗੀ ਹੁੰਦੀ ਹੈ, ਜੋ ਕਿ ਆਮ ਤੌਰ ਉੱਤੇ ਯੂਜ਼ਰ ਦੀ ਘਰ ਡਾਇਰੈਕਟਰੀ &apos;ਚ ਸਟੋਰ ਕੀਤੀ ਜਾਂਦੀ ਹੈ। ਜੇ ਯੂਜ਼ਰ ਕੋਲ ਇਹ ਫਾਇਲ ਨਾ ਹੋਵੇ  ਜਾਂ ਜੇ ਹੋਵੇ, ਪਰ ਯੂਜ਼ਰ ਦੇ ਮਾਨੀਟਰ ਸੈੱਟਅੱਪ ਨਾਲ ਨਾ ਮਿਲਦੀ ਹੋਵੇ ਤਾਂ, ਇਸ ਕੁੰਜੀ ਰਾਹੀਂ ਦਿੱਤੀ ਫਾਇਲ ਵਰਤੀ ਜਾਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="turn_on_laptop_monitor_at_startup">
+						<local_schema short_desc="ਸਿਸਟਮ ਬੂਟ ਦੇ ਬਾਅਦ ਲੈਪਟਾਪ ਮਾਨੀਟਰ ਚਾਲੂ ਕਰੋ">
+							<longdesc>ਸਿਸਟਮ ਬੂਟ ਕਰਨ ਦੇ ਬਾਅਦ ਲੈਪਟਾਪ ਮਾਨੀਟਰ ਚਾਲੂ ਕਰੋ, ਜੇ ਸਿਸਟਮ ਬੂਟ ਕਰਨ ਦੌਰਾਨ ਯੂਜ਼ਰ ਬਾਹਰੀ ਮਾਨੀਟਰ ਜੋੜੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="turn_on_external_monitors_at_startup">
+						<local_schema short_desc="ਸਿਸਟਮ ਬੂਟ ਕਰਨ ਦੇ ਬਾਅਦ ਬਾਹਰੀ ਮਾਨੀਟਰ ਚਾਲੂ ਕਰੋ">
+							<longdesc>ਸਿਸਟਮ ਬੂਟ ਕਰਨ ਦੇ ਬਾਅਦ ਬਾਹਰੀ ਮਾਨੀਟਰ ਚਾਲੂ ਕਰੋ, ਜੇ ਯੂਜ਼ਰ ਸਿਸਟਮ ਬੂਟ ਕਰਨ ਦੇ ਦੌਰਾਨ ਬਾਹਰੀ ਮਾਨੀਟਰ ਜੋੜੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_notification_icon">
+						<local_schema short_desc="ਡਿਸਪਲੇਅ ਨੂੰ ਨੋਟੀਫਿਕੇਸ਼ਨ ਖੇਤਰ &apos;ਚ ਵੇਖੋ">
+							<longdesc>ਕੀ ਆਈਟਮ ਲਈ ਨੋਟੀਫਿਕੇਸ਼ਨ ਆਈਕਾਨ ਵੇਖਾਇਆ ਜਾਵੇ ਤਾਂ ਪੈਨਲ &apos;ਚ ਉੱਤੇ ਵੇਖਾਈ ਜਾਵੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="yelp">
+				<entry name="fixed_font">
+					<local_schema short_desc="ਸਥਿਰ ਟੈਕਲਟ ਲਈ ਫੋਂਟ">
+						<longdesc>ਸਥਿਰ ਚੌੜਾਈ ਨਾਲ ਟੈਕਸਟ ਲਈ ਫੋਂਟ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="variable_font">
+					<local_schema short_desc="ਟੈਕਸਟ ਲਈ ਫੋਂਟ">
+						<longdesc>ਅਸਥਿਰ ਚੌੜਾਈ ਨਾਲ ਟੈਕਸਟ ਲਈ ਫੋਂਟ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_system_fonts">
+					<local_schema short_desc="ਸਿਸਟਮ ਫੋਂਟ ਵਰਤੋਂ">
+						<longdesc>ਸਿਸਟਮ ਲਈ ਦਿੱਤੇ ਡਿਫਾਲਟ ਫੋਂਟ ਵਰਤੋਂ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_caret">
+					<local_schema short_desc="ਕਾਰੇਟ ਵਰਤੋਂ">
+						<longdesc>ਕੀ-ਬੋਰਡ ਤੋਂ ਵਰਤਣਯੋਗ ਕਾਰੇਟ ਪੇਜ਼ ਵੇਖਣ ਲਈ ਵਰਤੋਂ।</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="metacity">
+				<dir name="window_keybindings">
+					<entry name="move_to_center">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਸਕਰੀਨ ਦੇ ਸੈਂਟਰ ਵਿੱਚ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_w">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਸਕਰੀਨ ਦੇ ਪੱਛਮੀ (ਖੱਬੇ) ਪਾਸੇ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_e">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਸਕਰੀਨ ਦੇ ਪੂਰਬੀ (ਸੱਜੇ) ਪਾਸੇ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_s">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਸਕਰੀਨ ਦੇ ਦੱਖਣੀ (ਹੇਠਾਂ) ਪਾਸੇ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_n">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਸਕਰੀਨ ਦੇ ਉੱਤਰੀ ਪਾਸੇ (ਉੱਤੇ) ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_se">
+						<local_schema short_desc="ਵਿੰਡੋ ਦੱਖਣੀ-ਪੂਰਬੀ (ਹੇਠਾਂ ਸੱਜੇ) ਕੋਨੇ &apos;ਚ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_sw">
+						<local_schema short_desc="ਵਿੰਡੋ ਦੱਖਣੀ-ਪੱਛਮੀ (ਹੇਠਾਂ ਖੱਬੇ) ਕੋਨੇ &apos;ਚ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_ne">
+						<local_schema short_desc="ਵਿੰਡੋ ਉੱਤਰੀ-ਪੂਰਬੀ (ਉੱਤੇ ਸੱਜੇ) ਕੋਨੇ &apos;ਚ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_nw">
+						<local_schema short_desc="ਵਿੰਡੋ ਉੱਤਰੀ-ਪੱਛਮੀ (ਉੱਤੇ-ਖੱਬੇ) ਕੋਨੇ &apos;ਚ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="maximize_horizontally">
+						<local_schema short_desc="ਵਿੰਡੋ ਖਿਤਿਜੀ ਅਧਿਕਤਮ">
+						</local_schema>
+					</entry>
+					<entry name="maximize_vertically">
+						<local_schema short_desc="ਵਿੰਡੋ ਲੰਬਕਾਰੀ ਅਧਿਕਤਮ">
+						</local_schema>
+					</entry>
+					<entry name="lower">
+						<local_schema short_desc="ਹੋਰ ਵਿੰਡੋ ਹੇਠਾਂ ਥੱਲੇ ਵਾਲੀ ਵਿੰਡੋ">
+						</local_schema>
+					</entry>
+					<entry name="raise">
+						<local_schema short_desc="ਹੋਰ ਵਿੰਡੋ ਤੋਂ ਉੱਪਰਲੀ ਵਿੰਡੋ ਉਠਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="raise_or_lower">
+						<local_schema short_desc="ਵਿੰਡੋ ਉਭਾਰੋ, ਜੇ ਹੋਰ ਵਿੰਡੋ ਨਾਲ ਢੱਕੀ ਹੈ, ਨਹੀਂ ਤਾਂ ਹੇਠਾਂ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_down">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਇੱਕ ਵਰਕਸਪੇਸ ਹੇਠਾਂ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_up">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਇੱਕ ਵਰਕਸਪੇਸ ਉੱਤੇ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_right">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਇੱਕ ਵਰਕਸਪੇਸ ਸੱਜੇ ਵੱਲ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_left">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਇੱਕ ਵਰਕਸਪੇਸ ਖੱਬੇ ਵੱਲ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_12">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਵਰਕਸਪੇਸ 12 ਵਿੱਚ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_11">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਵਰਕਸਪੇਸ 11 ਵਿੱਚ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_10">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਵਰਕਸਪੇਸ 10 ਵਿੱਚ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_9">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਵਰਕਸਪੇਸ 9 ਵਿੱਚ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_8">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਵਰਕਸਪੇਸ 8 ਵਿੱਚ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_7">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਵਰਕਸਪੇਸ 7 ਵਿੱਚ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_6">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਵਰਕਸਪੇਸ 6 ਵਿੱਚ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_5">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਵਰਕਸਪੇਸ 5 ਵਿੱਚ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_4">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਵਰਕਸਪੇਸ 4 ਵਿੱਚ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_3">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਵਰਕਸਪੇਸ 3 ਵਿੱਚ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_2">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਵਰਕਸਪੇਸ 2 ਵਿੱਚ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_1">
+						<local_schema short_desc="ਵਿੰਡੋ ਨੂੰ ਵਰਕਸਪੇਸ 1 ਵਿੱਚ ਲਿਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="toggle_on_all_workspaces">
+						<local_schema short_desc="ਬਦਲੋ ਕਿ ਕੀ ਵਿੰਡੋ ਸਭ ਵਰਕਸਪੇਸਾਂ ਵਿੱਚ ਹੋਵੇ ਜਾਂ ਇੱਕ ਵਿੱਚ">
+						</local_schema>
+					</entry>
+					<entry name="begin_resize">
+						<local_schema short_desc="ਵਿੰਡੋ ਮੁੜ-ਅਕਾਰ">
+						</local_schema>
+					</entry>
+					<entry name="begin_move">
+						<local_schema short_desc="ਵਿੰਡੋ ਹਿਲਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="close">
+						<local_schema short_desc="ਵਿੰਡੋ ਬੰਦ ਕਰੋ">
+						</local_schema>
+					</entry>
+					<entry name="minimize">
+						<local_schema short_desc="ਵਿੰਡੋ ਅਲਪੀਕਰਨ">
+						</local_schema>
+					</entry>
+					<entry name="toggle_shaded">
+						<local_schema short_desc="ਰੰਗਤ ਸਥਿਤੀ ਕਰੋ">
+						</local_schema>
+					</entry>
+					<entry name="unmaximize">
+						<local_schema short_desc="ਵਿੰਡੋ ਮੁੜ-ਸਟੋਰ">
+						</local_schema>
+					</entry>
+					<entry name="maximize">
+						<local_schema short_desc="ਵਿੰਡੋ ਅਧਿਕਤਮ">
+						</local_schema>
+					</entry>
+					<entry name="toggle_above">
+						<local_schema short_desc="ਬਦਲੋ ਕਿ ਕੀ ਵਿੰਡੋ ਹਮੇਸ਼ਾ ਦੂਜਿਆਂ ਵਿੰਡੋਜ਼ ਉੱਤੇ ਵੇਖਾਈ ਦੇਵੇ">
+						</local_schema>
+					</entry>
+					<entry name="toggle_maximized">
+						<local_schema short_desc="ਅਧਿਕਤਮ ਸਥਿਤੀ ਕਰੋ">
+						</local_schema>
+					</entry>
+					<entry name="toggle_fullscreen">
+						<local_schema short_desc="ਪੂਰੀ ਸਕਰੀਨ ਕਰੋ">
+						</local_schema>
+					</entry>
+					<entry name="activate_window_menu">
+						<local_schema short_desc="ਐਕਟਿਵ ਵਿੰਡੋ ਮੇਨੂ">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybinding_commands">
+					<entry name="command_window_screenshot">
+						<local_schema short_desc="ਵਿੰਡੋ ਸਕਰੀਨ-ਸ਼ਾਟ ਕਮਾਂਡ">
+							<longdesc>/apps/metacity/global_keybindings/run_command_window_screenshot ਸਵਿੱਚ, ਸਵਿੱਚ ਬੰਧਨ ਪਰਭਾਸ਼ਿਤ ਕਰਦੀ ਹੈ ਜਿਹਨਾ ਨੇ ਇਸ ਸਥਾਪਨ ਰਾਹੀਂ ਦਰਸਾਈ ਕਮਾਂਡ ਨੂੰ ਬੁਲਾਇਆ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command_screenshot">
+						<local_schema short_desc="ਸਕਰੀਨ-ਸ਼ਾਂਟ ਕਮਾਂਡ">
+							<longdesc>/apps/metacity/global_keybindings/run_command_screensho ਸਵਿੱਚ, ਸਵਿੱਚ-ਬਾਈਡਿੰਗ ਪਰਭਾਸ਼ਿਤ ਕਰਦੀ ਹੈ ਜਿਹਨਾ ਨੇ ਇਸ ਸਥਾਪਨ ਰਾਹੀਂ ਦਰਸਾਈ ਕਮਾਂਡ ਨੂੰ ਬੁਲਾਇਆ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="ਸਵਿੱਚ ਸੰਬੰਧਾਂ ਦੇ ਉੱਤਰ ਵਿਚ ਚੱਲਣ ਵਾਲੀ ਕਮਾਂਡ">
+							<longdesc>/apps/metacity/global_keybindings/run_command_N ਸਵਿੱਚਾਂ ਸਵਿੱਚ-ਬਾਈਡਿੰਗ ਪਰਭਾਸ਼ਿਤ ਕਰਦੀਆਂ ਹਨ ਜਿਹੜੇ ਕਿ ਉਹਨਾਂ ਕਮਾਂਡਾਂ ਦੇ ਅਨੁਸਾਰੀ ਹਨ। ਚਲਾਓ_ਕਮਾਂਡ_N ਵਾਸਤੇ ਸਵਿੱਚ-ਬਾਈਡਿੰਗ ਦਬਾਉਣ ਨਾਲ ਕਮਾਂਡ_N ਚੱਲੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global_keybindings">
+					<entry name="run_command_terminal">
+						<local_schema short_desc="ਟਰਮੀਨਲ ਚਲਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="run_command_window_screenshot">
+						<local_schema short_desc="ਵਿੰਡੋ ਦਾ ਸਕਰੀਨ-ਸ਼ਾਟ ਲਵੋ">
+						</local_schema>
+					</entry>
+					<entry name="run_command_screenshot">
+						<local_schema short_desc="ਇੱਕ ਸਕਰੀਨ-ਸ਼ਾਂਟ ਲਵੋ">
+						</local_schema>
+					</entry>
+					<entry name="panel_run_dialog">
+						<local_schema short_desc="ਪੈਨਲ ਵਿਚ &quot;ਐਪਲੀਕੇਸ਼ਨ ਚਲਾਓ&quot; ਡਾਈਲਾਗ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="panel_main_menu">
+						<local_schema short_desc="ਪੈਨਲ ਦਾ ਮੁੱਖ ਮੇਨੂ ਵਿਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="ਸਭ ਸਧਾਰਨ ਵਿੰਡੋ ਓਹਲੇ ਅਤੇ ਡੈਸਕਟਾਪ ਫੋਕਸ ਕਰੋ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels_backward">
+						<local_schema short_desc="ਪੈਨਲ ਅਤੇ ਵਿੰਡੋ ਵਿਚਕਾਰ ਤੁਰੰਤ ਪਿੱਛੇ ਵੱਲ ਨੂੰ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels">
+						<local_schema short_desc="ਪੈਨਲ ਅਤੇ ਡੈਸਕਟਾਪ &apos;ਚ ਤੁਰੰਤ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows_backward">
+						<local_schema short_desc="ਵਿੰਡੋ ਵਿਚਕਾਰ ਫੁਰਤੀ ਨਾਲ ਪਿੱਛੇ ਵੱਲ ਨੂੰ ਲੈ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows">
+						<local_schema short_desc="ਵਿੰਡੋ ਵਿਚ ਫੁਰਤੀ ਨਾਲ ਲੈ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group_backward">
+						<local_schema short_desc="ਇੱਕ ਐਪਲੀਕੇਸ਼ਨ ਦੇ ਵਿੰਡੋ ਵਿੱਚ ਤੁਰੰਤ ਪਿੱਛੇ ਵੱਲ ਨੂੰ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group">
+						<local_schema short_desc="ਇੱਕ ਐਪਲੀਕੇਸ਼ਨ ਦੀਆਂ ਵਿੰਡੋ ਵਿੱਚ ਤੁਰੰਤ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels_backward">
+						<local_schema short_desc="ਪੈਨਲ ਅਤੇ ਡੈਸਕਟਾਪ ਵਿੱਚੋਂ ਪਿੱਛੇ ਜਾਣ ਲਈ ਪੋਪਅੱਪ ਵਿੰਡੋ ਦੀ ਵਰਤੋਂ ਕਰੋ">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels">
+						<local_schema short_desc="ਪੈਨਲ ਅਤੇ ਡੈਸਕਟਾਪ ਵਿੱਚ ਭੇਜਣ ਲਈ ਪੋਪਅੱਪ ਵਿੰਡੋ ਦੀ ਵਰਤੋਂ ਕਰੋ">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows_backward">
+						<local_schema short_desc="ਵਿੰਡੋ ਵਿਚ ਪਿੱਛੇ ਭੇਜਣ ਦੌਰਾਨ ਪੋਪਅੱਪ ਵਿੰਡੋ ਦੀ ਵਰਤੋਂ ਕਰੋ">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows">
+						<local_schema short_desc="ਵਿੰਡੋ ਵਿੱਚ ਭੇਜਣ ਸਮੇਂ ਪੋਪਅੱਪ ਨਾਲ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="switch_group_backward">
+						<local_schema short_desc="ਇੱਕ ਕਾਰਜ ਦੀਆਂ ਵਿੰਡੋ ਵਿੱਚ ਪਿੱਛੇ ਵੱਲ ਭੇਜਣ ਸਮੇਂ ਪੋਪਅੱਪ ਨਾਲ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="switch_group">
+						<local_schema short_desc="ਇੱਕ ਕਾਰਜ ਦੀ ਵਿੰਡੋ ਵਿੱਚ ਜਾਣ ਸਮੇਂ ਪੋਪਅੱਪ ਵਿੰਡੋ ਦੀ ਵਰਤੋਂ ਕਰੋ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_down">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ ਨੂੰ ਮੌਜੂਦਾ ਵਰਕਸਪੇਸ ਦੇ ਇਸ ਤੋਂ ਹੇਠਲੇ ਵਰਕਸਪੇਸ ਵਿੱਚ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_up">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ ਨੂੰ ਮੌਜੂਦਾ ਵਰਕਸਪੇਸ ਦੇ ਇਸ ਤੋਂ ਉੱਪਰਲੇ ਵਰਕਸਪੇਸ ਵਿੱਚ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_right">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ ਨੂੰ ਮੌਜੂਦਾ ਵਰਕਸਪੇਸ ਦੇ ਸੱਜੇ ਵਰਕਸਪੇਸ ਵਿੱਚ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_left">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ ਨੂੰ ਮੌਜੂਦਾ ਵਰਕਸਪੇਸ ਦੇ ਖੱਬੇ ਵਰਕਸਪੇਸ ਵਿੱਚ ਭੇਜੋ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_12">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ 12 ਵਿੱਚ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_11">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ 11 ਵਿੱਚ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_10">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ 10 ਵਿੱਚ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_9">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ 9 ਵਿੱਚ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_8">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ 8 ਵਿੱਚ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_7">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ 7 ਵਿੱਚ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_6">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ 6 ਵਿੱਚ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_5">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ 5 ਵਿੱਚ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_4">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ 4 ਵਿੱਚ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_3">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ 3 ਵਿੱਚ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_2">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ 2 ਵਿੱਚ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_1">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ 1 ਵਿੱਚ ਜਾਓ">
+						</local_schema>
+					</entry>
+					<entry name="run_command">
+						<local_schema short_desc="ਇੱਕ ਪ੍ਰਭਾਸ਼ਿਤ ਕਮਾਂਡ ਚਲਾਓ">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="workspace_names">
+					<entry name="name">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ ਦਾ ਨਾਂ">
+							<longdesc>ਵਰਕਸਪੇਸ ਦਾ ਨਾਂ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="general">
+					<entry name="disable_workarounds">
+						<local_schema short_desc="ਨਾ ਮੌਜੂਦ ਗੁਣਾਂ ਨੂੰ ਅਯੋਗ ਕਰੋ ਜਿਹੜੇ ਪੁਰਾਣੇ ਜਾਂ ਤੋੜੇ ਕਾਰਜਾਂ ਰਾਹੀਂ ਲੋੜੀਂਦੇ ਹਨ">
+							<longdesc>ਕੁਝ ਕਾਰਜਾਂ ਕੁਝ ਕਾਰਨਾਂ ਕਰਕੇ ਹਦਾਇਤਾਂ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰ ਦਿੰਦੀਆਂ ਹਨ, ਜਿੰਨਾਂ &apos;ਚ ਵਿੰਡੋ ਮੈਨੇਜਰ ਗਲਤ ਫੀਚਰਾਂ ਹੁੰਦੇ ਹਨ। ਇਹ ਚੋਣ ਮੇਟਾਸਿਟੀ ਨੂੰ ਗਲਤ ਢੰਗ ਨੂੰ ਸਹੀਂ ਕਰਨ ਲਿਆ ਹੈ, ਜਿਸ ਨਾਲ ਯੂਜ਼ਰ ਇੰਟਰਫੇਸ ਲਈ ਇਕਸਾਰ ਕੰਟਰੋਲ ਰਹਿੰਦਾ ਹੈ, ਜੋ ਕਿ ਗਲਤ ਰਵੱਈਆ ਰੱਖਣ ਵਾਲੇ ਕਾਰਜ ਨੂੰ ਚੱਲਣ ਨਹੀਂ ਦਿੰਦੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="application_based">
+						<local_schema short_desc="(ਲਾਗੂ ਨਹੀ ਕੀਤਾ) ਸੰਚਾਲਨ ਕਾਰਜ ਦੇ ਵਿਹਾਰ ਨਾਲ ਕੰਮ ਕਰਦਾ ਹੈ ਨਾ ਕਿ ਵਿੰਡੋ ਦੇ">
+							<longdesc>ਜੇ ਯੋਗ ਹੈ, ਮੈਟਾਸਿਟੀ ਕਾਰਜਾਂ ਦੇ ਰੂਪ &apos;ਚ ਕੰਮ ਕਰੇਗਾ ਨਾ ਕਿ ਵਿੰਡੋ ਦੇ। ਵਿਚਾਰ ਕੁਝ ਵੱਖਰਾ ਹੈ, ਪਰ ਸਾਧਾਰਨ ਤੌਰ ਤੇ ਕਾਰਜ ਤੇ ਆਧਾਰਿਤ ਬਣਾਵਟ ਮੈਕ(Mac) ਦੀ ਤਰਾਂ ਜਿਆਦਾ ਹੈ ਅਤੇ ਵਿੰਡੋ (Windows) ਵਾਂਗ ਘੱਟ। ਜਦੋਂ ਤੁਸੀਂ ਵਿੰਡੋ ਨੂੰ ਕਾਰਜ ਆਧਾਰਿਤ ਰੂਪ ਵਿੱਚ ਫੋਕਸ ਕਰਦੇ ਹੋ, ਕਾਰਜ ਵਿਚਲੇ ਸਭ ਵਿੰਡੋ ਕਾਰਜ ਆਧਾਰਿਤ ਰੂਪ ਵਿੱਚ ਖੁੱਲਣਗੀਆਂ। ਨਾਲ ਹੀ ਫੋਕਸ ਕਲਿੱਕ ਦੂਜੇ ਕਾਰਜਾਂ ਵਿਚਲੇ ਝਰੋਖਿਆਂ ਵਿੱਚ ਨਹੀਂ ਜਾਂਦੇ। ਕਾਰਜ ਆਧਾਰਿਤ ਢੰਗ ਇਸ ਸਮੇਂ ਵੀ ਲਾਗੂ ਨਹੀਂ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reduced_resources">
+						<local_schema short_desc="ਜੇ ਯੋਗ ਹੈ, ਘੱਟ ਸਰੋਤ ਉਪਯੋਗ ਲਈ ਸਹੂਲਤ ਪੇਸ਼ਾ ਖਤਮ ਕਰੋ">
+							<longdesc>ਜੇ ਯੋਗ ਹੈ, ਮੈਟਾਸਿਟੀ ਯੂਜ਼ਰ ਨੂੰ, ਵਾਇਰ ਫਰੇਮ ਵਰਤ ਕੇ, ਐਨੀਮੇਸ਼ਨ ਤੋਂ ਹਟ ਕੇ, ਜਾਂ ਹੋਰ ਤਰਾਂ ਘੱਟ ਫੀਡਬੈਕ ਦੇਵੇਗੀ। ਇਹ ਬਹੁਤੇ ਯੂਜ਼ਰਾਂ ਦੀ ਵਰਤੋਂ ਵਿੱਚ ਮਹੱਤਵਪੂਰਨ ਕਮੀ ਹੈ, ਪਰ ਮੂਲ ਕਾਰਜਾਂ ਜਾਂ ਟਰਮੀਨਲ ਸਰਵਰਾਂ ਨੂੰ ਕੰਮ ਕਰਨ ਦੇਵੇਗੀ। ਪਰ ਵਾਇਰਫਰੇਮ ਫੀਚਰ ਆਯੋਗ ਹੋਵੇਗਾ, ਜਦੋਂ ਸਹੂਲਤਾਂ ਨੂੰ ਚਾਲੂ ਕੀਤਾ ਜਾਵੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="compositing_manager">
+						<local_schema short_desc="ਕੰਪੋਜਿੰਗ ਮੈਨੇਜਰ">
+							<longdesc>ਜਾਂਚ ਕਰੋ ਕਿ ਕੀ ਮੈਟਾਸਿਟੀ ਇੱਕ ਕੰਪੋਜਟਿੰਗ ਮੈਨੇਜਰ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell_type">
+						<local_schema short_desc="ਦਿੱਖ ਘੰਟੀ ਕਿਸਮ">
+							<longdesc>ਮੈਟਾਸਿਟੀ ਨੂੰ ਦੱਸੋ ਕਿ ਦਰਿਸ਼ੀ ਸੰਕੇਤ ਨੂੰ ਕਿਸ ਤਰਾਂ ਲਾਗੂ ਕਰਨਾ ਹੈ ਤਾਂ ਕਿ ਸਿਸਟਮ ਘੰਟੀ ਜਾਂ ਹੋਰ ਕਾਰਜ &apos;ਘੰਟੀ&apos; ਸੰਕੇਤਕ ਵੱਜੇ। ਹੁਣ ਇੱਥੇ ਦੋ ਯੋਗ ਕੀਮਤਾਂ ਹਨ, &quot;ਸਾਰੀ ਸਕਰੀਨ&quot;, ਜੋ ਸਕਰੀਨ ਨੂੰ ਸਫੈਦ-ਕਾਲਾ ਲਿਸ਼ਕਾਰਾ ਬਣਾਉਂਦਾ ਹੈ, ਅਤੇ &quot;ਫਰੇਮ_ਲਿਸ਼ਕਾਰਾ&quot; ਜੋ ਕਾਰਜ ਦੀ ਟਾਇਟਲ-ਬਾਰ ਜਿਹੜੀ ਘੰਟੀ ਸੰਕੇਤ ਭੇਜਦੀ ਹੈ ਨੂੰ ਲਿਸ਼ਕਣ ਦਿੰਦਾ ਹੈ। ਜੇ ਘੰਟੀ ਭੇਜਣ ਵਾਲਾ ਕਾਰਜ ਅਣਪਛਾਤਾ ਹੋਵੇ (ਜਿਵੇਂ ਕਿ ਮੂਲ &quot;ਸਿਸਟਮ ਬੀਪ&quot; ਹੈ), ਮੌਜੂਦਾ ਫੋਕਸ ਰੱਖੇ ਦੀ ਟਾਇਟਲ-ਬਾਰ ਲਿਸ਼ਕੇਗੀ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="audible_bell">
+						<local_schema short_desc="ਸਿਸਟਮ ਘੰਟੀ ਸੁਣਨਯੋਗ ਹੈ">
+							<longdesc>ਵੇਖੋ ਕਿ ਕੀ ਕਾਰਜ ਜਾਂ ਸਿਸਟਮ ਆਵਾਜ਼ ਵਾਲੀਆਂ &apos;ਬੀਪਸ&apos; ਪੈਦਾ ਕਰਦਾ ਹੈ; ਜੋ &apos;ਦਿੱਖ ਘੰਟੀ&apos; ਦੇ ਸੰਗ ਸ਼ਾਂਤ &apos;ਬੀਪਸ&apos; ਨੂੰ ਚਲਾਏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell">
+						<local_schema short_desc="ਦਿੱਖ ਘੰਟੀ ਯੋਗ ਕਰੋ">
+							<longdesc>ਦਰਿਸ਼ੀ ਸੰਕੇਤ ਨੂੰ ਯੋਗ ਕਰੋ ਜਦੋਂ ਇੱਕ ਕਾਰਜ ਜਾਂ ਸਿਸਟਮ &apos;ਘੰਟੀ&apos; ਜਾਂ &apos;ਬੀਪ&apos; ਦਿੰਦਾ ਹੈ; ਸੁਣਨ ਦੀ ਮੁਸ਼ਕਿਲ ਲਈ ਯੂਜ਼ਰ ਅਤੇ ਰੌਲੇ-ਰੱਪੇ ਵਾਲੇ ਮਾਹੌਲ ਵਿੱਚ ਵਰਤਣ ਲਈ, ਜਾਂ ਜਦੋਂ &apos;ਆਵਾਜ਼ੀ ਘੰਟੀ&apos; ਬੰਦ ਹੋਵੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="num_workspaces">
+						<local_schema short_desc="ਵਰਕਸਪੇਸ ਦੀ ਗਿਣਤੀ">
+							<longdesc>ਵਰਕਸਪੇਸ ਦੀ ਗਿਣਤੀ। ਜ਼ੀਰੋ ਤੋਂ ਵੱਧ ਹੋਣੀ ਜਰੂਰੀ ਹੈ,ਅਤੇ ਵੱਧ ਤੋਂ ਵੱਧ ਨਿਯਮਤ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ ਤਾਂ ਅਸਧਾਰਨ ਵਰਕਸਪੇਸ ਪੁੱਛ ਕੇ ਤੁਹਾਡੇ ਡੈਸਕਟਾਪ ਨੂੰ ਖਤਮ ਹੋਣ ਦੀ ਘਟਨਾ ਤੋਂ ਬਚਾਇਆ ਜਾ ਸਕੇ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_font">
+						<local_schema short_desc="ਝਰੋਖਾ ਟਾਇਟਲ ਫੋਟ">
+							<longdesc>ਫੋਂਟ ਵੇਰਵਾ ਸਤਰ ਵਿੰਡੋ ਦੀ ਟਾਇਟਲ-ਬਾਰ ਵਾਸਤੇ ਫੋਂਟ ਦਰਸਾਉਂਦੀ ਹੈ। ਵੇਰਵੇ ਵਿਚਲਾ ਆਕਾਰ ਤਾਂ ਹੀ ਅਸਰ ਕਰੇਗਾ ਜੇ ਕਿਸੇ ਵੀ ਤਰਾਂ titlebar_font_size ਚੋਣ 0 ਕੀਤੀ ਹੈ। ਇਹ ਚੋਣ ਅਯੋਗ ਵੀ ਹੈ ਜੇ titlebar_uses_desktop_font ਚੋਣ ਨੂੰ ਯੋਗ ਹੋਈ ਵਰਤਦਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_uses_system_font">
+						<local_schema short_desc="ਵਿੰਡੋ ਟਾਇਟਲਾਂ ਵਿੱਚ ਸਟੈਂਡਰਡ ਫੋਟ ਵਰਤੋਂ">
+							<longdesc>ਜੇ ਯੋਗ ਹੈ, ਟਾਇਟਲ-ਬਾਰ ਫੋਟ ਚੋਣ ਨੂੰ ਅਣਡਿੱਠ ਕਰੋ, ਅਤੇ ਵਿੰਡੋ ਟਾਇਟਲ ਵਾਸਤੇ ਸਟੈਂਡਰਡ ਕਾਰਜ ਅੱਖਰ ਵਰਤੋਂ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="ਮੌਜੂਦਾ ਥੀਮ">
+							<longdesc>ਥੀਮ ਵਿੰਡੋ ਦੇ ਹਾਸ਼ੀਏ, ਟਾਇਟਲ-ਬਾਰ, ਅਤੇ ਸਾਹਮਣੀ ਦਿੱਖ ਨਿਰਧਾਰਿਤ ਕਰਦਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise_delay">
+						<local_schema short_desc="ਸਵੈ ਉਠਾਊ ਚੋਣ ਲਈ ਮਿਲੀ ਸਕਿੰਟਾਂ ਵਿੱਚ ਵਕਫਾ">
+							<longdesc>ਵਿੰਡੋ ਉਠਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਵਕਫਾ ਜੇ ਸਵੈ-ਉਠਾਊ ਯੋਗ ਕੀਤੀ ਹੈ। ਵਕਫਾ ਸਕਿੰਟ ਦੇ ਹਜਾਰਵੇਂ ਵਿੱਚ ਦਿੱਤਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise">
+						<local_schema short_desc="ਫੋਕਸ ਹੋਈ ਵਿੰਡੋ ਆਟਮੈਟਿਕ ਉਭਾਰੋ">
+							<longdesc>ਜੇ ਇਹ ਸਹੀਂ ਹੋਵੇ ਤਾਂ ਫੋਕਸ ਢੰਗ ਜਾਂ ਤਾਂ &quot;ਸਲੋਪੀ&quot; ਜਾਂ &quot;ਮਾਊਂਸ&quot; ਹੁੰਦਾ ਹੈ ਤਾਂ ਫੋਕਸ ਹੋਇਆ ਵਿੰਡੋ auto_raise_delay ਕੁੰਜੀ ਵਲੋਂ ਦਿੱਤੇ ਇੱਕ ਅੰਤਰਾਲ ਬਾਅਦ ਆਟੋਮੈਟਿਕ ਹੀ ਉਭਾਰਿਆ ਜਾਵੇਗਾ। ਇਹ ਉਭਾਰਨ ਲਈ ਵਿੰਡੋ ਉੱਤੇ ਨਿਰਭਰ ਨਹੀਂ ਹੈ ਅਤੇ ਨਾ ਹੀ ਚੁੱਕਣ ਅਤੇ ਸੁੱਟਣ ਸਮੇਂ ਇੱਕ ਵਿੰਡੋ ਉੱਤੇ ਵੀ ਨਹੀਂ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_right_click_titlebar">
+						<local_schema short_desc="ਟਾਇਟਲ ਬਾਰ ਉੱਤੇ ਸੱਜਾ-ਕਲਿੱਕ ਨਾਲ ਐਕਸ਼ਨ">
+							<longdesc>ਇਹ ਚੋਣ ਟਾਇਟਲ-ਬਾਰ ਉੱਤੇ ਸੱਜਾ-ਕਲਿੱਕ ਦਬਾਉ ਦਾ ਪ੍ਰਭਾਵ ਪਛਾਣਦੀ ਹੈ। ਮੌਜੂਦ ਯੋਗ ਚੋਣਾਂ ਹਨ  &apos;toggle_shade (ਰੰਗਤ_ਬਦਲੋ)&apos;, ਜਿਹੜੀ ਵਿੰਡੋ ਨੂੰ ਰੰਗਤ/ਬਿਨਾਂ-ਰੰਗਤ ਕਰਦੀ ਹੈ, ਅਤੇ &apos;toggle_maximize (ਅਧਿਕਤਮ ਬਦਲੋ)&apos; ਜਿਹੜੀ ਵਿੰਡੋ ਨੂੰ maximize/unmaximize (ਅਧਿਕਤਮ/ਨਾ-ਅਧਿਕਤਮ) ਕਰਦੀ ਹੈ, &apos;toggle_maximize_horizontally&apos; ਅਤੇ &apos;toggle_maximize_vertically&apos; ਜੋ ਵਿੰਡੋ ਨੂੰ ਉਸ ਦਿਸ਼ਾ ਵਿੱਚ ਵੱਧੋ-ਵੱਧ/ਅਣ-ਵੱਧੋ-ਵੱਧ ਕਰਦੀ ਹੈ,&apos;ਅਪਲੀਕਰਨ&apos;, ਜੋ ਕਿ ਵਿੰਢੋ ਨੂੰ ਅਪਲੀਕਰਨ ਕਰਦੀ ਹੈ, ਅਤੇ &apos;ਕੋਈ ਨਹੀਂ&apos; ਕੁਝ ਨਹੀਂ ਕਰੇਗਾ, &apos;ਮੇਨੂ&apos; ਵਿੰਡੋ ਮੇਨੂ ਵੇਖਾਏਗਾ, &apos;ਸ਼ੇਡ&apos; ਵਿੰਡੋ ਰੋਲ ਕਰੇਗਾ, ਅਤੇ &apos;ਹੇਠਾਂ&apos; ਵਿੰਡੋ ਨੂੰ ਹੋਰ ਵਿੰਡੋ ਹੇਠ ਭੇਜੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_middle_click_titlebar">
+						<local_schema short_desc="ਟਾਇਟਲ ਬਾਰ ਉੱਤੇ ਮੱਧ-ਕਲਿੱਕ ਨਾਲ ਐਕਸ਼ਨ">
+							<longdesc>ਇਹ ਚੋਣ ਟਾਇਟਲ-ਬਾਰ ਉੱਤੇ ਮਿਡਲ-ਕਲਿੱਕ ਦਬਾਉ ਦਾ ਪ੍ਰਭਾਵ ਪਛਾਣਦੀ ਹੈ। ਮੌਜੂਦ ਯੋਗ ਚੋਣਾਂ ਹਨ  &apos;toggle_shade (ਰੰਗਤ_ਬਦਲੋ)&apos;, ਜਿਹੜੀ ਵਿੰਡੋ ਨੂੰ ਰੰਗਤ/ਬਿਨਾਂ-ਰੰਗਤ ਕਰਦੀ ਹੈ, ਅਤੇ &apos;toggle_maximize (ਅਧਿਕਤਮ ਬਦਲੋ)&apos; ਜਿਹੜੀ ਵਿੰਡੋ ਨੂੰ maximize/unmaximize (ਅਧਿਕਤਮ/ਨਾ-ਅਧਿਕਤਮ) ਕਰਦੀ ਹੈ, &apos;toggle_maximize_horizontally&apos; ਅਤੇ &apos;toggle_maximize_vertically&apos; ਜੋ ਵਿੰਡੋ ਨੂੰ ਉਸ ਦਿਸ਼ਾ ਵਿੱਚ ਵੱਧੋ-ਵੱਧ/ਅਣ-ਵੱਧੋ-ਵੱਧ ਕਰਦੀ ਹੈ,&apos;ਅਪਲੀਕਰਨ&apos;, ਜੋ ਕਿ ਵਿੰਢੋ ਨੂੰ ਅਪਲੀਕਰਨ ਕਰਦੀ ਹੈ, ਅਤੇ &apos;ਕੋਈ ਨਹੀਂ&apos; ਕੁਝ ਨਹੀਂ ਕਰੇਗਾ, &apos;ਮੇਨੂ&apos; ਵਿੰਡੋ ਮੇਨੂ ਵੇਖਾਏਗਾ, &apos;ਸ਼ੇਡ&apos; ਵਿੰਡੋ ਰੋਲ ਕਰੇਗਾ, ਅਤੇ &apos;ਹੇਠਾਂ&apos; ਵਿੰਡੋ ਨੂੰ ਹੋਰ ਵਿੰਡੋ ਹੇਠ ਭੇਜੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_double_click_titlebar">
+						<local_schema short_desc="ਟਾਇਟਲ-ਬਾਰ ਉੱਤੇ ਕਿਰਿਆ ਦੋ-ਵਾਰ ਦਬਾਉ">
+							<longdesc>ਇਹ ਚੋਣ ਟਾਇਟਲ-ਬਾਰ ਉੱਤੇ ਦੋ ਵਾਰ ਦਬਾਉ ਦਾ ਪ੍ਰਭਾਵ ਨਿਰਧਾਰਿਤ ਕਰਦੀ ਹੈ। ਮੌਜੂਦ ਯੋਗ ਚੋਣਾਂ ਹਨ  &apos;toggle_shade (ਰੰਗਤ_ਬਦਲੋ)&apos;, ਜਿਹੜੀ ਵਿੰਡੋ ਨੂੰ ਰੰਗਤ/ਬਿਨਾਂ-ਰੰਗਤ ਕਰਦੀ ਹੈ, ਅਤੇ &apos;toggle_maximize (ਅਧਿਕਤਮ ਬਦਲੋ)&apos; ਜਿਹੜੀ ਵਿੰਡੋ ਨੂੰ maximize/unmaximize (ਅਧਿਕਤਮ/ਨਾ-ਅਧਿਕਤਮ) ਕਰਦੀ ਹੈ, &apos;toggle_maximize_horizontally&apos; ਅਤੇ &apos;toggle_maximize_vertically&apos; ਜੋ ਵਿੰਡੋ ਨੂੰ ਉਸ ਦਿਸ਼ਾ ਵਿੱਚ ਵੱਧੋ-ਵੱਧ/ਅਣ-ਵੱਧੋ-ਵੱਧ ਕਰਦੀ ਹੈ,&apos;ਅਪਲੀਕਰਨ&apos;, ਜੋ ਕਿ ਵਿੰਢੋ ਨੂੰ ਅਪਲੀਕਰਨ ਕਰਦੀ ਹੈ, ਅਤੇ &apos;ਕੋਈ ਨਹੀਂ&apos; ਕੁਝ ਨਹੀਂ ਕਰੇਗਾ, &apos;ਮੇਨੂ&apos; ਵਿੰਡੋ ਮੇਨੂ ਵੇਖਾਏਗਾ, &apos;ਸ਼ੇਡ&apos; ਵਿੰਡੋ ਰੋਲ ਕਰੇਗਾ, ਅਤੇ &apos;ਹੇਠਾਂ&apos; ਵਿੰਡੋ ਨੂੰ ਹੋਰ ਵਿੰਡੋ ਹੇਠ ਭੇਜੇਗਾ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="raise_on_click">
+						<local_schema short_desc="ਜਦੋਂ ਵਧਾਇਆ ਜਾਵੇਗਾ ਤਾਂ ਹੋਰ ਯੂਜ਼ਰ ਦਖਲਾਂ ਉੱਤੇ ਗਲਤ ਪਰਭਾਵ ਪਵੇਗਾ">
+							<longdesc>ਇਹ ਚੋਣ ਗਲਤ ਕਰਨ ਨਾਲ, ਬੱਡੀ ਰਵੱਈਆ ਆ ਸਕਦਾ ਹੈ ਤਾਂ ਯੂਜ਼ਰਾਂ ਨੂੰ ਇਹ ਠੀਕ ਰੱਖਣ ਦਾ ਸੁਝਾਅ ਹੀ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਕੋਈ ਫੰਕਸ਼ਨ (ਜਿਵੇਂ ਕਿ ਕਲਾਈਟ ਖੇਤਰ ਵਿੱਚ ਕਲਿੱਕ ਕਰਨਾ, ਵਿੰਡੋ ਹਿਲਾਉਣੀ ਜਾਂ ਮੁੜ-ਆਕਾਰ ਕਰਨਾ) ਸਾਇਡ-ਪਰਭਾਵ ਦੇ ਅਧੀਨ ਵਿੰਡੋ ਉਭਾਰ ਦਿੰਦੇ ਹਨ। ਇਹ ਚੋਣ ਗਲਤ ਕਰਨ ਨਾਲ, ਹੋਰ ਯੂਜ਼ਰ ਐਕਸ਼ਨ ਤੋਂ ਉਭਾਰਨ ਨੂੰ ਡਿ-ਕਪਲ ਕਰ ਦਿੰਦੀ ਹੈ। http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6 ਵੇਖੋ। ਭਾਵੇਂ ਇਹ ਚੋਣ ਗਲਤ ਹੈ, ਵਿੰਡੋ ਨੂੰ ਵਿੰਡੋ ਉੱਤੇ ਕਿਤੇ ਵੀ alt-left-click ਕਰਨ, ਇੱਕ ਆਮ ਵਿੰਡੋ ਸਜਾਵਟ, ਜਾਂ ਪੇਜ਼ਰ ਤੋਂ ਖਾਸ ਸੁਨੇਹਿਆਂ ਨਾਲ ਨਾਲ ਉਭਾਰਿਆ ਜਾ ਸਕਦਾ ਹੈ, ਜਿਵੇਂ ਕਿ ਟਾਸਕ-ਲਿਸਟ ਐਪਲਿਟ ਤੋਂ ਐਕਟੀਵੇਸ਼ਨ ਮੰਗ। ਇਹ ਚੋਣ ਇਸ ਸਮੇਂ ਕਲਿੱਕ-ਅਤੇ-ਫੋਕਸ ਮੋਡ ਰਾਹੀਂ ਆਯੋਗ ਹੈ। ਯਾਦ ਰੱਖੋ ਕਿ ਵਿੰਡੋ ਨੂੰ ਉਭਾਰਨ ਦੇ ਢੰਗ ਦੀ ਲਿਸਟ, ਜਦੋਂ ਕਿ raise_on_click ਗਲਤ ਹੋਵੇ, ਐਪਲੀਕੇਸ਼ਨ ਤੋਂ ਵਿੰਡੋ ਉਭਾਰਨ ਦੀ ਮੰਗ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ ਹੈ, ਜਿਵੇਂ ਕਿ ਉਸ ਕਿਸਮ ਦੀਆਂ ਮੰਗ ਨੂੰ ਕਾਰਨ ਬਿਨਾਂ ਹੀ ਅਣਡਿੱਠਾ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਜੇ ਤੁਸੀਂ ਕਾਰਜ ਖੋਜੀ ਹੋ ਅਤੇ ਯੂਜ਼ਰ ਸ਼ਿਕਾਇਤ ਹੈ ਕਿ ਇਹ ਸੈਟਿੰਗ ਆਯੋਗ ਕਰਨ ਨਾਲ ਤੁਹਾਡੀ ਐਪਲੀਕੇਸ਼ਨ ਕੰਮ ਨਹੀਂ ਕਰਦੀ ਹੈ ਤਾਂ ਇਹ ਉਨ੍ਹਾਂ ਦੀ ਗਲਤੀ ਹੈ, ਕਿਉਂਕਿ ਉਨ੍ਹਾਂ ਦਾ ਵਿੰਡੋ ਮੈਨੇਜਰ ਖਰਾਬ ਹੈ ਅਤੇ ਉਨ੍ਹਾਂ ਨੂੰ ਇਹ ਚੋਣ ਬਦਲ ਕੇ ਠੀਕ ਕਰਨੀ ਹੋਵੇਗੀ ਜਾਂ ਉਨ੍ਹਾਂ ਨੂੰ ਬੱਗ ਦੇ ਦਿਓ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_new_windows">
+						<local_schema short_desc="ਕੰਟਰੋਲ ਕਿ ਕਿਵੇਂ ਨਵੀਂ ਵਿੰਡੋ ਫੋਕਸ ਹੋਣ">
+							<longdesc>ਇਹ ਚੋਣ ਵੱਧ ਕੰਟਰੋਲ ਦਿੰਦੀ ਹੈ ਕਿ ਨਵਾਂ ਬਣਾਈ ਵਿੰਡੋ ਕਿਵੇਂ ਫੋਕਸ ਲਵੇ। ਦੋ ਸੰਭਵ ਮੁੱਲ ਹਨ; &quot;ਸਮਾਰਟ&quot; ਸਧਾਰਨ ਯੂਜ਼ਰ ਫੋਕਸ ਢੰਗ ਲਾਗੂ ਕਰਦਾ ਹੈ ਅਤੇ &quot;ਸਖਤ&quot; ਨਤੀਜੇ ਵਜੋਂ ਇੱਕ ਟਰਮੀਨਲ ਤੋਂ ਚਾਲੂ ਹੋਏ ਵਿੰਡੋ ਨੂੰ ਫੋਕਸ ਨਹੀਂ ਦਿੰਦਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_mode">
+						<local_schema short_desc="ਵਿੰਡੋ ਫੋਕਸ ਰੂਪ">
+							<longdesc>ਵਿੰਡੋ ਫੋਕਸ ਮੋਡ ਦਰਸਾਉਦਾ ਹੈ ਕਿ ਵਿੰਡੋ ਕਿਵੇਂ ਸਰਗਰਮ ਕਰਨੀਆਂ ਹਨ। ਇਸ ਦੀਆਂ ਤਿੰਨ ਸੰਭਵ ਕੀਮਤਾਂ ਹਨ; &quot;ਦਬਾਉ&quot; ਮਤਲਬ ਵਿੰਡੋ ਉਹਨਾਂ ਨੂੰ ਫੋਕਸ ਕਰਨ ਲਈ ਦਬਾਇਆ ਹੋਇਆ &quot;ਸਲੋਪੀ&quot; ਮਤਲਬ ਵਿੰਡੋ ਫੋਕਸ ਹੁੰਦੀਆਂ ਹਨ ਜਦੋਂ ਮਾਊਸ ਉਹਨਾਂ ਵਿੱਚ ਪਰਵੇਸ਼ ਕਰਦਾ ਹੈ, &quot;ਮਾਊਸ&quot; ਮਤਲਬ ਵਿੰਡੋ ਫੋਕਸ ਹੁੰਦੀਆਂ ਹਨ ਜਦੋਂ ਮਾਊਸ ਉਹਨਾਂ ਵਿੱਚ ਪਰਵੇਸ਼ ਕਰਦਾ ਹੈ ਅਤੇ ਬਿਨ-ਫੋਕਸ ਹੁੰਦੀਆਂ ਹਨ ਜਦੋਂ ਮਾਊਸ ਝਰੋਖਾ ਛੱਡ ਜਾਂਦਾ ਹੈ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="button_layout">
+						<local_schema short_desc="ਟਾਇਟਲ-ਬਾਰ ਉੱਤੇ ਬਟਨਾਂ ਦੀ ਤਰਤੀਬ">
+							<longdesc>ਟਾਇਟਲ-ਬਾਰ ਉੱਤੇ ਬਟਨਾਂ ਦਾ ਪਰਬੰਧ। ਕੀਮਤ, ਸਤਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ, ਜਿਵੇਂ ਕਿ &quot;menu:minimize,maximize,spacer,close(ਮੇਨੂ:ਛੋਟਾ,ਵੱਡਾ ਬੰਦ)&quot;; ਕੌਲਨ ਵਿੰਡੋ ਦੇ ਖੱਬੇ ਖੂੰਜੇ ਨੂੰ ਸੱਜੇ ਤੋਂ ਵੱਖ ਕਰਦਾ ਹੈ,ਅਤੇ ਬਟਨ ਨਾਂ ਕਾਮੇ ਨਾਲ ਵੱਖ ਹਨ। ਨਕਲੀ ਬਟਨਾਂ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ। ਅਣਜਾਣ ਬਟਨ ਅਣਡਿੱਠ ਕੀਤੇ ਜਾਣਗੇ ਤਾਂ ਕਿ ਬਟਨ, ਮੈਟਾਸਿਟੀ ਦੇ ਪੁਰਾਣੇਵਰਜਨ ਨੂੰ ਤੋੜੇ ਬਿਨਾਂ ਨਵੇਂ ਵਰਜਨ ਵਿੱਚ ਜੋੜੇ ਜਾ ਸਕਣ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="resize_with_right_button">
+						<local_schema short_desc="ਕੀ ਸੱਜੇ ਬਟਨ ਨਾਲ ਮੁੜ-ਸਾਈਜ਼ ਕਰਨਾ ਹੈ">
+							<longdesc>ਜੇ ਸਹੀਂ ਕੀਤਾ ਤਾਂ ਸੱਜੇ ਬਟਨ ਨਾਲ ਮੁੜ-ਸਾਈਜ਼ ਕੀਤਾ ਜਾਵੇਗਾ ਅਤੇ ਮੱਧ ਕਲਿੱਕ ਨਾਲ ਮੇਨੂ ਵੇਖਾਇਆ ਜਾਵੇਗਾ, ਜਦੋਂ ਕੀ &quot;mouse_button_modifier&quot; ਵਿੱਚ ਦਿੱਤੀ ਕੁੰਜੀ ਹੋਲਡ ਕੀਤੀ ਜਾਵੇਗੀ; ਇਸ ਨੂੰ ਗਲਤ ਰੱਖਣ ਦਾ ਅਰਥ ਹੈ ਕਿ ਇਸ ਦੇ ਉਲਟ ਕੰਮ ਕਰਨਾ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_button_modifier">
+						<local_schema short_desc="ਸੋਧੀਆਂ ਵਿੰਡੋ ਦੀਆਂ ਕਲਿੱਕ ਕਾਰਵਾਈਆਂ ਲਈ ਵਰਤਣ ਲਈ ਮੋਡੀਫਾਇਰ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="notification-daemon">
+				<entry name="default_sound">
+					<local_schema short_desc="ਡਿਫਾਲਟ ਸਾਊਂਡ">
+						<longdesc>ਡਿਫਾਲਟ ਸਾਊਂਡ ਫਾਇਲ, ਜੋ ਵਰਤੀ ਜਾਵੇਗੀ, ਜਦੋਂ ਤੱਕ ਕਿ ਨੋਟੀਫਿਕੇਸ਼ਨ &apos;ਸਾਊਂਡ-ਫਾਇਲ&apos; ਜਾਂ &apos;ਸਪੱਰੈਸ-ਸਾਊਂਡ&apos; ਹਿੰਟ ਨਹੀਂ ਨਹੀਂ ਦਿੰਦਾ। ਕੋਈ ਡਿਫਾਲਟ ਸਾਊਂਡ ਨਾ ਦੇਣ ਲਈ ਖਾਲੀ ਛੱਡੋ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sound_enabled">
+					<local_schema short_desc="ਸਾਊਂਡ ਚਾਲੂ ਹੈ">
+						<longdesc>ਨੋਟੀਫਿਕੇਸ਼ਨ ਲਈ ਸਾਊਂਡ ਸਹਿਯੋਗ ਬੰਦ ਅਤੇ ਚਾਲੂ ਕਰੋ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="theme">
+					<local_schema short_desc="ਮੌਜੂਦਾ ਥੀਮ">
+						<longdesc>ਥੀਮ, ਜੋ ਨੋਟੀਫਿਕੇਸ਼ਨ ਵੇਖਾਉਣ ਲਈ ਵਰਤਿਆ ਜਾਵੇਗਾ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="popup_location">
+					<local_schema short_desc="ਪੋਪਅੱਪ ਟਿਕਾਣਾ">
+						<longdesc>ਸਟਾਕ ਨੋਟੀਫਿਕੇਸ਼ਨ ਲਈ ਵਰਕਸਪੇਸ ਉੱਤੇ ਡਿਫਾਲਟ ਪੋਪਅੱਪ ਟਿਕਾਣਾ। ਸੰਭਵ ਮੁੱਲ ਹਨ: &quot;top_left&quot;,&quot;top_right&quot;,&quot;bottom_left&quot; ਅਤੇ &quot;bottom_right&quot;</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

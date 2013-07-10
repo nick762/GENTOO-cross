@@ -1,0 +1,4 @@
+TARGET="armv5tel-softfloat-linux-gnueabi"
+VER="2.22"
+LIBPATH="/usr/lib/binutils/armv5tel-softfloat-linux-gnueabi/2.22"
+FAKE_TARGETS="armv5tel-softfloat-linux-gnueabi"

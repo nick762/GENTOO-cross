@@ -1,0 +1,3268 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB ಕೆಲಸದಗುಂಪು">
+						<longdesc>ಬಳಕೆದಾರರು ಒಂದು ಭಾಗವಾದ ವಿಂಡೋಸ್ ನೆಟ್‌ವರ್ಕಿಂಗ್ ವರ್ಕ್-ಗ್ರೂಪ್ ಅಥವ ಡೊಮೈನಿನ ಹೆಸರು. ಹೊಸ ವರ್ಕ್-ಗ್ರೂಪ್ ಸಂಪೂರ್ಣವಾಗಿ ಕಾರ್ಯರೂಪಕ್ಕೆ ಬರಲು ಬಳಕೆದಾರರು ನಿರ್ಗಮಿಸಿ ನಂತರ ಮರಳಿ ಪ್ರವೇಶಿಸುವ ಅಗತ್ಯವಿರುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="ಸ್ವಯಂಚಾಲಿತ ಪ್ರಾಕ್ಸಿ ಸಂರಚನೆಯ ಯುಆರ್ಎಲ್">
+						<longdesc>ಪ್ರಾಕ್ಸಿ ಸಂರಚನಾ ಮೌಲ್ಯಗಳನ್ನು ಒದಗಿಸುವ ಯುಆರ್ಎಲ್.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS ಪ್ರಾಕ್ಸಿ ಸಂಪರ್ಕಸ್ಥಾನ">
+						<longdesc>ನೀವು ಪ್ರಾಕ್ಸಿ ಮಾಡಬೇಕಿರುವ ಗಣಕದ ಸಂಪರ್ಕಸ್ಥಾನವನ್ನು &quot;/system/proxy/socks_host&quot; ಯಲ್ಲಿ ಸೂಚಿಸಲಾಗಿರುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS ಪ್ರಾಕ್ಸಿ ಅತಿಥೇಯದ ಹೆಸರು">
+						<longdesc>ಪ್ರಾಕ್ಸಿ ಸಾಕ್ಸ್ ಮಾಡಲು ಗಣಕದ ಹೆಸರು.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP ಪ್ರಾಕ್ಸಿ ಸಂಪರ್ಕಸ್ಥಾನ">
+						<longdesc>ನೀವು ಪ್ರಾಕ್ಸಿ ಮಾಡಬೇಕಿರುವ ಗಣಕದ ಸಂಪರ್ಕಸ್ಥಾನವನ್ನು &quot;/system/proxy/ftp_host&quot; ಯಲ್ಲಿ ಸೂಚಿಸಲಾಗಿರುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP ಪ್ರಾಕ್ಸಿ ಅತಿಥೇಯದ ಹೆಸರು">
+						<longdesc>ಪ್ರಾಕ್ಸಿ FTP ಮಾಡಲು ಬಳಸಬೇಕಿರುವ ಗಣಕದ ಹೆಸರು.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="ಸುರಕ್ಷಿತ HTTP ಪ್ರಾಕ್ಸಿ ಸಂಪರ್ಕಸ್ಥಾನ">
+						<longdesc>ನೀವು ಪ್ರಾಕ್ಸಿ ಮಾಡಬೇಕಿರುವ ಗಣಕದ ಸಂಪರ್ಕಸ್ಥಾನವನ್ನು &quot;/system/proxy/secure_host&quot; ಯಲ್ಲಿ ಸೂಚಿಸಲಾಗಿರುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="ಸುರಕ್ಷಿತ HTTP ಪ್ರಾಕ್ಸಿ ಅತಿಥೇಯದ ಹೆಸರು">
+						<longdesc>ಪ್ರಾಕ್ಸಿ ಸುರಕ್ಷಿತ HTTP ಮಾಡಲು ಬಳಸಬೇಕಿರುವ ಗಣಕದ ಹೆಸರು.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="ಪ್ರಾಕ್ಸಿ ಸಂರಚನಾ ಕ್ರಮ">
+						<longdesc>ಪ್ರಾಕ್ಸಿ ಸಂರಚನಾ ಕ್ರಮವನ್ನು ಆರಿಸಿ. ಬೆಂಬಲವಿರುವ ಮೌಲ್ಯಗಳು, &quot;ಯಾವುದೂ ಇಲ್ಲ&quot;, &quot;ಕೈಯಾರೆ&quot;, &quot;ತಾನಾಗಿಯೆ&quot; ಆಗಿರುತ್ತವೆ.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="ಪ್ರಾಕ್ಸಿಯಲ್ಲದ ಅತಿಥೇಯಗಳು">
+						<longdesc>ಈ ಕೀಲಿಯು ಪ್ರಾಕ್ಸಿಯ (ಸಕ್ರಿಯವಾಗಿದ್ದಲ್ಲಿ) ಮೂಲಕ ಸಂಪರ್ಕಿತವಾಗಿಲ್ಲದೆ, ನೇರವಾಗಿ ಸಂಪರ್ಕವನ್ನು ಹೊಂದಿರುವ ಅತಿಥೇಯಗಳ ಪಟ್ಟಿಯನ್ನು ಹೊಂದಿರುತ್ತದೆ. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ ಅತಿಥೇಯದ ಹೆಸರುಗಳು, ಕ್ಷೇತ್ರದ ಹೆಸರುಗಳು (*.foo.com ನಂತಹ ಆರಂಭಿಕ ವೈಲ್ಡ್‍ಕಾರ್ಡ್ ಅನ್ನು ಬಳಸಿಕೊಂಡು), IP ಅತಿಥೇಯ ವಿಳಾಸಗಳು (IPv4 ಹಾಗು IPv6) ಹಾಗು ಒಂದು ನೆಟ್‌ಮಾಸ್ಕಿನೊಂದಿನ (192.168.0.0/24 ನಂತಹವುಗಳು) ಜಾಲಬಂಧ ವಿಳಾಸಗಳು ಆಗಿರುತ್ತಿವೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP ಪ್ರಾಕ್ಸಿ ಗುಪ್ತಪದ">
+						<longdesc>HTTP ಪ್ರಾಕ್ಸಿ ಕಾರ್ಯವು ನಡೆಸುವಾಗ ದೃಢೀಕರಿಸಲು ಬಳಸಬೇಕಿರುವ ಗುಪ್ತಪದ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP ಪ್ರಾಕ್ಸಿ ಬಳಕೆದಾರಹೆಸರು">
+						<longdesc>HTTP ಪ್ರಾಕ್ಸಿ ಕಾರ್ಯವನ್ನು ನಡೆಸುವಾಗ ದೃಢೀಕರಿಸಲು ಬಳಸಬೇಕಿರುವ ಬಳಕೆದಾರ ಹೆಸರು.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="ಪ್ರಾಕ್ಸಿ ಪರಿಚಾರಕ ಸಂಪರ್ಕಗಳನ್ನು ದೃಢೀಕರಿಸು">
+						<longdesc>true ಆದಲ್ಲಿ, ಪ್ರಾಕ್ಸಿ ಪರಿಚಾರಕಕ್ಕಾಗಿ ಸಂಪರ್ಕಗಳಿಗೆ ದೃಢೀಕರಣದ ಅಗತ್ಯವಿರುತ್ತದೆ. ಬಳಕೆದಾರಹೆಸರು/ಗುಪ್ತಪದದ ಸಿದ್ಧತೆಯನ್ನು &quot;/system/http_proxy/authentication_user&quot; ಹಾಗು /system/http_proxy/authentication_password&quot; ಇಂದ ಸೂಚಿಸಲಾಗುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP ಪ್ರಾಕ್ಸಿ ಸಂಪರ್ಕಸ್ಥಾನ">
+						<longdesc>ನೀವು ಪ್ರಾಕ್ಸಿ ಮಾಡಬೇಕಿರುವ ಗಣಕದ ಸಂಪರ್ಕಸ್ಥಾನವನ್ನು &quot;/system/http_proxy/host&quot; ಯಲ್ಲಿ ಸೂಚಿಸಲಾಗಿರುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP ಪ್ರಾಕ್ಸಿ ಅತಿಥೇಯದ ಹೆಸರು">
+						<longdesc>ಪ್ರಾಕ್ಸಿ HTTP ಮಾಡಲು ಬಳಸಬೇಕಿರುವ ಗಣಕದ ಹೆಸರು.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="HTTP ಪ್ರಾಕ್ಸಿಯನ್ನು ಬಳಸು">
+						<longdesc>ಅಂತರ್ಜಾಲದ ಮೂಲಕ HTTP ಯನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳುವಾಗ ಪ್ರಾಕ್ಸಿ ಸಿದ್ಧತೆಗಳನ್ನು ಶಕ್ತಗೊಳಿಸು.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="DNS-SD ಸೇವೆಗಳನ್ನು ಹುಡುಕಬೇಕಿರುವ ಹೆಚ್ಚಿನ ಘಟಕಗಳು">
+						<longdesc>&quot;network:///&quot; ಸ್ಥಳದಲ್ಲಿ ಕಾಣಿಸಬೇಕಿರುವ ಅರ್ಧವಿರಾಮ ಚಿಹ್ನೆವನ್ನು ಹೊಂದಿರುವ DNS-SD ಕ್ಷೇತ್ರಗಳ ಪಟ್ಟಿ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="ಸ್ಥಳೀಯ DNS-SD ಸೇವೆಯನ್ನು ಹೇಗೆ ತೋರಿಸಬೇಕು">
+						<longdesc>ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳು &quot;ಒಗ್ಗೂಡಿಸಲಾದ&quot;, &quot;ಪ್ರತ್ಯೇಕ&quot; ಹಾಗು &quot;ಅಶಕ್ತಗೊಂಡ&quot; ಆಗಿರುತ್ತವೆ.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="tabs_open_position">
+						<local_schema short_desc="ಹೊಸದಾಗಿ ತೆರೆಯಲಾದ ಹಾಳೆಗಳನ್ನು ವೀಕ್ಷಕ ವಿಂಡೋದಲ್ಲಿ ಎಲ್ಲಿ ಇರಿಸಬೇಕು.">
+							<longdesc>&quot;after_current_tab&quot;(ಈಗಿನ ಹಾಳೆಯ ನಂತರ) ಕ್ಕೆ ಹೊಂದಿಸಿದಲ್ಲಿ, ಹೊಸ ಹಾಳೆಗಳು ಈಗಿನ ಹಾಳೆಗಳ ನಂತರ ಸೇರಿಸಲ್ಪಡುತ್ತದೆ. &quot;end&quot;(ಕೊನೆ) ಗೆ ಹೊಂದಿಸಿದಲ್ಲಿ, ಹೊಸ ಹಾಳೆಗಳು ಹಾಳೆ ಪಟ್ಟಿಯ ಕೊನೆಯಲ್ಲಿ ಸೇರಿಸಲ್ಪಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_backup_files">
+						<local_schema short_desc="ಬ್ಯಾಕ್ಅಪ್ ಕಡತಗಳನ್ನು ತೋರಿಸಬೇಕೆ ಅಥವ ಬೇಡವೆ">
+							<longdesc>ನಿಜವೆಂದಾದಲ್ಲಿ, ಎಮಾಕ್ಸಿನಿಂದ(Emacs) ನಿರ್ಮಿಸಲ್ಪಟ್ಟ ಬ್ಯಾಕ್ಅಪ್ ಕಡತಗಳು ತೋರಿಸಲ್ಪಡುತ್ತವೆ. ಸದ್ಯದಲ್ಲಿ, ಕೇವಲ ಟಿಲ್ಡೆಯಿಂದ(~) ಅಂತ್ಯಗೊಳ್ಳುವ ಕಡತಗಳನ್ನು ಮಾತ್ರ ಬ್ಯಾಕ್ಅಪ್ ಕಡತಗಳೆಂದು ಪರಿಗಣಿಸಲಾಗುವುದು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="ಅಡಗಿಸಲಾದ ಕಡತಗಳನ್ನು ತೋರಿಸಬೇಕೆ">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, ಅಡಗಿಸಲಾದ ಕಡತಗಳು ಕಡತ ವ್ಯವಸ್ಥಾಪಕದಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ. ಅಡಗಿಸಲಾದ ಕಡತಗಳೆಂದರೆ, ಒಂದೊ ಚುಕ್ಕಿಯಿಂದ ಆರಂಭಗೊಳ್ಳುವ ಕಡತಗಳಾಗಿರುತ್ತವೆ ಅಥವ .hidden ಕಡತದಲ್ಲಿ ಪಟ್ಟಿ ಮಾಡಲಾಗಿದ್ದು ಆಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>ತಂಬ್‌ನೈಲ್ ಕ್ಯಾಶೆಯ ಗರಿಷ್ಟ ಗಾತ್ರ, ಮೆಗಾಬೈಟುಗಳಲ್ಲಿ. ಸ್ವಚ್ಛಗೊಳಿಸುವುದನ್ನು ಅಶಕ್ತಗೊಳಿಸಲು -1 ಗೆ ಬದಲಾಯಿಸಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>ಕ್ಯಾಶೆಯಲ್ಲಿ ತಂಬ್‌ನೈಲ್ ಗರಿಷ್ಟ ಜೀವಿತಾವಧಿ, ದಿನಗಳಲ್ಲಿ. ಸ್ವಚ್ಛಗೊಳಿಸುವುದನ್ನು ಅಶಕ್ತಗೊಳಿಸಲು -1 ಗೆ ಬದಲಾಯಿಸಿ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="ಇನ್‌ಪುಟ್‌ ಪ್ರತಿಕ್ರಿಯೆಯ ಶಬ್ಧಗಳು">
+							<longdesc>ಇನ್‌ಪುಟ್‌ ನಡೆದ ಸಂದರ್ಭಗಳಲ್ಲಿ ಶಬ್ಧವನ್ನು ಹೊರಡಿಸಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="ಧ್ವನಿ ಪರಿಸರವಿನ್ಯಾಸದ ಹೆಸರು">
+							<longdesc>ಘಟನೆಯ ಶಬ್ಧಗಳಲ್ಲಿ ಬಳಸಲಾಗುವ XDG ಧ್ವನಿ ಪರಿಸರವಿನ್ಯಾಸ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="ಘಟನೆಗಳಿಗಾಗಿನ ಧ್ವನಿಗಳು">
+							<longdesc>ಬಳಕೆದಾರರ ಘಟನೆಗಳಲ್ಲಿ ಒಂದು ಧ್ವನಿಯನ್ನು ಚಲಾಯಿಸಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="ESD ಅನ್ನು ಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ಧ್ವನಿ ಪರಿಚಾರಕದ ಆರಂಭವನ್ನು ಶಕ್ತಗೊಳಿಸು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಮಿಕ್ಸರ್ ಟ್ರಾಕ್‌ಗಳು">
+							<longdesc>ಮಲ್ಟಿಮೀಡಿಯಾ ಕೀಲಿ ಬೈಂಡಿಗ್‌ಗಳಲ್ಲಿ ಬಳಸಲಾಗುವ ಪೂರ್ವನಿಯೋಜಿತ ಮಿಕ್ಸರ್ ಟ್ರಾಕ್‌ಗಳು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಮಿಕ್ಸರ್ ಸಾಧನಗಳು">
+							<longdesc>ಮಲ್ಟಿಮೀಡಿಯಾ ಕೀಲಿ ಬೈಂಡಿಗ್‌ಗಳಲ್ಲಿ ಬಳಸಲಾಗುವ ಪೂರ್ವನಿಯೋಜಿತ ಮಿಕ್ಸರ್ ಸಾಧನಗಳು.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="ಕಡತದ ಚಿಹ್ನೆ ಪರಿಸರವಿನ್ಯಾಸ">
+							<longdesc>ಕಡತದ ಚಿಹ್ನೆಗಳನ್ನು ತೋರಿಸಲು ಬಳಸಲಾಗುವ ಪರಿಸರ ವಿನ್ಯಾಸ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="&apos;ಯೂನಿಕೋಡ್ ನಿಯಂತ್ರಣ ಅಕ್ಷರ&apos; ಮೆನುವನ್ನು ತೋರಿಸು">
+							<longdesc>ನಮೂದುಗಳ ಹಾಗು ಪಠ್ಯ ನೋಟಗಳ ಸನ್ನಿವೇಶ ಮೆನುಗಳು ಅಕ್ಷರಗಳನ್ನು ಸೇರಿಸುವುದನ್ನು ಅನುಮತಿಸಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="&apos;ಇನ್‌ಪುಟ್‌ ಕ್ರಮಗಳ&apos; ಮೆನುವನ್ನು ತೋರಿಸು">
+							<longdesc>ನಮೂದುಗಳ ಹಾಗು ಪಠ್ಯ ನೋಟಗಳ ಸನ್ನಿವೇಶ ಮೆನುಗಳು ಇನ್‌ಪುಟ್ ಕ್ರಮವನ್ನು ಬದಲಾಯಿಸುವುದನ್ನು ಅನುಮತಿಸಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="ಮೆನುಪಟ್ಟಿ ವೇಗವರ್ಧಕ">
+							<longdesc>ಮೆನು ಪಟ್ಟಿಗಳನ್ನು ತೆರೆಯಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="GtkFileChooser ಗಾಗಿನ ಘಟಕ">
+							<longdesc>GtkFileChooser ವಿಜೆಟ್‌ಗಾಗಿ ಕಡತವ್ಯವಸ್ಥೆ ಮಾದರಿಯಾಗಿ ಬಳಸಲು ಘಟಕ. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ &quot;gio&quot;, &quot;gnome-vfs&quot; ಹಾಗು &quot;gtk+&quot; ಆಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="ಬಲಭಾಗದಲ್ಲಿನ ಸ್ಥಿತಿ ಪಟ್ಟಿಕೆ">
+							<longdesc>ಬಲಭಾಗದಲ್ಲಿ ಒಂದು ಸ್ಥಿತಿ ಪಟ್ಟಿ ಮಾಪಕವನ್ನು ತೋರಿಸಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="ಇಚ್ಛೆಯ ಅಕ್ಷರಶೈಲಿಯನ್ನು ಬಳಸು">
+							<longdesc>gtk+ ಅನ್ವಯಗಳಲ್ಲಿ ಇಚ್ಛೆಯ ಅಕ್ಷರಶೈಲಿಯನ್ನು ಬಳಸಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Monospace ಅಕ್ಷರಶೈಲಿ">
+							<longdesc>ಟರ್ಮಿನಲ್‌ಗಳಂತಹ ಜಾಗಗಳಲ್ಲಿ ಬಳಸಲು monospace ನ (ನಿಶ್ಚಿತ-ಅಗಲದ) ಅಕ್ಷರಶೈಲಿಯ ಹೆಸರು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="ದಸ್ತಾವೇಜಿನ ಅಕ್ಷರ">
+							<longdesc>ದಸ್ತಾವೇಜುಗಳನ್ನು ಓದಲು ಬಳಸಲಾಗುವ ಪೂರ್ವನಿಯೋಜಿತ ಅಕ್ಷರಶೈಲಿಯ ಹೆಸರು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="GTK IM ಘಟಕ">
+							<longdesc>GTK+ ಇಂದ ಬಳಸಲಾಗುವ ಇನ್‌ಪುಟ್‌ ಕ್ರಮದ ಘಟಕದ ಹೆಸರು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="GTK IM ಸ್ಥಿತಿ ಶೈಲಿ">
+							<longdesc>gtk+ ನಿಂದ ಬಳಸಲಾಗುವ GTK+ ಇನ್‌ಪುಟ್‌ ಕ್ರಮದ ಸ್ಥಿತಿ ಶೈಲಿಯ ಹೆಸರು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="GTK IM ಪೂರ್ವಸಂಪಾದನಾ ಶೈಲಿ">
+							<longdesc>gtk+ ನಿಂದ ಬಳಸಲಾಗುವ GTK+ ಇನ್‌ಪುಟ್‌ ಕ್ರಮದ ಪೂರ್ವಸಂಪಾದನಾ ಶೈಲಿಯ ಹೆಸರು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಅಕ್ಷರಶೈಲಿ">
+							<longdesc>gtk+ ಇಂದ ಬಳಸಲಾಗುವ ಪೂರ್ವನಿಯೋಜಿತ ಅಕ್ಷರಶೈಲಿಯ ಹೆಸರು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Gtk+ ಪರಿಸರವಿನ್ಯಾಸ">
+							<longdesc>gtk+ ನಿಂದ ಬಳಸಲಾಗುವ ಪೂರ್ವನಿಯೋಜಿತ ಪರಿಸರವಿನ್ಯಾಸದ ಮೂಲಹೆಸರು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Gtk+ ಪರಿಸರವಿನ್ಯಾಸ">
+							<longdesc>gtk+ ನಿಂದ ಬಳಸಲಾಗುವ ಪೂರ್ವನಿಯೋಜಿತ ಪರಿಸರವಿನ್ಯಾಸದ ಮೂಲಹೆಸರು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="ಚಿಹ್ನೆ ಪರಿಸರವಿನ್ಯಾಸ">
+							<longdesc>ಫಲಕ, nautilus ಮುಂತಾದೆಡೆಗಳಲ್ಲಿ ಬಳಸಬೇಕಿರುವ ಪರಿಸರವಿನ್ಯಾಸ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="ತೆರೆಸೂಚಕದ ಮಿಣುಕುವ ಸಮಯ">
+							<longdesc>ತೆರಸೂಚಕವು ಮಿನುಗುವ ಅವಧಿಯ ಕಾಲಚಕ್ರ, ಮಿಲಿಸೆಕೆಂಡುಗಳಲ್ಲಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="ಮಿಣುಕುವ ತೆರೆಸೂಚಕ (ಕರ್ಸರ್)">
+							<longdesc>ತೆರೆಸೂಚಕವು ಮಿನುಗಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="ಉಪಕರಣಪಟ್ಟಿಯ ಚಿಹ್ನೆಯ ಗಾತ್ರ">
+							<longdesc>ಉಪಕರಣಪಟ್ಟಿಗಳಲ್ಲಿನ ಚಿಹ್ನೆಗಳ ಗಾತ್ರ, &quot;small-toolbar&quot; ಅಥವ &quot;large-toolbar&quot; ಆಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="ಉಪಕರಣಪಟ್ಟಿಯನ್ನು ಕಿತ್ತುಹಾಕಬಹುದು">
+							<longdesc>ಬಳಕೆದಾರರು ಉಪಕರಣಪಟ್ಟಿಗಳನ್ನು ಕಿತ್ತು ಅದನ್ನು ಸುತ್ತಮುತ್ತೆಲ್ಲಾ ಸುಳಿದಾಡಿಸುವಂತಿರಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="ಮೆನುಪಟ್ಟಿಯನ್ನು ಕೀಳಬಹುದು">
+							<longdesc>ಬಳಕೆದಾರರು ಮೆನುಪಟ್ಟಿಗಳನ್ನು ಕಿತ್ತು ಅದನ್ನು ಸುತ್ತಮುತ್ತೆಲ್ಲಾ ಸುಳಿದಾಡಿಸುವಂತಿರಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="ಗುಂಡಿಗಳು ಚಿಹ್ನೆಗಳನ್ನು ಹೊಂದಿವೆ">
+							<longdesc>ಗುಂಡಿಗಳು ಗುಂಡಿ ಪಠ್ಯದ ಜೊತೆಗೆ ಚಿಹ್ನೆಯನ್ನೂ ಸಹ ತೋರಿಸಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="ಮೆನುಗಳು ಚಿಹ್ನೆಗಳನ್ನು ಹೊಂದಿವೆ">
+							<longdesc>ಮೆನುಗಳು ಒಂದು ಮೆನು ನಮೂದಿನ ಎದುರಿಗೆ ಚಿಹ್ನೆಯನ್ನು ತೋರಿಸುವಂತಿರಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="ಉಪಕರಣ ಪಟ್ಟಿಕೆಯ ಶೈಲಿ">
+							<longdesc>ಉಪಕರಣಪಟ್ಟಿಯ ಶೈಲಿ. ಮಾನ್ಯವಾದ ಮೌಲ್ಯಗಳೆಂದರೆ &quot;both&quot;, &quot;both-horiz&quot;, &quot;icons&quot;, ಹಾಗು &quot;text&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="ವೇಗವರ್ಧಕಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದು">
+							<longdesc>ಒಂದು ಸಕ್ರಿಯ ಮೆನು ಅಂಶದ ಮೇಲೆ ಇರಿಸಿದಾಗ ಬಳಕೆದಾರರು ಬಳಕೆದಾರರು ಕ್ರಿಯಾತ್ಮಕವಾಗಿ ಹೊಸ ವೇಗವರ್ಧಕ ಕೀಲಿಯನ್ನು ನಮೂದಿಸಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="ಮೆನುಗಳು ಕಿತ್ತುಹಾಕುವುದನ್ನು ಹೊಂದಿವೆ">
+							<longdesc>ಮೆನುಗಳನ್ನು ಕಿತ್ತು ಹಾಕುವಂತಿರಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="ಸಜೀವನಗಳನ್ನು (ಆನಿಮೇಶನ್) ಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ಸಜೀವನಗಳನ್ನು(ಎನೀಮೇಶನ್) ತೋರಿಸಬೇಕೆ. ಸೂಚನೆ: ಇದು ಒಂದು ಜಾಗತಿಕ ಕೀಲಿಯಾಗಿದ್ದು, ಇದು ವಿಂಡೋ ವ್ಯವಸ್ಥಾಪಕ, ಫಲಕ ಮುಂತಾದವುಗಳ ವರ್ತನೆಯನ್ನು ಬದಲಾಯಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="ನಿಲುಕಣೆಯನ್ನು ಶಕ್ತಗೊಳಿಸಿ">
+							<longdesc>ಅನ್ವಯಗಳು ನಿಲುಕಣಾ ಬೆಂಬಲವನ್ನು ಹೊಂದಿರಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="ಬಣ್ಣಹಚ್ಚುವಿಕೆಯ ಬಗೆ">
+							<longdesc>ಹಿನ್ನಲೆಗೆ ಹೇಗೆ ಬಣ್ಣ ಹಚ್ಚಬೇಕು. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ &quot;horizontal-gradient&quot;, &quot;vertical-gradient&quot;, ಹಾಗು &quot;solid&quot; ಆಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="ಅಪ್ರಧಾನ ಬಣ್ಣ">
+							<longdesc>ಗ್ರೇಡಿಯಂಟ್‌ಗಳನ್ನು ಚಿತ್ರಿಸುವಾಗ ಬಲ ಅಥವ ಕೆಳಗಿನ ಬಣ್ಣ, ಇದನ್ನು ದಟ್ಟ ಬಣ್ಣಗಳಲ್ಲಿ ಬಳಸಲಾಗುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="ಪ್ರಾಥಮಿಕ ಬಣ್ಣ">
+							<longdesc>ಗ್ರೇಡಿಯಂಟ್‌ಗಳನ್ನು ಅಥವ ದಟ್ಟ ಬಣ್ಣಗಳನ್ನು ಚಿತ್ರಿಸುವಾಗ ಬಲ ಅಥವ ಕೆಳಗಿನ ಬಣ್ಣ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="ಚಿತ್ರದ ಅಪಾರದರ್ಶಕತೆ">
+							<longdesc>ಹಿನ್ನಲೆಯ ಚಿತ್ರವನ್ನು ಚಿತ್ರಿಸಲು ಬಳಸಬೇಕಿರುವ ಅಪಾರದರ್ಶಕತೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="ಚಿತ್ರ ಕಡತದ ಹೆಸರು">
+							<longdesc>ಹಿನ್ನಲೆ ಚಿತ್ರಕ್ಕಾಗಿ ಬಳಸಬೇಕಿರುವ ಕಡತ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="ಚಿತ್ರದ ಆಯ್ಕೆಗಳು">
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="ಗಣಕತೆರೆ ಹಿನ್ನಲೆಯನ್ನು ಚಿತ್ರಿಸು">
+							<longdesc>GNOME ಗಣಕತೆರೆ ಹಿನ್ನಲೆಯನ್ನು ಚಿತ್ರಿಸಿದೆಯೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="ಎಲ್ಲಾ ಹೊರಗಿನ ತಂಬ್‌ನೈಲರನ್ನು ಅಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ಹೊರಗಿನ ಎಲ್ಲಾ ತಂಬ್‌ನೈಲರ್ ಪ್ರೋಗ್ರಾಮುಗಳನ್ನು ಅಶಕ್ತಗೊಳಿಸಲು true ಗೆ ಬದಲಾಯಿಸಿ, ಅವುಗಳನ್ನು ಸ್ವತಂತ್ರವಾಗಿ ಅಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ/ಶಕ್ತಗೊಳಿಸಲಾಗಿದೆಯೆ ಎಂಬುದನ್ನು ಹೊರತುಪಡಿಸಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="application@x-font-otf">
+						<entry name="enable">
+							<local_schema short_desc="ಓಪನ್‍ಟೈಪ್ ಅಕ್ಷರಶೈಲಿಗಳನ್ನು ತಂಬ್‍ನೈಲ್ ಮಾಡಬೇಕೆ">
+								<longdesc>ನಿಜಕ್ಕೆ ಹೊಂದಿಸಿದಲ್ಲಿ, ಓಪನ್‍ಟೈಪ್ ಅಕ್ಷರಶೈಲಿಗಳು ತಂಬ್‍ನೈಲ್ ಆಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="ಓಪನ್‍ಟೈಪ್ ಅಕ್ಷರಶೈಲಿಗಳಿಗಾಗಿನ ತಂಬ್‍ನೈಲ್ ಆಜ್ಞೆ">
+								<longdesc>ಈ ಕೀಲಿಯನ್ನು ಓಪನ್‍ಟೈಪ್ ಅಕ್ಷರಶೈಲಿಗಳಿಗಾಗಿನ ತಂಬ್‍ನೈಲ್‍ಗಳನ್ನು ಸೃಜಿಸಲು ಬಳಸಲ್ಪಡುವ ಆಜ್ಞೆಗೆ ಹೊಂದಿಸು.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-pcf">
+						<entry name="enable">
+							<local_schema short_desc="PCF ಅಕ್ಷರಶೈಲಿಗಳನ್ನು ತಂಬ್‍ನೈಲ್ ಮಾಡಬೇಕೆ">
+								<longdesc>ನಿಜಕ್ಕೆ ಹೊಂದಿಸಿದಲ್ಲಿ, PCF ಅಕ್ಷರಶೈಲಿಗಳು ತಂಬ್‍ನೈಲ್ ಆಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="PCF ಅಕ್ಷರಶೈಲಿಗಳಿಗಾಗಿನ ತಂಬ್‍ನೈಲ್ ಆಜ್ಞೆ">
+								<longdesc>ಈ ಕೀಲಿಯನ್ನು PCF ಅಕ್ಷರಶೈಲಿಗಳಿಗಾಗಿನ ತಂಬ್‍ನೈಲ್‍ಗಳನ್ನು ಸೃಜಿಸಲು ಬಳಸಲ್ಪಡುವ ಆಜ್ಞೆಗೆ ಹೊಂದಿಸು.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-type1">
+						<entry name="enable">
+							<local_schema short_desc="ಟೈಪ್1 ಅಕ್ಷರಶೈಲಿಗಳನ್ನು ತಂಬ್‍ನೈಲ್ ಮಾಡಬೇಕೆ">
+								<longdesc>ನಿಜಕ್ಕೆ ಹೊಂದಿಸಿದಲ್ಲಿ, ಟೈಪ್1 ಅಕ್ಷರಶೈಲಿಗಳು ತಂಬ್‍ನೈಲ್ ಆಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="ಟೈಪ್1 ಅಕ್ಷರಶೈಲಿಗಳಿಗಾಗಿನ ತಂಬ್‍ನೈಲ್ ಆಜ್ಞೆ">
+								<longdesc>ಈ ಕೀಲಿಯನ್ನು ಟೈಪ್1 ಅಕ್ಷರಶೈಲಿಗಳಿಗಾಗಿನ ತಂಬ್‍ನೈಲ್‍ಗಳನ್ನು ಸೃಜಿಸಲು ಬಳಸಲ್ಪಡುವ ಆಜ್ಞೆಗೆ ಹೊಂದಿಸು.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-ttf">
+						<entry name="enable">
+							<local_schema short_desc="ಟ್ರುಟೈಪ್ ಅಕ್ಷರಶೈಲಿಗಳನ್ನು ತಂಬ್‍ನೈಲ್ ಮಾಡಬೇಕೆ">
+								<longdesc>ನಿಜಕ್ಕೆ ಹೊಂದಿಸಿದಲ್ಲಿ, ಟ್ರುಟೈಪ್ ಅಕ್ಷರಶೈಲಿಗಳು ತಂಬ್‍ನೈಲ್ ಆಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="ಟ್ರುಟೈಪ್ ಅಕ್ಷರಶೈಲಿಗಳಿಗಾಗಿನ ತಂಬ್‍ನೈಲ್ ಆಜ್ಞೆ">
+								<longdesc>ಈ ಕೀಲಿಯನ್ನು ಟ್ರುಟೈಪ್ ಅಕ್ಷರಶೈಲಿಗಳಿಗಾಗಿನ ತಂಬ್‍ನೈಲ್‍ಗಳನ್ನು ಸೃಜಿಸಲು ಬಳಸಲ್ಪಡುವ ಆಜ್ಞೆಗೆ ಹೊಂದಿಸು.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="ಕೀಲಿಮಣೆಯನ್ನು ಲಾಕ್‌ ಮಾಡುವುದನ್ನು ಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ ಅಥವ ಇಲ್ಲವೆ">
+							<longdesc>ಕೀಲಿಮಣೆಯನ್ನು ಲಾಕ್‌ ಮಾಡುವುದನ್ನು ಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ ಅಥವ ಇಲ್ಲವೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="ವಿರಾಮಗಳನ್ನು ಮುಂದಕ್ಕೆ ಹಾಕುವುದನ್ನು ಅನುಮತಿಸು">
+							<longdesc>ತೆರೆಯ ವಿರಾಮವನ್ನು ನಮೂದಿಸುವುದನ್ನು ಮುಂದೂಡಬೇಕೆ ಅಥವ ಬೇಡವೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="ವಿರಾಮದ ಸಮಯ">
+							<longdesc>ನಮೂದಿಸುವ ವಿರಾಮವು ಇರಬೇಕಾದ ಸಮಯ, ನಿಮಿಷಗಳಲ್ಲಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="ನಮೂದಿಸುವ ಸಮಯ">
+							<longdesc>ವಿರಾಮದ ಕ್ರಮವು ಆರಂಭಗೊಳ್ಳುವ ಮೊದಲಿನ ನಮೂದಿಸುವ ಸಮಯ, ನಿಮಿಷಗಳಲ್ಲಿ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="URL ಹಾಗು MIME ಬಗೆಯ ಹ್ಯಾಂಡ್ಲರುಗಳನ್ನು ಅಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ಯಾವುದೆ URL ಅಥವ MIME ಬಗೆಯ ಹ್ಯಾಂಡ್ಲರ್ ಅನ್ವಯಗಳನ್ನು ಚಲಾಯಿಸುವುದಂತೆ ತಡೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="ತೆರೆಯನ್ನು ಲಾಕ್‌ ಮಾಡುವುದನ್ನು ಅಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ಬಳಕೆದಾರನು ತನ್ನ ತೆರೆಯನ್ನು ಲಾಕ್ ಮಾಡದಂತೆ ತಡೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="ಬಳಕೆದಾರರನ್ನು ಬದಲಾಯಿಸುವುದನ್ನು ಅಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ಅಧಿವೇಶನವು ಸಕ್ರಿಯವಾಗಿದ್ದಾಗ ಬಳಕೆದಾರರು ಬೇರೊಂದು ಖಾತೆಗೆ ಬದಲಾಯಿಸದಂತೆ ನಿರ್ಬಂಧಿಸು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="ಮುದ್ರಣದ ಸಿದ್ಧತೆಯನ್ನು ಅಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ಬಳಕೆದಾರರು ಮುದ್ರಣ ಸಿದ್ಧತೆಗಳನ್ನು ಮಾರ್ಪಡಿಸುವುದನ್ನು ನಿರ್ಬಂಧಿಸು. ಉದಾಹರಣೆಗೆ, ಇದು ಎಲ್ಲಾ ಅನ್ವಯಗಳ &quot;ಮುದ್ರಣ ಸಿದ್ಧತೆಗಳನ್ನು&quot; ಸಂವಾದಗಳನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳುವುದನ್ನು ಅಶಕ್ತಗೊಳಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="ಮುದ್ರಿಸುವುದನ್ನು ಅಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ಬಳಕೆದಾರರು ಮುದ್ರಿಸದಂತೆ ನಿರ್ಬಂಧಿಸು. ಉದಾಹರಣೆಗೆ, ಇದು ಎಲ್ಲಾ ಅನ್ವಯಗಳ &quot;ಮುದ್ರಣ&quot; ಸಂವಾದಗಳನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳುವುದನ್ನು ಅಶಕ್ತಗೊಳಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="ಕಡತಗಳನ್ನು ಡಿಸ್ಕಿಗೆ ಉಳಿಸುವುದನ್ನು ಅಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ಬಳಕೆದಾರರು ಕಡತಗಳನ್ನು ಡಿಸ್ಕಿಗೆ ಉಳಿಸಿದಂತೆ ನಿರ್ಬಂಧಿಸು. ಉದಾಹರಣೆಗೆ, ಇದು ಎಲ್ಲಾ ಅನ್ವಯಗಳ &quot;ಹೀಗೆ ಉಳಿಸು&quot; ಸಂವಾದಗಳನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳುವುದನ್ನು ಅಶಕ್ತಗೊಳಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="ಆಜ್ಞಾ ಸಾಲನ್ನು ಅಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ಬಳಕೆದಾರರು ಟರ್ಮಿನಲ್‌ ಅನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳುವುದನ್ನು ಅಥವ ಕಾರ್ಯಗತಗೊಳಿಸಲು ಒಂದು ಆಜ್ಞಾ ಸಾಲನ್ನು ಸೂಚಿಸದಂತೆ ನಿರ್ಬಂಧಿಸು. ಉದಾಹರಣೆಗೆ, ಇದು ಫಲಕದ &quot;ಅನ್ವಯವನ್ನು ಚಲಾಯಿಸು&quot; ಸಂವಾದವನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳುವುದನ್ನು ಅಶಕ್ತಗೊಳಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="session">
+					<entry name="required_components_list">
+						<local_schema short_desc="ಅಧಿವೇಶನದ ಅಂಗಗಳ ಅಗತ್ಯವಿದೆ">
+							<longdesc>ಅಧಿವೇಶನದ ಭಾಗವಾಗಿರಬೇಕಾಗಿರುವ ಘಟಕಗಳ ಪಟ್ಟಿ.. (ಪ್ರತಿಯೊಂದು ಅಂಶದ ಹೆಸರುಗಳು &quot;/desktop/gnome/session/required_components&quot; ನ ಅಡಿಯಲ್ಲಿ ಒಂದು ಕೀಲಿಯಾಗಿರುತ್ತದೆ). ಬಳಕೆದಾರರು ಒಂದು ಅಗತ್ಯವಾದ ಘಟಕವನ್ನು ತೆಗೆದು ಹಾಕಲು ಸಾಮಾನ್ಯವಾಗಿ ಆರಂಭಿಕ ಅನ್ವಯದ ಆದ್ಯತೆಗಳು ಅನುಮತಿಸುವುದಿಲ್ಲ ಹಾಗು ಎಲ್ಲಿಯಾದರೂ ಅವುಗಳನ್ನು ತೆಗೆದು ಹಾಕಿದಲ್ಲಿ ಅಧಿವೇಶನದ ವ್ಯವಸ್ಥಾಪಕವು ಪ್ರವೇಶದ ಸಮಯದಲ್ಲಿ ಅಗತ್ಯವಾದ ಘಟಕಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಮರಳಿ ಸೇರಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_session">
+						<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಅಧಿವೇಶನ">
+							<longdesc>ಪೂರ್ವನಿಯೋಜಿತ ಅಧಿವೇಶನದ ಭಾಗವಾಗಿರುವ ಅನ್ವಯಗಳ ಪಟ್ಟಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="idle_delay">
+						<local_schema short_desc="ಅಧಿವೇಶನವನ್ನು ಜಡ ಎಂದು ಪರಿಗಣಿಸುವ ಮುಂಚಿನ ಸಮಯ">
+							<longdesc>ಅಧಿವೇಶನವನ್ನು ಜಡವಾಗಿದೆ ಎಂದು ಪರಿಗಣಿಸಬೇಕಿರುವ ಮೊದಲು ಅದು ನಿಷ್ಕ್ರಿಯವಾಗಿರಬೇಕಿರುವ ನಿಮಿಷಗಳ ಸಂಖ್ಯೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="required_components">
+						<entry name="filemanager">
+							<local_schema short_desc="ಕಡತ ವ್ಯವಸ್ಥಾಪಕ">
+								<longdesc>ಕಡತ ವ್ಯವಸ್ಥಾಪಕವು ಗಣಕತೆರೆ ಚಿಹ್ನೆಗಳನ್ನು ಒದಗಿಸುತ್ತದೆ ಹಾಗು ನೀವು ಉಳಿಸಿದ ಕಡತಗಳೊಂದಿಗೆ ವ್ಯವಹರಿಸಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="panel">
+							<local_schema short_desc="ಫಲಕ">
+								<longdesc>ಮೆನುಗಳು, ವಿಂಡೋ ಪಟ್ಟಿ, ಸ್ಥಿತಿ ಚಿಹ್ನೆಗಳು, ಗಡಿಯಾರ ಹಾಗು ಇತ್ಯಾದಿಗಳನ್ನು ಹೊಂದಿರುವ ಪಟ್ಟಿಯನ್ನು ತೆರೆಯ ಮೇಲ್ಭಾಗದಲ್ಲಿ ಅಥವ ಕೆಳಭಾಗದಲ್ಲಿನ ಒದಗಿಸುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="windowmanager">
+							<local_schema short_desc="ವಿಂಡೋ ವ್ಯವಸ್ಥಾಪಕ">
+								<longdesc>ವಿಂಡೋ ವ್ಯವಸ್ಥಾಪಕವು ವಿಂಡೋಗಳ ಸುತ್ತಲೂ ಶೀರ್ಷಿಕೆ ಪಟ್ಟಿ ಹಾಗು ಅಂಚುಗಳನ್ನು ಎಳೆಯುವ ಪ್ರೊಗ್ರಾಂ ಆಗಿದೆ, ಹಾಗು ಇದು ವಿಂಡೋಗಳನ್ನು ಸ್ಥಳಾಂತರಿಸಲು ಹಾಗು ಗಾತ್ರಬದಲಾವಣೆಯನ್ನು ಮಾಡಲು ಅನುವು ಮಾಡುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="font_rendering">
+					<entry name="rgba_order">
+						<local_schema short_desc="RGBA ಕ್ರಮ">
+							<longdesc>ಒಂದು LCD ತೆರೆಯಲ್ಲಿ ಸಬ್‌ಪಿಕ್ಸೆಲ್‌ ಘಟಕಗಳ ಕ್ರಮ; ಕೇವಲ &quot;rgba&quot; ಗೆ ಆಂಟಿಅಲಿಯಾಸಿಂಗ್ ಮಾಡುವಾಗ ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ: ಎಡಭಾಗದಲ್ಲಿ ಕೆಂಪಿಗಾಗಿ &quot;rgb&quot; (ಸರ್ವೆ ಸಾಮಾನ್ಯ), ಎಡಭಾಗದಲ್ಲಿ ನೀಲಿಗಾಗಿ &quot;bgr&quot;, ಮೇಲ್ಭಾಗದಲ್ಲಿ ಕೆಂಪಿಗಾಗಿ &quot;vrgb&quot;, ಅಡಿಭಾಗದಲ್ಲಿ ಕೆಂಪಿಗಾಗಿ &quot;vbgr&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hinting">
+						<local_schema short_desc="ಹಿಂಟಿಂಗ್">
+							<longdesc>ಅಕ್ಷರಶೈಲಿಗಳನ್ನು ರೆಂಡರಿಂಗ್ ಮಾಡಲು ಬಳಸಬೇಕಿರುವ ಹಿಂಟಿಂಗ್ ಪ್ರಕಾರ. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ: ಯಾವುದೆ ಹಿಂಟಿಂಗ್ ಬೇಡವಾದಲ್ಲಿ &quot;ಯಾವುದೂ ಇಲ್ಲ&quot;, ಆರಂಭಿಕ ಮಟ್ಟಕ್ಕಾಗಿ &quot;ಕೊಂಚ&quot;, ಮಧ್ಯಮ ಮಟ್ಟಕ್ಕಾಗಿ &quot;ಮಧ್ಯಮ&quot;, ಹಾಗು ಗರಿಷ್ಟ ಹಿಂಟಿಂಗ್‌ಗಾಗಿ &quot;ಸಂಪೂರ್ಣ&quot; (ಇದು ಅಕ್ಷರಗಳನ್ನು ವಿರೂಪಗೊಳಿಸಬಹುದು).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="antialiasing">
+						<local_schema short_desc="ಆಂಟಿಅಲಿಯಾಸಿಂಗ್">
+							<longdesc>ಅಕ್ಷರಶೈಲಿಗಳನ್ನು ಆಂಟಿಅಲಿಯಾಸಿಂಗ್ ಮಾಡುವಾಗ ಬಳಸಬೇಕಿರುವ ಬಗೆಗಳು. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ: ಯಾವುದೆ ಆಂಟಿಅಲಿಯಾಸಿಂಗ್ ಬೇಡವಾದಲ್ಲಿ &quot;ಯಾವುದೂ ಇಲ್ಲ&quot;, ಮಾನ್ಯವಾದ ಗ್ರೇಸ್ಕೇಲ್ ಆಂಟಿಅಲಿಯಾಸಿಂಗ್‌ಗಾಗಿ &quot;ಗ್ರೇಸ್ಕೇಲ್&quot;, ಹಾಗು ಸಬ್‌ಪಿಕ್ಸೆಲ್ ಆಂಟಿಅಲಿಯಾಸಿಂಗ್‌ಗಾಗಿ &quot;rgba&quot; (ಕೇವಲ LCD ತೆರೆಗಳಿಗೆ ಮಾತ್ರ).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="dpi">
+						<local_schema short_desc="DPI">
+							<longdesc>ಅಕ್ಷರ ಶೈಲಿಯ ಗಾತ್ರಗಳನ್ನು ಪಿಕ್ಸೆಲ್‌ ಗಾತ್ರಗಳಾಗಿ ಬದಲಾಯಿಸಲು ಬಳಸಬೇಕಿರುವ ರೆಸಲ್ಯೂಶನ್, ಪ್ರತಿ ಇಂಚಿನಲ್ಲಿನ ಚುಕ್ಕಿಗಳ ಆಧಾರದಲ್ಲಿ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="ಆರಂಭಿಕ ಸಹಾಯಕ ತಂತ್ರಜ್ಞಾನ ಅನ್ವಯಗಳು">
+								<longdesc>GNOME ಗಣಕತೆರೆಗೆ ಪ್ರವೇಶಿಸಿದಾಗ ಆರಂಭಿಸಬೇಕಿರುವ ಸಹಾಯಕ ತಂತ್ರಜ್ಞಾನ ಅನ್ವಯಗಳ ಪಟ್ಟಿಗಳು.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>ಒಂದು ಮಾರ್ಪಡಕವನ್ನು ಒತ್ತಿದಾಗ ಬೀಪ್ ಶಬ್ಧಮಾಡು.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>ಒಂದೇ ಬಾರಿಗೆ ಎರಡು ಕೀಲಿಗಳನ್ನು ಒತ್ತಿದಾಗ ಅಶಕ್ತಗೊಳಿಸು.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="ಕನಿಷ್ಟ ಕಾಲಾವಧಿ, ಮಿಲಿಸೆಕೆಂಡುಗಳಲ್ಲಿ">
+								<longdesc>@delay ಮಿಲಿಸೆಕೆಂಡುಗಳಷ್ಟು ಹೊತ್ತು ಕೀಲಿಗಳನ್ನು ಒತ್ತಿ ಹಿಡಿಯದ ಹೊರತು ಅದನ್ನು ಅಂಗೀಕರಿಸಬೇಡ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="ಆರಂಭಿಕ ವಿಳಂಬ, ಮಿಲಿಸೆಕೆಂಡುಗಳಲ್ಲಿ">
+								<longdesc>ಮೌಸ್‌ನ ಕೀಲಿಯು ಕಾರ್ಯನಿರ್ವಹಿಸಲು ಆರಂಭಿಸುವ ಮೊದಲು ಎಷ್ಟು ಮಿಲಿಸೆಕೆಂಡುಗಳಷ್ಟು ಕಾಯಬೇಕು.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="ಎಷ್ಟು ಹೊತ್ತಿನವರೆಗೆ ವೇಗವರ್ಧನೆ ಮಾಡಬೇಕು, ಮಿಲಿಸೆಕೆಂಡುಗಳಲ್ಲಿ">
+								<longdesc>0 ಇಂದ ಗರಿಷ್ಟ ವೇಗಕ್ಕೆ ಹೋಗಲು ಎಷ್ಟು ಮಿಲಿ ಸೆಕೆಂಡುಗಳು ಹಿಡಿಯುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="ಪ್ರತಿ ಸೆಕೆಂಡುಗಳ ಪಿಕ್ಸೆಲ್‌ಗಳು">
+								<longdesc>ಗರಿಷ್ಟ ವೇಗದಲ್ಲಿ ಒಂದು ಸೆಕೆಂಡಿಗೆ ಎಷ್ಟು ಪಿಕ್ಸೆಲ್‌ಗಳನ್ನು ಸ್ಥಳಾಂತರಿಸಬೇಕು.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="ಕನಿಷ್ಟ ಕಾಲಾವಧಿ ಮಿಲಿಸೆಕೆಂಡುಗಳಲ್ಲಿ">
+								<longdesc>@delay ನಲ್ಲಿನ _same_ key ಮಿಲಿಸೆಕೆಂಡುಗಳ ನಂತರದ ಅನೇಕ ಬಾರಿ ಒತ್ತುವಿಕೆಗಳನ್ನು ಆಲಕ್ಷಿಸು.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_enable">
+							<local_schema short_desc="ಮೌಸ್‌ ಕೀಲಿಗಳು">
+								<longdesc>ಮೌಸ್‌ನ ಕೀಲಿಗಳ ಕೀಲಿಮಣೆಯ ನಿಲುಕಿಸುವ ಸವಲತ್ತು ಚಾಲಿತವಾಗಿದೆಯೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_enable">
+							<local_schema short_desc="ನಿಧಾನಗತಿಯ ಕೀಲಿಗಳು">
+								<longdesc>ನಿಧಾನಗತಿಯ ಕೀಲಿಗಳ ಕೀಲಿಮಣೆಯ ನಿಲುಕಿಸುವ ಸವಲತ್ತು ಚಾಲಿತವಾಗಿದೆಯೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_enable">
+							<local_schema short_desc="ಪುಟಿಯುವ ಕೀಲಿಗಳು">
+								<longdesc>ಪುಟಿಕೆ ಕೀಲಿಗಳ ಕೀಲಿಮಣೆಯ ನಿಲುಕಿಸುವ ಸವಲತ್ತು ಚಾಲಿತವಾಗಿದೆಯೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_enable">
+							<local_schema short_desc="ಸ್ಟಿಕಿ ಕೀಲಿಗಳು">
+								<longdesc>ಸ್ಟಿಕಿ ಕೀಲಿಗಳ ಕೀಲಿಮಣೆಯ ನಿಲುಕಿಸುವ ಸವಲತ್ತು ಚಾಲಿತವಾಗಿದೆಯೆ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="keybindings">
+					<entry name="allowed_keys">
+						<local_schema short_desc="ಅನುಮತಿ ಇರುವ ಕೀಲಿಗಳು">
+							<longdesc>ಖಾಲಿ ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ, GConf ಕೋಶವು ಪಟ್ಟಿಯಲ್ಲಿ ಇರದ ಹೊರತು ಕೀಲಿಬೈಂಡಿಂಗ್‌ಗಳನ್ನು ಆಲಕ್ಷಿಸಲಾಗುವುದು. ಇದು ಒಂದು ಉಪಯುಕ್ತ ಲಾಕ್‌ಡೌನ್ ಆಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="onscreenkeyboard">
+						<entry name="action">
+							<local_schema short_desc="ತೆರೆಯ ಮೇಲಣ ಕೀಲಿ ಮಣೆಯನ್ನು ಟಾಗಲ್ ಮಾಡು">
+								<longdesc>ತೆರೆಯ ಮೇಲಿನ ಕೀಲಿಮಣೆಯನ್ನು ಆನ್‌ ಮಾಡಲು ಅಥವ ಆಫ್‌ ಬಳಸಲಾಗುವ ಆಜ್ಞೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="ತೆರೆಯ ಮೇಲಣ ಕೀಲಿ ಮಣೆಯನ್ನು ಟಾಗಲ್ ಮಾಡು">
+								<longdesc>ತೆರೆಯ ಮೇಲಣ ಕೀಲಿಮಣೆಯನ್ನು ಟಾಗಲ್‌ ಮಾಡಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="ತೆರೆಯ ಮೇಲಣ ಕೀಲಿಮಣೆಯನ್ನು ಟಾಗಲ್ ಮಾಡಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್‌ನ ಹೆಸರು">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="screenreader">
+						<entry name="action">
+							<local_schema short_desc="ತೆರೆ ಓದುಗನನ್ನು ಟಾಗಲ್ ಮಾಡು">
+								<longdesc>ಓದುಗನನ್ನು ಆನ್‌ ಮಾಡಲು ಅಥವ ಆಫ್‌ ಬಳಸಲಾಗುವ ಆಜ್ಞೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="ತೆರೆ ಓದುಗನನ್ನು ಟಾಗಲ್ ಮಾಡಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್‌ನ ಹೆಸರು">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="ತೆರೆ ಓದುಗನನ್ನು ಟಾಗಲ್ ಮಾಡು">
+								<longdesc>ತೆರೆ ಓದುಗನನ್ನು ಟಾಗಲ್ ಮಾಡಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="magnifier">
+						<entry name="action">
+							<local_schema short_desc="ಮ್ಯಾಗ್ನಿಫೈಯರ್ ಅನ್ನು ಟಾಗಲ್ ಮಾಡು">
+								<longdesc>ಮ್ಯಾಗ್ನಿಫೈಯರನ್ನು ಆನ್‌ ಮಾಡಲು ಅಥವ ಆಫ್‌ ಬಳಸಲಾಗುವ ಆಜ್ಞೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="ಮ್ಯಾಗ್ನಿಫಯರ್ ಅನ್ನು ಟಾಗಲ್ ಮಾಡಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್‌ನ ಹೆಸರು">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="ಮ್ಯಾಗ್ನಿಫೈಯರ್ ಅನ್ನು ಟಾಗಲ್ ಮಾಡು">
+								<longdesc>ಮ್ಯಾಗ್ನಿಫೈಯರ್ ಅನ್ನು ಟಾಗಲ್ ಮಾಡಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;h323&quot;  URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;https&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ &quot;h323&quot; URLs">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;h323&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;callto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;callto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;callto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;aim&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;aim&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;aim&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;mailto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;mailto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;mailto&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;https&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;https&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;https&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;http&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;http&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;http&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;man&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;man&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;man&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;info&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;info&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;info&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;ghelp&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;ghelp&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;ghelp&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸು">
+								<longdesc>ನಿಜ ಈ ಬಗೆಯ URL ಅನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಟರ್ಮಿನಲ್ಲಿನಲ್ಲಿ ಚಲಾಯಿಸಬೇಕು ಎಂದಾದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸುವವ">
+								<longdesc>ಶಕ್ತಗೊಂಡಲ್ಲಿ, ಆಜ್ಞೆಯನ್ನು &quot;trash&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ಸೂಚಿಸಿರುವ ಆಜ್ಞೆಯು &quot;trash&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆ">
+								<longdesc>&quot;ಆಜ್ಞೆ&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾಗಿರುವ ಆಜ್ಞೆಯು &quot;trash&quot; URLಗಳನ್ನು ನಿಭಾಯಿಸಬೇಕೆಂದಿದ್ದಲ್ಲಿ ಇದು ನಿಜವಾಗುತ್ತದೆ .</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="ಕಾರ್ಯಕ್ಕೆ ಟರ್ಮಿನಲ್‌ನ ಅಗತ್ಯವಿದೆ">
+								<longdesc>ಪೂರ್ವನಿಯೋಜಿತ ಕಾರ್ಯಗಳು ಚಲಾಯಿತಗೊಳ್ಳಲು ಒಂದು ಟರ್ಮಿನಲ್‌ನ ಅಗತ್ಯವಿದೆಯೆ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಕಾರ್ಯಗಳು">
+								<longdesc>ಪೂರ್ವನಿಯೋಜಿತ ಕಾರ್ಯಗಳ ಅನ್ವಯ</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="ಕ್ಯಾಲೆಂಡರಿಗೆ ಟರ್ಮಿನಲ್‌ನ ಅಗತ್ಯವಿದೆ">
+								<longdesc>ಪೂರ್ವನಿಯೋಜಿತ ಕ್ಯಾಲೆಂಡರ್ ಚಲಾಯಿತಗೊಳ್ಳಲು ಒಂದು ಟರ್ಮಿನಲ್‌ನ ಅಗತ್ಯವಿದೆಯೆ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಕ್ಯಾಲೆಂಡರ್">
+								<longdesc>ಪೂರ್ವನಿಯೋಜಿತ ಕ್ಯಾಲೆಂಡರ್ ಅನ್ವಯ</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರಗಳ ಹೆಸರುಗಳು (ಬಳಕೆಯಲ್ಲಿಲ್ಲ)">
+								<longdesc>ಮೊದಲ ವಿಂಡೋ ವ್ಯವಸ್ಥಾಪಕನ ಕಾರ್ಯಸ್ಥಳಗಳ ಹೆಸರುಗಳ ಒಂದು ಪಟ್ಟಿ. ಈ ಕೀಲಿಯು GNOME 2.12 ಯ ನಂತರದಿಂದ ಬಳಕೆಯಲ್ಲಿಲ್ಲ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರಗಳ ಸಂಖ್ಯೆ (ಬಳಕೆಯಲ್ಲಿಲ್ಲ)">
+								<longdesc>ವಿಂಡೋ ವ್ಯವಸ್ಥಾಪಕವು ಬಳಸಬೇಕಿರುವ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳ ಸಂಖ್ಯೆ. ಈ ಕೀಲಿಯು GNOME 2.12 ಯ ನಂತರದಿಂದ ಬಳಕೆಯಲ್ಲಿಲ್ಲ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="ಬಳಕೆದಾರ ವಿಂಡೊ ವ್ಯವಸ್ಥಾಪಕ (ಬಳಕೆಯಲ್ಲಿಲ್ಲ)">
+								<longdesc>ಮೊದಲು ಪ್ರಯತ್ನಿಸಬೇಕಿರುವ ವಿಂಡೋ ವ್ಯವಸ್ಥಾಪಕ. ಈ ಕೀಲಿಯನ್ನು GNOME 2.12 ಯ ನಂತರದಿಂದ ಬಳಕೆಯಲ್ಲಿಲ್ಲ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="ಹಿಮ್ಮರಳಿಕೆಯ ವಿಂಡೋ ವ್ಯವಸ್ಥಾಪಕ (ಬಳಕೆಯಲ್ಲಿಲ್ಲ)">
+								<longdesc>ಬಳಕೆದಾರರ ವಿಂಡೋ ವ್ಯವಸ್ಥಾಪಕವು ಕಂಡುಬರದೆ ಇದ್ದಲ್ಲಿ ಹಿಮ್ಮರಳಬೇಕಿರುವ ವಿಂಡೋ ವ್ಯವಸ್ಥಾಪಕ. ಈ ಕೀಲಿಯು GNOME 2.12 ಯ ನಂತರದಿಂದ ಬಳಕೆಯಲ್ಲಿಲ್ಲ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="ವೀಕ್ಷಕವು ದೂರದಲ್ಲಿರುವುದನ್ನು ಅರ್ಥ ಮಾಡಿಕೊಳ್ಳುತ್ತದೆ">
+								<longdesc>ಪೂರ್ವನಿಯೋಜಿತ ವೀಕ್ಷಕವು ನೆಟ್‌ಸ್ಕೇಪ್ ರಿಮೋಟ್ ಅನ್ನು ಅರ್ಥ ಮಾಡಿಕೊಳ್ಳುತ್ತದೆಯೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="ವೀಕ್ಷಕಕ್ಕೆ ಟರ್ಮಿನಲ್‌ನ ಅಗತ್ಯವಿದೆ">
+								<longdesc>ಪೂರ್ವನಿಯೋಜಿತ ವೀಕ್ಷಕವು ಚಲಾಯಿತಗೊಳ್ಳಲು ಒಂದು ಟರ್ಮಿನಲ್‌ನ ಅಗತ್ಯವಿದೆಯೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ವೀಕ್ಷಕ">
+								<longdesc>ಎಲ್ಲಾ URL ಗಳಿಗಾಗಿನ ಪೂರ್ವನಿಯೋಜಿತ ವೀಕ್ಷಕ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<entry name="screen_reader_enabled">
+							<local_schema short_desc="ತೆರೆ ಓದುಗ">
+								<longdesc>ತೆರೆಯ ಓದುಗವು ಚಾಲಿತವಾಗಿದೆಯೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_magnifier_enabled">
+							<local_schema short_desc="ತೆರೆಯ ಮ್ಯಾಗ್ನಿಫೈರ್‌">
+								<longdesc>ತೆರೆಯ ಮ್ಯಾಗ್ನಿಫಯರ್ ಚಾಲಿತವಾಗಿದೆಯೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_keyboard_enabled">
+							<local_schema short_desc="ತೆರೆಯ ಮೇಲಣ ಕೀಲಿ ಮಣೆ">
+								<longdesc>ತೆರೆಯ ಮೇಲಣ ಕೀಲಿಮಣೆಯು ಚಾಲಿತವಾಗಿದೆಯೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="ಇಚ್ಛೆಯ ಚಲನಾ ಸಹಾಯಕ ತಂತ್ರಜ್ಞಾನ ಅನ್ವಯವನ್ನು ಆರಂಭಿಸು">
+									<longdesc>ಪ್ರವೇಶದ ಸಮಯದಲ್ಲಿ GNOME ಆರಂಭಿಸಬೇಕಿರುವ ಇಚ್ಛೆಯ ಚಲನಾ ಸಹಾಯಕ ತಂತ್ರಜ್ಞಾನ ಅನ್ವಯ.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="ಇಚ್ಛೆಯ ಚಲನಾ ಸಹಾಯಕ ತಂತ್ರಜ್ಞಾನ ಅನ್ವಯ">
+									<longdesc>ಪ್ರವೇಶ, ಮೆನು, ಅಥವ ಆಜ್ಞಾಸಾಲಿನಲ್ಲಿ ಬಳಸಬೇಕಿರುವ ಇಚ್ಛೆಯ ಚಲನಾ ಸಹಾಯಕ ತಂತ್ರಜ್ಞಾನ ಅನ್ವಯ.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="ಇಚ್ಛೆಯ ದೃಶ್ಯರೂಪದ ಸಹಾಯಕ ತಂತ್ರಜ್ಞಾನ ಅನ್ವಯವನ್ನು ಆರಂಭಿಸು">
+									<longdesc>ಪ್ರವೇಶದ ಸಮಯದಲ್ಲಿ GNOME ಆರಂಭಿಸಬೇಕಿರುವ ಇಚ್ಛೆಯ ದೃಶ್ಯರೂಪದ ಸಹಾಯಕ ತಂತ್ರಜ್ಞಾನ ಅನ್ವಯ.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="ಇಚ್ಛೆಯ ದೃಶ್ಯರೂಪದ ಸಹಾಯಕ ತಂತ್ರಜ್ಞಾನ ಅನ್ವಯ">
+									<longdesc>ಪ್ರವೇಶ, ಮೆನು, ಅಥವ ಆಜ್ಞಾಸಾಲಿನಲ್ಲಿ ಬಳಸಬೇಕಿರುವ ಇಚ್ಛೆಯ ದೃಶ್ಯರೂಪದ ಸಹಾಯಕ ತಂತ್ರಜ್ಞಾನ ಅನ್ವಯ.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಘಟಕ ನೋಡುವ ಅನ್ವಯ">
+								<longdesc>ಕಡತಗಳನ್ನು ವೀಕ್ಷಿಸಲು ಒಂದು ಘಟಕದ ಅಗತ್ಯವಿರುವಂತಹ ಕಡತಗಳನ್ನು ವೀಕ್ಷಿಸಲು ಬಳಸಬೇಕಾದ ಒಂದು ಅನ್ವಯ. %s ನಿಯತಾಂಕವನ್ನು ಕಡತಗಳ URI ಗಳಿಂದ ಬದಲಾಯಿಸಲಾಗುತ್ತದೆ, ಹಾಗು %c ನಿಯತಾಂಕವನ್ನು ಘಟಕದ IID ಇಂದ ಬದಲಾಯಿಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Exec ಆರ್ಗುಮೆಂಟ್‌ಗಳು">
+								<longdesc>&apos;exec&apos; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾದ ಟರ್ಮಿನಲ್‌ನಲ್ಲಿ ಕಾರ್ಯಗತಗೊಳಿಸಬೇಕಾದ ಪ್ರೋಗ್ರಾಮಿನಲ್ಲಿ ಬಳಸಲಾಗುವ ಆರ್ಗುಮೆಂಟ್.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ಟರ್ಮಿನಲ್ ಅನ್ವಯ">
+								<longdesc>ಟರ್ಮಿನಲ್‌ ಪ್ರೊಗ್ರಾಮಿನ ಅಗತ್ಯವಿರುವ ಒಂದು ಅನ್ವಯವನ್ನು ಆರಂಭಿಸುವಾಗ ಬಳಸಬೇಕಿರುವ ಟರ್ಮಿನಲ್.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="ತೆರೆಸೂಚಕದ ಗಾತ್ರ">
+								<longdesc>cursor_theme ನಿಂದ ಉಲ್ಲೇಖಿಸಲಾದ ತೆರೆಸೂಚಕದ ಗಾತ್ರ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="ತೆರೆಸೂಚಕದ ಪರಿಸರವಿನ್ಯಾಸ">
+								<longdesc>ತೆರೆಸೂಚಕದ ಪರಿಸರ ವಿನ್ಯಾಸದ ಹೆಸರು. XFree86 4.3 ಹಾಗು ನಂತರದ ರೀತಿಯ ಕೇವಲ Xcursor ಅನ್ನು ಬೆಂಬಲಿಸುವ Xservers ದಲ್ಲಿ ಮಾತ್ರವೆ ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="ತೆರೆಸೂಚಕದ ಅಕ್ಷರಶೈಲಿ">
+								<longdesc>ತೆರೆಸೂಚಕದ ಅಕ್ಷರಶೈಲಿಯ ಹೆಸರು. ಸೂಚಿಸದೆ ಇದ್ದಲ್ಲಿ ಪೂರ್ವನಿಯೋಜಿತ ಅಕ್ಷರಶೈಲಿಯನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ಪ್ರತಿ ಅಧಿವೇಶನದಲ್ಲಿ X ಪರಿಚಾರಕವು ಆರಂಭಗೊಂಡಾಗ ಇದು ವ್ಯಾಪಕಗೊಳ್ಳುತ್ತದೆ, ಆದ್ದರಿಂದ ಅಧಿವೇಶನದ ಮಧ್ಯದಲ್ಲಿ ಇದನ್ನು ಬದಲಾಯಿಸಿದರೆ ಅದು ಕಾರ್ಯರೂಪಕ್ಕೆ ಬರುವುದು ಮುಂದಿನ ಬಾರಿ ನೀವು ಪ್ರವೇಶಿಸಿದಾಗಲೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="ಸೂಚಕವನ್ನು ಪತ್ತೆ ಮಾಡು">
+								<longdesc>Control ಕೀಲಿಯನ್ನು ಒತ್ತಿಹಿಡಿದು ನಂತರ ಬಿಟ್ಟಾಗ ಸೂಚಕವು ಪ್ರಸಕ್ತ ಇರುವ ಸ್ಥಳವನ್ನು ಸುಪ್ರಕಾಶಗೊಳಿಸುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="ಎರಡು ಬಾರಿ ಒತ್ತುವ ಸಮಯ">
+								<longdesc>ಎರಡು ಕ್ಲಿಕ್‌ ನಡುವಿನ ಸಮಯದ ಅಂತರ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="ಎಳೆಯುವಿಕೆಯ ಮಿತಿ">
+								<longdesc>ಎಳೆಯುವಿಕೆಯ ಆರಂಭಗೊಳ್ಳುವ ಮುಂಚಿನ ದೂರ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="ಚಲನೆಯ ಮಿತಿ">
+								<longdesc>ವೇಗವರ್ಧಿತವಾದ ಮೌಸ್‌ನ ಚಲನೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವ ಮೊದಲು ತೆರೆಸೂಚಕವು ಚಲಾಯಿತಗೊಳ್ಳಬೇಕಿರುವ ದೂರ, ಪಿಕ್ಸೆಲ್‌ಗಳಲ್ಲಿ. ಮೌಲ್ಯವು -1 ಆಗಿದ್ದಲ್ಲಿ ಅದು ಪೂರ್ವನಿಯೋಜಿತವನ್ನು ಸೂಚಿಸುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="ಒಂದು ಕ್ಲಿಕ್">
+								<longdesc>ಮೌಸ್‌ನ ಚಲನೆಗಾಗಿನ ವೇಗವರ್ಧಕ ಗುಣಕ. ಮೌಲ್ಯವು -1 ಆಗಿದ್ದಲ್ಲಿ ಅದು ಪೂರ್ವನಿಯೋಜಿತವನ್ನು ಸೂಚಿಸುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="ಒಂದು ಕ್ಲಿಕ್">
+								<longdesc>ಚಿಹ್ನೆಗಳನ್ನು ತೆರೆಯಲು ಒಂದು ಕ್ಲಿಕ್.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="ಮೌಸ್‌ಗುಂಡಿಯ ವಾಲಿಕೆ">
+								<longdesc>ಎಡಗೈಯ ಮೌಸುಗಳಿಗಾಗಿ ಎಡ ಹಾಗು ಬಲ ಮೌಸ್‌ನ ಗುಂಡಿಗಳನ್ನು ಅದಲು ಬದಲು ಮಾಡು.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="touchpad">
+						<entry name="horiz_scroll_enabled">
+							<local_schema short_desc="ಅಡ್ಡ ಚಲಿಸುವಿಕೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು">
+								<longdesc>scroll_method ಕೀಲಿಯಿಂದ ಆರಿಸಲಾದ ವಿಧಾನದ ರೀತಿಯಲ್ಲಿಯೆ ಅಡ್ಡ ಚಲನೆಯನ್ನು ಅನುಮತಿಸಲು ಇದನ್ನು TRUE ಗೆ ಬದಲಾಯಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_method">
+							<local_schema short_desc="ಟಚ್‌ಪ್ಯಾಡ್ ಚಲನೆಯ ವಿಧಾನವನ್ನು ಆರಿಸಿ">
+							</local_schema>
+						</entry>
+						<entry name="tap_to_click">
+							<local_schema short_desc="ಟಚ್‌ಪ್ಯಾಡಿನಿಂದ ಮೌಸ್‌ಕ್ಲಿಕ್‌ಗಳನ್ನು ಶಕ್ತಗೊಳಿಸಿ">
+								<longdesc>ಟಚ್‌ಪ್ಯಾಡ್‌ನಲ್ಲಿ ಮೆಲ್ಲಗೆ ತಟ್ಟುವುದರ ಮೂಲಕ ಮೌಸ್‌ ಕ್ಲಿಕ್‌ಗಳನ್ನು ಕಳುಹಿಸುವುದನ್ನು ಶಕ್ತಗೊಳಿಸಲು ಇದನ್ನು TRUE ಗೆ ಬದಲಾಯಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="disable_while_typing">
+							<local_schema short_desc="ಟೈಪ್ ಮಾಡುವಾಗ ಟಚ್‌ಪ್ಯಾಡನ್ನು ಅಶಕ್ತಗೊಳಿಸು">
+								<longdesc>ಟೈಪಿಸುವಾಗ ಆಕಸ್ಮಿಕವಾಗಿ ಟಚ್‌ಪ್ಯಾಡ್ ಗೆ ಕೈ ತಾಗುವ ತೊಂದರೆ ಇದ್ದರೆ ಇದನ್ನು TRUE ಗೆ ಬದಲಾಯಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="NumLock ಸ್ಥಿತಿಯನ್ನು ನೆನಪಿಟ್ಟುಕೊ">
+								<longdesc>true ಗೆ ಹೊಂದಿಸಿದಲ್ಲಿ, ಅಧಿವೇಶನದ ನಡುವೆ umLock LED ಯ ಸ್ಥಿತಿಯನ್ನು GNOME ನೆನಪಿಟ್ಟುಕೊಳ್ಳುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="ಕೀಲಿಮಣೆ ಬೆಲ್ ಕಸ್ಟಮ್ ಕಡತದ ಹೆಸರು">
+								<longdesc>ಚಲಾಯಿಸಬೇಕಿರುವ ಬೆಲ್ ಶಬ್ಧದ ಕಡತ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ &quot;on&quot;, &quot;off&quot;, ಹಾಗು &quot;custom&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="indicator">
+							<entry name="enabledPlugins">
+								<local_schema short_desc="ಶಕ್ತಗೊಳಿಸಲಾದ ಕೀಲಿಮಣೆ ಸೂಚಕ ಪ್ಲಗ್‌ಇನ್‌ಗಳ ಪಟ್ಟಿ">
+									<longdesc>ಶಕ್ತಗೊಳಿಸಲಾದ ಕೀಲಿಮಣೆ ಸೂಚಕ ಪ್ಲಗ್‌ಇನ್‌ಗಳ ಪಟ್ಟಿ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="showFlags">
+								<local_schema short_desc="ಆಪ್ಲೆಟ್‌ನಲ್ಲಿ ಗುರುತನ್ನು ತೋರಿಸು">
+									<longdesc>ಪ್ರಸಕ್ತ ವಿನ್ಯಾಸವನ್ನು ಸೂಚಿಸಲು ಆಪ್ಲೆಟ್‌ನಲ್ಲಿ ಗುರುತನ್ನು ತೋರಿಸು</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="secondary">
+								<local_schema short_desc="ಅಪ್ರಮುಖವಾದ ಗುಂಪುಗಳು">
+									<longdesc>ಅಪ್ರಮುಖವಾದ ಗುಂಪುಗಳು</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="preview">
+							<entry name="height">
+								<local_schema short_desc="ಕೀಲಿಮಣೆ ಮುನ್ನೋಟ, ಎತ್ತರ">
+									<longdesc>ಕೀಲಿಮಣೆ ಮುನ್ನೋಟ, ಎತ್ತರ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="width">
+								<local_schema short_desc="ಕೀಲಿಮಣೆ ಮುನ್ನೋಟ, ಅಗಲ">
+									<longdesc>ಕೀಲಿಮಣೆ ಮುನ್ನೋಟ, ಅಗಲ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="y">
+								<local_schema short_desc="ಕೀಲಿಮಣೆ ಮುನ್ನೋಟ, Y ಆಫ್‌ಸೆಟ್">
+									<longdesc>ಕೀಲಿಮಣೆ ಮುನ್ನೋಟ, Y ಆಫ್‌ಸೆಟ್</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="x">
+								<local_schema short_desc="ಕೀಲಿಮಣೆ ಮುನ್ನೋಟ, X ಆಫ್‌ಸೆಟ್">
+									<longdesc>ಕೀಲಿಮಣೆ ಮುನ್ನೋಟ, X ಆಫ್‌ಸೆಟ್</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="general">
+							<entry name="disable_sysconfig_changed_warning">
+								<local_schema short_desc=" &quot;X sysconfig changed&quot; ಎಚ್ಚರಿಕೆ ಸಂದೇಶವನ್ನು ತಡೆಹಿಡಿ">
+									<longdesc> &quot;X sysconfig changed&quot; ಎಚ್ಚರಿಕೆ ಸಂದೇಶವನ್ನು ತಡೆಹಿಡಿ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="loadExtraItems">
+								<local_schema short_desc="ಹೆಚ್ಚಿನ ಸಂರಚನಾ ಅಂಶಗಳನ್ನು ಲೋಡ್ ಮಾಡಿ">
+									<longdesc>ನವೀನ, ವಿರಳವಾಗಿ ಬಳಸಲಾದ ಲೇಔಟ್‌ಗಳನ್ನು ಹಾಗು ಆಯ್ಕೆಗಳನ್ನು ಲೋಡ್ ಮಾಡು</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layoutNamesAsGroupNames">
+								<local_schema short_desc="ಗುಂಪಿನ ಹೆಸರುಗಳ ಬದಲು ವಿನ್ಯಾಸದ ಹೆಸರುಗಳನ್ನು ತೋರಿಸು">
+									<longdesc>ಗುಂಪಿನ ಹೆಸರುಗಳ ಬದಲು ವಿನ್ಯಾಸದ ಹೆಸರುಗಳನ್ನು ತೋರಿಸು (ಕೇವಲ XFree ಬೆಂಬಲವಿರುವ ಅನೇಕ ವಿನ್ಯಾಸಗಳಿಗಾಗಿನ ಆವೃತ್ತಿಗಾಗಿ ಮಾತ್ರ)</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="handleIndicators">
+								<local_schema short_desc="ವಿನ್ಯಾಸ ಗುಂಪುಗಳೊಂದಿಗೆ ಸೂಚಕಗಳನ್ನು ಉಳಿಸು/ಮರಳಿ ಸ್ಥಾಪಿಸಿ">
+									<longdesc>ವಿನ್ಯಾಸ ಗುಂಪುಗಳೊಂದಿಗೆ ಸೂಚಕಗಳನ್ನು ಉಳಿಸು/ಮರಳಿ ಸ್ಥಾಪಿಸಿ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="groupPerWindow">
+								<local_schema short_desc="ಪ್ರತಿ ವಿಂಡೋಗಾಗಿ ಪ್ರತ್ಯೇಕ ಗುಂಪನ್ನು ಇರಿಸಿಕೊಳ್ಳಿ ಹಾಗು ನಿರ್ವಹಿಸಿ">
+									<longdesc>ಪ್ರತಿ ವಿಂಡೋಗಾಗಿ ಪ್ರತ್ಯೇಕ ಗುಂಪನ್ನು ಇರಿಸಿಕೊಳ್ಳಿ ಹಾಗು ನಿರ್ವಹಿಸಿ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="defaultGroup">
+								<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಗುಂಪು, ವಿಂಡೋ ನಿರ್ಮಾಣದಲ್ಲಿ ನಿಯೋಜಿಸಲಾಗಿದೆ">
+									<longdesc>ಪೂರ್ವನಿಯೋಜಿತ ಗುಂಪು, ವಿಂಡೋ ನಿರ್ಮಾಣದಲ್ಲಿ ನಿಯೋಜಿಸಲಾಗಿದೆ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="known_file_list">
+								<local_schema short_desc="modmap ಕಡತದ ಪಟ್ಟಿ">
+									<longdesc>$HOME ಕೋಶದಲ್ಲಿ ಲಭ್ಯವಿರುವ modmap ಕಡತಗಳ ಒಂದು ಪಟ್ಟಿ.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="update_handlers">
+								<local_schema short_desc="ಕೀಲಿಮಣೆ ಅಪ್‌ಡೇಟ್ ಹ್ಯಾಂಡ್ಲರ್">
+									<longdesc>ಕೀಲಿಮಣೆಯನ್ನು ಮರಳಿ ಲೋಡ್ ಮಾಡಿದಾಗ ಚಲಾಯಿಸಬೇಕಿರುವ ಸ್ಕ್ರಿಪ್ಟುಗಳು. xmodmap ಆಧರಿತವಾದ ಸರಿಪಡಿಸುವಿಕೆಗಳನ್ನು ಮರಳಿ ಅನ್ವಯಿಸಲು ಸಹಕಾರಿಯಾಗುತ್ತದೆ</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="kbd">
+							<entry name="options">
+								<local_schema short_desc="ಕೀಲಮಣೆ ಆಯ್ಕೆಗಳು">
+									<longdesc>ಕೀಲಮಣೆ ಆಯ್ಕೆಗಳು</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layouts">
+								<local_schema short_desc="ಕೀಲಮಣೆ ವಿನ್ಯಾಸ">
+									<longdesc>ಕೀಲಮಣೆ ವಿನ್ಯಾಸ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="model">
+								<local_schema short_desc="ಕೀಲಮಣೆ ಮಾದರಿ">
+									<longdesc>ಕೀಲಮಣೆ ಮಾದರಿ</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="rotate">
+						<local_schema short_desc="ಲಂಬ ಫಲಕಗಳಲ್ಲಿ ತಿರುಗಿಸಿ">
+							<longdesc>ನಿಜವಾದಲ್ಲಿ, ಮೀನಿನ ಸಜೀವನವುಎನಿಮೇಶನ್) ಲಂಬ ಫಲಕಗಳಲ್ಲಿ ತಿರುಗುತ್ತಿರುವಂತೆ ಕಾಣಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed">
+						<local_schema short_desc="ಪ್ರತಿ ಚೌಕಟ್ಟಿನಲ್ಲಿನ ಸ್ಥಗಿತಗೊಳಿಸುವಿಕೆಗಳ ಸಂಖ್ಯೆ">
+							<longdesc>ಪ್ರತಿ ಚೌಕಟ್ಟುಗಳು ತೋರಿಸಲ್ಪಡುವ ಸೆಕೆಂಡುಗಳ ಸಂಖ್ಯೆಯನ್ನು ಈ ಕೀಲಿಯು ಸೂಚಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="frames">
+						<local_schema short_desc="ಮೀನಿನ ಸಜೀವನದಲ್ಲಿನ(ಎನಿಮೇಶನ್‌) ಚೌಕಟ್ಟುಗಳು">
+							<longdesc>ಮೀನಿನ ಸಜೀವನದಲ್ಲಿ(ಎನಿಮೇಶನ್‌) ತೋರಿಸಲಾಗುವ ಚೌಕಟ್ಟುಗಳ ಸಂಖ್ಯೆಗಳನ್ನು ಈ ಕೀಲಿಯು ಸೂಚಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="ಕ್ಲಿಕ್ ಮಾಡಿದಾಗ ಕಾರ್ಯಗತಗೊಳಿಸಬೇಕಿರುವ ಆಜ್ಞೆ">
+							<longdesc>ಮೀನಿನ ಮೇಲೆ ಕ್ಲಿಕ್ಕಿಸಿದಾಗ ಕಾರ್ಯಗತಗೊಳಿಸಲು ಪ್ರಯತ್ನಿಸಬೇಕಿರುವ ಆಜ್ಞೆಯನ್ನು ಈ ಕೀಲಿಯು ಸೂಚಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="image">
+						<local_schema short_desc="ಮೀನಿನ ಸಜೀವನದಲ್ಲಿನ(ಎನಿಮೇಶನ್‌) ಪಿಕ್ಸ್‍ಮ್ಯಾಪ್">
+							<longdesc>ಈ ಕೀಲಿಯು ಪಿಕ್ಸ್‍ಮ್ಯಾಪ್ ಕೋಶಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಮೀನಿನ ಆಪ್ಲೆಟ್ಟಿನಲ್ಲಿ ಬಳಸಲಾಗುವ ಪಿಕ್ಸ್‍ಮ್ಯಾಪ್ ಕಡತದ ಹೆಸರನ್ನು ಸೂಚಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="ಮೀನಿನ ಹೆಸರು">
+							<longdesc>ಒಂದು ಮೀನಿಗೆ ಹೆಸರಲ್ಲಿದಿದ್ದರೆ ಅದು ಪೇಲವವೆನಿಸುತ್ತದೆ. ನಿಮ್ಮ ಮೀನಿಗೊಂದು ಹೆಸರಿಡುವ ಮೂಲಕ ಅದನ್ನು ಜೀವಂತಗೊಳಿಸಿ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="ವಿಂಡೋ ಪಟ್ಟಿಗಳ ಗರಿಷ್ಟ ಗಾತ್ರ">
+							<longdesc>GNOME 2.20 ಯಲ್ಲಿ ಈ ಕೀಲಿಯ ಬಳಕೆಯನ್ನು ತೆಗೆದು ಹಾಕಲಾಗಿದೆ. ಹಳೆಯ ಆವೃತ್ತಿಗಳಿಗೆ ಹೊಂದಿಕೊಳ್ಳುವಂತೆ ಸ್ಕೀಮಾವನ್ನು ಹಾಗೆಯೆ ಉಳಿಸಿಕೊಳ್ಳಲಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="ವಿಂಡೋ ಪಟ್ಟಿಗಳ ಕನಿಷ್ಟ ಗಾತ್ರ">
+							<longdesc>GNOME 2.20 ಯಲ್ಲಿ ಈ ಕೀಲಿಯ ಬಳಕೆಯನ್ನು ತೆಗೆದು ಹಾಕಲಾಗಿದೆ. ಹಳೆಯ ಆವೃತ್ತಿಗಳಿಗೆ ಹೊಂದಿಕೊಳ್ಳುವಂತೆ ಸ್ಕೀಮಾವನ್ನು ಹಾಗೆಯೆ ಉಳಿಸಿಕೊಳ್ಳಲಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_unminimized_windows">
+						<local_schema short_desc="ಚಿಕ್ಕದಾಗಿಸಲಾದ ಒಂದು ವಿಂಡೋವನ್ನು ಹಿಗ್ಗಿಸುವಾಗ, ಅದನ್ನು ಈಗಿನ ಕಾರ್ಯಕ್ಷೇತ್ರಕ್ಕೆ ವರ್ಗಾಯಿಸು">
+							<longdesc>ನಿಜವಾದಲ್ಲಿ, ಚಿಕ್ಕದಾಗಿಸಲಾದ ಒಂದು ವಿಂಡೋವನ್ನು ಹಿಗ್ಗಿಸುವಾಗ, ಅದನ್ನು ಈಗಿನ ಕಾರ್ಯಕ್ಷೇತ್ರಕ್ಕೆ ವರ್ಗಾಯಿಸಲಾಗುವುದು. ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ ವಿಂಡೋವಿನ ಕಾರ್ಯಕ್ಷೇತ್ರಕ್ಕೆ ಬದಲಾಯಿಸಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="group_windows">
+						<local_schema short_desc="ವಿಂಡೋಗಳನ್ನು ಯಾವಾಗ ಗುಂಪುಗೂಡಿಸಬೇಕು">
+							<longdesc>ವಿಂಡೋ ಪಟ್ಟಿಯಲ್ಲಿನ ಅನ್ವಯಗಳ ವಿಂಡೋಗಳನ್ನು ಯಾವಾಗ ಗುಂಪುಗೂಡಿಸಬೇಕು ಎಂದು ನಿರ್ಧರಿಸುತ್ತದೆ. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳು &quot;ಎಂದಿಗೂ ಬೇಡ&quot;, &quot;ತಾನಾಗಿಯೆ&quot; ಹಾಗು &quot;ಯಾವಾಗಲೂ&quot; ಆಗಿರುತ್ತವೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="ಎಲ್ಲಾ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳಲ್ಲಿನ ವಿಂಡೋಗಳನ್ನು ತೋರಿಸು">
+							<longdesc>ನಿಜವಾದಲ್ಲಿ, ವಿಂಡೋ ಪಟ್ಟಿಯು ಎಲ್ಲಾ ಕಾರ್ಯ ಕ್ಷೇತ್ರಗಳಿಂದ ವಿಂಡೋಗಳನ್ನು ತೋರಿಸುತ್ತದೆ. ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ ಕೇವಲ ಈಗಿನ ಕಾರ್ಯಕ್ಷೇತ್ರದ ವಿಂಡೋಗಳನ್ನು ಮಾತ್ರವೆ ತೋರಿಸಲಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="ಸಜೀವನದ(ಅನಿಮೇಶನ್) ವೇಗ">
+							<longdesc>ಫಲಕದ ಅನಿಮೇಶನ್‌ಗಳು ಜರುಗಬೇಕಿರುವ ವೇಗ. ಸಾಧ್ಯವಿರುವ ಇದರ ಮೌಲ್ಯಗಳು &quot;ನಿಧಾನ&quot;, &quot;ಮಧ್ಯಮ&quot; ಹಾಗು &quot;ವೇಗ&quot; ಆಗಿರುತ್ತವೆ. ಅನಿಮೇಶನ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು ಕೀಲಿಯು true ಆಗಿದ್ದಲ್ಲಿ ಮಾತ್ರವೆ ಇದು ಸೂಕ್ತವೆನಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide_size">
+						<local_schema short_desc="ಅಡಗಿಸಿದಾಗ ಕಾಣಿಸುವ ಪಿಕ್ಸೆಲ್‍ಗಳು">
+							<longdesc>ಫಲಕವನ್ನು ಒಂದು ಮೂಲೆಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅಡಗಿಸಿದಾಗ ಕಾಣುವ ಪಿಕ್ಸೆಲ್‌ಗಳ ಸಂಖ್ಯೆಗಳನ್ನು ಸೂಚಿಸಲಾಗುತ್ತದೆ. auto_hide ಕೀಲಿಯು true ಆಗಿದ್ದಲ್ಲಿ ಮಾತ್ರ ಈ ಕೀಲಿಯು ಸೂಕ್ತವಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unhide_delay">
+						<local_schema short_desc="ಫಲಕದ ಸ್ವಯಂ-ಅಡಗುವಿಕೆಯಲ್ಲಿ ವಿಳಂಬ">
+							<longdesc>ಫಲಕವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಮರಳಿ ತೋರಿಸುವ ಮೊದಲು ಸೂಚಕವು ಫಲಕದ ಕ್ಷೇತ್ರದಿಂದ ಹೊರಬಂದ ನಂತರ ಉಂಟಾಗುವ ಮಿಲಿ ಸೆಕೆಂಡುಗಳ ವಿಳಂಬವನ್ನು ಸೂಚಿಸುತ್ತದೆ. auto_hide ಕೀಲಿಯು true ಆಗಿದ್ದಲ್ಲಿ ಮಾತ್ರ ಈ ಕೀಲಿಯು ಸೂಕ್ತವಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hide_delay">
+						<local_schema short_desc="ಫಲಕವು ತಾನಾಗಿಯೆ ಅಡಗಿಸುವಲ್ಲಿನ ವಿಳಂಬ">
+							<longdesc>ಫಲಕವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅಡಗಿಸುವ ಮೊದಲು ಸೂಚಕವು ಫಲಕದ ಕ್ಷೇತ್ರದಿಂದ ಹೊರಬಂದ ನಂತರ ಉಂಟಾಗುವ ಮಿಲಿ ಸೆಕೆಂಡುಗಳ ವಿಳಂಬವನ್ನು ಸೂಚಿಸುತ್ತದೆ. auto_hide ಕೀಲಿಯು true ಆಗಿದ್ದಲ್ಲಿ ಮಾತ್ರ ಈ ಕೀಲಿಯು ಸೂಕ್ತವಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_arrows">
+						<local_schema short_desc="ಅಡಗಿಸುವ ಗುಂಡಿಗಳಲ್ಲಿ ಬಾಣದ ಗುರುತುಗಳನ್ನು ಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಅಡಗಿಸುವ ಗುಂಡಿಯಲ್ಲಿ ಬಾಣಗಳನ್ನು ಇರಿಸಲಾಗುವುದು. enable_buttons(ಗುಂಡಿಯನ್ನು ಶಕ್ತಗೊಳಿಸು) ಕೀಲಿಯು ನಿಜವಾಗಿದ್ದಲ್ಲಿ ಮಾತ್ರ ಈ ಕೀಲಿಯು ಸೂಕ್ತವಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="ಅಡಗಿಸುವ ಗುಂಡಿಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸು">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಗುಂಡಿಗಳನ್ನು ಫಲಕದ ಎರಡೂ ಬದಿಯಲ್ಲಿ ಇರಿಸಲಾಗುವುದು ಹಾಗು ಇದನ್ನು ಬಳಸಿಕೊಂಡು ಕೇವಲ ಗುಂಡಿಯ ಮಾತ್ರವೆ ಕಾಣಿಸುತ್ತಿರುವಂತೆ ಫಲಕವನ್ನು ತೆರೆಯ ಅಂಚಿಗೆ ಎಳೆದೊಯ್ಯಬಹುದು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="ಸಜೀವನಗಳನ್ನು(ಎನಿಮೇಶ್) ಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಈ ಫಲಕವನ್ನು ಅಡಗಿಸುವುದು ಹಾಗು ಕಾಣಿಸುವುದನ್ನು ತಕ್ಷಣ ಮಾಡುವ ಬದಲು ಎನಿಮೇಟ್ ಮಾಡಲಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide">
+						<local_schema short_desc="ಫಲಕವು ತಾನಾಗಿಯೆ ಮೂಲೆಯಲ್ಲಿ ಅಡಗಿಸು">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಸೂಚಕವು ಫಲಕದ ಸ್ಥಳದಿಂದ ಹೊರ ತೆರಳಿದಾಗ ಫಲಕವು ತಾನಾಗಿಯೆ ಒಂದು ಮೂಲೆಯಲ್ಲಿ ಅಡಗಿಸಲ್ಪಡುತ್ತದೆ. ಸೂಚಕವನ್ನು ಆ ಮೂಲೆಗೆ ಕೊಂಡುಹೋದಾಗ ಫಲಕ ಮರಳಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_centered">
+						<local_schema short_desc="y-ಅಕ್ಷಾಂಶದಲ್ಲಿನ ಮಧ್ಯದ ಫಲಕ">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, y ಹಾಗು y_bottom ಕೀಲಿಗಳನ್ನು ಉಪೇಕ್ಷಿಸಲಾಗುವುದು ಹಾಗು ಫಲಕವನ್ನು ತೆರೆಯ y-ಅಕ್ಷದ ನಡುಮಧ್ಯದಲ್ಲಿ ಇರಿಸಲಾಗುವುದು. ಫಲಕದ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸಿದಲ್ಲಿ ಅದು ಅದೆ ಸ್ಥಳದಲ್ಲಿ ಇರುತ್ತದೆ ಅಂದರೆ ಫಲಕವು ಎರಡೂ ಬದಿಯಲ್ಲಿ ಗಾತ್ರ ಬದಲಾವಣೆಗೊಳ್ಳುತ್ತದೆ. false ಆಗಿದ್ದಲ್ಲಿ, y ಹಾಗು y_bottom ಕೀಲಿಗಳು ಫಲಕದ ಸ್ಥಾನವನ್ನು ಸೂಚಿಸುತ್ತವೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_centered">
+						<local_schema short_desc="x-ಅಕ್ಷಾಂಶದಲ್ಲಿರುವ ಮಧ್ಯ ಫಲಕ">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, x ಹಾಗು x_bottom ಕೀಲಿಗಳನ್ನು ಉಪೇಕ್ಷಿಸಲಾಗುವುದು ಹಾಗು ಫಲಕವನ್ನು ತೆರೆಯ x-ಅಕ್ಷದ ನಡುಮಧ್ಯದಲ್ಲಿ ಇರಿಸಲಾಗುವುದು. ಫಲಕದ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸಿದಲ್ಲಿ ಅದು ಅದೆ ಸ್ಥಳದಲ್ಲಿ ಇರುತ್ತದೆ ಅಂದರೆ ಫಲಕವು ಎರಡೂ ಬದಿಯಲ್ಲಿ ಗಾತ್ರ ಬದಲಾವಣೆಗೊಳ್ಳುತ್ತದೆ. false ಆಗಿದ್ದಲ್ಲಿ, x ಹಾಗು x_bottom ಕೀಲಿಗಳು ಫಲಕದ ಸ್ಥಾನವನ್ನು ಸೂಚಿಸುತ್ತವೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_bottom">
+						<local_schema short_desc="ಫಲಕದ y ಅಕ್ಷಾಂಶ, ತೆರೆಯ ಕೆಳಗಿನಿಂದ ಆರಂಭಗೊಳ್ಳುವ">
+							<longdesc>y-ಅಕ್ಷಾಂಶದಲ್ಲಿ ತೆರೆಯ ಕೆಳಭಾಗದಿಂದ ಆರಂಭಗೊಳ್ಳುವ ಫಲಕದ ಸ್ಥಾನವನ್ನು ಸೂಚಿಸುತ್ತದೆ. -1 ಕ್ಕೆ ಹೊಂದಿಸಿದಲ್ಲಿ, ಆ ಮೌಲ್ಯವನ್ನು ಬಿಟ್ಟು ಬಿಡಲಾಗುತ್ತದೆ ಹಾಗು y ಮೌಲ್ಯವು ಬಳಸಲ್ಪಡುತ್ತದೆ. ಎಲ್ಲಿಯಾದರೂ ಮೌಲ್ಯವು 0 ಗಿಂತ ಹೆಚ್ಚಿದ್ದಲ್ಲಿ y ಕೀಲಿಯನ್ನು ಬಿಡಲಾಗುತ್ತದೆ. ಈ ಕೀಲಿಯು ಹಿಗ್ಗಿಸದೆ ಇರುವ ವಿಧಾನದಲ್ಲಿ ಮಾತ್ರ ಸೂಕ್ತವೆನಿಸುತ್ತದೆ. ಹಿಗ್ಗಿಸಿದ ಕ್ರಮದಲ್ಲಿ ಮಾತ್ರ ಇದನ್ನು ಬಿಟ್ಟಬಿಡಲಾಗುತ್ತದೆ ಹಾಗು ಫಲಕವು ವಾಲಿಕೆಯ ಕೀಲಿಯಿಂದ ಸೂಚಿತಗೊಂಡ ತೆರೆಯ ಅಂಚಿನಲ್ಲಿ ಇರಿಸಲ್ಪಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_right">
+						<local_schema short_desc="ಫಲಕದ X ಅಕ್ಷಾಂಶ, ತೆರೆಯ ಕೆಳಗಿನಿಂದ ಆರಂಭಗೊಳ್ಳುವ">
+							<longdesc>x-ಅಕ್ಷಾಂಶದಲ್ಲಿ ತೆರೆಯ ಬಲಭಾಗದಿಂದ ಆರಂಭಗೊಳ್ಳುವ ಫಲಕದ ಸ್ಥಾನವನ್ನು ಸೂಚಿಸುತ್ತದೆ. -1 ಕ್ಕೆ ಹೊಂದಿಸಿದಲ್ಲಿ, ಆ ಮೌಲ್ಯವನ್ನು ಬಿಟ್ಟು ಬಿಡಲಾಗುತ್ತದೆ ಹಾಗು x ಮೌಲ್ಯವು ಬಳಸಲ್ಪಡುತ್ತದೆ. ಎಲ್ಲಿಯಾದರೂ ಮೌಲ್ಯವು 0 ಗಿಂತ ಹೆಚ್ಚಿದ್ದಲ್ಲಿ x ಕೀಲಿಯನ್ನು ಬಿಡಲಾಗುತ್ತದೆ. ಈ ಕೀಲಿಯು ಹಿಗ್ಗಿಸದೆ ಇರುವ ವಿಧಾನದಲ್ಲಿ ಮಾತ್ರ ಸೂಕ್ತವೆನಿಸುತ್ತದೆ. ಹಿಗ್ಗಿಸಿದ ಕ್ರಮದಲ್ಲಿ ಮಾತ್ರ ಇದನ್ನು ಬಿಟ್ಟಬಿಡಲಾಗುತ್ತದೆ ಹಾಗು ಫಲಕವು ವಾಲಿಕೆಯ ಕೀಲಿಯಿಂದ ಸೂಚಿತಗೊಂಡ ತೆರೆಯ ಅಂಚಿನಲ್ಲಿ ಇರಿಸಲ್ಪಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y">
+						<local_schema short_desc="ಫಲಕದ Y ಅಕ್ಷಾಂಶ">
+							<longdesc>y-ಅಕ್ಷಾಂಶದಲ್ಲಿ ಫಲಕದ ಸ್ಥಾನವನ್ನು ಸೂಚಿಸುತ್ತದೆ. ಹಿಗ್ಗಿಸದೆ ಇರುವ ಕ್ರಮದಲ್ಲಿ ಮಾತ್ರ ಇದು ಸೂಕ್ತವೆನಿಸುತ್ತದೆ. ಹಿಗ್ಗಿಸಲಾದ ಕ್ರಮದಲ್ಲಿ ಈ ಕೀಲಿಯನ್ನು ಬಿಟ್ಟು ಬಿಡಲಾಗುತ್ತದೆ ಹಾಗು ಫಲಕವು ವಾಲಿಕೆಯ ಕೀಲಿಯಿಂದ ಸೂಚಿತಗೊಂಡ ತೆರೆಯ ಅಂಚಿನಲ್ಲಿ ಇರಿಸಲ್ಪಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x">
+						<local_schema short_desc="ಫಲಕದ X ಅಕ್ಷಾಂಶ">
+							<longdesc>x-ಅಕ್ಷಾಂಶದಲ್ಲಿ ಫಲಕದ ಸ್ಥಾನವನ್ನು ಸೂಚಿಸುತ್ತದೆ. ಹಿಗ್ಗಿಸದೆ ಇರುವ ಕ್ರಮದಲ್ಲಿ ಮಾತ್ರ ಇದು ಸೂಕ್ತವೆನಿಸುತ್ತದೆ. ಹಿಗ್ಗಿಸಲಾದ ಕ್ರಮದಲ್ಲಿ ಈ ಕೀಲಿಯನ್ನು ಬಿಟ್ಟು ಬಿಡಲಾಗುತ್ತದೆ ಹಾಗು ಫಲಕವು ವಾಲಿಕೆಯ ಕೀಲಿಯಿಂದ ಸೂಚಿತಗೊಂಡ ತೆರೆಯ ಅಂಚಿನಲ್ಲಿ ಇರಿಸಲ್ಪಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="ಫಲಕದ ಗಾತ್ರ">
+							<longdesc>ಫಲಕದ ಎತ್ತರವನ್ನು(ಅಡ್ಡ ಫಲಕಕ್ಕೆ ಅಗಲವನ್ನು) ಸೂಚಿಸುತ್ತದೆ. ಅಕ್ಷರಶೈಲಿಯ ಗಾತ್ರ ಹಾಗು ಇತರೆ ಸೂಚಕಗಳ ಆಧಾರದ ಮೇರೆಗೆ ಚಲಾವಣಾ ಸಮಯದಲ್ಲಿ ಫಲಕದ ಗರಿಷ್ಟ ಗಾತ್ರವು ನಿರ್ಧರಿಸಲ್ಪಡುತ್ತದೆ. ಗರಿಷ್ಟ ಗಾತ್ರವು ತೆರೆಯ ಎತ್ತರದ(ಅಥವ ಅಗಲದ) ಕಾಲುಭಾಗವೆಂದು ನಿಗದಿಸಲಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="ಫಲಕದ ವಾಲಿಕೆ">
+							<longdesc>ಫಲಕದ ವಾಲಿಕೆಯನ್ನು ಸೂಚಿಸುತ್ತದೆ. ಸಾಧ್ಯವಿರುವ ಇದರ ಮೌಲ್ಯಗಳು &quot;ಮೇಲೆ&quot;, &quot;ಕೆಳಗೆ&quot;, &quot;ಎಡ&quot;, &quot;ಬಲ&quot; ಆಗಿರುತ್ತದೆ. ಹಿಗ್ಗಿಸಲಾದ ಕ್ರಮದಲ್ಲಿ ಕೀಲಿಯು ತೆರೆಯ ಯಾವ ಬದಿಯು ಫಲಕವು ಇದೆ ಎಂದು ಸೂಚಿಸುತ್ತದೆ. ಹಿಗ್ಗಿಸದೆ ಇರುವ ವಿಧಾನದಲ್ಲಿ &quot;ಮೇಲಿನ&quot; ಹಾಗು &quot;ಕೆಳಗಿನ&quot; ನಡುವೆ ವ್ಯತ್ಯಾಸವು ಅಷ್ಟೊಂದು ಪ್ರಮುಖವಾಗುವುದಿಲ್ಲ- ಎರಡೂ ಸಹ ಇದು ಒಂದು ಅಡ್ಡವಾದ ಫಲಕ ಎಂದು ಸೂಚಿಸಲ್ಪಡುತ್ತದೆ - ಆದರೂ ಸಹ ಕೆಲವು ಫಲಕದ ವಸ್ತುಗಳು ಹೇಗೆ ವರ್ತಿಸಬೇಕೆಂದು ಎನ್ನುವ ಉಪಯುಕ್ತ ಮಾಹಿತಿಯನ್ನು ಇದು ಒದಗಿಸುತ್ತದೆ. ಉದಾಹರಣೆಗೆ, &quot;ಮೇಲಿನ&quot; ಒಂದು ಫಲಕದಲ್ಲಿ ಒಂದು ಮೆನು ಗುಂಡಿಯು ಆದರ ಮೆನು ಅಂಶಗಳನ್ನು ಕೆಳಕ್ಕೆ ಪುಟಿಯುವಂತೆ ಮಾಡುತ್ತದೆ ಆದರೆ &quot;ಕೆಳಗಿನ&quot; ಫಲಕದಲ್ಲಿನ ಮೆನುವಿನ ಅಂಶಗಳು ಫಲಕದಿಂದ ಮೇಲಕ್ಕೆ ಪುಟಿಯಲ್ಪಡುತ್ತವೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand">
+						<local_schema short_desc="ತೆರೆಯ ಸಂಪೂರ್ಣ ಗಾತ್ರಕ್ಕೆ ಹೊಂದುವಂತೆ ಹಿಗ್ಗಿಸು">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಫಲಕವು ಸಂಪೂರ್ಣ ತೆರೆಯ ಅಗಲವನ್ನು (ಇದು ಲಂಬ ಫಲಕವಾಗಿದ್ದರೆ ಎತ್ತರವಾಗಿರುತ್ತದೆ) ಆಕ್ರಮಿಸುತ್ತದೆ. ಈ ಕ್ರಮದಲ್ಲಿ ಫಲಕವನ್ನು ಕೇವಲ ತೆರೆಯ ಅಂಚಿನಲ್ಲಿ ಮಾತ್ರವೆ ಇರಿಸಬಹುದಾಗಿದೆ. ನಿಜವಾಗಿರದೆ ಇದ್ದಲ್ಲಿ, ಫಲಕಕ್ಕೆ ಆಪ್ಲೆಟ್‌ಗಳನ್ನು, ಆರಂಭಕಗಳನ್ನು ಹಾಗು ಗುಂಡಿಗಳನ್ನು ಸೇರಿಸಿಕೊಳ್ಳುವಷ್ಟು ಮಾತ್ರವೆ ಫಲಕವು ದೊಡ್ಡದಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monitor">
+						<local_schema short_desc="ಫಲಕವು ತೋರಿಸಲ್ಪಡಬೇಕಿರುವ Xinerama ತೆರೆ">
+							<longdesc>ಒಂದು Xinerama ಸಿದ್ಧತೆಯಲ್ಲಿ, ಪ್ರತಿಯೊಂದು ತೆರೆಗಳಿಗೂ ಪ್ರತ್ಯೇಕ ಫಲಕಗಳನ್ನು ನೀವು ಬಳಸಬಹುದು. ಈ ಕೀಲಿಯು ಫಲಕವನ್ನು ತೋರಿಸಲಾಗುತ್ತಿರುವ ಪ್ರಸಕ್ತ ತೆರೆಯನ್ನು ಸೂಚಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screen">
+						<local_schema short_desc="ಫಲಕವು ತೋರಿಸಲ್ಪಡುವ X ತೆರೆ">
+							<longdesc>ಅನೇಕ-ತೆರೆಯ ಸೆಟ್ಅಪ್‌ನಿಂದ ನೀವು ಪ್ರತಿಯೊಂದು ತೆರೆಗಳಿಗಾಗಿ ಪ್ರತ್ಯೇಕ ಫಲಕಗಳನ್ನು ಹೊಂದಬಹುದಾಗಿದೆ. ಯಾವ ಫಲಕದಲ್ಲಿ ಈ ತೆರೆಯು ತೋರಿಸಲ್ಪಡುತ್ತಿದೆ ಎಂದು ಈ ಕೀಲಿಯು ಕಂಡು ಹಿಡಿಯುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="ಫಲಕವನ್ನು ಗುರುತಿಸಲು ಹೆಸರು">
+							<longdesc>ಇದು ಮನುಷ್ಯರು ಓದಬಹುದಾದ ಹೆಸರಾಗಿದ್ದು, ಫಲಕಗಳನ್ನು ಗುರುತಿಸಲು ಇದು ಬಳಸಲ್ಪಡುತ್ತದೆ. ಇದರ ಮುಖ್ಯ ಉದ್ದೇಶವು ಫಲಕದ ಮುಖ್ಯ ವಿಂಡೋದ ಶೀರ್ಷಿಕೆಯಾಗಿದ್ದು ಫಲಕಗಳ ನಡುವೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡುವಾಗ ಸಹಕಾರಿಯಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="ಚಿತ್ರಗಳನ್ನು ಲಂಬ ಫಲಕಗಳಲ್ಲಿ ತಿರುಗಿಸಿ">
+								<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಫಲಕವನ್ನು ಲಂಬವಾಗಿ ಇರಿಸಿದಾಗ ಹಿನ್ನಲೆಯ ಚಿತ್ರವು ತಿರುಗಿಸಲ್ಪಡುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stretch">
+							<local_schema short_desc="ಚಿತ್ರವನ್ನು ಫಲಕಕ್ಕೆ ಹಿಗ್ಗಿಸಿ">
+								<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಚಿತ್ರದ ಗಾತ್ರವನ್ನು ಫಲಕದ ಆಕಾರಕ್ಕೆ ಅನುಗುಣವಾಗಿ ಬದಲಾಯಿಸಲಾಗುತ್ತದೆ. ಚಿತ್ರದ ಆಕಾರ ಅನುಪಾತವನ್ನು ಉಳಿಸಿಕೊಳ್ಳುವುದಿಲ್ಲ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="ಚಿತ್ರವನ್ನು ಫಲಕಕ್ಕೆ ಹೊಂದಿಸು">
+								<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಚಿತ್ರದ ಗಾತ್ರವನ್ನು (ಚಿತ್ರದ ಆಕಾರ ಅನುಪಾತವನ್ನು ಹಾಗೆಯೆ ಉಳಿಸಿಕೊಂಡು) ಫಲಕದ ಎತ್ತರಕ್ಕೆ (ಅಡ್ಡಲಾಗಿದ್ದರೆ) ಸರಿಹೊಂದುವಂತೆ ಬದಲಾಯಿಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="ಹಿನ್ನಲೆಯ ಚಿತ್ರ">
+								<longdesc>ಹಿನ್ನಲೆಯ ಚಿತ್ರವನ್ನಾಗಿ ಬಳಸಲಾಗುವ ಕಡತವನ್ನು ಸೂಚಿಸುತ್ತದೆ. ಚಿತ್ರವು ಒಂದು ಅಲ್ಫಾ ಚಾನಲ್ ಅನ್ನು ಹೊಂದಿದ್ದಲ್ಲಿ, ಅದನ್ನು ಹಿನ್ನಲೆ ಚಿತ್ರದೊಂದಿಗೆ ಮಿಶ್ರ ಮಾಡಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="ಹಿನ್ನಲೆಯ ಬಣ್ಣದ ಅಪಾರದರ್ಶಕತೆ">
+								<longdesc>ಹಿನ್ನಲೆಯ ಬಣ್ಣದ ವಿನ್ಯಾಸದ ಅಪಾರದರ್ಶಕತೆಯನ್ನು ಸೂಚಿಸುತ್ತದೆ. ಬಣ್ಣವು ಸಂಪೂರ್ಣವಾಗಿ ಅಪಾರದರ್ಶಕವಾಗಿಲ್ಲದೆ ಹೋದಲ್ಲಿ (65535 ಕ್ಕಿಂತ ಒಂದು ಕಡಿಮೆ ಮೌಲ್ಯ), ಬಣ್ಣವು ಹಿನ್ನಲೆ ಚಿತ್ರದೊಂದಿಗೆ ಮಿಶ್ರ ಮಾಡಲ್ಪಡುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="ಹಿನ್ನೆಲೆ ಬಣ್ಣ">
+								<longdesc>ಫಲಕಕ್ಕೆ #RGB ವಿನ್ಯಾಸದಲ್ಲಿ ಹಿನ್ನಲೆಯ ಬಣ್ಣವನ್ನು ಸೂಚಿಸುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="ಹಿನ್ನಲೆಯ ಬಗೆ">
+								<longdesc>ಈ ಫಲಕಕ್ಕೆ ಯಾವ ಬಗೆಯ ಹಿನ್ನಲೆಯನ್ನು ಬಳಸಬೇಕು. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ&quot;gtk&quot; - ಪೂರ್ವನಿಯೋಜಿತ GTK+ ವಿಜೆಟ್ ಹಿನ್ನಲೆಯನ್ನು ಬಳಸಲಾಗುವುದು, &quot;ಬಣ್ಣ&quot; - ಬಣ್ಣದ ಕೀಲಿಯು ಹಿನ್ನಲೆಯ ಬಣ್ಣವಾಗಿ ಬಳಸಲಾಗುತ್ತದೆ ಅಥವ &quot;ಚಿತ್ರ&quot; - ಚಿತ್ರದ ಕೀಲಿಯಿಂದ ಸೂಚಿತಗೊಂಡ ಚಿತ್ರವು ಹಿನ್ನಲೆಯಾಗಿ ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="general">
+					<entry name="profiles_migrated">
+						<local_schema short_desc="ಹಳೆಯ ಪ್ರೊಫೈಲುಗಳ ಸಂರಚನೆಯು ವರ್ಗಾಯಿಸಲ್ಪಟ್ಟಿದೆ">
+							<longdesc>/apps/panel/profiles/default ನಲ್ಲಿನ ಬಳಕೆದಾರರ ಹಿಂದಿನ ಸಂರಚನೆಯನ್ನು /apps/panel ನಲ್ಲಿನ ಹೊಸ ಸ್ಥಳಕ್ಕೆ ಕಾಪಿ ಮಾಡಲಾಗಿದೆಯೆ ಎಂದು ಸೂಚಿಸುವ ಒಂದು ಬೂಲಿಯನ್ ಫ್ಲಾಗ್‌.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_id_list">
+						<local_schema short_desc="ಫಲಕದ ವಸ್ತು ಐಡಿ ಪಟ್ಟಿ">
+							<longdesc>ಫಲಕ ವಸ್ತುವಿನ IDಗಳ ಒಂದು ಪಟ್ಟಿ. ಪ್ರತಿಯೊಂದು ID ಯು ಒಂದು ಪ್ರತ್ಯೇಕ ಫಲಕ ವಸ್ತುವನ್ನು ಗುರುತಿಸುತ್ತದೆ (ಉದಾ, ಆರಂಭಗಾರ, ಕ್ರಿಯೆ ಗುಂಡಿ ಅಥವ ಮೆನು ಗುಂಡಿ/ಪಟ್ಟಿ). ಈ ಪ್ರತಿಯೊಂದು ಫಲಕಗಳಿಗಾಗಿನ ಸಿದ್ಧತೆಗಳನ್ನು /apps/panel/objects/$(id) ನಲ್ಲಿ ಶೇಖರಿಸಿಡಲಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_id_list">
+						<local_schema short_desc="ಫಲಕದ ಆಪ್ಲೆಟ್ ಐಡಿ ಪಟ್ಟಿ">
+							<longdesc>ಫಲಕ ಆಪ್ಲೆಟ್‌ IDಗಳ ಒಂದು ಪಟ್ಟಿ. ಪ್ರತಿಯೊಂದು ID ಯು ಒಂದು ಪ್ರತ್ಯೇಕ ಫಲಕ ಆಪ್ಲೆಟ್‌ ಅನ್ನು ಗುರುತಿಸುತ್ತದೆ. ಈ ಪ್ರತಿಯೊಂದು ಆಪ್ಲೆಟ್‌ಗಳಿಗಾಗಿನ ಸಿದ್ಧತೆಗಳನ್ನು /apps/panel/applets/$(id) ನಲ್ಲಿ ಶೇಖರಿಸಿಡಲಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id_list">
+						<local_schema short_desc="ಫಲಕದ ಐಡಿ ಪಟ್ಟಿ">
+							<longdesc>ಫಲಕ IDಗಳ ಒಂದು ಪಟ್ಟಿ. ಪ್ರತಿಯೊಂದು ID ಯು ಒಂದು ಪ್ರತ್ಯೇಕ ಮೇಲ್ಮಟ್ಟದ ಫಲಕವನ್ನು ಗುರುತಿಸುತ್ತದೆ. ಈ ಪ್ರತಿಯೊಂದು ಫಲಕಗಳಿಗಾಗಿನ ಸಿದ್ಧತೆಗಳನ್ನು /apps/panel/toplevels/$(id) ನಲ್ಲಿ ಶೇಖರಿಸಿಡಲಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_autocompletion">
+						<local_schema short_desc="&quot;ಅನ್ವಯವನ್ನು ಚಲಾಯಿಸು&quot; ಸಂವಾದದಲ್ಲಿ ಸ್ವಯಂಪೂರ್ಣಗೊಳಿಕೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ನಿಜವಾದಲ್ಲಿ, &quot;ಅನ್ವಯವನ್ನು ಚಲಾಯಿಸು&quot; ಸಂವಾದದಲ್ಲಿ ಸ್ವಯಂಪೂರ್ಣಗೊಳಿಕೆಯು ಲಭ್ಯವಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_program_list">
+						<local_schema short_desc="&quot;ಅನ್ವಯವನ್ನು ಚಲಾಯಿಸು&quot; ಸಂವಾದದಲ್ಲಿ ಪ್ರೊಗ್ರಾಂಗಳ ಪಟ್ಟಿಯನ್ನು ವಿಸ್ತರಿಸು">
+							<longdesc>ನಿಜವಾದಲ್ಲಿ, ಸಂವಾದವನ್ನು ತೆರೆದಾಗ &quot;ಅನ್ವಯವನ್ನು ಚಲಾಯಿಸು&quot;ಸಂವಾದದಲ್ಲಿರುವ &quot;ಗೊತ್ತಿರುವ ಅನ್ವಯಗಳು&quot; ವಿಸ್ತರಿಸಲ್ಪಡುತ್ತದೆ. enable_program_list ಕೀಲಿಯು true ಆದಲ್ಲಿ ಮಾತ್ರ ಇದು ಸೂಕ್ತವೆನಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_program_list">
+						<local_schema short_desc="&quot;ಅನ್ವಯವನ್ನು ಚಲಾಯಿಸು&quot; ಸಂವಾದದಲ್ಲಿ ಪ್ರೊಗ್ರಾಂಗಳ ಪಟ್ಟಿಯನ್ನು ಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ನಿಜವಾದಲ್ಲಿ, &quot;ಅನ್ವಯವನ್ನು ಚಲಾಯಿಸು&quot;ಸಂವಾದದಲ್ಲಿರುವ &quot;ಗೊತ್ತಿರುವ ಅನ್ವಯಗಳು&quot; ಸಂವಾದವು ಲಭ್ಯವಿರುತ್ತದೆ. ಸಂವಾದವನ್ನು ತೋರಿಸಿದಾಗ ಪಟ್ಟಿಯನ್ನು ವಿಸ್ತರಿಸಲಾಗುವುದೆ ಎನ್ನುವುದನ್ನು enable_program_list ಕೀಲಿಯಿಂದ ನಿಯಂತ್ರಿಸಲ್ಪಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global">
+					<entry name="disable_force_quit">
+						<local_schema short_desc="ಒತ್ತಾಯಪೂರ್ವಕ ನಿರ್ಗಮಿಸುವಿಕೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸು">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಒತ್ತಾಯಪೂರ್ವಕವಾಗಿ ಮುಚ್ಚುವ ಗುಂಡಿಯ ನಿಲುಕಣೆಯನ್ನು ತೆಗೆದು ಹಾಕುವ ಮೂಲಕ ಬಳಕೆದಾರನು ಒಂದು ಅನ್ವಯವನ್ನು ಒತ್ತಾಯಪೂರ್ವಕವಾಗಿ ಮುಚ್ಚದಂತೆ ತಡೆಯುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_log_out">
+						<local_schema short_desc="ನಿರ್ಗಮಿಸುವುದನ್ನು ಅಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ನಿರ್ಗಮಿಸುವ ಮೆನು ನಮೂದಿಗೆ ನಿಲುಕಣೆಯನ್ನು ತೆಗೆದು ಹಾಕುವ ಮೂಲಕ ಬಳಕೆದಾರನು ನಿರ್ಗಮಿಸದಂತೆ ತಡೆಯುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="ತೆಗೆದು ಹಾಕಲಾಗಿದೆ">
+							<longdesc>ಈ ಕೀಲಿಯನ್ನು ತೆಗೆದು ಹಾಕಲಾಗಿರುವುದರಿಂದ ಇದನ್ನು ಸೂಕ್ತವಾದ ಲಾಕ್‌ಡೌನ್ ಮಾಡಲು ಬಳಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಬದಲಿಗೆ /desktop/gnome/lockdown/disable_lock_screen ಕೀಲಿಯನ್ನು ಬಳಸಬೇಕು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disabled_applets">
+						<local_schema short_desc="ಲೋಡ್ ಆಗದಂತೆ ತಡೆಯಬೇಕಿರುವ ಆಪ್ಲೆಟ್ ಐಐಡಿಗಳು">
+							<longdesc>ಫಲಕವು ಉಪೇಕ್ಷಿಸುವ ಆಪ್ಲೆಟ್‌ IIDಗಳ ಒಂದು ಪಟ್ಟಿ. ಈ ಮೂಲಕ ಕೆಲವು ನಿಗದಿತ ಆಪ್ಲೆಟ್‌ಗಳನ್ನು ಲೋಡ್‌ ಆಗುವುದನ್ನು ಅಥವ ಮೆನುವಿನಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುವುದನ್ನು ತಡೆಯಬಹುದು. ಉದಾಹರಣೆಗೆ ಮಿನಿ-ಕಮಾಂಡರ್ ಆಪ್ಲೆಟ್ ಅನ್ನು ಅಶಕ್ತಗೊಳಿಸಲು ಪಟ್ಟಿಗೆ &apos;OAFIID:GNOME_MiniCommanderApplet&apos; ಅನ್ನು ಸೇರಿಸಬೇಕು. ಇದು ಕಾರ್ಯರೂಪಕ್ಕೆ ಬರಲು ಫಲಕವನ್ನು ಮರಳಿ ಆರಂಭಿಸಬೇಕಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked_down">
+						<local_schema short_desc="ಸಂಪೂರ್ಣ ಫಲಕ ಲಾಕ್ ಮಾಡುವಿಕೆ">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಫಲಕದ ಸಂರಚನೆಯನ್ನು ಬದಲಾಯಿಸಲು ಫಲಕವು ಅನುವು ಮಾಡಿಕೊಡುವುದಿಲ್ಲ. ಆದರೆ ಪ್ರತಿಯೊಂದು ಆಪ್ಲೆಟ್‌ಗಳನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಲಾಕ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ. ಇದು ಕಾರ್ಯರೂಪಕ್ಕೆ ಬರಲು ಫಲಕವನ್ನು ಮರಳಿ ಆರಂಭಿಸಬೇಕಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="highlight_launchers_on_mouseover">
+						<local_schema short_desc="ಮೌಸನ್ನು ಕೊಂಡೊಯ್ದಾಗ ಆರಂಭಕಗಳನ್ನು ಹೈಲೈಟ್ ಆಗುವಂತೆ ಮಾಡು">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಬಳಕೆದಾರನು ತೆರೆಸೂಚಕವನ್ನು ಒಂದು ಆರಂಭಕದ ಮೇಲೆ ಕೊಂಡೊಯ್ದಾಗ ಅದು ಹೈಲೈಟ್ ಮಾಡಲ್ಪಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_panel_remove">
+						<local_schema short_desc="ಫಲಕವನ್ನು ತೆಗೆಯುವಿಕೆಯನ್ನು ಖಚಿತಪಡಿಸಿ">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಬಳಕೆದಾರನು ಒಂದು ಫಲಕವನ್ನು ತೆಗೆದುಹಾಕಲು ಬಯಸಿದಲ್ಲಿ ಅದನ್ನು ಖಚಿತಪಡಿಸುವಂತೆ ಕೇಳಲಾಗುವುದು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="drawer_autoclose">
+						<local_schema short_desc="ಡ್ರಾಯರ್ ತಾನಾಗಿಯೆ ಮುಚ್ಚಿಕೊಳ್ಳುವಂತೆ ಮಾಡು">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಬಳಕೆದಾರನು ಡ್ರಾಯರಿನ ಮೇಲೆ ಒಂದು ಆರಂಭಕವನ್ನು ಕ್ಲಿಕ್ಕಿಸಿದಾಗ ಡ್ರಾಯರ್ ತಾನಾಗಿಯೆ ಮುಚ್ಚಲ್ಪಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="window_screenshot_key">
+						<local_schema short_desc="ತೆಗೆದು ಹಾಕಲಾಗಿದೆ">
+						</local_schema>
+					</entry>
+					<entry name="screenshot_key">
+						<local_schema short_desc="ತೆಗೆದು ಹಾಕಲಾಗಿದೆ">
+						</local_schema>
+					</entry>
+					<entry name="run_key">
+						<local_schema short_desc="ತೆಗೆದು ಹಾಕಲಾಗಿದೆ">
+						</local_schema>
+					</entry>
+					<entry name="menu_key">
+						<local_schema short_desc="ತೆಗೆದು ಹಾಕಲಾಗಿದೆ">
+						</local_schema>
+					</entry>
+					<entry name="enable_key_bindings">
+						<local_schema short_desc="ತೆಗೆದು ಹಾಕಲಾಗಿದೆ">
+						</local_schema>
+					</entry>
+					<entry name="panel_hide_delay">
+						<local_schema short_desc="ತೆಗೆದು ಹಾಕಲಾಗಿದೆ">
+						</local_schema>
+					</entry>
+					<entry name="panel_animation_speed">
+						<local_schema short_desc="ತೆಗೆದು ಹಾಕಲಾಗಿದೆ">
+						</local_schema>
+					</entry>
+					<entry name="panel_show_delay">
+						<local_schema short_desc="ತೆಗೆದು ಹಾಕಲಾಗಿದೆ">
+						</local_schema>
+					</entry>
+					<entry name="panel_minimized_size">
+						<local_schema short_desc="ತೆಗೆದು ಹಾಕಲಾಗಿದೆ">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="ಸಜೀವನಗಳನ್ನು(ಎನಿಮೇಶ್) ಶಕ್ತಗೊಳಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="keep_menus_in_memory">
+						<local_schema short_desc="ತೆಗೆದು ಹಾಕಲಾಗಿದೆ">
+						</local_schema>
+					</entry>
+					<entry name="tooltips_enabled">
+						<local_schema short_desc="ಸಲಹೆಸೂಚನೆಗಳನ್ನು ಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಫಲಕಗಳಲ್ಲಿ ಸಲಹೆಸೂಚನೆಗಳು ತೋರಿಸಲ್ಪಡುತ್ತವೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="objects">
+					<entry name="action_type">
+						<local_schema short_desc="ಕ್ರಿಯೆ ಗುಂಡಿಯ ಬಗೆ">
+							<longdesc>ಈ ಗುಂಡಿಯು ಪ್ರತಿನಿಧಿಸುವ ಕ್ರಿಯೆಯ ಬಗೆ. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ &quot;lock&quot;(ಲಾಕ್), &quot;logout&quot;(ನಿರ್ಗಮಿಸು), &quot;run&quot;(ಚಲಾಯಿಸು), &quot;search&quot;(ಹುಡುಕು) ಹಾಗು &quot;screenshot&quot;(ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌) ಆಗಿರುತ್ತವೆ. object_type ಕೀಲಿಯು &quot;action-applet&quot; ಆಗಿದ್ದಲ್ಲಿ ಮಾತ್ರ ಈ ಕೀಲಿಯು ಸೂಕ್ತವಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="launcher_location">
+						<local_schema short_desc="ಆರಂಭಕದ ಸ್ಥಾನ">
+							<longdesc>ಆರಂಭಗಾರನನ್ನು ಸೂಚಿಸುವ .desktop ಕಡತದ ಸ್ಥಳ. object_type ಕೀಲಿಯು &quot;launcher-object&quot; ಆಗಿದ್ದಲ್ಲಿ ಮಾತ್ರ ಈ ಕೀಲಿಯು ಸೂಕ್ತವಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menu_path">
+						<local_schema short_desc="ಮೆನು ಹೊಂದಿರುವ ಅಂಶಗಳ ಮಾರ್ಗ">
+							<longdesc>ಮೆನು ಅಂಶಗಳನ್ನು ರಚಿಸಲು ಬಳಸಲಾಗುವ ಮಾರ್ಗ. use_menu_path ಕೀಲಿಯು true ಆಗಿದ್ದಲ್ಲಿ ಹಾಗು object_type ಕೀಲಿಯು &quot;menu-object&quot; ಆಗಿದ್ದಲ್ಲಿ ಮಾತ್ರ ಈ ಕೀಲಿಯು ಸೂಕ್ತವಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_menu_path">
+						<local_schema short_desc="ಮೆನು ಅಂಶಗಳಿಗಾಗಿ ಕಸ್ಟಮ್ ಮಾರ್ಗವನ್ನು ಬಳಸಿ">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, menu_path ಕೀಲಿಯನ್ನು ಮೆನು ವಿಷಯಗಳನ್ನು ರಚಿಸಬೇಕಿರುವ ಮಾರ್ಗವಾಗಿ ಬಳಸಲ್ಪಡುತ್ತದೆ. ನಿಜವಾಗಿರದೆ ಇದ್ದಲ್ಲಿ, menu_path ಕೀಲಿಯನ್ನು ಕಡೆಗಣಿಸಲಾಗುತ್ತದೆ. object_type ಕೀಲಿಯು &quot;menu-object&quot; ಆಗಿದ್ದಲ್ಲಿ ಮಾತ್ರವೆ ಈ ಕೀಲಿಯು ಸೂಕ್ತವೆನಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_icon">
+						<local_schema short_desc="ವಸ್ತುವಿನ ಗುಂಡಿಯಲ್ಲಿ ಬಳಸಲಾದ ಚಿಹ್ನೆ">
+							<longdesc>ವಸ್ತುವಿನ ಗುಂಡಿಗಾಗಿನ ಚಿಹ್ನೆಯಾಗಿ ಬಳಸಲಾಗುವ ಚಿತ್ರ ಕಡತವು ಇರುವ ಸ್ಥಳ. object_type ಕೀಲಿಯು &quot;drawer-object&quot; ಅಥವ &quot;menu-object&quot; ಹಾಗು use_custom_icon ಕೀಲಿಯು true ಆಗಿದ್ದಲ್ಲಿ ಮಾತ್ರ ಈ ಕೀಲಿಯು ಸೂಕ್ತವಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_icon">
+						<local_schema short_desc="ವಸ್ತುಗಳ ಗುಂಡಿಗೆ ನನ್ನಿಚ್ಛೆಯ ಚಿಹ್ನೆಯನ್ನು ಬಳಸು">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ಗುಂಡಿಗಾಗಿನ ಇಚ್ಛೆಯ ಚಿಹ್ನೆಯಾಗಿ custom_icon ಕೀಲಿಯನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ನಿಜವಾಗಿರದೆ ಇದ್ದಲ್ಲಿ, custom_icon ಆಲಕ್ಷಿಸಲಾಗುತ್ತದೆ. object_type ಕೀಲಿಯು &quot;menu-object&quot; ಅಥವ &quot;drawer-object&quot; ಆಗಿದ್ದಲ್ಲಿ ಮಾತ್ರವೆ ಇದು ಸೂಕ್ತವೆನಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="tooltip">
+						<local_schema short_desc="ಡ್ರಾಯರ್ ಅಥವ ಮೆನುಗಾಗಿ ತೋರಿಸಬೇಕಿರುವ ಉಪಕರಣ">
+							<longdesc>ಈ ಡ್ರಾಯರಿಗಾಗಿ ಅಥವ ಈ ಮೆನುಗಾಗಿನ ಸಲಹೆಉಪಕರಣಕ್ಕಾಗಿ ತೋರಿಸಲಾಗುವ ಪಠ್ಯ. object_type ಕೀಲಿಯು &quot;drawer-object&quot; ಅಥವ &quot;menu-object&quot; ಆಗಿದ್ದಲ್ಲಿ ಮಾತ್ರ ಈ ಕೀಲಿಯು ಸೂಕ್ತವಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="attached_toplevel_id">
+						<local_schema short_desc="ಡ್ರಾಯರಿಗೆ ತಾಗಿಕೊಂಡಿರುವ ಫಲಕ">
+							<longdesc>ಈ ಡ್ರಾಯರಿಗೆ ಲಗತ್ತಿಸಲಾದ ಫಲಕದ ಪತ್ತೆಗಾರ. object_type ಕೀಲಿಯು &quot;drawer-object&quot; ಆಗಿದ್ದಲ್ಲಿ ಮಾತ್ರ ಈ ಕೀಲಿಯು ಸೂಕ್ತವಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="bonobo_iid">
+						<local_schema short_desc="ಆಪ್ಲೆಟ್ ಬೊನೊಬೊ IID">
+						</local_schema>
+					</entry>
+					<entry name="locked">
+						<local_schema short_desc="ವಸ್ತುಗಳನ್ನು ಫಲಕಕ್ಕೆ ಲಾಕ್ ಮಾಡು">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, &quot;ಅನ್‌ಲಾಕ್ ಮಾಡು&quot; ಮೆನು ಅಂಶವನ್ನು ಬಳಸಿಕೊಂಡು ವಸ್ತುವನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡದೆ ಆಪ್ಲೆಟ್ ಅನ್ನು ಬಳಕೆದಾರರು ಸ್ಥಳಾಂತರಿಸಲು ಸಾಧ್ಯವಿರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="panel_right_stick">
+						<local_schema short_desc="ಕೆಳಗಿನ/ಬಲ ಅಂಚಿಗೆ ಅನುಗುಣವಾದ ಸ್ಥಾನವನ್ನು ಅರ್ಥೈಸಿ">
+							<longdesc>ನಿಜವಾಗಿದ್ದಲ್ಲಿ, ವಸ್ತುವಿನ ಸ್ಥಾನವನ್ನು ಫಲಕದ ಬಲ (ಅಥವ ಲಂಬವಾಗಿದ್ದಲ್ಲಿ ಕೆಳಗಿನ) ತುದಿಗೆ ಅನುಗುಣವಾಗಿ ವಿವರಿಸಲಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="position">
+						<local_schema short_desc="ಫಲಕದಲ್ಲಿ ವಸ್ತುವಿನ ಸ್ಥಾನ">
+							<longdesc>ಈ ಫಲಕ ವಸ್ತುವು ಇರುವ ಸ್ಥಳ. ಸ್ಥಾನವನ್ನು ಫಲಕದ ಎಡ(ಲಂಬವಾಗಿದ್ದಲ್ಲಿ ಮೇಲಿನ) ಅಂಚಿನಿಂದ ಪಿಕ್ಸೆಲ್‌ಗಳ ಸಂಖ್ಯೆಯನ್ನು ಸೂಚಿಸುವ ಮೂಲಕ ಸ್ಥಾನವನ್ನು ಸೂಚಿಸಲಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id">
+						<local_schema short_desc="ವಸ್ತುವನ್ನು ಹೊಂದಿರುವ ಮೇಲಿನ ಹಂತದ ಫಲಕ">
+							<longdesc>ಈ ವಸ್ತುವನ್ನು ಹೊಂದಿರುವ ಮೇಲ್ಮಟ್ಟ ಫಲಕದ ಪತ್ತೆಗಾರ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_type">
+						<local_schema short_desc="ಫಲಕದ ವಸ್ತವಿನ ಬಗೆ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರ ಬದಲಾವಣೆಗಾರನಲ್ಲಿರುವ ಸಾಲುಗಳು">
+							<longdesc>ಕಾರ್ಯಕ್ಷೇತ್ರ ಬದಲಾವಣೆಗಾರನು ಕಾರ್ಯಕ್ಷೇತ್ರದಲ್ಲಿ ತೋರಿಸಬೇಕಿರುವ ಸಾಲುಗಳು (ಅಡ್ಡ ವಿನ್ಯಾಸಕ್ಕಾಗಿ) ಹಾಗು ಕಾಲಂಗಳನ್ನು(ಲಂಬ ವಿನ್ಯಾಸಕ್ಕಾಗಿ)ಈ ಕೀಲಿಯು ಸೂಚಿಸುತ್ತದೆ. ಎಲ್ಲಾ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳನ್ನು ತೋರಿಸು ಕೀಲಿಯು true ಆಗಿದ್ದಲ್ಲಿ ಈ ಕೀಲಿಯು ಸೂಕ್ತವೆನಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="ಎಲ್ಲಾ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳನ್ನು ತೋರಿಸು">
+							<longdesc>ನಿಜವಾದಲ್ಲಿ, ಕಾರ್ಯಕ್ಷೇತ್ರ ಬದಲಾವಣೆಗಾರ ಎಲ್ಲಾ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳನ್ನು ತೋರಿಸುತ್ತದೆ. ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ ಅದು ಕೇವಲ ಸದ್ಯದ ಕಾರ್ಯಕ್ಷೇತ್ರವನ್ನು ಮಾತ್ರವೇ ತೋರಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರದ ಹೆಸರುಗಳನ್ನು ತೋರಿಸು">
+							<longdesc>ನಿಜವಾದಲ್ಲಿ, ಕಾರ್ಯಕ್ಷೇತ್ರ ಬದಲಾವಣೆಗಾರನಲ್ಲಿನ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳು ತಮ್ಮ ಹೆಸರುಗಳನ್ನು ತೋರಿಸುತ್ತವೆ. ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ, ಅವು ಕಾರ್ಯಕ್ಷೇತ್ರದ ವಿಂಡೋಗಳನ್ನು ಮಾತ್ರವೆ ತೋರಿಸುತ್ತವೆ. ಮೆಟಾಸಿಟಿಯು ವಿಂಡೋ ವ್ಯವಸ್ಥಾಪಕವಾಗಿದ್ದಲ್ಲಿ ಮಾತ್ರ ಈ ಸಿದ್ಧತೆಯು ಕೆಲಸ ಮಾಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="speed_unit">
+						<local_schema short_desc="ವೇಗದ ಘಟಕ">
+							<longdesc>ಗಾಳಿಯ ವೇಗವನ್ನು ತೋರಿಸುವಾಗ ಬಳಸಬೇಕಿರುವ ಘಟಕ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="ತಾಪಮಾನದ ಘಟಕ">
+							<longdesc>ತಾಪಮಾನಗಳನ್ನು ತೋರಿಸುವಾಗ ಬಳಸಬೇಕಿರುವ ಘಟಕ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cities">
+						<local_schema short_desc="ತಾಣಗಳ ಪಟ್ಟಿ">
+							<longdesc>ಕ್ಯಾಲೆಂಡರ್ ವಿಂಡೋದಲ್ಲಿ ತೋರಿಸಬೇಕಿರುವ ಸ್ಥಳಗಳ ಒಂದು ಪಟ್ಟಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="internet_time">
+						<local_schema short_desc="ಅಂತರ್ಜಾಲ ಸಮಯವನ್ನು ಬಳಸು">
+							<longdesc>ಫಾರ್ಮಾಟ್ ಕೀಲಿಯ ದಾರಿ ಮಾಡಿಕೊಡುವ ಸಲುವಾಗಿ GNOME 2.6 ಈ ಕೀಲಿಯ ಬಳಕೆಯನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ. ಆದರೆ ಹಿಂದಿನ ಆವೃತ್ತಿಗಳಿಗೆ ಹೊಂದುವ ಸಲುವಾಗಿ ಸ್ಕೀಮಾವನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="UNIX ಸಮಯವನ್ನು ಬಳಸು">
+							<longdesc>ಫಾರ್ಮಾಟ್ ಕೀಲಿಯ ದಾರಿ ಮಾಡಿಕೊಡುವ ಸಲುವಾಗಿ GNOME 2.6 ಈ ಕೀಲಿಯ ಬಳಕೆಯನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ. ಆದರೆ ಹಿಂದಿನ ಆವೃತ್ತಿಗಳಿಗೆ ಹೊಂದುವ ಸಲುವಾಗಿ ಸ್ಕೀಮಾವನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="ಗಂಟೆಯ ಮಾದರಿ">
+							<longdesc>ಫಾರ್ಮಾಟ್ ಕೀಲಿಯ ದಾರಿ ಮಾಡಿಕೊಡುವ ಸಲುವಾಗಿ GNOME 2.6 ಈ ಕೀಲಿಯ ಬಳಕೆಯನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ. ಆದರೆ ಹಿಂದಿನ ಆವೃತ್ತಿಗಳಿಗೆ ಹೊಂದುವ ಸಲುವಾಗಿ ಸ್ಕೀಮಾವನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_locations">
+						<local_schema short_desc="ಸ್ಥಳಗಳ ಪಟ್ಟಿಯನ್ನು ಹಿಗ್ಗಿಸು">
+							<longdesc>ನಿಜವೆಂದಾದಲ್ಲಿ, ಕ್ಯಾಲೆಂಡರ್ ವಿಂಡೋದಲ್ಲಿರುವ ಸ್ಥಳಗಳ ಪಟ್ಟಿಯನ್ನು ಹಿಗ್ಗಿಸು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_weather">
+						<local_schema short_desc="ಹವಾಮಾನ ಮಾಹಿತಿಯ ಪಟ್ಟಿಯನ್ನು ಹಿಗ್ಗಿಸು">
+							<longdesc>ನಿಜವೆಂದಾದಲ್ಲಿ, ಕ್ಯಾಲೆಂಡರ್ ವಿಂಡೋದಲ್ಲಿರುವ ಹವಮಾನ ಮಾಹಿತಿಯ ಪಟ್ಟಿಯನ್ನು ಹಿಗ್ಗಿಸು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_tasks">
+						<local_schema short_desc="ಕಾರ್ಯಗಳ ಪಟ್ಟಿಯನ್ನು ಹಿಗ್ಗಿಸು">
+							<longdesc>ನಿಜವೆಂದಾದಲ್ಲಿ, ಕ್ಯಾಲೆಂಡರ್ ವಿಂಡೋದಲ್ಲಿರುವ ಕಾರ್ಯಗಳ ಪಟ್ಟಿಯನ್ನು ಹಿಗ್ಗಿಸು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_birthdays">
+						<local_schema short_desc="ಹುಟ್ಟಿದ ದಿನಗಳ ಪಟ್ಟಿಯನ್ನು ಹಿಗ್ಗಿಸು">
+							<longdesc>ನಿಜವೆಂದಾದಲ್ಲಿ, ಕ್ಯಾಲೆಂಡರ್ ವಿಂಡೋದಲ್ಲಿರುವ ಹುಟ್ಟಿದ ಹಬ್ಬಗಳ ಪಟ್ಟಿಯನ್ನು ಹಿಗ್ಗಿಸು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_appointments">
+						<local_schema short_desc="ಅಪಾಯಿಂಟ್‍ಮೆಂಟ್‍ಗಳ ಪಟ್ಟಿಯನ್ನು ಹಿಗ್ಗಿಸು">
+							<longdesc>ನಿಜವೆಂದಾದಲ್ಲಿ, ಕ್ಯಾಲೆಂಡರ್ ವಿಂಡೋದಲ್ಲಿರುವ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್‌ಗಳ ಪಟ್ಟಿಯನ್ನು ಹಿಗ್ಗಿಸು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="ಕ್ಯಾಲೆಂಡರಿನಲ್ಲಿ ವಾರದ ಸಂಖ್ಯೆಗಳನ್ನು ತೋರಿಸು">
+							<longdesc>ನಿಜವೆಂದಾದಲ್ಲಿ, ಕ್ಯಾಲೆಂಡರಿನಲ್ಲಿ ವಾರದ ಸಂಖ್ಯೆಗಳನ್ನು ತೋರಿಸು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="ಸಮಯ ಸಂರಚನ ಉಪಕರಣ">
+							<longdesc>ಒಂದು ಆಂತರಿಕ ಸಮಯ ಸಂರಚನಾ ಉಪಕರಣದ ಬಳಕೆಯೊಂದಿಗೆ GNOME 2.22 ರಲ್ಲಿ ಈ ಕೀಲಿಯ ಬಳಕೆಯನ್ನು ನಿಲ್ಲಿಸಲಾಗಿತ್ತು. ಆದರೆ ಹಿಂದಿನ ಆವೃತ್ತಿಗಳಿಗೆ ಹೊಂದುವ ಸಲುವಾಗಿ ಸ್ಕೀಮಾವನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="UTC ಯನ್ನು ಬಳಸು">
+							<longdesc>ಕಾಲವಲಯಗಳ ಬಳಕೆಯ ಸಲುವಾಗಿ GNOME 2.8 ಈ ಕೀಲಿಯ ಬಳಕೆಯನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ. ಆದರೆ ಹಿಂದಿನ ಆವೃತ್ತಿಗಳಿಗೆ ಹೊಂದುವ ಸಲುವಾಗಿ ಸ್ಕೀಮಾವನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_temperature">
+						<local_schema short_desc="ಉಷ್ಣತೆಯನ್ನು ಗಡಿಯಾರದಲ್ಲಿ ತೋರಿಸು">
+							<longdesc>ನಿಜವೆಂದಾದಲ್ಲಿ, ಹವಮಾನದ ಚಿಹ್ನೆಯ ಎದುರಿನಲ್ಲಿ ತಾಪಮಾನವು ತೋರಿಸು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_weather">
+						<local_schema short_desc="ಹವಾಮಾನವನ್ನು ಗಡಿಯಾರದಲ್ಲಿ ತೋರಿಸು">
+							<longdesc>ನಿಜವೆಂದಾದಲ್ಲಿ, ಒಂದು ಹವಾಮಾನ ಚಿಹ್ನೆಯನ್ನು ತೋರಿಸು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema short_desc="ಸಲಹೆಉಪಕರಣದಲ್ಲಿ ದಿನಾಂಕವನ್ನು ತೋರಿಸು">
+							<longdesc>ನಿಜವೆಂದಾದಲ್ಲಿ, ಸೂಚಕವು ಗಡಿಯಾರದ ಮೇಲೆ ಇದ್ದಾಗ ಒಂದು ಸಲಹೆಸೂಚಕವು ದಿನಾಂಕವನ್ನು ತೋರಿಸು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="ದಿನಾಂಕವನ್ನು ಗಡಿಯಾರದಲ್ಲಿ ತೋರಿಸು">
+							<longdesc>ನಿಜವೆಂದಾದಲ್ಲಿ, ಗಡಿಯಾರದಲ್ಲಿ ಸಮಯದ ಜೊತೆಗೆ ದಿನಾಂಕವನ್ನು ತೋರಿಸು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="ಸೆಕೆಂಡುಗಳೊಂದಿಗೆ ಸಮಯವನ್ನು ತೋರಿಸು">
+							<longdesc>ನಿಜವೆಂದಾದಲ್ಲಿ, ಸಮಯವನ್ನು ಸೆಕೆಂಡುಗಳಲ್ಲಿ ತೋರಿಸು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="ಗಡಿಯಾರದ ಕಸ್ಟಮ್ ನಮೂನೆ">
+							<longdesc>ಶೈಲಿಯನ್ನು ಕೀಲಿಯನ್ನು &quot;ನನ್ನಿಚ್ಛೆಯ&quot; ಎಂದು ಸೂಚಿಸಿದಾಗ ಗಡಿಯಾರದ ಆಪ್ಲೆಟ್ ಬಳಸಬೇಕಿರುವ ಶೈಲಿಯನ್ನು ಈ ಕೀಲಿಯು ಸೂಚಿಸುತ್ತದೆ. ಒಂದು ನಿಗದಿತ ಶೈಲಿಯನ್ನು ಪಡೆದುಕೊಳ್ಳಲು ನೀವು strftime() ನಿಂದ ಅರ್ಥ ಮಾಡಿಕೊಳ್ಳಬಲ್ಲಂತಹ ಸಂವಾದ ಸೂಚಕವನ್ನು ಬಳಸಬಹುದು. ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ strftime() ಕೈಪಿಡಿಯನ್ನು ನೋಡಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="ಗಂಟೆಯ ಮಾದರಿ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gweather">
+				<dir name="prefs">
+					<entry name="radar">
+						<local_schema short_desc="ರಾಡರಿನ ನಕ್ಷೆಗಾಗಿನ Url ">
+							<longdesc>ಒಂದು ರಾಡರಿನ ನಕ್ಷೆಯನ್ನು ಮರಳಿ ಪಡೆದುಕೊಳ್ಳಬೇಕಿರುವ ಕಸ್ಟಮ್ ಯುಆರ್ಎಲ್.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_radar_url">
+						<local_schema short_desc="ರಾಡರನ ನಕ್ಷೆಗೆ ಕಸ್ಟಮ್ ಯುಆರ್ಎಲ್ ಅನ್ನು ಬಳಸು">
+							<longdesc>ಇದು ಸತ್ಯವಾಗಿದ್ದರೆ, ರಾಡಾರ್ ನಕ್ಷೆಯನ್ನು &quot;ರಾಡಾರ್&quot; ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾದ ಒಂದು ಸ್ಥಳದಿಂದ ಪಡೆದುಕೊಳ್ಳಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="coordinates">
+						<local_schema short_desc="ಸ್ಥಳದ ನಿರ್ದೇಶಾಂಕಗಳು">
+						</local_schema>
+					</entry>
+					<entry name="location4">
+						<local_schema short_desc="ನಗರದ ಹವಾಗುಣ">
+						</local_schema>
+					</entry>
+					<entry name="location3">
+						<local_schema short_desc="ರಾಡರಿನ ಸ್ಥಳ">
+						</local_schema>
+					</entry>
+					<entry name="location2">
+						<local_schema short_desc="ವಲಯದ ಸ್ಥಳ">
+						</local_schema>
+					</entry>
+					<entry name="location1">
+						<local_schema short_desc="ಹತ್ತಿರದ ಪಟ್ಟಣ">
+						</local_schema>
+					</entry>
+					<entry name="location0">
+						<local_schema short_desc="ಹವಾಗುಣದ ಸ್ಥಳದ ಮಾಹಿತಿ">
+						</local_schema>
+					</entry>
+					<entry name="enable_radar_map">
+						<local_schema short_desc="ರಾಡಾರ್ ನಕ್ಷೆಯನ್ನು ಪ್ರದರ್ಶಿಸು">
+							<longdesc>ಪ್ರತಿಯೊಂದು ಅಪ್ಡೇಟಿನಲ್ಲೂ ರಾಡಾರ್ ನಕ್ಷೆಯನ್ನು ಪಡೆದುಕೋ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_detailed_forecast">
+						<local_schema short_desc="ಇದು ಈಗ ಬಳಸಲ್ಪಡುವುದಿಲ್ಲ">
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="ತಾಪಮಾನದ ಘಟಕ">
+							<longdesc>ತಾಪಮಾನಕ್ಕಾಗಿ ಬಳಸಬೇಕಿರುವ ಘಟಕ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed_unit">
+						<local_schema short_desc="ವೇಗದ ಘಟಕ">
+							<longdesc>ಗಾಳಿಯ ವೇಗಕ್ಕಾಗಿ ಬಳಸಬೇಕಿರುವ ಘಟಕ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pressure_unit">
+						<local_schema short_desc="ಒತ್ತಡದ ಘಟಕ">
+							<longdesc>ಒತ್ತಡಕ್ಕಾಗಿ ಬಳಸಬೇಕಿರುವ ಘಟಕ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="distance_unit">
+						<local_schema short_desc="ದೂರದ/ಅಂತರದ ಮಾಪಕ">
+							<longdesc>ಗೋಚರಿಕೆಗೆ ಬಳಸಬೇಕಿರುವ ಘಟಕ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_metric">
+						<local_schema short_desc="ಮೆಟ್ರಿಕ್‌ ಘಟಕಗಳನ್ನು ಉಪಯೋಗಿಸಿ">
+							<longdesc>ಇಂಗ್ಲೀಷ್ ಘಟಕಗಳ ಬದಲಾಗಿ ಮೆಟ್ರಿಕ್ ಪದ್ದತಿಯ ಘಟಕಗಳನ್ನು ಉಪಯೋಗಿಸಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update_interval">
+						<local_schema short_desc="ಅಪ್ಡೇಟ್‌ನ ನಡುವಿನ ಅಂತರ">
+							<longdesc>ಸ್ವಯಂಚಾಲಿತ ಅಪ್ಡೇಟ್‌ಗಳ ನಡುವಿನ ವಿರಾಮ, ಸೆಕೆಂಡುಗಳಲ್ಲಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update">
+						<local_schema short_desc="ಮಾಹಿತಿಯನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅಪ್ ಡೇಟ್ ಮಾಡು">
+							<longdesc>ಹವಾಮಾನ ಆಪ್ಲೆಟ್‌ ತಾನಾಗಿಯೆ ಹವಾಮಾನ ಅಂಕಿಅಂಶಗಳನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡುತ್ತದೆಯೆ ಅಥವ ಇಲ್ಲವೆ ಎಂದು ನಿರ್ಧರಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="control-center">
+				<entry name="cc_exit_shell_on_action_upgrade_uninstall">
+					<local_schema short_desc="ಅಪ್‍ಗ್ರೇಡ್ ಅಥವ ಅನ್ಇನ್‍ಸ್ಟಾಲ್ ಕ್ರಿಯೆಯು ನಡೆಸಲ್ಪಟ್ಟಾಗ ಶೆಲ್‍ನಿಂದ ನಿರ್ಗಮಿಸು">
+						<longdesc>ನವೀಕರಣ ಅಥವ ಅನುಸ್ಥಾಪಿಸಲಾಗಿದ್ದನ್ನು ತೆಗೆದುಹಾಕುವ ಕ್ರಿಯೆಯು ನಡೆಸಲ್ಪಟ್ಟಾಗ ಶೆಲ್ ಅನ್ನು ಮುಚ್ಚಬೇಕೆ ಎಂದು ಸೂಚಿಸುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_add_remove">
+					<local_schema short_desc="ಸೇರಿಸು ಅಥವ ತೆಗೆದುಹಾಕುವ ಕ್ರಿಯೆಯು ನಡೆಸಲ್ಪಟ್ಟಾಗ ಶೆಲ್‍ನಿಂದ ನಿರ್ಗಮಿಸು">
+						<longdesc>ಸೇರಿಸು ಅಥವ ತೆಗೆದುಹಾಕುವ ಕ್ರಿಯೆಯು ನಡೆಸಲ್ಪಟ್ಟಾಗ ಶೆಲ್ ಅನ್ನು ಮುಚ್ಚಬೇಕೆ ಎಂದು ಸೂಚಿಸುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_help">
+					<local_schema short_desc="ಸಹಾಯ ಕ್ರಿಯೆಯು ನಡೆಸಲ್ಪಟ್ಟಾಗ ಶೆಲ್‍ನಿಂದ ನಿರ್ಗಮಿಸು">
+						<longdesc>ಒಂದು ಸಹಾಯ ಕ್ರಿಯೆಯು ನಡೆಸಲ್ಪಟ್ಟಾಗ ಶೆಲ್ ಅನ್ನು ಮುಚ್ಚಬೇಕೆ ಎಂದು ಸೂಚಿಸುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_start">
+					<local_schema short_desc="ಆರಂಭ ಕ್ರಿಯೆಯು ನಡೆಸಲ್ಪಟ್ಟಾಗ ಶೆಲ್‍ನಿಂದ ನಿರ್ಗಮಿಸು">
+						<longdesc>ಒಂದು ಆರಂಭ ಕ್ರಿಯೆಯು ನಡೆಸಲ್ಪಟ್ಟಾಗ ಶೆಲ್ ಅನ್ನು ಮುಚ್ಚಬೇಕೆ ಎಂದು ಸೂಚಿಸುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_static_action">
+					<local_schema short_desc="ಕಾರ್ಯವು ಸಕ್ರಿಯಗೊಂಡಾಗ ನಿಯಂತ್ರಣ ಕೇಂದ್ರವನ್ನು ಮುಚ್ಚು">
+						<longdesc>true ಆದರೆ (ನಿಜವೆಂದಾದರೆ), &quot;ಸಾಮಾನ್ಯ ಕಾರ್ಯ&quot;ವು ಸಕ್ರಿಯಗೊಳಿಸಲ್ಪಟ್ಟಾಗ ನಿಯಂತ್ರಣ-ಕೇಂದ್ರವು ಮುಚ್ಚಲ್ಪಡುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_actions_list">
+					<local_schema short_desc="ಕಾರ್ಯದ ಹೆಸರುಗಳು ಹಾಗು ಸಂಬಂಧಿಸಲ್ಪಟ್ಟ .desktop ಕಡತಗಳು">
+					</local_schema>
+				</entry>
+				<dir name="network">
+					<entry name="current_location">
+						<local_schema short_desc="ಪ್ರಸಕ್ತ ಜಾಲಬಂಧ ಸ್ಥಳ">
+							<longdesc>ಇದನ್ನು ನಿಮ್ಮ ಪ್ರಸಕ್ತ ಸ್ಥಳದ ಹೆಸರಿಗೆ ಹೊಂದಿಸಿ. ಇದನ್ನು ಸೂಕ್ತವಾದ ಜಾಲಬಂಧ ಪ್ರಾಕ್ಸಿ ಸಂರಚನೆಯನ್ನು ನಿರ್ಧರಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="appearance">
+					<entry name="more_themes_url">
+						<local_schema short_desc="ಹೆಚ್ಚಿನ ಪರಿಸರ ವಿನ್ಯಾಸಗಳ URL">
+							<longdesc>ಎಲ್ಲಿಂದ ಹೆಚ್ಚಿನ ಗಣಕತೆರೆ ಪರಿಸರವಿನ್ಯಾಸಗಳನ್ನು ಪಡೆದುಕೊಳ್ಳಬೇಕೊ ಅಲ್ಲಿಯ URL. ಖಾಲಿಯಾಗಿ ಇರಿಸಿದಲ್ಲಿ ಕೊಂಡಿಯು ಕಾಣಿಸಿಕೊಳ್ಳುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="more_backgrounds_url">
+						<local_schema short_desc="ಹೆಚ್ಚಿನ ಹಿನ್ನಲೆ ಚಿತ್ರಗಳ URL">
+							<longdesc>ಎಲ್ಲಿಂದ ಹೆಚ್ಚಿನ ಗಣಕತೆರೆ ಹಿನ್ನಲೆ ಚಿತ್ರಗಳನ್ನು ಪಡೆದುಕೊಳ್ಳಬೇಕೊ ಅಲ್ಲಿಯ URL. ಖಾಲಿಯಾಗಿ ಇರಿಸಿದಲ್ಲಿ ಕೊಂಡಿಯು ಕಾಣಿಸಿಕೊಳ್ಳುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="ಪಠ್ಯ ಎಲಿಪ್ಸಿಸ್ ಮಿತಿ">
+							<longdesc>ದೊಡ್ಡದಾದ ಕಡತದ ಹೆಸರುಗಳ ಭಾಗಗಳನ್ನು ಹೇಗೆ ಗಣಕತೆರೆಯಲ್ಲಿನ ದೀರ್ಘವೃತ್ತಗಳಿಂದ ಬದಲಾಯಿಸಬೇಕು ಎಂದು ಸೂಚಿಸುವ ಒಂದು ಪೂರ್ಣಾಂಕ. ಸಂಖ್ಯೆಯು 0 ಗಿಂತ ದೊಡ್ಡದಾಗಿದ್ದಲ್ಲಿ, ಕಡತದ ಹೆಸರುಗಳು ಒದಗಿಸಲಾದ ಸಾಲುಗಳ ಸಂಖ್ಯೆಯನ್ನು ಮೀರುವುದಿಲ್ಲ. ಸಂಖ್ಯೆಯು 0 ಅಥವ 0 ಗಿಂತ ಸಣ್ಣದಾಗಿದ್ದರೆ, ತೋರಿಸಲಾಗುವ ಸಾಲುಗಳ ಮೇಲೆ ಯಾವುದೆ ಮಿತಿಯನ್ನು ಹೇರಲಾಗುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_name">
+						<local_schema short_desc="ಜಾಲಬಂಧ ಪರಿಚಾರಕಗಳ ಲಾಂಛನ ಹೆಸರು">
+							<longdesc>ಗಣಕತೆರೆಯಲ್ಲಿರುವ ಜಾಲಬಂಧ ಪರಿಚಾರಕಗಳ ಚಿಹ್ನೆಗೆ ನಿಮ್ಮ ಇಚ್ಛೆಯ ಒಂದು ಹೆಸರನ್ನು ನೀಡಲು ನೀವು ಬಯಸಿದಲ್ಲಿ ಇದನ್ನು ಹೊಂದಿಸಬಹುದು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_name">
+						<local_schema short_desc="ಗಣಕತೆರೆಯ ಕಸದ ಬುಟ್ಟಿಯ ಲಾಂಛನದ ಹೆಸರು">
+							<longdesc>ಗಣಕತೆರೆಯಲ್ಲಿರುವ ಕಸದಬುಟ್ಟಿ ಚಿಹ್ನೆಯು ನಿಮ್ಮ ಇಚ್ಛೆಯ ಒಂದು ಹೆಸರನ್ನು ನೀಡಲು ನೀವು ಬಯಸಿದಲ್ಲಿ ಇದನ್ನು ಹೊಂದಿಸಬಹುದು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="ಗಣಕತೆರೆಯ ನೆಲೆ ಲಾಂಛನದ ಹೆಸರು">
+							<longdesc>ಗಣಕತೆರೆಯಲ್ಲಿರುವ ನೆಲೆಯ ಚಿಹ್ನೆಯು ನಿಮ್ಮ ಇಚ್ಛೆಯ ಒಂದು ಹೆಸರನ್ನು ನೀಡಲು ನೀವು ಬಯಸಿದಲ್ಲಿ ಇದನ್ನು ಹೊಂದಿಸಬಹುದು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="ಗಣಕತೆರೆ ಗಣಕ ಲಾಂಛನದ ಹೆಸರು">
+							<longdesc>ಗಣಕತೆರೆಯಲ್ಲಿರುವ ಗಣಕದ ಚಿಹ್ನೆಯು ನಿಮ್ಮ ಇಚ್ಛೆಯ ಒಂದು ಹೆಸರನ್ನು ನೀಡಲು ನೀವು ಬಯಸಿದಲ್ಲಿ ಇದನ್ನು ಹೊಂದಿಸಬಹುದು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="ಗಣಕತೆರೆಯ ಮೇಲೆ ಕಾಣಿಸಿಕೊಳ್ಳುವ ಜಾಲಬಂಧ ಪರಿಚಾರಕಗಳ ಲಾಂಛನ">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, ಜಾಲ ಬಂಧ ಪರಿಚಾರಕಕ್ಕೆ ಕೊಂಡಿ ಜೋಡಿಸುವ ಒಂದು ಚಿಹ್ನೆಯು ಗಣಕತೆರೆಯಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volumes_visible">
+						<local_schema short_desc="ಆರೋಹಿಸಲಾದ ಪರಿಮಾಣಗಳನ್ನು ಗಣಕದಲ್ಲಿ ತೋರಿಸು">
+							<longdesc>ಇದು ನಿಜ ಎಂದಾಗಿದ್ದಲ್ಲಿ, ಆರೋಹಿಸಲಾದ ಪರಿಮಾಣಗಳಿಗೆ ಕೊಂಡಿ ಜೋಡಿಸುವ ಒಂದು ಚಿಹ್ನೆಯನ್ನು ಗಣಕತೆರೆಯಲ್ಲಿ ಇರಿಸಲಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="ಗಣಕತೆರೆಯಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುವ ಕಸದಬುಟ್ಟಿಯ ಚಿಹ್ನೆ">
+							<longdesc>ಇದು ನಿಜ ಎಂದಾಗಿದ್ದಲ್ಲಿ, ಕಸದ ಬುಟ್ಟಿಗೆ ಕೊಂಡಿ ಜೋಡಿಸುವ ಒಂದು ಚಿಹ್ನೆಯನ್ನು ಗಣಕತೆರೆಯಲ್ಲಿ ಇರಿಸಲಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="ಗಣಕತೆರೆಯಲ್ಲಿ ಕಾಣುವ ಗಣಕ ಚಿಹ್ನೆ">
+							<longdesc>ಇದು ನಿಜ ಎಂದಾಗಿದ್ದಲ್ಲಿ, ಗಣಕದ ತಾಣಕ್ಕೆ ಕೊಂಡಿ ಜೋಡಿಸುವ ಒಂದು ಚಿಹ್ನೆಯು ಗಣಕತೆರೆಯಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="ಗಣಕತೆರೆಯಲ್ಲಿ ಕಾಣಿಸುವ ನೆಲೆಯ ಲಾಂಛನ">
+							<longdesc>ಇದು ನಿಜ ಎಂದಾಗಿದ್ದಲ್ಲಿ, ನೆಲೆ ಕಡತಕೋಶಕ್ಕೆ ಕೊಂಡಿ ಜೋಡಿಸುವ ಒಂದು ಚಿಹ್ನೆಯನ್ನು ಗಣಕತೆರೆಯಲ್ಲಿ ಇರಿಸಲಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema short_desc="ಕೇವಲ ವೃಕ್ಷ ಅಂಚಿನ ಫಲಕದಲ್ಲಿ ಕಡತಕೋಶಗಳನ್ನು ತೋರಿಸು">
+								<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, Nautilus ಕಡತಕೋಶಗಳನ್ನು ಕೇವಲ ವೃಕ್ಷ ನೋಟದಲ್ಲಿ ತೋರಿಸುತ್ತದೆ. ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ ಕಡತಕೋಶ ಹಾಗು ಕಡತಗಳೆರಡನ್ನೂ ತೋರಿಸುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="ಪಟ್ಟಿ ನೋಟದಲ್ಲಿ ಪೂರ್ವನಿಯೋಜಿತ ಕಾಲಂ ಅನುಕ್ರಮ">
+							<longdesc>ಪಟ್ಟಿ ನೋಟದಲ್ಲಿ ಪೂರ್ವನಿಯೋಜಿತ ಕಾಲಂ ಅನುಕ್ರಮ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="ಪಟ್ಟಿ ನೋಟದಲ್ಲಿ ಕಾಣಿಸುವ ಪೂರ್ವನಿಯೋಜಿತ ಕಾಲಂಗಳ ಪಟ್ಟಿ">
+							<longdesc>ಪಟ್ಟಿ ನೋಟದಲ್ಲಿ ಕಾಣಿಸುವ ಕಾಲಂಗಳ ಪೂರ್ವನಿಯೋಜಿತ ಪಟ್ಟಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="ಪಟ್ಟಿಯ ಪೂರ್ವನಿಯೋಜಿತ ಹಿಗ್ಗಿಸುವ ಮಟ್ಟ">
+							<longdesc>ಪಟ್ಟಿ ನೋಟದಲ್ಲಿ ಬಳಸಲಾದ ಪೂರ್ವನಿಯೋಜಿತ ಹಿಗ್ಗಿಸುವ ಮಟ್ಟ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="ಹೊಸ ವಿಂಡೋಗಳಲ್ಲಿ ತಿರುವುಮರುವಾದ ವಿಂಗಡಣಾ ಕ್ರಮ">
+							<longdesc>ನಿಜವಾದಲ್ಲಿ, ಹೊಸ ವಿಂಡೋಗಳಲ್ಲಿನ ಕಡತಗಳು ಹಿಂದು ಮುಂದಾದ ಅನುಕ್ರಮದಲ್ಲಿ ಜೋಡಿಸಲ್ಪಡುತ್ತದೆ. ಅಂದರೆ, ಹೆಸರಿನ ಆಧಾರಲ್ಲಿ ವಿಂಗಡಿಸಿದಲ್ಲಿ, ಕಡತಗಳು &quot;a&quot; ಯಿಂದ &quot;z&quot; ಅನುಕ್ರಮದಲ್ಲಿ ವಿಂಗಡಿಸಲ್ಪಡುವ ಬದಲಿಗೆ,&quot;z&quot; ಯಿಂದ &quot;a&quot; ಅನುಕ್ರಮದಲ್ಲಿ ವಿಂಗಡಿಸಲ್ಪಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ವಿಂಗಡಣಾ ಕ್ರಮ">
+							<longdesc>ಪಟ್ಟಿ ನೋಟದಲ್ಲಿ ಅಂಶಗಳ ಪೂರ್ವನಿಯೋಜಿತ ವಿಂಗಡಣಾ-ಕ್ರಮ. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳು &quot;name&quot;(ಹೆಸರು), &quot;size&quot;(ಗಾತ್ರ), &quot;type&quot;(ಬಗೆ), ಹಾಗು &quot;modification_date&quot;(ಮಾರ್ಪಡಿಸಲಾದ_ದಿನಾಂಕ).</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="compact_view">
+					<entry name="all_columns_have_same_width">
+						<local_schema short_desc="ಎಲ್ಲಾ ಕಾಲಂ ಒಂದೇ ಬಗೆಯ ಅಗಲವನ್ನು ಹೊಂದಿವೆ">
+							<longdesc>ಈ ಆದ್ಯತೆಯನ್ನು ಹೊಂದಿಸಿದಲ್ಲಿ, ಸಾಂದ್ರ ನೋಟದಲ್ಲಿನ ಎಲ್ಲಾ ಕಾಲಂಗಳು ಒಂದೇ ಅಗಲವನ್ನು ಹೊಂದಿರುತ್ತವೆ. ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ, ಪ್ರತಿಯೊಂದು ಕಾಲಂಗಳ ಅಗಲವನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಸೂಚಿಸಬೇಕಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಸಾಂದ್ರ ನೋಟದ ಹಿಗ್ಗಿಸುವ ಮಟ್ಟ">
+							<longdesc>ಸಾಂದ್ರ ನೋಟದಲ್ಲಿ ಬಳಸಲಾದ ಪೂರ್ವನಿಯೋಜಿತ ಹಿಗ್ಗಿಸುವ ಮಟ್ಟ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="ಪಠ್ಯ ಎಲಿಪ್ಸಿಸ್ ಮಿತಿ">
+							<longdesc>ಹಿಗ್ಗಿಸುವ ಮಟ್ಟಕ್ಕೆ ಅಧರಿತವಾಗಿ ದೊಡ್ಡದಾದ ಕಡತದ ಹೆಸರುಗಳ ಭಾಗಗಳನ್ನು ಹೇಗೆ ದೀರ್ಘವೃತ್ತದಿಂದ ಬದಲಾಯಿಸಬೇಕು ಎಂದು ಸೂಚಿಸುವ ಒಂದು ವಾಕ್ಯ. ಪ್ರತಿಯೊಂದು ನಮೂದುಗಳು &quot;Zoom Level:Integer&quot; ಬಗೆಯಲ್ಲಿ ಇರಬೇಕು. ಸೂಚಿಸಲಾದ ಪ್ರತಿಯೊಂದು ಹಿಗ್ಗಿಸುವ ಮಟ್ಟಕ್ಕಾಗಿ, ಒದಗಿಸಲಾದ ಪೂರ್ಣಾಂಕವು 0 ಗಿಂತ ದೊಡ್ಡದಾಗಿದ್ದರೆ, ಒದಗಿಸಲಾದ ಸಾಲುಗಳ ಸಂಖ್ಯೆಗಿಂತ ಕಡತದ ಹೆಸರು ದೊಡ್ಡದಾಗಿರುವುದಿಲ್ಲ. ಎಲ್ಲಿಯಾದರೂ ಪೂರ್ಣಾಂಕವು 0 ಗೆ ಆಗಿದ್ದರೆ ಅಥವ 0 ಗಿಂತ ಚಿಕ್ಕದಾಗಿದ್ದರೆ, ಸೂಚಿಸಲಾಗುವ ಹಿಗ್ಗಿಸುವ ಮಟ್ಟಕ್ಕೆ ಯಾವುದೆ ಮಿತಿ ಇರುವುದಿಲ್ಲ. ಯಾವುದೆ ನಿಶ್ಚಿತ ಹಿಗ್ಗಿಸುವ ಮಟ್ಟವನ್ನು ಸೂಚಿಸದೆ ಕೇವಲ &quot;Integer&quot; (ಪೂರ್ಣಾಂಕ) ಬಗೆಯ ಒಂದು ಪೂರ್ವನಿಯೋಜಿತ ನಮೂದಿಗೂ ಸಹ ಅನುಮತಿ ಇದೆ. ಇದು ಎಲ್ಲಾ ಹಿಗ್ಗಿಸುವ ಮಟ್ಟಕ್ಕೆ ಗರಿಷ್ಟ ಸಂಖ್ಯೆಯ ಸಾಲಗಳನ್ನು ಒದಗಿಸುತ್ತದೆ. ಉದಾಹರಣೆಗೆ: 0 - ಯಾವಾಗಲೂ ದೊಡ್ಡದಾದ ಕಡತದ ಹೆಸರುಗಳನ್ನು ಸೂಚಿಸುತ್ತದೆ; 3 - ಕಡತದ ಹೆಸರುಗಳು ಮೂರು ಸಾಲುಗಳಿಗಿಂತ ದೊಡ್ಡದಾಗಿದ್ದಲ್ಲಿ ಅವನ್ನು ಚಿಕ್ಕದಾಗಿಸುತ್ತದೆ; ಅತ್ಯಂತ ಚಿಕ್ಕದಾದ:5, ಅತಿ ಚಿಕ್ಕದಾದ:4,0 - ಹಿಗ್ಗಿಸುವ ಮಟ್ಟ &quot;smallest&quot;(ಅತ್ಯಂತ ಚಿಕ್ಕದಾದ) ಗಾಗಿನ ಐದು ಸಾಲುಗಳಿಗಿಂತ ಹೆಚ್ಚಿದ್ದಲ್ಲಿ ಕಡತದ ಹೆಸರನ್ನು ಚಿಕ್ಕದಾಗಿಸುತ್ತದೆ. ಹಿಗ್ಗಿಸುವ ಮಟ್ಟ &quot;smaller&quot;(ಅತಿ ಚಿಕ್ಕದಾದ) ಗಾಗಿನ ಐದು ಸಾಲುಗಳಿಗಿಂತ ಹೆಚ್ಚಿದ್ದಲ್ಲಿ ಕಡತದ ಹೆಸರನ್ನು ಚಿಕ್ಕದಾಗಿಸುತ್ತದೆ. ಬೇರೆ ಹಿಗ್ಗಿಸುವ ಮಟ್ಟಗಳಿಗಾಗಿ ಕಡತದ ಹೆಸರುಗಳನ್ನು ಚಿಕ್ಕದಾಗಿಸುವುದಿಲ್ಲ. ಲಭ್ಯವಿರುವ ಹಿಗ್ಗಿಸುವ ಮಟ್ಟಗಳೆಂದರೆ: smallest(ಅತ್ಯಂತ ಚಿಕ್ಕದಾದ) (33%), smaller (ಅತಿ ಚಿಕ್ಕದಾದ)(50%), small(ಚಿಕ್ಕದಾದ) (66%), standard (ಸಾಧಾರಣ)(100%), large (ದೊಡ್ಡದಾದ)(150%), larger (ಅತ್ಯಂತ ದೊಡ್ಡದಾದ) (200%), largest (ಬೃಹತ್ತ)(400%)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_size">
+						<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಲಾಂಛನದ ತಂಬ್‍ನೈಲ್‍ನ ಗಾತ್ರ">
+							<longdesc>ಚಿಹ್ನೆ ನೋಟದಲ್ಲಿನ ಒಂದು ತಂಬ್‌ನೈಲ್‌ಗಾಗಿ ಚಿಹ್ನೆಯ ಪೂರ್ವನಿಯೋಜಿತ ಗಾತ್ರ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಲಾಂಛನ ಹಿಗ್ಗಿಸುವ ಮಟ್ಟ">
+							<longdesc>ಲಾಂಛನ ನೋಟದಲ್ಲಿ ಬಳಸಲಾದ ಪೂರ್ವನಿಯೋಜಿತ ಹಿಗ್ಗಿಸುವ ಮಟ್ಟ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_manual_layout">
+						<local_schema short_desc="ಹೊಸ ವಿಂಡೋಗಳಲ್ಲಿ ಮ್ಯಾನ್ಯುವಲ್ ವಿನ್ಯಾಸವನ್ನು ಬಳಸು">
+							<longdesc>ನಿಜವಾದಲ್ಲಿ, ಹೊಸ ವಿಂಡೋಗಳು ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ ಮ್ಯಾನುವಲ್ ವಿನ್ಯಾಸವನ್ನು ಬಳಸುತ್ತವೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="labels_beside_icons">
+						<local_schema short_desc="ಚಿಹ್ನೆಗಳ ಪಕ್ಕದಲ್ಲಿ ಲೇಬಲ್‌ಗಳನ್ನು ಸೇರಿಸು">
+							<longdesc>ನಿಜವಾದಲ್ಲಿ, ಲೇಬಲ್‌ಗಳನ್ನು ಚಿಹ್ನೆಗಳ ಕೆಳಗಡೆ ಇರಿಸುವ ಬದಲು ಅವುಗಳ ಒಳಗೆ ಇರಿಸಲಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_tighter_layout">
+						<local_schema short_desc="ಹೊಸ ವಿಂಡೋಗಳಲ್ಲಿ ಒತ್ತಾದ ವಿನ್ಯಾಸವನ್ನು ಬಳಸು">
+							<longdesc>ನಿಜವಾದಲ್ಲಿ, ಚಿಹ್ನೆಗಳು ಹೊಸ ವಿಂಡೋಗಳಲ್ಲಿ ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ ಒತ್ತೊತ್ತಾಗಿ ಜೋಡಿಸಲ್ಪಡುತ್ತವೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="ಹೊಸ ವಿಂಡೋಗಳಲ್ಲಿ ತಿರುವುಮರುವಾದ ವಿಂಗಡಣಾ ಕ್ರಮ">
+							<longdesc>ನಿಜವಾದಲ್ಲಿ, ಹೊಸ ವಿಂಡೋಗಳಲ್ಲಿನ ಕಡತಗಳು ಹಿಂದು ಮುಂದಾದ ಅನುಕ್ರಮದಲ್ಲಿ ಜೋಡಿಸಲ್ಪಡುತ್ತದೆ. ಅಂದರೆ, ಹೆಸರಿನ ಆಧಾರಲ್ಲಿ ವಿಂಗಡಿಸಿದಲ್ಲಿ, ಕಡತಗಳು &quot;a&quot; ಯಿಂದ &quot;z&quot; ಅನುಕ್ರಮದಲ್ಲಿ ವಿಂಗಡಿಸಲ್ಪಡುವ ಬದಲಿಗೆ,&quot;z&quot; ಯಿಂದ &quot;a&quot; ಅನುಕ್ರಮದಲ್ಲಿ ವಿಂಗಡಿಸಲ್ಪಡುತ್ತದೆ. ಎಲ್ಲಿಯಾದರೂ, ಗಾತ್ರದ ಆಧಾರದಲ್ಲಿ ವಿಂಗಡಿಸಿದರೆ, ಅವು ಆರೋಹಣ ಕ್ರಮದ ಬದಲಿಗೆ ಅವರೋಹಣ ಕ್ರಮದಲ್ಲಿ ವಿಂಗಡಿಸಲ್ಪಡುತ್ತವೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ವಿಂಗಡಣಾ ಕ್ರಮ">
+							<longdesc>ಚಿಹ್ನೆಯ ನೋಟದಲ್ಲಿ ಅಂಶಗಳ ಪೂರ್ವನಿಯೋಜಿತ ವಿಂಗಡಣಾ-ಕ್ರಮ. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳು&quot;name&quot;(ಹೆಸರು), &quot;size&quot;(ಗಾತ್ರ), &quot;type&quot;(ಬಗೆ), &quot;modification_date&quot;(ಮಾರ್ಪಡಿಸಲಾದ_ದಿನಾಂಕ), ಹಾಗು &quot;emblems&quot; (ಲಾಂಛನಗಳು).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="captions">
+						<local_schema short_desc="ಸಾಧ್ಯವಿರುವ ಚಿಹ್ನೆಗಳ ಶೀರ್ಷಿಕೆಗಳ ಪಟ್ಟಿ">
+							<longdesc>ಲಾಂಛನ ನೋಟ ಹಾಗು ಗಣಕತೆರೆಯಲ್ಲಿ ಕಾಣಿಸುವ ಲಾಂಛನಗಳ ಕೆಳಗೆ ಕಂಡು ಬರುವ ಶೀರ್ಷಿಕೆಗಳ ಒಂದು ಪಟ್ಟಿ. ಯಾವ ಮಟ್ಟಕ್ಕೆ ಹಿಗ್ಗಿಸಲಾಗಿದೆ ಎನ್ನುವುದರ ಮೇಲೆ ಶೀರ್ಷಿಕೆಗಳ ಸಂಖ್ಯೆಯು ನಿರ್ಧರಿಸಲ್ಪಡುತ್ತದೆ. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ : &quot;size&quot;(ಗಾತ್ರ), &quot;type&quot;(ಬಗೆ), &quot;date_modified&quot;(ಮಾರ್ಪಡಿಸಿದ ದಿನಾಂಕ), &quot;date_changed&quot;(ಬದಲಾಯಿಸಿದ ದಿನಾಂಕ), &quot;date_accessed&quot;(ನಿಲುಕಿಸಿಕೊಳ್ಳಲಾದ ದಿನಾಂಕ), &quot;owner&quot;(ಮಾಲಿಕರು), &quot;group&quot;(ಗುಂಪು), &quot;permissions&quot;(ಅನುಮತಿಗಳು), &quot;octal_permissions&quot;(ಆಕ್ಟೆಲ್‌ ಅನುಮತಿಗಳು) ಹಾಗು &quot;mime_type&quot;(ಮೈಮ್‌ ಬಗೆ).</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="ಅಂಚಿನ ಫಲಕದ ನೋಟ">
+							<longdesc>ಹೊಸದಾಗಿ ತೆರೆಯಲಾದ ವಿಂಡೋಗಳನ್ನು ತೋರಿಸಲು ಬಲ ಅಂಚಿನ ಫಲಕ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="ಹೊಸ ವಿಂಡೋಗಳಲ್ಲಿ ಅಂಚಿನ ಫಲಕವನ್ನು ತೋರಿಸು">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, ಹೊಸದಾಗಿ ತೆರೆಯಲಾದ ವಿಂಡೋಗಳ ಅಂಚಿನ ಫಲಕವು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="ಹೊಸ ವಿಂಡೋಗಳಲ್ಲಿ ಸ್ಥಿತಿಪಟ್ಟಿಯನ್ನು ತೋರಿಸು">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, ಹೊಸದಾಗಿ ತೆರೆಯಲಾದ ವಿಂಡೋಗಳ ಸ್ಥಿತಿ ಪಟ್ಟಿಯು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="ಸ್ಥಳದ ಪಟ್ಟಿಯನ್ನು ಹೊಸ ವಿಂಡೋಗಳಲ್ಲಿ ತೋರಿಸು">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, ಹೊಸದಾಗಿ ತೆರೆಯಲಾದ ವಿಂಡೋಗಳ ಸ್ಥಳ ಪಟ್ಟಿಯು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="ಹೊಸ ವಿಂಡೋಗಳಲ್ಲಿ ಉಪಕರಣಪಟ್ಟಿಯನ್ನು ತೋರಿಸು">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, ಹೊಸದಾಗಿ ತೆರೆಯಲಾದ ವಿಂಡೋಗಳ ಉಪಕರಣ ಪಟ್ಟಿಗಳು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="ಅಂಚಿನ ಫಲಕದ ಅಗಲ">
+							<longdesc>ಹೊಸ ವಿಂಡೋಗಳ ಅಂಚಿನ ಫಲಕದ ಪೂರ್ವನಿಯೋಜಿತ ಅಗಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="ದಿನಾಂಕ ವಿನ್ಯಾಸ">
+							<longdesc>ಕಡತದ ದಿನಾಂಕಗಳ ವಿನ್ಯಾಸ. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ &quot;locale&quot;, &quot;iso&quot;, ಹಾಗು &quot;informal&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ಕಡತಕೋಶ ವೀಕ್ಷಕ">
+							<longdesc>ನಿಶ್ಚಿತ ಕಡತಕೋಶಕ್ಕಾಗಿ ನೀವು ಒಂದು ವೀಕ್ಷಣೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡದೆ ಇದ್ದಲ್ಲಿ ಒಂದು ಕಡತಕೋಶಕ್ಕೆ ಭೇಟಿ ನೀಡಿದಾಗ ಈ ವೀಕ್ಷಕವನ್ನು ಬಳಸಲಾಗುವುದು. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳು &quot;list_view&quot;(ಪಟ್ಟಿ ನೋಟ), &quot;icon_view&quot;(ಚಿಹ್ನೆ ನೋಟ) ಹಾಗು &quot;compact_view&quot;(ಸಾಂದ್ರ ನೋಟ) ಆಗಿರುತ್ತವೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="ಅಂಚಿನ ಫಲಕದ ಹಿನ್ನಲೆಯ ಪೂರ್ವನಿಯೋಜಿತ ಕಡತದ ಹೆಸರು">
+							<longdesc>ಪೂರ್ವನಿಯೋಜಿತ ಬಲ ಫಲಕದ ಹಿನ್ನಲೆಗಾಗಿನ ಕಡತದ ಹೆಸರು. side_pane_background_set ನಿಜ ಎಂದಾದಲ್ಲಿ ಮಾತ್ರ ಬಳಸಲ್ಪಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="ಅಂಚಿನ ಫಲಕದ ಹಿನ್ನಲೆಯ ಪೂರ್ವನಿಯೋಜಿತ ಬಣ್ಣ">
+							<longdesc>ಪೂರ್ವನಿಯೋಜಿತ ಬಲ ಫಲಕದ ಹಿನ್ನಲೆಗಾಗಿನ ಕಡತದ ಹೆಸರು. side_pane_background_set ನಿಜ ಎಂದಾದಲ್ಲಿ ಮಾತ್ರ ಬಳಸಲ್ಪಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_set">
+						<local_schema short_desc="ಕಸ್ಟಮ್ ಅಂಚಿನ ಫಲಕದ ಹಿನ್ನಲೆ ಸೆಟ್">
+							<longdesc>ಒಂದು ಕಸ್ಟಮ್ ಪೂರ್ವನಿಯೋಜಿತವಾದಂತಹ ಅಂಚಿನ ಫಲಕದ ಹಿನ್ನಲೆಯನ್ನು ಹೊಂದಿಸಲಾಗಿದೆಯೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="ಹಿನ್ನಲೆಯ ಪೂರ್ವನಿಯೋಜಿತ ಕಡತದ ಹೆಸರು">
+							<longdesc>ಪೂರ್ವನಿಯೋಜಿತ ಕಡತಕೋಶದ ಹಿನ್ನಲೆಗಾಗಿನ ಕಡತದ ಹೆಸರು. background_set ನಿಜ ಎಂದಾದಲ್ಲಿ ಮಾತ್ರ ಬಳಸಲ್ಪಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="ಹಿನ್ನಲೆಯ ಪೂರ್ವನಿಯೋಜಿತ ಬಣ್ಣ">
+							<longdesc>ಕಡತಕೋಶದ ಹಿನ್ನಲೆಗಾಗಿನ ಪೂರ್ವನಿಯೋಜಿತ ಬಣ್ಣ. background_set ನಿಜ ಎಂದಾದಲ್ಲಿ ಮಾತ್ರ ಬಳಸಲ್ಪಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema short_desc="ಕಸ್ಟಮ್ ಹಿನ್ನಲೆ">
+							<longdesc>ಒಂದು ಕಸ್ಟಮ್ ಪೂರ್ವನಿಯೋಜಿತವಾದಂತಹ ಕಡತಕೋಶದ ಹಿನ್ನಲೆಯನ್ನು ಹೊಂದಿಸಲಾಗಿದೆಯೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search_bar_type">
+						<local_schema short_desc="ಹುಡುಕು ಪಟ್ಟಿಗಾಗಿ ಹುಡುಕು ಮಾನದಂಡ">
+							<longdesc>ಹುಡುಕು ಸ್ಥಳದಲ್ಲಿ ಕಡತಗಳನ್ನು ಹುಡುಕುವಾಗ ನಮೂದಿಸಬೇಕಿರುವ ಆಧಾರ. &quot;search_by_text&quot;(ಪಠ್ಯದ ಆಧಾರದಲ್ಲಿ ಹುಡುಕು) ಎಂದು ಹೊಂದಿಸಿದಲ್ಲಿ, Nautilus ಕಡತಗಳನ್ನು ಕೇವಲ ಅವುಗಳ ಹೆಸರಿನ ಆಧಾರದಲ್ಲಿ ಹುಡುಕುತ್ತದೆ. &quot;search_by_text_and_properties&quot;(ಪಠ್ಯ ಹಾಗು ಗುಣಲಕ್ಷಣಗಳ ಆಧಾರದಲ್ಲಿ ಹುಡುಕು) ಎಂದು ಹೊಂದಿಸಿದಲ್ಲಿ, Nautilus ಕಡತಗಳನ್ನು ಅವುಗಳ ಹೆಸರು ಹಾಗು ಗುಣಗಳ ಆಧಾರದಲ್ಲಿ ಹುಡುಕುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_is_home_dir">
+						<local_schema short_desc="Nautilus ಬಳಕೆದಾರರ ನೆಲೆ ಕಡತಕೋಶವನ್ನು ಗಣಕತೆರೆಯಾಗಿ ಬಳಸುತ್ತದೆ">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, Nautilus ಬಳಕೆದಾರರ ನೆಲೆ ಕಡತಕೋಶವನ್ನು ಗಣಕತೆರೆಯನ್ನಾಗಿ ಬಳಸುತ್ತದೆ. ಇದು ಅಲ್ಲ ಎಂದಾದಲ್ಲಿ, ~/Desktop ಅನ್ನು ಗಣಕತೆರೆಯನ್ನಾಗಿ ಬಳಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="ಗಣಕತೆರೆ ಅಕ್ಷರ ಶೈಲಿ">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="ಗಣಕತೆರೆಯನ್ನು ಎಳೆಯುವುದನ್ನು Nautilus ಬೆಂಬಲಿಸುತ್ತದೆ">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, Nautilus ಗಣಕತೆರೆಯಲ್ಲಿ ಚಿಹ್ನೆಗಳನ್ನು ಎಳೆಯುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="ವಿಂಡೋಗಳಲ್ಲಿ ಕಡತಕೋಶಗಳನ್ನು ಮೊದಲು ತೋರಿಸು">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, ಕಡತಗಳನ್ನು ಚಿಹ್ನೆ ಹಾಗು ಪಟ್ಟಿ ನೋಟದಲ್ಲ್ಲಿ ತೋರಿಸುವ ಮೊದಲು Nautilus ಕಡತ ಕೋಶಗಳನ್ನು ತೋರಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_advanced_permissions">
+						<local_schema short_desc="ಕಡತದ ಗುಣಲಕ್ಷಣ ಸಂವಾದದಲ್ಲಿ ಸುಧಾರಿತ ಅನುಮತಿಗಳನ್ನು ತೋರಿಸು">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, Nautilus ಕಡತದ ಅನುಮತಿಗಳನ್ನು ಇನ್ನಷ್ಟು ಗೂಢವಾದ ಆಯ್ಕೆಗಳನ್ನು ಒದಗಿಸುವ ಮೂಲಕ ಯುನಿಕ್ಸ್‍ ಮಾದರಿಯಲ್ಲಿ ಸಂಪಾದಿಸಲು ಹಾಗು ತೋರಿಸಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="preview_sound">
+						<local_schema short_desc="ಒಂದು ಚಿಹ್ನೆಯ ಮೇಲೆ ಮೌಸ್ ಅನ್ನು ಕೊಂಡೊಯ್ಯದಾಗ ಧ್ವನಿಗಳ ಮುನ್ನೋಟ ತೋರಿಸಬೇಕೆ">
+							<longdesc>ಒಂದು ಕಡತಗಳ ಚಿಹ್ನೆಯ ಮೇಲೆ ಮೌಸ್‌ ಅನ್ನು ಕೊಂಡೊಯ್ದಾಗ ಯಾವ ಸಮಯದಲ್ಲಿ ಧ್ವನಿ ಕಡತದ ಮುನ್ನೋಟವನ್ನು ಯಾವಾಗ ತೋರಿಸಬೇಕು ಎನ್ನುವ ವೇಗವಾದ ಟ್ರೇಡ್‌ಆಫ್‌. &quot;always&quot;(ಯಾವಾಗಲೂ) ಎಂದು ಬದಲಾಯಿಸಿದಲ್ಲಿ, ಯಾವಾಗಲೂ ಒಂದು ಧ್ವನಿಯನ್ನು ಚಲಾಯಿಸಲಾಗುತ್ತದೆ, ಕಡತವು ಒಂದು ದೂರದ ಪರಿಚಾರಕದಲ್ಲಿದ್ದಾಗಲೂ ಸಹ. &quot;local_only&quot;(ಸ್ಥಳೀಯ ಮಾತ್ರ) ಆಗಿದ್ದಲ್ಲಿ ಕೇವಲ ಸ್ಥಳೀಯ ಕಡತ ವ್ಯವಸ್ಥೆಯಲ್ಲಿರುವುದಕ್ಕೆ ಮಾತ್ರ ಮುನ್ನೋಟವನ್ನು ಚಲಾಯಿಸಲಾಗುತ್ತದೆ. &quot;never&quot; (ಎಂದಿಗೂ ಬೇಡ) ಎಂದಾಗಿದ್ದರೆ ಎಂದಿಗೂ ಧ್ವನಿಯನ್ನು ಚಲಾಯಿಸುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="directory_limit">
+						<local_schema short_desc="ಒಂದು ಕಡತಕೋಶದಲ್ಲಿನ ಅತಿ ಹೆಚ್ಚು ಬಾರಿಗೆ ನಿರ್ವಹಿಸಲಾದ ಕಡತಗಳು">
+							<longdesc>ಈ ಗಾತ್ರಕ್ಕಿಂತ ದೊಡ್ಡದಾದ ಕೋಶಗಳನ್ನು ಈ ಗಾತ್ರಕ್ಕೆ ನಿಲ್ಲಿಸಲಾಗುವುದು. ದೊಡ್ಡದಾದ ಕೋಶಗಳಲ್ಲಿ ತಿಳಿಯದೆ ಕಡತಗಳನ್ನು ರಾಶಿ ಹಾಕುವುದನ್ನು ಹಾಗು ಆ ಮೂಲಕ Nautilus ಅನ್ನು ಕೊಲ್ಲುವುದನ್ನು ತಪ್ಪಿಸುವುದು ಇದರ ಉದ್ದೇಶವಾಗಿದೆ. ಋಣಾತ್ಮಕ ಮೌಲ್ಯವು ಗಾತ್ರಕ್ಕೆ ಯಾವುದೆ ಮಿತಿ ಇಲ್ಲ ಎಂದು ಸೂಚಿಸುತ್ತದೆ. ಕೋಶಗಳನ್ನು ಬಿಡಿ ಬಿಡಿಯಾಗಿ ಓದುಲಾಗುವುದರಿಂದ ಇಲ್ಲಿ ಸೂಚಿಸಲಾದ ಮಿತಿಯು ಅಂದಾಜು ಮಾತ್ರ ನೀಡಲಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_limit">
+						<local_schema short_desc="ತಂಬ್‌ನೈಲಿಂಗ್‌ ಮಾಡಬಹುದಾದ ಚಿತ್ರದ ಗರಿಷ್ಟ ಗಾತ್ರ">
+							<longdesc>ಈ ಇದಕ್ಕಿಂತ ದೊಡ್ಡ ಗಾತ್ರದ(ಬೈಟ್‌ಗಳಲ್ಲಿ) ಚಿತ್ರಗಳು ತಂಬ್‌ನೈಲ್‌ ಮಾಡಲ್ಪಡುವುದಿಲ್ಲ. ಏಕೆಂದರೆ, ದೊಡ್ಡ ಗಾತ್ರದ ಚಿತ್ರಗಳನ್ನು ತಂಬ್‌ನೈಲ್‌ ಮಾಡಲು ಬಹಳ ಸಮಯ ಹಿಡಿಯಬಹುದು ಅಥವ ಬಹಳ ಮೆಮೊರಿಯು ಬೇಕಾಗಬಹುದು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_image_thumbnails">
+						<local_schema short_desc="ಚಿತ್ರ ಕಡತಗಳ ತಂಬ್‌ನೈಲ್‌ಗಳನ್ನು ಯಾವಾಗ ತೋರಿಸಬೇಕು">
+							<longdesc>ಒಂದು ಚಿತ್ರಿಕಾ ಕಡತದ ತಂಬನೈಲ್‌ ಚಿಹ್ನೆಯನ್ನು ಯಾವ ಸಮಯದಲ್ಲಿ ತೋರಿಸಬೇಕು ಎನ್ನುವ ವೇಗವಾದ ಟ್ರೇಡ್‌ಆಫ್‌. &quot;always&quot;(ಯಾವಾಗಲೂ) ಎಂದು ಬದಲಾಯಿಸಿದಲ್ಲಿ, ಯಾವಾಗಲೂ ತಂಬ್‌ನೈಲ್ ಇರುತ್ತದೆ, ಕಡತವು ಒಂದು ದೂರದ ಪರಿಚಾರಕದಲ್ಲಿದ್ದಾಗಲೂ ಸಹ. &quot;local_only&quot;(ಸ್ಥಳೀಯ ಮಾತ್ರ) ಆಗಿದ್ದಲ್ಲಿ ಕೇವಲ ಸ್ಥಳೀಯ ಕಡತ ವ್ಯವಸ್ಥೆಯಲ್ಲಿರುವುದರ ತಂಬನೈಲ್ ಅನ್ನು ಮಾತ್ರ ತೋರಿಸಲಾಗುತ್ತದೆ. &quot;never&quot; (ಎಂದಿಗೂ ಬೇಡ) ಎಂದಾಗಿದ್ದರೆ ಎಂದಿಗೂ ಸಹ ತಂಬ್‌ನೈಲ್ ಚಿತ್ರವನ್ನು ತೋರಿಸಲಾಗುವುದಿಲ್ಲ, ಕೇವಲ ಒಂದು ಸಾಮಾನ್ಯವಾದ ಚಿಹ್ನೆಯನ್ನು ತೋರಿಸಲಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="ಪ್ರಸ್ತುತ ಇರುವ Nautilus‍ ಥೀಮ್ (ಅಸಮ್ಮತಿಗೊಂಡಿದೆ)">
+							<longdesc>ಬಳಕೆಗೆ Nautilus ಥೀಮ್‌ನ ಹೆಸರು. ಇದನ್ನು Nautilus ೨.೨ ರ ನಂತರ ತೆಗೆಹಾಕಲಾಗಿದೆ. ದಯವಿಟ್ಟು ಬದಲಿಗೆ ಚಿಹ್ನೆ ಥೀಮ್ ಅನ್ನು ಬಳಸಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_back_button">
+						<local_schema short_desc="&quot;Back&quot; ಆಜ್ಞೆಯನ್ನು ವೀಕ್ಷಕ ವಿಂಡೊದಲ್ಲಿ ಸಕ್ರಿಯಗೊಳಿಸಲು ಬಳಸಬಹುದಾದ ಮೌಸ್‌ ಗುಂಡಿ">
+							<longdesc>&quot;Forward&quot; ಹಾಗು &quot;Back&quot; ಗಾಗಿ ಗುಂಡಿಗಳಿರುವ ಮೌಸ್‌ಗಳನ್ನು ಹೊಂದಿರುವ ಬಳಕೆದಾರರಿಗಾಗಿ, ಈ ಕೀಲಿಯು ಒಂದು ವೀಕ್ಷಕ ವಿಂಡೊದಲ್ಲಿ ಯಾವ ಗುಂಡಿಯು &quot;Back&quot; ಆಜ್ಞೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ ಎಂದು ಹೊಂದಿಸಬಹುದು. ಇದರ ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳು 6 ಹಾಗು 14 ರ ನಡುವೆ ಇರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_forward_button">
+						<local_schema short_desc="&quot;Forward&quot; ಆಜ್ಞೆಯನ್ನು ವೀಕ್ಷಕ ವಿಂಡೊದಲ್ಲಿ ಸಕ್ರಿಯಗೊಳಿಸಲು ಬಳಸಬಹುದಾದ ಮೌಸ್‌ ಗುಂಡಿ">
+							<longdesc>&quot;Forward&quot; ಹಾಗು &quot;Back&quot; ಗಾಗಿ ಗುಂಡಿಗಳಿರುವ ಮೌಸ್‌ಗಳನ್ನು ಹೊಂದಿರುವ ಬಳಕೆದಾರರಿಗಾಗಿ, ಈ ಕೀಲಿಯು ಒಂದು ವೀಕ್ಷಕ ವಿಂಡೊದಲ್ಲಿ ಯಾವ ಗುಂಡಿಯು &quot;Forward&quot; ಆಜ್ಞೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ ಎಂದು ಹೊಂದಿಸಬಹುದು. ಇದರ ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳು 6 ಹಾಗು 14 ರ ನಡುವೆ ಇರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_use_extra_buttons">
+						<local_schema short_desc="Nautilus ವೀಕ್ಷಕ ವಿಂಡೋಗಳಲ್ಲಿ ಹೆಚ್ಚುವರಿ ಮೌಸ್‌ ಗುಂಡಿ ಘಟನೆಗಳನ್ನು ಬಳಸಿ">
+							<longdesc>&quot;Forward&quot; ಹಾಗು &quot;Back&quot; ಗಾಗಿ ಗುಂಡಿಗಳಿರುವ ಮೌಸ್‌ಗಳನ್ನು ಹೊಂದಿರುವ ಬಳಕೆದಾರರಿಗಾಗಿ, ಈ ಕೀಲಿಯು Nautilus ನ ಒಳಗೆ ಆ ಎರಡು ಗುಂಡಿಗಳಲ್ಲಿ ಒಂದನ್ನು ಒತ್ತಿದಾಗ ಯಾವುದೆ ಕ್ರಮವನ್ನು ತೆಗೆದುಕೊಳ್ಳಲಾಗಿದೆ ಎಂದು ನಿರ್ಧರಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="install_mime_activation">
+						<local_schema short_desc="ಅಜ್ಞಾತ mime ಬಗೆಗಳಿಗಾಗಿ ಪ್ಯಾಕೇಜ್‌ ಅನುಸ್ಥಾಪಕವನ್ನು ತೋರಿಸು">
+							<longdesc>ಗೊತ್ತಿರದ mime ಬಗೆಯನ್ನು ತೆರೆದಾಗ ಅದನ್ನು ನಿಭಾಯಿಸುವ ಸಲುವಾಗಿ ಬಳಕೆದಾರರಿಗೆ ಪ್ಯಾಕೆಜ್ ಅನುಸ್ಥಾಪಕ ಸಂವಾದ ವಿಂಡೊವನ್ನು ತೋರಿಸಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="executable_text_activation">
+						<local_schema short_desc="ಕಾರ್ಯಗತಗೊಳಿಸಬಹುದಾದ ಸಕ್ರಿಯಗೊಳಿಸಲ್ಪಟ್ಟ ಪಠ್ಯ ಕಡತಗಳೊಂದಿಗೆ ಏನು ಮಾಡಬೇಕು">
+							<longdesc>ಕಾರ್ಯಗತಗೊಳಿಸಬಹುದಾದ ಪಠ್ಯ ಕಡತಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದಾಗ ಏನು ಮಾಡಬೇಕು (ಒಮ್ಮೆ ಅಥವ ಎರಡು ಬಾರಿ ಕ್ಲಿಕ್ಕಿಸಿದಾಗ). ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ ಪ್ರೋಗ್ರಾಮನ್ನು ಆರಂಭಿಸಲು &quot;launch&quot; (ಆರಂಭಿಸು), ಏನು ಮಾಡಬೇಕು ಎಂದು ಸಂವಾದದ ಮೂಲಕ ಕೇಳಲು &quot;ask&quot; (ಕೇಳು), ಹಾಗು ಅವುಗಳನ್ನು ಪಠ್ಯ ಕಡತಗಳಾಗಿ ತೋರಿಸಲು &quot;display&quot; (ತೋರಿಸು) ಆಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="click_policy">
+						<local_schema short_desc="ಕಡತಗಳನ್ನು ಆರಂಭಿಸಲು/ತೆರೆಯಲು ಬಳಸಬೇಕಿರುವ ಕ್ಲಿಕ್‌ನ ಬಗೆ">
+							<longdesc>ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ, ಒಂದು ಕ್ಲಿಕ್ಕಿನಲ್ಲಿ ಇದನ್ನು ಆರಂಭಿಸಲು &quot;single&quot; ಆಗಿರುತ್ತದೆ, ಅಥವ ಎರಡು ಕ್ಲಿಕ್ಕಿನಲ್ಲಿ ಆರಂಭಿಸಲು &quot;double&quot; ಆಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_directory_item_counts">
+						<local_schema short_desc="ಒಂದು ಕಡತಕೋಶದಲ್ಲಿರುವ ಅಂಶಗಳ ಸಂಖ್ಯೆಗಳನ್ನು ಯಾವಾಗ ತೋರಿಸಬೇಕು">
+							<longdesc>ಒಂದು ಕಡತಕೋಶದಲ್ಲಿ ಯಾವ ಸಮಯದಲ್ಲಿ ಅಂಶಗಳ ಸಂಖ್ಯೆಯನ್ನು ತೋರಿಸಬೇಕು ಎನ್ನುವ ವೇಗವಾದ ಟ್ರೇಡ್‌ಆಫ್‌. &quot;always&quot;(ಯಾವಾಗಲೂ) ಎಂದು ಬದಲಾಯಿಸಿದಲ್ಲಿ, ಯಾವಾಗಲೂ ಅಂಶಗಳ ಲೆಕ್ಕವನ್ನು ತೋರಿಸಲಾಗುತ್ತದೆ, ಕಡತಕೋಶವು ಒಂದು ದೂರದ ಪರಿಚಾರಕದಲ್ಲಿದ್ದಾಗಲೂ ಸಹ. &quot;local_only&quot;(ಸ್ಥಳೀಯ ಮಾತ್ರ) ಆಗಿದ್ದಲ್ಲಿ ಕೇವಲ ಸ್ಥಳೀಯ ಕಡತ ವ್ಯವಸ್ಥೆಯಲ್ಲಿರುವುದರ ಲೆಕ್ಕವನ್ನು ಮಾತ್ರ ತೋರಿಸಲಾಗುತ್ತದೆ. &quot;never&quot; (ಎಂದಿಗೂ ಬೇಡ) ಎಂದಾಗಿದ್ದರೆ ಎಂದಿಗೂ ಸಹ ಅಂಶಗಳ ಲೆಕ್ಕವನ್ನು ತೋರಿಸುವ ಗೋಜಿಗೆ ಹೋಗುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_icon_text">
+						<local_schema short_desc="ಚಿಹ್ನೆಗಳಲ್ಲಿ ಪಠ್ಯದ ಮುನ್ನೋಟವನ್ನು ಯಾವಾಗ ತೋರಿಸಬೇಕು">
+							<longdesc>ಒಂದು ಕಡತಗಳ ಚಿಹ್ನೆಯ ಮೇಲೆ ಯಾವ ಸಮಯದಲ್ಲಿ ಪಠ್ಯ ಕಡತದಲ್ಲಿನ ವಿಷಯಗಳ ಮುನ್ನೋಟವನ್ನು ಯಾವಾಗ ತೋರಿಸಬೇಕು ಎನ್ನುವ ವೇಗವಾದ ಟ್ರೇಡ್‌ಆಫ್‌. &quot;always&quot;(ಯಾವಾಗಲೂ) ಎಂದು ಬದಲಾಯಿಸಿದಲ್ಲಿ, ಯಾವಾಗಲೂ ಒಂದು ಧ್ವನಿಯನ್ನು ಚಲಾಯಿಸಲಾಗುತ್ತದೆ, ಕಡತವು ಒಂದು ದೂರದ ಕಡತಕೋಶದಲ್ಲಿದ್ದಾಗಲೂ ಸಹ. &quot;local_only&quot;(ಸ್ಥಳೀಯ ಮಾತ್ರ) ಆಗಿದ್ದಲ್ಲಿ ಕೇವಲ ಸ್ಥಳೀಯ ಕಡತ ವ್ಯವಸ್ಥೆಯಲ್ಲಿರುವುದರ ಮುನ್ನೋಟವನ್ನು ಮಾತ್ರ ತೋರಿಸಲಾಗುತ್ತದೆ. &quot;never&quot; (ಎಂದಿಗೂ ಬೇಡ) ಎಂದಾಗಿದ್ದರೆ ಎಂದಿಗೂ ಸಹ ಮುನ್ನೋಟ ಪಠ್ಯವನ್ನು ತೋರಿಸಲಾಗುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_delete">
+						<local_schema short_desc="ತಕ್ಷಣ ಅಳಿಸುವಿಕೆಯನ್ನು ಶಕ್ತಗೊಳಿಸಬೇಕೆ">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, Nautilus ಕಡತವನ್ನು ಕಸದ ಬುಟ್ಟಿಗೆ ವರ್ಗಾಯಿಸದೆ, ತಕ್ಷಣ ಹಾಗು ಆ ಜಾಗದಲ್ಲೆ ಅಳಿಸಿ ಹಾಕುವ ಸವಲತ್ತನ್ನು ಹೊಂದಿರುತ್ತದೆ. ಈ ಸವಲತ್ತು ಅಪಾಯಕಾರಿಯಾಗಬಹುದು, ಆದ್ದರಿಂದ ಎಚ್ಚರದಿಂದಿರಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_trash">
+						<local_schema short_desc="ಕಡತಗಳನ್ನು ಅಳಿಸುವ ಮೊದಲು, ಅಥವ ಕಸದಬುಟ್ಟಿಯನ್ನು ಖಾಲಿ ಮಾಡುವ ಮೊದಲು ಖಚಿತಪಡಿಸಲು ಕೇಳಬೇಕೆ">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, ಕಡತಗಳನ್ನು ಅಳಿಸುವಾಗ, ಅಥವ ಕಸದಬುಟ್ಟಿಯನ್ನು ಖಾಲಿ ಮಾಡುವಾಗ ನೀವು ಹೊರಟಾಗ Nautilus ಖಚಿತಪಡಿಸಲು ಕೇಳುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_open_folder">
+						<local_schema short_desc="&quot;Open Folder&quot; (ಕಡತಕೋಶವನ್ನು ತೆರೆ) ಗೆ ಹೊಂದಿಸಲಾದ x-content/* ಬಗೆಗಳು">
+							<longdesc>ಆದ್ಯತೆಗಳ capplet ನಲ್ಲಿ ಬಳಕೆದಾರರು &quot;Open Folder&quot;(ಕಡತಕೋಶವನ್ನು ತೆರೆ) ಎಂದು ಆಯ್ಕೆ ಮಾಡಲಾದವುಗಳ x-content/* ಬಗೆಗಳ ಪಟ್ಟಿ. ಈ ಬಗೆಗಳಿಗೆ ತಾಳೆಯಾಗುವ ಮಾಧ್ಯಮವನ್ನು ಅಳವಡಿಸಿದಾಗ ಒಂದು ಕಡತಕೋಶ ವಿಂಡೊವು ತೆರೆಯುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_ignore">
+						<local_schema short_desc="&quot;Do Nothing&quot;(ಏನನ್ನೂ ಮಾಡಬೇಡ) ಗೆ ಹೊಂದಿಸಲಾದ x-content/* ಬಗೆಗಳು">
+							<longdesc>ಆದ್ಯತೆಗಳ capplet ನಲ್ಲಿ ಬಳಕೆದಾರರು &quot;Do Nothing&quot;(ಏನನ್ನೂ ಮಾಡಬೇಡ) ಎಂದು ಆಯ್ಕೆ ಮಾಡಲಾದವುಗಳ x-content/* ಬಗೆಗಳ ಪಟ್ಟಿ. ಈ ಬಗೆಗಳಿಗೆ ತಾಳೆಯಾಗುವ ಯಾವುದೆ ಬಗೆಗಳ ಮಾಧ್ಯಮವನ್ನು ಅಳವಡಿಸಿದಾಗ ಯಾವುದೆ ಪ್ರಾಂಪ್ಟನ್ನು ತೋರಿಸಲಾಗುವುದಿಲ್ಲ ಅಥವ ತಾಳೆಯಾಗುವ ಯಾವುದೆ ಅನ್ವಯಗಳನ್ನು ಆರಂಭಿಸಲಾಗುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_start_app">
+						<local_schema short_desc="ಆರಂಭಿಸಬೇಕಿರುವ ಇಚ್ಛೆಯ ಅನ್ವಯದ x-content/* ಬಗೆಗಳ ಪಟ್ಟಿ">
+							<longdesc>ಆದ್ಯತೆ capplet ನಲ್ಲಿ ಬಳಕೆದಾರರು ಅನ್ವಯವನ್ನು ಆರಂಭಿಸಲು ಆಯ್ಕೆ ಮಾಡಲಾದ ಎಂದು ಆಯ್ಕೆ ಮಾಡಲಾದುವುಗಳ x-content/* ಬಗೆಗಳ ಪಟ್ಟಿ. ಈ ಬಗೆಗಳಿಗೆ ತಾಳೆಯಾಗುವ ಮಾಧ್ಯಮವನ್ನು ಅಳವಡಿಸಿದಾಗ ಒದಗಿಸಲಾದ ಬಗೆಗಾಗಿನ ಇಚ್ಛೆಯ ಅನ್ವಯವನ್ನು ಆರಂಭಿಸಲಾಗುವುದು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_never">
+						<local_schema short_desc="ಮಾಧ್ಯಮವನ್ನು ತೂರಿಸಿದಾಗ ಅದರಲ್ಲಿನ ಪ್ರೊಗ್ರಾಂಗಳನ್ನು ತೋರಿಸುವುದಾಗಲಿ ಅಥವ ತಾನಾಗಿಯೆ ಚಲಾಯಿಸುವುದಾಗಲಿ/ಆರಂಭಿಸುವುದಾಗಲಿ ಮಾಡುವುದಿಲ್ಲ">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, ಒಂದು ಮಾಧ್ಯಮವನ್ನು ತೂರಿಸಿದಾಗ Nautilus ಎಂದಿಗೂ ಅದರಲ್ಲಿರಬಹುದಾದ ಪ್ರೊಗ್ರಾಂ ಅನ್ನು ತೋರಿಸುವುದು ಅಥವ ಸ್ವಯಂಚಾಲನೆ/ಸ್ವಯಂಆರಂಭಗೊಳಿಸುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount_open">
+						<local_schema short_desc="ತಾನಾಗಿಯೆ ಆರೋಹಿಸಲಾದ ಮಾಧ್ಯಮಕ್ಕಾಗಿ ಒಂದು ಕಡತಕೋಶವನ್ನು ತೆರೆಯಬೇಕೆ">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, ಮಾಧ್ಯಮವು ತಾನಾಗಿಯೆ ಆರೋಹಿತಗೊಂಡಾಗ Nautilus ತಾನಾಗಿಯೆ ಒಂದು ಕಡತಕೋಶವನ್ನು ತೆರೆಯುತ್ತದೆ. ಇದು ಗೊತ್ತಿರುವ ಯಾವುದೆ x-content/* ಅನ್ನು ಹೊಂದಿಲ್ಲದ ಮಾಧ್ಯಮಕ್ಕೆ ಮಾತ್ರ ಅನ್ವಯಿಸುತ್ತದೆ; ಗೊತ್ತಿರುವ x-content ಬಗೆಯು ಕಂಡುಬಂದಂತಹ ಯಾವುದೆ ಮಾಧ್ಯಮಗಳಿಗೆ, ಬಳಕೆದಾರರು ಸಂರಚಿಸಬಲ್ಲಂತಹ ಕಾರ್ಯವನ್ನು ಒದಗಿಸಲಾಗುವುದು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount">
+						<local_schema short_desc="ಮಾಧ್ಯಮವನ್ನು ತಾನಾಗಿಯೆ ಆರೋಹಿಸಬೇಕೆ">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, Nautilus ಗಣಕವನ್ನು ಆರಂಭಿಸಿದಾಗ ಹಾಗು ಮಾಧ್ಯಮವನ್ನು ತೂರಿಸಿದಾಗ ತಾನಾಗಿಯೆ ಬಳಕೆದಾರರಿಗೆ ಕಾಣಿಸುವಂತಹ ಮಾಧ್ಯಮಗಳಾದ ಹಾರ್ಡ್ ಡಿಸ್ಕ್‍  ಹಾಗು ತೆಗೆಯ ಬಹುದಾದಂತಹ ಮಾಧ್ಯಮಗಳನ್ನು ಆರೋಹಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_location_entry">
+						<local_schema short_desc="ಮಾರ್ಗಪಟ್ಟಿಯ ಬದಲು ಎಲ್ಲಾ ಸಮಯದಲ್ಲೂ ಸ್ಥಳ ನಮೂದನ್ನು ಬಳಸು">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, Nautilus ವೀಕ್ಷಕ ವಿಂಡೋಗಳು ಎಲ್ಲಾ ಸಮಯದಲ್ಲೂ ಪಠ್ಯಾತ್ಮಕ ಆದಾನ ನಮೂದಿಗೆ ಸ್ಥಳ ಪಟ್ಟಿಯ ಬದಲು ಮಾರ್ಗ ಪಟ್ಟಿಯನ್ನು ಬಳಸುತ್ತವೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_browser">
+						<local_schema short_desc="ಎಲ್ಲಾ ವಿಂಡೋಗಳು ವೀಕ್ಷಕಗಳಾಗಿ ಕಾಣಿಸುವ, ಸಾಂಪ್ರದಾಯಿಕ Nautilus ವರ್ತನೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ">
+							<longdesc>ನಿಜ ಎಂದಾದಲ್ಲಿ, ಎಲ್ಲಾ Nautilus ವಿಂಡೋಗಳು ವೀಕ್ಷಕ ವಿಂಡೋಗಳಾಗಿರುತ್ತವೆ. Nautilus ತನ್ನ ೨.೬ ಆವೃತ್ತಿಗಿಂತ ಮೊದಲು ಹೀಗೆಯೆ ಇತ್ತು, ಅಲ್ಲದೆ ಕೆಲವರು ಇದರ ಈ ವರ್ತನೆಯನ್ನು ಇಷ್ಟ ಪಡುತ್ತಾರೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="exit_with_last_window">
+						<local_schema short_desc="ಕೊನೆಯ ವಿಂಡೊವನ್ನು ನಾಶಪಡಿಸಿದಾಗ Nautilus ನಿರ್ಗಮಿಸುತ್ತದೆ.">
+							<longdesc>true ಗೆ ಹೊಂದಿಸಿದಲ್ಲಿ, ಎಲ್ಲಾ ವಿಂಡೊಗಳನ್ನು ನಾಶಪಡಿಸಿದಾಗ Nautilus ನಿರ್ಗಮಿಸುತ್ತದೆ. ಇದು ಪೂರ್ವನಿಯೋಜಿತ ಸಿದ್ಧತೆಯಾಗಿರುತ್ತದೆ. false ಗೆ ಬದಲಾಯಿಸಿದಲ್ಲಿ, ಇದನ್ನು ಯಾವುದೆ ವಿಂಡೊವಿಲ್ಲದೆ ಆರಂಭಿಸಬಹುದಾಗಿರುತ್ತದೆ, ಆದ್ದರಿಂದ nautilus ಅನ್ನು ಮಾಧ್ಯಮಗಳ ಸ್ಯಯಂಆರೋಹಣ, ಅಥವ ಆ ಬಗೆಯ ಕಾರ್ಯಗಳಿಗಾಗಿ ಡೀಮನ್ ಆಗಿ ಬಳಸಬಹುದಾಗಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="ಅಕ್ಷರವನ್ನು ಸಾಧಾರಣ ಗಾತ್ರದಲ್ಲಿ ಕಾಣಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಅಕ್ಷರಶೈಲಿಯನ್ನು ಸಾಧಾರಣವಾಗಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="ಅಕ್ಷರವನ್ನು ಚಿಕ್ಕದಾಗಿ ಕಾಣಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಅಕ್ಷರಶೈಲಿಯನ್ನು ಚಿಕ್ಕದಾಗಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="ಅಕ್ಷರವನ್ನು ದೊಡ್ಡದಾಗಿ ಕಾಣಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಅಕ್ಷರಶೈಲಿಯನ್ನು ದೊಡ್ಡದಾಗಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="ನೆರವನ್ನು ಆರಂಭಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ನೆರವನ್ನು ಆರಂಭಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="೧೨ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>೧೨ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="೧೧ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>೧೧ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="೧೦ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>೧೦ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="೯ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>೯ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="೮ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>೮ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="೭ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>೭ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="೬ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>೬ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="೫ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>೫ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="೪ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>೪ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="೩ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>೩ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="೨ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>೨ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="೧ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>೧ ನೆ ಹಾಳೆಗೆ ಬದಲಾಯಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="ಈಗಿನ ಹಾಳೆಯನ್ನು ಪ್ರತ್ಯೇಕಿಸಲು ಎಕ್ಸಲರೇಟರ್.">
+							<longdesc>ಪ್ರಸಕ್ತ ಹಾಳೆಯನ್ನು ಕಿತ್ತು ಹಾಕುವ ವೇಗವರ್ಧಕ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಬೈಂಡಿಂಗ್ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="ಈಗಿನ ಹಾಳೆಯನ್ನು ಬಲಕ್ಕೆ ಜರುಗಿಸಲು ಎಕ್ಸಲರೇಟರ್.">
+							<longdesc>ಪ್ರಸಕ್ತ ಹಾಳೆಯನ್ನು ಬಲಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸುವ ವೇಗವರ್ಧಕ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಬೈಂಡಿಂಗ್ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="ಈಗಿನ ಹಾಳೆಯನ್ನು ಎಡಕ್ಕೆ ಜರುಗಿಸಲು ಎಕ್ಸಲರೇಟರ್.">
+							<longdesc>ಪ್ರಸಕ್ತ ಹಾಳೆಯನ್ನು ಎಡಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸುವ ವೇಗವರ್ಧಕ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಬೈಂಡಿಂಗ್ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="ಮುಂದಿನ ಹಾಳೆಗೆ ತೆರಳಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಮುಂದಿನ ಹಾಳೆಗೆ ಬದಲಾಯಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="ಹಿಂದಿನ ಹಾಳೆಗೆ ತೆರಳಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಹಿಂದಿನ ಹಾಳೆಗೆ ಬದಲಾಯಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="ಟರ್ಮಿನಲನ್ನು ಮರುಹೊಂದಿಸಲು ಹಾಗು ಸ್ವಚ್ಛಗೊಳಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಟರ್ಮಿನಲ್ ಅನ್ನು ಮರುಹೊಂದಿಸುವ ಹಾಗು ಸ್ವಚ್ಛಗೊಳಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="ಟರ್ಮಿನಲನ್ನು ಮರುಹೊಂದಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಟರ್ಮಿನಲ್ ಅನ್ನು ಮರುಹೊಂದಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="ಟರ್ಮಿನಲ್ಲಿಗೆ ಹೆಸರನ್ನು ನೀಡಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಟರ್ಮಿನಲ್ ಗೆ ಶೀರ್ಷಿಕೆಯನ್ನು ನೀಡುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="ಮೆನುಬಾರಿನ ಗೋಚರಿಕೆಯನ್ನು ಟಾಗಲ್ ಮಾಡಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ">
+							<longdesc>ಮೆನುಪಟ್ಟಿಯ ಗೋಚರಿಕೆಗೆ ಟಾಗಲ್ ಮಾಡುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="ಪೂರ್ಣ ತೆರೆ ವಿಧಾನವನ್ನು ಟಾಗಲ್ ಮಾಡಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಪೂರ್ಣ ತೆರೆ ಸ್ಥಿತಿಯಿಂದ ಟಾಗಲ್ ಮಾಡುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="ಪಠ್ಯವನ್ನು ಅಂಟಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ನಕಲುಫಲಕದಲ್ಲಿರುವುದನ್ನು(ಕ್ಲಿಪ್‌ಬೋರ್ಡ್) ಟರ್ಮಿನಲ್‌ಗೆ ಅಂಟಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="ಪಠ್ಯವನ್ನು ಕಾಪಿ ಮಾಡಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಆಯ್ದ ಪಠ್ಯವನ್ನು ನಕಲುಫಲಕಕ್ಕೆ(ಕ್ಲಿಪ್‌ಬೋರ್ಡ್) ಅಂಟಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಮುಚ್ಚಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಒಂದು ವಿಂಡೋವನ್ನು ಮುಚ್ಚಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="ಹಾಳೆಯನ್ನು ಮುಚ್ಚಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಒಂದು ಹಾಳೆಯನ್ನು ಮುಚ್ಚಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="ಪ್ರಸಕ್ತ ಹಾಳೆಯಲ್ಲಿನ ವಿಷಯಗಳನ್ನು ಒಂದು ಕಡತದಲ್ಲಿ ಉಳಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಪ್ರಸಕ್ತ ಹಾಳೆಯಲ್ಲಿನ ವಿಷಯಗಳನ್ನು ಒಂದು ಕಡತಕ್ಕೆ ಉಳಿಸುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="ಹೊಸ ಪ್ರೊಫೈಲನ್ನು ನಿರ್ಮಿಸಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಪ್ರೊಫೈಲಿನ ರಚನೆಗಾಗಿ ಸಂವಾದವನ್ನು ಮೇಲೆ ತರುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="ಹೊಸ ವಿಂಡೋವನ್ನು ತೆರೆಯಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಹೊಸ ವಿಂಡೋವನ್ನು ತೆರೆಯುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="ಹೊಸ ಹಾಳೆಯನ್ನು ತೆರೆಯಲು ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್">
+							<longdesc>ಹೊಸ ಹಾಳೆಯನ್ನು ತೆರೆಯುವ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕಟ್ ಕೀಲಿಯಾಗಿದೆ. GTK+ ಸಂಪನ್ಮೂಲ ಕಡತಗಳಿಗಾಗಿ ಬಳಕೆಯಾಗುವಂತಹುದೆ ರೀತಿಯ ವಾಕ್ಯದಲ್ಲಿ ಇದನ್ನು ಸೂಚಿಸಲಾಗುವುದು. ನೀವು ಆಯ್ಕೆಯನ್ನು ವಿಶೇಷ ವಾಕ್ಯವು &quot;disabled&quot;(ಅಶಕ್ತಗೊಂಡಿದೆ) ಎಂದು ಸೂಚಿಸಿದಲ್ಲಿ, ಈ ಕ್ರಿಯೆಗೆ ಯಾವುದೆ ಕೀಲಿಮಣೆ ಶಾರ್ಟ್-ಕೀಲಿ ಇರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_skey">
+							<local_schema short_desc="S/Key ಸವಾಲುಗಳನ್ನು ಹೈಲೈಟ್ ಮಾಡು">
+								<longdesc>ಒಂದು S/Key ಚಾಲೆಂಜ್ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಗುರುತಿಸಲಾಗಿದ್ದು ಹಾಗು ಕ್ಲಿಕ್ ಮಾಡಿದಾಗ ಒಂದು ಪುಟಿಕೆಯು ಕಾಣಿಸುತ್ತದೆ. ಸಂವಾದಕ್ಕೆ ಒಂದು ಗುಪ್ತಪದವನ್ನು ನಮೂದಿಸುವುದರಿಂದ ಅದನ್ನು ಟರ್ಮಿನಲ್‌ಗೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="ಗಣಕದ ಅಕ್ಷರಶೈಲಿಯನ್ನು ಬಳಸಬೇಕೆ">
+								<longdesc>true ಆದಲ್ಲಿ, ಗಣಕತೆರೆಯ-ಜಾಗತಿಕ ಶಿಷ್ಟ ಅಕ್ಷರಶೈಲಿಯು ಮೊನೋಸ್ಪೇಸ್ (ಹಾಗು ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ ಹೆಚ್ಚಾಗಿ ಹೋಲುವ ಅಕ್ಷರಶೈಲಿ) ಆಗಿದ್ದಲ್ಲಿ ಟರ್ಮಿನಲ್ ಅದನ್ನು ಬಳಸುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="ಟರ್ಮಿನಲ್ ವಿಜೆಟ್‌ಗಾಗಿ ಥೀಮ್‌ನಿಂದ ಬಣ್ಣಗಳನ್ನು ಬಳಸಬೇಕೆ">
+								<longdesc>true ಆದಲ್ಲಿ, ಬಳಕೆದಾರರು ಒದಗಿಸಲಾದ ಬಣ್ಣಗಳ ಬದಲಿಗೆ, ಪಠ್ಯ ನಮೂದಿನ ಚೌಕಗಳಲ್ಲಿ ಬಳಸಲಾಗುವ ಪರಿಸರವಿನ್ಯಾಸ ಬಣ್ಣದ ಸ್ಕೀಮ್ ಅನ್ನು ಟರ್ಮಿನಲ್‌ಗಾಗಿ ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="ಡಿಲೀಟ್ ಕೀಲಿಯ ಪರಿಣಾಮ">
+								<longdesc>delete ಕೀಲಿಯು ಯಾವ ಸಂಕೇತವನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ ಎನ್ನುವುದನ್ನು ಸೂಚಿಸುತ್ತದೆ. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ ASCII DEL ಅಕ್ಷರಕ್ಕಾಗಿ &quot;ascii-del&quot; ಆಗಿರುತ್ತದೆ, Control-H ಗಾಗಿ (ಅಂದರೆ ASCII BS ಅಕ್ಷರ) &quot;control-h&quot; ಆಗಿರುತ್ತದೆ, backspace ಅಥವ delete ಗೆ ಬದ್ಧವಾಗಿರುವ ಎಸ್ಕೇಪ್‌ ಸೀಕ್ವೆನ್ಸ್‌ಗಾಗಿ &quot;escape-sequence&quot; ಆಗಿರುತ್ತವೆ. &quot;ascii-del&quot; ಯು ಸಾಮಾನ್ಯವಾಗಿ Delete ಕೀಲಿಗೆ ಸರಿಯಾಗಿ ಹೊಂದುತ್ತದೆ ಎಂದು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="ಬ್ಯಾಕ್‌ಸ್ಪೇಸ್ ಕೀಲಿಯ ಪರಿಣಾಮ">
+								<longdesc>backspace ಕೀಲಿಯು ಯಾವ ಸಂಕೇತವನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ ಎನ್ನುವುದನ್ನು ಸೂಚಿಸುತ್ತದೆ. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ ASCII DEL ಅಕ್ಷರಕ್ಕಾಗಿ &quot;ascii-del&quot; ಆಗಿರುತ್ತದೆ, Control-H ಗಾಗಿ (ಅಂದರೆ ASCII BS ಅಕ್ಷರ) &quot;control-h&quot; ಆಗಿರುತ್ತದೆ, backspace ಅಥವ delete ಗೆ ಬದ್ಧವಾಗಿರುವ ಎಸ್ಕೇಪ್‌ ಸೀಕ್ವೆನ್ಸ್‌ಗಾಗಿ &quot;escape-sequence&quot; ಆಗಿರುತ್ತವೆ. &quot;ascii-del&quot; ಯು ಸಾಮಾನ್ಯವಾಗಿ Backspace ಕೀಲಿಗೆ ಸರಿಯಾಗಿ ಹೊಂದುತ್ತದೆ ಎಂದು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="ಹಿನ್ನಲೆಯ ಚಿತ್ರವನ್ನು ಎಷ್ಟರ ಮಟ್ಟಿಗೆ ಗಾಢಗೊಳಿಸಬೇಕು">
+								<longdesc>0.0 ಹಾಗು 1.0 ನಡುವಿನ ಒಂದು ಮೌಲ್ಯವು ಹಿನ್ನಲೆಯನ್ನು ಎಷ್ಟು ಗಾಢಗೊಳಿಸಬೇಕು ಎಂದು ಸೂಚಿಸುತ್ತದೆ. 0.0 ಎಂದರೆ ಯಾವುದೆ ಗಾಢತೆ ಇಲ್ಲ, 1.0 ಎಂದರೆ ಸಂಪೂರ್ಣ ಗಾಢ ಎಂದರ್ಥ. ಪ್ರಸಕ್ತ ಸ್ಥಿತಿಯಲ್ಲಿ, ಕೇವಲ ಎರಡು ಹಂತದ ಗಾಢತೆ ಇದೆ, ಆದ್ದರಿಂದ ಸಿದ್ಧತೆಯು ಬೂಲಿಯನ್ ರೀತಿಯಲ್ಲಿ ವರ್ತಿಸಲಿದ್ದು, ಇಲ್ಲಿ 0.0 ಯು ಗಾಢತೆಯ ಪರಿಣಾಮವನ್ನು ಅಶಕ್ತಗೊಳಿಸುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="ಹಿನ್ನಲೆ ಚಿತ್ರಕ್ಕೆ ಚಲಿಸಬೇಕೆ">
+								<longdesc>true ಆದಲ್ಲಿ, ಎದುರಿನ ಪಠ್ಯದೊಂದಿಗೆ ಹಿನ್ನಲೆಯ ಚಿತ್ರವನ್ನು ಜರುಗಿಸಲಾಗುತ್ತದೆ; false ಆಗಿದ್ದಲ್ಲಿ,ಚಿತ್ರವನ್ನು ನಿಶ್ಚಿತ ಸ್ಥಾನದಲ್ಲಿ ಇರಿಸಿಕೊಂದು ನಂತರ ಅದರ ಮೇಲೆ ಪಠ್ಯವನ್ನು ಜರುಗಿಸುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="ಹಿನ್ನಲೆಯ ಚಿತ್ರ">
+								<longdesc>ಹಿನ್ನಲೆ ಚಿತ್ರದ ಕಡತದಹೆಸರು.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="ಹಿನ್ನಲೆಯ ಬಗೆ">
+								<longdesc>ಟರ್ಮಿನಲ್ ಹಿನ್ನಲೆಯ ಬಗೆ. ಒಂದು ಪೂರ್ತಿ ಬಣ್ಣಕ್ಕಾಗಿ &quot;solid&quot;(ಪೂರ್ತಿ), ಚಿತ್ರಕ್ಕಾಗಿ &quot;image&quot;(ಚಿತ್ರ) for an image, ಅಥವ ಒಂದು ಮಿಶ್ರಿತ ವಿಂಡೋ ವ್ಯವಸ್ಥಾಪಕವು ಚಲಾಯಿತಗೊಳ್ಳುತ್ತಿದ್ದಲ್ಲಿ ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ ಹುಸಿ(ಸೂಡೊ)-ಪಾರದರ್ಶಕತೆ ಆಗಿದ್ದಲ್ಲಿ ಒಂದು ನೈಜ ಪಾರದರ್ಶಕತೆಗೆ  &quot;transparent&quot;(ಪಾರದರ್ಶಕ) ಆಗಿರಬಹುದು.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="ಅಕ್ಷರಶೈಲಿ">
+								<longdesc>ಒಂದು ಪ್ಯಾಂಗೋ ಅಕ್ಷರಶೈಲಿಯ ಹೆಸರು. ಉದಾಹರಣೆಗೆ &quot;Sans 12&quot; ಅಥವ &quot;Monospace Bold 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="ಟರ್ಮಿನಲ್‌ ಅನ್ವಯಗಳಿಗಾಗಿನ ಫಲಕ">
+								<longdesc>ಟರ್ಮಿನಲ್‌ನಲ್ಲಿ ಅನ್ವಯಗಳು ಬಳಸುವ ಸಲುವಾಗಿ ಟರ್ಮಿನಲ್‌ಗಳು 16-ವರ್ಣ ಫಲಕವನ್ನು ಹೊಂದಿರುತ್ತವೆ. ಇದು ವಿವರಣ ಚಿಹ್ನೆಗಳನ್ನು ಹೊಂದಿದ ಬಣ್ಣಗಳ ಹೆಸರನ್ನು ಹೊಂದಿರುವ ಒಂದು ಫಲಕವಾಗಿದೆ. ಬಣ್ಣದ ರಚನೆಗಳು ಹೆಕ್ಸ್‌ ಬಗೆಯಲ್ಲಿ ಇರಬೇಕು ಉದಾ. &quot;#FF00FF&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="ಟರ್ಮಿನಲ್ ವಿಂಡೋಗಾಗಿನ ಚಿಹ್ನೆ">
+								<longdesc>ಈ ಪ್ರೊಫೈಲ್ ಅನ್ನು ಹೊಂದಿರುವ ಹಾಳೆಗಳಿಗೆ/ವಿಂಡೋಗಳಿಗಾಗಿ ಬಳಸಬೇಕಿರುವ ಚಿಹ್ನೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="ಶೆಲ್‌ನ ಬದಲಿಗೆ ಬಳಸಬೇಕಿರುವ ನನ್ನಿಚ್ಛೆಯ ಆಜ್ಞೆ">
+								<longdesc>use_custom_command ಯು true ಆಗಿದ್ದಲ್ಲಿ ಶೆಲ್‌ನ ಬದಲಿಗೆ ಈ ಆಜ್ಞೆಯನ್ನು ಬಳಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="ತೆರೆಸೂಚಕದ ಗೋಚರಿಕೆ">
+								<longdesc>ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ ದಪ್ಪನೆಯ ತೆರೆಸೂಚಕವನ್ನು ಬಳಸಲು &quot;block&quot;, ಲಂಬ ಸಾಲಿನ ತೆರೆಸೂಚಕವನ್ನು ಬಳಸಲು &quot;ibeam&quot; ಆಗಿರುತ್ತದೆ, ಅಥವ ಅಡಿಗೆರೆಯ ತೆರೆಸೂಚಕವನ್ನು ಬಳಸಲು &quot;underline&quot; ಆಗಿರುತ್ತವೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="ತೆರೆಸೂಚಕವು ಮಿನುಗುತ್ತಿರಬೇಕೆ">
+								<longdesc>ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ ಗ್ಲೋಬಲ್ ತೆರೆಸೂಚಕ ಮಿನುಗುವ ಸಿದ್ಧತೆಗಳಿಗಾಗಿ &quot;system&quot;(ವ್ಯವಸ್ಥೆ) ಅಥವ ಕ್ರಮವನ್ನು ಸ್ಪಷ್ಟವಾಗಿ ಸೂಚಿಸಲು &quot;on&quot;(ಆನ್‌) ಅಥವ &quot;off&quot;(ಆಫ್) ಆಗಿರುತ್ತವೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="ಶೆಲ್‌ನ ಬದಲಿಗೆ ನನ್ನಿಚ್ಛೆಯ ಒಂದು ಆಜ್ಞೆಯನ್ನು ಚಲಾಯಿಸಬೇಕೆ">
+								<longdesc>true ಆಗಿದ್ದಲ್ಲಿ, ಒಂದು ಶೆಲ್‌ ಅನ್ನು ಚಲಾಯಿಸುವ ಬದಲಿಗೆ custom_command ಸಿದ್ಧತೆಯನ್ನು ಬಳಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="ಟರ್ಮಿನಲ್ ಆಜ್ಞೆಯನ್ನು ಆರಂಭಿಸುವಾಗ ಪ್ರವೇಶದ ದಾಖಲೆಗಳನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಬೇಕೆ">
+								<longdesc>true ಆದಲ್ಲಿ, ಟರ್ಮಿನಲ್‌ನ ಒಳಗೆ ಆಜ್ಞೆಯನ್ನು ಆರಂಭಿಸಿದಾಗ ವ್ಯವಸ್ಥೆಯ ಪ್ರವೇಶದ ದಾಖಲೆಗಳ utmp ಹಾಗು wtmp ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="ಆಜ್ಞೆಯನ್ನು ಒಂದು ಟರ್ಮಿನಲ್‌ನಲ್ಲಿ ಪ್ರವೇಶ ಶೆಲ್‌ ಆಗಿ ಆರಂಭಿಸಬೇಕೆ">
+								<longdesc>true ಆದಲ್ಲಿ, ಟರ್ಮಿನಲ್‌ನ ಒಳಗೆ ಆಜ್ಞೆಯನ್ನು ಒಂದು ಪ್ರವೇಶ ಶೆಲ್ ಆಗಿ ಚಲಾಯಿಸಲಾಗುತ್ತದೆ. (argv[0] ನ ಎದುರಿಗೆ ಒಂದು ಅಡ್ಡಗೆರೆ ಇರುತ್ತದೆ.)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="ಉಪ ಆಜ್ಞೆಯು ನಿರ್ಗಮಿಸಿದಾಗ ಟರ್ಮಿನಲ್ಲಿನೊಂದಿಗೆ ಏನು ನೋಡಬೇಕು">
+								<longdesc>ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳು, ಟರ್ಮಿನಲ್ ಅನ್ನು ಮುಚ್ಚಲು &quot;ಮುಚ್ಚು&quot; ಹಾಗು ಮರಳಿ ಆರಂಭಿಸಲು &quot;ಮರುಆರಂಭಿಸು&quot; ಆಜ್ಞೆಗಳಾಗಿರುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="ಹೊಸ ಔಟ್‌ಪುಟ್‌ ಇದ್ದಾಗ ಕೆಳಕ್ಕೆ ಚಲಿಸಬೇಕೆ">
+								<longdesc>ನಿಜವಾದಲ್ಲಿ, ಹೊಸ ಔಟ್‌ಪುಟ್ ಇದ್ದಾಗ ಟರ್ಮಿನಲ್ ಕೆಳಭಾಗಕ್ಕೆ ಕಳುಹಿಸಲ್ಪಡುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="ಒಂದು ಕೀಲಿಯನ್ನು ಒತ್ತಿದಾಗ ಕೆಳಕ್ಕೆ ಚಲಿಸಬೇಕೆ">
+								<longdesc>ನಿಜವಾದಲ್ಲಿ, ಒಂದು ಕೀಲಿಯನ್ನು ಒತ್ತಿದಾಗ ಚಲನಪಟ್ಟಿಯು(ಸ್ಕ್ರಾಲ್‌ಬಾರ್) ಕೆಳಕ್ಕೆ ಕಳುಹಿಸಲ್ಪಡಬೇಕು.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="ಸ್ಕ್ರಾಲ್‌ಬ್ಯಾಕ್‌ನಲ್ಲಿ ಅಪರಿಮಿತ ಸಂಖ್ಯೆಯ ಸಾಲುಗಳನ್ನು ಇರಿಸಬೇಕೆ">
+								<longdesc>true ಆಗಿದ್ದಲ್ಲಿ, ಸ್ಕ್ರಾಲ್‌ಬ್ಯಾಕ್ ಸಾಲುಗಳನ್ನು ಎಂದಿಗೂ ಕಡೆಗಣಿಸಲಾಗುವುದಿಲ್ಲ. ಸ್ಕ್ರಾಲ್‌ಬ್ಯಾಕ್ ಇತಿಹಾಸವನ್ನು ತಾತ್ಕಾಲಿಕವಾಗಿ ಡಿಸ್ಕಿನಲ್ಲಿ ಉಳಿಸಿಕೊಳ್ಳಲಾಗುತ್ತದೆ, ಆದ್ದರಿಂದ ಟರ್ಮಿನಲ್‌ಗೆ ತುಂಬಾ ಔಟ್‌ಪುಟ್‌ಗಳಿದ್ದಲ್ಲಿ ಡಿಸ್ಕಿನಲ್ಲಿನ ಜಾಗವು ತೀರಿ ಹೋಗುವ ಸಾಧ್ಯತೆ ಇರುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="ಮರುಚಲನೆಗಾಗಿ(ಸ್ಕ್ರಾಲ್‌ಬ್ಯಾಕ್) ಇರಿಸಬೇಕಿರುವ ಸಾಲುಗಳ ಸಂಖ್ಯೆ">
+								<longdesc>ಇರಿಸಬೇಕಿರುವ ಸ್ಕ್ರಾಲ್‌ಬ್ಯಾಕ್ ಸಾಲುಗಳ ಸಂಖ್ಯೆ. ನೀವು ಟರ್ಮಿನಲ್‌ನಲ್ಲಿನ ಈ ಸಾಲುಗಳಲ್ಲಿ ಸ್ಕ್ರಾಲ್‌ ಬ್ಯಾಕ್ ಮಾಡಬಹುದು; ಸ್ಕ್ರಾಲ್‌ಬ್ಯಾಕ್‌ಗೆ ಸರಿಹೊಂದದ ಸಾಲುಗಳನ್ನು ತಿರಸ್ಕರಿಸಲಾಗುವುದು. ಈ ಸಿದ್ದತೆಯೊಂದಿಗೆ ಎಚ್ಚರಿಕೆ ವಹಿಸಿ; scrollback_unlimited ಎನ್ನುವುದು true ಆಗಿದ್ದಲ್ಲಿ ಈ ಮೌಲ್ಯವನ್ನು ಆಲಕ್ಷಿಸಲಾಗುವುದು.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="ಚಲನಪಟ್ಟಿಕೆಯ ಸ್ಥಾನ">
+								<longdesc>ಟರ್ಮಿನಲ್‌ನ ಚಲನಪಟ್ಟಿಯನ್ನು ಎಲ್ಲಿ ಇರಿಸಬೇಕು. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ &quot;ಎಡ&quot;, &quot;ಬಲ&quot;, ಹಾಗು &quot;ಅಡಗಿಸಲಾದ&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="ಅಡ್ಡಸಾಲುಗಳ ಪೂರ್ವನಿಯೋಜಿತ ಸಂಖ್ಯೆ">
+								<longdesc>ಹೊಸದಾಗಿ ಉಳಿಸಲಾದ ಟರ್ಮಿನಲ್ ವಿಂಡೊಗಳಲ್ಲಿನ ಅಡ್ಡಸಾಲುಗಳ ಸಂಖ್ಯೆ.  use_custom_default_size ಅನ್ನು ಶಕ್ತಗೊಳಿಸದೆ ಇದ್ದಲ್ಲಿ ಇದರ ಯಾವುದೆ ಪರಿಣಾಮವಿರುವುದಿಲ್ಲ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="ಲಂಬಸಾಲುಗಳ ಪೂರ್ವನಿಯೋಜಿತ ಸಂಖ್ಯೆ">
+								<longdesc>ಹೊಸದಾಗಿ ಉಳಿಸಲಾದ ಟರ್ಮಿನಲ್ ವಿಂಡೊಗಳಲ್ಲಿನ ಲಂಬಸಾಲುಗಳ ಸಂಖ್ಯೆ.  use_custom_default_size ಅನ್ನು ಶಕ್ತಗೊಳಿಸದೆ ಇದ್ದಲ್ಲಿ ಇದರ ಯಾವುದೆ ಪರಿಣಾಮವಿರುವುದಿಲ್ಲ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="ಹೊಸ ವಿಂಡೋಗಳಲ್ಲಿ ಇಚ್ಛೆಯ ಟರ್ಮಿನಲ್ ಗಾತ್ರ ಮೆನುಪಟ್ಟಿಯನ್ನು ತೋರಿಸಬೇಕೆ">
+								<longdesc>ನಿಜವಾದಲ್ಲಿ, ಹೊಸದಾಗಿ ರಚಿಸಲಾದ ಟರ್ಮಿನಲ್ ವಿಂಡೋಗಳು  default_size_columns ಹಾಗು default_size_rows ಇಂದ ಸೂಚಿಸಲಾದ ಕಸ್ಟಮ್ ಗಾತ್ರವನ್ನು ಹೊಂದಿರುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="&quot;ಪದದ ಒಂದು ಭಾಗ&quot; ಎಂದು ಪರಿಗಣಿಸಲಾದ ಅಕ್ಷರಗಳು">
+								<longdesc>ಪದಗಳ ಆಧಾರದ ಮೇಲೆ ಪಠ್ಯವನ್ನು ಆಯ್ಕೆ ಮಾಡುವಾಗ, ಈ ಅಕ್ಷರಗಳ ಅನುಕ್ರಮವನ್ನು ಒಂದು ಪದಗಳೆಂದು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ. ವ್ಯಾಪ್ತಿಯನ್ನು &quot;A-Z&quot; ಎಂದು ಸೂಚಿಸಬಹುದು. ಲಿಟರಲ್‌ ಹೈಫನ್‌ಗಳು (ಒಂದು ವ್ಯಾಪ್ತಿಯನ್ನು ಸೂಚಿಸದೆ ಇರುವ) ನೀಡಲಾದ ಮೊದಲ ಅಕ್ಷರವಾಗಿರಬೇಕು.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="ಟರ್ಮಿನಲ್ ಗಂಟೆಯನ್ನು ನಿಶ್ಯಬ್ಧಗೊಳಿಸಬೇಕೆ">
+								<longdesc>true ಆದಲ್ಲಿ, ಟರ್ಮಿನಲ್‌ ಗಂಟೆಗಾಗಿ ಅನ್ವಯಗಳು ಪಾರುಗಾಣಿಕ ಕ್ರಮವನ್ನು(ಎಸ್ಕೇಪ್ ಸೀಕ್ವೆನ್ಸ್) ಕಳುಹಿಸಿದಾಗ ಯಾವುದೆ ಶಬ್ಧವಿರುವುದಿಲ್ಲ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="ದಪ್ಪಕ್ಷರದ ಪಠ್ಯವನ್ನು ಅನುಮತಿಸಬೇಕೆ">
+								<longdesc>ನಿಜವಾದಲ್ಲಿ, ಟರ್ಮಿನಲ್‌ನಲ್ಲಿರುವ ಪಠ್ಯವನ್ನು ಬೋಲ್ವ್‍ಫೇಸ್‌ ಮಾಡಲು ಅನ್ವಯಗಳಿಗೆ ಅನುವು ಮಾಡುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="ಟರ್ಮಿನಲ್‌ಗಾಗಿನ ಹೆಸರು">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="ಕ್ರಿಯಾತ್ಮಕ ಶೀರ್ಷಿಕೆಯೊಂದಿಗೆ ಏನು ಮಾಡಬೇಕು">
+								<longdesc>ಟರ್ಮಿನಲ್‌ನಲ್ಲಿನ ಅನ್ವಯವು ಶೀರ್ಷಿಕೆಯನ್ನು ಹೊಂದಿಸಿದಲ್ಲಿ (ಸಾಮಾನ್ಯವಾಗಿ ಜನರು ಇದಕ್ಕಾಗಿ ಶೆಲ್‌ ಅನ್ನು ಸಿದ್ಧಗೊಳಿಸಿರುತ್ತಾರೆ), ಕ್ರಿಯಾತ್ಮಕವಾಗಿ ಸಿದ್ಧಗೊಳಿಸಲಾದ ಶೀರ್ಷಿಕೆಯು ಸಂರಚಿಸಲಾದ ಶೀರ್ಷಿಕೆಯನ್ನು ಅಳಿಸಬಹುದು, ಅದಕ್ಕೂ ಮುಂಚಿನದಕ್ಕೆ ಹೋಗಬಹುದು, ಅದರ ನಂತರದ್ದಕ್ಕೆ ಹೋಗಬಹುದು ಅಥವ ಅದನ್ನು ಬದಲಾಯಿಸಬಹುದು. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ &quot;replace&quot;(ಬದಲಾಯಿಸು), &quot;before&quot;(ಮೊದಲು), &quot;after&quot;(ನಂತರ), ಹಾಗು &quot;ignore&quot;(ಆಲಕ್ಷಿಸು) ಆಗಿರುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="ಬೋಲ್ಡ್ ಪಠ್ಯವು ಸಾಮಾನ್ಯ ಪಠ್ಯವು ಬಳಸುವ ಬಣ್ಣವನ್ನೆ ಬಳಸಬೇಕೆ">
+								<longdesc>true ಆದಲ್ಲಿ, ಬೋಲ್ಡ್‌ಫೇಸ್ ಪಠ್ಯವು ಸಾಮಾನ್ಯ ಪಠ್ಯದಲ್ಲಿ ಬಳಸಲಾದ ಬಣ್ಣವನ್ನೇ ಬಳಸಿಕೊಂಡು ರೆಂಡರ್ ಮಾಡಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="ಟರ್ಮಿನಲ್‌ನ ಬೋಲ್ಡ್ ಪಠ್ಯದ ಪೂರ್ವನಿಯೋಜಿತ ಬಣ್ಣ">
+								<longdesc>ಟರ್ಮಿನಲ್‌ನ ಬೋಲ್ಡ್ ಪಠ್ಯದ ಪೂರ್ವನಿಯೋಜಿತ ಬಣ್ಣ, ಒಂದು ಬಣ್ಣ ಸೂಚಕವಾಗಿ ಟರ್ಮಿನಲ್‌ನಲ್ಲಿನ ಪಠ್ಯದ ಪೂರ್ವನಿಯೋಜಿತ ಬಣ್ಣ (HTML-ಶೈಲಿಯ ಹೆಕ್ಸ್‌ ಅಂಕಿಗಳು, ಅಥವ &quot;ಕೆಂಪು&quot; ಎಂಬ ಬಣ್ಣದ ಹೆಸರು). bold_color_same_as_fg ಎನ್ನುವುದು true ಆಗಿದ್ದಲ್ಲಿ ಇದನ್ನು ಕಡೆಗಣಿಸಲಾಗುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="ಟರ್ಮಿನಲ್ ಹಿನ್ನಲೆಯ ಪೂರ್ವನಿಯೋಜಿತ ಬಣ್ಣ">
+								<longdesc>ಒಂದು ಬಣ್ಣ ಸೂಚಕವಾಗಿ ಟರ್ಮಿನಲ್‌ ಹಿನ್ನಲೆಯ ಪೂರ್ವನಿಯೋಜಿತ ಹಿನ್ನಲೆ (HTML-ಶೈಲಿಯ ಹೆಕ್ಸ್‌ ಅಂಕಿಗಳು, ಅಥವ &quot;ಕೆಂಪು&quot; ಎಂಬ ಬಣ್ಣದ ಹೆಸರು).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="ಟರ್ಮಿನಲ್‌ನ ಪಠ್ಯದ ಪೂರ್ವನಿಯೋಜಿತ ಬಣ್ಣ">
+								<longdesc>ಒಂದು ಬಣ್ಣ ಸೂಚಕವಾಗಿ ಟರ್ಮಿನಲ್‌ನಲ್ಲಿನ ಪಠ್ಯದ ಪೂರ್ವನಿಯೋಜಿತ ಬಣ್ಣ (HTML-ಶೈಲಿಯ ಹೆಕ್ಸ್‌ ಅಂಕಿಗಳು, ಅಥವ &quot;ಕೆಂಪು&quot; ಎಂಬ ಬಣ್ಣದ ಹೆಸರು).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="ಹೊಸ ವಿಂಡೋಗಳ/ಹಾಳೆಗಳಲ್ಲಿ ಮೆನುಪಟ್ಟಿಯನ್ನು ತೋರಿಸಬೇಕೆ">
+								<longdesc>ಈ ಪ್ರೊಫೈಲಿನೊಂದಿಗೆ ವಿಂಡೋಗಳನ್ನು/ಹಾಳೆಗಳಿಗಾಗಿನ ಹೊಸ ವಿಂಡೋಗಳಲ್ಲಿ ತೋರಿಸಬೇಕಿದ್ದರೆ True ಆಗಿರುತ್ತದೆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="ಪ್ರೊಫೈಲ್‌ನ ಮನುಷ್ಯ-ಓದಬಲ್ಲ ಹೆಸರು">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="ಒಂದು ಟರ್ಮಿನಲ್ ವಿಂಡೋವನ್ನು ಮುಚ್ಚುವಾಗ ಖಚಿತಪಡಿಸಲು ಕೇಳಬೇಕೆ">
+							<longdesc>ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಹಾಳೆಗಳಿರುವ ಒಂದು ಟರ್ಮಿನಲ್ ವಿಂಡೋವನ್ನು ಮುಚ್ಚುವಾಗ ಖಚಿತಪಡಿಸಲು ಕೇಳಬೇಕೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="ಲಭ್ಯವಿರುವ ಎನ್ಕೋಡಿಂಗ್‌ಗಳ ಪಟ್ಟಿ">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="ಮೆನುಪಟ್ಟಿ ನಿಲುಕಣೆಗಾಗಿನ ಸಾಮಾನ್ಯವಾದ GTK ಶಾರ್ಟ್-ಕಟ್ ಶಕ್ತಗೊಂಡಿದೆಯೆ">
+							<longdesc>ಸಾಮಾನ್ಯವಾಗಿ ನೀವು F10 ಅನ್ನು ಬಳಸಿಕೊಂಡು ಮೆನುಪಟ್ಟಿಯನ್ನು ನಿಲುಕಿಸಕೊಳ್ಳಬಹುದು. ಇದನ್ನು gtkrc (gtk-menu-bar-accel = &quot;whatever&quot;) ಮೂಲಕವೂ ಸಹ ಇಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಬಹುದಾಗಿದೆ. ಶಿಷ್ಟವಾದ ಮೆನುಪಟ್ಟಿ ವೇಗವರ್ಧಕವನ್ನು ಅಶಕ್ತಗೊಳಿಸುವುದನ್ನು ಈ ಆಯ್ಕೆಯು ಅನುಮತಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="ಮೆನು ಪಟ್ಟಿಯು ನಿಲುಕಣಾ ಕೀಲಿಗಳನ್ನು ಹೊಂದಿದೆಯೆ">
+							<longdesc>ಮೆನುಪಟ್ಟಿಗಾಗಿ Alt+ಅಕ್ಷರ ನಿಲುಕಣಾ ಕೀಲಿಯನ್ನು ಹೊಂದಬೇಕೆ. ಅವುಗಳು ಟರ್ಮಿನಲ್‌ನಲ್ಲಿ ಚಲಾಯಿತಗೊಳ್ಳುತ್ತಿರುವ ಕೆಲವು ಅನ್ವಯಗಳಿಗೆ ಅಡ್ಡಿಯಾಗಬಹುದು ಆದ್ದರಿಂದ ಅವನ್ನು ಆಫ್‌ ಮಾಡಲು ಸಾಧ್ಯವಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="ಹೊಸ ಟರ್ಮಿನಲ್‌ಗಾಗಿ ಬಳಸಬೇಕಿರುವ ಪ್ರೊಫೈಲ್">
+							<longdesc>ಹೊಸ ವಿಂಡೋ ಅಥವ ಹಾಳೆಯನ್ನು ತೆರೆಯಲು ಬಳಸಬೇಕಿರುವ ಪ್ರೊಫೈಲ್. ಅದು ಪ್ರೊಫೈಲ್‌ ಪಟ್ಟಿಯಲ್ಲಿ ಇರಬೇಕು(_l).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="ಪ್ರೊಫೈಲುಗಳ ಪಟ್ಟಿ">
+							<longdesc>gnome-terminal ಗೆ ತಿಳಿದಿರುವ ಪ್ರೊಫೈಲುಗಳ ಪಟ್ಟಿ. ಈ ಪಟ್ಟಿಯು /apps/gnome-terminal/profiles ಕ್ಕೆ ಅನುಗುಣವಾಗಿ ಉಪಕೋಶಗಳಿಗೆ ಹೆಸರಿಸಲಾಗುವ ವಾಕ್ಯಗಳನ್ನು ಹೊಂದಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-session">
+				<dir name="options">
+					<entry name="logout_prompt">
+						<local_schema short_desc="ನಿರ್ಗಮನದ ಪ್ರಾಂಪ್ಟ್‍">
+							<longdesc>ಶಕ್ತಗೊಂಡಿದ್ದಲ್ಲಿ, ಯಾವುದೆ ಒಂದು ಅಧೀವೇಶನವನ್ನು ಮುಗಿಸುವ ಮೊದಲು gnome-session ಬಳಕೆದಾರನನ್ನು ಕೇಳುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_save_session">
+						<local_schema short_desc="ಅಧಿವೇಶನವನ್ನು ಉಳಿಸು">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome_settings_daemon">
+				<entry name="volume_step">
+					<local_schema short_desc="ಧ್ವನಿ ಪ್ರಮಾಣದ ಹಂತ">
+						<longdesc>ಧ್ವನಿ ಪ್ರಮಾಣದ ಪ್ರತಿಶತವಾಗಿ ಧ್ವನಿ ಪ್ರಮಾಣದ ಹಂತ.</longdesc>
+					</local_schema>
+				</entry>
+				<dir name="gtk-modules">
+					<entry name="gail:atk-bridge">
+						<local_schema short_desc="GTK+ ಘಟಕಗಳಿಗಾಗಿನ ನಿಲುಕಣಾ ಬೆಂಬಲ">
+							<longdesc>ಈ ಕೀಲಿಯು  ನಿಲುಕಣಾ ಬೆಂಬಲಕ್ಕಾಗಿ ಲೋಡ್‌ ಮಾಡಬೇಕಿರುವ GTK+ ಘಟಕಗಳನ್ನು ನಿರ್ಧರಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybindings">
+					<entry name="next">
+						<local_schema short_desc="ಮುಂದಿನ ಹಾಡು">
+							<longdesc>ಮುಂದಿನ ಹಾಡಿಗೆ ಹೋಗಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="previous">
+						<local_schema short_desc="ಹಿಂದಿನ ಹಾಡು">
+							<longdesc>ಹಿಂದಿನ ಹಾಡಿಗೆ ಹೋಗಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="stop">
+						<local_schema short_desc="ಪ್ಲೇಬ್ಯಾಕನ್ನು ನಿಲ್ಲಿಸು">
+							<longdesc>ಪ್ಲೇಬ್ಯಾಕ್ ಅನ್ನು ನಿಲ್ಲಿಸಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pause">
+						<local_schema short_desc="ಪ್ಲೇಬ್ಯಾಕನ್ನು ತಾತ್ಕಾಲಿಕ ಸ್ಥಗಿತಗೊಳಿಸು">
+							<longdesc>ಪ್ಲೇಬ್ಯಾಕ್ ಅನ್ನು ತಾತ್ಕಾಲಿಕ ಸ್ಥಗಿತಗೊಳಿಸಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="play">
+						<local_schema short_desc="ಪ್ಲೇ (ಅಥವ ಪ್ಲೇ/ತಾತ್ಕಾಲಿಕ ಸ್ಥಗಿತ)">
+							<longdesc>ಪ್ಲೇಬ್ಯಾಕ್ ಅನ್ನು(ಅಥವ ಪ್ಲೇ/ತಾತ್ಕಾಲಿಕ ಸ್ಥಗಿತದ ನಡುವೆ ಬದಲಾಯಿಸಲು) ಆರಂಭಿಸಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media">
+						<local_schema short_desc="ಮೀಡಿಯಾ ಪ್ಲೇಯರನ್ನು ಆರಂಭಿಸು">
+							<longdesc>ಮೀಡಿಯಾ ಪ್ಲೇಯರನ್ನು ಆರಂಭಿಸಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="www">
+						<local_schema short_desc="ಜಾಲ ವೀಕ್ಷಕವನ್ನು ಆರಂಭಿಸು">
+							<longdesc>ಜಾಲ ವೀಕ್ಷಕವನ್ನು ಆರಂಭಿಸಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="calculator">
+						<local_schema short_desc="ಕ್ಯಾಲ್ಕುಲೇಟರನ್ನು ಆರಂಭಿಸು">
+							<longdesc>ಕ್ಯಾಲ್ಕುಲೇಟರನ್ನು ಆರಂಭಿಸಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="ನೆರವಿನ ವೀಕ್ಷಕವನ್ನು ಆರಂಭಿಸು">
+							<longdesc>ನೆರವಿನ ವೀಕ್ಷಕವನ್ನು ಆರಂಭಿಸಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screensaver">
+						<local_schema short_desc="ತೆರೆಯನ್ನು ಲಾಕ್ ಮಾಡು">
+							<longdesc>ತೆರೆಯನ್ನು ಲಾಕ್ ಮಾಡಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="email">
+						<local_schema short_desc="ಇಮೈಲ್ ಕ್ಲೈಂಟನ್ನು ಆರಂಭಿಸು">
+							<longdesc>ಇಮೈಲ್ ಕ್ಲೈಂಟನ್ನು ಆರಂಭಿಸಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search">
+						<local_schema short_desc="ಹುಡುಕು">
+							<longdesc>ಹುಡುಕು ಉಪಕರಣವನ್ನು ಆರಂಭಿಸಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home">
+						<local_schema short_desc="ನೆಲೆ ಕಡತಕೋಶ">
+							<longdesc>ನೆಲೆ ಕಡತಕೋಶವನ್ನು ತೆರೆಯಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="eject">
+						<local_schema short_desc="ಹೊರತಳ್ಳು">
+						</local_schema>
+					</entry>
+					<entry name="power">
+						<local_schema short_desc="ನಿರ್ಗಮಿಸು">
+							<longdesc>ನಿರ್ಗಮಿಸಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_up">
+						<local_schema short_desc="ಧ್ವನಿ ಪ್ರಮಾಣ ಏರಿಕೆ">
+							<longdesc>ಗಣಕದ ಧ್ವನಿ ಪರಿಮಾಣವನ್ನು ಹೆಚ್ಚಿಸಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_down">
+						<local_schema short_desc="ಧ್ವನಿ ಪ್ರಮಾಣ ಇಳಿಕೆ">
+							<longdesc>ಗಣಕದ ಧ್ವನಿ ಪರಿಮಾಣವನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_mute">
+						<local_schema short_desc="ಧ್ವನಿ ಪ್ರಮಾಣ ಮೂಕ">
+							<longdesc>ಗಣಕದ ಧ್ವನಿ ಪರಿಮಾಣವನ್ನು ಮೂಕಗೊಳಿಸಲು ಬದ್ಧವಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="plugins">
+					<dir name="xsettings">
+						<entry name="active">
+							<local_schema short_desc="xsettings ಪ್ಲಗ್‌ಇನ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು">
+								<longdesc>xsettings ಅನ್ನು ನಿರ್ವಹಿಸುವಂತೆ ಪ್ಲಗ್ಇನ್‌ ಅನ್ನು ಶಕ್ತಗೊಳಿಸಲು true ಗೆ (ನಿಜಕ್ಕೆ) ಹೊಂದಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="xrdb">
+						<entry name="active">
+							<local_schema short_desc="xrdb ಪ್ಲಗ್‌ಇನ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು">
+								<longdesc>xrdb ಸಿದ್ಧತೆಗಳನ್ನು ನಿರ್ವಹಿಸುವಂತೆ ಪ್ಲಗ್ಇನ್‌ ಅನ್ನು ಶಕ್ತಗೊಳಿಸಲು true ಗೆ (ನಿಜಕ್ಕೆ) ಹೊಂದಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="typing-break">
+						<entry name="active">
+							<local_schema short_desc="ವಿರಾಮ ತೆಗೆದುಕೊಳ್ಳುವ ಪ್ಲಗ್‌ಇನ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು">
+								<longdesc>ನಮೂದಿಸುವ ವಿರಾಮಗಳನ್ನು ನಿರ್ವಹಿಸುವಂತೆ ಪ್ಲಗ್ಇನ್‌ ಅನ್ನು ಶಕ್ತಗೊಳಿಸಲು true ಗೆ (ನಿಜಕ್ಕೆ) ಹೊಂದಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="sound">
+						<entry name="active">
+							<local_schema short_desc="ಧ್ವನಿ ಪ್ಲಗ್‌ಇನ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು">
+								<longdesc>ಧ್ವನಿ ನಮೂನೆ ಕ್ಯಾಶೆಗಳನ್ನು ನಿರ್ವಹಿಸುವಂತೆ ಪ್ಲಗ್ಇನ್‌ ಅನ್ನು ಶಕ್ತಗೊಳಿಸಲು true ಗೆ (ನಿಜಕ್ಕೆ) ಹೊಂದಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mouse">
+						<entry name="active">
+							<local_schema short_desc="ಮೌಸ್ ಪ್ಲಗ್‌ಇನ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು">
+								<longdesc>ಮೌಸ್ ಸಿದ್ಧತೆಗಳನ್ನು ನಿರ್ವಹಿಸುವಂತೆ ಪ್ಲಗ್ಇನ್‌ ಅನ್ನು ಶಕ್ತಗೊಳಿಸಲು true ಗೆ (ನಿಜಕ್ಕೆ) ಹೊಂದಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="media-keys">
+						<entry name="active">
+							<local_schema short_desc="ಮೀಡಿಯಾ ಕೀಲಿಗಳನ್ನು ಪ್ಲಗ್‌ಇನ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು">
+								<longdesc>ಮಲ್ಟಿಮೀಡಿಯಾ ಸಿದ್ಧತೆಗಳನ್ನು ನಿರ್ವಹಿಸುವಂತೆ ಪ್ಲಗ್ಇನ್‌ ಅನ್ನು ಶಕ್ತಗೊಳಿಸಲು true ಗೆ (ನಿಜಕ್ಕೆ) ಹೊಂದಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="active">
+							<local_schema short_desc="ಕೀಲಿಮಣೆ ಪ್ಲಗ್‌ಇನ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು">
+								<longdesc>ಕೀಲಿಮಣೆ ಸಿದ್ಧತೆಗಳನ್ನು ನಿರ್ವಹಿಸುವಂತೆ ಪ್ಲಗ್ಇನ್‌ ಅನ್ನು ಶಕ್ತಗೊಳಿಸಲು true ಗೆ (ನಿಜಕ್ಕೆ) ಹೊಂದಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keybindings">
+						<entry name="active">
+							<local_schema short_desc="ಕೀಲಿ-ಬದ್ಧತೆಗಳ ಪ್ಲಗ್‌ಇನ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು">
+								<longdesc>ಕೀಲಿಬದ್ಧತೆಗಳನ್ನು ಸಿದ್ಧತೆಗಳನ್ನು ನಿರ್ವಹಿಸುವಂತೆ ಪ್ಲಗ್ಇನ್‌ ಅನ್ನು ಶಕ್ತಗೊಳಿಸಲು true ಗೆ (ನಿಜಕ್ಕೆ) ಹೊಂದಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="housekeeping">
+						<entry name="ignore_paths">
+							<local_schema short_desc="ಆಲಕ್ಷಿಸಬೇಕಿರುವ ಆರೋಹಣಾ ಮಾರ್ಗಗಳು">
+								<longdesc>ಸ್ಥಳಾವಕಾಶವು ಕಡಿಮೆ ಇದ್ದಾಗ ಯಾವ ಆರೋಹಣಾ ಮಾರ್ಗಗಳ ಪಟ್ಟಿಯನ್ನು ಆಲಕ್ಷಿಸಬೇಕು ಎಂದು ಸೂಚಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="min_notify_period">
+							<local_schema short_desc="ಪುನರಾವರ್ತಿತ ಎಚ್ಚರಿಕೆಗಳ ಕನಿಷ್ಟ ಸೂಚನಾ ಕಾಲಾವಧಿ">
+								<longdesc>ಸಮಯವನ್ನು ನಿಮಿಷದಲ್ಲಿ ಸೂಚಿಸಿ. ಒಂದು ಪರಿಮಾಣಕ್ಕೆ ತರುವಾಯದ ಎಚ್ಚರಿಕೆಗಳು ಈ ಕಾಲಾವಧಿಯ ನಂತರ ಕಾಣಿಸಿಕೊಳ್ಳುವುದಿಲ್ಲ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_size_gb_no_notify">
+							<local_schema short_desc="ಮುಕ್ತ ಸ್ಥಳದ ಸೂಚನೆ ಇರದ ಮಿತಿ">
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify_again">
+							<local_schema short_desc="ಆನಂತರದ ಮುಕ್ತ ಪ್ರತಿಶತ ಸೂಚನಾ ಮಿತಿ">
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify">
+							<local_schema short_desc="ಮುಕ್ತ ಪ್ರತಿಶತ ಸೂಚನೆಯ ಮಿತಿ">
+							</local_schema>
+						</entry>
+						<entry name="active">
+							<local_schema short_desc="ಮನೆಸ್ವಚ್ಛಗೊಳಿಸುವ ಪ್ಲಗ್‌ಇನ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು">
+								<longdesc>ಅಗತ್ಯವಿಲ್ಲದ ತಾತ್ಕಾಲಿಕ ಕಡತ ಕ್ಯಾಶೆಯನ್ನು ಅಳಿಸಿಹಾಕಲು, ಮನೆಸ್ವಚ್ಛಗೊಳಿಸುವ ಪ್ಲಗ್ಇನ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸಲು true ಗೆ (ನಿಜಕ್ಕೆ) ಹೊಂದಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="font">
+						<entry name="active">
+							<local_schema short_desc="ಅಕ್ಷರಶೈಲಿ ಪ್ಲಗ್‌ಇನ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು">
+								<longdesc>ಅಕ್ಷರ ಶೈಲಿ ಸಿದ್ಧತೆಗಳನ್ನು ನಿರ್ವಹಿಸುವಂತೆ ಪ್ಲಗ್ಇನ್‌ ಅನ್ನು ಶಕ್ತಗೊಳಿಸಲು true ಗೆ (ನಿಜಕ್ಕೆ) ಹೊಂದಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="clipboard">
+						<entry name="active">
+							<local_schema short_desc="ಕ್ಲಿಪ್‌ಬೋರ್ಡ್ ಪ್ಲಗ್‌ಇನ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು">
+								<longdesc>ಕ್ಲಿಪ್‌ಬೋರ್ಡಿನ ಸಿದ್ಧತೆಗಳನ್ನು ನಿರ್ವಹಿಸುವಂತೆ ಪ್ಲಗ್ಇನ್‌ ಅನ್ನು ಶಕ್ತಗೊಳಿಸಲು true ಗೆ (ನಿಜಕ್ಕೆ) ಹೊಂದಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="background">
+						<entry name="active">
+							<local_schema short_desc="ಹಿನ್ನಲೆ ಪ್ಲಗ್‌ಇನ್‌ಗಳನ್ನು ಶಕ್ತಗೊಳಿಸು">
+								<longdesc>ಗಣಕತೆರೆ ಹಿನ್ನಲೆ ಸಿದ್ಧತೆಗಳನ್ನು ನಿರ್ವಹಿಸುವಂತೆ ಪ್ಲಗ್ಇನ್‌ ಅನ್ನು ಶಕ್ತಗೊಳಿಸಲು true ಗೆ (ನಿಜಕ್ಕೆ) ಹೊಂದಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="a11y-keyboard">
+						<entry name="active">
+							<local_schema short_desc="ನಿಲುಕಣಾ ಕೀಲಿಮಣೆ ಪ್ಲಗ್ಇನ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು">
+								<longdesc>ನಿಲುಕಣಾ ಕೀಲಿಮಣೆ ಸಿದ್ಧತೆಗಳನ್ನು ನಿರ್ವಹಿಸುವಂತೆ ಪ್ಲಗ್ಇನ್‌ ಅನ್ನು ಶಕ್ತಗೊಳಿಸಲು true ಗೆ (ನಿಜಕ್ಕೆ) ಹೊಂದಿಸಿ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="xrandr">
+					<entry name="show_notification_icon">
+						<local_schema short_desc="ಸೂಚನೆಗಳನ್ನು ಸೂಚನಾ ಸ್ಥಳದಲ್ಲಿ ತೋರಿಸು">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="yelp">
+				<entry name="fixed_font">
+					<local_schema short_desc="ನಿಗದಿತ ಪಠ್ಯಕ್ಕಾಗಿನ ಅಕ್ಷರಶೈಲಿ">
+						<longdesc>ಪಠ್ಯಕ್ಕಾಗಿನ ನಿಗದಿತ ಅಗಲದೊಂದಿಗಿನ ಅಕ್ಷರಶೈಲಿ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="variable_font">
+					<local_schema short_desc="ಪಠ್ಯಕ್ಕಾಗಿನ ಅಕ್ಷರಶೈಲಿ">
+						<longdesc>ಪಠ್ಯಕ್ಕಾಗಿನ ಬದಲಾಯಿಸಬಹುದಾದ ಅಗಲದೊಂದಿಗಿನ ಅಕ್ಷರಶೈಲಿ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_system_fonts">
+					<local_schema short_desc="ಗಣಕದ ಅಕ್ಷರಶೈಲಿಯನ್ನು ಬಳಸು">
+						<longdesc>ಗಣಕಕ್ಕೆ ಹೊಂದಿಸಲಾದ ಪೂರ್ವನಿಯೋಜಿತಅಕ್ಷರಶೈಲಿಯನ್ನು ಬಳಸು.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_caret">
+					<local_schema short_desc="ಕ್ಯಾರೆಟ್(caret) ಅನ್ನು ಬಳಸು">
+						<longdesc>ಪುಟಗಳನ್ನು ನೋಡುವಾಗ ಕೀಲಿಮಣೆಯಿಂದ ನಿಯಂತ್ರಿಸಬಹುದಾದ ಕ್ಯಾರಟ್(caret) ಅನ್ನು ಬಳಸಿ.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="metacity">
+				<dir name="window_keybindings">
+					<entry name="move_to_center">
+						<local_schema short_desc="ವಿಂಡೋವನ್ನು ತೆರೆಯ ಮಧ್ಯ ಭಾಗಕ್ಕೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_w">
+						<local_schema short_desc="ವಿಂಡೋವನ್ನು ತೆರೆಯ ಪಶ್ಚಿಮ (ಎಡಭಾಗ) ಭಾಗಕ್ಕೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_e">
+						<local_schema short_desc="ವಿಂಡೋವನ್ನು ತೆರೆಯ ಪೂರ್ವ (ಬಲಭಾಗ) ಭಾಗಕ್ಕೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_s">
+						<local_schema short_desc="ವಿಂಡೋವನ್ನು ತೆರೆಯ ದಕ್ಷಿಣ (ಕೆಳಕ್ಕೆ) ಭಾಗಕ್ಕೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_n">
+						<local_schema short_desc="ವಿಂಡೋವನ್ನು ತೆರೆಯ ಉತ್ತರ (ಮೇಲೆ) ಭಾಗಕ್ಕೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_se">
+						<local_schema short_desc="ವಿಂಡೋವನ್ನು ತೆರೆಯ ದಕ್ಷಿಣ-ಪೂರ್ವ(ಕೆಳ ಬಲಭಾಗ) ಮೂಲೆಗೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_sw">
+						<local_schema short_desc="ವಿಂಡೋವನ್ನು ತೆರೆಯ ದಕ್ಷಿಣ-ಪಶ್ಚಿಮ (ಕೆಳ ಎಡಭಾಗ) ಮೂಲೆಗೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_ne">
+						<local_schema short_desc="ವಿಂಡೋವನ್ನು ತೆರೆಯ ಉತ್ತರ-ಪೂರ್ವ(ಮೇಲಿನ ಬಲಭಾಗ) ಮೂಲೆಗೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_nw">
+						<local_schema short_desc="ವಿಂಡೋವನ್ನು ತೆರೆಯ ಉತ್ತರ-ಪಶ್ಚಿಮ (ಮೇಲಿನ ಎಡಭಾಗ) ಮೂಲೆಗೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="maximize_horizontally">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಸಮತಲವಾಗಿ ಹಿಗ್ಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="maximize_vertically">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಲಂಬವಾಗಿ ಹಿಗ್ಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="lower">
+						<local_schema short_desc="ವಿಂಡೊಗಳನ್ನು ಬೇರೆ ವಿಂಡೋದ ಕೆಳಗೆ ಇರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="raise">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಇತರೆ ವಿಂಡೋಗಳಿಗಿಂತ ಎತ್ತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="raise_or_lower">
+						<local_schema short_desc="ವಿಂಡೊವು ಇನ್ನೊಂದು ವಿಂಡೋದಿಂದ ಆವರಿಸಲ್ಪಟ್ಟದಲ್ಲಿ ಅದನ್ನು ಮೇಲಕ್ಕೆ ಏರಿಸು, ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ ಅದನ್ನು ಕೆಳಗಿಳಿಸಿ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_down">
+						<local_schema short_desc="ವಿಂಡೋವನ್ನು ಒಂದು ಕಾರ್ಯಕ್ಷೇತ್ರದ ಕೆಳಗೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_up">
+						<local_schema short_desc="ವಿಂಡೋವನ್ನು ಒಂದು ಕಾರ್ಯಕ್ಷೇತ್ರದ ಮೇಲಕ್ಕೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_right">
+						<local_schema short_desc="ವಿಂಡೋವನ್ನು ಒಂದು ಕಾರ್ಯಕ್ಷೇತ್ರದ ಬಲಕ್ಕೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_left">
+						<local_schema short_desc="ವಿಂಡೋವನ್ನು ಒಂದು ಕಾರ್ಯಕ್ಷೇತ್ರದ ಎಡಕ್ಕೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_12">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಕಾರ್ಯಕ್ಷೇತ್ರ 12 ಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_11">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಕಾರ್ಯಕ್ಷೇತ್ರ 11 ಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_10">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಕಾರ್ಯಕ್ಷೇತ್ರ 10 ಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_9">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಕಾರ್ಯಕ್ಷೇತ್ರ 9 ಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_8">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಕಾರ್ಯಕ್ಷೇತ್ರ 8 ಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_7">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಕಾರ್ಯಕ್ಷೇತ್ರ 7 ಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_6">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಕಾರ್ಯಕ್ಷೇತ್ರ 6 ಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_5">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಕಾರ್ಯಕ್ಷೇತ್ರ 5 ಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_4">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಕಾರ್ಯಕ್ಷೇತ್ರ 4 ಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_3">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಕಾರ್ಯಕ್ಷೇತ್ರ 3 ಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_2">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಕಾರ್ಯಕ್ಷೇತ್ರ 2 ಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_1">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಕಾರ್ಯಕ್ಷೇತ್ರ 1 ಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="toggle_on_all_workspaces">
+						<local_schema short_desc="ವಿಂಡೊವು ಎಲ್ಲಾ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳಲ್ಲಿರಬೇಕೆ ಅಥವ ಕೇವಲ ಒಂದರಲ್ಲಿ ಮಾತ್ರವೆ ಇರಬೇಕೆ ಎಂದು ಟಾಗಲ್ ಮಾಡು">
+						</local_schema>
+					</entry>
+					<entry name="begin_resize">
+						<local_schema short_desc="ವಿಂಡೊದ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="begin_move">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="close">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಮುಚ್ಚು">
+						</local_schema>
+					</entry>
+					<entry name="minimize">
+						<local_schema short_desc="ವಿಂಡೊವನು ಕುಗ್ಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="toggle_shaded">
+						<local_schema short_desc="ನೆರಳಿನ ಸ್ಥಿತಿಯನ್ನು ಟಾಗಲ್‌ ಮಾಡು">
+						</local_schema>
+					</entry>
+					<entry name="unmaximize">
+						<local_schema short_desc="ವಿಂಡೊವನ್ನು ಮರಳಿ ಪುನಶ್ಚೇತನಗೊಳಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="maximize">
+						<local_schema short_desc="ವಿಂಡೊವನು ಹಿಗ್ಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="toggle_above">
+						<local_schema short_desc="ವಿಂಡೊವು ಯಾವಾಗಲೂ ಇತರೆ ವಿಂಡೋಗಳ ಮೇಲೆ ಕಾಣಿಸಿಕೊಳ್ಳಬೇಕೆ ಎಂದು ಟಾಗಲ್ ಮಾಡು">
+						</local_schema>
+					</entry>
+					<entry name="toggle_maximized">
+						<local_schema short_desc="ಗರಿಷ್ಟಗೊಳಿಸುವ ಸ್ಥಿತಿಯನ್ನು ಟಾಗಲ್ ಮಾಡು">
+						</local_schema>
+					</entry>
+					<entry name="toggle_fullscreen">
+						<local_schema short_desc="ಪೂರ್ಣತೆರೆ ವಿಧಾನಕ್ಕೆ ಟಾಗಲ್ ಮಾಡು">
+						</local_schema>
+					</entry>
+					<entry name="activate_window_menu">
+						<local_schema short_desc="ವಿಂಡೊ ಮೆನುವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸು">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybinding_commands">
+					<entry name="command_window_screenshot">
+						<local_schema short_desc="ವಿಂಡೊ ತೆರೆಚಿತ್ರದ ಆಜ್ಞೆ">
+							<longdesc>/apps/metacity/global_keybindings/run_command_window_screenshot ಕೀಲಿಯು ಈ ಸಿದ್ಧತೆಯಿಂದ ಸೂಚಿಸಲಾದ ಆಜ್ಞೆಗಾಗಿ ಮನವಿ ಸಲ್ಲಿಸಲು ಕಾರಣವಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command_screenshot">
+						<local_schema short_desc="ತೆರೆಚಿತ್ರದ ಆಜ್ಞೆ">
+							<longdesc>/apps/metacity/global_keybindings/run_command_screenshot ಕೀಲಿಯು ಈ ಸಿದ್ಧತೆಯಿಂದ ಸೂಚಿಸಲಾದ ಆಜ್ಞೆಯನ್ನು ಮನವಿ ಮಾಡಲು ಕಾರಣವಾಗುವ ಒಂದು ಕೀಲಿಬೈಂಡಿಂಗ್ ಅನ್ನು ಸೂಚಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="ಕೀಬೈಂಡೀಗ್‍ಗಳಿಗೆ ಪ್ರತ್ಯುತ್ತರವಾಗಿ ಚಲಾಯಿಸಬೇಕಿರುವ ಆಜ್ಞೆಗಳು">
+							<longdesc>/apps/metacity/global_keybindings/run_command_N ಕೀಲಿಗಳು ಈ ಆಜ್ಞೆಗಳಿಗೆ ಸೂಕ್ತವಾದ ಕೀಲಿಬೈಂಡಿಂಗ್‌ಗಳನ್ನು ಸೂಚಿಸುತ್ತವೆ.  run_command_N ನಿಂದ ಕೀಲಿಬೈಂಡಿಂಗ್‌ ಅನ್ನು ಒತ್ತುವುದರಿಂದ command_N ಚಲಾಯಿಸಲ್ಪಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global_keybindings">
+					<entry name="run_command_terminal">
+						<local_schema short_desc="ಟರ್ಮಿನಲ್‍ನಲ್ಲಿ ಚಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="run_command_window_screenshot">
+						<local_schema short_desc="ಒಂದು ವಿಂಡೊದ ತೆರೆಚಿತ್ರವನ್ನು ತೆಗೆ">
+						</local_schema>
+					</entry>
+					<entry name="run_command_screenshot">
+						<local_schema short_desc="ಒಂದು ತೆರೆಚಿತ್ರವನ್ನು ತೆಗೆ">
+						</local_schema>
+					</entry>
+					<entry name="panel_run_dialog">
+						<local_schema short_desc="ಫಲಕದಲ್ಲಿನ &quot;ಅನ್ವಯವನ್ನು ಚಲಾಯಿಸು&quot; ಸಂವಾದ ಚೌಕವನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="panel_main_menu">
+						<local_schema short_desc="ಫಲಕ ಮುಖ್ಯ ಮೆನುವನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="ಎಲ್ಲಾ ಸಾಮಾನ್ಯವ ವಿಂಡೋಗಳನ್ನು ಅಡಗಿಸು ಹಾಗು ಗಮನವನ್ನು ಗಣಕತೆರೆಯ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels_backward">
+						<local_schema short_desc="ಫಲಕ ಹಾಗು ಗಣಕತೆರೆಗಳ ನಡುವೆ ತಕ್ಷಣ ಹಿಂದಕ್ಕೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels">
+						<local_schema short_desc="ಫಲಕ ಹಾಗು ಗಣಕತೆರೆಗಳ ನಡುವೆ ತಕ್ಷಣ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows_backward">
+						<local_schema short_desc="ವಿಂಡೋಗಳ ನಡುವೆ ತಕ್ಷಣ ಹಿಂದಕ್ಕೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows">
+						<local_schema short_desc="ವಿಂಡೋಗಳ ನಡುವೆ ತಕ್ಷಣ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group_backward">
+						<local_schema short_desc="ಒಂದು ಅನ್ವಯದ ವಿಂಡೋಗಳ ನಡುವೆ ತಕ್ಷಣ ಹಿಂದಕ್ಕೆ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group">
+						<local_schema short_desc="ಒಂದು ಅನ್ವಯದ ವಿಂಡೋಗಳ ನಡುವೆ ತಕ್ಷಣ ಜರುಗಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels_backward">
+						<local_schema short_desc="ಪುಟಿಕೆ(ಪಾಪ್ಅಪ್) ವಿಂಡೋವನ್ನು ಬಳಸಿಕೊಂಡು ಫಲಕಗಳು ಹಾಗು ಗಣಕತೆರೆಯ ನಡುವೆ ಹಿಂದಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels">
+						<local_schema short_desc="ಪುಟಿಕೆ(ಪಾಪ್ಅಪ್) ವಿಂಡೋವನ್ನು ಬಳಸಿಕೊಂಡು ಫಲಕಗಳು ಹಾಗು ಗಣಕತೆರೆಯ ನಡುವೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows_backward">
+						<local_schema short_desc="ಪುಟಿಕೆ(ಪಾಪ್ಅಪ್) ವಿಂಡೋವನ್ನು ಬಳಸಿಕೊಂಡು ವಿಂಡೋಗಳ ನಡುವೆ ಹಿಂದಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows">
+						<local_schema short_desc="ಪುಟಿಕೆ(ಪಾಪ್ಅಪ್) ವಿಂಡೋವನ್ನು ಬಳಸಿಕೊಂಡು ವಿಂಡೋಗಳ ನಡುವೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_group_backward">
+						<local_schema short_desc="ಪುಟಿಕೆ(ಪಾಪ್ಅಪ್) ವಿಂಡೋವನ್ನು ಬಳಸಿಕೊಂಡು ಅನ್ವಯದ ವಿಂಡೋಗಳ ನಡುವೆ ಹಿಂದಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_group">
+						<local_schema short_desc="ಪುಟಿಕೆ(ಪಾಪ್ಅಪ್) ವಿಂಡೋವನ್ನು ಬಳಸಿಕೊಂಡು ಅನ್ವಯದ ವಿಂಡೋಗಳ ನಡುವೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_down">
+						<local_schema short_desc="ಪ್ರಸಕ್ತ ಕಾರ್ಯಕ್ಷೇತ್ರದ ಕೆಳಭಾಗದಲ್ಲಿನ ಕಾರ್ಯಕ್ಷೇತ್ರಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_up">
+						<local_schema short_desc="ಪ್ರಸಕ್ತ ಕಾರ್ಯಕ್ಷೇತ್ರದ ಮೇಲ್ಭಾಗದಲ್ಲಿನ ಕಾರ್ಯಕ್ಷೇತ್ರಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_right">
+						<local_schema short_desc="ಪ್ರಸಕ್ತ ಕಾರ್ಯಕ್ಷೇತ್ರದ ಬಲಭಾಗದಲ್ಲಿನ ಕಾರ್ಯಕ್ಷೇತ್ರಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_left">
+						<local_schema short_desc="ಪ್ರಸಕ್ತ ಕಾರ್ಯಕ್ಷೇತ್ರದ ಎಡಭಾಗದಲ್ಲಿನ ಕಾರ್ಯಕ್ಷೇತ್ರಕ್ಕೆ ಸ್ಥಳಾಂತರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_12">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರ 12 ಕ್ಕೆ ಬದಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_11">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರ 11 ಕ್ಕೆ ಬದಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_10">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರ 10 ಕ್ಕೆ ಬದಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_9">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರ 9 ಕ್ಕೆ ಬದಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_8">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರ 8 ಕ್ಕೆ ಬದಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_7">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರ 7 ಕ್ಕೆ ಬದಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_6">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರ 6 ಕ್ಕೆ ಬದಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_5">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರ 5 ಕ್ಕೆ ಬದಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_4">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರ 4 ಕ್ಕೆ ಬದಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_3">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರ 3 ಕ್ಕೆ ಬದಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_2">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರ 2 ಕ್ಕೆ ಬದಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_1">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರ 1 ಕ್ಕೆ ಬದಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="run_command">
+						<local_schema short_desc="ಸೂಚಿತವಾದ ಒಂದು ಆಜ್ಞೆಯನ್ನು ಚಲಾಯಿಸು">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="workspace_names">
+					<entry name="name">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರದ ಹೆಸರು">
+							<longdesc>ಒಂದು ಕಾರ್ಯಕ್ಷೇತ್ರದ ಹೆಸರು.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="general">
+					<entry name="disable_workarounds">
+						<local_schema short_desc="ಹಳೆಯ ಅಥವ ತುಂಡಾದ ಅನ್ವಯಗಳಿಗಾಗಿನ ಅಗತ್ಯವಿರುವ ತಪ್ಪು ಸವಲತ್ತುಗಳನ್ನು ಅಶಕ್ತಗೊಳಿಸುತ್ತದೆ">
+							<longdesc>ಕೆಲವು ಅನ್ವಯಗಳು ವಿಂಡೋ ವ್ಯವಸ್ಥಾಪಕದ ತಪ್ಪುಸಲವಲತ್ತಿಗೆ ಕಾರಣವಾಗುವ ರೀತಿಯಲ್ಲಿ ವಿವರಗಳನ್ನು ಆಲಕ್ಷಿಸುತ್ತವೆ. ಈ ಆಯ್ಕೆಯಿಂದಾಗಿ Metacity ಅತ್ಯಂತ ಕಟ್ಟುನಿಟ್ಟಿನ ಕ್ರಮದಲ್ಲಿ ಇರುತ್ತದೆ, ಹಾಗು ಬಳಕೆದಾರರು ಅನುಚಿತವಾಗಿ ವರ್ತಿಸುವ ಯಾವುದೆ ಅನ್ವಯಗಳನ್ನು ಚಲಾಯಿಸದೆ ಇದ್ದಲ್ಲಿ ಇದು ಹೆಚ್ಚು ಸ್ಥಿರವಾದ ಒಂದು ಬಳಕೆದಾರ ಸಂಪರ್ಕಸಾಧನವನ್ನು ನೀಡುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="application_based">
+						<local_schema short_desc="(ಅನ್ವಯಿಸದೆ ಇರುವ) ನ್ಯಾವಿಗೇಶನ್ ಕೇವಲ ಅನ್ವಯಗಳಿಗೆ ಅನುಗುಣವಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆಯೆ ಹೊರತು ವಿಂಡೋಗಳೊಂದಿಗಲ್ಲ">
+							<longdesc>true ಆಗಿದ್ದಲ್ಲಿ, Metacity ಯು ವಿಂಡೋಗಳನ್ನು ಅನುಸರಿಸದೆ ಅನ್ವಯಗಳಿಗನುಸಾರವಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ. ಈ ವಿಚಾರವು ಒಂದಿಷ್ಟು ವಿಚಿತ್ರವೆನಿಸಿದರೂ ಸಹ ಸಾಮಾನ್ಯವಾಗಿ ಅನ್ವಯ-ಆಧರಿತವಾದ ಒಂದು ಸಿದ್ಧತೆಯು ಹೆಚ್ಚಿನ ಪಾಲು Mac ನಂತಹೆ ಇರುತ್ತದೆಯೆ ಹೊರತು Windows ನಂತಲ್ಲ. ಅನ್ವಯ-ಆಧರಿತವಾದ ಕ್ರಮದಲ್ಲಿ ನೀವು ಒಂದು ವಿಂಡೋದತ್ತ ಗಮನ ಕೇಂದ್ರೀಕರಿಸಿದಾಗ, ಅನ್ವಯದ ಎಲ್ಲಾ ವಿಂಡೋಗಳು ಮೇಲಕ್ಕೆ ತರಲ್ಪಡುತ್ತವೆ. ಅಲ್ಲದೆ, ಅನ್ವಯ-ಆಧರಿತವಾದ ಕ್ರಮದಲ್ಲಿ, ಗಮನ ಆಧರಿತವಾದ ಕ್ಲಿಕ್‌ಗಳು ಇತರೆ ಅನ್ವಯಗಳಲ್ಲಿ ವಿಂಡೋಗಳ ಮೂಲಕ ಕಳಿಸಲ್ಪಡುವುದಿಲ್ಲ.ಆದರೆ ಅನ್ವಯ-ಆಧರಿತವಾದ ಕ್ರಮವು ಈ ಕ್ಷಣದಲ್ಲಿ ಇನ್ನೂ ಸಹ ಸೂಕ್ತವಾಗಿ ಅನ್ವಯಿಸಲಾಗಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reduced_resources">
+						<local_schema short_desc="true ಆದಲ್ಲಿ, ಕಡಿಮೆ ಸಂಪನ್ಮೂಲಗಳಿಗಾಗಿ ಟ್ರೇಡ್ ಆಫ್‌ ಬಳಕೆಯಾಗುತ್ತದೆ">
+							<longdesc>true ಆದಲ್ಲಿ, metacity ಯು ವೈರ್ಫ್ರೇಮ್‌ಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಸಜೀವನ(ಎನಿಮೇಶನ್) ಅಥವ ಇತರೆಯನ್ನು ಬಳಸದೆ ಕಡಿಮೆ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಒದಗಿಸುತ್ತದೆ. ಇದರಿಂದಾಗಿ ಹಲವಾರು ಬಳಕೆದಾರರು ಬಳಸುವುದನ್ನು ಕಡಿಮೆಯಾಗುತ್ತದೆ, ಆದರೆ ಸಾಂಪ್ರದಾಯಿಕ ಅನ್ವಯಗಳು ಕೆಲಸಮಾಡುವುದು ಮುಂದುವರೆಯುತ್ತದೆ, ಹಾಗು ಟರ್ಮಿನಲ್ ಪರಿಚಾರಕಗಳಿಗಾಗಿ ಉಪಯುಕ್ತ ಟ್ರೇಡ್‌ಆಫ್‌ಗಳಾಗಿರುತ್ತದೆ. ಆದರೆ ನಿಲುಕಣೆಯು ಚಾಲಿತವಾಗಿದ್ದಾಗ ವೈರ್ಫ್ರೇಮ್ ಸವಲತ್ತು ಅಶಕ್ತಗೊಂಡಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="compositing_manager">
+						<local_schema short_desc="ಸಮ್ಮಿಶ್ರಗೊಳಿಕೆಯ(ಕಾಂಪೋಸಿಟಿಂಗ್) ವ್ಯವಸ್ಥಾಪಕ">
+							<longdesc>Metacity ಯು ಒಂದು ಸಮ್ಮಿಶ್ರಗೊಳಿಕೆ(ಕಾಂಪೋಸಿಟಿಂಗ್) ವ್ಯವಸ್ಥಾಪಕವೆ ಎಂದು ನಿರ್ಧರಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell_type">
+						<local_schema short_desc="ಗೋಚರಿಸು ಗಂಟೆಯ ಬಗೆ">
+							<longdesc>ಗಣಕದ ಗಂಟೆ ಅಥವ ಬೇರೆ ಅನ್ವಯದ &apos;ಗಂಟೆ&apos; ಸೂಚಕವು ಧ್ವನಿ ಹೊರಡಿಸಿದಲ್ಲಿ ಗೋಚರ ಸೂಚನೆಯನ್ನು Metacity ಯು ಹೇಗೆ ಅನ್ವಯಿಸಬೇಕು ಎನ್ನುವುದನ್ನು ಇದು ತಿಳಿಸುತ್ತದೆ. ಪ್ರಸಕ್ತ ಇದು ಎರಡು ಮಾನ್ಯವಾದ ಮೌಲ್ಯಗಳನ್ನು ಹೊಂದಿರಬಹುದು, &quot;fullscreen&quot;(ಪೂರ್ಣತೆರೆ), ಇದರಿಂದಾಗು ಸಂಪೂರ್ಣತೆರೆಯು ಕಪ್ಪು-ಬಿಳುಪಿನಲ್ಲಿ ಹೊಳೆಯುತ್ತದೆ, ಹಾಗು &quot;frame_flash&quot; (ಚೌಕಟ್ಟು ಹೊಳೆಯುವಿಕೆ), ಇದರಿಂದಾಗಿ ಗಂಟೆ ಸೂಚನೆಯನ್ನು ಕಳುಹಿಸಿದ ಅನ್ವಯದ ಶೀರ್ಷಿಕೆಪಟ್ಟಿಯು ಹೊಳೆಯುತ್ತದೆ. ಎಲ್ಲಿಯಾದರೂ ಗಂಟೆಯ ಸೂಚನೆಯನ್ನು ಕಳುಹಿಸಿದ ಅನ್ವಯ ಅಜ್ಞಾತವಾಗಿದ್ದರೆ (ಪೂರ್ವನಿಯೋಜಿತ &quot;ವ್ಯವಸ್ಥೆ ಬೀಪ್&quot;ನಲ್ಲಿದ್ದಂತೆ), ಪ್ರಸಕ್ತ ಗಮನದಲ್ಲಿರುವ ವಿಂಡೋದ ಶೀರ್ಷಿಕೆಯು ಹೊಳೆಯುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="audible_bell">
+						<local_schema short_desc="ಗಣಕಗ ಗಂಟೆಯು ಕೇಳಿಸಬಲ್ಲದು">
+							<longdesc>ಅನ್ವಯಗಳು ಅಥವ ವ್ಯವಸ್ಥೆಯು ಕೇಳಬಹುದಾದ ಬೀಪ್‌ ಶಬ್ಧಗಳನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆಯೆ ಎಂದು ನಿರ್ಧರಿಸುತ್ತದೆ; &apos;visual bell&apos; to allow silent &apos;beeps&apos; ನಿಶ್ಯಬ್ಧ ಬೀಪ್‌ಗಳನ್ನು ಅನುಮತಿಸಲು &apos;ಗೋಚರ ಗಂಟೆ&apos;ಯೊಂದಿಗೆ ಬಳಸಬಹುದಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell">
+						<local_schema short_desc="ಗೋಚರ ಗಂಟೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು">
+							<longdesc>ಒಂದು ಅನ್ವಯ ಅಥವ ವ್ಯವಸ್ಥೆಯು ಒಂದು &apos;ಗಂಟೆ&apos; ಅಥವ &apos;ಬೀಪ್‌&apos; ಶಬ್ಧವನ್ನು ಹೊರಡಿಸಿದಾಗ ಒಂದು ಗೋಚರ ಸೂಚನೆಯನ್ನು ಚಾಲಿಸುತ್ತದೆ; ಕೇಳಲು ತೊಂದರೆ ಇರುವವರಿಗೆ ಹಾಗು ಶಬ್ಧವು ಹೆಚ್ಚಾದ ಪರಿಸರದಲ್ಲಿ ಉಪಯುಕತ್ತವಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="num_workspaces">
+						<local_schema short_desc="ಕಾರ್ಯಕ್ಷೇತ್ರಗಳ ಸಂಖ್ಯೆ">
+							<longdesc>ಕಾರ್ಯಕ್ಷೇತ್ರಗಳ ಸಂಖ್ಯೆ. ಇದು ಸೊನ್ನೆಗಿಂತ ಹೆಚ್ಚಾಗಿರಬೇಕು, ಹಾಗು ಆಕಸ್ಮಿಕವಾಗಿ ಬಹಳಷ್ಟು ಕಾರ್ಯಕ್ಷೇತ್ರಗಳಿಗಾಗಿ ಕೇಳುವುದರಿಂದ ಗಣಕತೆರೆಯು ಬಳಸದೆ ಇರುವಂತಾಗುವುದನ್ನು ತಪ್ಪಿಸಲು ನಿಶ್ಚಿತವಾದ ಗರಿಷ್ಟ ಸಂಖ್ಯೆಯನ್ನು ಹೊಂದಿರುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_font">
+						<local_schema short_desc="ವಿಂಡೊದ ಶೀರ್ಷಿಕೆಯ ಅಕ್ಷರಶೈಲಿ">
+							<longdesc>ವಿಂಡೊ ಶೀರ್ಷಿಕೆ ಪಟ್ಟಿಗಳಿಗೆ ತೋರಿಸಲಾಗುವ ಅಕ್ಷರಶೈಲಿಯನ್ನು ಸೂಚಿಸುವ ಒಂದು ಅಕ್ಷರಶೈಲಿ ವಿವರಣೆ. titlebar_font_size ಆಯ್ಕೆಯನ್ನು 0 ಗೆ ಹೊಂದಿಸಲಾಗಿದ್ದರೆ ವಿವರಣೆಯಿಂದ ಗಾತ್ರವನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ಅಲ್ಲದೆ, titlebar_uses_desktop_font ಆಯ್ಕೆಯನ್ನು true ಗೆ ಹೊಂದಿಸಲಾಗಿದ್ದಲ್ಲಿ ಇದನ್ನು ಅಶಕ್ತಗೊಳಿಸಲಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_uses_system_font">
+						<local_schema short_desc="ವಿಂಡೊ ಶೀರ್ಷಿಕೆಗಳಲ್ಲಿ ಗಣಕದ ಅಕ್ಷರಶೈಲಿಯನ್ನು ಬಳಸು">
+							<longdesc>true ಆದಲ್ಲಿ, titlebar_font ಆಯ್ಕೆಯನ್ನು ಆಲಕ್ಷಿಸಿ, ಹಾಗು ವಿಂಡೋ ಶೀರ್ಷಿಕೆಗಳಿಗಾಗಿ ಶಿಷ್ಟ ಅನ್ವಯ ಅಕ್ಷರಶೈಲಿಯನ್ನು ಬಳಸು.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="ಈಗಿರುವ ಥೀಮ್">
+							<longdesc>ಪರಿಸರವಿನ್ಯಾಸವು ವಿಂಡೋ ಅಂಚುಗಳ, ಶೀರ್ಷಿಕೆಯ ಹಾಗು ಇನ್ನಿತರೆಗಳ ಗೋಚರಿಕೆಯನ್ನು ನಿರ್ಧರಿಸುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise_delay">
+						<local_schema short_desc="ಸ್ವಯಂ ಏರಿಕೆ ಆಯ್ಕೆಗಾಗಿನ ವಿಳಂಬ, ಮಿಲಿ ಸೆಕೆಂಡುಗಳಲ್ಲಿ">
+							<longdesc>auto_raise ಅನ್ನು true ಗೆ ಬದಲಾಯಿಸಿದ್ದಲ್ಲಿ ವಿಂಡೋವನ್ನು ಏರಿಸುವ ಮೊದಲು ನೀಡಬೇಕಿರುವ ವಿಳಂಬ. ವಿಳಂಬವನ್ನು ಒಂದು ಸೆಕೆಂಡಿನಲ್ಲಿ ಸಾವಿರದ ಒಂದು ಭಾಗದಲ್ಲಿ ಸೂಚಿಸಲಾಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise">
+						<local_schema short_desc="ಗಮನ ಕೇಂದ್ರೀಕರಿಸಲಾದ ವಿಂಡೋವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಮೇಲಕ್ಕೆ ಏರಿಸು">
+							<longdesc>true ಗೆ ಹೊಂದಿಸಲಾಗಿದ್ದರೆ, ಹಾಗು ಗಮನದ ಕ್ರಮವು &quot;sloppy&quot; ಅಥವ &quot;mouse&quot; ಆಗಿದ್ದಲ್ಲಿ auto_raise_delay ಕೀಲಿಯಲ್ಲಿ ಸೂಚಿಸಲಾದ ವಿಳಂಬದ ನಂತರ ಗಮನಕೇಂದ್ರೀಕರಿಸಲಾದ ವಿಂಡೋವು ತಾನಾಗಿಯೆ ಮೇಲಕ್ಕೆ ಬರುತ್ತದೆ. ಇದು ಒಂದು ವಿಂಡೊವನ್ನು ಮೇಲಕ್ಕೆ ಏರಿಸಲು ಕ್ಲಿಕ್‌ ಮಾಡವುದಾಗಲಿ, ಅಥವ ಎಳೆದು-ಸೇರಿಸುವ ಸಮಯದಲ್ಲಿ ವಿಂಡೋವನ್ನು ಪ್ರವೇಶಿಸುವುದಕ್ಕೆ ಸಂಬಂಧಿಸಿರುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_right_click_titlebar">
+						<local_schema short_desc=" ">
+							<longdesc>ಈ ಆಯ್ಕೆಯು ಶೀರ್ಷಿಕೆ ಪಟ್ಟಿಯ ಮೇಲೆ ಮೌಸ್‌ನ ಬಲ-ಗುಂಡಿಯನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡುವದರ ಪರಿಣಾಮವನ್ನು ನಿರ್ಧರಿಸುತ್ತದೆ.ಈಗಿರುವ ಮಾನ್ಯವಾದ ಆಯ್ಕೆಗಳೆಂದರೆ &apos;toggle_shade&apos;(ಮಬ್ಬನ್ನು ಬದಲಾಯಿಸು), ಇದು ವಿಂಡೊವನ್ನು ಮಬ್ಬಾಗಿಸುತ್ತದೆ/ಮಬ್ಬಾಗಿಸದೆ ಇರುತ್ತದೆ, &apos;toggle_maximize&apos;(ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸು), ಇದು ವಿಂಡೋವನ್ನು ಹಿಗ್ಗಿಸುತ್ತದೆ/ಕುಗ್ಗಿಸುತ್ತದೆ, &apos;toggle_maximize_horizontally&apos;(ಅಡ್ಡವಾಗಿ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸು) ಹಾಗು &apos;toggle_maximize_vertically&apos; (ಲಂಬವಾಗಿ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸು) ಇದು ಆಯಾಯ ದಿಕ್ಕಿನಲ್ಲಿ ವಿಂಡೋವನ್ನು ಹಿಗ್ಗಿಸುತ್ತದೆ/ಕುಗ್ಗಿಸುತ್ತದೆ, &apos;ಕುಗ್ಗಿಸು&apos;, ಇದು ವಿಂಡೋವನ್ನು ಕಿರಿದಾಗಿಸುತ್ತದೆ, &apos;ಮಬ್ಬಾಗಿಸು&apos;, ಇದು ವಿಂಡೊವನ್ನು ಮೇಲಕ್ಕೆ ಸುತ್ತುತ್ತದೆ, &apos;ಮೆನು&apos;, ಇದು ವಿಂಡೋ ಮೆನುವನ್ನು ತೋರಿಸುತ್ತದೆ, &apos;ಕೆಳಗೆ&apos;, ಇದು ವಿಂಡೊವನ್ನು ಎಲ್ಲಾ ಇತರೆ ವಿಂಡೊಗಳ ಹಿಂದೆ ಇರಿಸುತ್ತದೆ, ಹಾಗು &apos;ಏನೂ ಇಲ್ಲ&apos;, ಇದು ಏನನ್ನೂ ಮಾಡುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_middle_click_titlebar">
+						<local_schema short_desc="ಶೀರ್ಷಿಕೆ ಪಟ್ಟಿಯ ಮೇಲೆ ಮಧ್ಯ-ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗಿನ ಕ್ರಿಯೆ">
+							<longdesc>ಈ ಆಯ್ಕೆಯು ಶೀರ್ಷಿಕೆ ಪಟ್ಟಿಯ ಮೇಲೆ ಮೌಸ್‌ನ ಮಧ್ಯದ-ಗುಂಡಿಯನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡುವದರ ಪರಿಣಾಮವನ್ನು ನಿರ್ಧರಿಸುತ್ತದೆ.ಈಗಿರುವ ಮಾನ್ಯವಾದ ಆಯ್ಕೆಗಳೆಂದರೆ &apos;toggle_shade&apos;(ಮಬ್ಬನ್ನು ಬದಲಾಯಿಸು), ಇದು ವಿಂಡೊವನ್ನು ಮಬ್ಬಾಗಿಸುತ್ತದೆ/ಮಬ್ಬಾಗಿಸದೆ ಇರುತ್ತದೆ, &apos;toggle_maximize&apos;(ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸು), ಇದು ವಿಂಡೋವನ್ನು ಹಿಗ್ಗಿಸುತ್ತದೆ/ಕುಗ್ಗಿಸುತ್ತದೆ, &apos;toggle_maximize_horizontally&apos;(ಅಡ್ಡವಾಗಿ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸು) ಹಾಗು &apos;toggle_maximize_vertically&apos; (ಲಂಬವಾಗಿ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸು) ಇದು ಆಯಾಯ ದಿಕ್ಕಿನಲ್ಲಿ ವಿಂಡೋವನ್ನು ಹಿಗ್ಗಿಸುತ್ತದೆ/ಕುಗ್ಗಿಸುತ್ತದೆ, &apos;ಕುಗ್ಗಿಸು&apos;, ಇದು ವಿಂಡೋವನ್ನು ಕಿರಿದಾಗಿಸುತ್ತದೆ, &apos;ಮಬ್ಬಾಗಿಸು&apos;, ಇದು ವಿಂಡೊವನ್ನು ಮೇಲಕ್ಕೆ ಸುತ್ತುತ್ತದೆ, &apos;ಮೆನು&apos;, ಇದು ವಿಂಡೋ ಮೆನುವನ್ನು ತೋರಿಸುತ್ತದೆ, &apos;ಕೆಳಗೆ&apos;, ಇದು ವಿಂಡೊವನ್ನು ಎಲ್ಲಾ ಇತರೆ ವಿಂಡೊಗಳ ಹಿಂದೆ ಇರಿಸುತ್ತದೆ, ಹಾಗು &apos;ಏನೂ ಇಲ್ಲ&apos;, ಇದು ಏನನ್ನೂ ಮಾಡುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_double_click_titlebar">
+						<local_schema short_desc="ಶೀರ್ಷಿಕೆ ಪಟ್ಟಿಯ ಮೇಲೆ ಎರಡು-ಬಾರಿ ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗಿನ ಕ್ರಿಯೆ">
+							<longdesc>ಈ ಆಯ್ಕೆಯು ಶೀರ್ಷಿಕೆ ಪಟ್ಟಿಯ ಮೇಲೆ ಎರಡು ಬಾರಿ ಕ್ಲಿಕ್‌ ಮಾಡುವದರ ಪರಿಣಾಮವನ್ನು ನಿರ್ಧರಿಸುತ್ತದೆ.ಈಗಿರುವ ಮಾನ್ಯವಾದ ಆಯ್ಕೆಗಳೆಂದರೆ &apos;toggle_shade&apos;(ಮಬ್ಬನ್ನು ಬದಲಾಯಿಸು), ಇದು ವಿಂಡೊವನ್ನು ಮಬ್ಬಾಗಿಸುತ್ತದೆ/ಮಬ್ಬಾಗಿಸದೆ ಇರುತ್ತದೆ, &apos;toggle_maximize&apos;(ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸು), ಇದು ವಿಂಡೋವನ್ನು ಹಿಗ್ಗಿಸುತ್ತದೆ/ಕುಗ್ಗಿಸುತ್ತದೆ, &apos;toggle_maximize_horizontally&apos;(ಅಡ್ಡವಾಗಿ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸು) ಹಾಗು &apos;toggle_maximize_vertically&apos; (ಲಂಬವಾಗಿ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸು) ಇದು ಆಯಾಯ ದಿಕ್ಕಿನಲ್ಲಿ ವಿಂಡೋವನ್ನು ಹಿಗ್ಗಿಸುತ್ತದೆ/ಕುಗ್ಗಿಸುತ್ತದೆ, &apos;ಕುಗ್ಗಿಸು&apos;, ಇದು ವಿಂಡೋವನ್ನು ಕಿರಿದಾಗಿಸುತ್ತದೆ, &apos;ಮಬ್ಬಾಗಿಸು&apos;, ಇದು ವಿಂಡೊವನ್ನು ಮೇಲಕ್ಕೆ ಸುತ್ತುತ್ತದೆ, &apos;ಮೆನು&apos;, ಇದು ವಿಂಡೋ ಮೆನುವನ್ನು ತೋರಿಸುತ್ತದೆ, &apos;ಕೆಳಗೆ&apos;, ಇದು ವಿಂಡೊವನ್ನು ಎಲ್ಲಾ ಇತರೆ ವಿಂಡೊಗಳ ಹಿಂದೆ ಇರಿಸುತ್ತದೆ, ಹಾಗು &apos;ಏನೂ ಇಲ್ಲ&apos;, ಇದು ಏನನ್ನೂ ಮಾಡುವುದಿಲ್ಲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="raise_on_click">
+						<local_schema short_desc="ಏರಿಸುವಿಕೆಯು ಬೇರೆ ವ್ಯವಹಾರಗಳಿಗೆ ಅಡ್ಡ ಪರಿಣಾಮ ಬೀರಬೇಕೆ">
+							<longdesc>ಈ ಆಯ್ಕೆಯನ್ನು false ಗೆ ಬದಲಾಯಿಸುವುದರಿಂದ ದೋಷಪೂರ್ಣ ವರ್ತನೆಗೆ ಕಾರಣವಾಗಬಹುದು, ಆದ್ದರಿಮದ ಬಳಕೆದಾರರು ಇದಕ್ಕೆ ಪೂರ್ವನಿಯೋಜಿತವಾದಂತಹ true ಅನ್ನು ಬದಲಾಯಿಸದೆ ಇರುವಂತೆ ಬಲವಾಗಿ ಸಲಹೆ ಮಾಡಲಾಗುತ್ತದೆ. ಒಂದು ಅಡ್ಡ ಪರಿಣಾಮವಾಗಿ ಹಲವಾರು ಕ್ರಿಯೆಗಳು (ಉದಾ. ಕ್ಲೈಂಟಿನ ಜಾಗದ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡುವುದು, ವಿಂಡೋವನ್ನು ಜರುಗಿಸುವುದರಿಂದ ಅಥವ ಗಾತ್ರಬದಲಾಯಿಸುವುದು ) ಸಾಮಾನ್ಯವಾಗಿ ವಿಂಡೋವನ್ನು ಮೇಲಕ್ಕೆ ಎತ್ತರಿಸುತ್ತದೆ. ಇದನ್ನು false ಗೆ ಬದಲಾಯಿಸುವುದರಿಂದ, ಬಳಕೆದಾರರ ಇತರೆ ಕ್ರಿಯೆಗಳಿಗೆ ಜೋಡಿಸಲಾದ ಏರಿಸುವಿಕೆಯು ತಪ್ಪಿಹೋಗುತ್ತದೆ, ಹಾಗು ಅನ್ವಯದಿಂದ ಉತ್ಪಾದಿಸಲಾದ ಏರಿಸುವಿಕೆಯ ಮನವಿಯನ್ನು ಆಲಕ್ಷಿಸಲಾಗುತ್ತದೆ. http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6 ಅನ್ನು ನೋಡಿ. ಈ ಆಯ್ಕೆಯು  false ಆಗಿದ್ದಾಗ, alt-ವಿಂಡೋದ ಮೇಲೆ ಎಲ್ಲಿಯಾದರೂ ಎಡ ಕ್ಲಿಕ್ ಮಾಡುವುದರಿಂದ, ವಿಂಡೋ ಅಲಂಕಾರಗಳ ಮೇಲೆ ಸಾಮಾನ್ಯವಾದ ಕ್ಲಿಕ್, ಅಥವ ಪೇಜರುಗಳಿಂದ ಕಾರ್ಯಪಟ್ಟಿ ಆಪ್ಲೆಟ್‌ಗಳಿಂದ ಕಳುಹಿಸಲಾದ ಸಕ್ರಿಯಗೊಳಿಕೆಯ ಮನವಿಯಂತಹ ವಿಶೇಷ ಸಂದೇಶಗಳಿಂದಲೂ ಸಹ  ವಿಂಡೋಗಳನ್ನು ಮೇಲಕ್ಕೆ ತರಬಹುದು. ಈ ಆಯ್ಕೆಯು ಪ್ರಸಕ್ತ ಗಮನಕ್ಕಾಗಿ ಕ್ಲಿಕ್‌ ಮಾಡು ಕ್ರಮದಲ್ಲಿ ಅಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ. raise_on_click ಯು  false ಆಗಿದ್ದು  ಹಾಗು ವಿಂಡೋಗಳನ್ನು ಮೇಲಕ್ಕೆ ಏರಿಸಲು ಅನ್ವಯದಿಂದ ಬರಬೇಕಿರುವ ಕ್ರಮಬದ್ಧವಾದ ಮನವಿಯು ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ  ಅಂತಹ ಮನವಿಗಳಿಗೆ ಯಾವುದೆ ಕಾರಣವಿದ್ದರೂ ಸಹ ಆಲಕ್ಷಿಸಲಾಗುತ್ದತೆ. ನೀವು ಒಬ್ಬ ಅನ್ವಯ ವಿಕಸನಗಾರರಾಗಿದ್ದರೆ ಹಾಗು ನಿಮ್ಮ ಅನ್ವಯವು ಈ ಸಿದ್ಧತೆಯನ್ನು ಅಶಕ್ತಗೊಳಿಸಿದಾಗ ಸರಿಯಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತಿಲ್ಲ ಎಂದು ಬಳಕೆದಾರರು ದೂರು ನೀಡುತ್ತಿದ್ದಲ್ಲಿ ಅವರ ವಿಂಡೋ ವ್ಯವಸ್ಥಾಪಕವನ್ನು  ತಾವಾಗಿಯೆ ಹಾಳು ಮಾಡಿಕೊಂಡಿದ್ದಾರೆ ಎಂದು ತಿಳಿಸಿ ಹಾಗು ಇದಕ್ಕಾಗಿ true ಬದಲಾಯಿಸಿ ಅಥವ ಅವರೆ ಸಲ್ಲಿಸಿದ &quot;ದೋಷ&quot;ವು ಮತ್ತೆ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ ಎಂದು ತಿಳಿಸಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_new_windows">
+						<local_schema short_desc="ಹೇಗೆ ಹೊಸ ವಿಂಡೋಗಳತ್ತ ಗಮನ ಕೇಂದ್ರೀಕರಿಸಬೇಕು ಎಂಬುದನ್ನು ನಿಯಂತ್ರಿಸು">
+							<longdesc>ಹೊಸದಾಗಿ ನಿರ್ಮಿಸಲಾದ ವಿಂಡೊಗಳತ್ತ ಹೇಗೆ ಗಮನ ಕೇಂದ್ರಿಕರಿಸಲ್ಪಡಬೇಕು ಎನ್ನುವುದನ್ನು ಈ ಆಯ್ಕೆಯು ನಿರ್ಧರಿಸುತ್ತದೆ. ಇದಕ್ಕೆ ಎರಡು ಮೌಲ್ಯಗಳನ್ನು ಹೊಂದಿರುವ ಸಾಧ್ಯತೆ ಇದೆ; &quot;smart&quot;(ಚತುರ) ಎನ್ನುವುದು ಬಳಕೆದಾರರ ಸಾಮಾನ್ಯ ಗಮನ ಕೇಂದ್ರೀಕರಿಸುವ ಕ್ರಮವನ್ನು ಅನ್ವಯಿಸುತ್ತದೆ, ಹಾಗು &quot;strict&quot; (ಕಟ್ಟುನಿಟ್ಟಿನ) ಎನ್ನುವುದು ಟರ್ಮಿನಲ್‌ನಿಂದ ಆರಂಭಗೊಂಡ ವಿಂಡೋಗಳತ್ತ ಗಮನ ಹರಿಸಲಾಗದೆ ಇರುವಂತೆ ನೋಡಿಕೊಳ್ಳುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_mode">
+						<local_schema short_desc="ವಿಂಡೊ ಗಮನ ಕೇಂದ್ರೀಕರಿಸುವ ಕ್ರಮ">
+							<longdesc>ವಿಂಡೋಗಳು ಹೇಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲ್ಪಡುತ್ತವೆ ಎನ್ನುವುದನ್ನು ವಿಂಡೋ ಗಮನ ಕ್ರಮವು ಸೂಚಿಸುತ್ತದೆ. ಇದು ಮೂರು ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳನ್ನು ಹೊಂದಿರುತ್ತದೆ; &quot;ಕ್ಲಿಕ್&quot; ಎಂದರೆ ವಿಂಡೋಗಳತ್ತ ಗಮನ ಹರಿಸಲು ಅವುಗಳ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ, &quot;sloppy&quot;(ಸ್ಲಾಪಿ) ಎಂದರೆ ಮೌಸ್‌ ವಿಂಡೋವನ್ನು ಪ್ರವೇಶಿಸಿದಾಗ ಅದು ಗಮನ ಹರಿಸಲ್ಪಡುತ್ತದೆ, ಹಾಗು &quot;ಮೌಸ್‌&quot; ಎಂದರೆ ಮೌಸ್‌ ವಿಂಡೋವನ್ನು ಪ್ರವೇಶಿಸಿದಾಗ ಅದು ಗಮನ ಹರಿಸಲ್ಪಡುತ್ತದೆ ಹಾಗು ಮೌಸ್‌ ವಿಂಡೋದಿಂದ ನಿರ್ಗಮಿಸಿದಾಗ ಗಮನ ತಪ್ಪಿಹೋಗುತ್ತದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="button_layout">
+						<local_schema short_desc="ಶೀರ್ಷಿಕೆಯ ಪಟ್ಟಿಯಲ್ಲಿ ಗುಂಡಿಗಳ ವ್ಯವಸ್ಥೆಗೊಳಿಕೆ">
+							<longdesc>ಶೀರ್ಷಿಕೆ ಪಟ್ಟಿಯಲ್ಲಿ ಗುಂಡಿಗಳ ಜೋಡಣೆ. ಮೌಲ್ಯವು &quot;menu:minimize,maximize,spacer,close&quot;ನಂತಹ ಒಂದು ವಾಕ್ಯವಾಗಿರಬೇಕು; ಇಲ್ಲಿ ವಿವರಣಾ ಚಿಹ್ನೆಯು ವಿಂಡೋದ ಎಡ ಮೂಲೆಯನ್ನು ಬಲ ಮೂಲೆಯಿಂದ ಬದಲಾಯಿಸುತ್ತದೆ ಹಾಗು ಗುಂಡಿಯ ಹೆಸರುಗಳನ್ನು ವಿರಾಮ ಚಿಹ್ನೆಯು ಪ್ರತ್ಯೇಕಿಸುತ್ತದೆ. ನಕಲಿ ಗುಂಡಿಗಳಿಗೆ ಅನುಮತಿ ಇಲ್ಲ. ಗೊತ್ತಿರದ ಗುಂಡಿಗಳ ಹೆಸರುಗಳನ್ನು ಸುಮ್ಮನೆ ಆಲಕ್ಷಿಸಲಾಗುವುದು, ಆ ಮೂಲಕ ಆ ಗುಂಡಿಗಳನ್ನು metacity ಹಳೆಯ ಆವೃತ್ತಿಗಳನ್ನು ತುಂಡರಿಸದೆ ಹೊಸ ಆವೃತ್ತಿಗಳಿಗೆ ಸೇರಸಬಹುದಾಗಿದೆ. ಅಕ್ಕಪಕ್ಕದ ಗುಂಡಿಗಳ ನಡುವೆ ಒಂದಿಷ್ಟು ಜಾಗವನ್ನು ಸೇರಿಸಲು ಇಂದು ವಿಶೇಷವಾದ ಸ್ಪೇಸರ್ ಟ್ಯಾಗ್ ಅನ್ನು ಸೇರಿಸಬಹುದಾಗಿದೆ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="resize_with_right_button">
+						<local_schema short_desc="ಬಲಗುಂಡಿಯಿಂದ ಗಾತ್ರವನ್ನು ಬದಲಿಸಬೇಕೆ">
+							<longdesc>ಬಲಗುಂಡಿಯನ್ನು ಬಳಸಿಕೊಂಡು ಗಾತ್ರಬದಲಾಯಿಸಲು ಹಾಗು &quot;mouse_button_modifier&quot; ನಲ್ಲಿ ನೀಡಲಾದ ಒಂದು ಕೀಲಿಯನ್ನು ಒತ್ತಿಹಿಡಿದಾಗ ಮಧ್ಯದ ಗುಂಡಿಯನ್ನು ಒತ್ತಿದಾಗ ಒಂದು ಮೆನುವನ್ನು ತೋರಿಸಲು ಇದನ್ನು true ಗೆ ಬದಲಾಯಿಸಿ; ಇದು ವಿರುದ್ಧ ದಿಕ್ಕಿನಲ್ಲಿ ಕೆಲಸ ಮಾಡಲು ಇದನ್ನು false ಗೆ ಬದಲಾಯಿಸಿ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_button_modifier">
+						<local_schema short_desc="ಮಾರ್ಪಡಿಸಲಾದ ವಿಂಡೋ ಕ್ಲಿಕ್‌ ಕ್ರಿಯೆಗಳಿಗಾಗಿ ಬಳಸಬೇಕಿರುವ ಮಾರ್ಪಡಕ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,4 @@
+TARGET="armv7a-hardfloat-linux-gnueabi"
+VER="2.22"
+LIBPATH="/usr/lib/binutils/armv7a-hardfloat-linux-gnueabi/2.22"
+FAKE_TARGETS="armv7a-hardfloat-linux-gnueabi"

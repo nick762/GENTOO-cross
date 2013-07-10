@@ -1,0 +1,7 @@
+NETCARD_FULLNAME="Intel Corporation WiFi Link 5100"
+NETCARD_DRIVER="iwlwifi"
+MOUSE_FULLNAME="Device 046d:c03e"
+MOUSE_DEVICE="/dev/input/mice"
+XSERVER="Xorg"
+XMODULE="vesa"
+XDESC="Intel Corporation System Controller Hub (SCH Poulsbo) Graphics Controller"

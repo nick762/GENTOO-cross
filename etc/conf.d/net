@@ -1,0 +1,16 @@
+# This blank configuration will automatically use DHCP for any net.*
+# scripts in /etc/init.d.  To create a more complete configuration,
+# please review /usr/share/doc/openrc*/net.example* and save your configuration
+# in /etc/conf.d/net (this file :]!).
+modules="iwconfig"
+
+config_eth0="dhcp"
+config_wlan0=("192.168.4.250/24"
+	    "192.168.33.250/24")
+
+essid_wlan0="test_wifi"
+mode_wlan0="ad-hoc"
+key_wlan0="off"
+channel_wlan0="6"
+rate_wlan0="1M"
+

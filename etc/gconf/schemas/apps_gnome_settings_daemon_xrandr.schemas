@@ -1,0 +1,971 @@
+<?xml version="1.0"?>
+<gconfschemafile>
+    <schemalist>
+	<schema>
+	    <key>/schemas/apps/gnome_settings_daemon/xrandr/show_notification_icon</key>
+	    <applyto>/apps/gnome_settings_daemon/xrandr/show_notification_icon</applyto>
+            <owner>gnome</owner>
+	    <type>bool</type>
+            <default>false</default>
+            <locale name="C">
+	        <short>Show Displays in Notification Area</short>
+                <long>Whether a notification icon with display-related things should be
+		    shown in the panel.
+		</long>
+            </locale>
+
+            <locale name="ar">
+	        <short>أظهر أجهزة العرض في منطقة التبليغ</short>
+                
+            </locale>
+
+            <locale name="as">
+	        <short>সূচনাপ্ৰদানৰ স্থানে প্ৰদৰ্শনে প্ৰদৰ্শন কৰা হ&apos;ব</short>
+                
+            </locale>
+
+            <locale name="ast">
+	        <short>Amosar les pantalles nel área de notificación</short>
+                
+            </locale>
+
+            <locale name="bg">
+	        <short>Показване на екраните в областта за уведомяване</short>
+                <long>Дали в панела да се показва уведомителна икона за екрана.</long>
+            </locale>
+
+            <locale name="bn">
+	        <short>ঘোষনা প্রদানের স্থানে ডিসপ্লে প্রদর্শন করা হবে</short>
+                
+            </locale>
+
+            <locale name="bn_IN">
+	        <short>সূচনাপ্রদানের স্থানে ডিসপ্লে প্রদর্শন করা হবে</short>
+                
+            </locale>
+
+            <locale name="ca">
+	        <short>Mostra les pantalles a l&apos;àrea de notificació</short>
+                <long>Si s&apos;hauria de mostrar al quadre una icona de notificació amb elements relacionats amb la pantalla.</long>
+            </locale>
+
+            <locale name="ca@valencia">
+	        <short>Mostra les pantalles a l&apos;àrea de notificació</short>
+                <long>Si s&apos;hauria de mostrar al quadre una icona de notificació amb elements relacionats amb la pantalla.</long>
+            </locale>
+
+            <locale name="crh">
+	        <short>Bildirim Mıntıqasında Ekranlarnı Köster</short>
+                
+            </locale>
+
+            <locale name="cs">
+	        <short>Zobrazit displeje v oznamovací oblasti</short>
+                <long>Zda by měla být na panelu zobrazena oznamovací ikona s vlastnostmi týkajícími se displeje.</long>
+            </locale>
+
+            <locale name="da">
+	        <short>Vis skærme i påmindelsesområdet</short>
+                <long>Om et påmindelsesikon med visningsrelaterede ting skal vises i panelet.</long>
+            </locale>
+
+            <locale name="de">
+	        <short>Bildschirme im Benachrichtigungsfeld anzeigen</short>
+                <long>Legt fest, ob im Panel ein Benachrichtigungssymbol für die Bildschirmeinstellungen angezeigt wird.</long>
+            </locale>
+
+            <locale name="el">
+	        <short>Προβολή οθονών στην περιοχή ειδοποίησης</short>
+                <long>Αν ένα εικονίδιο ειδοποίησης με μηνύματα σχετικά με την οθόνη θα εμφανίζεται στο πίνακα εφαρμογών.</long>
+            </locale>
+
+            <locale name="en@shaw">
+	        <short>𐑖𐑴 𐑛𐑦𐑕𐑐𐑤𐑱𐑟 𐑦𐑯 𐑯𐑴𐑑𐑦𐑓𐑦𐑒𐑱𐑖𐑩𐑯 𐑺𐑦𐑩</short>
+                <long>𐑢𐑧𐑞𐑼 𐑩 𐑯𐑴𐑑𐑦𐑓𐑦𐑒𐑱𐑖𐑩𐑯 𐑲𐑒𐑪𐑯 𐑢𐑦𐑞 𐑛𐑦𐑕𐑐𐑤𐑱-𐑮𐑦𐑤𐑱𐑑𐑩𐑛 𐑔𐑦𐑙𐑟 𐑖𐑫𐑛 𐑚𐑰 𐑖𐑴𐑯 𐑦𐑯 𐑞 𐑐𐑨𐑯𐑩𐑤.</long>
+            </locale>
+
+            <locale name="en_GB">
+	        <short>Show Displays in Notification Area</short>
+                <long>Whether a notification icon with display-related things should be shown in the panel.</long>
+            </locale>
+
+            <locale name="es">
+	        <short>Mostrar las pantallas en el área de notificación</short>
+                <long>Indica si se debería mostrar en el panel un icono de notificación con sucesos relacionados con la pantalla.</long>
+            </locale>
+
+            <locale name="et">
+	        <short>Kuvade näitamine teavitusalas</short>
+                <long>Kas kuvaga seotud teavitusikooni tuleb paneelil näidata või mitte.</long>
+            </locale>
+
+            <locale name="eu">
+	        <short>Erakutsi pantailak jakinarazpeneko arean</short>
+                <long>Pantailarekin zerikusia duten gauzen jakinarazpeneko ikonoa panelean bistaratu behar den ala ez.</long>
+            </locale>
+
+            <locale name="fi">
+	        <short>Näytä näyttötiedot ilmoitusalueella</short>
+                
+            </locale>
+
+            <locale name="fr">
+	        <short>Icône de l&apos;affichage visible dans la zone de notification</short>
+                <long>Indique si une icône de notification concernant l&apos;affichage doit être affichée dans le tableau de bord.</long>
+            </locale>
+
+            <locale name="ga">
+	        <short>Taispeáin Taispeáintí sa Limistéar Fógra.</short>
+                
+            </locale>
+
+            <locale name="gl">
+	        <short>Mostrar as pantallas na área de notificación</short>
+                <long>Indica se se debería mostrar no panel unha icona de notificación con elementos relacionados coa pantalla.</long>
+            </locale>
+
+            <locale name="gu">
+	        <short>જાહેરાત વિસ્તારમાં દર્શાવો ને બતાવો</short>
+                
+            </locale>
+
+            <locale name="he">
+	        <short>Show Displays in Notification Area</short>
+                <long>Whether a notification icon with display-related things should be shown in the panel.</long>
+            </locale>
+
+            <locale name="hi">
+	        <short>अधिसूचना क्षेत्र में प्रदर्शन दिखाएँ</short>
+                
+            </locale>
+
+            <locale name="hu">
+	        <short>Kijelzők megjelenítése az értesítési területen</short>
+                <long>Megjelenjen-e a kijelzőkkel kapcsolatos értesítőikon a panelen.</long>
+            </locale>
+
+            <locale name="id">
+	        <short>Tunjukkan Tampilan di Area Pemberitahuan</short>
+                <long>Bila suatu ikon pemberitahuan dengan hal terkait tampilan mesti ditampilkan pada panel.</long>
+            </locale>
+
+            <locale name="it">
+	        <short>Mostra i display nell&apos;area di notifica</short>
+                <long>Indica se è mostrata sul pannello un&apos;icona di notifica relativa al display.</long>
+            </locale>
+
+            <locale name="ja">
+	        <short>通知領域に通知アイコンを表示するかどうか</short>
+                <long>表示関連の通知アイコンをパネルに表示するかどうかです。</long>
+            </locale>
+
+            <locale name="kn">
+	        <short>ಸೂಚನೆಗಳನ್ನು ಸೂಚನಾ ಸ್ಥಳದಲ್ಲಿ ತೋರಿಸು</short>
+                
+            </locale>
+
+            <locale name="ko">
+	        <short>알림 영역에 디스플레이 표시</short>
+                <long>디스플레이에 관련된 정보가 들어 있는 알림 아이콘을 패널에 표시할 지 여부.</long>
+            </locale>
+
+            <locale name="lt">
+	        <short>Rodyti ekranus pranešimų srityje</short>
+                <long>Ar skydelyje rodyti pranešimų piktogramą, susijusią su ekrano nustatymais.</long>
+            </locale>
+
+            <locale name="lv">
+	        <short>Rādīt displejus paziņojumu laukā</short>
+                
+            </locale>
+
+            <locale name="mk">
+	        <short>Прикажи ги приказите во местото за известување</short>
+                
+            </locale>
+
+            <locale name="ml">
+	        <short>അവതരണങ്ങള്‍ അറിയിപ്പ് വിഭഗത്തില്‍ കാണിക്കുക</short>
+                
+            </locale>
+
+            <locale name="mr">
+	        <short>सूचना कक्षात दृश्य दर्शवा</short>
+                
+            </locale>
+
+            <locale name="nb">
+	        <short>Vis skjermer i varslingsområdet</short>
+                <long>Om et varslingsikon med skjermrelatert informasjon skal vises på panelet.</long>
+            </locale>
+
+            <locale name="nl">
+	        <short>Schermen tonen in mededelingengebied</short>
+                
+            </locale>
+
+            <locale name="nn">
+	        <short>Vis skjermar i varslingsområdet</short>
+                
+            </locale>
+
+            <locale name="or">
+	        <short>ବିଜ୍ଞପ୍ତି କ୍ଷେତ୍ରରେ ପ୍ରଦର୍ଶିକା ଦର୍ଶାନ୍ତୁ</short>
+                
+            </locale>
+
+            <locale name="pa">
+	        <short>ਡਿਸਪਲੇਅ ਨੂੰ ਨੋਟੀਫਿਕੇਸ਼ਨ ਖੇਤਰ &apos;ਚ ਵੇਖੋ</short>
+                <long>ਕੀ ਆਈਟਮ ਲਈ ਨੋਟੀਫਿਕੇਸ਼ਨ ਆਈਕਾਨ ਵੇਖਾਇਆ ਜਾਵੇ ਤਾਂ ਪੈਨਲ &apos;ਚ ਉੱਤੇ ਵੇਖਾਈ ਜਾਵੇਗੀ।</long>
+            </locale>
+
+            <locale name="pl">
+	        <short>Wyświetlanie ekranów w obszarze powiadamiania</short>
+                <long>Określa, czy ma być wyświetlana ikona z właściwościami ekranu w obszarze powiadamiania.</long>
+            </locale>
+
+            <locale name="pt">
+	        <short>Apresentar Ecrãs na Área de Notificação</short>
+                <long>Se deverá ou não ser apresentado no painel um ícone de notificação com informação relacionada com os monitores.</long>
+            </locale>
+
+            <locale name="pt_BR">
+	        <short>Mostrar telas na área de notificação</short>
+                <long>Se um ícone de notificação de coisas relacionadas com a tela deve ser mostrado no painel.</long>
+            </locale>
+
+            <locale name="ro">
+	        <short>Arată ecranele în zona de notificare</short>
+                <long>Dacă să fie afișată în panou o iconiță de notificare cu informații legate de ecran.</long>
+            </locale>
+
+            <locale name="ru">
+	        <short>Показывать мониторы в области уведомлений</short>
+                <long>Показывать ли значок управления монитором в области уведомлений.</long>
+            </locale>
+
+            <locale name="sk">
+	        <short>Zobraziť obrazovky v oblasti upozornení</short>
+                
+            </locale>
+
+            <locale name="sl">
+	        <short>Počasen prikaz obvestil na zaslonu</short>
+                <long>Ali naj bo v opravilni vrstici prikazana ikona za prikaz različnih možnosti zaslona.</long>
+            </locale>
+
+            <locale name="sr">
+	        <short>Прикажи екране у обавештајној зони</short>
+                <long>Одређује да ли да се приказује иконица са ставкама везаним за екране унутар панела.</long>
+            </locale>
+
+            <locale name="sr@latin">
+	        <short>Prikaži ekrane u obaveštajnoj zoni</short>
+                <long>Određuje da li da se prikazuje ikonica sa stavkama vezanim za ekrane unutar panela.</long>
+            </locale>
+
+            <locale name="sv">
+	        <short>Visa skärmar i notifieringsytan</short>
+                <long>Huruvida en notifieringsikon med skärmrelaterade saker ska visas i panelen.</long>
+            </locale>
+
+            <locale name="ta">
+	        <short>அறிவிப்பு இடத்தில் காட்சிகளை காட்டுகிறது.</short>
+                <long>பலகத்தில் தொடர்புடைய விஷயங்களுடன் ஒரு அறிவிப்பு சின்னம் காட்டப்பட வேண்டுமா.</long>
+            </locale>
+
+            <locale name="te">
+	        <short>ప్రకటన ప్రాంతమునందు ప్రదర్శనలను చూపుము</short>
+                
+            </locale>
+
+            <locale name="th">
+	        <short>แสดงดิสเพลย์ในพื้นที่แจ้งเหตุ</short>
+                
+            </locale>
+
+            <locale name="tr">
+	        <short>Uyarı Alanında Ekranlar Göster</short>
+                
+            </locale>
+
+            <locale name="uk">
+	        <short>Показувати дисплеї у області сповіщення</short>
+                
+            </locale>
+
+            <locale name="vi">
+	        <short>Hiện Màn hình trên vùng thông báo</short>
+                
+            </locale>
+
+            <locale name="zh_CN">
+	        <short>在通知区域显示</short>
+                <long>是否在面板中显示一个通知图标，其中包括相关信息。</long>
+            </locale>
+
+            <locale name="zh_HK">
+	        <short>在通知區顯示訊息</short>
+                <long>是否在面板顯示通知圖示和顯示器相關訊息。</long>
+            </locale>
+
+            <locale name="zh_TW">
+	        <short>在通知區顯示訊息</short>
+                <long>是否在面板顯示通知圖示和顯示器相關訊息。</long>
+            </locale>
+        </schema>
+	<schema>
+	    <key>/schemas/apps/gnome_settings_daemon/xrandr/use_xorg_monitor_settings</key>
+	    <applyto>/apps/gnome_settings_daemon/xrandr/use_xorg_monitor_settings</applyto>
+            <owner>gnome</owner>
+	    <type>bool</type>
+            <default>true</default>
+            <locale name="C">
+	        <short>Do not touch monitor configuration</short>
+		<long>Usually, gnome-settings-daemon configures internal and
+		    external monitors according to the
+		    turn_on_external_monitors_at_startup and
+		    turn_on_laptop_monitor_at_startup settings and determines
+		    an appropriate cloning/side-by-side mode. Setting this key
+		    to True disables this, and the monitor settings are not
+		    touched at all (unless there is an explicit user
+		    configuration).
+		</long>
+            </locale>
+
+            <locale name="cs">
+	        <short>Neměnit nastavení monitoru</short>
+		<long>gnome-settings-daemon obvykle nastavuje interní a externí monitory podle nastavení turn_on_external_monitors_at_startup a turn_on_laptop_monitor_at_startup settings a určí vhodný režim klonování či obrazovek vedle sebe. Nastavením tohoto klíče na &quot;true&quot; tomu zamezíte a nastavení monitoru nebudou nijak měněna (nebude-li k dispozici přímá změna nastavení uživatelem).</long>
+            </locale>
+
+            <locale name="de">
+	        <short>Bildschirmkonfiguration nicht ändern</short>
+		<long>Üblicherweise konfiguriert der GNOME-Einstellungsdienst interne und externe Bildschirme anhand der Werte in turn_on_external_monitors_at_startup und turn_on_laptop_monitor_at_startup. Dabei werden passende Werte für Klonen oder Nebeneinanderdarstellung ermittelt. Wenn dieser Schlüssel auf »wahr« gesetzt ist, wird dies deaktiviert und die Bildschirmeinstellungen werden nicht beeinflusst, es sei denn, es existiert eine explizite Benutzerkonfiguration.</long>
+            </locale>
+
+            <locale name="en_GB">
+	        <short>Do not touch monitor configuration</short>
+		<long>Usually, gnome-settings-daemon configures internal and external monitors according to the turn_on_external_monitors_at_startup and turn_on_laptop_monitor_at_startup settings and determines an appropriate cloning/side-by-side mode. Setting this key to True disables this, and the monitor settings are not touched at all (unless there is an explicit user configuration).</long>
+            </locale>
+
+            <locale name="es">
+	        <short>No cambiar la configuración del monitor</short>
+		<long>Generalmente gnome-settings-daemon configura los monitores internos y externos según los ajustes de «turn_on_external_monitors_at_startup» y «turn_on_laptop_monitor_at_startup» y determina un modo apropiado de clonado o lado a lado. Establecer esta clave a cierta lo desactiva y no se cambiarán los ajustes del monitor (a menos que exista una configuración explícita del usuario).</long>
+            </locale>
+
+            <locale name="gl">
+	        <short>Non cambiar a configuración do monitor</short>
+		<long>Xeralmente gnome-settings-daemon configura os monitores internos e externos segundo os axustes de «turn_on_external_monitors_at_startup» e «turn_on_laptop_monitor_at_startup» e determina un modo axeitado de clonado ou lado a lado. Estebelecer esta chave a certa desactívao e non se cambiarán os axustes do monitor (a menos que exista unha configuración explícita do usuario).</long>
+            </locale>
+
+            <locale name="hu">
+	        <short>Ne módosítsa a monitor beállításait</short>
+		<long>Általában a gnome-settings-daemon a belső és külső monitorokat a turn_on_external_monitors_at_startup és turn_on_laptop_monitor_at_startup beállításoknak megfelelően konfigurálja, és határozza meg a megfelelő klónozási/egymás melletti módot. Ezen kulcs igazra állítása kikapcsolja ezt, és a monitor beállításai egyáltalán nem módosulnak (hacsak nincs explicit felhasználói beállítás).</long>
+            </locale>
+
+            <locale name="pl">
+	        <short>Bez zmiany konfiguracji monitora</short>
+		<long>Zwykle usługa gnome-settings-daemon konfiguruje wewnętrzne i zewnętrzne monitory zgodnie z ustawieniami turn_on_external_monitors_at_startup i turn_on_laptop_monitor_at_startup oraz ustala odpowiedni tryb klonowania ekranów lub ekranów obok siebie. Ustawienie tego klucza na wartość &quot;true&quot; wyłącza to, a ustawienia monitora nie są w ogóle zmieniane (chyba, że istnieje taka konfiguracja użytkownika).</long>
+            </locale>
+
+            <locale name="pt_BR">
+	        <short>Configuração do monitor não alterada</short>
+		<long>Geralmente o gnome-settings-daemon configura monitores internos e externos de acordo com as configurações ligar_monitor_externo_ao_iniciar e ligar_monitor_do_laptop_ao_iniciar e determina um modo de clonagem/lado a lado. Configurar esta chave para verdadeiro a desabilita e as configurações do monitor não são alteradas (até haver uma configuração explícita do usuário).</long>
+            </locale>
+
+            <locale name="sl">
+	        <short>Ne spreminjaj nastavitev zaslona.</short>
+		<long>Običajno program gnome-settings-daemon nastavlja notranje in zunanje zaslone glede na možnost nastavitev priklopa zunanjega zaslona ob priklopu in priklopa zaslona prenosnika ob priklopu. Hkrati določi tudi ustrezen način zrcaljenja ali deljenja delovne površine. Izbrana možnost onemogoči samodejno nastavitev in nastavitev zaslona sploh ne določa (razen v primeru uporabniških nastavitev).</long>
+            </locale>
+        </schema>
+	<schema>
+	    <key>/schemas/apps/gnome_settings_daemon/xrandr/turn_on_external_monitors_at_startup</key>
+	    <applyto>/apps/gnome_settings_daemon/xrandr/turn_on_external_monitors_at_startup</applyto>
+            <owner>gnome</owner>
+	    <type>bool</type>
+            <default>false</default>
+            <locale name="C">
+	        <short>Turn on external monitor after system boot</short>
+                <long>Turn on external monitor after system boot if user plugs in
+		external monitor on system boot.
+		</long>
+            </locale>
+
+            <locale name="bg">
+	        <short>Включване на външен монитор след зареждане на системата</short>
+                <long>Дали да се включва евентуален външен монитор, който е бил свързан преди включването на компютъра.</long>
+            </locale>
+
+            <locale name="ca">
+	        <short>Engega el monitor extern després d&apos;arrencar el sistema</short>
+                <long>Engega el monitor extern després d&apos;arrencar el sistema si l&apos;usuari connecta un monitor extern en arrencar el sistema.</long>
+            </locale>
+
+            <locale name="ca@valencia">
+	        <short>Engega el monitor extern després d&apos;arrencar el sistema</short>
+                <long>Engega el monitor extern després d&apos;arrencar el sistema si l&apos;usuari connecta un monitor extern en arrencar el sistema.</long>
+            </locale>
+
+            <locale name="crh">
+	        <short>Sistem başlattırmasından soñra hariciy ekrannı yaq</short>
+                
+            </locale>
+
+            <locale name="cs">
+	        <short>Zapnout po spuštění systému externí monitor</short>
+                <long>Zapnout po spuštění systému externí monitor, zapojí-li uživatel externí monitor při spuštění systému.</long>
+            </locale>
+
+            <locale name="da">
+	        <short>Slå ekstern skærm til efter systemopstart</short>
+                <long>Slå ekstern skærm til efter systemopstart, hvis brugeren tilslutter ekstern skærm ved systemopstart.</long>
+            </locale>
+
+            <locale name="de">
+	        <short>Externen Bildschirm nach Systemstart einschalten</short>
+                <long>Externen Bildschirm nach Systemstart einschalten, falls der Benutzer den externen Bildschirm beim Systemstart anschließt.</long>
+            </locale>
+
+            <locale name="el">
+	        <short>Ενεργοποίηση της εξωτερικής οθόνης μετά την εκκίνηση του συστήματος</short>
+                <long>Ενεργοποίηση της εξωτερικής οθόνης μετά την εκκίνηση του συστήματος αν ο χρήστης συνδέσει εξωτερική οθόνη κατά την εκκίνηση του συστήματος.</long>
+            </locale>
+
+            <locale name="en@shaw">
+	        <short>𐑑𐑻𐑯 𐑪𐑯 𐑦𐑒𐑕𐑑𐑻𐑯𐑩𐑤 𐑥𐑪𐑯𐑦𐑑𐑼 𐑭𐑓𐑑𐑼 𐑕𐑦𐑕𐑑𐑩𐑥 𐑚𐑵𐑑</short>
+                <long>𐑑𐑻𐑯 𐑪𐑯 𐑦𐑒𐑕𐑑𐑻𐑯𐑩𐑤 𐑥𐑪𐑯𐑦𐑑𐑼 𐑭𐑓𐑑𐑼 𐑕𐑦𐑕𐑑𐑩𐑥 𐑚𐑵𐑑 𐑦𐑓 𐑿𐑟𐑼 𐑐𐑤𐑳𐑜𐑟 𐑦𐑯 𐑦𐑒𐑕𐑑𐑻𐑯𐑩𐑤 𐑥𐑪𐑯𐑦𐑑𐑼 𐑪𐑯 𐑕𐑦𐑕𐑑𐑩𐑥 𐑚𐑵𐑑.</long>
+            </locale>
+
+            <locale name="en_GB">
+	        <short>Turn on external monitor after system boot</short>
+                <long>Turn on external monitor after system boot if user plugs in external monitor on system boot.</long>
+            </locale>
+
+            <locale name="es">
+	        <short>Encender el monitor externo después de arrancar el sistema</short>
+                <long>Encender el monitor externo después de arrancar el sistema si el usuario conectó el monitor externo al arrancar el sistema.</long>
+            </locale>
+
+            <locale name="et">
+	        <short>Pärast süsteemi alglaadimist lülitatakse väline monitor sisse</short>
+                <long>Kui kasutaja ühendab süsteemi alglaadimisel välise monitori, lülitatakse see alglaadimise järel sisse.</long>
+            </locale>
+
+            <locale name="eu">
+	        <short>Aktibatu kanpoko pantaila sistema abiatu ondoren</short>
+                <long>Aktibatu kanpoko pantaila sistema abiatu ondoren, erabiltzaileak kanpoko pantaila sistemara konektatzen badu.</long>
+            </locale>
+
+            <locale name="fr">
+	        <short>Activer l&apos;écran externe après le démarrage du système</short>
+                <long>Activer l&apos;écran externe après le démarrage du système si l&apos;utilisateur en branche un au démarrage.</long>
+            </locale>
+
+            <locale name="gl">
+	        <short>Acenda o monitor externo despois de arrancar o sistema</short>
+                <long>Acender o monitor externo despois de arrancar o sistema se o usuario conecta o monitor externo cando o sistema arranca.</long>
+            </locale>
+
+            <locale name="he">
+	        <short>Turn on external monitor after system boot</short>
+                <long>Turn on external monitor after system boot if user plugs in external monitor on system boot.</long>
+            </locale>
+
+            <locale name="hu">
+	        <short>Külső monitor bekapcsolása rendszerindítás után</short>
+                <long>Külső monitor bekapcsolása rendszerindítás után, ha a felhasználó külső monitort csatlakoztat a rendszerindításkor.</long>
+            </locale>
+
+            <locale name="id">
+	        <short>Nyalakan monitor eksternal setelah boot sistem</short>
+                <long>Nyalakan monitor eksternal setelah boot sistem bila pengguna menancapkan monitor eksternal saat boot sistem.</long>
+            </locale>
+
+            <locale name="it">
+	        <short>Attiva il monitor esterno dopo il boot di sistema</short>
+                <long>Attiva il monitor esterno dopo il boot del sistema se l&apos;utente collega un monitor esterno durante il boot.</long>
+            </locale>
+
+            <locale name="ja">
+	        <short>システムの起動後に外部モニタを有効にする</short>
+                <long>システムのブート時に外部モニタが接続されている時、システムのブート後に外部モニタ有効にする。</long>
+            </locale>
+
+            <locale name="ko">
+	        <short>시스템 부팅 후에 외부 모니터 켜기</short>
+                <long>시스템 부팅할 때 외부 모니터가 연결되어 있으면 외부 모니터를 켭니다.</long>
+            </locale>
+
+            <locale name="lt">
+	        <short>Įjungti išorinį vaizduoklį įkėlus sistemą</short>
+                <long>Įjungti išorinį vaizduoklį įkėlus sistemą, jei naudotojas prijungia išorinį vaizduoklį sistemos įkelties metu.</long>
+            </locale>
+
+            <locale name="pa">
+	        <short>ਸਿਸਟਮ ਬੂਟ ਕਰਨ ਦੇ ਬਾਅਦ ਬਾਹਰੀ ਮਾਨੀਟਰ ਚਾਲੂ ਕਰੋ</short>
+                <long>ਸਿਸਟਮ ਬੂਟ ਕਰਨ ਦੇ ਬਾਅਦ ਬਾਹਰੀ ਮਾਨੀਟਰ ਚਾਲੂ ਕਰੋ, ਜੇ ਯੂਜ਼ਰ ਸਿਸਟਮ ਬੂਟ ਕਰਨ ਦੇ ਦੌਰਾਨ ਬਾਹਰੀ ਮਾਨੀਟਰ ਜੋੜੇ।</long>
+            </locale>
+
+            <locale name="pl">
+	        <short>Włączenie zewnętrznego monitora po uruchomieniu systemu</short>
+                <long>Włączenie zewnętrznego monitora po uruchomieniu systemu, jeśli użytkownik podłączył go podczas uruchamiania.</long>
+            </locale>
+
+            <locale name="pt">
+	        <short>Ligar monitor externo após arranque de sistema</short>
+                <long>Ligar monitor externo após arranque de sistema se o utilizador conectar um monitor externo ao arrancar o sistema.</long>
+            </locale>
+
+            <locale name="pt_BR">
+	        <short>Ligar monitor externo depois do início do sistema</short>
+                <long>Liga o monitor externo depois do início do sistema se o usuário conecta um monitor externo no início do sistema.</long>
+            </locale>
+
+            <locale name="ro">
+	        <short>Pornește monitorul extern după pornirea sistemului</short>
+                <long>Pornește monitorul extern după pornirea sistemului dacă utilizatorul conectează un monitor la pornirea sistemului.</long>
+            </locale>
+
+            <locale name="ru">
+	        <short>Включать внешний монитор после загрузки системы</short>
+                <long>Включать внешний монитор после загрузки системы, если пользователь подключил его во время загрузки.</long>
+            </locale>
+
+            <locale name="sk">
+	        <short>Zapnúť externý monitor po štarte systému</short>
+                
+            </locale>
+
+            <locale name="sl">
+	        <short>Priklopi zunanji zaslon po sistemskem zagonu.</short>
+                <long>Priklopi zunanji zaslon po sistemskem zagonu, če je priklopljen zunanji zaslon ob zagonu sistema.</long>
+            </locale>
+
+            <locale name="sr">
+	        <short>Укључи спољни екран након покретања</short>
+                <long>Укључује спољни екран при подизању система уколико га корисник прикључи.</long>
+            </locale>
+
+            <locale name="sr@latin">
+	        <short>Uključi spoljni ekran nakon pokretanja</short>
+                <long>Uključuje spoljni ekran pri podizanju sistema ukoliko ga korisnik priključi.</long>
+            </locale>
+
+            <locale name="sv">
+	        <short>Aktivera extern skärm efter systemuppstart</short>
+                <long>Aktivera extern skärm efter systemuppstart om användaren ansluter en extern skärm vid systemuppstart.</long>
+            </locale>
+
+            <locale name="ta">
+	        <short>வெளித்திரையை கணினி துவங்கியபின் இயக்கு</short>
+                <long>கணினி துவங்கும் போது வெளித்திரையை இணைத்தால் அதை கணினி துவங்கியபின் இயக்கு</long>
+            </locale>
+
+            <locale name="zh_CN">
+	        <short>系统启动后打开外部显示器</short>
+                <long>系统启动时，如果用户插入外部显示器就打开它。</long>
+            </locale>
+
+            <locale name="zh_HK">
+	        <short>在系統開機後開啟外接螢幕</short>
+                <long>如果使用者在系統開機時接上外接螢幕則在開機後開啟外接螢幕。</long>
+            </locale>
+
+            <locale name="zh_TW">
+	        <short>在系統開機後開啟外接螢幕</short>
+                <long>如果使用者在系統開機時接上外接螢幕則在開機後開啟外接螢幕。</long>
+            </locale>
+        </schema>
+	<schema>
+	    <key>/schemas/apps/gnome_settings_daemon/xrandr/turn_on_laptop_monitor_at_startup</key>
+	    <applyto>/apps/gnome_settings_daemon/xrandr/turn_on_laptop_monitor_at_startup</applyto>
+            <owner>gnome</owner>
+	    <type>bool</type>
+            <default>true</default>
+            <locale name="C">
+	        <short>Turn on laptop monitor after system boot</short>
+                <long>Turn on laptop monitor after system boot if user plugs in
+		external monitor on system boot.
+		</long>
+            </locale>
+
+            <locale name="bg">
+	        <short>Включване на вградения монитор след зареждане на системата</short>
+                <long>Дали да се включва вграденият монитор, ако преди включването на компютъра е бил свързан външен монитор.</long>
+            </locale>
+
+            <locale name="ca">
+	        <short>Engega el monitor del portàtil després d&apos;arrencar el sistema</short>
+                <long>Engega el monitor del portàtil després d&apos;arrencar el sistema si l&apos;usuari connecta un monitor extern en arrencar el sistema.</long>
+            </locale>
+
+            <locale name="ca@valencia">
+	        <short>Engega el monitor del portàtil després d&apos;arrencar el sistema</short>
+                <long>Engega el monitor del portàtil després d&apos;arrencar el sistema si l&apos;usuari connecta un monitor extern en arrencar el sistema.</long>
+            </locale>
+
+            <locale name="crh">
+	        <short>Sistem başlattırmasından soñra tizüstü ekranını yaq</short>
+                
+            </locale>
+
+            <locale name="cs">
+	        <short>Zapnout po spuštění systému monitor notebooku</short>
+                <long>Zapnout po spuštění systému monitor notebooku, zapojí-li uživatel externí monitor při spuštění systému.</long>
+            </locale>
+
+            <locale name="da">
+	        <short>Slå skærm til bærbar computer til efter systemopstart</short>
+                <long>Slå skærm til bærbar computer til efter systemopstart, hvis brugeren tilslutter ekstern skærm ved systemopstart.</long>
+            </locale>
+
+            <locale name="de">
+	        <short>Laptop-Bildschirm nach Systemstart einschalten</short>
+                <long>Laptop-Bildschirm nach Systemstart einschalten, falls der Benutzer den externen Bildschirm beim Systemstart anschließt.</long>
+            </locale>
+
+            <locale name="el">
+	        <short>Ενεργοποίηση της οθόνης του φορητού μετά την εκκίνηση του συστήματος</short>
+                <long>Ενεργοποίηση της οθόνης του φορητού μετά την εκκίνηση του συστήματος αν ο χρήστης συνδέσει εξωτερική οθόνη κατά την εκκίνηση του συστήματος.</long>
+            </locale>
+
+            <locale name="en@shaw">
+	        <short>𐑑𐑻𐑯 𐑪𐑯 𐑤𐑨𐑐𐑑𐑪𐑐 𐑥𐑪𐑯𐑦𐑑𐑼 𐑭𐑓𐑑𐑼 𐑕𐑦𐑕𐑑𐑩𐑥 𐑚𐑵𐑑</short>
+                <long>𐑑𐑻𐑯 𐑪𐑯 𐑤𐑨𐑐𐑑𐑪𐑐 𐑥𐑪𐑯𐑦𐑑𐑼 𐑭𐑓𐑑𐑼 𐑕𐑦𐑕𐑑𐑩𐑥 𐑚𐑵𐑑 𐑦𐑓 𐑿𐑟𐑼 𐑐𐑤𐑳𐑜𐑟 𐑦𐑯 𐑦𐑒𐑕𐑑𐑻𐑯𐑩𐑤 𐑥𐑪𐑯𐑦𐑑𐑼 𐑪𐑯 𐑕𐑦𐑕𐑑𐑩𐑥 𐑚𐑵𐑑.</long>
+            </locale>
+
+            <locale name="en_GB">
+	        <short>Turn on laptop monitor after system boot</short>
+                <long>Turn on laptop monitor after system boot if user plugs in external monitor on system boot.</long>
+            </locale>
+
+            <locale name="es">
+	        <short>Encender el monitor del portátil después de arrancar el sistema</short>
+                <long>Encender el monitor del portátil después de arrancar el sistema si el usuario conectó el monitor externo al arrancar el sistema.</long>
+            </locale>
+
+            <locale name="et">
+	        <short>Pärast süsteemi alglaadimist lülitatakse sülearvuti monitor sisse</short>
+                <long>Pärast süsteemi alglaadimist lülitatakse sisse sülearvuti monitor, kui alglaadimisel ühendatakse väline monitor.</long>
+            </locale>
+
+            <locale name="eu">
+	        <short>Aktibatu ordenagailu eramangarriaren pantaila sistema abiatu ondoren</short>
+                <long>Aktibatu ordenagailu eramangarriaren pantaila sistema abiatu ondoren, erabiltzaileak kanpoko pantaila sistemara konektatzen badu.</long>
+            </locale>
+
+            <locale name="fr">
+	        <short>Activer l&apos;écran de l&apos;ordinateur portable après le démarrage du système</short>
+                <long>Activer l&apos;écran de l&apos;ordinateur portable après le démarrage du système si l&apos;utilisateur branche un écran externe au démarrage.</long>
+            </locale>
+
+            <locale name="gl">
+	        <short>Encenda o monitor do portátil despois de arrancar o sistema</short>
+                <long>Acender o monitor do portátil despois de arrancar o sistema se o usuario conecta o monitor externo cando o sistema arranca.</long>
+            </locale>
+
+            <locale name="he">
+	        <short>Turn on laptop monitor after system boot</short>
+                <long>Turn on laptop monitor after system boot if user plugs in external monitor on system boot.</long>
+            </locale>
+
+            <locale name="hu">
+	        <short>Laptopmonitor bekapcsolása rendszerindítás után</short>
+                <long>Laptopmonitor bekapcsolása rendszerindítás után, ha a felhasználó külső monitort csatlakoztat a rendszerindításkor.</long>
+            </locale>
+
+            <locale name="id">
+	        <short>Nyalakan monitor laptop setelah boot sistem</short>
+                <long>Nyalakan monitor laptop setelah boot sistem bila pengguna menancapkan monitor eksternal saat boot sistem.</long>
+            </locale>
+
+            <locale name="it">
+	        <short>Attiva il monitor del portatile dopo il boot di sistema</short>
+                <long>Attiva il monitor del portatile dopo il boot del sistema se l&apos;utente collega un monitor esterno durante il boot.</long>
+            </locale>
+
+            <locale name="ja">
+	        <short>システムのブート後にラップトップのモニタを有効にする</short>
+                <long>システムのブート時に外部モニタが接続されている時、システムのブート後にラップトップのモニタを有効にする。</long>
+            </locale>
+
+            <locale name="ko">
+	        <short>시스템 부팅 후에 노트북 모니터 켜기</short>
+                <long>시스템 부팅할 때 외부 모니터가 연결되어 있으면 노트북 모니터를 켭니다.</long>
+            </locale>
+
+            <locale name="lt">
+	        <short>Įjungti nešiojamojo kompiuterio ekraną įkėlus sistemą</short>
+                <long>Įjungti nešiojamojo kompiuterio ekraną įkėlus sistemą, jei naudotojas prijungia išorinį vaizduoklį sistemos įkelties metu.</long>
+            </locale>
+
+            <locale name="pa">
+	        <short>ਸਿਸਟਮ ਬੂਟ ਦੇ ਬਾਅਦ ਲੈਪਟਾਪ ਮਾਨੀਟਰ ਚਾਲੂ ਕਰੋ</short>
+                <long>ਸਿਸਟਮ ਬੂਟ ਕਰਨ ਦੇ ਬਾਅਦ ਲੈਪਟਾਪ ਮਾਨੀਟਰ ਚਾਲੂ ਕਰੋ, ਜੇ ਸਿਸਟਮ ਬੂਟ ਕਰਨ ਦੌਰਾਨ ਯੂਜ਼ਰ ਬਾਹਰੀ ਮਾਨੀਟਰ ਜੋੜੇ।</long>
+            </locale>
+
+            <locale name="pl">
+	        <short>Włącza monitor laptopa po uruchomieniu systemu</short>
+                <long>Włącza monitor laptopa po uruchomieniu systemu, jeśli użytkownik podłączył go podczas uruchamiania.</long>
+            </locale>
+
+            <locale name="pt">
+	        <short>Ligar o monitor do portátil após arranque de sistema</short>
+                <long>Ligar monitor do portátil após arranque de sistema se o utilizador conectar um monitor externo ao arrancar o sistema.</long>
+            </locale>
+
+            <locale name="pt_BR">
+	        <short>Ligar monitor do laptop depois do início do sistema</short>
+                <long>Liga o monitor do laptop depois do início do sistema se o usuário conecta um monitor externo no início do sistema.</long>
+            </locale>
+
+            <locale name="ro">
+	        <short>Pornește monitorul laptopului după pornirea sistemului</short>
+                <long>Pornește monitorul laptopului după pornirea sistemului dacă utilizatorul conectează un monitor la pornirea sistemului.</long>
+            </locale>
+
+            <locale name="ru">
+	        <short>Включать монитор ноутбука после загрузки системы</short>
+                <long>Включать монитор ноутбука после загрузки системы, если пользователь подключил внешний монитор во время загрузки.</long>
+            </locale>
+
+            <locale name="sk">
+	        <short>Zapnúť monitor prenosného počítača po štarte systému</short>
+                
+            </locale>
+
+            <locale name="sl">
+	        <short>Ugasni zaslon prenosnika po sistemskem zagonu</short>
+                <long>Priklopi zaslon prenosnika po sistemskem zagonu, če je priklopljen zunanji zaslon ob zagonu sistema.</long>
+            </locale>
+
+            <locale name="sr">
+	        <short>Укључи екран преносног рачунара након покретања</short>
+                <long>Укључује екран преносног рачунара при подизању система уколико корисник прикључи спољни екран.</long>
+            </locale>
+
+            <locale name="sr@latin">
+	        <short>Uključi ekran prenosnog računara nakon pokretanja</short>
+                <long>Uključuje ekran prenosnog računara pri podizanju sistema ukoliko korisnik priključi spoljni ekran.</long>
+            </locale>
+
+            <locale name="sv">
+	        <short>Aktivera bärbara datorns skärm efter systemuppstart</short>
+                <long>Aktivera bärbara datorns skärm efter systemuppstart om användaren ansluter en extern skärm vid systemuppstart.</long>
+            </locale>
+
+            <locale name="ta">
+	        <short>மடிக்கணினி திரையை கணினி துவங்கியபின் இயக்கு</short>
+                <long>கணினி துவங்கும் போது வெளித்திரையை இணைத்தால் மடிக் கணினி துவங்கியபின் திரையை இயக்கு</long>
+            </locale>
+
+            <locale name="zh_CN">
+	        <short>系统启动后打开笔记本电脑显示器</short>
+                <long>系统启动时，如果用户插入外部显示器，打开笔记本显示器。</long>
+            </locale>
+
+            <locale name="zh_HK">
+	        <short>在系統開機後開啟手提電腦螢幕</short>
+                <long>如果使用者在系統開機時接上手提電腦螢幕則在開機後開啟它。</long>
+            </locale>
+
+            <locale name="zh_TW">
+	        <short>在系統開機後開啟筆記型電腦螢幕</short>
+                <long>如果使用者在系統開機時接上筆記型電腦螢幕則在開機後開啟它。</long>
+            </locale>
+        </schema>
+	<schema>
+	    <key>/schemas/apps/gnome_settings_daemon/xrandr/default_configuration_file</key>
+	    <applyto>/apps/gnome_settings_daemon/xrandr/default_configuration_file</applyto>
+            <owner>gnome</owner>
+	    <type>string</type>
+            <default>/etc/gnome-settings-daemon/xrandr/monitors.xml</default>
+            <locale name="C">
+	        <short>File for default configuration for RandR</short>
+	        <long>The XRandR plugin will look for a default
+                configuration in the file specified by this key.  This
+                is similar to the ~/.config/monitors.xml that normally
+                gets stored in users' home directories.  If a user
+                does not have such a file, or has one that does not
+                match the user's setup of monitors, then the file
+                specified by this key will be used instead.
+	        </long>
+            </locale>
+
+            <locale name="bg">
+	        <short>Файл за стандартните настройки на RandR</short>
+	        <long>Приставката за управление на RandR ще търси настройките по подразбиране в указания файл. Съдържанието е същото като на файла „~/.config/monitors.xml“, където се съхраняват потребителските настройки. Ако даден потребител няма такъв файл или съдържанието му не отговаря на наличните монитори, ще се използва файлът, указан с този ключ.</long>
+            </locale>
+
+            <locale name="ca">
+	        <short>Fitxer per a la configuració predeterminada del RandR</short>
+	        <long>El connector XRandR cercarà la configuració predeterminada en el fitxer especificat per aquesta clau. Aquest és semblant al ~/.config/monitors.xml que normalment s&apos;emmagatzema al directori d&apos;usuari. Si un usuari no té aquest fitxer o en té un que no coincideix amb la configuració de monitors de l&apos;usuari, llavors en lloc seu s&apos;utilitzarà el fitxer especificat per aquesta clau.</long>
+            </locale>
+
+            <locale name="ca@valencia">
+	        <short>Fitxer per a la configuració predeterminada del RandR</short>
+	        <long>El connector XRandR cercarà la configuració predeterminada en el fitxer especificat per esta clau. Este és paregut al ~/.config/monitors.xml que normalment s&apos;emmagatzema al directori d&apos;usuari. Si un usuari no té este fitxer o en té un que no coincideix amb la configuració de monitors de l&apos;usuari, llavors en lloc seu s&apos;utilitzarà el fitxer especificat per esta clau.</long>
+            </locale>
+
+            <locale name="cs">
+	        <short>Soubor výchozí konfigurace RandR</short>
+	        <long>Zásuvný modul XRandR bude hledat výchozí konfiguraci v souboru určeném tímto klíčem. Je to podobné jako ~/.config/monitors.xml, který je běžně uložen v domovských adresářích uživatelů. Nemá-li uživatel takovýto soubor, nebo má-li takový, který neodpovídá uživatelskému natavení monitorů, pak bude místo toho použit soubor určený tímto klíčem.</long>
+            </locale>
+
+            <locale name="da">
+	        <short>Fil med standardkonfiguration til RandR</short>
+	        <long>Udvidelsesmodulet XRandR vil kigge efter en standardkonfiguration i filen, der angives ved denne nøgle. Dette svarer til ~/.config/monitors.xml, som normalt ligger i brugeres hjemmemapper. Hvis en bruger ikke har en sådan fil, eller har en fil der ikke svarer til brugerens skærmopsætning, vil filen angivet ved denne nøgle bruges i stedet.</long>
+            </locale>
+
+            <locale name="de">
+	        <short>Datei mit der Vorgabekonfiguration für RandR</short>
+	        <long>Das XRandR-Plugin sucht in der durch diesen Schlüssel angegebenen Datei nach einer Vorgabekonfiguration. Dies verhält sich ähnlich wie ~/.config/monitors.xml, die normalerweise in den persönlichen Ordnern der Benutzer gespeichert wird. Falls ein Benutzer nicht über solch eine Datei verfügt oder seine Konfiguration nicht zu den vorhandenen Bildschirmen passt, wird die in diesem Schlüssel angegebene Datei stattdessen verwendet.</long>
+            </locale>
+
+            <locale name="el">
+	        <short>Αρχείο προεπιλεγμένης διαμόρφωσης του RandR</short>
+	        <long>Το πρόσθετο XRandR θα ψάξει για προεπιλεγμνη διαμόρφωση στο αρχείο που καθορίζεται σε αυτό το κλειδί. Αυτό είναι παρόμοιο με το ~/.config/monitors.xml που κανονικά είναι αποθηκευμένο στους προσωπικούς καταλόγους του χρήστη. Αν κάποιος χρήστης δεν έχει τέτοιο αρχείο ή έχει ένα που δεν ταιριάζει με τη διαμόρφωση των οθονών του, τότε θα χρησιμοποιηθεί το αρχείο που καθορίζεται σε αυτό το κλειδί.</long>
+            </locale>
+
+            <locale name="en@shaw">
+	        <short>𐑓𐑲𐑤 𐑓𐑹 𐑛𐑦𐑓𐑷𐑤𐑑 𐑒𐑩𐑯𐑓𐑦𐑜𐑘𐑼𐑱𐑖𐑩𐑯 𐑓𐑹 RandR</short>
+	        <long>𐑞 XRandR 𐑐𐑤𐑳𐑜𐑦𐑯 𐑢𐑦𐑤 𐑤𐑫𐑒 𐑓𐑹 𐑩 𐑛𐑦𐑓𐑷𐑤𐑑 𐑒𐑩𐑯𐑓𐑦𐑜𐑘𐑼𐑱𐑖𐑩𐑯 𐑦𐑯 𐑞 𐑓𐑲𐑤 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑚𐑲 𐑞𐑦𐑕 𐑒𐑰. 𐑞𐑦𐑕 𐑦𐑟 𐑕𐑦𐑥𐑦𐑤𐑼 𐑑 𐑞 ~/.config/monitors.xml 𐑞𐑨𐑑 𐑯𐑹𐑥𐑩𐑤𐑦 𐑜𐑧𐑑𐑕 𐑕𐑑𐑹𐑛 𐑦𐑯 𐑿𐑟𐑼𐑟&apos; 𐑣𐑴𐑥 𐑛𐑲𐑮𐑧𐑒𐑑𐑼𐑦𐑟. 𐑦𐑓 𐑩 𐑿𐑟𐑼 𐑛𐑳𐑟 𐑯𐑪𐑑 𐑣𐑨𐑝 𐑕𐑳𐑗 𐑩 𐑓𐑲𐑤, 𐑹 𐑣𐑨𐑟 𐑢𐑳𐑯 𐑞𐑨𐑑 𐑛𐑴𐑟 𐑯𐑪𐑑 𐑥𐑨𐑗 𐑞 𐑿𐑟𐑼&apos;𐑟 𐑕𐑧𐑑𐑳𐑐 𐑝 𐑥𐑭𐑯𐑩𐑑𐑻𐑟, 𐑞𐑧𐑯 𐑞 𐑓𐑲𐑤 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑚𐑲 𐑞𐑦𐑕 𐑒𐑰 𐑢𐑦𐑤 𐑚𐑰 𐑿𐑟𐑛 𐑦𐑯𐑕𐑑𐑧𐑛.</long>
+            </locale>
+
+            <locale name="en_GB">
+	        <short>File for default configuration for RandR</short>
+	        <long>The XRandR plugin will look for a default configuration in the file specified by this key. This is similar to the ~/.config/monitors.xml that normally gets stored in users&apos; home directories. If a user does not have such a file, or has one that does not match the user&apos;s setup of monitors, then the file specified by this key will be used instead.</long>
+            </locale>
+
+            <locale name="es">
+	        <short>Archivo para la configuración predeterminada de RandR</short>
+	        <long>El complemento XRandR buscará para esta clave una configuración predeterminada en el archivo especificado. Es similar a ~/.config/monitors.xml que por lo general se almacena en las carpetas personales de los usuarios. Si un usuario no tiene tal archivo o tiene uno que no coincide con la configuración de monitores del usuario, entonces se usa en su lugar el archivo especificado por esta clave.</long>
+            </locale>
+
+            <locale name="et">
+	        <short>RandR vaikesätete fail</short>
+	        <long>XRandR plugin otsib vaikesätteid failist, mis määratakse selle võtmega. See on samasugune fail, nagu ~/.config/monitors.xml kasutaja kodukataloogis. Kui kasutajal ei ole mainitud faili, või see fail ei sobi kasutaja monitoride arvuga, kasutatakse hoopis käesoleva võtmega määratud faili.</long>
+            </locale>
+
+            <locale name="eu">
+	        <short>RandR-ren konfigurazio lehenetsiaren fitxategia</short>
+	        <long>XRandR pluginak konfigurazio lehenetsiaren bila hasiko da gako honetan zehaztutako fitxategian. Hau erabiltzailearen karpeta nagusian gorde ohi den ~/.config/monitors.xml fitxategiaren antzekoa da. Erabiltzaile batek ez badu halako fitxategirik, edo dagoena ez badator bat erabiltzailearen pantailen konfigurazioarekin, gako honetan zehaztutako fitxategia erabiliko da haren ordez.</long>
+            </locale>
+
+            <locale name="fr">
+	        <short>Fichier de configuration par défaut de RandR</short>
+	        <long>Le greffon XRandR cherche une configuration par défaut dans le fichier indiqué par cette clé. C&apos;est le même type de fichier que ~/.config/monitors.xml qui est en général stocké dans le dossier personnel de l&apos;utilisateur. Si l&apos;utilisateur ne possède pas ce fichier ou s&apos;il en a un qui ne correspond pas à la configuration des écrans, c&apos;est le fichier indiqué par cette clé qui est utilisé.</long>
+            </locale>
+
+            <locale name="gl">
+	        <short>Ficheiro de configuración predefinido para RandR</short>
+	        <long>O engadido XRANDR buscará pola configuración predefinida no ficheiro especificado por esta chave. É similar ao ~/.config/monitors.xml que normalmente se almacena no cartafol persoal dos usuarios. Se un usuario non ten dito ficheiro ou non ten unha configuración de usuario dos monitores, usarase no seu lugar o ficheiro especificado nesta chave.</long>
+            </locale>
+
+            <locale name="he">
+	        <short>File for default configuration for RandR</short>
+	        <long>The XRandR plugin will look for a default configuration in the file specified by this key. This is similar to the ~/.config/monitors.xml that normally gets stored in users&apos; home directories. If a user does not have such a file, or has one that does not match the user&apos;s setup of monitors, then the file specified by this key will be used instead.</long>
+            </locale>
+
+            <locale name="hu">
+	        <short>A RandR alapértelmezett beállításához használt fájl</short>
+	        <long>Az XRandR bővítmény az itt megadott fájlban keresi az alapértelmezett beállításokat. Ez hasonló felhasználók saját könyvtárában tárolt ~/.config/monitors.xml fájlhoz. Ha a felhasználónak nincs ilyen fájlja, vagy a meglévő nem nem felel meg a felhasználó monitorainak, akkor az itt megadott fájl kerül felhasználásra.</long>
+            </locale>
+
+            <locale name="id">
+	        <short>Berkas konfigurasi bawaan bagi RandR</short>
+	        <long>Plugin XRandR akan mencari konfigurasi bawaan di dalam berkas yang dinyatakan oleh kunci ini. Ini mirip dengan ~/.config/monitors.xml yang biasanya disimpan di direktori rumah para pengguna. Bila seorang pengguna tidak memiliki berkas itu, atau punya tapi tidak cocok dengan tatanan monitor pengguna, maka berkas yang dinyatakan oleh kunci ini dipakai sebagai gantinya.</long>
+            </locale>
+
+            <locale name="it">
+	        <short>File per la configurazione predefinita di RandR</short>
+	        <long>Il plugin XRandR controlla la presenza di una configurazione predefinita nel file specificato da questa chiave. Tale file è simile al file ~/.config/monitors.xml che normalmente viene memorizzato nelle directory home degli utenti. Se un utente non ha tale file, oppure se ne ha uno che non corrisponde alla impostazione dei monitor, allora viene usato il file specificato in questa chiave.</long>
+            </locale>
+
+            <locale name="ja">
+	        <short>RanR の初期設定ファイル</short>
+	        <long>XRandR プラグインはこのキーで指定されたファイルをデフォルトの設定ファイルとして検索します。これはユーザのふつう、ホームディレクトリに保存されている ~/.config/monitors.xml と同様のものです。もしそのようなファイルが無い場合、あるいはあったとしてもモニタの設定に合わない場合、このキーで指定されたファイルが代わりに使われます。</long>
+            </locale>
+
+            <locale name="ko">
+	        <short>RandR 기본 설정 파일</short>
+	        <long>XRandR 플러그인이 이 키에서 지정한 파일에서 기본 설정을 찾습니다. 사용자의 홈 디렉터리에 저장되어 있는 ~/.config/monitors.xml 파일과 비슷합니다. 사용자가 이 파일이 없거나 이 파일의 설정이 모니터와 맞지 않는 경우, 이 키에서 지정한 파일을 대신 사용합니다.</long>
+            </locale>
+
+            <locale name="lt">
+	        <short>Numatytųjų RandR nustatymų failas</short>
+	        <long>XRandR įskiepis ieškos numatytųjų nustatymų faile, nurodytame šiame rakte. Jis panašus į ~/.config/monitors.xml failą, kuris paprastai saugomas naudotojo namų aplanke. Jeigu naudotojas neturi tokio failo arba jo turimas failas nesutampa su naudotojo vaizduoklių sąranka, tuomet vietoje to bus naudojamas šio rakto nurodytas failas.</long>
+            </locale>
+
+            <locale name="pa">
+	        <short>RandR ਲਈ ਡਿਫਾਲਟ ਸੰਰਚਨਾ ਫਾਇਲ</short>
+	        <long>XRandR ਪਲੱਗਇਨ ਇਸ ਕੁੰਜੀ ਰਾਹੀਂ ਦਿੱਤੀ ਡਿਫਾਲਟ ਸੰਰਚਨਾ &apos;ਚ ਫਾਇਲ ਲੱਭੇਗੀ। ਇਹ ~/.config/monitors.xml ਵਰਗੀ ਹੁੰਦੀ ਹੈ, ਜੋ ਕਿ ਆਮ ਤੌਰ ਉੱਤੇ ਯੂਜ਼ਰ ਦੀ ਘਰ ਡਾਇਰੈਕਟਰੀ &apos;ਚ ਸਟੋਰ ਕੀਤੀ ਜਾਂਦੀ ਹੈ। ਜੇ ਯੂਜ਼ਰ ਕੋਲ ਇਹ ਫਾਇਲ ਨਾ ਹੋਵੇ  ਜਾਂ ਜੇ ਹੋਵੇ, ਪਰ ਯੂਜ਼ਰ ਦੇ ਮਾਨੀਟਰ ਸੈੱਟਅੱਪ ਨਾਲ ਨਾ ਮਿਲਦੀ ਹੋਵੇ ਤਾਂ, ਇਸ ਕੁੰਜੀ ਰਾਹੀਂ ਦਿੱਤੀ ਫਾਇਲ ਵਰਤੀ ਜਾਵੇਗੀ।</long>
+            </locale>
+
+            <locale name="pl">
+	        <short>Plik domyślnej konfiguracji RandR</short>
+	        <long>Wtyczka XRandR będzie wyszukiwała domyślną konfigurację w pliku określonym w tym kluczu. Jest ona podobna do pliku ~/.config/monitors.xml, który zwykle jest przechowywany w katalogach domowych użytkowników. Jeśli użytkownik nie posiada takiego pliku, lub posiada plik nie pasujący do ustawienia monitorów, to zostanie użyty plik określony w tym kluczu.</long>
+            </locale>
+
+            <locale name="pt">
+	        <short>Ficheiro com a configuração por omissão do RandR</short>
+	        <long>O plugin XRandR irá procurar a configuração por omissão no ficheiro especificado por esta chave. Este é similar ao ~/.config/monitors.xml que normalmente é armazenado nas pastas pessoais dos utilizadores. Se um utilizador não possuir tal ficheiro, ou possuir um que não corresponda à configuração de monitores do utilizador, então será utilizado o ficheiro definido por esta chave.</long>
+            </locale>
+
+            <locale name="pt_BR">
+	        <short>Arquivo de configuração padrão para RandR</short>
+	        <long>O plug-in XRandR irá procurar por uma configuração padrão no arquivo especificado por esta chave. Isto é similar a ~/.config/monitors.xml que normalmente é armazenado no diretório home do usuário. Se um usuário não tem um arquivo desse tipo ou tem um que não corresponda à configuração de usuário para monitores, então o arquivo especificado por esta chave será usado.</long>
+            </locale>
+
+            <locale name="ro">
+	        <short>Fișierul de configurație implicit pentru RandR</short>
+	        <long>Modulul XRandR va căuta configurația implicită în fișierul specificat de această cheie. Este similar cu ~/.config/monitors.xml care în mod normal este stocat în dosarul personal al utilizatorului. Dacă un utilizator nu are un astfel de fișier, sau dacă acesta nu se potrivește cu configurația monitoarelor, se va utiliza fișierul specificat de această cheie.</long>
+            </locale>
+
+            <locale name="ru">
+	        <short>Файл конфигурации RandR по умолчанию</short>
+	        <long>Модуль XRandR будет искать конфигурацию по умолчанию в указанном в этом ключе файле. Он похож на файл ~/.config/monitors.xml, который обычно находится в домашних каталогах пользователей. Если у пользователя нет такого файла, или имеющийся файл не соответствует конфигурации мониторов, то тогда будет использоваться указанный в данном ключе файл.</long>
+            </locale>
+
+            <locale name="sl">
+	        <short>Nastavitvena datoteka za privzeto nastavitev XRandR</short>
+	        <long>Vstavek XRandR preišče privzete nastavitve v datoteki, ki je določena na tem mestu. To je podobna datoteka kot je datoteka ~/.config/monitors.xml, ki je običajno shranjena v uporabnikovi mapi. V kolikor uporabnik v osebni mapi te datoteke nima, ali pa jo ima, vendar ni skladna z nastavitvami zaslonov, bo uporabljena datoteka določena na tem mestu.</long>
+            </locale>
+
+            <locale name="sr">
+	        <short>Датотека за подразумевана РандР подешавања</short>
+	        <long>ИксРандР додатак ће тражити подразумевана подешавања у датотеци из овог кључа. Ово је слично као ~/.config/monitors.xml која се обично чува у личном директоријуму корисника. Датотека из овог кључа се користи уколико нема такве датотеке, или се она не поклапа са подешавањима екрана.</long>
+            </locale>
+
+            <locale name="sr@latin">
+	        <short>Datoteka za podrazumevana RandR podešavanja</short>
+	        <long>IksRandR dodatak će tražiti podrazumevana podešavanja u datoteci iz ovog ključa. Ovo je slično kao ~/.config/monitors.xml koja se obično čuva u ličnom direktorijumu korisnika. Datoteka iz ovog ključa se koristi ukoliko nema takve datoteke, ili se ona ne poklapa sa podešavanjima ekrana.</long>
+            </locale>
+
+            <locale name="sv">
+	        <short>Fil för standardkonfiguration för RandR</short>
+	        <long>Insticksmodulen XRandR kommer att leta efter en standardkonfiguration i filen som anges av denna nyckel. Detta liknar ~/.config/monitors.xml som oftast lagras i användarens hemkataloger. Om en användare inte har en sådan fil, eller har en som inte matchar användarens skärmkonfiguration, så kommer filen som anges av denna nyckel att användas istället.</long>
+            </locale>
+
+            <locale name="ta">
+	        <short>RandR க்கு முன்னிருப்பு அமைப்பு</short>
+	        <long>RandR சொருகி இந்த விசை குறிப்பிடும் கோப்பில்  முன்னிருப்பு அமைப்பு ஒன்றை தேடும். வழக்கமாக பயனரின் இல்ல அடைவில் அமைக்கப்படும் ~/.config/monitors.xml  போன்றதே இது. பயனர் அந்த கோப்பை வைத்து இல்லாவிட்டால் அல்லது அது பயனரின் அமைக்கப்பட்ட திரைகளுக்கு பொருந்தாவிட்டால் இந்த விசை குறிப்பிடும் கோப்பை பயன்படுத்தும்.</long>
+            </locale>
+
+            <locale name="zh_CN">
+	        <short>RandR 默认配置文件</short>
+	        <long>XRandR 插件将在本项指定的文件中寻找默认配置。通常，这类似于 获取存储在家目录下的~/.config/monitors.xml。如果用户没有这样的文件，或者有一个不符合用户显示器的设置，然后本项指定的文件将被替代。</long>
+            </locale>
+
+            <locale name="zh_HK">
+	        <short>RandR 的預設組態檔案</short>
+	        <long>XRandR 外掛程式會在這個設定鍵指定的檔案中尋找預設的組態。這很類似通常儲存在使用者家目錄的 ~/.config/monitors.xml。如果使用者沒有這個檔案，或是雖然有卻不符含使用者的螢幕設定，就會以這個設定鍵指定的檔案來代替。</long>
+            </locale>
+
+            <locale name="zh_TW">
+	        <short>RandR 的預設組態檔案</short>
+	        <long>XRandR 外掛程式會在這個設定鍵指定的檔案中尋找預設的組態。這很類似通常儲存在使用者家目錄的 ~/.config/monitors.xml。如果使用者沒有這個檔案，或是雖然有卻不符含使用者的螢幕設定，就會以這個設定鍵指定的檔案來代替。</long>
+            </locale>
+        </schema>
+    </schemalist>
+</gconfschemafile>

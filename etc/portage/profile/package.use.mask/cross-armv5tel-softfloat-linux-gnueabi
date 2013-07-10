@@ -1,0 +1,5 @@
+cross-armv5tel-softfloat-linux-gnueabi/binutils -multilib
+cross-armv5tel-softfloat-linux-gnueabi/gcc -multilib
+cross-armv5tel-softfloat-linux-gnueabi/linux-headers -multilib
+cross-armv5tel-softfloat-linux-gnueabi/glibc -multilib
+cross-armv5tel-softfloat-linux-gnueabi/gdb -multilib

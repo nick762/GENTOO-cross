@@ -1,0 +1,5 @@
+cross-armv5tel-softfloat-linux-gnueabi/binutils arm -x86 -~x86
+cross-armv5tel-softfloat-linux-gnueabi/gcc * ~* **
+cross-armv5tel-softfloat-linux-gnueabi/linux-headers arm -x86 -~x86
+cross-armv5tel-softfloat-linux-gnueabi/glibc arm -x86 -~x86
+cross-armv5tel-softfloat-linux-gnueabi/gdb arm ~arm -x86 -~x86

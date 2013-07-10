@@ -1,0 +1,4 @@
+TARGET="i486-pc-linux-gnu"
+VER="2.22"
+LIBPATH="/usr/lib/binutils/i486-pc-linux-gnu/2.22"
+FAKE_TARGETS="i486-pc-linux-gnu"

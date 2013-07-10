@@ -1,0 +1,3267 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="ଏସ୍.ଏମ୍.ବି. କାର୍ଯ୍ଯଦଳ">
+						<longdesc>ବ୍ଯବହରକାରୀର ୱିଣ୍ଡୋଜ କାର୍ଯ୍ଯସମୂହ ବା ପରିସର. ନୂଆ କାର୍ଯ୍ଯସମୂହ ସମ୍ପୂର୍ଣ୍ଣ ପ୍ରଭାବ ଦେଖିବା ପାଇଁ ବ୍ଯବହରକାରୀକୁ ଲଗ ଆଉଟ କରି ପୁଣି ଲଗଇନ କରିବାକୁ ପଡ଼ିପାରେ.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="ସ୍ବଂୟ ଛାୟା ବିନ୍ଯାସ ୟୁ.ଆର.ଏଲ.">
+						<longdesc>ଛାୟା ବିନ୍ଯାସ ମୂଲ୍ଯଗୁଡ଼ିକ ପାଇଁ ୟୁ.ଆର.ଏଲ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="ଏସ୍.ଓ.ସି.କେ.ଏସ୍. ଛାୟା ସଂଯୋଗିକୀ">
+						<longdesc>&quot;/system/proxy/socks_host&quot; ଦ୍ବାରା ଉଲ୍ଲେଖିତ ଯନ୍ତ୍ରର ସଂଯୋଗିକୀ ଯେଉଁଟାକି ଛାୟାକରଣ ପାଇଁ ବ୍ଯବହାର କରାଯାଏ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="ଏସ୍.ଓ.ସି.କେ.ଏସ୍.  ଛାୟା ଆଧାର ନାମ">
+						<longdesc>ଏସ୍.ଓ.ସି.କେ.ଏସ୍. ଛାୟା ପାଇଁ ଯନ୍ତ୍ରର ନାମ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="ଏଫ୍.ଟି.ପି. ଛାୟା ସଂଯୋଗିକୀ">
+						<longdesc>&quot;/system/ftp_proxy/host&quot; ଦ୍ବାରା ଉଲ୍ଲେଖିତ ଯନ୍ତ୍ରର ସଂଯୋଗିକୀ ଯେଉଁଟାକି ଛାୟାକରଣ ପାଇଁ ବ୍ଯବହାର କରାଯାଏ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="ଏଫ୍.ଟି.ପି. ଛାୟା ଆଧାର ନାମ">
+						<longdesc>ଏଫ୍.ଟି.ପି. ଛାୟା ପାଇଁ ଯନ୍ତ୍ରର ନାମ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="ସୁରକ୍ଷିତ ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ଆଧାର ସଂଯୋଗିକୀ">
+						<longdesc>&quot;/system/proxy/secure_host&quot; ଦ୍ବାରା ଉଲ୍ଲେଖିତ ଯନ୍ତ୍ରର ସଂଯୋଗିକୀ ଯେଉଁଟାକି ଛାୟାକରଣ ପାଇଁ ବ୍ଯବହାର କରାଯାଏ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="ସୁରକ୍ଷିତ ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ଆଧାର ନାମ">
+						<longdesc>ସୁରକ୍ଷିତ ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ପାଇଁ ଯନ୍ତ୍ରର ନାମ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="ଛାୟା ବିନ୍ଯାସ ଅବସ୍ଥା">
+						<longdesc>ଛାୟା ବିନ୍ଯାସ ଅବସ୍ଥା ବାଛନ୍ତୁ. ସମ୍ଭବତଃ ମୂଲ୍ଯଗୁଡି଼କ ହେଲା &quot;none&quot;, &quot;manual&quot; ଓ &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="ଅଣଛାୟା ଆଧାର">
+						<longdesc>ଛାୟା ବଦଳରେ ସିଧାସଳଖ ଭାବରେ ସଂଯୁକ୍ତ ଆଧାରଗୁଡ଼ିକର ତାଲିକା ଏହି ଚାବିରେ ରଖାଯାଇଛି. ସମ୍ଭବତଃ ମୂଲ୍ଯଗୁଡି଼କ ହେଲା ଆଧାର ନାମ, ପରିସର (*.foo.com ଭଳି ପ୍ରାରମ୍ଭିକ ୱାଇଲ୍ଡ କାର୍ଡ ବ୍ଯବହାର କରି), ଆଇ.ପି. ଆଧାର ଠିକିଣା (ଆଇ.ପି.ଭି.୪ ଓ ଆଇ.ପି.ଭି.୬) ଓ ଜାଲକ ମୁଖା ସହିତ ଜାଲକ ଠିକଣା (୧୯୨.୧୬୮.୦.୦/୨୪ ଭଳି କିଛି).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ପ୍ରବେଶ ସଂକେତ">
+						<longdesc>ଏଚ୍.ଟି.ଟି.ପି. ଛାୟାକରଣ ବେଳେ ବୈଧିକରଣ ପାଇଁ ପ୍ରବେଶ ସଂକେତ </longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ଚାଳକନାମ">
+						<longdesc>ଏଚ୍.ଟି.ଟି.ପି. ଛାୟାକରଣ ବେଳେ ବୈଧିକରଣ ପାଇଁ ଚାଳକ ନାମ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="ଛାୟା ସେବକ ସଂଯୋଗଗୁଡି଼କ ବୈଧ କରନ୍ତୁ">
+						<longdesc>ସତ ହେଲେ, ଛାୟା ସେବକ ସହିତ ସଂଯୋଗ ପାଇଁ ବୈଧିକରଣ ଆବଶ୍ଯକ. ଚାଳକ ନାମ / ପ୍ରବେଶ ସଂକେତ &quot;/system/http_proxy/authentication_user&quot; ଓ &quot;/system/http_proxy/authentication_password&quot; ଦ୍ବାରା ଉଲ୍ଲେଖିତ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ସଂଯୋଗିକୀ">
+						<longdesc>&quot;/system/http_proxy/host&quot; ଦ୍ବାରା ଉଲ୍ଲେଖିତ ଯନ୍ତ୍ରର ସଂଯୋଗିକୀ ଯେଉଁଟାକି ଛାୟାକରଣ ପାଇଁ ବ୍ଯବହାର କରାଯାଏ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ଆଧାର ନାମ">
+						<longdesc>ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ପାଇଁ ଯନ୍ତ୍ରର ନାମ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="ଏଚ୍.ଟି.ଟି.ପି. ଛାୟା ବ୍ଯବହାର କରନ୍ତୁ">
+						<longdesc>ଇଣ୍ଟରନେଟରେ ଏଚ୍.ଟି.ଟି.ପି. ଚଳାଇଲା ବେଳେ ଛାୟା ବିନ୍ଯାସକୁ ସମର୍ଥ କରେ.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="ଡି.ଏନ୍.ଏସ୍-ଏସ୍.ଡି ସେବା ଖୋଜି ପାଇବା ପାଇଁ ଅଧିକ ପରିସର">
+						<longdesc>କମା ଦ୍ବାରା ବିଭାଜିତ ଡି.ଏନ୍.ଏସ୍-ଏସ୍.ଡି ପରିସରର ଯାହାକି &quot;network:///&quot; ଅବସ୍ଥାନରେ ଦ୍ରୁଶ୍ଯମାନ ହେବା ଉଚିତ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="ସ୍ଥାନୀୟ ଡି.ଏନ୍.ଏସ୍.-ଏସ୍.ଡି. ସେବାକୁ କିପରି ପ୍ରଦର୍ଶିତ କରାଯିବ">
+						<longdesc>ସମ୍ଭବ ମୂଲ୍ଯଗୁଡି଼କ ହେଲା &quot;merged&quot;, &quot;separate&quot; ଓ &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="tabs_open_position">
+						<local_schema short_desc="ବ୍ରାଉଜର ୱିଣ୍ଡୋରେ ଖୋଲାଯାଇଥିବା ଟ୍ୟାବଗୁଡ଼ିକୁ କେତେବେଳେ ରଖିବା ଉଚିତ।">
+							<longdesc>ଯଦି &quot;after_current_tab&quot; ସେଟକରାଯାଏ, ତେବେ ପ୍ରଚଳିତ ଟ୍ୟାବ ପରେ ନୂତନ ଟ୍ୟାବଗୁଡ଼ିକୁ ଭର୍ତ୍ତି କରାଯାଇଥାଏ। ଯଦି &quot;end&quot; ସେଟ କରାଯାଏ, ତେବେ ଟ୍ୟାବ ତାଲିକା ଅନ୍ତରେ ନୂତନ ଟ୍ୟାବଗୁଡ଼ିକ ଯୋଡ଼ିହୋଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_backup_files">
+						<local_schema short_desc="ନକଲ ସଂରକ୍ଷଣ ଫାଇଲକୁ ପ୍ରଦର୍ଶିତ କରାଯିବ କି ନାହିଁ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଇଥାଏ, ତେବେ ନକଲ ସଂରକ୍ଷଣ ଫାଇଲଗୁଡ଼ିକ ଯେପରି କି Emacs ଦ୍ୱାରା ଆରମ୍ଭ ହୋଇଥିବା ଫାଇଲଗୁଡ଼ିକୁ ଦର୍ଶାଯାଇଥାଏ। ବର୍ତ୍ତମାନ, କେବଳ ଟିଲଡେ (~) ଦ୍ୱାରା ସମାପ୍ତ ହେଉଥିବା ଫାଇଲଗୁଡ଼ିକୁ ନକଲ ସଂରକ୍ଷଣ ଫାଇଲ ଆକାରରେ ଗ୍ରହଣ କରାଯାଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="ଲୁକ୍କାୟିତ ଫାଇଲକୁ ପ୍ରଦର୍ଶିତ କରାଯିବ କି ନାହିଁ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ ଫାଇଲ ପରିଚାଳକରେ ଲୁକ୍କାଇତ ଫାଇଲଗୁଡ଼ିକୁ ଦର୍ଶାଯାଇଥାଏ। ଲୁକ୍କାଇତ ଫାଇଲଗୁଡ଼ିକ ହେଉଛି ଡଟ ଫାଇଲ ଅଥବା ଫୋଲଡରର .hidden ଫାଇଲରେ ତାଲିକାଭୁକ୍ତ ଫାଇଲ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>କ୍ୟାଶରେ ଥିବା କ୍ଷୁଦ୍ର ଚିତ୍ର ପାଇଁ ସର୍ବାଧିକ ବୟସ, ମେଗାବାଇଟରେରେ. ସଫାକରିବାକୁ ନିଷ୍କ୍ରିୟ କରିବା ପାଇଁ -1ବିନ୍ୟାସ କରନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>କ୍ୟାଶରେ ଥିବା କ୍ଷୁଦ୍ର ଚିତ୍ର ପାଇଁ ସର୍ବାଧିକ ବୟସ, ଦିନରେ. ସଫାକରିବାକୁ ନିଷ୍କ୍ରିୟ କରିବା ପାଇଁ -1ବିନ୍ୟାସ କରନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="ନିବେଶ ପ୍ରତିକ୍ରିୟା ଧ୍ୱନୀ">
+							<longdesc>ନିବେଶ ଘଟଣାରେ ଧ୍ବନି ବଜାଯିବ କି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="ଧ୍ୱନୀ ପ୍ରସଙ୍ଗ ନାମ">
+							<longdesc>ଘଟଣା ଧ୍ଵନୀରେ ବ୍ଯବହାର ାଇଁ ବଥିବା XDG ଧ୍ୱନୀ ପ୍ରସଙ୍ଗ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="ଘଟଣା ପାଇଁ ଧ୍ବନି.">
+							<longdesc>ବ୍ଯବହାରକାରୀ ଘଟଣାରେ ଧ୍ବନି ବଜାଯିବ କି</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="ଇ.ଓସ.ଡି. ସକ୍ରିୟ କରନ୍ତୁ">
+							<longdesc>ଧ୍ବନି ସେବକ ପ୍ରାରମ୍ଭ ସକ୍ରିୟ କରନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ମିଶ୍ରଣ ଟ୍ରାକ">
+							<longdesc>ବହୁମାଧ୍ଯମ କି-ବାଇଣ୍ଡିଙ୍ଗ ଦ୍ବାରା ବ୍ଯବହୃତ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ମିଶ୍ରଣ ଟ୍ରାକ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ମିଶ୍ରଣ ଉପକରଣ">
+							<longdesc>ବହୁମାଧ୍ଯମ କି-ବାଇଣ୍ଡିଙ୍ଗ ଦ୍ବାରା ବ୍ଯବହୃତ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ମିଶ୍ରଣ ଉପକରଣ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="ଫାଇଲ ଚିତ୍ରସଂକେତ ପ୍ରସଙ୍ଗ">
+							<longdesc>ଫାଇଲ ଚିତ୍ରସଂକେତ ପ୍ରଦର୍ଶନ ପାଇଁ ବ୍ଯବହୃତ ପ୍ରସଙ୍ଗ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="&apos;ୟୁନିକୋଡ୍ ନିୟନ୍ତ୍ରଣ ଅକ୍ଷର&apos; ମେନୁ ପ୍ରଦର୍ଶିତ କରନ୍ତୁ">
+							<longdesc>ଭରଣ ଓ ପାଠ୍ଯ ଦୃଶ୍ଯର ପ୍ରସଙ୍ଗ ତାଲିକାନୁଗୁଡ଼ିକ ନିୟନ୍ତ୍ରଣ ଅକ୍ଷର ଯୋଡ଼ିବାର ସମ୍ଭାବନା ଦେବ  ଉଚିତ .କି</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="&apos;ନିବେଶ ପ୍ରକ୍ରିୟା&apos; ମେନୁ ପ୍ରଦର୍ଶିତ କରନ୍ତୁ">
+							<longdesc>ଭରଣ ଓ ପାଠ୍ଯ ଦୃଶ୍ଯର ପ୍ରସଙ୍ଗ ତାଲିକାଗୁଡ଼ିକ ନିବେଶ ଧାରା ବଦଳାଇବାର ସମ୍ଭାବନା ଦେବା ଉଚିତ କି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="ମେନୁ ପଟି ତ୍ବରକ">
+							<longdesc>ମେନୁ ପଟି ଖୋଲିବା ପାଇଁ  ଚାବି ପଟି ସଂକ୍ଷିପ୍ତ ପଥ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="ଜି.ଟି.କେ ଫାଇଲ ଚୟକ ପାଇଁ ଏକକାଂଶ">
+							<longdesc>GtkFileChooser ୱିଜେଟର ଫାଇଲ ତନ୍ତ୍ର ମଡେଲ ପାଇଁ ବ୍ଯବହୃତ ଏକକାଂଶ,ସମ୍ଭାବ୍ଯ ମୂଲ୍ଯଗୁଡ଼ିକ ହେଲା &quot;gio&quot;,&quot;gnome-vfs&quot; ଏବଂ &quot;gtk+&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="ଅବସ୍ଥିତି ପଟି ଡାହାଣକୁ">
+							<longdesc>ଡାହାଣକୁ ସାଧନ ପଟି ମାପକ ପ୍ରଦର୍ଶିତ କରାଯିବ କି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="ଇଚ୍ଛାରୂପ ଅକ୍ଷରରୂପ ବ୍ଯବହାର କରନ୍ତୁ">
+							<longdesc>ଡି.ଟି.କେ.+ ପ୍ରୟୋଗରେ ଇଚ୍ଛାପୂପ ଅକ୍ଷରରୂପ ବ୍ଯବହାର କରାଯିବ କି</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="ଏକମାପ ଅକ୍ଷରରୂପ">
+							<longdesc>ଟର୍ମିନାଲ ଭଳି ଅବସ୍ଥାନରେ ବ୍ଯବହୃତ ଏକମାପ (ସ୍ଥିର-ଓସାର) ଅକ୍ଷରରୂପର ନାମ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="ଦଲିଲର ଅକ୍ଷରରୂପ">
+							<longdesc>ଦଲିଲ ପଢ଼ିବା ପାଇଁ ବ୍ଯବହୃତ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଅକ୍ଷରରୂପର ନାମ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="GTK IM ଏକକାଂଶ">
+							<longdesc>GTK+ ଦ୍ବାରା ବ୍ଯବହୃତ ନିବେଶ ଧାରାର ଅବସ୍ଥିତି ଶୈଳୀର ନାମ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="ଜି.ଟି.କେ. ଆଇ.ଏମ. ଅବସ୍ଥିତ ଶୈଳୀ">
+							<longdesc>ଜି.ଟି.କେ.+ ଦ୍ବାରା ବ୍ଯବହୃତ ଜି.ଟି.କେ.+ ନିବେଶ ଧାରାର ଅବସ୍ଥିତି ଶୈଳୀର ନାମ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="ଜି.ଟି.କେ. ଆଇ.ଏମ. ଉପସମ୍ପାଦନ ଶୈଳୀ">
+							<longdesc>ଜି.ଟି.କେ.+ ଦ୍ବାରା ବ୍ଯବହୃତ ଜି.ଟି.କେ.+ ନିବେଶ ଧାରାର ଉପସମ୍ପାଦନ ଶୈଳୀର ନାମ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଅକ୍ଷରରୂପ">
+							<longdesc>ଜି.ଟି.କେ.+ ଦ୍ବାରା ବ୍ଯବହୃତ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଅକ୍ଷରରୂପର ନାମ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="ଜି.ଟି.କେ.+ ପ୍ରସଙ୍ଗ">
+							<longdesc>ଜି.ଟି.କେ.+ ଦ୍ବାରା ବ୍ଯବହୃତ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ପ୍ରସଙ୍ଗର ଆଧାର ନାମ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="ଜି.ଟି.କେ.+ ପ୍ରସଙ୍ଗ">
+							<longdesc>ଜି.ଟି.କେ.+ ଦ୍ବାରା ବ୍ଯବହୃତ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ପ୍ରସଙ୍ଗର ଆଧାର ନାମ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="ଚିତ୍ରସଂଙ୍କେତ ପ୍ରସଙ୍ଗ">
+							<longdesc>ଫଳକ, ନଟିଲସ୍ ଇତ୍ଯାଦି ପାଇଁ ବ୍ଯବହୃତ ଚିତ୍ରସଂଙ୍କେତ ପ୍ରସଙ୍ଗ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="ଦର୍ଶିକା ମିଟିମିଟିକରଣ ସମୟ">
+							<longdesc>ଦର୍ଶିକା ମିଟିମିଟିକରଣର ଚକ୍ରର ଲମ୍ବ, ମିଲିସେକେଣ୍ଡରେ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="ଦର୍ଶିକା ମିଟିମିଟିକରଣ">
+							<longdesc>ଦର୍ଶିକା ମିଟିମିଟି କରିବା ଉଚିତ କି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="ସାଧନ ପଟି ଟିତ୍ରସଂଙ୍କେତର ଆକାର">
+							<longdesc>ସାଧନପଟିରେ ଥିବା &quot;small-toolbar&quot; ରେ ଅଥବା &quot;large-toolbar&quot;ର ଆକାର.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="ପ୍ରତ୍ଯାଶିତ ସାଧନ ପଟି">
+							<longdesc>ଚାଳକ ସାଧନ ପଟିକୁ ପ୍ରତ୍ଯାଶିତ କରି ଚାରିପଟେ ଘୁଞ୍ଚାଇପାରିବ କି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="ପ୍ରତ୍ଯାଶିତ ମେନୁ ପଟି">
+							<longdesc>ଚାଳକ ତାଲିକା ପଟିକୁ ପ୍ରତ୍ଯାଶିତ ଚାରିପଟେ ଘୁଞ୍ଚାଇ ପାରିବେ କି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="ବଟନଗୁଡ଼ିକରେ ଚିତ୍ରସଂଙ୍କେତ ଅଛି">
+							<longdesc>ବଟନଗୁଡ଼ିକ ବଟନ ପାଠ୍ୟ ସହିତ ଚିତ୍ରସଂଙ୍କେତକୁ ପ୍ରଦର୍ଶନ କରିପାରିବେ କି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="ମେନୁରେ ଚିତ୍ରସଂଙ୍କେତ ଅଛି">
+							<longdesc>ତାଲିକାଗୁଡ଼ିକ ତାଲିକା ଭରଣ ପରବର୍ତ୍ତି ଚିତ୍ରସଂଙ୍କେତକୁ ପ୍ରଦର୍ଶନ କରିପାରିବେ କି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="ସାଧନ ପଟି ଶୈଳୀ">
+							<longdesc>ସାଧନ ପଟି ଶୈଳୀ. ବୈଧ ମୂଲ୍ଯ ଗୁଡ଼ିକ ହେଲା &quot;both&quot;, &quot;both-horiz&quot;, &quot;icons&quot;, ଏବଂ &quot;text&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="ତ୍ବରକ ପରିବର୍ତନ କରି ପାରେ">
+							<longdesc>ତାଲିକାରେ ଥିବା ଗୋଟିଏ ସକ୍ରିୟ ବସ୍ତୁ ଉପରେ ଅବସ୍ଥିତ ଗୋଟିଏ ନୂତନ ତ୍ବରକକୁ ଚାଳକଟି ଗତିଶୀଳ ଭାବରେ ଟାଇପ କରିପାରିବ କି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="ମେନୁରେ ଛିଣ୍ଡାରେଖା ଅଛି">
+							<longdesc>ତାଲିକାନୁର ଛିଣ୍ଡାରେଖା ରହିବା ଉଚିତ .କି</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="ଜୀବନାୟନ ସକ୍ରିୟ କରନ୍ତୁ">
+							<longdesc>ଜୀବନାୟନ ପ୍ରଦର୍ଶିତ କରାଯିବ କି. ଲକ୍ଷ୍ଯ କରନ୍ତୁ: ଏହା ଏକ ଜାଗତିକ ଚାବି, ଏହା ୱିଣ୍ଡୋ ପରିଚାଳକ, ଫଳକ ଇତ୍ଯାଦିର ଆଚରଣ ବଦଳାଏ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="ବ୍ଯବହାରସରଳତା ସକ୍ରିୟ କରନ୍ତୁ">
+							<longdesc>ପ୍ରୟୋଗଗୁଡ଼ିକର ବ୍ଯବହାରସରଳତା ସହାୟତା ପ୍ରାପ୍ତ ହୋଇଛି କି. କି</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="ରଙ୍ଗ ଛାୟଙ୍କନ ପ୍ରକାର">
+							<longdesc>ପୃଷ୍ଠଭୂମି ରଙ୍ଗ କିପରି ଛାୟଙ୍କନ କରାଯିବ. ସମ୍ଭାବ୍ଯ ମୂଲ୍ଯଗୁଡ଼ିକ ହେଲା &quot;horizontal-gradient&quot;, &quot;vertical-gradient&quot;, ଏବଂ &quot;solid&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="ଦ୍ବିତୀୟକ ରଙ୍ଗ">
+							<longdesc>କ୍ରମାନତ ରଙ୍ଗ ଅଙ୍କନରେ, ଡାହାଣ ବା ତଳ ରଙ୍ଗ, ଉର୍ଦ୍ଧ ରଙ୍ଗ ପାଇଁ ବ୍ଯବହୃତ ନୁହେଁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="ମୌଳିକ ରଙ୍ଗ">
+							<longdesc>କ୍ରମାନତ ବା ଉର୍ଦ୍ଧ ରଙ୍ଗ ଅଙ୍କନରେ, ବାମ ବା ଉପର ରଙ୍ଗ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="ଚିତ୍ରର ସ୍ବଚ୍ଛତା">
+							<longdesc>ପୃଷ୍ଠଭୂମି ଚିତ୍ର ଅଙ୍କନ ପାଇଁ ସ୍ବଚ୍ଛତା.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="ଚିତ୍ର ଫାଇଲ ନାମ">
+							<longdesc>ପ୍ରୁଷ୍ଠଭୂମି ଚିତ୍ର ପାଇଁ ବ୍ଯବହୃତ ଫାଇଲ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="ଚିତ୍ର ପସନ୍ଦ">
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="ଡେସ୍କଟପ୍  ପୃଷ୍ଠଭୂମି ଅଙ୍କନ କରନ୍ତୁ">
+							<longdesc>GNOMEମ ଡେସ୍କଟପ ପୃଷ୍ଠଭୂମି ଅଙ୍କନ କରିବେ କି।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="ସବୁ ବାହ୍ଯ କ୍ଷୁଦ୍ର ଚିତ୍ରଣକୁ ନିଷ୍କ୍ରିୟ କରନ୍ତୁ">
+							<longdesc>ସବୁ ବାହ୍ଯ କ୍ଷୁଦ୍ର ଚିତ୍ରଣକୁ ନିଷ୍କ୍ରିୟ କରିବା ପାଇଁ ସତ ବିନ୍ଯାସ କରନ୍ତୁ, ସେହିଗୁଡ଼ିକ ସ୍ବତନ୍ତ୍ର ଭାବରେ ନିଷ୍କ୍ରିୟ/ସକ୍ରିୟ କରାଯାଇଛନ୍ତି କି ନାହିଁ.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="application@x-font-otf">
+						<entry name="enable">
+							<local_schema short_desc="ଓପନଟାଇପ ଫଣ୍ଟକୁ ଥମ୍ବନେଇଲ କରାୟିବ କି ନାହିଁ">
+								<longdesc>ୟଦି ସତ୍ଯକୁ ସେଟ ହୁଏ, ତେବେ ଓପନଟାଇପ ଫଣ୍ଟ ଥମ୍ବନେଇଲଡ ହୋଇୟିବ ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="ଥମ୍ବନେଇଲ ଆଦେଶ ଓପନଟାଇପ ଫଣ୍ଟ ଗୁଡିକ ପାଇଁ">
+								<longdesc>ଓପନଟାଇପ ଫଣ୍ଟ ଗୁଡିକ ପାଇଁ ଥମ୍ବନେଇଲ ସୃଷ୍ଟିକରିବା ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ଏହି କିକୁ ଆଦେଶକୁ ସେଟ କର ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-pcf">
+						<entry name="enable">
+							<local_schema short_desc="PCFଫଣ୍ଟଗୁଡିକୁ ଥମ୍ବନେଇଲ କରାୟିବ କି ନାହିଁ">
+								<longdesc>ୟଦି ସତ୍ଯକୁ ସେଟ ହୁଏ, ତେବେ PCF ଫଣ୍ଟଗୁଡିକ ଥମ୍ବନେଇଲଡ ହୋଇୟିବ ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="ଥମ୍ବନେଇଲ ଆଦେଶ PCF ଫଣ୍ଟ ଗୁଡିକ ପାଇଁ">
+								<longdesc> PCF ଫଣ୍ଟ ଗୁଡିକ ପାଇଁ ଥମ୍ବନେଇଲ ସୃଷ୍ଟିକରିବା ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ଏହି କିକୁ ଆଦେଶକୁ ସେଟ କର ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-type1">
+						<entry name="enable">
+							<local_schema short_desc="ଟାଇପ 1 ଫଣ୍ଟଗୁଡିକୁ ଥମ୍ବନେଇଲ କରାୟିବ କି ନାହିଁ ">
+								<longdesc>ୟଦି ସତ୍ଯ ସେଟ ହୁଏ, ତେବେ ଟାଇପ1 ଫଣ୍ଟଗୁଡିକ ଥମ୍ବନେଇଲଡ ହୋଇୟିବ ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="ଥମ୍ବନେଇଲ ଆଦେଶ ଟାଇପ1 ଫଣ୍ଟ ଗୁଡିକ ପାଇଁ">
+								<longdesc>ଟାଇପ1 ଫଣ୍ଟ ଗୁଡିକ ପାଇଁ ଥମ୍ବନେଇଲ ସୃଷ୍ଟିକରିବା ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ଏହି କିକୁ ଆଦେଶକୁ ସେଟ କର ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-ttf">
+						<entry name="enable">
+							<local_schema short_desc="ଟ୍ରୁ ଟାଇପ ଫଣ୍ଟକୁ ଥମ୍ବନେଇଲ କରାୟିବ କି ନାହିଁ">
+								<longdesc>ୟଦି ସତ୍ଯକୁ ସେଟ ହୁଏ, ତେବେ ଟ୍ରୁଟାଇପ ଫଣ୍ଟଗୁଡିକ ଥମ୍ବନେଇଲଡ ହୋଇୟିବ ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="ଥମ୍ବନେଇଲ ଆଦେଶ ଟ୍ରୁ ଟାଇପ ଫଣ୍ଟ ଗୁଡିକ ପାଇଁ">
+								<longdesc>ଟ୍ରୁଟାଇପ ଫଣ୍ଟ ଗୁଡିକ ପାଇଁ ଥମ୍ବନେଇଲ ସୃଷ୍ଟିକରିବା ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ଏହି କିକୁ ଆଦେଶକୁ ସେଟ କର ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="ଚାବି ପଟି ତାଲା ବନ୍ଦ କରିବା ସକ୍ରିୟ କି">
+							<longdesc>ଚାବି ପଟି ତାଲା ବନ୍ଦ କରିବା ସକ୍ରିୟ କି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="ବିରତିକୁ ପଛକୁ ଘୁଞ୍ଚାଇବା ପାଇଁ ଅନୁମତି ଦିଅନ୍ତୁ">
+							<longdesc>ଟାଇପିଙ୍ଗ ବିରତି ପରଦା ପଛକୁ ଘୁଞ୍ଚାଯାଇପାରିବ କି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="ବିରତି ସମୟ">
+							<longdesc>ଟାଇପିଙ୍ଗ ବିରତିର ସମୟ, ମିନିଟରେ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="ଟାଇପ ସମୟ">
+							<longdesc>ବିରତି ଅବସ୍ଥା ଆରମ୍ଭ ହେବା ପୂର୍ବରୁ ଟାଇପିଙ୍ଗର ସମୟ, ମିନିଟରେ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="URL ଏବଂ MIME ପ୍ରକାର ନିୟନ୍ତ୍ରକକୁ ନିଷ୍ଟ୍ରିୟ କରନ୍ତୁ">
+							<longdesc>କୌଣସି URL ଏବଂ MIME ପ୍ରକାର ନିୟନ୍ତ୍ରକ ପ୍ରୟୋଗକୁ ଚାଲିବାରୁ ପ୍ରତିରୋଧ କରନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="ପରଦା ତାଳକନ ପ୍ରକ୍ରିୟାକୁ ନିଷ୍କ୍ରିୟ କରନ୍ତୁ">
+							<longdesc>ଏହି ପରଦାକୁ ତାଳକନ କରିବାରୁ ଚାଳକକୁ ଅଟକାନ୍ତୁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="ଚାଳକ ପରିବର୍ତ୍ତନ ପ୍ରକ୍ରିୟାକୁ ନିଷ୍କ୍ରିୟ କରନ୍ତୁ">
+							<longdesc>ଚାଳକର ଅଧିବେଶନ ସକ୍ରିୟ ଥିବା ସମୟରେ ତାହାକୁ ଅନ୍ଯ ଗୋଟିଏ ଖାତାକୁ ପରିବର୍ତ୍ତନ କରିବାରୁ ଅଟକାନ୍ତୁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="ମୂଦ୍ରଣ ବ୍ଯବସ୍ଥାକୁ ନିଷ୍କ୍ରିୟ କରନ୍ତୁ">
+							<longdesc>ବ୍ଯବହାରକାରୀକୁ ମୂଦ୍ରଣ ବିନ୍ଯାସ ବଦଳାଇବାରୁ ଅଟକାନ୍ତୁ. ଉଦାହରଣ ସ୍ବରୂପ, ଏହା ସବୁ ପ୍ରୟୋଗର &quot;ମୂଦ୍ରଣ ବ୍ଯବସ୍ଥା&quot; ସଂଳାପ ପାଇଁ ପ୍ରବେଶାନୂମତି ନିଷ୍କ୍ରିୟ କରିଦେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="ମୂଦ୍ରଣ ନିଷ୍କ୍ରିୟ କରନ୍ତୁ">
+							<longdesc>ବ୍ଯବହାରକାରୀକୁ ମୂଦ୍ରଣ କରିବାରୁ ଅଟକାନ୍ତୁ. ଉଦାହରଣ ସ୍ବରୂପ, ଏହା ସବୁ ପ୍ରୟୋଗର &quot;ମୂଦ୍ରଣ&quot; ସଂଳାପ ପାଇଁ ପ୍ରବେଶାନୂମତି ନିଷ୍କ୍ରିୟ କରିଦେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="ଡିସ୍କରେ ଫାଇଲ ସଂରକ୍ଷଣ ନିଷ୍କ୍ରିୟ କରନ୍ତୁ">
+							<longdesc>ବ୍ଯବହାରକାରୀକୁ ଡିସ୍କରେ ଫାଇଲ ସଂରକ୍ଷଣ କରିବାରୁ ଅଟକାନ୍ତୁ. ଉଦାହରଣ ସ୍ବରୂପ, ଏହା ସବୁ ପ୍ରୟୋଗର &quot;ନୂଆ ନାଁରେ ସଂରକ୍ଷଣ&quot; ସଂଳାପ ପାଇଁ ପ୍ରବେଶାନୂମତି ନିଷ୍କ୍ରିୟ କରିଦେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="ପାଠ୍ଯ ନିର୍ଦ୍ଦେଶକୁ ନିଷ୍କ୍ରିୟ କରନ୍ତୁ">
+							<longdesc>ବ୍ଯବହାରକାରୀକୁ ଟର୍ମିନାଲ ଖୋଲିବା ବା ନିଷ୍ପାଦନ ପାଇଁ ପାଠ୍ଯ ନିର୍ଦ୍ଦେଶ ଉଲ୍ଲେଖିତ କରିବାରୁ ଅଟକାନ୍ତୁ. ଉଦାହରଣ ସ୍ବରୂପ, ଏହା ଫଲକର &quot;ପ୍ରୟୋଗ ଚଳାନ୍ତୁ&quot; ସଂଳାପ ପାଇଁ ପ୍ରବେଶାନୂମତି ନିଷ୍କ୍ରିୟ କରିଦେବ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="session">
+					<entry name="required_components_list">
+						<local_schema short_desc="ଆବଶ୍ୟକୀୟ ଅଧିବେଶନ ଉପାଦାନଗୁଡ଼ିକ">
+							<longdesc>ଅଧିବେଶନର ଅଂଶ ଭାବରେ ଆବଶ୍ୟକ ଉପାଦାନଗୁଡ଼ିକର ତାଲିକା। (ପ୍ରତ୍ୟେକ ଉପାଦାନ &quot;/desktop/gnome/session/required_components&quot; ଅନ୍ତର୍ଗତରେ ଗୋଟିଏ କିର ନାମକରଣ କରିଥାଏ)। ପ୍ରାରମ୍ଭିକ ପ୍ରୟୋଗର ପସନ୍ଦ ସାଧନ ସାଧାରଣତଃ ଚାଳକମାନଙ୍କୁ ଅଧିବେଶନରୁ ଆବଶ୍ୟକୀୟ ଉପାଦାନ କାଢ଼ିଥାଏ, ଏବଂ ଅଧିବେଶନ ପରିଚାଳକ ସ୍ୱୟଂଚାଳିତ ଭାବରେ ଆବଶ୍ୟକୀୟ ଉପାଦାନଗୁଡ଼ିକୁ ଅଧିବେଶନରେ ଲଗଇନ ସମୟରେ ଯୋଗ କରିଥାଏ ଯଦି ସେମାନଙ୍କୁ କଢ଼ାଯାଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_session">
+						<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଅଧିବେଶନ">
+							<longdesc>ପ୍ରୟୋଗ ଗୁଡିକର ତାଲିକା ଯାହାକି ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଅଧିବେଶନର ଅଂଶବିଶେଷ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="idle_delay">
+						<local_schema short_desc="ଅଧିବେଶନ ନିଷ୍କ୍ରିଯ ବୋଲି ବିଚାର କରିବା ପୂର୍ବରୁ ସମଯ">
+							<longdesc>ଅଧିବେଶନ ନିଷ୍କ୍ରିଯ ବୋଲି ବିଚାର କରାୟିବା ପୂର୍ବରୁ ନିଷ୍କ୍ରିଯ ହେବାର ମିନିଟଗୁଡିକର ସଂଖ୍ଯା</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="required_components">
+						<entry name="filemanager">
+							<local_schema short_desc="ଫାଇଲ ପରିଚାଳକ">
+								<longdesc>ଫାଇଲ ପରିଚାଳକ ଡେସ୍କଟପ ଚିତ୍ରସଂକେତଗୁଡ଼ିକୁ ପ୍ରଦାନ କରିଥାଏ ଏବଂ ଆପଣଙ୍କର ସଂରକ୍ଷିତ ଫାଇଲଗୁଡ଼ିକରେ କାର୍ଯ୍ୟ କିରବା ପାଇଁ ଅନୁମତି ଦେଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="panel">
+							<local_schema short_desc="ଫଳକ">
+								<longdesc>ପଟ୍ଟିକା ତାଲିକା, ୱିଣ୍ଡୋ ତାଲିକା, ସ୍ଥିତି ଚିତ୍ରସଂକେତ, ଘଡ଼ି, ଇତ୍ୟାଦି ଧାରଣ କରିଥିବା ପରଦାର ଉପର ଅଥବା ତଳ ପଟିରେ ଫଳକ ପ୍ରଦାନ କରିଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="windowmanager">
+							<local_schema short_desc="ୱିଣ୍ଡୋ ପରିଚାଳକ">
+								<longdesc>ୱିଣ୍ଡୋ ପରିଚାଳକଟି ଗୋଟିଏ ପ୍ରଗ୍ରାମ ଯାହାକି ଶୀର୍ଷକ ପଟି ଏବଂ ୱିଣ୍ଡୋ ଚାରିପଟେ ଧାର ଅଙ୍କନ କରିଥାଏ, ଏବଂ ୱିଣ୍ଡୋଗୁଡ଼ିକର ଆକାର ପରିବର୍ତ୍ତନ ପାଇଁ ଆପଣଙ୍କୁ ଅନୁମତି ଦେଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="font_rendering">
+					<entry name="rgba_order">
+						<local_schema short_desc="RGBA କ୍ରମ">
+							<longdesc>LCD ପରଦାରେ ଉପପିକସେଲ ଉପାଦାନଗୁଡ଼ିକର କ୍ରମ; କେବଳ ଉପନାମକରଣ ନକିରବା ପାଇଁ ବ୍ୟବହୃତ ହୋଇଥାଏ &quot;rgba&quot;। ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି: &quot;rgb&quot; ବାମପଟେ ଲାଲିପାଇଁ (ସାଧାରଣତଃ), &quot;bgr&quot; ବାମରେ ନିଳ ପାଇଁ, &quot;vrgb&quot; ଉପରେ ଲାଲି ପାଇଁ, &quot;vbgr&quot; ତଳେ ଲାଲି ପାଇଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hinting">
+						<local_schema short_desc="ସଙ୍କେତ ଦେଉଅଛି">
+							<longdesc>ଅକ୍ଷରରୂପ ଚିତ୍ରଣକୁ ବ୍ୟବହାର କରିବା ପାଇଁ ସୂଚନା ପ୍ରକାର। ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି: &quot;none&quot; ସୂଚନା ନଥିବା ପାଇଁ, &quot;slight&quot; ମୌଳିକ ସୂଚନା ପାଇଁ, &quot;medium&quot; ମଧ୍ଯମ ସୂଚନା ପାଇଁ, ଏବଂ &quot;full&quot; ସର୍ବାଧିକ ସୂଚନା ପାଇଁ (ପରବର୍ତ୍ତୀ ଫର୍ମର ବିକୃତି ହୋଇପାରେ)।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="antialiasing">
+						<local_schema short_desc="ଛବିମଶୃଣକରଣ">
+							<longdesc>ଅକ୍ଷରରୂପ ଚିତ୍ରଣରେ ବ୍ୟବହାର କରିବାକୁ ଉପନାନକରଣ ନକିରବାର ପ୍ରକାର। ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି: &quot;none&quot; ଉପନାମକରଣ ନକରିବା ପାଇଁ, &quot;grayscale&quot; ମାନକ grayscale ଉପନାମକରଣ, ଏବଂ &quot;rgba&quot; ଉପପିକସେଲ ଉପନାମକରଣ ପାଇଁ (କେବଳ LCD ପରଦା)।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="dpi">
+						<local_schema short_desc="DPI">
+							<longdesc>ଅକ୍ଷରରୂପକୁ ପିକସେଲ ଆକାରରେ ପରିବର୍ତ୍ତନ କରିବା ପାଇଁ ବ୍ୟବହୃତ ବିଭେଦନ, ଇଞ୍ଚ ପ୍ରତି ଡଟଗୁଡ଼ିକ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="ପ୍ରାରମ୍ଭିକ ସହାୟକ ପ୍ରଯୁକ୍ତି ପ୍ରୟୋଗ">
+								<longdesc>GNOME ଡେସ୍କଟପକୁ ଲଗଇନ୍ ସମୟରେ ଆରମ୍ଭ କରାଯିବା ସହାୟକ ପ୍ରଯୁକ୍ତି ପ୍ରୟୋଗର ତାଲିକା</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>ରୂପାନ୍ତରକଟି ଦବାଇଲେ ବିପ୍ କରନ୍ତୁ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>ଦୁଇଟି ଚାବି ଏକାସଙ୍ଗେ ଦବାଇଲେ ନିଷ୍କ୍ରିୟ କରନ୍ତୁ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="ସର୍ବନିମ୍ନ ବିରତି, ମିଲିସେକେଣ୍ଡରେ">
+								<longdesc>@delay ମିଲିସେକେଣ୍ଡ ବିଳମ୍ବ ପର୍ଯ୍ଯନ୍ତ ଚାବି ଦବା ନ ଯାଇଥିଲେ ଅଗ୍ରାହ୍ଯ କରନ୍ତୁ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="ପ୍ରାରମ୍ଭିକ ବିଳମ୍ବ, ମିଲିସେକେଣ୍ଡରେ">
+								<longdesc>ମାଉସ୍ ଘୁଞ୍ଚା ଚାବି ଚଳାଇବା ପୂର୍ବରୁ କେତେ ମିଲିସେକେଣ୍ଡ ଅପେକ୍ଷା କରିବାକୁ ପଡିଥାଏ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="କେତେ ସମୟ ତ୍ବରଣ କରିବ, ମିଲିସେକେଣ୍ଡରେ">
+								<longdesc>0ରୁ ସର୍ବାଧିକ ଗତି ପର୍ଯ୍ଯନ୍ତ ଯିବା ପାଇଁ କେତେ ମିଲିସେକେଣ୍ଡ ଲାଗେ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="ସେକେଣ୍ଡ ପ୍ରତି ପିକ୍ସେଲ">
+								<longdesc>ସର୍ବାଧିକ ଗତିରେ ପ୍ରତି ସେକେଣ୍ଡରେ କେତେ ପିକ୍ସେଲ ଘୁଞ୍ଚାଯିବ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="ସର୍ବନିମ୍ନ ବିରତି, ମିଲିସେକେଣ୍ଡରେ">
+								<longdesc>@delay ମିଲିସେକେଣ୍ଡ ବିଳମ୍ବ ମଧ୍ଯରେ ଗୋଟିଏ ଚାବି ଏକାଧିକ ଥର ଦବାଯାଇଥିଲେ ଅଗ୍ରାହ୍ଯ କରନ୍ତୁ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_enable">
+							<local_schema short_desc="ମାଉସ କିଗୁଡ଼ିକ">
+								<longdesc>ମାଉସ କି ଗୁଡ଼ିକର କିବୋର୍ଡ ଅଭିଗମ୍ୟତା ବିଶେଷତାକୁ ଅନ କରିବା ଉଚିତ କି ନୁହଁ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_enable">
+							<local_schema short_desc="ମନ୍ଥର କିଗୁଡ଼ିକ">
+								<longdesc>ମନ୍ଥର କି ଗୁଡ଼ିକର କିବୋର୍ଡ ଅଭିଗମ୍ୟତା ବିଶେଷତାକୁ ଅନ କରିବା ଉଚିତ କି ନୁହଁ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_enable">
+							<local_schema short_desc="ଡେଉଁଥିବା କିଗୁଡ଼ିକ">
+								<longdesc>ବାଉନ୍ସ କି ଗୁଡ଼ିକର କିବୋର୍ଡ ଅଭିଗମ୍ୟତା ବିଶେଷତାକୁ ଅନ କରିବା ଉଚିତ କି ନୁହଁ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_enable">
+							<local_schema short_desc="ଷ୍ଟିକି କିଗୁଡ଼ିକ">
+								<longdesc>ଷ୍ଟିକି କି ଗୁଡ଼ିକର କିବୋର୍ଡ ଅଭିଗମ୍ୟତା ବିଶେଷତାକୁ ଅନ କରିବା ଉଚିତ କି ନୁହଁ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="keybindings">
+					<entry name="allowed_keys">
+						<local_schema short_desc="ଅନୁମୋଦିତ କିଗୁଡ଼ିକ">
+							<longdesc>ଯଦି ଖାଲି ନଥାଏ, କି ବନ୍ଧନଗୁଡ଼ିକୁ ଅଗ୍ରାହ୍ୟ କରାଯିବ ଅନ୍ୟଥା ସେମାନଙ୍କର GConf ଡିରେକ୍ଟୋରୀ ତାଲିକାରେ ଥିବ। ଅପରିବର୍ତ୍ତନୀୟ କରିବା ପାଇଁ ଏହା ଉପଯୋଗୀ ହୋଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="onscreenkeyboard">
+						<entry name="action">
+							<local_schema short_desc="ଅନ-ସ୍କ୍ରିନ କି-ବୋର୍ଡକୁ ଆଗପଛ କରନ୍ତୁ">
+								<longdesc>ଅନସ୍କ୍ରିନ କିବୋର୍ଡକୁ ଅନ କିମ୍ବା ଅଫ କରିବା ପାଇଁ ବ୍ୟବହୃତ ନିର୍ଦ୍ଦେଶ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="ଅନ-ସ୍କ୍ରିନ କି-ବୋର୍ଡକୁ ଆଗପଛ କରନ୍ତୁ">
+								<longdesc>ଅନସ୍କ୍ରିନ କିବୋର୍ଡକୁ ଆଗପଛ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="ଅନସ୍କ୍ରିନ କିବୋର୍ଡକୁ ଆଗପଛ କରିବା ପାଇଁ ଏହା କିବୋର୍ଡ ସଂକ୍ଷିପ୍ତ ପଥର ନାମ।">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="screenreader">
+						<entry name="action">
+							<local_schema short_desc="ପରଦା ପାଠକକୁ ଆଗପଛ କରନ୍ତୁ">
+								<longdesc>ପରଦା ପାଠକକୁ ଅନ କିମ୍ବା ଅଫ କରିବା ପାଇଁ ବ୍ୟବହୃତ ନିର୍ଦ୍ଦେଶ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="ପରଦା ପାଠକଙ୍କୁ ଆଗପଛ କରିବା ପାଇଁ କିବୋର୍ଡ ସକ୍ଷିପ୍ତ ପଥକୁ ନାମକରଣ କରନ୍ତୁ">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="ପରଦା ପାଠକକୁ ଆଗପଛ କରନ୍ତୁ">
+								<longdesc>ପରଦା ପାଠକକୁ ଆଗପଛ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="magnifier">
+						<entry name="action">
+							<local_schema short_desc="ଆଗପଛ ଆବର୍ଦ୍ଧକ">
+								<longdesc>ଆବର୍ଦ୍ଧକକୁ ଅନ କିମ୍ବା ଅଫ କରିବା ପାଇଁ ବ୍ୟବହୃତ ନିର୍ଦ୍ଦେଶ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="ଆବର୍ଦ୍ଧକକୁ ଆଗପଛ କରିବା ପାଇଁ ଏହା କିବୋର୍ଡ ସଂକ୍ଷିପ୍ତ ପଥର ନାମ।">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="ଆଗପଛ ଆବର୍ଦ୍ଧକ">
+								<longdesc>ଆବର୍ଦ୍ଧକକୁ ଆଗପଛ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ଏଚ323&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;h323&quot;  ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;h323&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି।">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଏଚ୍323&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ଡାକରା&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ଡାକରା&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଡାକରା&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି।">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଡାକରା&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ଲକ୍ଷ୍ଯ&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ଲକ୍ଷ୍ଯ&quot; URLs ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଲକ୍ଷ୍ଯ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି।">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଲକ୍ଷ୍ଯ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ପ୍ରପକ&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ପ୍ରପକ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ପ୍ରାପକ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି.">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଡାକରା&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ଏଚ.ଟି.ଟି.ପି.ଏସ.&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ଏଚ.ଟି.ଟି.ପି.ଏସ.&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଏଚ.ଟି.ଟି.ପି.ଏସ.&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି.">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଏଚ.ଟି.ଟି.ପି.ଏସ.&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ଏଚ.ଟି.ଟି.ପି.&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;http&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଏଚ.ଟି.ଟି.ପି.&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି.।">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଏଚ.ଟି.ଟି.ପି.&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ପ୍ରକରଣ&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ପ୍ରକରଣ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ପ୍ରକରଣ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି.">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ପ୍ରକରଣ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ସୂଚନା&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ସୂଚନା&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ସୂଚନା&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି.">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ସୂଚନା&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ଜିହେଲ୍ପ&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ଜିହେଲ୍ପ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଜିହେଲ୍ପ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି।">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ଜିହେଲ୍ପ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="ନିର୍ଦ୍ଦେଶକୁ ଟର୍ମିନାଲରେ ଚଲାନ୍ତୁ">
+								<longdesc>ସତ, ଯଦି ଏହି ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ ଟର୍ମିନାଲ୍ରେରେ ଚଳାଯିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ବର୍ଜିତ&quot; ୟୁ.ଆର.ଏଲ. ପାଇଁ ଚାଳକ">
+								<longdesc>&quot;ବର୍ଜିତ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ, ଯଦି ସକ୍ରିୟ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ବର୍ଜିତ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବା ଉଚିତ କି.">
+								<longdesc>ସତ ହେଲେ, &quot;ନିର୍ଦ୍ଦେଶ&quot; ଚାବିରେ ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶ &quot;ବର୍ଜିତ&quot; ୟୁ.ଆର.ଏଲ. ଚଳାଇବା ପାଇଁ ବ୍ଯବହୃତ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="କାର୍ଯ୍ୟଗୁଡ଼ିକାଳି ପାଇଁ ଟର୍ମିନାଲ ଆବଶ୍ଯକ">
+								<longdesc>ପୂର୍ବନିର୍ଦ୍ଧାରିତ କାର୍ଯ୍ୟ ପ୍ରୟୋଗ ଚାଲିବା ପାଇଁ ଟର୍ମିନାଲ ଆବଶ୍ଯକ କରେ କି</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ କାର୍ଯ୍ୟଗୁଡ଼ିକ">
+								<longdesc>ପୂର୍ବନିର୍ଦ୍ଧାରିତ କାର୍ଯ୍ୟର ପ୍ରୟୋଗ</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="କାଲେଣ୍ଡର ପାଇଁ ଟର୍ମିନାଲ ଆବଶ୍ଯକ">
+								<longdesc>ପୂର୍ବନିର୍ଦ୍ଧାରିତ କାଲେଣ୍ଡର ପ୍ରୟୋଗ ଚାଲିବା ଳି ପାଇଁ ଟର୍ମିନାଲ ଆବଶ କରେ୍ଯକ କି</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ କାଲେଣ୍ଡର">
+								<longdesc>ପୂର୍ବନିର୍ଦ୍ଧାରିତ କାଲେଣ୍ଡର ପ୍ରୟୋଗ ପ୍ରୟୋଗ</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ରଗୁଡ଼ିକର ନାମ (ଅପସନ୍ଦ)">
+								<longdesc>ପ୍ରଥମ ୱିଣ୍ଡୋ ପରିଚାଳକ କାର୍ଯ୍ଯକ୍ଷେତ୍ରଗୁଡ଼ିକର ନାମର ତାଲିକା.ଏହି ଚାବି ନୋମର 2.12 ସଂସ୍କରଣଠାରୁ ଅପସନ୍ଦ କରାଯାଇଛି.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ରର ସଂଖ୍ଯା (ଅପସନ୍ଦ)">
+								<longdesc>ୱିଣ୍ଡୋ ପରିଚାଳକ ଦ୍ବାରା ବ୍ଯବହୃତ କାର୍ଯ୍ଯକ୍ଷେତ୍ରର ସଂଖ୍ଯାଏହି ଚାବି ନୋମର 2.12 ସଂସ୍କରଣଠାରୁ ଅପସନ୍ଦ କରାଯାଇଛି.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="ବ୍ଯବହାରକାରୀ ୱିଣ୍ଡୋ ପରିଚାଳକ (ଅପସନ୍ଦ)">
+								<longdesc>ବ୍ଯବହାର ପାଇଁ ପ୍ରଥମ ଖୋଜାଯିବା ୱିଣ୍ଡୋ ପରିଚାଳକ.ଏହି ଚାବି ନୋମର 2.12 ସଂସ୍କରଣଠାରୁ ଅପସନ୍ଦ କରାଯାଇଛି.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="ଶେଷ ଅବଲମ୍ବିତ ୱିଣ୍ଡୋ ପରିଚାଳକ (ଅପସନ୍ଦ)">
+								<longdesc>ଶେଷ ଅବଲମ୍ବିତ ୱିଣ୍ଡୋ ପରିଚାଳକ, ଯଦି ୱିଣ୍ଡୋ ପରିଚାଳକ ମିଳିଲା ନାହିଁ.ଏହି ଚାବି ନୋମର 2.12 ସଂସ୍କରଣଠାରୁ ଅପସନ୍ଦ କରାଯାଇଛି.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="ଖୋଜାଳି ଦୂର ତନ୍ତ୍ରକୁ ବୁଝି ପାରେ">
+								<longdesc>ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଖୋଜାଳି ନେଟସ୍କେପ୍ ଦୂରତ୍ବକୁ ବୁଝିପାରେ କି.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="ଖୋଜାଳି ପାଇଁ ଟର୍ମିନାଲ ଆବଶ୍ଯକ">
+								<longdesc>ପୂର୍ବନିର୍ଦ୍ଧାରିତ ବ୍ରାଉଡର ଚାଲିବା ପାଇଁ ଟର୍ମିନାଲ ଆବଶ୍ଯକ କରେ କି.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଖୋଜାଳି">
+								<longdesc>ସମସ୍ତ URL ପାଇଁ ପୂର୍ବନିର୍ଦ୍ଧାବ୍ରାଉଜର ଖୋଜାଳି.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<entry name="screen_reader_enabled">
+							<local_schema short_desc="ପରଦା ପାଠକ">
+								<longdesc>ପରଦା ପାଠକଟି ଅନ ଅଛି କି ନାହିଁ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_magnifier_enabled">
+							<local_schema short_desc="ପରଦା ଆବର୍ଦ୍ଧକ">
+								<longdesc>ପରଦା ଆବର୍ଦ୍ଧକକୁ ଅନ କରାଯାଇଛି କି ନାହିଁ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_keyboard_enabled">
+							<local_schema short_desc="ଅନ-ସ୍କ୍ରିନ କି-ବୋର୍ଡ">
+								<longdesc>ଅନସ୍କ୍ରିନ କିବୋର୍ଡକୁ ଅନ କରାଯାଇଛି କି ନାହିଁ।</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="ପସନ୍ଦୀୟ ଗତିଶୀଳ ସହକାରୀ ପ୍ରଯୁକ୍ତି ଜ୍ଞାନ ପ୍ରୟୋଗ ଆରମ୍ଭ କରନ୍ତୁ">
+									<longdesc>ଲଗଇନ ସମୟରେ ପସନ୍ଦୀୟ ଗତିଶୀଳ ସହକାରୀ ପ୍ରଯୁକ୍ତି ଜ୍ଞାନ ପ୍ରୟୋଗକୁ ପ୍ରାରମ୍ଭ କରିବା ପାଇଁ GNOME</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="ପସନ୍ଦୀୟ ଗତିଶୀଳ ସହକାରୀ ପ୍ରଯୁକ୍ତି ଜ୍ଞାନ ପ୍ରୟୋଗ">
+									<longdesc>ଲଗଇନ, ମେନୁ, କିମ୍ବା ପାଠ୍ଯ ନିର୍ଦ୍ଦେଶ ପାଇଁ ବ୍ଯବହାର କରାଯିବା ପସନ୍ଦୀୟ ଗତିଶୀଳ ସହକାରୀ ପ୍ରଯୁକ୍ତି ଜ୍ଞାନ ପ୍ରୟୋଗ</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="ପସନ୍ଦୀୟ ଆଭାସୀ ସହକାରୀ ପ୍ରଯୁକ୍ତି ଜ୍ଞାନ ପ୍ରୟୋଗ ଆରମ୍ଭ କରନ୍ତୁ">
+									<longdesc>ଲଗଇନ ସମୟରେ ପସନ୍ଦୀୟ ଆଭାସୀ ସହକାରୀ ପ୍ରଯୁକ୍ତି ଜ୍ଞାନ ପ୍ରୟୋଗକୁ ପ୍ରାରମ୍ଭ କରିବା ପାଇଁ GNOME</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="ପସନ୍ଦୀୟ ଆଭାସୀ ସହକାରୀ ପ୍ରଯୁକ୍ତି ଜ୍ଞାନ ପ୍ରୟୋଗ">
+									<longdesc>ଲଗଇନ, ମେନୁ, କିମ୍ବା ପାଠ୍ଯ ନିର୍ଦ୍ଦେଶ ପାଇଁ ବ୍ଯବହାର କରାଯିବା ପସନ୍ଦୀୟ ଆଭାସୀ ସହକାରୀ ପ୍ରଯୁକ୍ତି ଜ୍ଞାନ ପ୍ରୟୋଗ</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଯନ୍ତ୍ରାଶଂ ଦର୍ଶକ ପ୍ରୟୋଗ">
+								<longdesc>ଯେଉଁ ଫାଇଲଗୁଡିକ ଦେଖିବା ପାଇଁ ଗୋଟିଏ ଯନ୍ତ୍ରାଂଶ ଆବଶ୍ଯକ, ସେମାନଙ୍କ ପାଇଁ କେଉଁ ପ୍ରୟୋଗ ବ୍ଯବହାର କରାଯିବ। ପ୍ରାଚଳ %s ଫାଇଲର ୟୁ.ଆର୍.ଆଇ. ଦ୍ବାରା ବଦଳ ହେବ, ପ୍ରାଚଳ %c ଯନ୍ତ୍ରାସଂର ଆଇ.ଆଇ.ଡି. ଦ୍ବାରା ବଦଳ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="ନିଷ୍ପାଦନ ସ୍ବତନ୍ତ୍ରଚର">
+								<longdesc>&apos;exec&apos; ଚାବି ଦ୍ବାରା ଉଲ୍ଲେଖିତ ଟର୍ମିନାଲରେ କାରିକା ନିଷ୍ପାଦନ ପାଇଁ ବ୍ଯବହୃତ ସ୍ବତନ୍ତ୍ରଚର</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="ଟର୍ମିନାଲ ପ୍ରୟୋଗ">
+								<longdesc>ଯେଉଁ ପ୍ରୟୋଗ ପାଇଁ ଟର୍ମିନାଲ ଆବଶ୍ଯକ, ତାହା ପାଇଁ ବ୍ଯବହୃତ ଟର୍ମିନାଲ ପ୍ରଗ୍ରାମ</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="ଦର୍ଶିକା ଆକାର">
+								<longdesc>ଦର୍ଶିକା_ପ୍ରସଙ୍ଗ ଦ୍ବାରା ସୂତିତ ଦର୍ଶିକାର ଆକାର</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="ଦର୍ଶିକା ପ୍ରସଙ୍ଗ">
+								<longdesc>ଦର୍ଶିକା ପ୍ରସଙ୍ଗର ନାମ. କେବଳ ଏକ୍ସଦର୍ଶିକା ସହାୟକ ଏକ୍ସସେବକ ଦ୍ବାରା ବ୍ଯବହୃତ, ଯେପରିକି  ଏକ୍ସଫ୍ରୀ86 4.3 ବା ତାହାଠାରୁ ନୂଆ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="ଦର୍ଶିକା ଅକ୍ଷରରୂପ">
+								<longdesc>ଦର୍ଶିକା ଅକ୍ଷରରୂପର ନାମ. ବିନ୍ଯାସ ନ ହୋଇଥିଲେ, ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଅକ୍ଷରରୂପ ବ୍ଯବହାର କରାଯିବ. ଏହି  ମୂଲ୍ଯଟି ଏକ୍ସସେବକକୁ କେବଳ ପ୍ରତି ଅଧିବେଶନର ଆରମ୍ଭରେ ପ୍ରସାରିତ ହୁଏ, ତେଣୁ ଅଧିବେଶନ ମଝିରେ ଏହାକୁ ବଦଳାଇଲେ, ତାହାର ପ୍ରଭାବ କେବଳ ପର ଲଗଇନରେ ହେବ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="ସୂଚକ ଖୋଜି ଦେଖାନ୍ତୁ">
+								<longdesc>କଣ୍ଟ୍ରୋଲ କି ଦବାଇ ଛାଡିଲେ ସୂଚକର ସାମ୍ପ୍ରତିକ ଅବସ୍ଥିତି ବିଶେଷଦର୍ଶିତ କରେ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="ଦୁଇଥର ଦବାଇବାର ସମୟ">
+								<longdesc>ଦୁଇଥର ଦବାଇବାର ସମୟ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="ଟଣାର ପ୍ରଭାବସୀମା">
+								<longdesc>ଟଣା ପ୍ରାରମ୍ଭ କରାଯିବା ପୂର୍ବରୁ ଦୂରତ୍ବ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="ଘୁଞ୍ଚାଉବାର ପ୍ରଭାବସୀମା">
+								<longdesc>ମାଉସ୍ ତ୍ବରଣ ସକ୍ରିୟ କରାଯିବା ପୂର୍ବରୁ ସୂଚକ ଘୁଞ୍ଚିବାର ଦୂରତ୍ବ, ପିକ୍ସେଲରେ. ତନ୍ତ୍ରର ପୂର୍ବନିର୍ଦ୍ଧାରିତ ମୂଲ୍ଯ ହେଲା -1.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="ଥରେ ଦବାନ୍ତ">
+								<longdesc>ମାଉସ୍ ଘୁଞ୍ଚାଇବାରେ ତ୍ବରଣ ଗୁଣିତକ. ତନ୍ତ୍ରର ପୂର୍ବନିର୍ଦ୍ଧାରିତ ମୂଲ୍ଯ ହେଲା -1.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="ଥରେ ଦବାନ୍ତ">
+								<longdesc>ଚିତ୍ରସଙ୍କେତ ଖୋଲିବା ପାଇଁ ଥରେ ଦବାନ୍ତୁ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="ମାଉସ୍ ଚାବି ଅନୁସ୍ଥାପନ">
+								<longdesc>ବାମ ହାତି ମାଉସ ପାଇଁ ବାମ ଓ ଡାହାଣ ମାଉସ ବଟନବି ଅଦଳ ବଦଳ କରନ୍.ତୁ</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="touchpad">
+						<entry name="horiz_scroll_enabled">
+							<local_schema short_desc="ସମାନ୍ତରାଳ ଟଣାକୁ ସକ୍ରିୟ କରନ୍ତୁ ">
+								<longdesc>scroll_method କି ସହିତ ସମାନ ପଦ୍ଧତି ଦ୍ୱାରା ଭୂସମାନ୍ତରାଳ ଟଣାକୁ ଅନୁମତି ଦେବା ପାଇଁ ଏହାକୁ TRUE ସେଟ କରନ୍ତୁ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_method">
+							<local_schema short_desc="ଟଚପ୍ୟାଡ଼ ଟଣା ପଦ୍ଧତିକୁ ବାଛନ୍ତୁ">
+							</local_schema>
+						</entry>
+						<entry name="tap_to_click">
+							<local_schema short_desc="ଟଚପ୍ୟାଡ଼ ସହିତ ମାଉସ କ୍ଲିକକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>ଟଚପ୍ୟାଡ ଉପରେ ଟ୍ୟାପ କରିବା ଦ୍ୱାରା ମାଉସ କ୍ଲିକଗୁଡ଼ିକୁ ପଠାଇବା ପାଇଁ ସମର୍ଥ କରିବାକୁ ଏହାକୁ TRUE ସେଟ କରନ୍ତୁ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="disable_while_typing">
+							<local_schema short_desc="ଟାଇପ କରିବା ସମୟରେ ଟଚପ୍ୟାଡ଼କୁ ନିଷ୍କ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>ଏହାକୁ TRUE ସେଟ କରନ୍ତୁ ଯଦି ଆପଣଙ୍କର ଟାଇପ କରିବା ସମୟରେ ଟଚପ୍ୟାଡକୁ ହଠାତ ଆଘାତ କରିବାରେ ସମସ୍ୟା ଅଛି।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="ନ୍ଯୁମଲକ ଚାବିର ଅବସ୍ଥା ମନେ ରଖମ୍ତୁ">
+								<longdesc>ସତ ବିନ୍ଯାସ କରାଯାଇଥିଲେ, ନୋମ ବିଭିନ୍ନ ଅଧିବେଶନ ମଧ୍ଯରେ ନ୍ଯୁମଲକ ଚାବିର ଅବସ୍ଥା ମନେ ରଖିବ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="କି ବୋର୍ଡ ଘଣ୍ଟିର ଇଚ୍ଛାରୂପ ଫାଇଲର ନାମ">
+								<longdesc>ଚଲାଇବାକୁ ଥିବା ଘଣ୍ଟି ଶବ୍ଦର ଫାଇଲର ନାମ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>ସମ୍ଭାବ୍ଯ ମୂଲ୍ଯଗୁଡ଼ିକ ହେଲା &quot;on&quot;, &quot;off&quot;, and &quot;custom&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="indicator">
+							<entry name="enabledPlugins">
+								<local_schema short_desc="ସକ୍ରିୟ କରାଯାଇଥିବା କି-ବୋର୍ଡ ସୂଚକ ପ୍ଲଗଇନ ମାନଙ୍କର ତାଲିକା">
+									<longdesc>ସକ୍ରିୟ କରାଯାଇଥିବା କି-ବୋର୍ଡ ସୂଚକ ପ୍ଲଗଇନ ମାନଙ୍କର ତାଲିକା</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="showFlags">
+								<local_schema short_desc="ଆପ୍ଲେଟରେ ବିଶେଷ ସୂଚକ ମାନଙ୍କୁ ପ୍ରଦର୍ଶନ କରନ୍ତୁ">
+									<longdesc>ପ୍ରଚଳିତ ବିନ୍ଯାସକୁ ସୂଚୀତ କରିବା ପାଇଁ ଆପ୍ଲେଟରେ ବିଶେଷ ସୂଚକ ମାନଙ୍କୁ ପ୍ରଦର୍ଶନ କରନ୍ତୁ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="secondary">
+								<local_schema short_desc="ଦ୍ବିତୀୟକ ସମୂହ">
+									<longdesc>ଦ୍ବିତୀୟକ ସମୂହ</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="preview">
+							<entry name="height">
+								<local_schema short_desc="କି-ବୋର୍ଡ ପୂର୍ବାବଲୋକନ, ଉଚ୍ଚତା">
+									<longdesc>କି-ବୋର୍ଡ ପୂର୍ବାବଲୋକନ, ଉଚ୍ଚତା</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="width">
+								<local_schema short_desc="କି-ବୋର୍ଡ ପୂର୍ବାବଲୋକନ, ଓସାର">
+									<longdesc>କି-ବୋର୍ଡ ପୂର୍ବାବଲୋକନ, ଓସାର</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="y">
+								<local_schema short_desc="କି-ବୋର୍ଡ ପୂର୍ବାବଲୋକନ, ୱାଇ ଅଫସେଟ">
+									<longdesc>କି-ବୋର୍ଡ ପୂର୍ବାବଲୋକନ, ୱାଇ ଅଫସେଟ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="x">
+								<local_schema short_desc="କି-ବୋର୍ଡ ପୂର୍ବାବଲୋକନ, ଏକ୍ସ ଅଫସେଟ">
+									<longdesc>କି-ବୋର୍ଡ ପୂର୍ବାବଲୋକନ, ଏକ୍ସ ଅଫସେଟ</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="general">
+							<entry name="disable_sysconfig_changed_warning">
+								<local_schema short_desc="&quot;X sysconfig ପରିବର୍ତ୍ତିତ&quot; ଚେତାବନୀ ସନ୍ଦେଶକୁ ଅବରୋଧ କରନ୍ତୁ">
+									<longdesc>&quot;X sysconfig ପରିବର୍ତ୍ତିତ&quot; ଚେତାବନୀ ସନ୍ଦେଶକୁ ଅବରୋଧ କରନ୍ତୁ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="loadExtraItems">
+								<local_schema short_desc="ଅତିରିକ୍ତ ସଂରଚନା ବସ୍ତୁଗୁଡ଼ିକୁ ଧାରଣ କରନ୍ତୁ">
+									<longdesc>ଆକର୍ଷକ, ଅତିକମ ବ୍ୟବହାର ହେଉଥିବା ସଂରଚନା ଏବଂ ବିକଳ୍ପଗୁଡ଼ିକୁ ଧାରଣ କରନ୍ତୁ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layoutNamesAsGroupNames">
+								<local_schema short_desc="ସମୂହ ନାମ ମାନଙ୍କ ପରିବର୍ତ୍ତେ ବିନ୍ଯାସ ନାମ ମାନଙ୍କୁ ପ୍ରଦର୍ଶନ କରନ୍ତୁ">
+									<longdesc>ସମୂହ ନାମ ମାନଙ୍କ ପରିବର୍ତ୍ତେ ବିନ୍ଯାସ ନାମ ମାନଙ୍କୁ ପ୍ରଦର୍ଶନ କରନ୍ତୁ (କେବଳ ଏକାଧିକ ବିନ୍ଯାସ ମାନଙ୍କୁ ସମର୍ଥନ କରୁଥିବା XFree ସଂସ୍କରଣ ମାନଙ୍କ ପାଇଁ)</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="handleIndicators">
+								<local_schema short_desc="ବିନ୍ଯାସ ସମୂହ ମାନଙ୍କ ସହିତ ସୂଚକ ମାନଙ୍କୁ ଏକତ୍ର ସଂରକ୍ଷଣ/ପୁନଃସ୍ଥାପନ କରନ୍ତୁ">
+									<longdesc>ବିନ୍ଯାସ ସମୂହ ମାନଙ୍କ ସହିତ ସୂଚକ ମାନଙ୍କୁ ଏକତ୍ର ସଂରକ୍ଷଣ/ପୁନଃସ୍ଥାପନ କରନ୍ତୁ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="groupPerWindow">
+								<local_schema short_desc="ୱିଣ୍ଡୋ ପ୍ରତି ଅଲଗା ସମୂହ ରଖନ୍ତୁ ଏବଂ ପରାଚାଳନା କରନ୍ତୁ">
+									<longdesc>ୱିଣ୍ଡୋ ପ୍ରତି ଅଲଗା ସମୂହ ରଖନ୍ତୁ ଏବଂ ପରାଚାଳନା କରନ୍ତୁ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="defaultGroup">
+								<local_schema short_desc="ୱିଣ୍ଡୋ ପ୍ରସ୍ତୁତି ସମୟରେ ନ୍ଯସ୍ତ କରାଯାଇଥିବା ପୂର୍ବନିର୍ଦ୍ଧାରିତ ସମୂହ">
+									<longdesc>ୱିଣ୍ଡୋ ପ୍ରସ୍ତୁତି ସମୟରେ ନ୍ଯସ୍ତ କରାଯାଇଥିବା ପୂର୍ବନିର୍ଦ୍ଧାରିତ ସମୂହ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="known_file_list">
+								<local_schema short_desc="modmap ଫାଇଲ ତାଲିକା">
+									<longdesc>$HOME ଡିରେକ୍ଟୋରିରେ modmap ଫାଇଲ ମାନଙ୍କର ଗୋଟିଏ ତାଲିକା ଉପଲବ୍ଧ।</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="update_handlers">
+								<local_schema short_desc="କି-ବୋର୍ଡ ଅଦ୍ଯତନ ନିୟନ୍ତ୍ରକ">
+									<longdesc>କି-ବୋର୍ଡ ଅବସ୍ଥାକୁ ପୁନର୍ଧାରଣ କରିବା ସମୟରେ ଚଳାଯିବା ସ୍କ୍ରିପ୍ଟ ମାନଙ୍କର ସଂଗ୍ରହ। xmodmap ଆଧାରିତ ନିୟନ୍ତ୍ରଣ ମାନଙ୍କୁ ପୁନର୍ବାର ପ୍ରୟୋଗ କରିବା ପାଇଁ ଲାଭଦାୟକ ଅଟେ।</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="kbd">
+							<entry name="options">
+								<local_schema short_desc="କି-ବୋର୍ଡ ବିକଳ୍ପ">
+									<longdesc>କି-ବୋର୍ଡ ବିକଳ୍ପ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layouts">
+								<local_schema short_desc="କି-ବୋର୍ଡ ବିନ୍ଯାସ">
+									<longdesc>କି-ବୋର୍ଡ ବିନ୍ଯାସ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="model">
+								<local_schema short_desc="କି-ବୋର୍ଡ ନମୁନା">
+									<longdesc>କି-ବୋର୍ଡ ନମୁନା</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="rotate">
+						<local_schema short_desc="ଭୂଲମ୍ବ ଫଳକରେ ଘୂରାନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ମାଛର ଜୀବନାୟନ ଭୂଲମ୍ବ ଫଳକରେ ଘୂରାହୋଇଥିବା ଦେଖାଯିବ .</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed">
+						<local_schema short_desc="ପ୍ରତି ଫ୍ରେମରେ ବିରତି">
+							<longdesc>ଏହି ଚାବି ନିର୍ଦ୍ଦିଷ୍ଟ କରେ ପ୍ରତି ଫ୍ରେମ କେତେ ସେକେଣ୍ଡ ପାଇଁ ପ୍ରଦର୍ଶିତ କରାଯିବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="frames">
+						<local_schema short_desc="ମାଛର ଜୀବନାୟନରେ ଫ୍ରେମ">
+							<longdesc>ଏହି ଚାବି ମାଛର ଜୀବନାୟନରେ ପ୍ରଦର୍ଶିତ ଫ୍ରେମର ସଂଖ୍ଯା ନିର୍ଦ୍ଦିଷ୍ଟ କରେ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="ମାଉସ୍ ଚାବି ଦବାଇଲେ ନିଷ୍ପାଦନ କରାଯିବା ନିର୍ଦ୍ଦେଶ">
+							<longdesc>ଏହି ଚାବି ନିର୍ଦ୍ଦିଷ୍ଟ କରେ, ମାଛକୁ ଦବାଇଲେ କେଉଁ  ନିର୍ଦ୍ଦେଶଟି ନିଷ୍ପାଦନ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="image">
+						<local_schema short_desc="ମାଛର ଜୀବନାୟନ ପିକ୍ସମାପ୍">
+							<longdesc>ଏହି ଚାବି ମାଛ ଆପ୍ଲେଟରେ ପ୍ରଦର୍ଶିତ ଜୀବନାୟନ ପାଇଁ ବ୍ଯବହାର କରାଯିବା ପିକ୍ସମାପ୍ ଫାଇଲ ନାମକୁ ନିର୍ଦ୍ଦିଷ୍ଟ କରେ, ପିକ୍ସମାପ୍ଡିରେକଟୋରି ଆପେକ୍ଷିକରେ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="ମାଛର ନାମ">
+							<longdesc>ବିନା ନାମର ମାଛ ବହୁତ ମାନ୍ଦା. ନାମକରଣ କରି ମାଛକୁ ଜୀବନ୍ତ କରନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="ସର୍ବାଧିକ ୱିଣ୍ଡୋ ତାଲିକା ଆକାର">
+							<longdesc>ଏହି ଚାବିର ବ୍ୟବହାରକୁ GNOME 2.20ରେ ନାପସନ୍ଦ କରାଯାଇଛି. ଏହି ବିବରଣିକା ପୁରୁଣା ସଂସ୍କରଣ ସହିତ ସଙ୍ଗତ ଦୃଷ୍ଟିରୁ ରଖାଯାଇଛି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="ସର୍ବନିମ୍ନ ୱିଣ୍ଡୋ ତାଲିକା ଆକାର">
+							<longdesc>ଏହି ଚାବିର ବ୍ୟବହାରକୁ GNOME 2.20ରେ ନାପସନ୍ଦ କରାଯାଇଛି. ଏହି ବିବରଣିକା ପୁରୁଣା ସଂସ୍କରଣ ସହିତ ସଙ୍ଗତ ଦୃଷ୍ଟିରୁ ରଖାଯାଇଛି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_unminimized_windows">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ କ୍ଷୁଦ୍ରତମରୁ ସାଧାରଣ ଆକାର ଦେଲାବେଳେ, ତାହାକୁ ସାମ୍ପ୍ରତିକ କାର୍ଯ୍ଯକ୍ଷେତ୍ରକୁ ଆଣନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ଗୋଟିଏ ୱିଣ୍ଡୋକୁ କ୍ଷୁଦ୍ରତମରୁ ସାଧାରଣ ଆକାର ଦେଲାବେଳେ, ତାହାକୁ ସାମ୍ପ୍ରତିକ କାର୍ଯ୍ଯକ୍ଷେତ୍ରକୁ ଆଣିବ. ନଚେ୍ତ ୱିଣ୍ଡୋର କାର୍ଯ୍ଯକ୍ଷେତ୍ରକୁ ଘୁଞ୍ଚାଇ ଦିଆଯିବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="group_windows">
+						<local_schema short_desc="ୱିଣ୍ଡୋଗୁଡି଼କୁ କେତେବେଳେ ସମୂହିତ କରାଯିବ">
+							<longdesc>ସ୍ଥିର କରେ ଗୋଟିଏ ପ୍ରୟୋଗର ୱିଣ୍ଡୋଗୁଡି଼କ କେତେବେଳେ ୱିଣ୍ଡୋ ତାଲିକାରେ ସମୂହିତ କରାଯିବ. ସାମ୍ଭାବ୍ଯ ମୂଲ୍ଯ  ହେଲା &quot;never&quot;, &quot;auto&quot; and &quot;always&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="ସବୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ରରୁ ୱିଣ୍ଡୋ ଦେଖାନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ୱିଣ୍ଡୋ ତାଲିକା ସବୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ରରୁ ୱିଣ୍ଡୋ ପ୍ରଦର୍ଶିତ କରେ. ନଚେତ୍ ଏହା କେବଳ ସାମ୍ପ୍ରତିକ କାର୍ଯ୍ଯକ୍ଷେତ୍ରରୁ ୱିଣ୍ଡୋ ପ୍ରଦର୍ଶିତ କରିବ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="ଜୀବନାୟନ ଗତି">
+							<longdesc>ଫଳକ ଜୀବନାୟନଗୁଡ଼ିକର ଗତି. ସାମ୍ଭବ୍ଯ ମୂଲ୍ଯ ହେଲା &quot;ଧୀର&quot;, &quot;ମାଧ୍ଯମ&quot; ଓ &quot;ଦ୍ରୁତ&quot;. ଜୀବନାୟନ_ସମର୍ଥ_କରନ୍ତୁ ଚାବି ସତ ଥିଲେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide_size">
+						<local_schema short_desc="ଲୁଚାହୋଇଥିବା ବେଳେ ଦୃଶ୍ଯମାନ ପିକ୍ସେଲ">
+							<longdesc>ଫଳକ ଗୋଟିଏ କଣରେ ଲୁଚାହୋଇଥିଲେ, ଦୃଶ୍ଯମାନ ପିକ୍ସେଲର ସଂଖ୍ଯା ନିର୍ଦ୍ଦିଷ୍ଟ କରେ. ସ୍ବଂୟ_ଲୁଚାନ୍ତୁ ଚାବି ସତ ଥିଲେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unhide_delay">
+						<local_schema short_desc="ଫଳକ ସ୍ବଂୟଦେଖାଇବାରେ ବିଳମ୍ବ">
+							<longdesc>ସୂଚକ ଫଳକ କ୍ଷେତ୍ରରେ ପ୍ରବେଶ କରିବାଠାରୁ ଫଳକ ଆପେଆପେ ଦେଖାଯିବାର ମିଲିସେକଣ୍ଡରେ ବିଳମ୍ବ ନିର୍ଦ୍ଦିଷ୍ଟ କରେ. ସ୍ବଂୟ_ଲୁଚାନ୍ତୁ ଚାବି ସତ ଥିଲେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hide_delay">
+						<local_schema short_desc="ଫଳକ ସ୍ବଂୟଲୁଚାଇବାରେ ବିଳମ୍ବ">
+							<longdesc>ସୂଚକ ଫଳକ କ୍ଷେତ୍ର ଛାଡ଼ିବାଠାରୁ ଫଳକ ଆପେଆପେ ଲୁଚାଯିବାର ମିଲିସେକଣ୍ଡରେ ବିଳମ୍ବ ନିର୍ଦ୍ଦିଷ୍ଟ କରେ. ସ୍ବଂୟ_ଲୁଚାନ୍ତୁ ଚାବି ସତ ଥିଲେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_arrows">
+						<local_schema short_desc="ଲୁଚାଇବା ଚାବିରେ ତୀର ସମର୍ଥ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ଲୁଚାଇବା ଚାବିଗୁଡ଼ିକରେ ତୀର ପ୍ରଦର୍ଶିତ କରାଯିବ. ଚାବି_ସାମର୍ଥିକରଣ ଚାବି ସତ ଥିଲେ ହିଁ ଏହାର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="ଲୁଚାଇବା ଚାବି ସମର୍ଥ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ଚାବିଗୁଡ଼ିକ ଫଳକର ପ୍ରତ୍ଯେକ ଧାରରେ ସ୍ଥାନିତ କରାଯିବ. ଏହି ଚାବି ଦ୍ବାରା ଫଳକକୁ ପରଦାର ଧାର ପର୍ଯ୍ଯନ୍ତ ଘୁଞ୍ଚାଇ ହେବ, ଯେପରି କି କେବଳ ଗୋଟିଏ ଚାବି ଦେଖାଯାଉଥିବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="ଜୀବନାୟନ ସମର୍ଥ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ଫଳକ ଲୁଚାଇବା ଓ ଦେଖାଇବା ସଙ୍ଗେସଙ୍ଗେ ହେବା ବଦଳରେ ଜୀବନାୟନ ରୂପେ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide">
+						<local_schema short_desc="ଫଳକକୁ କଣରେ ଆପେଆପେ ଲୁଚାନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ସୂଚକଟି ଫଳକ କ୍ଷେତ୍ର ଛାଡ଼ିଲେ, ଫଳକକୁ ପରଦାର ଧାରରେ ଆପେଆପେ ଲୁଚାଇ ଦିଆଯାଏ. ସୂଚକକୁ ସେହି ଧାରରେ ପୁଣି ଆଣିବାଠାରୁ ଫଳକଟି ପୁଣି ଦେଖାଯାଏ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_centered">
+						<local_schema short_desc="ଫଳକକୁ ୱାଇ-ଅକ୍ଷରେ କେନ୍ଦ୍ରିତ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ,  y ଏବଂ y_ତଳ କି ଟି ଅଗ୍ରାହ୍ଯ କରି ଫଳକକୁ ପରଦାର y-ଅକ୍ଷରେ କେନ୍ଦ୍ରିତ କରାଯିବ. ଫଳକର ଆକାର ବଦଳାଗଲେ ମଧ୍ଯ ତାହାର ଅବସ୍ଥାନ ସ୍ଥାୟୀ ରହିବ, ଅର୍ଥାତ୍ ଫଳକଟି ଦୁଇପାଖେ ବଢ଼ିବ. ଅସତ୍ଯ ଥିଲେ, y କି ଟି ଫଳକର ଅବସ୍ଥାନ ନିର୍ଦ୍ଦିଷ୍ଟ କରେ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_centered">
+						<local_schema short_desc="ଫଳକକୁ ଏକ୍ସ-ଅକ୍ଷରେ କେନ୍ଦ୍ରିତ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, x ଏବଂ x_ଡାହାଣ କିଗୁଡ଼ିକ ଅଗ୍ରାହ୍ଯ ହୋଇଯିବ ଏବଂ ଫଳକଟି ପରଦାର x-ଅକ୍ଷରେ କେନ୍ଦ୍ରିତ କରାଯିବ. ଫଳକର ଆକାର ବଦଳାଗଲେ ମଧ୍ଯ ତାହାର ଅବସ୍ଥାନ ସ୍ଥାୟୀ ରହିବ, ଅର୍ଥାତ୍ ଫଳକଟି ଦୁଇପାଖେ ବଢ଼ିବ. ଅସତ୍ଯ ଥିଲେ, x ଏବଂ x_ଡାହାଣ କି ଟି ଫଳକର ଅବସ୍ଥାନ ନିର୍ଦ୍ଦିଷ୍ଟ କରେ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_bottom">
+						<local_schema short_desc="ଫଳକର Y ନିର୍ଦ୍ଦେଶାଙ୍କ, ପରଦାର ତଳୁ ଆରମ୍ଭହୋଇ">
+							<longdesc>ପରଦା ଦାହାଣରୁ ଆରମ୍ଭ ହୋଇଥିବା, y-ଅକ୍ଷରେ ଫଳକର ଅବସ୍ଥାନ। ଯଦି -1 ସେଟକରାଯାଏ, ତେବେ ତାହାର ମୂଲ୍ୟକୁ ଅଗ୍ରାହ୍ୟ କରାଯିବଏବଂ y କିର ମୂଲ୍ୟକୁ ବ୍ୟବହାର କରାଯିବ। ଯଦି ତାହାର ମୂଲ୍ୟ 0ରୁ ଅଧିକ ହୁଏ, ତେବେ y କିର ମୂଲ୍ୟକୁ ଅଗ୍ରାହ୍ୟ କରାଯିବ। ଅପ୍ରସାରିତ ଅବସ୍ଥାରେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ। ସମ୍ପ୍ରସାରିତ ଅବସ୍ଥାରେ ଏହି ଚାବିଟି ଅଗ୍ରାହ୍ଯ ରହିବ ଓ ଫଳକଟି ଅନୁସ୍ଥାପନ ଚାବି ଦ୍ବାରା ନିର୍ଦ୍ଦିଷ୍ଟ ପରଦାର ଧାରରେ ସ୍ଥାନିତ କରାଯିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_right">
+						<local_schema short_desc="ଫଳକର X ନିର୍ଦ୍ଦେଶାଙ୍କ, ପରଦାର ଡାହାଣରୁ ଆରମ୍ଭହୋଇ">
+							<longdesc>ପରଦା ଦାହାଣରୁ ଆରମ୍ଭ ହୋଇଥିବା, x-ଅକ୍ଷରେ ଫଳକର ଅବସ୍ଥାନ। ଯଦି -1 ସେଟକରାଯାଏ, ତେବେ ତାହାର ମୂଲ୍ୟକୁ ଅଗ୍ରାହ୍ୟ କରାଯିବଏବଂ x କିର ମୂଲ୍ୟକୁ ବ୍ୟବହାର କରାଯିବ। ଯଦି ତାହାର ମୂଲ୍ୟ 0ରୁ ଅଧିକ ହୁଏ, ତେବେ x କିର ମୂଲ୍ୟକୁ ଅଗ୍ରାହ୍ୟ କରାଯିବ। ଅପ୍ରସାରିତ ଅବସ୍ଥାରେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ। ସମ୍ପ୍ରସାରିତ ଅବସ୍ଥାରେ ଏହି ଚାବିଟି ଅଗ୍ରାହ୍ଯ ରହିବ ଓ ଫଳକଟି ଅନୁସ୍ଥାପନ ଚାବି ଦ୍ବାରା ନିର୍ଦ୍ଦିଷ୍ଟ ପରଦାର ଧାରରେ ସ୍ଥାନିତ କରାଯିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y">
+						<local_schema short_desc="ଫଳକର ୱାଇ ପଦ">
+							<longdesc>ୱାଇ-ଅକ୍ଷରେ ଫଳକର ଅବସ୍ଥାନ. ଅପ୍ରସାରିତ ଅବସ୍ଥାରେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ. ସମ୍ପ୍ରସାରିତ ଅବସ୍ଥାରେ ଏହି ଚାବିଟି ଅଗ୍ରାହ୍ଯ ରହିବ ଓ ଫଳକଟି ଅନୁସ୍ଥାପନ ଚାବି ଦ୍ବାରା ନିର୍ଦ୍ଦିଷ୍ଟ ପରଦାର ଧାରରେ ସ୍ଥାନିତ କରାଯିବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x">
+						<local_schema short_desc="ଫଳକର ଏକ୍ସ ପଦ">
+							<longdesc>ଏକ୍ସ-ଅକ୍ଷରେ ଫଳକର ଅବସ୍ଥାନ. ଅପ୍ରସାରିତ ଅବସ୍ଥାରେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ. ସମ୍ପ୍ରସାରିତ ଅବସ୍ଥାରେ ଏହି ଚାବିଟି ଅଗ୍ରାହ୍ଯ ରହିବ ଓ ଫଳକଟି ଅନୁସ୍ଥାପନ ଚାବି ଦ୍ବାରା ନିର୍ଦ୍ଦିଷ୍ଟ ପରଦାର ଧାରରେ ସ୍ଥାନିତ କରାଯିବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="ଫଳକ ଆକାର">
+							<longdesc>ଫଳକର ଉଚ୍ଚତା (ଭୂଲମ୍ବ ଫଳକ ପାଇଁ ଓସାର). ଚଳନ ସମୟରେ, ଫଳକଟି ଅକ୍ଷରରୂପ ଓ ଅନ୍ଯାନ୍ଯ ସୂଚକଠାରୁ ସର୍ବନିମ୍ନ ଆକାର ସ୍ଥିର କରିବ. ସର୍ବାଧିକ ଆକାର ପରଦା ଉଚ୍ଚତାର (ବା ଓସାରର) ଏକଚତୁର୍ଥାଂଶ ଭାବେ ସ୍ଥିର କରାଯାଇଛି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="ଫଳକ ଅନୁସ୍ଥାପନ">
+							<longdesc>ଫଳକର ଅନୁସ୍ଥାପନ. ସାମ୍ଭବ୍ଯ ମୂଲ୍ଯ ହେଲା &quot;ଉଚ୍ଚ&quot;, &quot;ତଳ&quot;, &quot;ବାମ&quot;, &quot;ଡାହାଣ&quot;. ସମ୍ପ୍ରସାରିତ ଅବସ୍ଥାରେ ଚାବିଟି ନିର୍ଦ୍ଦିଷ୍ଟ କରେ ଫଳକ ପରଦାର କେଉଁ ଧାରରେ ଅଛି. ଅପ୍ରସାରିତ ଅବସ୍ଥାରେ &quot;ଉଚ୍ଚ&quot; ଓ &quot;ତଳ&quot; ମଧ୍ଯରେ ପ୍ରଭେଦ ଅତି ଗୁରୁତ୍ବପୂର୍ଣ୍ଣ ନୁହେଁ - ଦୁଇଟି ମୂଲ୍ଯ ଭୂସମାନ୍ତର ଫଳକ ସୂଚିତ କରନ୍ତି - ତଥାପି ଏହା ଫଳକର କିଛି ବସ୍ତୁର ଚାଲିଚଳନ ପାଇଁ ଉପକାରୀ ଆଭାସ ଦିଅନ୍ତି. ଉଦାହରଣ ସ୍ବରୂପ, &quot;ଉଚ୍ଚ&quot; ଫଳକରେ ଗୋଟିଏ ମେନୁ ଚାବି ନିଜର ମେନୁ ଫଳକ ତଳେ ଖୋଲିବ, କିନ୍ତୁ &quot;ତଳ&quot; ଫଳକରେ ମେନୁଟି ଫଳକ ଉପରେ ଖୋଲିବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand">
+						<local_schema short_desc="ସମ୍ପୂର୍ଣ୍ଣ ପରଦା ଓସାର ପର୍ଯ୍ଯନ୍ତ ସମ୍ପ୍ରସାରିତ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ଫଳକ ପରଦାର ସମ୍ପୂର୍ଣ୍ଣ ଓସାର ଭରିଦିଏ (ଭୂଲମ୍ବ ଫଳକ ହେଲେ, ସମ୍ପୂର୍ଣ୍ଣ ଉଚ୍ଚତା). ଏହି ଅବସ୍ଥାରେ, ଫଳକଟି କେବଳ ପରଦା ଧାରରେ ସ୍ଥାନିତ କରାଯାଇପାରିବ. ଅସତ୍ଯ ଥିଲେ, ଫଳକର ଆକାର କେବଳ ଫଳକରେ ଉପସ୍ଥିତ ଆପ୍ଲେଟ୍, ଚାଳକ, ଓ ଚାବି ପାଇଁ ସ୍ଥାନ ଯୋଘାଇବା ନିମନ୍ତେ ଯଥେଷ୍ଟ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monitor">
+						<local_schema short_desc="ସିନେରାମା ପ୍ରଦର୍ଶିକା ଯେଉଁଠାରେ ଫଳକ ପ୍ରଦର୍ଶିତ କରାଯାଇଛି">
+							<longdesc>ସିନେରାମା ବ୍ଯବସ୍ଥାରେ, ଆପଣ ପ୍ରତ୍ଯେକ ପ୍ରଦର୍ଶିକାରେ ଫଳକ ରଖିପାରିବେ. ଏହି ଚାବି ସାମ୍ପ୍ରତିକ ପ୍ରଦର୍ଶିକାକୁ ପରିଚିତ କରେ, ୟେଉଁଠାରେ ଫଳକଟି ପ୍ରଦର୍ଶିତ ହୋଇଛି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screen">
+						<local_schema short_desc="ଏକ୍ସ ପରଦା ଯେଉଁଠାରେ ଫଳକ ପ୍ରଦର୍ଶିତ କରାଯାଇଛି">
+							<longdesc>ବହୁ-ପରଦା ବ୍ଯବସ୍ଥାରେ ଆପଣଙ୍କର ପ୍ରତ୍ଯେକ ପରଦାରେ ଫଳକ ରହିପାରେ. ଏହି ଚାବି ସାମ୍ପ୍ରତିକ ପରଦା ପରିଚିତ କରେ, ଯେଉଁଠାରେ ଫଳକଟି ପ୍ରଦର୍ଶିତ ହୋଇଛି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="ଫଳକର ପରିଚୟ ପାଇଁ ନାମ">
+							<longdesc>ଏହା ମଣିଷ ଦ୍ବାରା ପଠନୀୟ ନାମ, ଯେଉଁଟାକି ଫଳକର ପରିଚୟ ପାଇଁ ବ୍ଯବହାର କରାଯାଇ ହେବ. ଏହାର ମୁଖ୍ଯ ଉଦେଶ୍ଯ ହେଲା ଫଳକର ୱିଣ୍ଡୋ ଶୀର୍ଷକ ନିମନ୍ତେ ସେବା କରିବା, ଯେଉଁଟାକି ଫଳକ ମଧ୍ଯରେ ପଥପ୍ରଦର୍ଶନ କରିବାରେ ଉପକାରୀ.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="ଭୂଲମ୍ବ ଫଳକରେ ଚିତ୍ରକୁ ଘୂରାନ୍ତୁ">
+								<longdesc>ସତ ଥିଲେ, ଫଳକ ଭୂଲମ୍ବ ଭାବରେ ସ୍ଥାପିତ ହେଲେ, ପୃଷ୍ଠଭୂମି ଚିତ୍ରକୁ ଘୂରାଇ ଦିଆଯିବ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stretch">
+							<local_schema short_desc="ଚିତ୍ରକୁ ଫଳକ ଅନୁସାରେ ସମ୍ପ୍ରସାରିତ କରନ୍ତୁ">
+								<longdesc>ସତ ଥିଲେ, ଚିତ୍ରକୁ ଫଳକର ପରିସର ଅନୁସାରେ ମେଳାଇ ଦିଆଯିବ. ଚିତ୍ରର ପରିମାପ ଅନୁପାତ ସ୍ଥାୟୀ ରହିବ ନାହିଁ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="ଚିତ୍ରକୁ ଫଳକ ଅନୁସାରେ ଖାପଖୁଆନ୍ତୁ">
+								<longdesc>ସତ ଥିଲେ, ଚିତ୍ରକୁ ଫଳକ ଉଚ୍ଚତା (ଯଦି ଭୂସମାନ୍ତର) ଅନୁସାରେ ମେଳାଇ ଦିଆଯିବ (ଚିତ୍ରର ପରିମାପ ଅନୁପାତକୁ ସ୍ଥାୟୀ ରଖି).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="ପୃଷ୍ଠଭୂମି ଚିତ୍ର">
+								<longdesc>ପୃଷ୍ଠଭୂମି ଚିତ୍ର ପାଇଁ ଫାଇଲ ନିର୍ଦ୍ଦିଷ୍ଟ କରେ. ଚିତ୍ରରେ ଆଲ୍ଫା ଚାନେଲ ଥିଲେ, ଏହା ଡେସ୍କଟପ ପୃଷ୍ଠଭୂମି ଚିତ୍ର ସହିତ ମିଶ୍ରିତ କରାଯିବ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="ପୃଷ୍ଠଭୂମି ରଙ୍ଗର ସ୍ବଚ୍ଛତା">
+								<longdesc>ପୃଷ୍ଠଭୂମି ରଙ୍ଗ ଶୈଳୀର ସ୍ବଚ୍ଛତା ନିର୍ଦ୍ଦିଷ୍ଟ କରେ. ରଙ୍ଗଟି ସମ୍ପୂର୍ଣ୍ଣ ଭାବରେ ସ୍ବଚ୍ଛ ନ ହୋଇଥିଲେ (ମୂଲ୍ଯ ୬୫୫୩୫ଠାରୁ କମ), ତାହାକୁ ଡେସ୍କଟପ ପୃଷ୍ଠଭୂମି ଚିତ୍ର ସହିତ ମିଶ୍ରିତ କରାଯିବ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="ପୃଷ୍ଠଭୂମି ରଙ୍ଗ">
+								<longdesc>ଫଳକର ପୃଷ୍ଠଭୂମି ରଙ୍ଗ #ଆର.ଜି.ବି. ଶୈଳୀରେ ନିର୍ଦ୍ଦିଷ୍ଟ କରେ.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="ପୃଷ୍ଠଭୂମି ପ୍ରକାର">
+								<longdesc>ଏହି ଫଳକ ପାଇଁ ବ୍ଯବହାର କରାଯିବା ପ୍ରଷ୍ଠଭୂମି. ସାମ୍ଭାବ୍ଯ ମୂଲ୍ଯ ହେଲା &quot;ଜିଟିକେ&quot; - ପୂର୍ବନିର୍ଦ୍ଧାରିତ ୱିଜେଟ୍ ପ୍ରଷ୍ଠଭୂମି ବ୍ଯବହାର କରାଯିବ, &quot;ରଙ୍ଗ&quot; - ରଙ୍ଗ ଚାବିଟି ପ୍ରଷ୍ଠଭୂମି ରଙ୍ଗ ଭାବେ ବ୍ଯବହାର କରାଯିବ ବା &quot;ଚିତ୍ର&quot; - ଚିତ୍ର ଚାବି ଦ୍ବାରା ନିର୍ଦ୍ଦିଷ୍ଟ ଚିତ୍ର ପ୍ରଷ୍ଠଭୂମି ଭାବେ ବ୍ଯବହାର କରାଯିବ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="general">
+					<entry name="profiles_migrated">
+						<local_schema short_desc="ପୁରୁଣା ରୂପରେଖ ବିନ୍ଯାସ ନୂଆ ରୂପେ ପରିବର୍ତ୍ତିତ">
+							<longdesc>ବୁଲିଆନ୍ ସୂଚକ, ଯେଉଁଟାକି ସୂଚିତ କରେ କି /apps/panel/profiles/defaultରେ ସ୍ଥିତ ବ୍ଯବହରକାରୀର ପୁରୁଣା ବିନ୍ଯାସକୁ /apps/panelର ନୂଆ ଅବସ୍ଥାନରେ ନକଲ କରାଦିଆଯାଇଛି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_id_list">
+						<local_schema short_desc="ଫଳକ ବସ୍ତୁ ପରିଚୟ ତାଲିକା">
+							<longdesc>ଫଳକ ବସ୍ତୁ ପରିଚୟର ତାଲିକା. ପ୍ରତ୍ଯେକ ପରିଚୟ ଗୋଟିଏ ଫଳକ ବସ୍ତୁକୁ (ଉଦାହରଣ ସ୍ବରୂପ ଗୋଟିଏ ଫଳକ, କାର୍ଯ୍ଯ ଚାବି ବା ମେନୁ ଚାବି/ପଟି) ପରିଚିତ କରେ. ପ୍ରତ୍ଯେକ ବସ୍ତୁର ବିନ୍ଯାସ /apps/panel/objects/$(id)ରେ ସଞ୍ଚିତ ହୋଇଛି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_id_list">
+						<local_schema short_desc="ଫଳକ ଆପ୍ଲେଟ୍ ପରିଚୟ ତାଲିକା">
+							<longdesc>ଫଳକ ଆପ୍ଲେଟ୍ ପରିଚୟର ତାଲିକା. ପ୍ରତ୍ଯେକ ପରିଚୟ ଗୋଟିଏ ଫଳକ ଆପ୍ଲେଟକୁ ପରିଚିତ କରେ. ପ୍ରତ୍ଯେକ ଫଳକର ବିନ୍ଯାସ /apps/panel/applets/$(id)ରେ ସଞ୍ଚିତ ହୋଇଛି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id_list">
+						<local_schema short_desc="ଫଳକ ପରିଚୟ ତାଲିକା">
+							<longdesc>ଫଳକ ପରିଚୟର ତାଲିକା. ପ୍ରତ୍ଯେକ ପରିଚୟ ଗୋଟିଏ ଉଚ୍ଚସ୍ତରୀୟ ଫଳକକୁ ପରିଚିତ କରେ. ପ୍ରତ୍ଯେକ ଫଳକର ବିନ୍ଯାସ /apps/panel/toplevels/$(id)ରେ ସଞ୍ଚିତ ହୋଇଛି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_autocompletion">
+						<local_schema short_desc="&quot;ପ୍ରୟୋଗ ଚଳାନ୍ତୁ&quot;  ସଂଳାପରେ ସ୍ବୟଂ ଶେଷ ସମର୍ଥ କରନ୍ତୁ">
+							<longdesc>ସତ ହେଲେ, &quot;କାରିକା ଚଳାନ୍ତୁ&quot; ସଂଳାପରେ ସ୍ବଂୟ ସମାପ୍ତି ଉପଲବ୍ଧ କରାଯିବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_program_list">
+						<local_schema short_desc="&quot;ପ୍ରୟୋଗ ଚଳାନ୍ତୁ&quot; ସଂଳାପରେ କାରିକା ତାଲିକା ସମ୍ପ୍ରସାରିତ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ସଂଳାପ ଖୋଲିବାରୁ &quot;ପ୍ରୟୋଗ ଚଳାନ୍ତୁ&quot; ତାଲିକାରେ &quot;ଜଣା ପ୍ରୟୋଗ&quot; ସଂଳାପ ସମ୍ପ୍ରସାରିତ କରାଯିବ. ସାମର୍ଥିକରଣ_କାରିକା_ତାଲିକା ଚାବିଟି ସତ ଥିଲେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_program_list">
+						<local_schema short_desc="&quot;ପ୍ରୟୋଗ ଚଳାନ୍ତୁ&quot;  ସଂଳାପରେ କାରିକା ତାଲିକା ସମର୍ଥ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, &quot;ପ୍ରୟୋଗ ଚଳାନ୍ତୁ&quot; ତାଲିକାରେ &quot;ଜଣା ପ୍ରୟୋଗ&quot; ସଂଳାପ ଉପଲବ୍ଧ ହେବ. ସଂଳାପ ଖୋଲିବାରୁ ତାଲିକାଟି ସମ୍ପ୍ରସାରିତ କରାଯିବ କି ନାହିଁ କାରିକା_ତାଲିକା_ଦେଖାନ୍ତୁ ଚାବି ଚାବି ଦ୍ବାରା ନିର୍ଦ୍ଦିଷ୍ଟ କରାଯାଏ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global">
+					<entry name="disable_force_quit">
+						<local_schema short_desc="ବିଦାୟ ନେବା ପାଇଁ ବାଧ୍ଯ କରିବା ନିଷ୍କ୍ରିୟ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ଫଳକଟି ବାଧ୍ଯ କରି ବନ୍ଦ କରିବା ଚାବିକୁ ହଟାଇ, ବ୍ଯବହାରକାରୀକୁ କୌଣସି ପ୍ରୟୋଗକୁ ବାଧ୍ଯ କରି ବନ୍ଦ କରିବାର ଅନୁମତି ଦେବ ନାହିଁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_log_out">
+						<local_schema short_desc="ଲଗଆଉଟ କରିବା ନିଷ୍କ୍ରିୟ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ଫଳକଟି, ଲଗ ଆଉଟ ମେନୁ ବସ୍ତୁଗୁଡ଼ିକୁ ହଟାଇ, ବ୍ଯବହାରକାରୀକୁ ଲଗ ଆଉଟ କରିବାକୁ ଅନୁମତି ଦେବ ନାହିଁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="ଅପସନ୍ଦ">
+							<longdesc>ଏହି କି ଟି ସଠିକ ଭାବରେ ପରିବର୍ତ୍ତନ ପାଇଁ କାର୍ଯ୍ୟକାରୀ ହୋଇପାରିବ ନାହିଁ ବୋଲି ଦର୍ଶାଯାଇଛି। ଏହା ପରିବର୍ତ୍ତେ /desktop/gnome/lockdown/disable_lock_screen କି କୁ ବ୍ୟବାହର କରିବା ଉଚିତ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disabled_applets">
+						<local_schema short_desc="ଧାରଣ ହେବାରୁ ନିଷେଧ ଆପ୍ଲେଟର ପରିଚୟଗୁଡ଼ିକ">
+							<longdesc>ଆପ୍ଲେଟ୍ ପରିଚୟର ତାଲିକା, ଯାହାକୁ ଫଳକ ଅଗ୍ରାହ୍ଯ କରିବ. ଏହିପରି ଆପଣ କିଛି ଆପ୍ଲେଟକୁ ଧାରଣ ହେବା ବା ତାଲିକାରେ ପ୍ରଦର୍ଶିତ ହେବାରୁ ମନା କରିପାରିବେ. ଉଦାହରଣ ସ୍ବରୂପ, ମିନି-କମାଣ୍ଡର୍ ଆପ୍ଲେଟକୁ ନିଷ୍କ୍ରିୟ କରିବା ପାଇଁ &apos;OAFIID:GNOME_MiniCommanderApplet&apos; ଏହି ତାଲିକାରେ ୟୋଗ କରନ୍ତୁ. ଏହାର ପ୍ରଭାବ ହେବା ପାଇଁ ଫଳକକୁ ପୁନଃପ୍ରାରମ୍ଭ କରିବା ଆବଶ୍ଯକ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked_down">
+						<local_schema short_desc="ଫଳକକୁ ସମ୍ପୁର୍ଣ ଭାବରେ ଅପରିବର୍ତ୍ତନୀୟ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ଫଳକଟି ବିନ୍ଯାସ ପରିବର୍ତ୍ତନ କରିବାକୁ ଅନୁମତି ଦେବ ନାହିଁ. କିଛି ଆପଲେଟକୁ ସ୍ବତନ୍ତ୍ର ଭାବରେ ତାଲା ଦେଇ ରଖିବାକୁ ଦରକାର ହୋଇପାରେ. ଏହାର ପ୍ରଭାବ ହେବା ପାଇଁ ଫଳକକୁ ପୁନଃପ୍ରାରମ୍ଭ କରିବା ଆବଶ୍ଯକ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="highlight_launchers_on_mouseover">
+						<local_schema short_desc="ଚାଳକ ଉପରେ ମାଉସ୍ ସୂଚକ ଆସିଲେ, ତାହାକୁ ବିଶେଷଦର୍ଶିତ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ବ୍ଯବହାରକାରୀ ଚାଳକ ଉପରେ ମାଉସ୍ ସୂଚକ ଆଣିଲେ, ଚାଳକକୁ ବିଶେଷଦର୍ଶିତ କରାଯିବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_panel_remove">
+						<local_schema short_desc="ଫଳକ ଅପସାରଣ ସମର୍ଥ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ବ୍ଯବହାରକାରୀ ଗୋଟିଏ ଫଳକକୁ କାଢ଼ିବାକୁ ଚାହିଁଲେ, ନିଶ୍ଚିତିକରଣ ପାଇଁ ସଂଳାପଟିଏ ଖୋଲାଯିବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="drawer_autoclose">
+						<local_schema short_desc="ଡ୍ରୟରକୁ ଆପେଆପେ ବନ୍ଦ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ବ୍ଯବହାରକାରୀ ଡ୍ରୟରରେ ସ୍ଥିତ ଚାଳକ ଉପରେ ମାଉସ୍ ଚାବି ଦବାଇଲେ, ଡ୍ରୟରଟି ଆପେଆପେ ବନ୍ଦ ହୋଇଯିବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="window_screenshot_key">
+						<local_schema short_desc="ଅପସନ୍ଦ">
+						</local_schema>
+					</entry>
+					<entry name="screenshot_key">
+						<local_schema short_desc="ଅପସନ୍ଦ">
+						</local_schema>
+					</entry>
+					<entry name="run_key">
+						<local_schema short_desc="ଅପସନ୍ଦ">
+						</local_schema>
+					</entry>
+					<entry name="menu_key">
+						<local_schema short_desc="ଅପସନ୍ଦ">
+						</local_schema>
+					</entry>
+					<entry name="enable_key_bindings">
+						<local_schema short_desc="ଅପସନ୍ଦ">
+						</local_schema>
+					</entry>
+					<entry name="panel_hide_delay">
+						<local_schema short_desc="ଅପସନ୍ଦ">
+						</local_schema>
+					</entry>
+					<entry name="panel_animation_speed">
+						<local_schema short_desc="ଅପସନ୍ଦ">
+						</local_schema>
+					</entry>
+					<entry name="panel_show_delay">
+						<local_schema short_desc="ଅପସନ୍ଦ">
+						</local_schema>
+					</entry>
+					<entry name="panel_minimized_size">
+						<local_schema short_desc="ଅପସନ୍ଦ">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="ଜୀବନାୟନ ସମର୍ଥ କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="keep_menus_in_memory">
+						<local_schema short_desc="ଅପସନ୍ଦ">
+						</local_schema>
+					</entry>
+					<entry name="tooltips_enabled">
+						<local_schema short_desc="ଉପକରଣ ସୂଚନା ସମର୍ଥ କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ଫଳକ ବସ୍ତୁ ପାଇଁ ଉପକରଣ ସୂଚକ ପ୍ରଦର୍ଶିତ କରାଯିବ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="objects">
+					<entry name="action_type">
+						<local_schema short_desc="କାର୍ଯ୍ଯ ଚାବି ପ୍ରକାର">
+							<longdesc>ଏହି ଚାବି ଦ୍ବାରା ନିର୍ଦ୍ଦିଷ୍ଟ କାର୍ଯ୍ଯ ପ୍ରକାର. ସମ୍ଭାବ୍ଯ ମୂଲ୍ଯ ହେଉଛି &quot;ତାଲା&quot;, &quot;ଲଗଆଉଟ&quot;, &quot;ଚଳାନ୍ତୁ&quot;, &quot;ଖୋଜନ୍ତୁ&quot;, ଓ &quot;ପରଦାଛବି&quot;. ବସ୍ତୁ_ପ୍ରକାର ଚାବିଟି &quot;କାର୍ଯ୍ଯ-ଆପ୍ଲେଟ୍&quot; ଥିଲେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="launcher_location">
+						<local_schema short_desc="ଚାଳକ ଅବସ୍ଥାନ">
+							<longdesc>ଚାଳକର ବର୍ଣ୍ଣନା କରୁଥିବା ଡେସ୍କଟପ ଫାଇଲର ଅବସ୍ଥାନ. ବସ୍ତୁ_ପ୍ରକାର ଚାବିଟି &quot;ଚାଳକ-ବସ୍ତୁ&quot; ଥିଲେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menu_path">
+						<local_schema short_desc="ମେନୁ ସୂଚୀପତ୍ର ପଥ">
+							<longdesc>ମେନୁ ସୂଚୀପତ୍ର ସୃଷ୍ଟି କରିବାର ପଥ. ମେନୁ_ପଥ_ବ୍ଯବହାର_କରନ୍ତୁ ଚାବି ସତ ଥିଲେ, ଓ ବସ୍ତୁ_ପ୍ରକାର ଚାବି &quot;ମେନୁ-ବସ୍ତୁ&quot; ଥିଲେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_menu_path">
+						<local_schema short_desc="ମେନୁ ସୂଚୀପତ୍ର ପାଇଁ ଇଚ୍ଛାରୂପ ପଥ ବ୍ଯବହାର କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ମେନୁ_ପଥ ଚାବିଟି ମେନୁ ସୂଚୀପତ୍ର ସୃଷ୍ଟି କରିବାର ପଥ ଭାବରେ ବ୍ଯବହାର ହେବ. ଅସତ୍ଯ ହେଲେ, ମେନୁ_ପଥ ଚାବିଟି ଅଗ୍ରାହ୍ଯ ରହିବ. ବସ୍ତୁ_ପ୍ରକାର ଚାବିଟି &quot;ମେନୁ- ବସ୍ତୁ&quot; ଥିଲେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_icon">
+						<local_schema short_desc="ବସ୍ତୁ ଚାବି ପାଇଁ ବ୍ଯବହାର କରାଯାଉଥିବା ଚିତ୍ରସଙ୍କେତ">
+							<longdesc>ବସ୍ତୁର ଚାବିର ଚିତ୍ରସଙ୍କେତ ରୂପେ ବ୍ଯବହାର କରାଯାଉଥିବା ଚିତ୍ର ଫାଇଲର ଅବସ୍ଥାନ. ବସ୍ତୁ_ପ୍ରକାର ଚାବିଟି &quot;ଡ୍ରୟର-ବସ୍ତୁ&quot; ବା &quot;ମେନୁ-ବସ୍ତୁ&quot; ଥିଲେ ଓ ଇଚ୍ଛାରୂପ_ଚିତ୍ରସଙ୍କେତ_ବ୍ଯବହାର_କରନ୍ତୁ ଚାବି ସତ ଥିଲେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_icon">
+						<local_schema short_desc="ବସ୍ତୁର ଚାବି ପାଇଁ ଇଚ୍ଛାରୂପ ଚିତ୍ରସଙ୍କେତ ବ୍ଯବହାର କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ଇଚ୍ଛାରୂପ_ଚିତ୍ରସଙ୍କେତ ଚାବି ଇଚ୍ଛାରୂପ ଚିତ୍ରସଙ୍କେତ ଭାବରେ ବ୍ଯବହାର କରାଯିବ. ଅସତ୍ଯ ହେଲେ, ଇଚ୍ଛାରୂପ_ଚିତ୍ରସଙ୍କେତ ଚାବିଟି ଅଗ୍ରାହ୍ଯ ରହିବ. ବସ୍ତୁ_ପ୍ରକାର ଚାବିଟି &quot;ମେନୁ- ବସ୍ତୁ&quot; ବା &quot;ଡ୍ରୟର- ବସ୍ତୁ&quot; ଥିଲେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="tooltip">
+						<local_schema short_desc="ଡ୍ରୟର ବା ମେନୁ ପାଇଁ ପ୍ରଦର୍ଶିତ ପକରଣ ସୂଚନା">
+							<longdesc>ଏହି ଡ୍ରୟର ବା ମେନୁର ଉପକରଣ ସୂଚନାରେ ପ୍ରଦର୍ଶିତ କରାଯିବା ପାଠ୍ଯ. ବସ୍ତୁ_ପ୍ରକାର ଚାବିଟି &quot;ଡ୍ରୟର-ବସ୍ତୁ&quot; ବା &quot;ମେନୁ-ବସ୍ତୁ&quot; ଥିଲେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="attached_toplevel_id">
+						<local_schema short_desc="ଡ୍ରୟରରେ ଯୋଗ କରାଯାଇଥିବା ଫଳକ">
+							<longdesc>ଏହି ଡ୍ରୟରରେ ଯୋଗ କରାଯାଇଥିବା ଫଳକର ପରିଚାୟକ. ବସ୍ତୁ_ପ୍ରକାର ଚାବିଟି &quot;ଡ୍ରୟର-ବସ୍ତୁ&quot; ଥିଲେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="bonobo_iid">
+						<local_schema short_desc="ଆପ୍ଲେଟ୍ ବନୋବୋ ପରିଚୟ">
+						</local_schema>
+					</entry>
+					<entry name="locked">
+						<local_schema short_desc="ବସ୍ତୁକୁ ଫଳକରେ ତାଲା ଦେଇ ରଖନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ବ୍ଯବହାରକାରୀ &quot;ତାଲାଖୋଲ&quot; ମେନୁ ବସ୍ତୁ ବ୍ଯବହାର କରି, ପ୍ରଥମେ ବସ୍ତୁର ତାଲାଖୋଲି ହିଁ ଆପ୍ଲେଟକୁ ଘୁଞ୍ଚାଇପାରିବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="panel_right_stick">
+						<local_schema short_desc="ତଳ/ଡାହାଣ ଧାର ଅପେକ୍ଷାରେ ଅବସ୍ଥାନର ବ୍ଯାଖ୍ଯା କରନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ବସ୍ତୁର ଅବସ୍ଥାନଟି ଫଳକର ଡାହାଣ ଧାର (ବା ତଳ ଯଦି ଭୂଲମ୍ବ) ଅପେକ୍ଷାରେ ବ୍ଯାଖ୍ଯା କରାଯିବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="position">
+						<local_schema short_desc="ଫଳକରେ ବସ୍ତୁର ଅବସ୍ଥାନ">
+							<longdesc>ଏହି ଫଳକ ବସ୍ତୁର ଅବସ୍ଥାନ. ଅବସ୍ଥାନଟି ଫଳକର ବାମ (ବା ଉପର, ଯଦି ଭୂଲମ୍ବ) ଧାରରୁ ପିକ୍ସେଲ ହିସାବରେ ନିର୍ଦ୍ଦିଷ୍ଟ କରାଯାଏ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id">
+						<local_schema short_desc="ବସ୍ତୁ ଧାରଣ କରିଥିବା ଉଚ୍ଚସ୍ତରୀୟ ଫଳକ">
+							<longdesc>ବସ୍ତୁକୁ ଧାରଣ କରିଥିବା ଉଚ୍ଚସ୍ତରୀୟ ଫଳକର ପରିଚାୟକ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_type">
+						<local_schema short_desc="ଫଳକ ବସ୍ତୁ ପ୍ରକାର">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ଚୟକରେ ଧାଡ଼ିର ସଂଖ୍ଯା">
+							<longdesc>ଏହି ଚାବି କାର୍ଯ୍ଯକ୍ଷେତ୍ର ଚୟକରେ ଧାଡ଼ିର ସଂଖ୍ଯା (ଭୂସମାନ୍ତର ବିନ୍ଯାସ ପାଇଁ) ବା ସ୍ତମ୍ଭର ସଂଖ୍ଯା (ଭୂଲମ୍ବ ବିନ୍ଯାସ ପାଇଁ) ନିର୍ଦ୍ଦିଷ୍ଟ କରେ. ସବୁ_କାର୍ଯ୍ଯକ୍ଷେତ୍ର_ପ୍ରଦର୍ଶିତ_କରନ୍ତୁ ଚାବି ସତ ଥିଲେ ହିଁ ଏହି ଚାବିର ପ୍ରଭାବ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="ସବୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ରଗୁଡ଼ିକ ଦେଖାନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, କାର୍ଯ୍ଯକ୍ଷେତ୍ର ଚୟକ ସବୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ରଗୁଡ଼ିକୁ ଦେଖାଇବ. ନଚେତ୍ ଏହା କେବଳ ସାମ୍ପ୍ରତିକ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ଦେଖାଇବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ନାମ ଦେଖାନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, କାର୍ଯ୍ଯକ୍ଷେତ୍ର ଚୟକରେ କାର୍ଯ୍ଯକ୍ଷେତ୍ରଗୁଡ଼ିକର ନାମ ପ୍ରଦର୍ଶିତ କରାଯିବ. ନଚେତ୍ କାର୍ଯ୍ଯକ୍ଷେତ୍ରଗୁଡ଼ିକରେ ସେହି କାର୍ଯ୍ଯକ୍ଷେତ୍ରର ୱିଣ୍ଡୋ ପ୍ରଦର୍ଶିତ କରାଯିବ. ଏହି ବିନ୍ୟାସଟି କେବଳ ୱିଣ୍ଡୋ ପରିଚାଳକ Metacity ଥିଲେ କାର୍ଯ୍ୟକରଥାଏ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="speed_unit">
+						<local_schema short_desc="ବେଗ ଏକକ">
+							<longdesc>ପବନ ବେଗ ଦର୍ଶାଇବା ସମୟରେ ବ୍ୟବହାର ହେଉଥିବା ଏକକ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="ତାପମାନ ଏକକ">
+							<longdesc>ତାପମାନ ଦର୍ଶାଇବା ସମୟରେ ବ୍ୟବହାର ହେଉଥିବା ଏକକ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cities">
+						<local_schema short_desc="ସ୍ଥାନଗୁଡ଼ିକର ତାଲିକା">
+							<longdesc>କାଲେଣ୍ଡର ୱିଣ୍ଡୋରେ ଦର୍ଶାଇବା ପାଇଁ ସ୍ଥାନମାନଙ୍କର ଗୋଟିଏ ତାଲିକା.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="internet_time">
+						<local_schema short_desc="ଇଣ୍ଟରନେଟ୍ ସମୟ ବ୍ଯବହାର କରନ୍ତୁ">
+							<longdesc>ସଂରୂପ ଚାବି ସମର୍ଥରେ, GNOME 2.6ରେ ଏହି ଚାବିର ବ୍ଯବହାର ନାପସନ୍ଦ କରାଯାଇଛି. ଏହି ବିବରଣିକା ପୁରୁଣା ସଂସ୍କରଣ ସହିତ ସଙ୍ଗତ ଦୃଷ୍ଟିରୁ ରଖାଯାଇଛି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="ୟୁନିକ୍ସ ସମୟ ବ୍ଯବହାର କରନ୍ତୁ">
+							<longdesc>ସଂରୂପ ଚାବି ସମର୍ଥରେ, GNOME 2.6ରେ ଏହି ଚାବିର ବ୍ଯବହାର ନାପସନ୍ଦ କରାଯାଇଛି. ଏହି ବିବରଣିକା ପୁରୁଣା ସଂସ୍କରଣ ସହିତ ସଙ୍ଗତ ଦୃଷ୍ଟିରୁ ରଖାଯାଇଛି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="ଘଣ୍ଟା ସଂରୂପ">
+							<longdesc>ସଂରୂପ ଚାବି ସମର୍ଥରେ, GNOME 2.6ରେ ଏହି ଚାବିର ବ୍ଯବହାର ନାପସନ୍ଦ କରାଯାଇଛି. ଏହି ବିବରଣିକା ପୁରୁଣା ସଂସ୍କରଣ ସହିତ ସଙ୍ଗତ ଦୃଷ୍ଟିରୁ ରଖାଯାଇଛି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_locations">
+						<local_schema short_desc="ସ୍ଥାନଗୁଡ଼ିକର ତାଲିକାକୁ ବଡ଼କରନ୍ତୁ">
+							<longdesc>ସତ ହେଲେ, କାଲେଣ୍ଡର ୱିଣ୍ଡୋରେ ସ୍ଥାନଗୁଡ଼ିକର ତାଲିକାକୁ ବଡ଼କରନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_weather">
+						<local_schema short_desc="ପାଣିପାଗ ସୂଚନା ତାଲିକାକୁ ବଡ଼କରନ୍ତୁ">
+							<longdesc>ସତ ହେଲେ, କାଲେଣ୍ଡର ୱିଣ୍ଡୋରେ ପାଣିପାଗ ସୂଚନା ତାଲିକାକୁ ବଡ଼କରନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_tasks">
+						<local_schema short_desc="କାର୍ଯ୍ୟଗୁଡ଼ିକର ତାଲିକାକୁ ବଡ଼କରନ୍ତୁ">
+							<longdesc>ସତ ହେଲେ, କାଲେଣ୍ଡର ୱିଣ୍ଡୋରେ କାର୍ଯ୍ୟଗୁଡ଼ିକର ତାଲିକାକୁ ବଡ଼କରନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_birthdays">
+						<local_schema short_desc="ଜନ୍ମଦିନ ତାଲିକାକୁ ବଡ଼କରନ୍ତୁ">
+							<longdesc>ସତ ହେଲେ, କାଲେଣ୍ଡର ୱିଣ୍ଡୋରେ ଜନ୍ମଦିନଗୁଗୁଡ଼ିକର ତାଲିକାକୁ ବଡ଼କରନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_appointments">
+						<local_schema short_desc="ସାକ୍ଷାତଗୁଡ଼ିକର ତାଲିକାକୁ ବଡ଼କରନ୍ତୁ">
+							<longdesc>ସତ ହେଲେ, କାଲେଣ୍ଡର ୱିଣ୍ଡୋରେ ସାକ୍ଷାତଗୁଡ଼ିକର ତାଲିକାକୁ ବଡ଼କରନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="ସପ୍ତାହ ସଂଖ୍ଯା କାଲେଣ୍ଡରରେ ଦେଖାନ୍ତୁ ( _n) ">
+							<longdesc>ସତ ହେଲେ, କାଲେଣ୍ଡରରେ ସପ୍ତାହ ସଂଖ୍ଯା ଦେଖାନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="ସମୟ ବିନ୍ଯାସ ଉପକରଣ">
+							<longdesc>ସଂରୂପ ଚାବି ସମର୍ଥରେ, GNOME 2.22 ରେ ଏହି ଚାବିର ବ୍ଯବହାର ନାପସନ୍ଦ କରାଯାଇଛି। ଏହି ବିବରଣିକା ପୁରୁଣା ସଂସ୍କରଣ ସହିତ ସଙ୍ଗତ ଦୃଷ୍ଟିରୁ ରଖାଯାଇଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="ୟୁ.ଟି.ସି. ସମୟ ବ୍ଯବହାର କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="show_temperature">
+						<local_schema short_desc="ଘଣ୍ଟାରେ ତାପମାନ ଦେଖାନ୍ତୁ">
+							<longdesc>ସତ ହେଲେ, ପାଣିପାଗ ଚିତ୍ରସଂକେତ ପରେ ତାପମାନ ଦେଖାନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_weather">
+						<local_schema short_desc="ଘଣ୍ଟାରେ ପାଣିପାଗ ଦେଖାନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ଗୋଟିଏ ପାଣିପାଗ ଚିତ୍ରସଂକେତ ଦେଖାନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema short_desc="ଉପକରଣ ସୂଚନାରେ ତାରିଖ ଦେଖାନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ସୂଚକ ଘଣ୍ଟା ଉପରେ ଥିବା ବେଳେ ଉପକରଣ ସୂଚନାରେ ତାରିଖ ଦେଖାନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="ଘଣ୍ଟାରେ ତାରିଖ ଦେଖାନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ଘଣ୍ଟାରେ ସମୟ ସହିତ ତାରିଖ ଦେଖାନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="ସମୟରେ ସେକେଣ୍ଡ ଦେଖାନ୍ତୁ">
+							<longdesc>ସତ ଥିଲେ, ସମୟରେ ସେକେଣ୍ଡ ଦେଖାନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="ଘଣ୍ଟାର ଇଚ୍ଛାରୂପକ ସଂରୂପ">
+							<longdesc>ସଂରୂପ ଚାବି &quot;custom&quot; ରୂପେ ବିନ୍ଯାସ ହୋଇଥିଲେ, ଏହି ଚାବି ଘଣ୍ଟା ଆପ୍ଲେଟ୍ ଦ୍ବାରା ବ୍ଯବହୃତ ସଂରୂପ ଉଲ୍ଲେଖିତ କରେ. ଗୋଟିଏ ନିର୍ଦ୍ଦିଷ୍ଟ ସଂରୂପ ପାଇବାପାଇଁ ଆପଣ strftime() ବୁଝିପାରୁଥିବା ରୂପାନ୍ତରକ ନିର୍ଦ୍ଦିଷ୍ଟକାରୀ ବ୍ଯବହାର କରିପାରନ୍ତି. ଅଧିକ ସୂଚନା ପାଇଁ strftime() ସହାୟକ ପୁସ୍ତକ ଦେଖନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="ଘଣ୍ଟା ସଂରୂପ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gweather">
+				<dir name="prefs">
+					<entry name="radar">
+						<local_schema short_desc="ରାଡାର ମାନଚିତ୍ର ପାଇଁ ୟୁ.ଆର.ଏଲ.">
+							<longdesc>ବ୍ଯବସ୍ଥାପିତ url କେଉଁଠାରୁ ରଡାର ମ୍ଯାପକୁ ପୁନଃପ୍ରାପ୍ତ କରିବା ପାଇଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_radar_url">
+						<local_schema short_desc="ରାଡାର ମାନଚିତ୍ର ପାଇଁ ଇଚ୍ଛାରୂପଣ ୟୁ.ଆର.ଏଲ. କୁ ବ୍ଯବହାର କରନ୍ତୁ">
+							<longdesc>ୟଦି ସତ୍ଯ ହୁଏ, ତେବେ &quot;ରଡାର&quot; କି ଦ୍ବାରା ନିଦ୍ଦିଷ୍ଟ ହୋଇଥିବା ଗୋଟିଏ ଅବସ୍ଥାନରୁ ଏକ ରଡାର ମ୍ଯାପକୁ ଉଦ୍ଧାର କର।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="coordinates">
+						<local_schema short_desc="ଅବସ୍ଥିତି ନିର୍ଦ୍ଧାରଣ ଉଚ୍ଚତା ପଦ୍ଧତି">
+						</local_schema>
+					</entry>
+					<entry name="location4">
+						<local_schema short_desc="ଗୋଟିଏ ମହାନଗର ର ପାଣିପାଗ">
+						</local_schema>
+					</entry>
+					<entry name="location3">
+						<local_schema short_desc="ରଡାର ଅବସ୍ଥାନ">
+						</local_schema>
+					</entry>
+					<entry name="location2">
+						<local_schema short_desc="କ୍ଷେତ୍ର ଅବସ୍ଥିତି">
+						</local_schema>
+					</entry>
+					<entry name="location1">
+						<local_schema short_desc="ନିକଟବର୍ତ୍ତୀ ସହର">
+						</local_schema>
+					</entry>
+					<entry name="location0">
+						<local_schema short_desc="ପାଣିପାଗ ଅବସ୍ଥିତି ସୂଚନା">
+						</local_schema>
+					</entry>
+					<entry name="enable_radar_map">
+						<local_schema short_desc="ରାଡାର ମାନଚିତ୍ରକୁ ପ୍ରଦର୍ଶନ କରନ୍ତୁ">
+							<longdesc>ପ୍ରତି ଅଦ୍ଯତନରେ ଗୋଟିଏ ରାଡାର ମାନଚିତ୍ରକୁ କୌଶଳ ପୂର୍ବକ ଆଣନ୍ତୁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_detailed_forecast">
+						<local_schema short_desc="ଆଉ ଉପୟୋଗ ହେଉନାହିଁ">
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="ତାପମାନ ଏକକ">
+							<longdesc>ତାପ ମାପକ ଏକକ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed_unit">
+						<local_schema short_desc="ବେଗ ଏକକ">
+							<longdesc>ପବନର ବେଗ ମାପକ ଏକକ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pressure_unit">
+						<local_schema short_desc="ଚାପ ଯୁନିଟ">
+							<longdesc>ଚାପ ମାପକ ଏକକ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="distance_unit">
+						<local_schema short_desc="ଦୂରତାର ମାପକ(ଯୁନିଟ)">
+							<longdesc>ଦ୍ରୁଶ୍ଯମାନ୍ଯତା ମାପକ ଏକକ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_metric">
+						<local_schema short_desc="ମେଟ୍ରିକ ଯୁନିଟଗୁଡିକୁ ଉପୟୋଗକର">
+							<longdesc>ଇଂଗ୍ରାଜୀ ଯୁନିଟଗୁଡିକ ପରିବର୍ତ୍ତେ ମେଟ୍ରିକ ଯୁନିଟଗୁଡିକୁ ଉପୟୋଗ କର।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update_interval">
+						<local_schema short_desc="ଅଦ୍ଯତନ ବିରତି">
+							<longdesc>ସ୍ବୟଂଚାଳିତ ଅଦ୍ଯତନ ମାନଙ୍କ ମଧ୍ଯରେ ବିରତି ସମୟ, ସେକେଣ୍ଡରେ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update">
+						<local_schema short_desc="ତଥ୍ଯକୁ ସ୍ବଯଂଚାଳିତଭାବରେ ଅପଡେଟ କର">
+							<longdesc>ଆପଲେଟ ସ୍ବଯଂଚାଳିତଭାବରେ ଏହାର ପାଣିପାଗ ପରିସଂଖ୍ଯାନ ଅପଡେଟ କରେ କି ନାହିଁ ନିର୍ଧାରଣ କରେ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="control-center">
+				<entry name="cc_exit_shell_on_action_upgrade_uninstall">
+					<local_schema short_desc="ଉନ୍ନୟନ କିମ୍ବା ବିସ୍ଥାପନ କାର୍ଯ୍ୟକାରୀ ହେବା ସମୟରେ କୋଷରୁ ପ୍ରସ୍ଥାନ କରନ୍ତୁ">
+						<longdesc>ଉନ୍ନୟନ କିମ୍ବା ବିସ୍ଥାପନ କାର୍ଯ୍ୟକୁ କାର୍ଯ୍ୟକାରୀ କରିବା ସମୟରେ କୋଷକୁ ବନ୍ଦ କରବା ଉଚିତ କି ନୁହଁ ଜଣାନ୍ତୁ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_add_remove">
+					<local_schema short_desc="ଯୋଗକରନ୍ତୁ କିମ୍ବା କାଢ଼ନ୍ତୁ କାର୍ଯ୍ୟକୁ କାର୍ଯ୍ୟକାରୀ କରିବା ସମୟରେ କୋଷ ତ୍ୟାଗ କରନ୍ତୁ">
+						<longdesc>ଯୋଗକରନ୍ତୁ କିମ୍ବା କାଢନ୍ତୁ କାର୍ଯ୍ୟକୁ କାର୍ଯ୍ୟକାରୀ କରିବା ସମୟରେ କୋଷକୁ ବନ୍ଦ କରବା ଉଚିତ କି ନୁହଁ ଜଣାନ୍ତୁ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_help">
+					<local_schema short_desc="ସହାୟତା କାର୍ଯ୍ୟ କାର୍ଯ୍ୟକାରୀ ହେବା ସମୟରେ କୋଷରୁ ପ୍ରସ୍ଥାନ କରନ୍ତୁ">
+						<longdesc>ସହାୟତା କାର୍ଯ୍ୟକୁ କାର୍ଯ୍ୟକାରୀ କରିବା ସମୟରେ କୋଷକୁ ବନ୍ଦ କରବା ଉଚିତ କି ନୁହଁ ଜଣାନ୍ତୁ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_start">
+					<local_schema short_desc="ଆରମ୍ଭ କାର୍ଯ୍ୟ କାର୍ଯ୍ୟକାରୀ ହେବା ସମୟରେ କୋଷରୁ ପ୍ରସ୍ଥାନ କରନ୍ତୁ">
+						<longdesc>ଆରମ୍ଭ କାର୍ଯ୍ୟକୁ କାର୍ଯ୍ୟକାରୀ କରିବା ସମୟରେ କୋଷକୁ ବନ୍ଦ କରବା ଉଚିତ କି ନୁହଁ ଜଣାନ୍ତୁ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_static_action">
+					<local_schema short_desc="କାର୍ଯ୍ୟ ସକ୍ରିୟ ହେବା ସମୟରେ ନିୟନ୍ତ୍ରଣ-କେନ୍ଦ୍ରକୁ ବନ୍ଦ କରନ୍ତୁ">
+						<longdesc>ଯଦି true, ତେବେ &quot;Common Task&quot; ସକ୍ରିୟ ହେବା ମାତ୍ରେ ନିୟନ୍ତ୍ରଣ-କେନ୍ଦ୍ର ବନ୍ଦ ହୋଇଯିବ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_actions_list">
+					<local_schema short_desc="କାର୍ଯ୍ୟ ନାମ ଏବଂ ସଂଶ୍ଳିଷ୍ଟ .desktop ଫାଇଲଗୁଡ଼ିକ">
+					</local_schema>
+				</entry>
+				<dir name="network">
+					<entry name="current_location">
+						<local_schema short_desc="ପ୍ରଚଳିତ ନେଟୱର୍କ ଅବସ୍ଥାନ">
+							<longdesc>ଏହାକୁ ଆପଣଙ୍କର ପ୍ରଚଳିତ ଅବସ୍ଥାନ ନାମରେ ସେଟ କରନ୍ତୁ। ଏହା ସଠିକ ନେଟୱର୍କ ପ୍ରକ୍ସି ସଂରଚନାକୁ ନିର୍ଦ୍ଧାରଣ କରିବା ପାଇଁ ବ୍ୟବହାର ହୋଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="appearance">
+					<entry name="more_themes_url">
+						<local_schema short_desc="ଅଧିକ ପ୍ରସଙ୍ଗ URL">
+							<longdesc>କେଉଁଠି ଅଧିକ ଡେସ୍କଟପ ପ୍ରସଙ୍ଗ ମିଳିବ ତାହାର URL. ଯଦି କୌଣସି ଖାଲି ବାକ୍ୟଖଣ୍ଡରେ ସେଟ କରାଯାଏ ତେବେ ସଂଯୋଗଟି ଦୃଶ୍ୟମାନ ହେବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="more_backgrounds_url">
+						<local_schema short_desc="ଅଧିକ ପୃଷ୍ଠଭୂମି URL">
+							<longdesc>କେଉଁଠି ଅଧିକ ଡେସ୍କଟପ ପୃଷ୍ଠଭୂମି ମିଳିବ ତାହାର URL. ଯଦି କୌଣସି ଖାଲି ବାକ୍ୟଖଣ୍ଡରେ ସେଟ କରାଯାଏ ତେବେ ସଂଯୋଗଟି ଦୃଶ୍ୟମାନ ହେବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="ପାଠ୍ୟ ଅଧ୍ୟାହାର ସୀମା">
+							<longdesc>An integer specifying how parts of overlong file names should be replaced by ellipses on the desktop. If the number is larger than 0, the file name will not exceed the given number of lines. If the number is 0 or smaller, no limit is imposed on the number of displayed lines.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_name">
+						<local_schema short_desc="ନେଟୱାର୍କ ସର୍ଭର ଚିତ୍ରସଂକେତ ନାମ">
+							<longdesc>ଡେସ୍କଟପରେ ନେଟୱର୍କ ସର୍ଭର ଚିତ୍ରସଂକେତ ପାଇଁ ଯଦି ଆପଣ ଗୋଟିଏ ଇଚ୍ଛାମୁତାବକ ନାମ ଚାହାନ୍ତି ତେବେ ଏହି ନାମକୁ ସେଟ କରାଯାଇପାରିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_name">
+						<local_schema short_desc="ଡେସ୍କଟପ ଆବର୍ଜନା ପାତ୍ର ଚିତ୍ରସଙ୍କେତ ର ନାମ">
+							<longdesc>ଡେସ୍କଟପରେ ଆବର୍ଜନା ପାତ୍ର ଚିତ୍ରସଂକେତ ପାଇଁ ଯଦି ଆପଣ ଗୋଟିଏ ଇଚ୍ଛାମୁତାବକ ନାମ ଚାହାନ୍ତି ତେବେ ଏହି ନାମକୁ ସେଟ କରାଯାଇପାରିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="ଡେସ୍କଟପ ମୂଲସ୍ଥାନ ଚିତ୍ରସଙ୍କେତ ର ନାମ">
+							<longdesc>ଡେସ୍କଟପରେ ମୂଳସ୍ଥାନ ଚିତ୍ରସଂକେତ ପାଇଁ ଯଦି ଆପଣ ଗୋଟିଏ ଇଚ୍ଛାମୁତାବକ ନାମ ଚାହାନ୍ତି ତେବେ ଏହି ନାମକୁ ସେଟ କରାଯାଇପାରିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="ଡେସ୍କଟପ୍ କମ୍ପୁଟର ଚିତ୍ରସଙ୍କେତ ର ନାମ">
+							<longdesc>ଡେସ୍କଟପରେ କମ୍ପୁଟର ଚିତ୍ରସଂକେତ ପାଇଁ ଯଦି ଆପଣ ଗୋଟିଏ ଇଚ୍ଛାମୁତାବକ ନାମ ଚାହାନ୍ତି ତେବେ ଏହି ନାମକୁ ସେଟ କରାଯାଇପାରିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="ଡେସ୍କଟପରେ ନେଟୱାର୍କ ସେବକ ଚିତ୍ରସଙ୍କେତ ଦୃଶ୍ଯମାନ ଅଟେ">
+							<longdesc>ଯଦି ଏହାକୁ true ସେଟ କରାଯାଏ, ତେବେ ନେଟୱର୍କ ସର୍ଭର ଦୃଶ୍ୟ ସହିତ ଗୋଟିଏ ଚିତ୍ରସଂକେତକୁ ଡେସ୍କଟପରେ ରଖାଯାଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volumes_visible">
+						<local_schema short_desc="ଡେସ୍କଟପରେ ଆରୋହଣ କରାଯାଇଥିବା ଘନଫଳ ମାନଙ୍କୁ ପ୍ରଦର୍ଶନ କରନ୍ତୁ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ ସ୍ଥାପିତ ଆକାର ସହିତ ସଂଯୁକ୍ତ ଚିତ୍ରସଂକେତକୁ ଡେସ୍କଟପରେ ରଖିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="ଆବର୍ଜନା ପାତ୍ର ଚିତ୍ରସଂକେତ ଡେସ୍କଟପରେ ଦୃଶ୍ଯମାନ ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ ଆବର୍ଜନା ପାତ୍ର ସହିତ ସଂଯୁକ୍ତ ଚିତ୍ରସଂକେତକୁ ଡେସ୍କଟପରେ ରଖିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="ଡେସ୍କଟପ୍ ରେ କମ୍ପୁଟର ଚିତ୍ରସଙ୍କେତ ଦୃଶ୍ଯମାନ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ କମ୍ପୁଟର ଅବସ୍ଥାନ ସହିତ ସଂଯୁକ୍ତ ଚିତ୍ରସଂକେତକୁ ଡେସ୍କଟପରେ ରଖିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="ଡେସ୍କଟପରେ ଦେଖା ଯାଉଥିବା ମୂଳସ୍ଥାନ ଚିତ୍ରସଙ୍କେତ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ ମୂଳସ୍ଥାନ ଫୋଲଡ଼ର ସହିତ ସଂଯୁକ୍ତ ଚିତ୍ରସଂକେତକୁ ଡେସ୍କଟପରେ ରଖିବ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema short_desc="କେବଳ ଟ୍ରି ପାର୍ଶ୍ବପଟିରେ ଫୋଲଡର ମାନଙ୍କୁ ଦର୍ଶାନ୍ତୁ">
+								<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ କେବଳ Nautilus ଟ୍ରି ପାର୍ଶ୍ୱ ପ୍ୟାନରେ ଫୋଲଡ଼ର ଦର୍ଶାଇବ। ଅନ୍ୟଥା ଏହା ଉଭୟ ଫୋଲଡର ଏବଂ ଫାଇଲକୁ ଦର୍ଶାଇବ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="ଏହି ତାଲିକା ପ୍ରଦର୍ଶନରେ ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ସ୍ତମ୍ଭ ଅନୁକ୍ରମ">
+							<longdesc>ଏହି ତାଲିକା ପ୍ରଦର୍ଶନରେ ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ସ୍ତମ୍ଭ ଅନୁକ୍ରମ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="ଏହି ତାଲିକା ପ୍ରଦର୍ଶନରେ ଦୃଶ୍ଯମାନ ସ୍ତମ୍ଭ ମାନଙ୍କର ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ତାଲିକା">
+							<longdesc>ଏହି ତାଲିକା ପ୍ରଦର୍ଶନରେ ଦୃଶ୍ଯମାନ ସ୍ତମ୍ଭ ମାନଙ୍କର ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ତାଲିକା।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="ସାନବଡ କରିବା ସ୍ତରର ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ତାଲିକା">
+							<longdesc>ତାଲିକା ପ୍ରଦର୍ଶନ ଦ୍ବାରା ବ୍ଯବହ୍ରୁତ ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ସାନବଡ କରିବା ସ୍ତର।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="ନୂତନ ୱିଣ୍ଡୋରେ ବିପରୀତ ସଜାଡିବା କ୍ରମ">
+							<longdesc>ଯଦି true, ତେବେ ନୂତନ ୱିଣ୍ଡୋରେ ଥିବା ଫାଇଲଗୁଡ଼ିକ ଓଲଟା କ୍ରମରେ ସଜଡ଼ାଯିବ। ଯେପରିକି, ନାମ ଅନୁସାରେ ସଜଡ଼ାଗଲେ, ଫାଇଲଗୁଡ଼ିକୁ &quot;a&quot; ରୁ &quot;z&quot; କ୍ରମରେ ସଜାଡ଼ିବା ପରିବର୍ତ୍ତେ, ସେମାନଙ୍କୁ &quot;z&quot; ରୁ &quot;a&quot; କ୍ରମରେ ସଜଡ଼ାଯିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="ସଜଡା ଯାଇଥିବା ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ଅନୁକ୍ରମ">
+							<longdesc>ଚିତ୍ରସଂକେତ ଦୃଶ୍ୟରେ ବସ୍ତୁଗୁଡ଼ିକ ପାଇଁ ପୂର୍ବନିର୍ଦ୍ଧାରିତ କ୍ରମ-ସଜ୍ଜା। ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି &quot;ନାମ&quot;, &quot;ଆକାର&quot;, &quot;ପ୍ରକାର&quot;, &quot;ପରିବର୍ତ୍ତନ_ତାରିଖ&quot;।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="compact_view">
+					<entry name="all_columns_have_same_width">
+						<local_schema short_desc="ସମସ୍ତ ସ୍ତମ୍ଭଗୁଡ଼ିକରେ ସମାନ ଓସାର ଅଛି">
+							<longdesc>ଯଦି ଏହି ପସନ୍ଦକୁ ସେଟ କରାଯାଇଥାଏ, ତେବେ ସୁସଂଗତ ଦୃଶ୍ୟରେ ସମସ୍ତ ସ୍ତମ୍ଭଗୁଡ଼ିକର ସମାନ ଓସାର ଥାଏ। ଅନ୍ୟଥା, ପ୍ରତ୍ୟେକ ସ୍ତମ୍ଭର ଓସାରକୁ ପୃଥକ ଭାବରେ ନିର୍ଦ୍ଧାରଣ କରାଯାଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ସୁସଂହତ ଦୃଶ୍ୟକୁ ସାନବଡ କରିବା ସ୍ତର">
+							<longdesc>ସୁସଂହତ ଦୃଶ୍ୟ ଦ୍ୱାରା ବ୍ୟବହୃତ ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ସାନବଡ କରିବା ସ୍ତର</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="ପାଠ୍ୟ ଅଧ୍ୟାହାର ସୀମା">
+							<longdesc>A string specifying how parts of overlong file names should be replaced by ellipses, depending on the zoom level. Each of the list entries is of the form &quot;ସାନବଡ଼ ସ୍ତର:ପୂର୍ଣ୍ଣ ସଂଖ୍ୟା&quot;. For each specified zoom level, if the given integer is larger than 0, the file name will not exceed the given number of lines. If the integer is 0 or smaller, no limit is imposed on the specified zoom level. A default entry of the form &quot;ପୂର୍ଣ୍ଣ ସଂଖ୍ୟା&quot; without any specified zoom level is also allowed. It defines the maximum number of lines for all other zoom levels. Examples: 0 - always display overlong file names; 3 - shorten file names if they exceed three lines; smallest:5,smaller:4,0 - shorten file names if they exceed five lines for zoom level &quot;କ୍ଷୁଦ୍ରତମ&quot;. Shorten file names if they exceed four lines for zoom level &quot;କ୍ଷୁଦ୍ରତର&quot;. ଅନ୍ୟ ସାନବଡ଼ ସ୍ତରଗୁଡ଼ିକ ପାଇଁ ଫାଇଲ ନାମକୁ ଛୋଟ କରନ୍ତୁ ନାହିଁ। ଉପଲବ୍ଧ ସାନବଡ଼ ସ୍ତରଗୁଡ଼ିକ: କ୍ଷୁଦ୍ରତମ (33%), କ୍ଷୁଦ୍ରତର (50%), କ୍ଷୁଦ୍ର (66%), ମାନକ (100%), ବୃହତ (150%), ବୃହତର (200%), ବୃହତମ (400%)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_size">
+						<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ କ୍ଷୁଦ୍ର ଚିତ୍ର ଆକାର">
+							<longdesc>ଏହି ଚିତ୍ରସଂକେତ ପ୍ରଦର୍ଶନରେ ଦୃଶ୍ଯମାନ କ୍ଷୁଦ୍ରଚିତ୍ରର ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ଚିତ୍ରସଂକେତ ଆକାର।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ଚିତ୍ରସଙ୍କେତକୁ ସାନବଡ କରିବା ସ୍ତର">
+							<longdesc>ଚିତ୍ରସଙ୍କେତ ପ୍ରଦର୍ଶନ ଦ୍ବାରା ବ୍ଯବହ୍ରୁତ ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ସାନବଡ କରିବା ସ୍ତର।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_manual_layout">
+						<local_schema short_desc="ନୂତନ ୱିଣ୍ଡୋଗୁଡ଼ିକରେ ହସ୍ତକୃତ ସଂରଚନା ବ୍ୟବହାର କରନ୍ତୁ">
+							<longdesc>ଯଦି true, ତେବେ ନୂତନ ୱିଣ୍ଡୋଗୁଡ଼ିକ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଭାବରେ ହସ୍ତକୃତ ସଂରଚନା ବ୍ୟବହାର କରିବେ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="labels_beside_icons">
+						<local_schema short_desc="ଚିତ୍ରସଙ୍କେତ ନିକଟରେ ସୂଚକ ପ୍ରଦାନ କରନ୍ତୁ">
+							<longdesc>ଯଦି true, ତେବେ ନାମପଟିଗୁଡ଼ିକ ତଳେରଖିବା ପରିବର୍ତ୍ତେ ଚିତ୍ରସଂକେତ ପାଖରେ ରଖାଯିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_tighter_layout">
+						<local_schema short_desc="ନୂତନ ୱିଣ୍ଡୋଗୁଡ଼ିକରେ ଶକ୍ତ ସଂରଚନା ବ୍ୟବହାର କରନ୍ତୁ">
+							<longdesc>ଯଦି true, ନୂତନ ୱିଣ୍ଡୋରେ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଭାବେ ଚିତ୍ରସଂକେତ ଶକ୍ତ ଭାବରେ ବାହାର କରିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="ନୂତନ ୱିଣ୍ଡୋରେ ବିପରୀତ ସଜାଡିବା କ୍ରମ">
+							<longdesc>ଯଦି true, ତେବେ ନୂତନ ୱିଣ୍ଡୋରେ ଥିବା ଫାଇଲଗୁଡ଼ିକ ଓଲଟା କ୍ରମରେ ସଜଡ଼ାଯିବ। ଯେପରିକି, ନାମ ଅନୁସାରେ ସଜଡ଼ାଗଲେ, ଫାଇଲଗୁଡ଼ିକୁ &quot;a&quot; ରୁ &quot;z&quot; କ୍ରମରେ ସଜାଡ଼ିବା ପରିବର୍ତ୍ତେ, ସେମାନଙ୍କୁ &quot;z&quot; ରୁ &quot;a&quot; କ୍ରମରେ ସଜଡ଼ାଯିବ; ଯଦି ଆକାର ଅନୁସାରେ ସଜଡ଼ା ଯାଏ, ତେବେ ବର୍ଦ୍ଧିତ କ୍ରମ ପରିବର୍ତ୍ତେ ସେମାନଙ୍କୁ ଆକାର ହ୍ରାସ କ୍ରମରେ ସଜଡ଼ା ଯିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="ସଜଡା ଯାଇଥିବା ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ଅନୁକ୍ରମ">
+							<longdesc>ଚିତ୍ରସଂକେତ ଦୃଶ୍ୟରେ ବସ୍ତୁଗୁଡ଼ିକ ପାଇଁ ପୂର୍ବନିର୍ଦ୍ଧାରିତ କ୍ରମ-ସଜ୍ଜା। ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି &quot;ନାମ&quot;, &quot;ଆକାର&quot;, &quot;ପ୍ରକାର&quot;, &quot;ପରିବର୍ତ୍ତନ_ତାରିଖ&quot;, ଏବଂ &quot;ପ୍ରତିକ&quot;।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="captions">
+						<local_schema short_desc="ଚିତ୍ରସଙ୍କେତର ସମ୍ଭାବ୍ଯ ଶିରୋନାମା ମାନଙ୍କ ତାଲିକା">
+							<longdesc>ଶୀର୍ଷକଗୁଡ଼ିକର ଗୋଟିଏ ତାଲିକା ଚିତ୍ରସଂକେତ ଦୃଶ୍ୟ ଏବଂ ଡେସ୍କଟପ ଭିତରେ ଥିବା ଚିତ୍ରସଂକେତ ତଳେ। ପ୍ରକୃତ ସଂଖ୍ୟକ ଶୀର୍ଷକଗୁଡ଼ିକର ସଂଖ୍ୟା ଛୋଟବଡ଼ ସ୍ତର ଉପରେ ନିର୍ଭର କରିଥାଏ। ସମ୍ବାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି: &quot;size&quot;, &quot;type&quot;, &quot;date_modified&quot;, &quot;date_changed&quot;, &quot;date_accessed&quot;, &quot;owner&quot;, &quot;group&quot;, &quot;permissions&quot;, &quot;octal_permissions&quot; ଏବଂ&quot;mime_type&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="ପାର୍ଶ୍ବ ଫଳକ ପ୍ରଦର୍ଶନ">
+							<longdesc>ନୂତନଭାବରେ ଖୋଲାଯାଇଥିବା ୱିଣ୍ଡୋରେ ଦର୍ଶାଇବା ପାଇଁ ପାର୍ଶ୍ୱ ପ୍ୟାନ ଦୃଶ୍ୟ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="ନୂତନ ୱିଣ୍ଡୋ ମାନଙ୍କରେ ପାର୍ଶ୍ବ ଫଳକକୁ ପ୍ରଦର୍ଶନ କରନ୍ତୁ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ ନୂତନ ଭାବେ ଖୋଲାଯାଇଥିବା ୱିଣ୍ଡୋରେ ପାର୍ଶ୍ୱ ପ୍ୟାନ ଦୃଶ୍ଯମାନ ହେବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="ନୂତନ ୱିଣ୍ଡୋ ମାନଙ୍କରେ ଅବସ୍ଥିତି ପଟିକୁ ପ୍ରଦର୍ଶନ କରନ୍ତୁ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ ନୂତନ ଭାବେ ଖୋଲାଯାଇଥିବା ୱିଣ୍ଡୋରେ ସ୍ଥିତି ପଟି ଦୃଶ୍ଯମାନ ହେବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="ନୂତନ ୱିଣ୍ଡୋ ମାନଙ୍କରେ ଅବସ୍ଥାନ ପଟି ପ୍ରଦର୍ଶନ କରନ୍ତୁ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ ନୂତନ ଭାବେ ଖୋଲାଯାଇଥିବା ୱିଣ୍ଡୋରେ ଅବସ୍ଥାନ ପଟି ଦୃଶ୍ଯମାନ ହେବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="ନୂତନ ୱିଣ୍ଡୋ ମାନଙ୍କରେ ସାଧନ ପଟି ପ୍ରଦର୍ଶନ କରନ୍ତୁ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ ନୂତନ ଭାବେ ଖୋଲାଯାଇଥିବା ୱିଣ୍ଡୋରେ ସାଧନପଟି ଦୃଶ୍ଯମାନ ହେବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="ପାର୍ଶ୍ବପଟିର ଓସାର">
+							<longdesc>ନୂତନ ୱିଣ୍ଡୋଗୁଡ଼ିକରେ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ପାର୍ଶ୍ୱ ପ୍ୟାନର ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଓସାର।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="ତଥ୍ଯ ଶୈଳୀ">
+							<longdesc>ଫାଇଲ ତାରିଖଗୁଡ଼ିକର ଶୈଳୀ। ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି &quot;ସ୍ଥାନ&quot;, &quot;iso&quot;, ଏବଂ&quot;ଅନିୟମିତ&quot;।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ଫୋଲଡର ପ୍ରଦର୍ଶକ">
+							<longdesc>ଯେତେବେଳେ ଫୋଲଡରଟି ଏହି ଦୃଶ୍ୟକୁ ପରିଦର୍ଶନ କରିଥାଏ ଅନ୍ୟଥା ଆପଣ ସେହି ଫୋଲଡର ପାଇଁ ଅନ୍ୟ ଏକ ଦୃଶ୍ୟକୁ ବାଛିଥାଏ। ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଟି ହେଉଛି &quot;list_view&quot;, &quot;icon_view&quot; ଏବଂ &quot;compact_view&quot;।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ପାର୍ଶ୍ବ ଫଳକ ପ୍ରୁଷ୍ଠଭୂମି ଫାଇଲ ନାମ">
+							<longdesc>ପୂର୍ବନିର୍ଦ୍ଧାରିତ ପାର୍ଶ୍ୱ ପ୍ୟାନ ପୃଷ୍ଠଭୂମି ପାଇଁ ଫାଇଲନାମ। କେବଳ side_pane_background_set true ଥିବା ସମୟରେ ବ୍ୟବହୃତ ହୋଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ପାର୍ଶ୍ବ ଫଳକ ପ୍ରୁଷ୍ଠଭୂମି ରଙ୍ଗ">
+							<longdesc>ପୂର୍ବନିର୍ଦ୍ଧାରିତ ପାର୍ଶ୍ୱ ପ୍ୟାନ ପୃଷ୍ଠଭୂମି ପାଇଁ ଫାଇଲନାମ। କେବଳ side_pane_background_set true ଥିବା ସମୟରେ ବ୍ୟବହୃତ ହୋଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_set">
+						<local_schema short_desc="ପାର୍ଶ୍ବ ଫଳକ ପ୍ରୁଷ୍ଠଭୂମି ସେଟକୁ ଇଚ୍ଚାରୂପଣ କରନ୍ତୁ">
+							<longdesc>ଗୋଟିଏ ଇଚ୍ଛାକୃତ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ପାର୍ଶ୍ୱ ପ୍ୟାନ ପୃଷ୍ଠଭୂମିକୁ କେଉଁଠି ସେଟ ସକରାଯାଇଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ପ୍ରୁଷ୍ଠଭୂମି ଫାଇଲ ନାମ">
+							<longdesc>ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଫୋଲଡର ପୃଷ୍ଠଭୂମି ପାଇଁ ଫାଇଲନାମ। କେବଳ background_set true ଥିବା ସମୟରେ ବ୍ୟବହୃତ ହୋଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ପ୍ରୁଷ୍ଠଭୂମି ରଙ୍ଗ">
+							<longdesc>ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଫୋଲଡ଼ର ପୃଷ୍ଠଭୂମି ପାଇଁ ରଙ୍ଗ। କେବଳ background_set true ଥିଲେ ବ୍ୟବହୃତ ହୋଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema short_desc="ପୃଷ୍ଠଭୂମି ସେଟକୁ ଇଚ୍ଛାରୂପଣ କରନ୍ତୁ">
+							<longdesc>ଗୋଟିଏ ଇଚ୍ଛାକୃତ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଫୋଲଡର ପୃଷ୍ଠଭୂମିକୁ କେଉଁଠି ସେଟ ସକରାଯାଇଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search_bar_type">
+						<local_schema short_desc="ସନ୍ଧାନ ପଟି ଖୋଜିବା ପାଇଁ ମାନଦଣ୍ଡ">
+							<longdesc>ସନ୍ଧାନ ପଟିରେ ମେଳ ଖାଉଥିବା ଫାଇଲଗୁଡ଼ିକୁ ଖୋଜିବା ପାଇଁ ଆବଶ୍ୟକୀୟ ମାନଦଣ୍ଡ। ଯଦି&quot;search_by_text&quot; ସେଟ କରାଯାଏ, ତେବେ Nautilus କେବଳ ନାମ ଅନୁସାରେ ଫାଇଲଗୁଡ଼ିକୁ ଖୋଜିବ। ଯଦି &quot;search_by_text_and_properties&quot; ସେଟ କରାଯାଏ, ତେବେ Nautilus ଫାଇଲଗୁଡ଼ିକୁ ନାମ ଏବଂ ଗୁଣଧର୍ମ ଅନୁସାରେ ଖୋଜିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_is_home_dir">
+						<local_schema short_desc="Nautilus ମୂଳସ୍ଥାନ ପଞ୍ଜିକାକୁ ଡେସ୍କଟପ ଭାବରେ ବ୍ଯବହାର କରିଥାଏ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଇଥାଏ, ତେବେ Nautilus ଚାଳକର ନିଜସ୍ୱ ଫୋଲଡ଼ରକୁ ଡେସ୍କଟପ ଭାାବରେ ବ୍ୟବହାର କରି। ଯଦିs false,ତେବେ ଏହାe ~/Desktopକୁ ଡେସ୍କଟପ ଭାବରେ ବ୍ୟବହାର କରିବ।.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="ଡେସ୍କଟପ୍ ଅକ୍ଷରରୂପ">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="Nautilus ଡେସ୍କଟପ ଚିତ୍ରଣକୁ ନିୟନ୍ତ୍ରଣ କରିଥାଏ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ Nautilus ଡେସ୍କଟପରେ ଚିତ୍ରସଂକେତ ଆଙ୍କିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="ପ୍ରଥମେ ୱିଣ୍ଡୋରେ ଫୋଲଡର ମାନଙ୍କୁ ପ୍ରଦର୍ଶନ କରନ୍ତୁ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ Nautilus ଚିତ୍ରସଂକେତ ଏବଂ ତାଲିକା ଦୃଶ୍ୟଗୁଡ଼ିକଫାଇଲଗୁଡ଼ିକୁ ଦର୍ଶାଇବା ପୂର୍ବରୁ ଫୋଲଡ଼ର ଦର୍ଶାଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_advanced_permissions">
+						<local_schema short_desc="ଫାଇଲ ଗୁଣଧର୍ମ ସଂଳାପରେ ଉନ୍ନତ ଧରଣର ଅନୁମତି ପ୍ରଦର୍ଶନ କରନ୍ତୁ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ Nautilus ଆପଣଙ୍କୁ ସମ୍ପାଦନ ଏବଂ ପ୍ରଦର୍ଶନ କରିବାକୁ unix-ସଦୃଶ ପଥରେ ଫାଇଲ ଅନୁମତି ପ୍ରଦାନ କରିଥାଏ,ଅଧିକ esoteric ବିକଳ୍ପଗୁଡ଼ିକୁ ବ୍ୟବହାର କରି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="preview_sound">
+						<local_schema short_desc="ଗୋଟିଏ ଚିତ୍ରସଂକେତ ଉପରେ ମାଉସ ଚଲାଇବା ଫଳରେ କେଉଁଠି ଧ୍ୱନୀ ପ୍ରାକଦର୍ଶନ କରିବ">
+							<longdesc>କୌଣସି ଫାଇଲର ଚିତ୍ରସଂକେତ ଉପରେ ମାଉସ ଚଲାଇବା ସମୟରେ କେତେବେଳେ ଧ୍ୱନି ଫାଇଲଗୁଡ଼ିକର ପ୍ରାକଦର୍ଶନ କରାହେବ ତାହା ପାଇଁ tradeoffକୁ ଗତିଶୀଳ କରାନ୍ତୁ। ଯଦି &quot;always&quot; ସେଟ କରାହୋଇଥାଏ ତେବେ ସର୍ବଦା ଧ୍ୱନି ଚଲାନ୍ତୁ, ସେହି ଫାଇଲଟି ସୁଦୂର ସର୍ଭରରେ ଥିଲେ ମଧ୍ଯ। ଯଦି &quot;local_only&quot; ସେଟ କରାଯାଇଥାଏ ତେବେ କେବଳ ପ୍ରାକଦର୍ଶନକୁ ସ୍ଥାନୀୟ ପାଇଲ ତନ୍ତ୍ରରେ ଚଲାଇଥାଏ। ଯଦି &quot;never&quot; ସେଟ କରାଯାଇଥାଏ ତେବେ ଏହା କଦାପି ଧ୍ୱନିକୁ ପ୍ରାକଦର୍ଶନ କରେନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="directory_limit">
+						<local_schema short_desc="ଗୋଟିଏ ଫୋଲଡରରେ ସର୍ବାଧିକ ନିୟନ୍ତ୍ରିତ ଫାଇଲ">
+							<longdesc>ଏହି ଆକାରଠୁ ଅଧିକ ବଡ଼ ଆକାର ବିଶିଷ୍ଟ ଫୋଲଡରଗୁଡ଼ିକୁ ଏହି ଆକାରରେ ବଛାହୋଇଥାଏ। ଏହାର ଉଦ୍ଦେଶ୍ୟ ହେଉଛି ଅତ୍ୟଧିକ ଫୋଲଡ଼ୋର ମଧ୍ଯରେ Nautilus କୁ ନଷ୍ଟ ହେବାରୁ ଅଟକାଇବା। ଋଣାତ୍ମକ ମୂଲ୍ୟ ସୀମାହୀନତାକୁ ଇଙ୍ଗିତ କରିଥାଏ। </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_limit">
+						<local_schema short_desc="କ୍ଷୁଦ୍ର ଚିତ୍ରଣ ପାଇଁ ସର୍ବାଧିକ ପ୍ରତିଛବି ଆକାର">
+							<longdesc>ଏହି ଆକାର ଉପରେ ପ୍ରତିଛବିଗୁଡ଼ିକ (ବାଇଟରେ) କ୍ଷୁଦ୍ରଚିତ୍ର ହୋଇନପାରେ। ଏହି ବିନ୍ୟାସର ଉଦ୍ଦେଶ୍ୟ ହେଉଛି ବଡ଼ ପ୍ରତିଛବିଗୁଡ଼ିକୁ କ୍ଷୁଦ୍ରଚିତ୍ରରେ ପ୍ରକାଶ କରିବାରୁ ଅଟକାଇବା ଯାହାକି ଧାରଣ କରିବା ପାଇଁ ଅନେକ ସମୟ ନେଇଥାଏ ଅଥବା ଅଧିକ ସ୍ମୃତି ସ୍ଥାନ ବ୍ୟବହାର କରିଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_image_thumbnails">
+						<local_schema short_desc="ଗୋଟିଏ ପ୍ରତିଛବି ଫାଇଲଗୁଡ଼ିକର କ୍ଷୁଦ୍ରଚିତ୍ରକୁ କେତେବେଳେ ଦର୍ଶାଯିବା ଉଚିତ">
+							<longdesc>କୌଣସି ଫାଇଲର ଚିତ୍ରସଂକେତ ଉପରେ ମାଉସ ଚଲାଇବା ସମୟରେ କେତେବେଳେ ଧ୍ୱନି ଫାଇଲଗୁଡ଼ିକର ପ୍ରାକଦର୍ଶନ କରାହେବ ତାହା ପାଇଁ tradeoffକୁ ଗତିଶୀଳ କରାନ୍ତୁ। ଯଦି &quot;always&quot; ସେଟ କରାହୋଇଥାଏ ତେବେ ସର୍ବଦା ଧ୍ୱନି ଚଲାନ୍ତୁ, ସେହି ଫାଇଲଟି ସୁଦୂର ସର୍ଭରରେ ଥିଲେ ମଧ୍ଯ। ଯଦି &quot;local_only&quot; ସେଟ କରାଯାଇଥାଏ ତେବେ କେବଳ ପ୍ରାକଦର୍ଶନକୁ ସ୍ଥାନୀୟ ପାଇଲ ତନ୍ତ୍ରରେ ଚଲାଇଥାଏ। ଯଦି &quot;never&quot; ସେଟ କରାଯାଇଥାଏ ତେବେ ଏହା କଦାପି କ୍ଷୁଦ୍ରଚିତ୍ରକୁ ପ୍ରାକଦର୍ଶନ କରେନାହିଁ, କେବଳ ଗୋଟିଏ ସାଧାରଣ ଚିତ୍ରସଂକେତ ବ୍ୟବହାର କରିଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="ପ୍ରଚଳିତ Nautilus ପ୍ରସଙ୍ଗ (ବିରୋଧିତ)">
+							<longdesc>ବ୍ୟବହାର କରିବା ପାଇଁ Nautilus ପ୍ରସଙ୍ଗର ନାମ। ଏହାକୁ Nautilus 2.2 ପରି ଅପସନ୍ଦ କରାଯାଇଛି। ଏହା ପରିବର୍ତ୍ତେ ଚିତ୍ରସଂକେତ ପ୍ରସଙ୍ଗ ବ୍ୟବହାର କରନ୍ତୁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_back_button">
+						<local_schema short_desc="ବ୍ରାଉଜର ୱିଣ୍ଡୋରେ &quot;Back&quot; ନିର୍ଦ୍ଦେଶକୁ ସକ୍ରିୟ କରିବା ପାଇଁ ମାଉସ ବଟନ">
+							<longdesc>&quot;Forward&quot; ଏବଂ &quot;Back&quot; ବଟନ ଥିବା ମାଉସ ବିଶିଷ୍ଟ ଚାଳକମାନଙ୍କ ପାଇଁ, ଏହି କିଟି କେଉଁ ବଟନ &quot;Back&quot; ନିର୍ଦ୍ଦେଶକୁ ବ୍ରାଉଜର ୱିଣ୍ଡୋରେ ସକ୍ରିୟ କରିବ ତାହା ସେଟ କରିଥାଏ। ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ 6 ଏବଂ 14 ମଧ୍ଯରେ ଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_forward_button">
+						<local_schema short_desc="ବ୍ରାଉଜର ୱିଣ୍ଡୋରେ &quot;Forward&quot; ନିର୍ଦ୍ଦେଶକୁ ସକ୍ରିୟ କରିବା ପାଇଁ ମାଉସ ବଟନ">
+							<longdesc>&quot;Forward&quot; ଏବଂ &quot;Back&quot; ବଟନ ଥିବା ମାଉସ ବିଶିଷ୍ଟ ଚାଳକମାନଙ୍କ ପାଇଁ, ଏହି କିଟି କେଉଁ ବଟନ &quot;Forward&quot; ନିର୍ଦ୍ଦେଶକୁ ବ୍ରାଉଜର ୱିଣ୍ଡୋରେ ସକ୍ରିୟ କରିବ ତାହା ସେଟ କରିଥାଏ। ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ 6 ଏବଂ 14 ମଧ୍ଯରେ ଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_use_extra_buttons">
+						<local_schema short_desc="Nautilus ବ୍ରାଉଜର ୱିଣ୍ଡୋଗୁଡ଼ିକରେ ଅତିରିକ୍ତ ମାଉସ ବଟନ ଘଟଣାଗୁଡ଼ିକୁ ବ୍ୟବହାର କରନ୍ତୁ">
+							<longdesc>&quot;Forward&quot; ଏବଂ &quot;Back&quot; ବଟନଗୁଡ଼ିକ ବିଶିଷ୍ଟ ମାଉସ ପାଇଁ ଚାଳକମାନେ, ଏହି କି ନିର୍ଦ୍ଧାରଣ କରିଥାଏ ଯଦି କୌଣସି କାର୍ଯ୍ୟ Nautilus ଭିତରେ ଗ୍ରହଣ କରାଯାଇଥାଏ ଯେତେବେଳେ କାହାକୁ ଦବାଯାଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="install_mime_activation">
+						<local_schema short_desc="ଯଦି ଅଜଣା ମାଇମ ପ୍ରକାର ପାଇଁ ପ୍ୟାକେଜ ସ୍ଥାପକ ଦର୍ଶାଯାଏ">
+							<longdesc>ନିୟନ୍ତ୍ରଣ କରିବା ପାଇଁ ଗୋଟିଏ ପ୍ରୟୋଗକୁ ସନ୍ଧାନ କରିବା ପାଇଁ, ଚାଳକକୁ ଗୋଟିଏ ପ୍ୟାକେଜ ସ୍ଥାପକ ସଂଳାପ ଦର୍ଶାଇବା ଉଚିତ କି ନୁହଁ ଯେତେବେଳେ ଗୋଟିଏ ଅଜଣା ମାଇମ ପ୍ରକାର ଖୋଲାହୋଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="executable_text_activation">
+						<local_schema short_desc="ସକ୍ରିୟ ହେବା ପରେ ନିଷ୍ପାଦ୍ୟ ପାଠ୍ୟ ଫାଇଲଗୁଡ଼ିକ ସହିତ କଣ କରିବା ଉଚିତ">
+							<longdesc>ନିଷ୍ପାଦ୍ୟ ପାଠ୍ୟ ଫାଇଲଗୁଡ଼ିକ ପାଇଁ କଣ କରିବା ଉଚିତ ଯେତେବେଳେ ସେମାନଙ୍କୁ ସକ୍ରିୟ କରାଯାଇଥାଏ (ଗୋଟିଏ କିମ୍ବା ଦୁଇଥର କ୍ଲିକ ଦ୍ୱାରା)। ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି: ସେମାନଙ୍କୁ ପ୍ରଗ୍ରାମ ଭାବରେ ଆରମ୍ଭ କରିବା ପାଇଁ &quot;launch&quot;, ଗୋଟିଏ ସଂଳାପ ମାଧ୍ଯମରେ କଣ କରିବାକୁ ହେବ ତାହା ପଚାରିବା ପାଇଁ &quot;ask&quot;, ଏବଂ ସେମାନଙ୍କୁ ପାଠ୍ଯ ଫାଇଲ ଭାବରେ ଦର୍ଶାଇବା ପାଇଁ &quot;display&quot;।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="click_policy">
+						<local_schema short_desc="ଫାଇଲଗୁଡ଼ିକୁ ଆରମ୍ଭ କରିବା/ଖୋଲିବା ପାଇଁ ବ୍ୟବହୃତ କ୍ଲିକର ପ୍ରକାର">
+							<longdesc>ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି ଗୋଟିଏ କ୍ଲିକରେ ଫାଇଲ ଆରମ୍ଭ କରିବା ପାଇଁ &quot;ଥରେ&quot;, କିମ୍ବା ଦୁଇଥର କ୍ଲିକରେ ସେମାନଙ୍କୁ ଆରମ୍ଭ କରିବା ପାଇଁ &quot;ଦୁଇଥର&quot;।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_directory_item_counts">
+						<local_schema short_desc="ଗୋଟିଏ ଫୋଲଡ଼ରରେ ଥିବା ବସ୍ତୁଗୁଡ଼ିକର ସଂଖ୍ୟାକୁ କେତେବେଳେ ଦର୍ଶାଯିବା ଉଚିତ">
+							<longdesc>କୌଣସି ଫାଇଲର ଚିତ୍ରସଂକେତ ଉପରେ ମାଉସ ଚଲାଇବା ସମୟରେ କେତେବେଳେ ଧ୍ୱନି ଫାଇଲଗୁଡ଼ିକର ପ୍ରାକଦର୍ଶନ କରାହେବ ତାହା ପାଇଁ tradeoffକୁ ଗତିଶୀଳ କରାନ୍ତୁ। ଯଦି &quot;always&quot; ସେଟ କରାହୋଇଥାଏ ତେବେ ସର୍ବଦା ଧ୍ୱନି ଚଲାନ୍ତୁ, ସେହି ଫାଇଲଟି ସୁଦୂର ସର୍ଭରରେ ଥିଲେ ମଧ୍ଯ। ଯଦି &quot;local_only&quot; ସେଟ କରାଯାଇଥାଏ ତେବେ କେବଳ ପ୍ରାକଦର୍ଶନକୁ ସ୍ଥାନୀୟ ପାଇଲ ତନ୍ତ୍ରରେ ଚଲାଇଥାଏ। ଯଦି &quot;never&quot; ସେଟ କରାଯାଇଥାଏ ତେବେ ଏହା କଦାପି କମ୍ପୁଟର ବସ୍ତୁକୁ ଗଣିନା ଉପରେ ଧ୍ଯାନ ଦେଇନଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_icon_text">
+						<local_schema short_desc="ଗୋଟିଏ ଚିତ୍ରସଂକେତଗୁଡ଼ିକରେ ପାଠ୍ୟ ପ୍ରାକଦର୍ଶନ କେତେବେଳେ ଦର୍ଶାଯିବା ଉଚିତ">
+							<longdesc>କୌଣସି ଫାଇଲର ଚିତ୍ରସଂକେତ ଉପରେ ମାଉସ ଚଲାଇବା ସମୟରେ କେତେବେଳେ ଧ୍ୱନି ଫାଇଲଗୁଡ଼ିକର ପ୍ରାକଦର୍ଶନ କରାହେବ ତାହା ପାଇଁ tradeoffକୁ ଗତିଶୀଳ କରାନ୍ତୁ। ଯଦି &quot;always&quot; ସେଟ କରାହୋଇଥାଏ ତେବେ ସର୍ବଦା ଧ୍ୱନି ଚଲାନ୍ତୁ, ସେହି ଫାଇଲଟି ସୁଦୂର ସର୍ଭରରେ ଥିଲେ ମଧ୍ଯ। ଯଦି &quot;local_only&quot; ସେଟ କରାଯାଇଥାଏ ତେବେ କେବଳ ପ୍ରାକଦର୍ଶନକୁ ସ୍ଥାନୀୟ ପାଇଲ ତନ୍ତ୍ରରେ ଚଲାଇଥାଏ। ଯଦି &quot;never&quot; ସେଟ କରାଯାଇଥାଏ ତେବେ ଏହା କଦାପି ତଥ୍ୟକୁ ପ୍ରାକଦର୍ଶନ କରେନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_delete">
+						<local_schema short_desc="ଅବିଳମ୍ବ ଅପସାରଣକୁ ସକ୍ରିୟ କରାଯିବ କି">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଇଥାଏ, ତେବେ Nautilus ପାଖରେ ତୁରନ୍ତ ଫାଇଲକୁ ଆବର୍ଜନା ପାତ୍ରକୁ ପଠାଇବା ପରିବର୍ତ୍ତେ ଅପସାରଣ କରିବା ପାଇଁ ଗୋଟିଏ ଗୁଣ ଥିବ। ଏହି ଗୁଣଟି ବିପଦପୂର୍ଣ୍ଣ, ତେଣୁ ସାବଧାନତା ଅବଲମ୍ବନ କରନ୍ତୁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_trash">
+						<local_schema short_desc="ଫାଇଲ ଅପସାରଣ କରିବା ସମୟରେ କିମ୍ବା ଆବର୍ଜନାପାତ୍ରକୁ ଖାଲି କରିବା ସମୟରେ କେଉଁଠି ପଚାରିବ ଉଚିତ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ କୌଣସି ଫାଇଲ ଅପସାରଣ କରିବାକୁ ଚେଷ୍ଟା କରିବା ସମୟରେ, କିମ୍ବା ଆବର୍ଜନା ପାତ୍ରକୁ ଖାଲି କରିବା ପୂର୍ବରୁ Nautilus ନିଶ୍ଚିତକରଣ ମାଗିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_open_folder">
+						<local_schema short_desc="x-ସୂଚୀ/* ପ୍ରକାରଗୁଡ଼ିକ &quot;ଫୋଲଡର ଖୋଲନ୍ତୁ&quot;ରେ ସେଟ କରନ୍ତୁ">
+							<longdesc>x-content/* ପ୍ରକାରର ତାଲିକା ଯାହାପାଇଁ ଚାଳକ ପସନ୍ଦ capplet ରେ &quot;Open Folder&quot; କୁ ବାଛିଥାଏ। ଏହା ସହିତ ମେଳ ଖାଉଥିବା ମେଡ଼ିଆ ଭର୍ତ୍ତି କରିବା ସମୟରେ ଗୋଟିଏ ଫୋଲଡର ୱିଣ୍ଡୋକୁ ଖୋଲାହେବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_ignore">
+						<local_schema short_desc="x-ସୂଚୀ/* ପ୍ରକାରଗୁଡ଼ିକ &quot;କିଛି କରନ୍ତୁ ନାହିଁ&quot;ରେ ସେଟ କରନ୍ତୁ">
+							<longdesc>x-content/* ପ୍ରକାରର ତାଲିକା ଯାହାପାଇଁ ଚାଳକ ପସନ୍ଦ capplet &quot;Do Nothing&quot; କୁ ବାଛିଅଛି। କୌଣସି ପ୍ରଶ୍ନ ଅଥବା ଏହି ପ୍ରକାର ପ୍ରୟୋଗ ମେଡିଆ ଭର୍ତ୍ତି କରିବା ସମୟରେ ଦର୍ଶାଯିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_start_app">
+						<local_schema short_desc="x-ସୂଚୀ/* ତାଲିକାର ପ୍ରକାରଗୁଡ଼ିକ ଯେଉଁଠି ପସନ୍ଦ ଯୋଗ୍ୟ ପ୍ରୟୋଗକୁ ଆରମ୍ଭ କରାଯାଇପାରିବ">
+							<longdesc>x-content/* ପ୍ରକାରର ତାଲିକା ଯାହାପାଇଁ ଚାଳକ ପସନ୍ଦ capplet ରେ କୌଣସି ପ୍ରୟୋଗ ଆରମ୍ଭକୁ ବାଛିଥାଏ। ଏହା ସହିତ ମେଳ ଖାଉଥିବା ମେଡ଼ିଆ ଭର୍ତ୍ତି କରିବା ସମୟରେ ଗୋଟିଏ ଫୋଲଡର ୱିଣ୍ଡୋକୁ ଖୋଲାହେବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_never">
+						<local_schema short_desc="ସଞ୍ଚାର ମାଧ୍ଯମ ଭର୍ତ୍ତିକରାଯାଇଥିବା ସମୟରେ ସ୍ୱୟଂଚାଳନ/ସ୍ୱୟଂପ୍ରାରମ୍ଭ ପ୍ରଗ୍ରାମଗୁଡ଼ିକୁ କଦାପି ତତ୍ପର କରନ୍ତୁ ନାହିଁ">
+							<longdesc>ଯଦି true କରାଯାଇଥାଏ, ତେବେ Nautilus କଦାପି ମାଧ୍ଯମ ଭର୍ତ୍ତିକରାଯାଇଥିବା ସମୟରେ ସ୍ୱୟଂ ଚାଳନ/ସ୍ୱୟଂ ଆରମ୍ଭ କରିବା ପାଇଁ ପଚାରିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount_open">
+						<local_schema short_desc="ସ୍ୱୟଂସ୍ଥାପିତ ମେଡ଼ିଆ ପାଇଁ କେଉଁଠାରେ ଫୋଲଡ଼ରକୁ ସ୍ୱୟଂଚାଳିତ ଭାବରେ ଖୋଲାଯିବ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ Nautilus ସ୍ୱୟଂଚାଳିତ ଭାବରେ ଫୋଲଡ଼ରକୁ ଖୋଲିବ ଯେତେବେଳେ ମେଡ଼ିଆଟି ସ୍ୱୟଂସ୍ଥାପିତ ହୋଇଥାଏ। ଏହାକୁ ମେଡ଼ିଆରେ ଠିକ ସେତେବେଳେ ପ୍ରୟୋଗ କରାଯାଇଥାଏ ଯେତେବେଳେ କୌଣସି ଜ୍ଞାତ x-ସୂଚୀ/* ପ୍ରକାର ଚିହ୍ନା ପଡ଼ିନଥାଏ, ଚାଳକ ବିନ୍ୟାସ କାର୍ଯ୍ୟକୁ ଏହା ପରିବର୍ତ୍ତେ ନିଆଯାଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount">
+						<local_schema short_desc="କାଳେ ସଞ୍ଚାର ମାଧ୍ଯମକୁ ସ୍ୱୟଂଚାଳିତ ଭାବରେ ସ୍ଥାପନ କରିବା ଉଚିତ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ Nautilus ସ୍ୱୟଂଚାଳିତ ଭାବରେ ମେଡ଼ିଆ ସ୍ଥାପନ କରିବ ଯେପରିକି ଆରମ୍ଭ ସମୟରେ ଚାଳକ ଦୃଶ୍ୟମାନ ହାର୍ଡ ଡିସ୍କ ଏବଂ ଅପସାରଣୀୟ ମେଡ଼ିଆ ଏବଂ ମେଡ଼ିଆ ଭର୍ତ୍ତି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_location_entry">
+						<local_schema short_desc="ପଥ ପଟି ପରିବର୍ତ୍ତେ, ସର୍ବଦା ଅବସ୍ଥାନ ପ୍ରବିଷ୍ଟିକୁ ବ୍ଯବହାର କରନ୍ତୁ">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ Nautilus ବ୍ରାଉଜର ୱିଣ୍ଡୋ ପଥପଟି ପରିବର୍ତ୍ତେ ସର୍ବଦା ଅବସ୍ଥାନ ସାଧନପଟି ପାଇଁ ପାଠ୍ୟ ନିବେଶ ଭରଣ ବ୍ୟବହାର କରିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_browser">
+						<local_schema short_desc="ଉତ୍କୃଷ୍ଟ ନଟିଲସ ଆଚରଣକୁ ସକ୍ରିୟ କରିଥାଏ, ଯେଉଁଠି ସମସ୍ତ ୱିଣ୍ଡୋଗୁଡ଼ିକ ହେଉଛି ବ୍ରାଉଜର">
+							<longdesc>ଯଦି true ସେଟକରାଯାଇଥିବ, ତେବେ ସମସ୍ତ Nautilus ୱିଣ୍ଡୋଗୁଡ଼ିକ ବ୍ରାଉଜର ୱିଣ୍ଡୋ ହେବ। ଏହି ପ୍ରକାରେ Nautilus ସଂସ୍କରଣ 2.6 ପରେ ଆଚରଣ କରିଥାଏ, ଏବଂ କିଛି ବ୍ୟକ୍ତି ଏହି ଆଚରଣକୁ ପସନ୍ଦ କରିଥାନ୍ତି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="exit_with_last_window">
+						<local_schema short_desc="ଅନ୍ତିମ ୱିଣ୍ଡୋ ନଷ୍ଟ ହେବା ପରେ Nautilus ପ୍ରସ୍ଥାନ କରିବ।">
+							<longdesc>ଯଦି true ସେଟ କରାଯାଏ, ତେବେ ସମସ୍ତ ୱିଣ୍ଡୋଗୁଡ଼ିକ ନଷ୍ଟ ହେଲାପରେ Nautilus ପ୍ରସ୍ଥାନ କରିବ। ଏହା ହେଉଛି ପୂର୍ବନିର୍ଦ୍ଧାରିତ ବିନ୍ୟାସ। ଯଦି false ସେଟ କରାଯାଏ, ତେବେ ଏହା କୌଣସି ୱିଣ୍ଡୋ ବିନା ଆରମ୍ଭ ହୋଇପାରିବ, ତେଣୁ nautilus ମେଡିଆ ସ୍ୱୟଂସ୍ଥାପନକୁ ନିରିକ୍ଷଣ କରିବା ପାଇଁ, କିମ୍ବା ସେହି ପ୍ରକାର କାର୍ଯ୍ୟ ପାଇଁ ଗୋଟିଏ ଡେମନ ଭାବରେ କାର୍ଯ୍ୟ କରିପାରେ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="ଫଣ୍ଟକୁ ସାମାନ୍ଯ ଆକାରକୁ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ଫଣ୍ଟକୁ ସମାନ୍ଯ ଆକାରକୁ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="ଫଣ୍ଟକୁ ଛୋଟ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି">
+							<longdesc>ଫଣ୍ଟକୁ ଛୋଟ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="ଫଣ୍ଟକୁ ବଡ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ଫଣ୍ଟକୁ ବଡ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="ସାହାୟ୍ଯ ପ୍ରାରମ୍ଭ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ସହାୟ୍ଯ ପ୍ରାରମ୍ଭ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="ଟାବ 12 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ଟାବ 12 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="ଟାବ 11 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ଟାବ 11 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="ଟାବ 1୦ କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ଟାବ 10 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="ଟାବ 9 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ଟାବ 9 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="ଟାବ 8 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ଟାବ 8 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="ଟାବ 7 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ଟାବ 7 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="ଟାବ 6 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ଟାବ 6 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="ଟାବ 5 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ଟାବ 5 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="ଟାବ 4 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ଟାବ 4 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="ଟାବ 3 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ଟାବ 3 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="ଟାବ 2 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ଟାବ 2 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="ଟାବ 1କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ଟାବ 1 କୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="ଚଳିତ ଟାବକୁ ବିଚ୍ଛିନ୍ନ କରିବା ପାଇଁ ବେଗବର୍ଦ୍ଧକ।">
+							<longdesc>ଚଳିତ ଟାବରୁ ବେଗବର୍ଦ୍ଧକ କି ବିଚ୍ଛିନ୍ନ କରିବା ପାଇଁ। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ପାଇଁ ଉପୟୋଗ ହୋଇଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ଯଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସ୍ଥିର କରନ୍ତି, ତେବେ ସେଠାରେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବନ୍ଧନ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="ଚଳିତ ଟାବକୁ ଡାହାଣକୁ ଘୁଞ୍ଚାଇବା ପାଇଁ ବେଗବର୍ଦ୍ଧକ।">
+							<longdesc>ଚଳିତ ଟାବକୁ ଡାହାଣକୁ ଘୁଞ୍ଚାଇବା ପାଇଁ ବେଗବର୍ଦ୍ଧକ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ପାଇଁ ଉପୟୋଗ ହୋଇଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ଯଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ&quot;ଅକ୍ଷମହେଲା&quot;କୁ ସ୍ଥିର କରନ୍ତି, ତେବେ ସେଠାରେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବନ୍ଧନ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="ଚଳିତ ଟାବକୁ ବାମକୁ ଘୁଞ୍ଚାଇବା ପାଇଁ ବେଗବର୍ଦ୍ଧକ।">
+							<longdesc>ଚଳିତ ଟାବକୁ ବାମକୁ ଘୁଞ୍ଚାଇବା ପାଇଁ ବେଗବର୍ଦ୍ଧକ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ପାଇଁ ଉପୟୋଗ ହୋଇଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ଯଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ&quot;ଅକ୍ଷମହେଲା&quot;କୁ ସ୍ଥିର କରନ୍ତି, ତେବେ ସେଠାରେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବନ୍ଧନ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="ପରବର୍ତ୍ତୀ ଟାବକୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି">
+							<longdesc>ପରବର୍ତ୍ତୀ ଟାବକୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="ପୂର୍ବବର୍ତ୍ତୀ ଟାବକୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି">
+							<longdesc>ପୂର୍ବବର୍ତ୍ତୀ ଟାବକୁ ବଦଳ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="ଚର୍ମିନାଲକୁ ପରିଷ୍କାର ଏବଂ ପୁନଃସ୍ଥିର କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି">
+							<longdesc>ଟର୍ମିନାଲକୁ ପରିଷ୍କାର ଏବଂ ପୁନଃସ୍ଥିର କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="ଟର୍ମିନାଲକୁ ପୁନଃସ୍ଥିର କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି">
+							<longdesc>ଟର୍ମିନାଲକୁ ପୁନଃସ୍ଥିର କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="ଟର୍ମିନାଲ ଶୀର୍ଷକ ସ୍ଥିର କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି">
+							<longdesc>ଟର୍ମିନାଲ ଶୀର୍ଷକକୁ ସ୍ଥିର କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="ମେନୁବାରର ଦୃଶ୍ଯମାନତାକୁ ଟୋଗଲ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>ମେନୁବାରର ଦୃଶ୍ଯମାନକୁ ଟୋଗଲ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ ମୋଡକୁ ଟୋଗଲ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି">
+							<longdesc>ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ ମୋଡକୁ ଟୋଗଲ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="ଟେକ୍ସଟ ଲଗାଇବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି">
+							<longdesc>କ୍ଲିପବୋର୍ଡର ବିଷଯଗୁଡିକୁ ଟର୍ମିନାଲରେ ଲଗାଇବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="ଟେକ୍ସଟ ପ୍ରତିଲିପି କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି ">
+							<longdesc>କ୍ଲିପବୋର୍ଡକୁ ମନୋନୀତ ଟେକ୍ସଟକୁ ପ୍ରତିଲିପି କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="ଗୋଟିଏ ଉଇଣ୍ଡୋକୁ ବନ୍ଦ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି।">
+							<longdesc>ଉଇଣ୍ଡୋକୁ ବନ୍ଦ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="ଗୋଟିଏ ଟାବକୁ ବନ୍ଦ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କରି ">
+							<longdesc>ଗୋଟିଏ ଟାବକୁ ବନ୍ଦ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="ପ୍ରଚଳିତ ଟ୍ୟାବ ବିଷୟବସ୍ତୁକୁ ଗୋଟିଏ ଫାଇଲରେ ସଂରକ୍ଷଣ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି">
+							<longdesc>ପ୍ରଚଳିତ ଟ୍ୟାବ ବିଷୟବସ୍ତୁକୁ ଧାରଣ କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ବାକ୍ୟଖଣ୍ଡ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ଯଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ବାକ୍ୟଖଣ୍ଡ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ଯ୍ୟ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="ଗୋଟିଏ ନୂଆ ପ୍ରୋଫାଇଲ ସୃଷ୍ଟି କରିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି">
+							<longdesc>ପ୍ରୋଫାଇଲ ସୃଷ୍ଟି ନିମନ୍ତେ ଡାଏଲଗକୁ ଆଣିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="ଗୋଟିଏ ନୂଆ ଉଇଣ୍ଡୋ ଖୋଲିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି">
+							<longdesc>ଗୋଟିଏ ନୂଆ ଉଇଣ୍ଡୋ ଖୋଲିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="ଗୋଟିଏ ନୂଆ ଟାବ ଖୋଲିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି">
+							<longdesc>ଗୋଟିଏ ନୂଆ ଟାବ ଖୋଲିବା ପାଇଁ କିବୋର୍ଡ ସର୍ଟକଟ କି। GTK+ ସ୍ବମ୍ବଳ ଫାଇଲଗୁଡିକ ନିମନ୍ତେ ଉପୟୋଗ ହେଉଥିବା ସେହି ସମାନ ଫର୍ମାଟରେ ଗୋଟିଏ ସ୍ଟ୍ରିଙ୍ଗ ପରି ପ୍ରକାଶିତ ହୋଇଥାଏ। ୟଦି ଆପଣ ବିକଳ୍ପକୁ ବିଶେଷ ସ୍ଟ୍ରିଙ୍ଗ &quot;ଅକ୍ଷମହେଲା&quot;କୁ ସେଟ କରନ୍ତି, ତେବେ ଏହି କାର୍ୟ୍ଯ ପାଇଁ କୌଣସି କିବୋର୍ଡ ସର୍ଟକଟ କି ହୋଇ ରହିବ ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_skey">
+							<local_schema short_desc="ଗାଢରଙ୍ଗରେ ଦର୍ଶାଅ S/Key ଆହ୍ବାନଗୁଡିକ">
+								<longdesc>ଗୋଟିଏ ଡାଏଲଗ ପପଅପ କର ୟେବେ ଗୋଟିଏ S/କି ଆହ୍ବାନ ପ୍ରତିକ୍ରିଯା ପ୍ରଶ୍ନ ଧରାପଡିଥାଏ ଏବଂ ଏଥିରେ କ୍ଲିକ ହୋଇଥାଏ। ଡାଏଲଗରେ ଗୋଟିଏ ଗୁପ୍ତଶବ୍ଦ ଟାଇପ କରିବା ଦ୍ବାରା ଏହାକୁ ଟର୍ମିନାଲକୁ ପଠାୟାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="ସିଷ୍ଟମ ଫଣ୍ଟ ଉପୟୋଗ କରାୟିବ କି ନାହିଁ">
+								<longdesc>ୟଦି ସତ୍ଯ, ତେବେ ଟର୍ମିନାଲ ଡେସ୍କଟପ ଗ୍ଲୋବାଲ ଷ୍ଟାଣ୍ଡାର୍ଡ ଫଣ୍ଟ ଉପୟୋଗ କରିବ ୟଦି ଏହା ମନୋସ୍ପେସ ହୋଇଥାଏ, (ଏବଂ ନଚେତ୍ ଏହା ଏହାର ସମାନାନ୍ତର ଫଣ୍ଟକୁ ଆଣିବ)।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="ଟର୍ମିନାଲ ବିଜେଟ ପାଇଁ ଥିମରୁ ରଙ୍ଗଗୁଡିକ ଉପୟୋଗ କରାୟିବ କି ନାହିଁ">
+								<longdesc>ୟଦି ସତ୍ଯ, ତେବେ ଉପୟୋଗକର୍ତ୍ତାଙ୍କ ଦ୍ବାରା ୟୋଗାଇ ଦିଆୟାଇଥିବା ରଙ୍ଗଗୁଡିକ ପରିବର୍ତ୍ତେ, ଟେକ୍ସଟ ପ୍ରବେଶ ବକ୍ସଗୁଡିକ ପାଇଁ ଉପୟୋଗ ହେଉଥିବା ଥିମ ରଙ୍ଗ ୟୋଜନା ଟର୍ମିନାଲ ପାଇଁ ଉପୟୋଗ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="ବିଲୋପ କିର ପ୍ରଭାବ">
+								<longdesc>ୟାହା  ବି କୋଡ ବିଲୋପ କି ଉତ୍ପାଦନ କରେ ତାହା ସ୍ଥିର କରେ। ସମ୍ଭାବିତ ମୂଲ୍ଯ ଗୁଡିକ &quot;ascii-del&quot;  ASCII DEL ଅକ୍ଷର ପାଇଁ, &quot;ନିଯନ୍ତ୍ରଣ-h&quot; ନିଯନ୍ତ୍ରଣ-H ପାଇଁ (AKA ASCII BS ଅକ୍ଷର), &quot;ଏସ୍କେପ-ଅନୁକ୍ରମ&quot; ବିଲୋପ ଏବଂ ବ୍ଯାକସ୍ପେସ ପାଇଁ ମୌଳିକ ଭାବରେ ବନ୍ଧାୟାଇଥିବା ଏସ୍କେପ ଅନୁକ୍ରମ ପାଇଁ।  &quot;ଏସ୍କେପ-ଅନୁକ୍ରମ&quot;  ସାମାନ୍ଯତଃ ବିଲୋପ କି ପାଇଁ ସଠିକ ସେଟିଙ୍ଗ ଭାବରେ ବିଚାର କରାୟାଏ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="ବ୍ଯାକସ୍ପେସ କିର ପ୍ରଭାବ">
+								<longdesc>ୟାହା  ବି କୋଡ ବ୍ଯାକସ୍ପେସ କି ଉତ୍ପାଦନ କରେ ତାହା ସ୍ଥିର କରେ। ସମ୍ଭାବିତ ମୂଲ୍ଯ ଗୁଡିକ &quot;ascii-del&quot;  ASCII DEL ଅକ୍ଷର ପାଇଁ, &quot;ନିଯନ୍ତ୍ରଣ-h&quot; ନିଯନ୍ତ୍ରଣ-H ପାଇଁ (AKA ASCII BS ଅକ୍ଷର), &quot;ଏସ୍କେପ-ଅନୁକ୍ରମ&quot; ବିଲୋପ ଏବଂ ବ୍ଯାକସ୍ପେସ ପାଇଁ ମୌଳିକ ଭାବରେ ବନ୍ଧାୟାଇଥିବା ଏସ୍କେପ ଅନୁକ୍ରମ ପାଇଁ &quot;ascii-del&quot; ସାମାନ୍ଯତଃ ବ୍ଯାକସ୍ପେସ କି ପାଇଁ ସଠିକ ସେଟିଙ୍ଗ ଭାବରେ ବିଚାର କରାୟାଏ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="ପୃଷ୍ଠଭୂମି ରଙ୍ଗକୁ କେତେ ଗାଢ କରାୟିବ">
+								<longdesc>0.0 ଏବଂ 1.0 ମଧ୍ଯରେ ଗୋଟିଏ ମୂଲ୍ଯ ପୃଷ୍ଠଭୂମି ଚିତ୍ରକୁ କେତେ ଗାଢ ରଙ୍ଗର କରାୟିବ ସୂଚିତ କରାଏ। 0.0 ର ଅର୍ଥ କିଛି ବି ଗାଢରଙ୍ଗ ନାହିଁ , 1.0 ର ଅର୍ଥ ପୂର୍ଣ୍ଣ ଗାଢ ରଙ୍ଗ। ଚଳିତ କାର୍ୟ୍ଯ ସମ୍ପାଦନରେ, ଗାଢରଙ୍ଗର କେବଳ ଦୁଇଟି ସ୍ତର ସମ୍ଭବ ଅଟେ, ତେଣୁ ସେଟିଙ୍ଗ ବୁଲିଅନ ପରି ବ୍ଯବହାର କରେ, ୟେଉଁଠାରେ 0.0 ଗାଢରଙ୍ଗ କରିବା ପ୍ରଭାବକୁ ଅକ୍ଷମ କରେ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="ପୃଷ୍ଠଭୂମି ଚିତ୍ର ସ୍କ୍ରୋଲ କରାୟିବ କି ନାହିଁ ">
+								<longdesc>ୟଦି ସତ୍ଯ, ପୃଷ୍ଠଭୂମି ଚିତ୍ର ସହିତ ଅଗ୍ରଭୂମିର ଟେକ୍ସଟକୁ ମଧ୍ୟ ସ୍କ୍ରୋଲ କର; ୟଦି ମିଥ୍ଯା, ତେବେ ଚିତ୍ରକୁ ଗୋଟିଏ ସ୍ଥିର ସ୍ଥାନରେ ରଖ ଏବଂ ଟେକ୍ସଟକୁ ଏହା ଉପରେ ସ୍କ୍ରୋଲ କରନ୍ତୁ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="ପୃଷ୍ଠଭୂମି ଚିତ୍ର">
+								<longdesc>ଗୋଟିଏ ପୃଷ୍ଠଭୂମି ଚିତ୍ରର ଫାଇଲ ନାମ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="ପୃଷ୍ଠଭୂମି ପ୍ରକାର">
+								<longdesc>ଟର୍ମିନାଲ ପୃଷ୍ଠଭୂମି ପ୍ରକାର। ହୁଏତଃ &quot;solid&quot; କଠିନ ରଙ୍ଗ ପାଇଁ, &quot;image&quot; ପ୍ରତିଛବି ପାଇଁ, ଅଥବା &quot;transparent&quot; ପ୍ରକୃତ ସ୍ପଷ୍ଟତା ପାଇଁ ଯଦି ଗୋଟିଏ ଯୁଗ୍ମ ୱିଣ୍ଡୋ ପରିଚାଳକ ଚାଲୁଥାଏ, ଅନ୍ୟଥା pseudo-transparency।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="ଅକ୍ଷରରୂପ">
+								<longdesc>ଗୋଟିଏ ପାଙ୍ଗୋ ଫଣ୍ଟ ନାମ। ଉଦାହରଣଗୁଡିକ ହେଉଛି &quot;Sans 12&quot; କିମ୍ବା &quot;Monospace Bold 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="ଟର୍ମିନାଲ ପ୍ରଯୋଗଗୁଡିକ ପାଇଁ ବର୍ଣ୍ଣଫଳକ">
+								<longdesc>ଟର୍ମିନାଲରେ 16ଟି ରଙ୍ଗର ବର୍ଣ୍ଣଫଳକ ଥାଏ ୟାହା ଟର୍ମିନାଲ ଭିତରେ ପ୍ରଯୋଗ ଗୁଡିକ ଉପୟୋଗ କରିପାରିବେ। ଏହା ସେହି ବର୍ଣ୍ଣଫଳକ ଅଟେ,  ୟାହା ଗୋଟିଏ କୋଲନ ବିରାମ ଚିହ୍ନ ଦ୍ବାରା ବିଭାଜିତ ରଙ୍ଗ-ନାମଗୁଡିକର ତାଲିକା ଗଠନରେ ଥାଏ। ରଙ୍ଗ ନାମ ଗୁଡିକ ହେକ୍ସ ଫର୍ମାଟରେ ରହିବା ଉଚିତ,ଉଦାହରଣ &quot;#FF00FF&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="ଟର୍ମିନାଲ ଉଇଣ୍ଡୋ ପାଇଁ ଆଇକନ">
+								<longdesc>ଏହି ପ୍ରୋଫାଇଲ ରହିଥିବା ଉଇଣ୍ଡୋ/ଟାବଗୁଡିକ ପାଇଁ ଉପୟୋଗ କରିବା ନିମନ୍ତେ ଆଇକନ</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="ସେଲ ପରିବର୍ତ୍ତେ ଉପୟୋଗ କରିବା ପାଇଁ ବ୍ଯବସ୍ଥାପିତ ଆଦେଶ ଗୁଡିକ">
+								<longdesc>ସେଲ ସ୍ଥାନରେ ଏହି ଆଦେଶକୁ ଚଳାଅ, ୟଦି use_custom_command ସତ୍ଯ ଅଟେ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="ସୂଚକ ଦୃଶ୍ୟମାନ">
+								<longdesc>ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି &quot;block&quot; ବ୍ଲକ ସୂଚକ ବ୍ୟବହାର କରିବା ପାଇଁ, &quot;ibeam&quot; ଭୂଲମ୍ବ ଧାଡ଼ି ସୂଚକ ବ୍ୟବହାର କରିବା ପାଇଁ, ଅଥବା &quot;underline&quot; ରେଖାଙ୍କିତ ସୂଚକ ବ୍ୟବହାର କରିବା ପାଇଁ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="କର୍ସରକୁ ମିଟମିଟ କରିୟିବ କି ନାହିଁ">
+								<longdesc>ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି &quot;system&quot; ଜାଗତିକ ସୂଚକ ଦପଦପ ସଂରଚନା ବ୍ୟବହାର କରିବା ପାଇଁ, ଅଥବା &quot;on&quot; ଅଥବା &quot;off&quot; ଧାରାକୁ ବିଶେଷ ଭାବରେ ସେଟ କରିବା ପାଇଁ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="ସେଲର ପରିବର୍ତ୍ତେ ଗୋଟିଏ ବ୍ଯବସ୍ଥାପିତ ଆଦେଶକୁ ଚଳାୟିବ କି ନାହିଁ ">
+								<longdesc>ୟଦି ସତ୍ଯ, ତେବେ ଗୋଟିଏ ସେଲକୁ ଚଳାଇବା ସ୍ଥାନରେ ବ୍ଯବସ୍ଥାପିତ_ଆଦେଶ ସେଟିଙ୍ଗର ମୂଲ୍ଯ ଉପୟୋଗ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="ଟର୍ମିନାଲ ଆଦେଶ ପ୍ରାରମ୍ଭ କରିବା ବେଳେ ଲଗଇନ ଅଭିଲେଖଗୁଡିକୁ ଅପଡେଟ କରାୟିବ କି ନାହିଁ ">
+								<longdesc>ୟଦି ସତ୍ଯ, ତେବେ ସିଷ୍ଟମ ଲଗଇନ ଅଭିଲେଖଗୁଡିକ utmp ଏବଂ wtmp ଅପଡେଟ ହେବେ ୟେବେ ଟର୍ମନାଲ ଭିତରେ ଆଦେଶ ପ୍ରାରମ୍ଭ ହେବ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="ଟର୍ମିନାଲରେ ଗୋଟିଏ ଲଗିଇନ ସେଲ ପରି ଆଦେଶକୁ ପ୍ରାରମ୍ଭ କରାୟିବ କି ନାହିଁ।">
+								<longdesc>ୟଦି ସତ୍ଯ, ଟର୍ମିନାଲ ଭିତରେ ଥିବା ଆଦେଶ ଏକ ଲଗଇନ ସେଲ ପରି ପ୍ରାରମ୍ଭ ହେବେ। (argv[0] ସମ୍ମୁଖରେ ଗୋଟିଏ ହାଇଫିନ ରହିବ।)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="ଟର୍ମିନାଲ ସହିତ କଣ କରାୟିବ ୟେବେ ଶିଶୁ ଆଦେଶ ପ୍ରସ୍ଥାନ କରେ।">
+								<longdesc>ସମ୍ଭାବିତ ମୂଲ୍ଯଗୁଡିକ &quot;ବନ୍ଦକର&quot; ଟର୍ମିନାଲ ବନ୍ଦ କରିବା ପାଇଁ, ଏବଂ &quot;ପୁନଃଆରମ୍ଭକର&quot; ଆଦେଶକୁ ପୁନଃ ଆରମ୍ଭ କରିବା ପାଇଁ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="ୟେବେ ନୂଆ ଆଉଟପୁଟ ହୁଏ ତଳକୁ ସ୍କ୍ରୋଲ କରାୟିବ କି ନାହିଁ">
+								<longdesc>ୟଦି ସତ୍ଯ, ତେବେ ୟେବେ ବି ଗୋଟିଏ ନୂଆ ଆଉଟପୁଟ ହେବ, ଟର୍ମିନାଲ ତଳକୁ ସ୍କ୍ରୋଲ କରିବ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="ୟେବେ ଗୋଟିଏ କି ଦବାୟାଏ, ତଳକୁ ସ୍କ୍ରୋଲ କରାୟିବ କି ନାହିଁ">
+								<longdesc>ୟଦି ସତ୍ଯ, ଗୋଟିଏ କିକୁ ଦବାଇବା ଦ୍ବାରା ସ୍କ୍ରୋଲବାର ତଳକୁ ଲମ୍ଫ ଦିଏ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="ଅସୀମିତ ସଂଖ୍ୟକ ଧାଡ଼ିଗୁଡ଼ିକୁ ସ୍କ୍ରୋଲବ୍ୟାକରେ ରଖିବା ଉଚିତ କି ନୁହଁ">
+								<longdesc>ଯଦି true, ତେବେ ସ୍କ୍ରଲବ୍ୟାକ ଧାଡ଼ିଗୁଡ଼ିକୁ କଦାପି ପରିତ୍ୟାଗ କରାଯିବ ନାହିଁ। ସ୍କ୍ରଲବ୍ୟାକ ପୁରୁଣା ତଥ୍ୟକୁ ଡିସ୍କରେ ଅସ୍ଥାୟୀ ଭାବରେ ସଂରକ୍ଷଣ କରାଯାଇଥାଏ, ତେଣୁ ଏହା ହୁଏତଃ ତନ୍ତ୍ରରେ ଡିସ୍କର ଅଭାବ ଘଟାଇପାରେ ଯଦି ଟର୍ମିନାଲରେ ଅନେକ ଫଳାଫଳ ଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="ପଛକୁ ସ୍କ୍ରୋଲରେ ରଖିବା ପାଇଁ ରେଖାଗୁଡିକର ସଂଖ୍ଯା ">
+								<longdesc>ଆଖପାଖରେ ରଖିବା ପାଇଁ ପଛକୁସ୍କ୍ରୋଲ ରେଖାଗୁଡିକର ସଂଖ୍ଯା। ଆପଣ ଏହି ରେଖାଗୁଡିକ ଦ୍ବାରା ଟର୍ମିନାଲରେ ପଛକୁ ସ୍କ୍ରୋଲ କରିପାରିବେ; ପଛକୁ ସ୍କ୍ରୋଲରେ ଯୋଗ୍ଯ ହେଉନଥିବା ରେଖାଗୁଡିକୁ ପରିତ୍ଯାଗ କରାଯାଏ। ଯଦି scrollback_unlimited ଟି true ହୋଇଥାଏ, ତେବେ ଏହି ମୂଲ୍ୟକୁ ଗ୍ରହଣ କରାଯିବ ନାହିଁ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="ସ୍କ୍ରୋଲବାରର ସ୍ଥାନ">
+								<longdesc>ଟର୍ମିନାଲ ସ୍କ୍ରୋଲବାର କୁ କେଉଁଠାରେ ରଖାୟିବ। ସମ୍ଭାବନା ଗୁଡିକ ହେଉଛି &quot;ବାମ&quot;, &quot;ଡାହାଣ&quot;, ଏବଂ &quot;ଲୁକ୍କାଇତ&quot;।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଧାଡ଼ି ସଂଖ୍ୟା">
+								<longdesc>ନୂତନ ଭାବରେ ନିର୍ମିତ ଟର୍ମିନାଲ ୱିଣ୍ଡୋଗୁଡ଼ିକରେ ଧାଡ଼ି ସଂଖ୍ୟା। use_custom_default_size କୁ ସକ୍ରିୟ କରାଯାଇନଥିଲେ ଏଥିରେ କୌଣସି ପ୍ରଭାବ ନାହିଁis not enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ସ୍ତମ୍ଭ ସଂଖ୍ୟା">
+								<longdesc>ନୂତନ ଭାବରେ ନିର୍ମିତ ଟର୍ମିନାଲ ୱିଣ୍ଡୋଗୁଡ଼ିକରେ ଥିବା ସ୍ତମ୍ଭ ସଂଖ୍ୟା। </longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="ନୂଆ ଉଇଣ୍ଡୋଗୁଡିକ ପାଇଁ ଇଚ୍ଛାମୁତାବକ ଟର୍ମିନାଲ ଆକାରକୁ କେଉଁଠି ବ୍ୟବହାର କରାଯିବ">
+								<longdesc>ଯଦି true, ତେବେ ନୂତନ ଭାବରେ ନିର୍ମିତ ଟର୍ମିନାଲ ୱିଣ୍ଡୋଗୁଡ଼ିକରେ default_size_columns ଏବଂ default_size_rows ଦ୍ୱାରା ଉଲ୍ଲେଖ କରାଯାଇଥିବା ଇଚ୍ଛାମୁତାବକ ଆକାର ରହିବ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="ଅକ୍ଷରଗୁଡିକ ଯାହାକି ବିଚାରକୁ ନିଆୟାଏ &quot;ଗୋଟିଏ ଶବ୍ଦର ଅଂଶ&quot;">
+								<longdesc>ଶବ୍ଦ ଦ୍ବାରା ଟେକ୍ସଟ ମନୋନୀତ କରିବା ବେଳେ, ଏହି ଅକ୍ଷରଗୁଡିକର ଅନୁକ୍ରମକୁ ଗୋଟିଏ ଏକମାତ୍ର ଶବ୍ଦ ପରି ବିଚାର କରାୟାଏ। ପରିସର ଗୁଡିକ ଦିଆୟାଇପାରେ ୟେମିତି &quot;A-Z&quot;। ଲିଟେରାଲ ହାଇଫିନ(ଗୋଟିଏ ପରିସରକୁ ପ୍ରକାଶ କରୁନଥାଏ) ଦତ୍ତ ପ୍ରଥମ ଅକ୍ଷର ହେବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="ଟର୍ମିନାଲ ବେଲକୁ ନୀରବ କରାୟିବ କି ନାହିଁ">
+								<longdesc>ୟଦି ସତ୍ଯ ତେବେ ଟର୍ମିନାଲ ବେଲ ପାଇଁ ୟେବେ ପ୍ରଯୋଗଗୁଡିକ ଏସ୍କେପ କ୍ରମ ଗୁଡିକୁ ପଠାନ୍ତି କୌଣସି ଶବ୍ଦ ହୁଏ ନାହିଁ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="ଗାଢ ଟେକ୍ସଟ ସ୍ବୀକୃତି ଦିଆୟିବ କି ନାହିଁ ">
+								<longdesc>ୟଦି ସତ୍ଯ, ତେବେ ଟର୍ମିନାଲରେ ପ୍ରଯୋଗଗୁଡିକୁ ଟେକ୍ସଟକୁ ଗାଢପ୍ରତୀତ କରିବା ପାଇଁ ସ୍ବୀକୃତି ଦିଅନ୍ତୁ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="ଟର୍ମିନାଲ ପାଇଁ ଶୀର୍ଷକ">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="ଗତିଶୀଳ ଶୀର୍ଷକ ସହିତ କଣ କରାୟିବ">
+								<longdesc>ୟଦି ଟର୍ମିନାଲରେ ଥିବା ପ୍ରଯୋଗ ଶୀର୍ଷକକୁ ସ୍ଥିର କରେ (ଅଧିକାଂଶତଃ ଲୋକେ ସେମାନଙ୍କର ସେଲକୁ ଏହା କରିବା ପାଇଁ ସେଟ ଅପ କରିଥାଆନ୍ତି), ଗତିଶୀଳ ଭାବରେ ସ୍ଥିର ଶୀର୍ଷକ କନଫିଗର ହୋଇଥିବା ଶୀର୍ଷକକୁ ଲିଭେଇ ଦେଇପାରିବ, ଏହା ପଛରେ ୟାଅ, ଏହା ପରେ ୟାଅ, କିମ୍ବା ଏହାକୁ ପୁନଃସ୍ଥାପିତ କରନ୍ତୁ। ସମ୍ଭାବିତ ମୂଲ୍ୟଗୁଡିକ &quot;ପୁନଃସ୍ଥାପନ&quot;, &quot;ପୂର୍ବରୁ&quot;, &quot;ପରେ&quot;, ଏବଂ &quot;ଅବହେଳା କର&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="ହୁଏତ ଗାଢ଼ ପାଠ୍ୟ ସେହି ସମାନ ରଙ୍ଗକୁ ସାଧାରଣ ପାଠ୍ୟରେ ବ୍ୟବହାର କରିବା ଉଚିତ କି ନୁହଁ">
+								<longdesc>ଯଦି true, ତେବେ ଗାଢ଼ମୁଖା ପାଠ୍ୟକୁ ସମାନ ରଙ୍ଗ ବ୍ୟବହାର କରି ସାଧାରଣ ପାଠ୍ୟ ଭାବରେ ଚିତ୍ରଣ କରାଯାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="ଟର୍ମିନାଲରେ ଗାଢ଼ ପାଠ୍ୟର ପୂର୍ବନିର୍ଦ୍ଧାରିତ ରଙ୍ଗ">
+								<longdesc>ଟର୍ମିନାଲରେ ଗାଢ଼ ପାଠ୍ୟର ପୂର୍ବନିର୍ଦ୍ଧାରିତ ରଙ୍ଗ,ଗୋଟିଏ ରଙ୍ଗ ନିର୍ଦ୍ଦେଶକରଣ ସ୍ବରୂପ ( HTML-ଶୈଳୀର ଛଅଅଂକ ବିଶିଷ୍ଟ ହୋଇପାରେ, କିମ୍ବା ଗୋଟିଏ ରଙ୍ଗର ନାମ ହୋଇପାରେ ଯେମିତି କି &quot;ଲାଲ&quot;)। ଯଦି bold_color_same_as_fg ଟି true ହୋଇଥାଏ ତେବେ ଏହାକୁ ଅଗ୍ରାହ୍ୟ କରାଯାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="ଟର୍ମିନାଲ ପୃଷ୍ଠଭୂମିର ଡିଫଲ୍ଟ ରଙ୍ଗ">
+								<longdesc>ଟର୍ମିନାଲ ପୃଷ୍ଠଭୂମିର ଡିଫଲ୍ଟ ରଙ୍ଗ, ଗୋଟିଏ ରଙ୍ଗ ନିର୍ଦ୍ଦେଶକରଣ ସ୍ବରୂପ ( HTML-ଶୈଳୀର ଛଅଅଂକ ବିଶିଷ୍ଟ ହୋଇପାରେ, ଗୋଟିଏ ରଙ୍ଗର ନାମ ହୋଇପାରେ ୟେମିତି କି &quot;ଲାଲ&quot;)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="ଟର୍ମିନାଲରେ ଟେକ୍ସଟର ଡିଫଲ୍ଟ ରଙ୍ଗ">
+								<longdesc>ଟର୍ମିନାଲରେ ଟେକ୍ସଟର ଡିଫଲ୍ଟ ରଙ୍ଗ,ଗୋଟିଏ ରଙ୍ଗ ନିର୍ଦ୍ଦେଶକରଣ ସ୍ବରୂପ ( HTML-ଶୈଳୀର ଛଅଅଂକ ବିଶିଷ୍ଟ ହୋଇପାରେ, ଗୋଟିଏ ରଙ୍ଗର ନାମ ହୋଇପାରେ ୟେମିତି କି &quot;ଲାଲ&quot;)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="ନୂଆ ଉଇଣ୍ଡୋ/ଟାବଗୁଡିକରେ ମେନୁବାରକୁ ଦେଖାୟିବ କି ନାହିଁ ">
+								<longdesc>ୟଦି ସତ୍ଯ, ତେବେ ଏହି ପ୍ରୋଫାଇଲ ସହିତ ଉଇଣ୍ଡୋ/ଟାବ ଗୁଡିକ ନିମନ୍ତେ, ନୂଆ ଉଇଣ୍ଡୋରେ ମେନୁବାର ଦର୍ଶାୟିବା ଉଚିତ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="ପ୍ରୋଫାଇଲର ମନୁଷ୍ଯ-ପଠନୟୋଗ୍ଯ ନାମ">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="ଟର୍ମିନାଲ ଉଇଣ୍ଡୋଗୁଡିକୁ ବନ୍ଦ କରିବା ବେଳେ ସୁନିଶ୍ଚିତ କରଣ ପାଇଁ ପଚାରାୟିବ କି ନାହିଁ ">
+							<longdesc>ଗୋଟିଏ ଟର୍ମିନାଲ ଉଇଣ୍ଡୋ ୟାହାର ଏକରୁ ଅଧିକ ଖୋଲା ଟାବ ରହିଥାଏ ତାହାକୁ ବନ୍ଦ କରିବା ବେଳେ ସୁନିଶ୍ଚିତ କରଣ ପାଇଁ  ପଚାରାୟିବ କି ନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="ଉପଲବ୍ଧ ଏନକୋଡିଙ୍ଗଗୁଡିକର ତାଲିକା">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="ଷ୍ଟାଣ୍ଡାର୍ଡ GTK ସର୍ଟକଟ ମେନୁବାର ପ୍ରବେଶ ପାଇଁ ସକ୍ଷମ ହୋଇଛି କି ନାହିଁ।">
+							<longdesc>ସମାନ୍ଯତଃ ଆପଣ ମେନୁବାରକୁ F10 ଦ୍ବାରା ପ୍ରବେଶ କରିପାରିବେ। ଏହା ଭାଯା gtkrc (gtk-menu-bar-accel = &quot;ୟାହାବି&quot;) ଦ୍ବାରା ବ୍ଯବସ୍ଥାପିତ ମଧ୍ଯ ହୋଇପାରିବ। ଏହି ବିକଳ୍ପ ଷ୍ଟାଣ୍ଡାର୍ଡ ମେନୁବାର ବେଗବର୍ଦ୍ଧକକୁ ଅକ୍ଷମ ହେବାକୁ ସ୍ବୀକୃତି ଦିଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="ମେନୁବାରରେ ପ୍ରବେଶ କିଗୁଡିକ ଅଛି କି ନାହିଁ">
+							<longdesc>ମେନୁ ବାର ପାଇଁ ଅଲଟ+ବର୍ଣ୍ଣ ପ୍ରବେଶ କି ଗୁଡିକ ରହିବ କି ନାହିଁ। ସେମାନେ ହୁଏତ ଟର୍ମନାଲ ଭିତରେ କେତେକ ପ୍ରଯୋଗ ସହିତ ହସ୍ତକ୍ଷେପ କରିପାରନ୍ତି ତେଣୁ ସେଗୁଡିକୁ ବନ୍ଦ କରିବା ସମ୍ଭବ ଅଟେ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="ନୂଆ ଟର୍ମିନାଲ ନିମନ୍ତେ ଉପୟୋଗ ହେବା ପାଇଁ ପ୍ରୋଫାଇଲ">
+							<longdesc>ଗୋଟିଏ ନୂଆ ଉଇଣ୍ଡୋ କିମ୍ବା ଟାବ ଖୋଲିବା ବେଳେ ଉପୟୋଗ ହେବାକୁ ଥିବା ପ୍ରୋଫାଇଲ। ପ୍ରୋଫାଇଲ_ତାଲିକାରେ ଥିବା ଆବଶ୍ଯକ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="ରୂପରେଖର ତାଲିକା">
+							<longdesc>ପ୍ରୋଫାଇଲଗୁଡିକର ତାଲିକା ୟାହାକି ଜେନୋମ-ଟର୍ମିନାଲକୁ ଜ୍ଞାତ ଅଟେ। ତାଲିକାରେ ସ୍ଟ୍ରିଙ୍ଗଗୁଡିକର ନାମଦେବା ଉପବିବରଣୀପଞ୍ଜିକାଗୁଡିକ /apps/ଜେନୋମ-ଟର୍ମିନାଲ/ପ୍ରୋଫାଇଲସବୁ ସହିତ ସମ୍ବନ୍ଧୀତ ରହିଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-session">
+				<dir name="options">
+					<entry name="logout_prompt">
+						<local_schema short_desc="ଲଗଆଉଟ୍ ସନ୍ଦେଶ">
+							<longdesc>ଯଦି ସକ୍ରିୟ କରାଯାଇଛି, ତାହାହେଲେ ନୋମ ଅଧିବେଶନଟି ବନ୍ଦ ହେବା ପୂର୍ବରୁ ଚାଳକକୁ ପଚାରିବ। </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_save_session">
+						<local_schema short_desc="ଅଧିବେଶନକୁ ସଂରକ୍ଷଣ କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome_settings_daemon">
+				<entry name="volume_step">
+					<local_schema short_desc="ଭଲ୍ଯୁମ ସୋପାନ">
+						<longdesc>ଭଲ୍ଯୁମ ସୋପାନ ଭଲ୍ୟୁମର ଶତକଡା ପରି</longdesc>
+					</local_schema>
+				</entry>
+				<dir name="gtk-modules">
+					<entry name="gail:atk-bridge">
+						<local_schema short_desc="ଅଭିଗମ୍ୟତା ସମର୍ଥନ ପାଇଁ GTK+ ଏକକାଂଶଗୁଡ଼ିକ">
+							<longdesc>ଅଭିଗମ୍ୟତା ସମର୍ଥନ ଧାରଣ କରିବା ପାଇଁ ଏହି କି GTK+ ଏକକାଂଶଗୁଡ଼ିକୁ ନିର୍ଦ୍ଧାରଣ କରିଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybindings">
+					<entry name="next">
+						<local_schema short_desc="ପରବର୍ତ୍ତୀ ଟ୍ରାକ">
+							<longdesc>ପରବର୍ତ୍ତି ଟ୍ରାକକୁ ଏଡ଼ାଇବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="previous">
+						<local_schema short_desc="ପୂର୍ବବର୍ତ୍ତୀ ଟ୍ରାକ">
+							<longdesc>ପୂର୍ବବର୍ତ୍ତି ଟ୍ରାକକୁ ଏଡ଼ାଇବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="stop">
+						<local_schema short_desc="ପଛକୁ ଚଲାଇବା ବନ୍ଦ କରନ୍ତୁ">
+							<longdesc>ପଛଚଲାକୁ ବନ୍ଦ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pause">
+						<local_schema short_desc="ପଛଚଲାକୁ ବିରାମ ଦିଅନ୍ତୁ">
+							<longdesc>ପଛଚଲାକୁ ସ୍ଥିର କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="play">
+						<local_schema short_desc="ଚଲାଅ( କିମ୍ବା ବିରାମ/ଚଲାଅ)">
+							<longdesc>ପଛଚଲାକୁ ଆରମ୍ଭ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି (ଅଥବା ଚଲାନ୍ତୁ/ବିରାମ ଦିଅନ୍ତୁକୁ ଅଲଟପାଲଟ କରନ୍ତୁ)।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media">
+						<local_schema short_desc="ମେଡ଼ିଆ ଚାଲକଙ୍କୁ ପ୍ରଚାଳନ କରନ୍ତୁ">
+							<longdesc>ମେଡ଼ିଆ ଚାଳକକୁ ଆରମ୍ଭ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="www">
+						<local_schema short_desc="ଉଏବ ବ୍ରାଉଜର ପ୍ରାରମ୍ଭ କର">
+							<longdesc>ୱେବ ବ୍ରାଉଜରକୁ ଆରମ୍ଭ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="calculator">
+						<local_schema short_desc="କାଲକୁଲେଟରକୁ ପ୍ରଚାଳନ କରନ୍ତୁ">
+							<longdesc>କାଲକୁଲେଟରକୁ ଆରମ୍ଭ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="ସାହାୟ୍ଯ ବ୍ରାଉଜର ପ୍ରାରମ୍ଭ କର">
+							<longdesc>ସହାୟତା ବ୍ରାଉଜରକୁ ଆରମ୍ଭ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screensaver">
+						<local_schema short_desc="ସ୍କ୍ରିନ ତାଲାବନ୍ଦ">
+							<longdesc>ପରଦାକୁ ଅପରିବର୍ତ୍ତନୀୟ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="email">
+						<local_schema short_desc="ଇମେଲ ଗ୍ରାହକଙ୍କୁ ପ୍ରଚାଳନ କରନ୍ତୁ">
+							<longdesc>ଇମେଲ ଗ୍ରାହକଙ୍କୁ ଆରମ୍ଭ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search">
+						<local_schema short_desc="ଖୋଜନ୍ତୁ">
+							<longdesc>ସନ୍ଧାନ ଉପକରଣକୁ ଆରମ୍ଭ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home">
+						<local_schema short_desc="ହୋମ ଫୋଲ୍ଡର">
+							<longdesc>ମୂଳ ସ୍ଥାନ ଫୋଲଡରକୁ ଖଓଲିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="eject">
+						<local_schema short_desc="ନିଷ୍କାସିତ କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="power">
+						<local_schema short_desc="ଲଗଆଉଟ୍">
+							<longdesc>ଲଗଆଉଟ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_up">
+						<local_schema short_desc="ଧ୍ବନି ପ୍ରବଳତା ବ୍ରୁଦ୍ଧି କରନ୍ତୁ">
+							<longdesc>ତନ୍ତ୍ର ଧ୍ୱନି ପ୍ରବଳତାକୁ ବୃଦ୍ଧି କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_down">
+						<local_schema short_desc="ପ୍ରବଳତା ହ୍ରାସ କରନ୍ତୁ">
+							<longdesc>ତନ୍ତ୍ର ଆକାରକୁ କମ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_mute">
+						<local_schema short_desc="ଭଲ୍ଯୁମକୁ ନୀରବରେ ରଖ">
+							<longdesc>ତନ୍ତ୍ର ଧ୍ୱନି ପ୍ରବଳତାକୁ ମୁକ କରିବା ପାଇଁ ବାନ୍ଧୁଅଛି।</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="plugins">
+					<dir name="xsettings">
+						<entry name="active">
+							<local_schema short_desc="xsettings ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>xsettingsକୁ ପରିଚାଳନା କରିବା ପାଇଁ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରିବାକୁ True ସେଟ କରାଯାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="xrdb">
+						<entry name="active">
+							<local_schema short_desc="xrdb ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>xrdb ସଂରଚନାକୁ ପରିଚାଳନା କରିବା ପାଇଁ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରିବାକୁ True ସେଟ କରାଯାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="typing-break">
+						<entry name="active">
+							<local_schema short_desc="ଟାଇପ ଭଙ୍ଗ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>ଟାଇପ ଭଙ୍ଗକୁ ପରିଚାଳନା କରିବା ପାଇଁ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରିବାକୁ True ସେଟ କରାଯାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="sound">
+						<entry name="active">
+							<local_schema short_desc="ଧ୍ୱନି ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>ନମୁନା କ୍ୟାଶେକୁ ପରିଚାଳନା କରିବା ପାଇଁ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରିବାକୁ True ସେଟ କରାଯାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mouse">
+						<entry name="active">
+							<local_schema short_desc="ମାଉସ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>ମାଉସ ସଂରଚନାକୁ ପରିଚାଳନା କରିବା ପାଇଁ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରିବାକୁ True ସେଟ କରାଯାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="media-keys">
+						<entry name="active">
+							<local_schema short_desc="ମେଡିଆ କି ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>ବହୁମାଧ୍ୟମ କି ସଂରଚନାକୁ ପରିଚାଳନା କରିବା ପାଇଁ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରିବାକୁ True ସେଟ କରାଯାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="active">
+							<local_schema short_desc="କିବୋର୍ଡ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>କିବୋର୍ଡ ସଂରଚନାକୁ ପରିଚାଳନା କରିବା ପାଇଁ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରିବାକୁ True ସେଟ କରାଯାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keybindings">
+						<entry name="active">
+							<local_schema short_desc="କି ବନ୍ଧନ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>କି ବନ୍ଧନକୁ ପରିଚାଳନା କରିବା ପାଇଁ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରିବାକୁ True ସେଟ କରାଯାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="housekeeping">
+						<entry name="ignore_paths">
+							<local_schema short_desc="ଅଗ୍ରହଣୀୟ କରିବା ପାଇଁ ପଥଗୁଡ଼ିକୁ ସ୍ଥାପନ କରନ୍ତୁ">
+								<longdesc>ସ୍ଥାପନ ପଥର ଗୋଟିଏ ତାଲିକା ଉଲ୍ଲେଖ କରନ୍ତୁ ଯେତେବେଳେ ସେମାନେ ସ୍ଥାନ ଅଭାବରେ ଚାଲିଥାନ୍ତି।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="min_notify_period">
+							<local_schema short_desc="ପୁନଃପୌନିକ ଚେତାବନୀ ପାଇଁ ସର୍ବନିମ୍ନ ବିଜ୍ଞପ୍ତି ଅବଧି">
+								<longdesc>ମିନଟରେ ସମୟ ଉଲ୍ଲେଖ କରନ୍ତୁ। ଏହି ଅବଧି ଅପେକ୍ଷା ଭଲ୍ୟୁମ ପାଇଁ ପାଖାପାଖି ଚେତାବନୀ ଦୃଶ୍ୟମାନ ହୋଇନଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_size_gb_no_notify">
+							<local_schema short_desc="ମୁକ୍ତ ସ୍ଥାନ କୌଣସି ବିଜ୍ଞପ୍ତି ନାହିଁ">
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify_again">
+							<local_schema short_desc="ପରବର୍ତ୍ତୀ ମୁକ୍ତ ପ୍ରତିଶତ ବିଜ୍ଞପ୍ତି ଦ୍ୱାର">
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify">
+							<local_schema short_desc="ମୁକ୍ତ ପ୍ରତିଶତ ବିଜ୍ଞପ୍ତି">
+							</local_schema>
+						</entry>
+						<entry name="active">
+							<local_schema short_desc="ଆନ୍ତରିକ ଲେଖା କାର୍ଯ୍ୟ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>prune ଅସ୍ଥାୟୀ ଫାଇଲ କ୍ୟାଶେ ପାଇଁ, ଆନ୍ତରିକ ଲେଖା କାର୍ଯ୍ୟ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରିବାକୁ True ସେଟ କରାଯାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="font">
+						<entry name="active">
+							<local_schema short_desc="ଅକ୍ଷରରୂପ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>ଅକ୍ଷରରୂପ ସଂରଚନାକୁ ପରିଚାଳନା କରିବା ପାଇଁ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରିବାକୁ True ସେଟ କରାଯାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="clipboard">
+						<entry name="active">
+							<local_schema short_desc="କ୍ଲିପବୋର୍ଡ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>କ୍ଲିପବୋର୍ଡ ସଂରଚନାକୁ ପରିଚାଳନା କରିବା ପାଇଁ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରିବାକୁ True ସେଟ କରାଯାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="background">
+						<entry name="active">
+							<local_schema short_desc="ପୃଷ୍ଠଭୂମି ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>ପୃଷ୍ଠଭୂମି ସଂରଚନାକୁ ପରିଚାଳନା କରିବା ପାଇଁ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରିବାକୁ True ସେଟ କରାଯାଇଥାଏ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="a11y-keyboard">
+						<entry name="active">
+							<local_schema short_desc="ଅଭିଗମ୍ଯ କି ବୋର୍ଡ ପ୍ଲଗଇନକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+								<longdesc>ଅଭିଗମ୍ୟତା କି ବୋର୍ଡ ବିନ୍ୟାସକୁ ପରିଚାଳନା କରିବା ପାଇଁ ପ୍ଲଗଇନ ସକ୍ରିୟ କରିବାକୁ True ସେଟକରନ୍ତୁ.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="xrandr">
+					<entry name="show_notification_icon">
+						<local_schema short_desc="ବିଜ୍ଞପ୍ତି କ୍ଷେତ୍ରରେ ପ୍ରଦର୍ଶିକା ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="yelp">
+				<entry name="fixed_font">
+					<local_schema short_desc="ସ୍ଥିର ପାଠ୍ଯ ପାଇଁ ଅକ୍ଷରରୂପ">
+						<longdesc>ପାଠ୍ଯ ପାଇଁ ସ୍ଥିର ଓସାରର ଅକ୍ଷରରୂପ</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="variable_font">
+					<local_schema short_desc="ପାଠ୍ଯ ପାଇଁ ଅକ୍ଷରରୂପ">
+						<longdesc>ପାଠ୍ଯ ପାଇଁ ଅସ୍ଥିର ଓସାରର ଅକ୍ଷରରୂପ</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_system_fonts">
+					<local_schema short_desc="ତନ୍ତ୍ର ଅକ୍ଷରରୂପ ବ୍ଯବହାର କରନ୍ତୁ">
+						<longdesc>ତନ୍ତ୍ର ପାଇଁ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଅକ୍ଷରରୂପ ବ୍ଯବହାର କରନ୍ତୁ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_caret">
+					<local_schema short_desc="କାରେଟ ବ୍ଯବହାର କରନ୍ତୁ">
+						<longdesc>ପୃଷ୍ଠା ଦେଖିଲାବେଳେ ଚାବି ପଟି ଦ୍ବାରା ନିୟନ୍ତ୍ରଣଯୋଗ୍ଯ କାରେଟ ବ୍ଯବହାର କରନ୍ତୁ</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="metacity">
+				<dir name="window_keybindings">
+					<entry name="move_to_center">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ପରଦାର କେନ୍ଦ୍ରକୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_w">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ପରଦାର ପଶ୍ଚିମ (ବାମ) କୋଣକୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_e">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ପରଦାର ପୂର୍ବ (ଡାହାଣ) ପାର୍ଶ୍ୱକୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_s">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ପରଦାର ଦକ୍ଷିଣ (ତଳ) କୋଣକୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_n">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ପରଦାର ପଶ୍ଚିମ (ଉପର) କୋଣକୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_se">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଦକ୍ଷିଣ-ପୂର୍ବ (ଡାହାଣ ପଟ ତଳ) କୋଣକୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_sw">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଦକ୍ଷିଣ-ପଶ୍ଚିମ (ବାମପଟ ତଳ) କୋଣକୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_ne">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଉତ୍ତର-ପୂର୍ବ (ଉପରପଟ ଡାହାଣ) କୋଣକୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_nw">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଉତ୍ତର-ପଶ୍ଚିମ (ଉପରପଟ ବାମ) କୋଣକୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="maximize_horizontally">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଭୂସମାନ୍ତର ଭାବରେ ଯଥାସମ୍ଭବ ବଢ଼ାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="maximize_vertically">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଭୂଲମ୍ବ ଭାବରେ ଯଥାସମ୍ଭବ ବଢ଼ାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="lower">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଅଲଗା ୱିଣ୍ଡୋ ପଛକୁ ନିଅନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="raise">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଅଲଗା ୱିଣ୍ଡୋଗୁଡ଼ିକର ସାମନାକୁ ଆଣନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="raise_or_lower">
+						<local_schema short_desc="ୱିଣ୍ଡୋ ଲୁଚାହୋଇଥିଲେ ତାହାକୁ ସାମନାକୁ ଆଣନ୍ତୁ, ନଚେତ ତାହାକୁ ତଳକୁ କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_down">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଗୋଟିଏ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ତଳକୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_up">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଗୋଟିଏ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ଉପରକୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_right">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଗୋଟିଏ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ଡାହାଣକୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_left">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଗୋଟିଏ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ବାମକୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_12">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୧୨କୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_11">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୧୧କୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_10">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୧୦କୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_9">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୯କୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_8">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୮କୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_7">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୭କୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_6">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୬କୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_5">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୫କୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_4">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୪କୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_3">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୩କୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_2">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୨କୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_1">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୧କୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="toggle_on_all_workspaces">
+						<local_schema short_desc="ୱିଣ୍ଡୋ ସବୁ କାର୍ଯ୍ଯକ୍ଷେତ୍ରରେ ଅଛି ଅଥବା କେବଳ ଗୋଟିକରେ ଅଛି ତାହାକୁ ଅଦଳବଦଳ କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="begin_resize">
+						<local_schema short_desc="ୱିଣ୍ଡୋର ଆକାର ବଦଳାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="begin_move">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଘୁଞ୍ଚାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="close">
+						<local_schema short_desc="ୱିଣ୍ଡୋ ବନ୍ଦ କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="minimize">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଯଥାସମ୍ଭବ ଛୋଟ କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="toggle_shaded">
+						<local_schema short_desc="ଘୋଡାହୋଇଥିବା ଅବସ୍ଥା ଅଦଳବଦଳ କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="unmaximize">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ପୁନଃସ୍ଥାପନ କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="maximize">
+						<local_schema short_desc="ୱିଣ୍ଡୋକୁ ଯଥାସମ୍ଭବ ବଢ଼ାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="toggle_above">
+						<local_schema short_desc="ଗୋଟିଏ ୱିଣ୍ଡୋ ଅନ୍ୟାନ୍ୟ ୱିଣ୍ଡୋଗୁଡ଼ିକ ଉପରେ ଦୃଶ୍ୟମାନ ହେବା ପାଇଁ ଆଗପଛ କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="toggle_maximized">
+						<local_schema short_desc="ବୃହତ୍ତମ ଅବସ୍ଥା ଅଦଳବଦଳ କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="toggle_fullscreen">
+						<local_schema short_desc="ପୂର୍ଣ୍ମପରଦା ଧାରା ଅଦଳବଦଳ କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="activate_window_menu">
+						<local_schema short_desc="ୱିଣ୍ଡୋ ତାଲିକାକୁ ସକ୍ରିୟ କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybinding_commands">
+					<entry name="command_window_screenshot">
+						<local_schema short_desc="ୱିଣ୍ଡୋ ପରଦା ପ୍ରତିଛବି ନିର୍ଦ୍ଦେଶ">
+							<longdesc>/ପ୍ରୟୋଗ/ମେଟାସିଟି/ସାମଗ୍ରି_ଚାବିବନ୍ଧନୀ/ୱିଣ୍ଡୋ_ପରଦାପ୍ରତିଛବି_ନିର୍ଦ୍ଦେଶ_ଚଳାନ୍ତୁ ଚାବି ଗୋଟିଏ ଚାବିବନ୍ଧନୀ ନିର୍ଦ୍ଦିଷ୍ଟ କରେ ଯେଉଁଟାକି ଏହି ବିନ୍ଯାସ ଦ୍ବାରା ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶକୁ ଆବାହନ କରେ,</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command_screenshot">
+						<local_schema short_desc="ପରଦା ପ୍ରତିଛବି ନିର୍ଦ୍ଦେଶ">
+							<longdesc>/ପ୍ରୟୋଗ/ମେଟାସିଟି/ସାମଗ୍ରି_ଚାବିବନ୍ଧନୀ/ପରଦାପ୍ରତିଛବି_ନିର୍ଦ୍ଦେଶ_ଚଳାନ୍ତୁ ଚାବି ଗୋଟିଏ ଚାବିବନ୍ଧନୀ ନିର୍ଦ୍ଦିଷ୍ଟ କରେ ଯେଉଁଟାକି ଏହି ବିନ୍ଯାସ ଦ୍ବାରା ଉଲ୍ଲେଖିତ ନିର୍ଦ୍ଦେଶକୁ ଆବାହନ କରେ,</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="ଚାବି ବନ୍ଧନ ସ୍ବରୂପେ ଚଳାଇବା ପାଇଁ ନିର୍ଦ୍ଦେଶ">
+							<longdesc>/ପ୍ରୟୋଗ/ମେଟାସିଟି/ସାମଗ୍ରି_ଚାବିବନ୍ଧନୀ/ନିର୍ଦ୍ଦେଶ_N_ଚଳାନ୍ତୁ ଚାବିଗୁଡ଼ିକ ଏହି ନିର୍ଦ୍ଦେଶଗୁଡ଼ିକ ଚାବିବନ୍ଧନୀ ନିର୍ଦ୍ଦିଷ୍ଟ କରନ୍ତି. ନିର୍ଦ୍ଦେଶ_N_ଚଳାନ୍ତୁ ଚାବିବନ୍ଧନୀ ଦବାଇଲେ ନିର୍ଦ୍ଦେଶ_N ଚଳାଯିବ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global_keybindings">
+					<entry name="run_command_terminal">
+						<local_schema short_desc="ଟର୍ମିନାଲ ଚଳାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="run_command_window_screenshot">
+						<local_schema short_desc="ଗୋଟିଏ ୱିଣ୍ଡୋର ପରଦା ପ୍ରତିଛବି ନିଅନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="run_command_screenshot">
+						<local_schema short_desc="ପରଦା ପ୍ରତିଛବି ନିଅନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="panel_run_dialog">
+						<local_schema short_desc="ଫଳକର &quot;ପ୍ରୟୋଗ ଚାଳନ&quot; ସଂଳାପକୁ ଦେଖାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="panel_main_menu">
+						<local_schema short_desc="ଫଳକର ମୂଖ୍ୟ ମେନୁକୁ ଦେଖାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="ସମସ୍ତ ସାଧାରଣ ୱିଣ୍ଡୋଗୁଡ଼ିକୁ ଲୁଚାନ୍ତୁ ଏବଂ ଡେସ୍କଟପକୁ କେନ୍ଦ୍ରିତ କରନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels_backward">
+						<local_schema short_desc="ଫଳକ ଓ ଡେସ୍କଟପ୍ ମଧ୍ଯରେ ସଙ୍ଗେ ସଙ୍ଗେ ପଛୁଆ ଘୁଞ୍ଚନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels">
+						<local_schema short_desc="ଫଳକ ଓ ଡେସ୍କଟପ୍ ମଧ୍ଯରେ ସଙ୍ଗେ ସଙ୍ଗେ ଘୁଞ୍ଚନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows_backward">
+						<local_schema short_desc="ୱିଣ୍ଡୋଗୁଡ଼ିକ ମଧ୍ଯରେ ସଙ୍ଗେ ସଙ୍ଗେ ପଛୁଆ ଘୁଞ୍ଚନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows">
+						<local_schema short_desc="ୱିଣ୍ଡୋଗୁଡ଼ିକ ମଧ୍ଯରେ ସଙ୍ଗେ ସଙ୍ଗେ ଘୁଞ୍ଚନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group_backward">
+						<local_schema short_desc="ସଙ୍ଗେ ସଙ୍ଗେ ଗୋଟିଏ ପ୍ରୟୋଗର ୱିଣ୍ଡୋଗୁଡ଼ିକ ମଧ୍ଯରେ ପଛକୁ ଚାଲନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group">
+						<local_schema short_desc="ସଙ୍ଗେ ସଙ୍ଗେ ଗୋଟିଏ ପ୍ରୟୋଗର ୱିଣ୍ଡୋଗୁଡ଼ିକ ମଧ୍ଯରେ ଚାଲନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels_backward">
+						<local_schema short_desc="ପପଅପ ୱିଣ୍ଡୋ ବ୍ୟବହାର କରି, ପଟ୍ଟିକା ଏବଂ ଡେସ୍କଟପ ମଧ୍ଯରେ ପଛକୁ ଚାଲନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels">
+						<local_schema short_desc="ପପଅପ ୱିଣ୍ଡୋ ବ୍ୟବହାର କରି, ପଟ୍ଟିକା ଏବଂ ଡେସ୍କଟପ ମଧ୍ଯରେ ଚାଲନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows_backward">
+						<local_schema short_desc="ପପଅପ ୱିଣ୍ଡୋ ବ୍ୟବହାର କରି, ୱିଣ୍ଡୋଗୁଡ଼ିକ ମଧ୍ଯରେ ପଛକୁ ଚାଲନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows">
+						<local_schema short_desc="ପପଅପ ୱିଣ୍ଡୋ ବ୍ୟବହାର କରି, ୱିଣ୍ଡୋଗୁଡ଼ିକ ମଧ୍ଯରେ ଚାଲନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_group_backward">
+						<local_schema short_desc="ପପଅପ ୱିଣ୍ଡୋ ବ୍ୟବହାର କରି, ଗୋଟିଏ ପ୍ରୟୋଗର ଥିବା ୱିଣ୍ଡୋଗୁଡ଼ିକ ମଧ୍ଯରେ ପଛକୁ ଚାଲନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_group">
+						<local_schema short_desc="ପପଅପ ୱିଣ୍ଡୋ ବ୍ୟବହାର କରି, ଗୋଟିଏ ପ୍ରୟୋଗର ଥିବା ୱିଣ୍ଡୋଗୁଡ଼ିକ ମଧ୍ଯରେ ଚାଲନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_down">
+						<local_schema short_desc="ପ୍ରଚଳିତ କାର୍ଯ୍ୟକ୍ଷେତ୍ରର ତଳେ ସ୍ଥିତ କାର୍ଯ୍ଯକ୍ଷେତ୍ରକୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_up">
+						<local_schema short_desc="ପ୍ରଚଳିତ କାର୍ଯ୍ୟକ୍ଷେତ୍ରର ଉପରେ ସ୍ଥିତ କାର୍ଯ୍ଯକ୍ଷେତ୍ରକୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_right">
+						<local_schema short_desc="ପ୍ରଚଳିତ କାର୍ଯ୍ୟକ୍ଷେତ୍ରର ଡାହାଣରେ ସ୍ଥିତ କାର୍ଯ୍ଯକ୍ଷେତ୍ରକୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_left">
+						<local_schema short_desc="ପ୍ରଚଳିତ କାର୍ଯ୍ୟକ୍ଷେତ୍ରର ବାମରେ ସ୍ଥିତ କାର୍ଯ୍ଯକ୍ଷେତ୍ରକୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_12">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୧୨କୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_11">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୧୧କୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_10">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୧୦କୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_9">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୯କୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_8">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୮କୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_7">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୭କୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_6">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୬କୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_5">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୫କୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_4">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୪କୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_3">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୩କୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_2">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୨କୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_1">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ୧କୁ ଯାଆନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="run_command">
+						<local_schema short_desc="ଗୋଟିଏ ନିର୍ଦ୍ଦଷ୍ଟ ନିର୍ଦ୍ଦେଶ ଚଳାନ୍ତୁ">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="workspace_names">
+					<entry name="name">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ରର ନାମ">
+							<longdesc>ଗୋଟିଏ କାର୍ଯ୍ଯକ୍ଷେତ୍ରର ନାମ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="general">
+					<entry name="disable_workarounds">
+						<local_schema short_desc="ପୁରୁଣା ବା ଅବୈଧ ପ୍ରୟୋଗ ପାଇଁ ଆବଶ୍ଯକ ଦୁର୍ଗୁଣଗୁଡ଼ିକୁ ଅସମର୍ଥ କରନ୍ତୁ">
+							<longdesc>କିଛି ପ୍ରୟୋଗଗୁଡ଼ିକ ନିର୍ଦ୍ଦେଶଗୁଡ଼ିକୁ ଅନାଦର କରିଥାଏ, ଫଳସ୍ୱରୂପ ୱିଣ୍ଡୋ ପରିଚାଳକ ଭୁଲ ପ୍ରଦର୍ଶନ କରିଥାଏ। ଏହି ବିକଳ୍ପ Metacityକୁ ସଠିକ ଅବସ୍ଥାରେ ରଖିଥାଏ, ଯାହାକି ଅଧିକ ସ୍ଥାୟୀ ଚାଳକ ଅନ୍ତରାପୃଷ୍ଠ ପ୍ରଦାନ କରିଥାଏ, ଏହା ବ୍ୟତୀତ ଜଣେ ଖରାପ ଆଚରଣ କରୁଥିବା ପ୍ରୟୋଗଗୁଡ଼ିକୁ ଚଲାଇନଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="application_based">
+						<local_schema short_desc="(କାର୍ଯ୍ଯକାରୀ ନୁହେଁ) ପଥପ୍ରଦର୍ଶନ ପ୍ରୟୋଗ ହିସାବରେ କାମ କରେ, ୱିଣ୍ଡୋ ହିସାବରେ ନୁହେଁ">
+							<longdesc>ଯଦି ଏହା true, ତେବେ metacity ୱିଣ୍ଡୋ ବଦଳରେ ପ୍ରୟୋଗ ଭାବରେ କାମ କରେ। ଏହି ଧାରଣାଟି ଟିକେ ଅମୂର୍ତ୍ତ, କିନ୍ତୁ ସାଧାରଣରେ ପ୍ରୟୋଗ-ଆଧାରିତ ବ୍ଯବସ୍ଥାଟି ଅଧିକ ମାକ୍ ଭଳି ଓ କମ ମାଇକ୍ରୋସଫ୍ଟ ୱିଣ୍ଡୋଜ ଭଳି. ପ୍ରୟୋଗ-ଆଧାରିତ ବ୍ଯବସ୍ଥାରେ ଆପଣ ଗୋଟିଏ ୱିଣ୍ଡୋକୁ କେନ୍ଦ୍ରିତ କଲେ, ପ୍ରୟୋଗର ସବୁ ୱିଣ୍ଡୋଗୁଡ଼ିକ ସାମନାକୁ ଅଣାଯିବ. ପ୍ରୟୋଗ-ଆଧାରିତ ବ୍ଯବସ୍ଥାରେ ମଧ୍ଯ କେନ୍ଦ୍ରୀଭୂତ ମାଉସ୍ ଚାପ ଅଲଗା ପ୍ରୟୋଗର ୱିଣ୍ଡୋଗୁଡ଼ିକ ବଢ଼ାଇ ଦିଆଯାଏ ନାହିଁ. ଏହି ବିନ୍ଯାସର ଅସ୍ତିତ୍ବ କିଛିଟି ସନ୍ଦେହଜନକ. କିନ୍ତୁ,  ପ୍ରୟୋଗ-ଆଧାରିତ ଓ ୱିଣ୍ଡୋ-ଆଧାରିତ ଧାରାର ସବୁ ବିସ୍ତୃତ ବିବରଣୀ ପାଇଁ ଅଲଗା ବିନ୍ଯାସ ରଖିବା ଅପେକ୍ଷା, ଏହା ଅଧିକ ଭଲ. ଏହି ସମୟରେ, ପ୍ରୟୋଗ-ଆଧାରିତ ଧାରା ମୁଖ୍ଯତଃ ଅକାର୍ଯ୍ଯକାରୀ ରହିଛି.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reduced_resources">
+						<local_schema short_desc="ଏହା ସତ ହେଲେ, ବ୍ଯବହାରଯୋଗ୍ଯତା କମାଇ ମଧ୍ଯ, କମ ସମ୍ବଳ ବ୍ଯବହାର କରନ୍ତୁ">
+							<longdesc>ଏହା true ହେଲେ, metacity ତାର ଆକୃତି ବ୍ଯବହାର କରି, ଜୀବନାୟନଗୁଡ଼ିକୁ ଏଡ଼ାଇ, ବା ଅନ୍ଯ ଉପାୟ ଦ୍ବାରା ବ୍ଯବହାରକାରୀକୁ କମ ପ୍ରତିକ୍ରିୟା, ଓ ପ୍ରତ୍ଯକ୍ଷ ପ୍ରକଳନର କମ ଭାବ ଦେବ. ଅନେକ ବ୍ଯବହାରକାରୀଙ୍କ ଏହା ବ୍ଯବହାରଯୋଗ୍ଯତାକୁ ଢେର କମେଇ ଦିଏ, କିନ୍ତୁ ଏହା ଦ୍ବାରା ପୁରୁଣା ପ୍ରୟୋଗ ଓ ଟର୍ମିନାଲ ସେବକ ଚଲାଯାଇ ପାରିବ, ନଚେତ୍ ଜେଉଁଟାକି ଅବ୍ଯବହାରିକ ରୁହନ୍ତା. ତଥାପି, ବ୍ଯବହାରସରଳତା ସକ୍ରିୟ କରାଯାଇଥିଲେ, ଅଦ୍ଭୁତ ଡେସ୍କଟପ ସମସ୍ଯା ଏଡ଼ାଇବା ପାଇଁ, ତାର ଆକୃତି ନିଷ୍କ୍ରିୟ କରାଯିବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="compositing_manager">
+						<local_schema short_desc="ମିଶ୍ରଣ ପରିଚାଳକ">
+							<longdesc>ନିର୍ଦ୍ଧାରିତ କରେ ମେଟାସିଟି ଗୋଟିଏ ମିଶ୍ରଣ ପରିଚାଳକ ବା ନୁହେଁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell_type">
+						<local_schema short_desc="ଚାକ୍ଷୁଷ ଘଣ୍ଟି ପ୍ରକାର">
+							<longdesc>ମେଟାସିଟି ପାଇଁ ନିର୍ଦ୍ଦିଷ୍ଟ କରେ ତନ୍ତ୍ରର ଘଣ୍ଟି ବା ଅନ୍ଯ ପ୍ରୟୋଗର ଘଣ୍ଟି ବାଜିବା କିପରି ଚାକ୍ଷୁଷ ଭାବରେ ସୂଚିତ କରାଯିବ. ବର୍ତ୍ରମାନ ଦୁଇଟି ବୈଧ ମୂଲ୍ଯ ଅଛି, &quot;ପୂର୍ଣ୍ଣପରଦା&quot; ଯେଉଁଟାକି ପୂର୍ଣ୍ଣ ପରଦାଟିକୁ ଧଳାରୁ କଳା ଝଲସି ଦିଏ, ଓ &quot;ବନ୍ଧେଇ_ଝଲସା&quot; ଯେଉଁଟାକି ଘଣ୍ଟି ସଙ୍କେତ ପଠାଇ ଥିବା ପ୍ରୟୋଗର ଶୀର୍ଷକ ପଟିକୁ ଝଲସି ଦିଏ. ଘଣ୍ଟି ପଠାଇ ଥିବା ପ୍ରୟୋଗ ଅଜଣା ଥିଲେ (ଯେଉଁଟାକି ପୂର୍ବନିର୍ଦ୍ଧାରିତ &quot;ତନ୍ତ୍ର ବିପ୍&quot; ପାଇଁ ସାଧାରଣରେ ଘଟଣା), ସାମ୍ପ୍ରତିକ କେନ୍ଦ୍ରିତ ୱିଣ୍ଡୋର ଶୀର୍ଷକ ପଟିକୁ ଝଲସି ଦିଆଯାଏ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="audible_bell">
+						<local_schema short_desc="ତନ୍ତ୍ର ଘଣ୍ଟିଟି ଶ୍ରାବ୍ଯ">
+							<longdesc>ନିର୍ଦ୍ଧାରିତ କରେ ପ୍ରୟୋଗ ବା ତନ୍ତ୍ର ଶ୍ରାବ୍ଯ &apos;ବିପ&apos; ସୃଷ୍ଟି କରିପାରିବ କି; ଏହା ସହିତ &apos;ଚାକ୍ଷୁଷ ଘଣ୍ଟି&apos; ଚୟନକୁ ଯୋଡ଼ି ନିଃଶବ୍ଦ &apos;ବିପ&apos; ହ୍ଯବହାର କରା ଯାଇରାରିବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell">
+						<local_schema short_desc="ଚାକ୍ଷୁଷ ଘଣ୍ଟିକୁ ସମର୍ଥ କରନ୍ତୁ">
+							<longdesc>ଗୋଟିଏ ପ୍ରୟୋଗ ବା ତନ୍ତ୍ର &apos;ଘଣ୍ଟି&apos; ବା &apos;ବିପ&apos; କଲେ, ଏକ ଚାକ୍ଷୁଷ ସୂଚକ ବ୍ଯବହାର କରେ; ଏହା କାଲ ଲୋକଙ୍କ ପାଇଁ ବା କୋଲାହଳପୂର୍ଣ୍ଣ ପରିବେଶରେ ବା &apos;ଶ୍ରାବ୍ଯ ଘଣ୍ଟି&apos; ଚାଲୁ ନ ଥିଲେ ଉପକାରୀ ହୋଇଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="num_workspaces">
+						<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ରର ସଂଖ୍ଯା">
+							<longdesc>କାର୍ଯ୍ଯକ୍ଷେତ୍ରର ସଂଖ୍ଯା। ଏହା ଶୂନ୍ଯଠାରୁ ଅଧିକ ହେବା ବାଧ୍ଯ, ଓ ଏହାର ଗୋଟିଏ ସ୍ଥିର ସର୍ବାଧିକ ମୂଲ୍ଯ ଅଛି ଭୁଲ ବଶତଃ ଅତ୍ୟଧିକ କାର୍ଯ୍ଯକ୍ଷେତ୍ର ନିର୍ଦ୍ଦଷ୍ଟ କରି ନିଜ ଡେସ୍କଟପକୁ ନଷ୍ଟ କରିବାରୁ ରୋକିବା ପାଇଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_font">
+						<local_schema short_desc="ୱିଣ୍ଡୋ ଶୀର୍ଷକ ଅକ୍ଷରରୂପ">
+							<longdesc>ୱିଣ୍ଡୋ ଶୀର୍ଷକ ପଟିର ଅକ୍ଷରରୂପ ବର୍ଣ୍ଣନା କରୁଥିବା ଗୋଟିଏ ଅକ୍ଷରରୂପ ବର୍ଣ୍ଣନା ବାକ୍ଯଖଣ୍ଡ।titlebar_font_size ବିକଳ୍ପକୁ 0 ସେଟ କରାଯାଇଥିଲେହିଁ ବର୍ଣ୍ଣନାରୁ ଆକାରଟି ବ୍ଯବହାର ହେବ। ଏହା ସହିତ, ଯଦି titlebar_uses_desktop_font ବିକଳ୍ପକୁ true ସେଟ କରାଯାଇଥାଏ ତେବେ ଏହି ବିକଳ୍ପଟି ନିଷ୍କ୍ରିୟ ରହିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_uses_system_font">
+						<local_schema short_desc="ୱିଣ୍ଡୋ ଶୀର୍ଷକରେ ତନ୍ତ୍ରର ସାଧାରଣ ଅକ୍ଷରରୂପ ବ୍ଯବହାର କରନ୍ତୁ">
+							<longdesc>ଏହା ସତ ହେଲେ, ଶୀର୍ଷକପଟି_ଅକ୍ଷରରୂପ ପସନ୍ଦକୁ ଏଡ଼ାଇ, ୱିଣ୍ଡୋ ଶୀର୍ଷକ ପାଇଁ ସାଧାରଣ ପ୍ରୟୋଗ ଅକ୍ଷରରୂପ ବ୍ଯବହାର କରନ୍ତୁ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="ସାମ୍ପ୍ରତିକ ପ୍ରସଙ୍ଗ">
+							<longdesc>ପ୍ରସଙ୍ଗଟି ୱିଣ୍ଡୋ ଧାର, ଶୀର୍ଷକପଟି, ଇତ୍ଯାଦିର ଚେହେରା ସ୍ଥିର କରେ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise_delay">
+						<local_schema short_desc="ସ୍ବଂୟ ସାମନାକୁ ଆଣିବା ପାଇଁ ମିଲିସେକଣ୍ଡରେ ବିଳମ୍ବ">
+							<longdesc>ଯଦି ସ୍ବଂୟ_ସାମନାକୁ_ଆଣିବା ସତ ହୋଇଥାଏ, ୱିଣ୍ଡୋକୁ ସାମନାକୁ ଆଣିବା ପୂର୍ବରୁ ମଧ୍ଯବର୍ତ୍ତୀ ସମୟ. ବିଳମ୍ବଟି ମିଲିସେକଣ୍ଡରେ ନିର୍ଦ୍ଧିଷ୍ଟ ହୋଇଥାଏ..</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise">
+						<local_schema short_desc="କେନ୍ଦ୍ରିତ ୱିଣ୍ଡୋକୁ ଆପେଆପେ ସାମନାକୁ ଆଣେ">
+							<longdesc>ଏହା true ହେଲେ, ଓ କେନ୍ଦ୍ରୀଭୂତ ଧାରା &quot;ଅଯତ୍ନକୃତ&quot; ବା &quot;ମାଉସ&quot; ଥିଲେ, କେନ୍ଦ୍ରିତ ୱିଣ୍ଡୋକୁ କିଛି ସମୟ ପରେ ଆପେଆପେ auto_raise_delay କି କୁ ବ୍ୟବହାର କରି ସାମନାକୁ ଅଣାଯିବ। ଏହା ବୃଦ୍ଧିକରା ପାଇଁ ୱିଣ୍ଡୋ ଉପରେ କ୍ଲିକ କରିବା ସହିତ ସମ୍ପୃକ୍ତ ନୁହଁ, ଅଥବା ଟାଣିବା-ଏବଂ ପକାଇବା ସମୟରେ ୱିଣ୍ଡୋରେ ପ୍ରବେଶ କରି।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_right_click_titlebar">
+						<local_schema short_desc="ଶୀର୍ଷକ ପଟିରେ ମାଉସକୁ ଡାହାଣ-କ୍ଲିକ କରିବା ଦ୍ୱାରା ହେଉଥିବା କାର୍ଯ୍ୟ">
+							<longdesc>ଏହି ବିକଳ୍ପ ଶୀର୍ଷକପଟି ଉପରେ ଡାହାଣ କ୍ଲିକ କରିବା ଦ୍ୱାରା ହେଉଥିବା ପ୍ରଭାବ ନିର୍ଦ୍ଧାରଣ କରିଥାଏ। ସାମ୍ପ୍ରତିକ ବୈଧ ବିକଳ୍ପଗୁଡ଼ିକ ହେଲା &apos;toggle_shade&apos;, ଯାହାକି ୱିଣ୍ଡୋକୁ ଘୋଢାଇବ ବା ପ୍ରକାଶିତ କରିବ, &apos;toggle_maximize&apos; ଯାହାକି ୱିଣ୍ଡୋକୁ ବୃହତ୍ତମନ କରିବ ବା ବୃହତ୍ତମରୁ ଛୋଟ କରିବ, &apos;toggle_maximize_horizontally&apos; ଏବଂ &apos;toggle_maximize_vertically&apos; ଯାହାକି କେବଳ ସେହି ଦିଗରେ ୱିଣ୍ଡୋକୁ ବୃହତ୍ତମନ କରିବ ବା ବୃହତ୍ତମରୁ ଛୋଟ କରିବ, &apos;minimize&apos; ଯାହାକି ୱିଣ୍ଡୋକୁ କ୍ଷୁଦ୍ରତମ କରିବ, &apos;shade&apos; ଯାହାକି ୱିଣ୍ଡୋକୁ ଉପରକୁ ଗଡ଼ାଇବ, &apos;menu&apos; ଯାହାକି ୱିଣ୍ଡୋ ତାଲିକାକୁ ଦର୍ଶାଇଥାଏ, &apos;lower&apos; ଯାହାକି ୱିଣ୍ଡୋକୁ ଅନ୍ୟ ସମସ୍ତଙ୍କ ପଛରେ ରଖିଥାଏ, ଏବଂ &apos;none&apos; ଯାହାକି କିଛି କରିନଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_middle_click_titlebar">
+						<local_schema short_desc="ଶୀର୍ଷକ ପଟିରେ ମାଉସକୁ ମଝି-କ୍ଲିକ କରିବା ଦ୍ୱାରା ହେଉଥିବା କାର୍ଯ୍ୟ">
+							<longdesc>ଏହି ବିକଳ୍ପ ଶୀର୍ଷକପଟି ଉପରେ ମଝି କ୍ଲିକ କରିବା ଦ୍ୱାରା ହେଉଥିବା ପ୍ରଭାବ ନିର୍ଦ୍ଧାରଣ କରିଥାଏ। ସାମ୍ପ୍ରତିକ ବୈଧ ବିକଳ୍ପଗୁଡ଼ିକ ହେଲା &apos;toggle_shade&apos;, ଯାହାକି ୱିଣ୍ଡୋକୁ ଘୋଢାଇବ ବା ପ୍ରକାଶିତ କରିବ, &apos;toggle_maximize&apos; ଯାହାକି ୱିଣ୍ଡୋକୁ ବୃହତ୍ତମନ କରିବ ବା ବୃହତ୍ତମରୁ ଛୋଟ କରିବ, &apos;toggle_maximize_horizontally&apos; ଏବଂ &apos;toggle_maximize_vertically&apos; ଯାହାକି କେବଳ ସେହି ଦିଗରେ ୱିଣ୍ଡୋକୁ ବୃହତ୍ତମନ କରିବ ବା ବୃହତ୍ତମରୁ ଛୋଟ କରିବ, &apos;minimize&apos; ଯାହାକି ୱିଣ୍ଡୋକୁ କ୍ଷୁଦ୍ରତମ କରିବ, &apos;shade&apos; ଯାହାକି ୱିଣ୍ଡୋକୁ ଉପରକୁ ଗଡ଼ାଇବ, &apos;menu&apos; ଯାହାକି ୱିଣ୍ଡୋ ତାଲିକାକୁ ଦର୍ଶାଇଥାଏ, &apos;lower&apos; ଯାହାକି ୱିଣ୍ଡୋକୁ ଅନ୍ୟ ସମସ୍ତଙ୍କ ପଛରେ ରଖିଥାଏ, ଏବଂ &apos;none&apos; ଯାହାକି କିଛି କରିନଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_double_click_titlebar">
+						<local_schema short_desc="ଶୀର୍ଷକ ପଟିରେ ମାଉସ୍ କୁ ଯୁଗ୍ନ ଭାବରେ ଦବାଇଲେ କି କାମ ଚାଳନ ହେବ">
+							<longdesc>ଏହି ଚୟନ ଶୀର୍ଷକପଟି ଉପରେ ଦୁଇଥର ଦବାଇବାର ପ୍ରଭାବ ନିର୍ଦ୍ଧାରଣ କରିଥାଏ। ସାମ୍ପ୍ରତିକ ବୈଧ ବିକଳ୍ପଗୁଡ଼ିକ ହେଲା &apos;toggle_shade&apos;, ଯାହାକି ୱିଣ୍ଡୋକୁ ଘୋଢାଇବ ବା ପ୍ରକାଶିତ କରିବ, &apos;toggle_maximize&apos; ଯାହାକି ୱିଣ୍ଡୋକୁ ବୃହତ୍ତମନ କରିବ ବା ବୃହତ୍ତମରୁ ଛୋଟ କରିବ, &apos;toggle_maximize_horizontally&apos; ଏବଂ &apos;toggle_maximize_vertically&apos; ଯାହାକି କେବଳ ସେହି ଦିଗରେ ୱିଣ୍ଡୋକୁ ବୃହତ୍ତମନ କରିବ ବା ବୃହତ୍ତମରୁ ଛୋଟ କରିବ, &apos;minimize&apos; ଯାହାକି ୱିଣ୍ଡୋକୁ କ୍ଷୁଦ୍ରତମ କରିବ, &apos;shade&apos; ଯାହାକି ୱିଣ୍ଡୋକୁ ଉପରକୁ ଗଡ଼ାଇବ, &apos;menu&apos; ଯାହାକି ୱିଣ୍ଡୋ ତାଲିକାକୁ ଦର୍ଶାଇଥାଏ, &apos;lower&apos; ଯାହାକି ୱିଣ୍ଡୋକୁ ଅନ୍ୟ ସମସ୍ତଙ୍କ ପଛରେ ରଖିଥାଏ, ଏବଂ &apos;none&apos; ଯାହାକି କିଛି କରିନଥାଏ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="raise_on_click">
+						<local_schema short_desc="ସାମନାକୁ ଆଣିବା ଅନ୍ଯ ବ୍ଯବହାରକାରୀ ପାରସ୍ପରିକ କ୍ରିୟାର ଅବାଂଛିତ ପ୍ରତିକ୍ରିୟା ହେବା ଉଚିତ କି">
+							<longdesc>ଏହି ବିକଳ୍ପକୁ false ସେଟ କରିବା ଫଳରେ ଏହା ତ୍ରୁଟିଯୁକ୍ତ ଆଚରଣ କରିଥାଏ, ତେଣୁ ଚାଳକମାନେ ଏହାକୁ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ମୂଲ୍ୟ true ରୁ ପରିବର୍ତ୍ତନ କରିବା ପାଇଁ ବିରୋଧ କରିଥାନ୍ତି। ଅନେକ କାର୍ଯ୍ୟ(ଯେପରିକି, କ୍ଲାଏଣ୍ଟ କ୍ଷେତ୍ରରେ କ୍ଲିକ କରିବା, ୱିଣ୍ଡୋକୁ ଗତିକରାଇବା ଅଥବା ଆକାର ବଦଳାଇବା) ସାଧାରଣତଃ ପାର୍ଶ୍ୱ ପ୍ରଭାବକୁ ବୃଦ୍ଧି କରିଥାଏ। ଏହି ବିକଳ୍ପକୁ false ସେଟ କରିବା ଫଳରେ, ଯାହାକୁକି ଅତିରିକ୍ତ ବିରୋଧ କରାଯାଇଥାଏ, ତାହା ଅନ୍ୟ ଚାଳକ କାର୍ଯ୍ୟ ଅପେକ୍ଷା ବୃଦ୍ଧି ହୋଇଥାଏ, ଏବଂ ପ୍ରୟୋଗ ଅନୁରୋଧ ଦ୍ୱାରା ସୃଷ୍ଟି ବୃଦ୍ଧିକୁ ଅଗ୍ରାହ୍ୟ କରିଥାଏ। http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6 କୁ ଦେଖନ୍ତୁ। ଯଦିଚ ଯେତେବେଳେ ଏହି ବିକଳ୍ପଟି false ହୋଇଥାଏ, ୱିଣ୍ଡୋଗୁଡ଼ିକ ମଧ୍ଯ alt-left-click ଦ୍ୱାରା ଯେକୌଣସି ଉପାୟରେ ବୃଦ୍ଧି କରିଥାଏ, ୱିଣ୍ଡୋ ସଜ୍ଜିକରଣରେ ଗୋଟିଏ ସାଧାରଣ କ୍ଲିକ, ଅଥବା ପେଜରରୁଗୋଟିଏ ବିଶେଷ ସନ୍ଦେଶ ଦ୍ୱାରା, ଯେପରିକି କାର୍ଯ୍ୟତାଲିକା ଆପଲେଟରୁ ସକ୍ରିୟଣ ଅନୁରୋଧ। ଏହି ବିକଳ୍ପକୁ click-to-focus ଧାରାରେ ବର୍ତ୍ତମାନ ନିଷ୍କ୍ରିୟ କରାହୋଇଛି। ମନେରଖନ୍ତୁ ଯେ ୱିଣ୍ଡୋଗୁଡ଼ିକୁ ବୃଦ୍ଧିକରିବା ପାଇଁ ପଥଗୁଡ଼ିକର ତାଲିକା ଯେତେବେଳେ raise_on_click false ହୋଇଥାଏ ସେତେବେଳେ ଏହା ପ୍ରଗ୍ରାମ ହୋଇଥିବା ଅନୁରୋଧକୁ ଅନ୍ତର୍ଭୁକ୍ତ କରିନଥାଏ; ସେହିପରି ଅନୁରୋଧଗୁଡ଼ିକୁ କାରଣ ଯାହା ହୋଇଥିଲେ ମଧ୍ଯ ଅଗ୍ରାହ୍ୟ କରାଯାଇଥାଏ। ଯଦି ଆପଣ ଜଣେ ପ୍ରୟୋଗ ବିକାଶକାରୀ ଏବଂ ଜଣେ ଚାଳକ ଅଭିଯୋଗ କରିଛି ଯେ ଏହି ସଂରଚନାକୁ ନିଷ୍କ୍ରିୟ କରିବା ଫଳରେ ସେହି ପ୍ରୟୋଗଟି କାର୍ଯ୍ୟ କରିନଥାଏ, ତେବେ ସେମାନଙ୍କୁ କୁହନ୍ତୁ ଯେ ୱିଣ୍ଡୋ ପରିଚାଳକକୁ ଭାଙ୍ଗିବା ସେମାନଙ୍କର ତ୍ରୁଟି ଏବଂ ସେମାନଙ୍କୁ ଏହି ବିକଳ୍ପକୁ ପୁଣି ପଛକୁ କରି true ଭାବରେ ପରିବର୍ତ୍ତନ କରିବା ଉଚିତ ଅଥବା ଅନୁରୋଧ କରିଥିବା ସେହି &quot;bug&quot; ସହିତ ରୁହନ୍ତୁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_new_windows">
+						<local_schema short_desc="ନୂତନ ୱିଣ୍ଡୋଗୁଡ଼ିକ କିପରି ଲକ୍ଷ୍ୟ ସାଧନ କରିଥାନ୍ତି ତାହାକୁ ନିୟନ୍ତ୍ରଣ କରନ୍ତୁ">
+							<longdesc>ଏହି ବିକଳ୍ପଟି ନୂତନ ଭାବରେ ନିର୍ମିତ ୱିଣ୍ଡୋଗୁଡ଼ିକରେ କେନ୍ଦ୍ରିଭୁତ କରିବା ପାଇଁ ଅତିରିକ୍ତ ନିୟନ୍ତ୍ରଣ ପ୍ରଦାନ କରିଥାଏ। ଏହାର ଦୁଇଟି ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟ ଅଛି; &quot;smart&quot; ଚାଳକର ସାଧାରଣ ଲକ୍ଷ୍ୟ ଅବସ୍ଥାକୁ ପ୍ରୟୋଗ କରିଥାଏ, ଏବଂ &quot;strict&quot; ଦ୍ୱାରା ଫଳସ୍ୱରୂପ ୱିଣ୍ଡୋଗୁଡ଼ିକୁ ଟର୍ମିନାଲରେ ଲକ୍ଷ୍ୟ କରାଯାଏନାହିଁ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_mode">
+						<local_schema short_desc="ୱିଣ୍ଡୋ କେନ୍ଦ୍ରୀଭୂତ ଧାରା">
+							<longdesc>ୱିଣ୍ଡୋ କେନ୍ଦ୍ରୀଭୂତ ଧାରା ନିର୍ଦ୍ଧିଷ୍ଟ କରେ ୱିଣ୍ଡୋଗୁଡ଼ିକ କିପରି ସକ୍ରିୟ କରାଯିବ. ଏହାର ତିନୋଟି ମୂଲ୍ଯ ସମ୍ଭବ; &quot;ଚାପ&quot; ମାନେ ୱିଣ୍ଡୋଗୁଡ଼ିକ କେନ୍ଦ୍ରିତ କରିବା ପାଇଁ ତାଙ୍କ ଦେହରେ ମାଉସ୍ ଦବାଇବାକୁ ପଡ଼ିବ, &quot;ଅଯତ୍ନକୃତ&quot; ମାନେ ମାଉସ୍ ୱିଣ୍ଡୋରେ ପ୍ରବେଶ କଲେ ୱିଣ୍ଡୋଟି କେନ୍ଦ୍ରିତ ହେବ, ଓ &quot;ମାଉସ&quot; ମାନେ ମାଉସ୍ ୱିଣ୍ଡୋରେ ପ୍ରବେଶ କଲେ ୱିଣ୍ଡୋଟି କେନ୍ଦ୍ରିତ ହେବ ଏବଂ ୱିଣ୍ଡୋରୁ ବାହାରିଲେ ୱିଣ୍ଡୋଟି ଅକେନ୍ଦ୍ରିତ ହେବ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="button_layout">
+						<local_schema short_desc="ଶୀର୍ଷକ ପଟିରେ ଚାବିର ସଜ୍ଜା">
+							<longdesc>ଶୀର୍ଷକ ପଟିରେ ଚାବିଗୁଡ଼ିକର ସଜ୍ଜିକରଣ। ଏହି ମୂଲ୍ଯ ଗୌଟିଏ ବାକ୍ଯକଣ୍ଡ ହେବା ଉଚିତ, ଉଦାହରଣ ସ୍ବରୂପ, &quot;ତାଲିକା:କ୍ଷୁଦ୍ରତମ କରନ୍ତୁ,ବୃହତ୍ତମ କରନ୍ତୁ,ବନ୍ଦ କରନ୍ତୁ&quot;; ବିରାମ ଚିହ୍ନଟି ୱିଣ୍ଡୋର ବାମ ଓ ଡାହାଣ କଣକୁ ବିଭାଜନ କରେ, ଏବଂ ଚାବି ନାମଗୁଡ଼ିକ କମା ଦ୍ବାରା ବିଭାଜିତ। ଦ୍ବିଗୁଣିତ ଚାବି ନିଷେଧ। ଅଜଣା ଚାବି ନାମଗୁଡ଼ିକ ଚୁପଚାପ ଅଗ୍ରାହ୍ଯ କରାଯିବ, ଯାହା ଫଳରେ metacity ଆଗାମୀ ସଂସ୍କରଣଗୁଡ଼ିକୁ ପ୍ରଭାବିତ ନ କରି, ନୂଆ ସଂସ୍କରଣଗୁଡ଼ିକରେ ଚାବି ଯୋଡ଼ି ହୋଇପାରିବ।</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="resize_with_right_button">
+						<local_schema short_desc="ଡ଼ାହାଣ ବଟନ ଦ୍ୱାରା ଆକାର ପରିବର୍ତ୍ତନ କରାଯିବ କି">
+							<longdesc>ଆକାର ପରିବର୍ତ୍ତନ କରିବା ପାଇଁ ଡାହାଣ ବଟନ ସହିତ ଏହାକୁ true ସେଟ କରନ୍ତୁ ଏବଂ ମଝି ବଟନ ସହିତ &quot;mouse_button_modifier&quot; ରେ ପ୍ରଦତ୍ତ କି ଧାରଣ କରି ଗୋଟିଏ ତାଲିକା ଦର୍ଶାନ୍ତୁ; ଏହାକୁ ବିପରିତ ଦିଗରେ କାର୍ଯ୍ୟ କରିବା ପାଇଁ false ସେଟ କରନ୍ତୁ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_button_modifier">
+						<local_schema short_desc="ରୂପାନ୍ତରିତ ୱିଣ୍ଡୋର ମାଉସ୍ ଚାପ କାର୍ଯ୍ଯଗୁଡ଼ିକ ପାଇଁ ରୂପାନ୍ତରକ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

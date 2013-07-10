@@ -1,0 +1,1933 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="show_backup_files">
+						<local_schema short_desc="Nîşandana pelên cîgir">
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="Nîşandana pelgehên veşartî">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="event_sounds">
+						<local_schema short_desc="Dengên ji bo buyêran">
+							<longdesc>Di bûyerên bikarhêner de dengderketin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="ESD çalak bike">
+							<longdesc>Destpêkirina pêşkêşkerê deng çalak bike.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Dirbê Îkona Dosyeyê">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Pêşeka &quot;Karaktera Kontrolkirinê ya Unîkod&quot; nîşan bide">
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Pêşeka &quot;Metodên Têketinan&quot; nîşan bide">
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Lezkerê darikên amûran">
+							<longdesc>Kurteriya klavyeyê ya darikên pêşekê vedike.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Ji bo GtkFileChooser modul">
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Darikê Rewşê Li Rastê Ye">
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Curenivîsa taybet bi kar bîne">
+							<longdesc>Di sepanên gtk+ de bikaranîna curetîpên taybet.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Curetîpa Hevnavberî">
+							<longdesc>Navê curetîpên hevnavberî (firehbûn sabît e) yên wê di cihên weke termînalan de were bikaranîn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Curenivîsa pelgeyê">
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="Şêwaza Rewşa GTK IM">
+							<longdesc>Navê rewşa ketana metoda GTK+ ya ku ji aliyê gtk+ ve tê bikaranîn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="Şêwaza Pêşpergalî ya GTK IM">
+							<longdesc>Navê şêwaza rêya têketina GTK+ yê ku ji alî gtk+ ve tê bikaranîn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Curenivîsa standart">
+							<longdesc>Navê rêzika texmînkirî ya ku ji aliyê gtk+ ve tê bikaranîn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Dirba Gtk+">
+							<longdesc>Makenavê dirbê pêşdanasînî ya ji aliyê gtk+ ve tê bikaranîn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Dirba Gtk+">
+							<longdesc>Makenavê dirbê pêşdanasînî ya ji aliyê gtk+ ve tê bikaranîn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Dirba dawêran">
+							<longdesc>Mijara Îkona ku panele bikarbînê. nautilus û hwd.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Maweya Vêketin/Vemirîna Nîşaneyê">
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Vêketin/Vemirîna Nîşaneyê">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Mezinahiya Îkona Darikê Amûran">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Darikê Amûran Dikare Were Veçirandin">
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Darikên Pêşekê Dikarin Werine Veçirandin">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Bila Di Pêşekan De Îkon Hebe">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Şêwazê Darikê Amûran">
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Lezker Dikarin Werine Guherandin">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Bila Di Pêşekan De Nîşanek Hebe">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Derbasbariya dîmenên livkar">
+							<longdesc>Heke xebitandina wêneyên livkar pêwist be. Nişe: Ev mifteya giştî ye, rewşa gerînendeyê paceyê, panelê hwd diguherîne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Gihiştînê Çalak Bike">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Cureyê Bisîkirina Rengan">
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Rengê Duyemîn">
+							<longdesc>Ji bo ku tu karibe derbasbûyînan xêz bike rengê Jêr û Rastê yê tu yê bikar bîne, ji bo rengên sabît nayê bikaranîn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Rengê Yekemîn">
+							<longdesc>Dema xêzkirina derbasînan de rengê Çepê an jî yê Jor, an jî rengekî sabît.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Zenûniya Wêne">
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="NavêDosyeya Wêne">
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Vebijêrkên Wêne">
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Rûerdê Sermaseyê Xêz Bike">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Hemû pêşdîtinên derve betal bike">
+							<longdesc>ji bo astengkirina hemû bernameyên derve yên avakirina mînakên wêneyan True çalak bike .</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="application@x-font-otf">
+						<entry name="enable">
+							<local_schema short_desc="Der barê mînakdayin û mînaknedayina curetîpên OpenType de">
+								<longdesc>Heke li rastiye hatibe mîhengkirin, wê curenivîsên OpenType were mînakkirin.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ji bo curetîpên OpenType fermana mînandinê">
+								<longdesc>Vê mifteyê ji bo fermana curenivîsên OpenType were mînakkirin mîheng bike</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-pcf">
+						<entry name="enable">
+							<local_schema short_desc="Der barê mînakdayin û mînaknedayina curetîpên PCF de">
+								<longdesc>Heke li rastiye hatibe mîhengkirin, wê curenivîsên PCF were mînakkirin.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ji bo curetîpên PCF fermana mînandinê">
+								<longdesc>Vê mifteyê ji bo fermana curenivîsên PCF were mînakkirin mîheng bike</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-type1">
+						<entry name="enable">
+							<local_schema short_desc="Der barê mînakdayin û mînaknedayina curetîpên Type1 de">
+								<longdesc>Heke mîheng rast be, dê Type 1 wekî mînakdayînê were nîşandan.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ji bo curetîpên Type1 fermana mînandinê">
+								<longdesc>Vê mifteyê ji bo fermana curenivîsên Type1 were mînakkirin mîheng bike</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-ttf">
+						<entry name="enable">
+							<local_schema short_desc="Der barê mînakdayin û mînaknedayina curetîpên TrueType de">
+								<longdesc>Heke li rastiye hatibe mîhengkirin, wê curenivîsên TrueType were mînakkirin.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Ji bo curetîpên TrueType fermana mînandinê">
+								<longdesc>Vê mifteyê ji bo fermana curenivîsên TrueType were mînakkirin mîheng bike</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Çalakiya quflekirina klavyeyê">
+							<longdesc>Çalakiya quflekirina klavyeyê.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Destûre bide bila bêhnvedan taloq bibin">
+							<longdesc>Bê ka wê dîmendera bêhnvedanê taloq bibe yan na.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Dema navberan">
+							<longdesc>Ji bo moda bêhnvedanê bi dawî be xulekên pêwist e.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Dema nivîsandinê">
+							<longdesc>Berî ku moda bêhnvedanê dest pê bike xulekên pêwist yên ji bo nivîsandinê.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Veavakirina çaperê betal bike">
+							<longdesc>Destûrê nede bila bikarhêner mîhengên çaperê biguherîne. Wekî mînak; Wê gihiştinên &quot;Mîhengên Çaperê&quot; yên di hemû bernameyan de ye werine astengkirin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Çapkirinê betal bike">
+							<longdesc>Asteng bike ku bila bikarhêner xwe negihîne çaperê. Wekî mînak, vebijêrka &quot;Bide Çaperê&quot; ya di hemû bernameyan de heye wê were betalkirin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Nivîsandina dosyeyan ya li ser dîskê betal bike">
+							<longdesc>Asteng bike ku bila bikarhêner nikaribe dosyeyan li ser dîskê binivîse. Wekî mînak, vebijêrka &quot;Cuda tomar bike&quot; ya di hemû sepanan de ye wê were betalkirin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Rêzika Fermanan Betal Bike">
+							<longdesc>Asteng bike ku bila bikarhêner xwe negihîne termînalê an jî rêzika fermanan.Wekî mînak, gihîştina &quot;Sepanê Bixebitîne&quot; ya di panelê de ye wê were betalkirin.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="session">
+					<dir name="required_components">
+						<entry name="panel">
+							<local_schema short_desc="Panel">
+							</local_schema>
+						</entry>
+						<entry name="windowmanager">
+							<local_schema short_desc="Menajerê Paceyan">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Sepanên Teknolojîk yên Alîkarê Destpêkan">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Dema bi hev re pêl du heb bişkokan hate kirin wan bêbandor bike.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="ji cureyê pîvana mîlîçirkeyan navbera herî kêm">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Navên qadên xebatê (nayê bikaranîn)">
+								<longdesc>Lîsteya navên qadên xebatê ya gerînendeyê paceya pêşîn. Ev mifte piştî GNOME 2.12 nayê bikaranîn.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="Hejmara qadên xebatê (nayê bikaranîn)">
+								<longdesc>Hejmara qadên xebatê yên divê gerînendeyê paceyan bikar bîne. Ev mifte piştî GNOME 2.12 nayê bikaranîn.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Gerînendeyê paceyên bikarhêner (nayê bikaranîn)">
+								<longdesc>Gerînendeyê paceyan yê weke carê pêşîn divê were ceribandin. Ev mifte piştî 2.12 nayê bikaranîn.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Çareya dawî gerînendeyê paceyan (nayê bikaranîn)">
+								<longdesc>Heke gerînendeyê paceyan neyê dîtin weke çareya dawî gerînendeyê paceyan ya wê were bikaranîn. Ev mifte piştî GNOME 2.12 nayê bikaranîn.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Lêgerok pergala dûr fahm dike">
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Pêdiviya lêgerokê bi termînalê heye">
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Lêgeroka pêşdanasînî">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argumanên Xebitandinê">
+								<longdesc>Ji bo ku tu bernameyan di termînalê de bixebitîne gûhêrbara xweser ya bi mifteya &quot;exec&quot;ê re hatiye diyarkirin.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Sepana termînalê">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Meznahiya nîşanker">
+								<longdesc>Mezinahiya nîşanker ji alî mijara nîşanker ve tê texmînkirin.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Mijara nîşanker">
+								<longdesc>Navê mijara nîşanker.Tenê ji bo XFree86 4.3 û wekî piştî wan Xserversên Xcursor destek dike tê bikaranîn.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Curetîpê nîşanker">
+								<longdesc>Navê xêza nîşanker. heke ne çalak be, curetîpên çewt hatine bikaranîn. ev nirx bi tenê ji bo destpêka pêşkêşker x ya her beşekî tê bikaranîn. lewra guhertina di dema xebatê de nayê çalakirin ta ku tu careke din ji nû bixebitînî.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Mohrkerê nîşanker">
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Maweya Tikandina Du Caran">
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Sînorê kişandinê">
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Sînorên tevgerê">
+								<longdesc>Rêjeya bi pîkselan ya pêwist ji bo tevgera mişkê beriya çalakirina tevgera mişkê. nirxa 1- têkçûna pergalê.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Tenê Tikandinek">
+								<longdesc>Ji tevgerên mişk lezkerê carandinê. Heke nirx  -1 be pergal nirxa standard tê bikaranîn.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Tenê Tikandinek">
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Bicihkirina bişkokên mişk">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Rewşa NumLock bi bîr bîne">
+								<longdesc>Heke hatibe hilbijartin, wê GNOME di nava danişînan de rewşa NumLock LED bîne bîra xwe.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Navê Dosyeya Taybet ya Zengilê Klavyeyê">
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>nirxên derbasdar &quot;on&quot;, &quot;off&quot;, û &quot;custom&quot; e.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="rotate">
+						<local_schema short_desc="Zivrandina li ser panela sereke">
+							<longdesc>Heke raste, çarçoveya masî dê were xebitandin</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed">
+						<local_schema short_desc="Rawestana her çarçoveyê">
+							<longdesc>Ev bişkoj taybetmendiya hejmara çirkan di her çarçoveyekê de dixebitîne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="frames">
+						<local_schema short_desc="Çaçoveyên di candariya masî de">
+							<longdesc>Ev bişkoj taybetmendiyê dide çarçoveya ku dê were xebitandin di candariya masî de.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Fermana ku dê bi tikandinê bicih were">
+							<longdesc>Taybetmendiyê fermana di dema tikandina masî di derdikevin holê.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="image">
+						<local_schema short_desc="Nexşeya Pix a çarçoveya masî">
+							<longdesc>Bişkoja taybetmendiya navê dosya nexşeya Pix çarçoveya bikartîne .....</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Navê masiyê">
+							<longdesc>Masiyekî bênav tiştekî nebaş e. Nav û jiyan bide wî.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="Mezinahiya pirtirîn ya lîsteya paceyan">
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="Mezinahiya kêmtirîn ya lîsteya paceyan">
+						</local_schema>
+					</entry>
+					<entry name="move_unminimized_windows">
+						<local_schema short_desc="Dema tu biçûkbûna paceyan betal bikî dê vegerin mezinahiya qada xebatê ya heyî">
+							<longdesc>Heke rast be, dema tu biçûkirina paceyê betal bikî dê pace vegere meznahiya qada xebatê ya heyî. An na, qada xebatê ya paceyê vêxe.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="group_windows">
+						<local_schema short_desc="Kengî pace tên komkirin">
+							<longdesc>Biryar dide bo komkirina paceyan ji heman sepana lîsteya paceyan.nirxên çalak &quot;dest pê bike&quot;, &quot;bixweber&quot; û &quot;herdem&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Nîşandana hemû paceyên qada xebatê">
+							<longdesc>Heke rast be, lîsteya paceyan dê paceyan ji hemû qadên xebatê bide nîşandan. heke ne wiha be dê bi tenê paceyan ji qada xebatê ya heyî nîşan bide.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="Leza livê">
+							<longdesc>Diyar dike ku wê sêwirandinên panelê bi kîjan lezê were kirin. Nirxên derbasdar &quot;hêdî&quot; &quot;orte&quot; û &quot;zû&quot; ye. Ev mifte tenê dema mifteya enable_animations rast be watedar e.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide_size">
+						<local_schema short_desc="Deqên ku dema veşarî bê wê werine xuyanî">
+							<longdesc>Dema ku panel li goşeyê bixweber xwe veşêre diyar dike ku wê çend hev tipik xuya bibe. Ev mifte tenê dema veşartine_bixweber rast be watedar e.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unhide_delay">
+						<local_schema short_desc="Derenghiştina veşartina bixweber a panelê">
+							<longdesc>Heke nîşanek kete qada panelê berî ku bixweber were xuyanî diyar dike ku rawestîna berî vê dê çend mîlîçirk be. Ev mifte tenê dema mifteya veşartina_bixweber be watedar e.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hide_delay">
+						<local_schema short_desc="Derenghiştina veşartina bixweber a panelê">
+							<longdesc>Heke nîşanek ji qada panelê derdikeve berî ku bixweber were xuyanî diyar dike ku rawestîna berî vê dê mîlîçirk be. Ev mifte tenê dema mifteya veşartina_bixweber be watedar e.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_arrows">
+						<local_schema short_desc="Bila di bişkokên veşartinê de tîr bixuyin">
+							<longdesc>heke rast be, wê tîrik li ser bişkojên veşartî werin bicihkirin. tenê dema &quot;bişkojan çalak bike ev mifte tê çalakirin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="Bişkokên veşartinê çalak bike">
+							<longdesc>heke rastbe, dê bişkoj li her aliyê panelê werin bicihkirin û bi w3i awayî dikare were guhertin bo jêra dîmenderê û bi tenê bişkojek xuyadike.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Rê dide candariyan">
+							<longdesc>heke rastbe, dê veşartin an tunekirina veşartina panelê çalak bike li şûna ku bixweber bihêle.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide">
+						<local_schema short_desc="Panelê bixweber li goşeyê veşêre">
+							<longdesc>heke rastbe, Dema tîrik ji qada panelê derkeve dê panel bixweber li kenareke dîmenderê winda bibe. guhertina tîrik ji wê kenarê dê careke din panelê bide xuyakirin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_centered">
+						<local_schema short_desc="Di tewereya Yê de panelê navîn bike">
+						</local_schema>
+					</entry>
+					<entry name="x_centered">
+						<local_schema short_desc="Di tewereya Xê de panelê navîn bike">
+						</local_schema>
+					</entry>
+					<entry name="y">
+						<local_schema short_desc="Koordînata Yê ya panelê">
+							<longdesc>Li ser tewereya Yyê cihê panelê. Ev mifte tenê dema qeraxa panelê ne di moda girtinê de be watedar e. Di moda girtina qeraxan de, ev mifte tune tê hesabkirin û bi awayê ku mifteya panel orientation diyar kiriye li qeraxê tê bicihkirin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x">
+						<local_schema short_desc="Koordînata Xê ya panelê">
+							<longdesc>Li ser tewereya Xê cihê panelê. Ev mifte tenê dema qeraxa panelê ne di moda girtinê de be watedar e. Di moda girtina qeraxan de, ev mifte tune tê hesabkirin û bi awayê ku mifteya panel orientation diyar kiriye li qeraxê tê bicihkirin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="Mezinahiya panelê">
+							<longdesc>Bilindbûna panelê (ji bo panela serdirêjahiyê firehî). Panel dema xebatê de mezinahiya curenivîsê û nişankerên din dide ber çav û mezinahiya asgarî (ya kêm) diyar dike. Ji çar perçeyên bilindbûna dîmenderê (an jî firehiyê) xwe li yekê dide sabîtkirin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="Hêla panelê">
+							<longdesc>Bicihbûna panelê. Nirxên derbasdar &quot;jor&quot; , &quot;jêr&quot;, &quot;çep&quot; û rast e. Mifte di moda girtina qeraxan de, diyar dike ku bila panel li kîjan qeraxê were bicihkirin. Heke di moda negirtina qeraxan de be ferqa ku di navbera &quot;jor&quot; û &quot;jêr&quot; de heye pir hindik e - herdu jî diyar dike ku ev, paneleke serpahnayê ye- lê dîsa jî der barê bikarhatina bireserên panelê de hin agahiyan dide. Wekî mînak li panela &quot;jor&quot; de bişkoka pêşekê di binê pêşekê de pêşekê dide xuyanî lê  &quot;jêr&quot; di panelê de pêşek li ser panelê tê xuyakirin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand">
+						<local_schema short_desc="Ji bo hemû firehiya dîmenderê bigire, fireh bike">
+							<longdesc>Heke rast be, panel wê firehiya dîmendera tijî (heke panela serdirêjahiyê be wê bilindbûna wê) bigire. Di vê modê de panel tenê dikare li qeraxên dîmenderê bi cih bibe. Heke çewt be; panel tenê sepanokan, destpêkeran û bi qasî ku bişkokan bihundirîne wê mezin be.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monitor">
+						<local_schema short_desc="Dîmendera X cihê xebata panelê">
+							<longdesc>Di mîhenga Xineramayê de, tu dikarî li hemû dîmenderan panelan bi cih bike. Ev mifte, dîmendera heyî ya ji bo panel karibe li ser wê were xuyanî, diyar dike.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screen">
+						<local_schema short_desc="Dîmendera X ku dê panel tê de were pêşkêşkirin">
+							<longdesc>Di sazkirina dîmendera pirî de, tu dikarî di dîmenderên cihê de panelan bihundirîne. Ev mifte, panela ku wê di dîmenderê de were xuyanî diyar dike.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Nav ji bo danasîna panelê">
+							<longdesc>Ev navekî wisa ye ku dihêle bila panel were nasîn û mirov jî jê fahm bikin. Armanca wê ya girîng ew e ku dema tu di nav panelan de bigerî panel weke sernavê paceyan were bikaranîn e.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="zivirandina wêneyan li ser panela stûnî">
+								<longdesc>heke rastbe, dê wêneyê rûzemînê were zivirandin dema panel stûnkî be.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stretch">
+							<local_schema short_desc="Wêne li gorî panelê vezelîne">
+								<longdesc>Heke rastbe, dê çarçoveya wêne were sazkirin. lê guh nade zelalbûna xuyakirina wêne.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="Wêne li panelê bîne">
+								<longdesc>heke rastbe, dê wêne were sazkirin (zelaliya xuyakirina wêne tê parastin) bo bilidahiya panelê . heke ne stûnkî be.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="Wêneya zemîne">
+								<longdesc>Dosya ku dê di wêneyê rûzemînê de were bikaranîn distnîşan dike.Heke di wêne de alpha channel hebe dê bi rûzemîna dîmender re were siwarkirin.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="Tarîbûna rengê rûerd">
+								<longdesc>Awayê şeffafbûna rengê rûerd diyar dike. Heke reng temamî ne rengekî sade be (nirxekî ji 65535 biçûktir be), renk bi wêneyê rûerd ya sermasê tê têkelkirin.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="Rengê zemînê">
+								<longdesc>Amadekariya rengên rûzemînê bi şêwaza #RGB dike.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="Cureyê zemînê">
+								<longdesc>Cureyê rûerd yê ji bo bikaranîna vê panelê. Nirxên derbasdar &quot;gtk&quot;- wê rûerdê perçeyê GTK+ ya pêşdanasînî were bikaranîn, &quot;colo&quot;- wê rengek weke rûerd were bikaranîn an jî &quot;image&quot; wî wêneyê ku ji aliyê mifteya image hatiye diyarkirin wê weke wêneyê rûerdê were bikaranîn.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="general">
+					<entry name="profiles_migrated">
+						<local_schema short_desc="Amûra kevin a sepana demê">
+							<longdesc>Ala ku rewşa jibergirtina mîhengên di pêrista &quot;/apps/panel/profiles/default&quot;ya di bikarhêner de ye û veguhezîna wê ya pêrista  &quot;/apps/panel&quot; diyar dike.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_id_list">
+						<local_schema short_desc="Lîsteya laşê endamên ID">
+							<longdesc>Lîsteya nimroyên danasînan yên bireserên panelan. Her nimro biresereke panelan dide nasîn (mînak: xebatkerek, berpêşk an jî bişkoka pêşekê). Ji bo her bireserekê mîheng di hundirê /apps/panel/objects/$(id) de tê veşartin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_id_list">
+						<local_schema short_desc="Lîsteya panela sepanokên ID">
+							<longdesc>Lîsteya nimroyên danasînan ya sepanokên panelê. Her nimro sepanokeke panelan dide nasîn. Ji bo van sepanokan, mîheng di hundirê/apps/panel/applets/$(id) de tê veşartin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id_list">
+						<local_schema short_desc="Lîsteya Panela ID">
+							<longdesc>Lîsteya nimroyên danasînên panelê. Her nimro paneleke asta jor dide nasîn. Ji bo van panelan, mîheng di hundirê /apps/panel/toplevels/$(id) de tê veşartin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_autocompletion">
+						<local_schema short_desc="Taybetmendiya dewamkirina fermanê çalak bikedi diyaloga&quot;&quot;bernameyê bixebitînê&quot; de">
+							<longdesc>Heke rast be, dewamkirina fermanê di diyaloga &quot;sepanê bixebitînê&quot; de çalak dibe.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_program_list">
+						<local_schema short_desc="Lîsteya bernameyan di diyaloga&quot;sepanê bixebitînê&quot; de raxîne">
+							<longdesc>Heke rast be, lîsteya &quot;sepanên naskirî&quot; di diyaloga &quot;sepanê bixebitînê&quot; de radixîne di dema vekirina diyalogê de. Ev mifte bê wateye heke ku mifteya lîsteya bernameyan rast be.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_program_list">
+						<local_schema short_desc="Çalakirina lîsteya bernameyan di diyaloga&quot;sepanê bixebitînê&quot; de">
+							<longdesc>Heke rast be, lîsteya &quot;sepanên naskirî&quot; di diyaloga &quot;sepanê bixebitînê&quot; de dê zêdekirina li lîsteyê di kontrola mifteya lîsteya programan de be. di dema pêşkêşkirina diyalogê de.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global">
+					<entry name="disable_force_quit">
+						<local_schema short_desc="Rawestana bi zor asteng bike">
+							<longdesc>Heke rast be, dema sepanek were girtin û pêkanîna wê ya bi zorê derketinê panel berê pêl bişkoka Bi Dawî Bîne dike û gihiştinê ji ser wê radike û asteng dike.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_log_out">
+						<local_schema short_desc="Rê nade derketinê">
+							<longdesc>Heke rast be, panel dema naxwaze bikarhêner derkeve, gihiştina hêmanên pêşeka derketinê qut dike û dû re jî asteng dike.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Êdî nayê bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="disabled_applets">
+						<local_schema short_desc="Rûyê sepanokê bo astengkirina barkirinê">
+							<longdesc>Lîsteya sepanokên dê ji alî panelê ve were piştguhkirin. Bi vî awayî tu dikarî hin sepanan ji bo daxistinê an nîşandana di pêşekê de bikar bînî. divê panel were nû kirin ji bo ku guhertinan bicih bike.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked_down">
+						<local_schema short_desc="Kilîta panelê a bi tevahî">
+							<longdesc>Heke rast be, panel destûrê nade bila guherîn di veavakirina wê de pêk were. Lê dibe ku hin sepanok pêdiviya wan bi kilîtbûnê ve hebe. Ji bo ku ev bandortir be divê panel ji nû ve were destpêkirin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="highlight_launchers_on_mouseover">
+						<local_schema short_desc="Lîsteya destpêkaran nîşan dide dema ku mişk di ser re diçe">
+							<longdesc>Heke hatibe hilbijartin, dema destpêker ji ser nîşanekê derbas bibe wê bibiriqin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_panel_remove">
+						<local_schema short_desc="Rakirina panelê erê bike">
+							<longdesc>Heke hatibe hilbijartin, dema bikarhêner bixwaze panelê jê bibe, paceyeke erêkirinê tê xuyanî.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="drawer_autoclose">
+						<local_schema short_desc="Girtina berkêşk a bixweber">
+							<longdesc>Heke hatibe hilbijartin, berpêşk, piştî ku li destpêkereke di hundirê wê de ye were tikandin wê bixweber were girtin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="window_screenshot_key">
+						<local_schema short_desc="Êdî nayê bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="screenshot_key">
+						<local_schema short_desc="Êdî nayê bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="run_key">
+						<local_schema short_desc="Êdî nayê bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="menu_key">
+						<local_schema short_desc="Êdî nayê bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="enable_key_bindings">
+						<local_schema short_desc="Êdî nayê bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="panel_hide_delay">
+						<local_schema short_desc="Êdî nayê bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="panel_animation_speed">
+						<local_schema short_desc="Êdî nayê bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="panel_show_delay">
+						<local_schema short_desc="Êdî nayê bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="panel_minimized_size">
+						<local_schema short_desc="Êdî nayê bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Rê dide candariyan">
+						</local_schema>
+					</entry>
+					<entry name="keep_menus_in_memory">
+						<local_schema short_desc="Êdî nayê bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="tooltips_enabled">
+						<local_schema short_desc="Rê dide Amûrên wekhev">
+							<longdesc>Heke hatibe hilbijartin, ji bo bireserên di panelê de ne nepox tê xuyanî.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="objects">
+					<entry name="action_type">
+						<local_schema short_desc="Cureyê bişkoka çalakiyan">
+							<longdesc>Cureyê çalakiyê ya ev bişkok diyar dike. Nirxên derbasdar &quot;lock&quot;, &quot;logout&quot;, &quot;run&quot;, &quot;search&quot; ve &quot;screenshot&quot; in. Ev mifte tenê mifteya object_type, &quot;bonobo_applet&quot; jî watedar e.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="launcher_location">
+						<local_schema short_desc="Cihê destpêkarê">
+							<longdesc>Bicihbûna dosyeya desktop ya destpêkerê dide nasîn. Ev mifte tenê mifteya object_type, &quot;bonobo_applet&quot; be watedar e.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menu_path">
+						<local_schema short_desc="Riya naveroka pêşekê">
+							<longdesc>Riya ku di pêkhatina naveroka pêşekê de wê were bikaranîn.Ev mifte tenê tê bikaranîn dema ku mifteya_riya_pêşekê rast be û mifteya cureyê_xebatê heke &quot;mifteya_xebatê_pêşekê&quot; be watedar e.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_menu_path">
+						<local_schema short_desc="Rêyeke taybet bo naverokên pêşekê bikar bîne">
+							<longdesc>Heke hatibe hilbijartin, ji bo pêkanîna naveroka pêşekê riya ku di mifteya menu_pathê de hatiye diyarkirin wê bikar bîne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_icon">
+						<local_schema short_desc="Sembola ku ji bo bişkoka bireserê were bikaranîn">
+							<longdesc>Bicihbûna dosyaya wêneyan ya di bişkoka bireseran de wê were bikaranîn. Ev mifte heke object_type &quot;drawer_object&quot; an jî &quot;menu_object&quot; be û mifteya use_custom_icon hatibe rastkirin watedar e.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_icon">
+						<local_schema short_desc="Ji bo bişkoka bireserê semboleke taybet bikar bîne">
+							<longdesc>Heke rast be, mifteya custom_icon ji bo vê bişkokê semboleke taybet bikar tîne. Heke nehatibe hilbijartin, custom_icon tune tê hesabkirin. Ev mifte dema mifteya object_type &quot;menu_object&quot; an jî &quot;drawer_object&quot; be watedar e.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="tooltip">
+						<local_schema short_desc="Nepoxa ku ji bo pêşek an jî berkêşkê wê were xuyanîkirin.">
+							<longdesc>Teksta ku di nepoxê de tê xuyanî ya ji bo pêşekê an jî bo berkêşkê. Ev mifte dema cureyê_xebatê &quot;xebata-berkêşkê&quot; an jî &quot;xebata-pêşekê&quot; be watedar e.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="attached_toplevel_id">
+						<local_schema short_desc="Panela girêdayî berkêşkê">
+							<longdesc>Destnîşankerê girêdana panelê ya vê berkêşkê. karê vê kilîtê tuneye ji bilî dema mîhengkirina bikirê berkêşkê.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="bonobo_iid">
+						<local_schema short_desc="Sepanok Bonobo IID">
+						</local_schema>
+					</entry>
+					<entry name="locked">
+						<local_schema short_desc="Bireserê li panelê kilît bike">
+							<longdesc>Heke rast be, sepanoka bikarhêner hêmana pêşeka &quot;Kilitê Veke&quot; bikar bîne û kilîta bireserê raneke nikare veguhezîne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="panel_right_stick">
+						<local_schema short_desc="Pozîsyonê gorî qeraxa jêr/rastê bisepîne">
+							<longdesc>Heke hatibe hilbijartin, pozisyona bireserê gorî qeraxa rastê ya panelê (heke serdirêjahiyê be gorî jêr) tê sepandin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="position">
+						<local_schema short_desc="Cihê hêmanê di panelê de">
+							<longdesc>Cihê laşê vê panelê. Cih bi hinek pîkselên li çepê panelê  destnîşankiriye an jî li jor.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id">
+						<local_schema short_desc="Panela asta jor ya bireserê dihundirîne">
+							<longdesc>Destnîşankerê asta jorîn a panelê ya ku vê bikirê dihewîne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_type">
+						<local_schema short_desc="Cureyê laşê panelê">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="Di guherkera qada xebatê de hejmara rêzikan">
+							<longdesc>Ev mifte diyar dike ku wê guherkerê qada xebatê ew ê qadên xebatê di hundirê çend rêzikan de (bo pergala serpahnayê) an jî stûnan de (bo pergala serdirêjahiyê) bide xuyanî.Heke hemû qadên xebatê werine xuyanî ev mifte watedar e.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Hemû qadên xebatê nîşan bide">
+							<longdesc>Heke hatibe hilbijartin, guherkera qadên xebatê hemû qadên xebatê dide  xuyanî. Heke ne wisa be jî tenê qada xebatê ya wê çaxê dide xuyanî.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="Navên kargehan nîşan bide">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="internet_time">
+						<local_schema short_desc="Dema internetê bi kar bîne">
+							<longdesc>V3e kilîta GNOME 2.6 ji bikaranîne derxîne ji bo alîkariya kilîtên amadekariyê.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="Dema UNIX bi kar bîne">
+							<longdesc>V3e kilîta GNOME 2.6 ji bikaranîne derxîne ji bo alîkariya kilîtên amadekariyê.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="Teşeya demjimêran">
+							<longdesc>V3e kilîta GNOME 2.6 ji bikaranîne derxîne ji bo alîkariya kilîtên amadekariyê.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="Di salnameyê de hejmara hefteyê nîşan bide">
+							<longdesc>Heke rast be, rojên hefteyê di salnameyê de nîşan bide</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="Amûra sazkirina demê">
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="UTC bi kar bîne">
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema short_desc="Dîrokê di teşeya amûran de nîşan bide">
+							<longdesc>Heke rast bi, dîrokê di teşeya amûran de nîşan bide dema ku nîşander li ser demjimêrê be.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="Di demjimêrê de dîrokê nîşan bide">
+							<longdesc>Heke rast be, dîroka demjimêrê li gor demê bixebitîne</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="Demê bi çirkan nîşan bide">
+							<longdesc>Heke rast be, çirkan li gor demê bixebitîne</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="teşeya taybet a demjimêrê">
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="Teşeya demjimêran">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gweather">
+				<dir name="prefs">
+					<entry name="radar">
+						<local_schema short_desc="Ji bo nexşeya radarê url">
+							<longdesc>urlya taybet ya nexşeya radarê wê were stendin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_radar_url">
+						<local_schema short_desc="Ji bo nexşeya radarê navnîşana taybet bikar bîne">
+							<longdesc>Heke hilbijartî be, di mifteya &quot;radar&quot;ê de ji cihê ku hatiye diyarkirin nexşeya radarê distîne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="coordinates">
+						<local_schema short_desc="Koordînatên bicihbûnê">
+						</local_schema>
+					</entry>
+					<entry name="location4">
+						<local_schema short_desc="Heweya Barajî">
+						</local_schema>
+					</entry>
+					<entry name="location3">
+						<local_schema short_desc="Cihê radarê">
+						</local_schema>
+					</entry>
+					<entry name="location2">
+						<local_schema short_desc="Cihê herêmê">
+						</local_schema>
+					</entry>
+					<entry name="location1">
+						<local_schema short_desc="Bajarê nêzîk">
+						</local_schema>
+					</entry>
+					<entry name="location0">
+						<local_schema short_desc="Agahiyên bicihbûnê ya rewşa hewê">
+						</local_schema>
+					</entry>
+					<entry name="enable_radar_map">
+						<local_schema short_desc="Nexşeya radarê nîşan bide">
+							<longdesc>Çi gava ku rojane bibe nexşeya radarê bistîne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_detailed_forecast">
+						<local_schema short_desc="Êdî nayê bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="Yekeya germê">
+							<longdesc>Yekeya germê ya wê were bikaranîn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed_unit">
+						<local_schema short_desc="Yekeya lezê">
+							<longdesc>Yekeye leza bê ya wê were bikaranîn</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pressure_unit">
+						<local_schema short_desc="Yekeya pestoyê">
+							<longdesc>Yekeya pestoyê ya wê were bikaranîn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="distance_unit">
+						<local_schema short_desc="Yekeya Dûrbûnê">
+							<longdesc>Yekeye qada xuyanîbûnê ya wê were bikaranîn</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_metric">
+						<local_schema short_desc="Yekeyên metrîk bikar bîne">
+							<longdesc>Dêvila yekeyên îngîlîzan yekeyên metrîk bikar bîne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update_interval">
+						<local_schema short_desc="Navbera rojanekirinê">
+							<longdesc>Ji bo rojanekirinên bixweber, navbera,  ji cureyê çirkan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update">
+						<local_schema short_desc="Agahiyan bixwebwe rojane bike">
+							<longdesc>Diyar dike ku bê ka sepanok îstatîskên rewşa hewê bixweber rojane dike yan na</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="trash_icon_name">
+						<local_schema short_desc="Navê nîşana sergoyê sermasê">
+							<longdesc>Heke tu dixwazî navekî taybet bide îkona qutiya çopê ya li ser sermaseyê ji vê derê binasîne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="Navê nîşana mala sermasê">
+							<longdesc>Heke tu dixwazî navekî taybet bide îkona malê ya li ser sermaseyê ji vê derê binasîne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="Navê sembola Kompîtora li sermasê">
+							<longdesc>Heke tu dixwazî navekî taybet bide îkona komputera ya li ser sermaseyê ji vê derê binasîne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="Îkona Pêşkêşkerên Torê li sermaseyê dixuye">
+						</local_schema>
+					</entry>
+					<entry name="volumes_visible">
+						<local_schema short_desc="Pergalên ku hatine girêdan di sermaseyê de nîşan bide">
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="Bila qutiya çopê li sermaseyê were nîşandan">
+							<longdesc>Heke ev hatibe hilbijartin, girêdana îkonê ya girêdayî çopê ye wê here sermaseyê.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="Sembola kompîtorl li sermasê dixwûye.">
+							<longdesc>Heke ev hatibe hilbijartin, girêdana îkonê ya girêdayî cihê kompîturê ye wê here ser maseyê.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="Sembola malê li sermasê dixwûye">
+							<longdesc>Heke ev hatibe hilbijartin, girêdana îkonê ya girêdayî peldanka malê ye wê here sermaseyê.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema>
+								<longdesc>Heke hatibe hilbijartin, nautilus peldankan tenê di panela kêlekê ya darê de nişan dide. Yan na jî him peldankan û him jî pelan nîşan dide.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="Di nîşandana lîsteyan de rêza stûnên standard">
+							<longdesc>Dorvegeriya stûnên standard yên di nîşandana lîsteyê de</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="Lîsteya stûnên standard yên di nîşandana lîsteyê de dixuyin">
+							<longdesc>Lîsteya stûnên standard yên di nîşandana lîsteyê de dixuyin</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Asta nêzikanîna lîsteya standard">
+							<longdesc>Asta nêzîkanîna standard ya wê nîşandana îkonê wê bikar bîne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Pergala rêzkirina vajî ya di paceyên nû de">
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Pergala rêzkirinê ya standard">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Asta nêzîkanîna îkonên standard">
+							<longdesc>Asta nêzîkanîna standard ya wê nîşandana îkonê wê bikar bîne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_manual_layout">
+						<local_schema short_desc="Di paceyên nû de bicihkirina bi destan bikar bîne">
+						</local_schema>
+					</entry>
+					<entry name="labels_beside_icons">
+						<local_schema short_desc="Nivîsê li kêleka îkonê bi cih bike">
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Pergala rêzkirina vajî ya di paceyên nû de">
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Pergala rêzkirinê ya standard">
+						</local_schema>
+					</entry>
+					<entry name="captions">
+						<local_schema>
+							<longdesc>Li sermaseyê û nîşandana îkonan de, nivîsên ku wê di bin îkonan de were xuyanî. Hejmara nivîsên bingehîn wê gora asta nêzîkkirinê were diyarkirin. Nirxên derbasdar &quot;siz&quot;, &quot;type&quot;, &quot;date_modified&quot;, &quot;date_changed&quot;, &quot;date_accessed&quot;, &quot;owner&quot;, &quot;group&quot;, &quot;permissions&quot;, &quot;octal_permission&quot; û &quot;mime_type&quot; ye.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="Nîşandana panela kêlekê">
+							<longdesc>Panela kêlekê ya di paceyên nû de têne vekirin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="Di paceyên nû de panela kêlekê nîşan bide">
+							<longdesc>Heke hatibe hilbijartin, wê panela kêlekê ya paceyên ku nû hatine vekirin were nîşandan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="Di paceyên nû de darikê rewşê nîşan bide">
+							<longdesc>Heke hatibe hilbijartin, wê darikê rewşê ya paceyên ku nû hatine vekirin were nîşandan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="Di paceyên nû de darikê cih nîşan bide">
+							<longdesc>Heke hatibe hilbijartin, darikên cih yên paceyên nû hatine vekirin di rewşa dixuye de tê nîşandan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="Di paceyeya nû de darikê amûran nîşan bide">
+							<longdesc>Heke hatine hilbijartin, wê darikê amûran ya paceyên ku nû hatine vekirin were nîşandan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="Firehiya panela kêlekê">
+							<longdesc>Di paceyên nû de firehiya panele kêlekê.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="Formata Dîrokê">
+							<longdesc>Celebê dîrokên pelan. Nirxên derbasdar &quot;locale&quot;, &quot;iso&quot; û &quot;informal&quot; e.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="Nîşanderê peldankên standard">
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="Navê Pelê Rûerdê Panela Kêlekê ya Standard">
+							<longdesc>Ji bo rûerdê panela kêlekê ya standard navê pel. Tenê dema side_pane_background_set hatine hilbijartin tê bikaranîn</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="Rengê Rûerdê Panela Kêlekê ya Standard">
+							<longdesc>Ji bo rûerdê panela kêlekê ya standard navê pel. Tenê dema side_pane_background_set hatine hilbijartin tê bikaranîn</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_set">
+						<local_schema short_desc="Mîhenga Rûerdê Panela Kêlekê ya Taybet">
+							<longdesc>Mîhengkirina rûerdê panela kêlekê ya standard ya taybet.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="Navê Pelê Rûerd ya Standart">
+							<longdesc>Ji bo rûerdê peldanka standard navê pel. Tenê dema background_set hatibe hilbijartin tê bikaranîn</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="Rengê Zemînê yê Standard">
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema>
+							<longdesc>Mîhengkirina rûerdê peldankeke standard ya taybet.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search_bar_type">
+						<local_schema short_desc="Krîterên lêgerînê yên di darikê lêgerînê de ye">
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="Curenivîsa sermasê">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="Ji bo xêzkirina sermaseyê Nautilusê bikar bîne">
+							<longdesc>Ger hibijartî be, Nautilus sembolên sermasê bicîh dike.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="Di hundirê paceyan de berê peldankan nîşan bide">
+						</local_schema>
+					</entry>
+					<entry name="preview_sound">
+						<local_schema short_desc="Dema mişk hate ser, pêşguhdarkirina pelên deng">
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Tema Nautilus ê a niha(naye bikaranîn)">
+						</local_schema>
+					</entry>
+					<entry name="always_use_location_entry">
+						<local_schema short_desc="Dêvila darikê rê her dem têketina cih bikar bîne">
+						</local_schema>
+					</entry>
+					<entry name="always_use_browser">
+						<local_schema short_desc="Karkirina Nautilusa klasîk ya hemû pace wekî gerokan dixebite çalak bike">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Ji bo ku tu karibî mezinahiya curenivîsan wekî asayî mîheng bike kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Ji bo biçûkkirina curenivîsan kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Ji bo mezinkirina curenivîsan kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Ji bo destpêkirina alîkariyê kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Ji bo tu karibî derbasî hilpekîna 12em bibe kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Ji bo tu karibî derbasî hilpekîna 11em bibe kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Ji bo tu karibî derbasî hilpekîna 10em bibe kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Ji bo çûyîna hilpekîna 9an kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Ji bo çûyîna hilpekîna 8an kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Ji bo çûyîna hilpekîna 7an kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Ji bo çûyîna hilpekîna 6an kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Kurteriya klavyeyê ya ji bo ku tu karibî derbasî hilpekîna 5&apos;an bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Kurteriya klavyeyê ya ji bo ku tu karibî derbasî hilpekîna 4&apos;an bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Kurteriya klavyeyê ya ji bo ku tu karibî derbasî hilpekîna 3&apos;yan bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Kurteriya klavyeyê ya ji bo ku tu karibî derbasî hilpekîna 2&apos;yan bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Ji bo tu karibî derbasî hilpekîna 1em bibe kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Lezkera ku wê hilpekîna derbasdar ji hev veqetîne.">
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Lezkera ku wê hilpekîna derbasdar bibe aliyê rastê.">
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Lezkera ku wê hilpekîna derbasdar bibe aliyê çepê.">
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Ji bo çûyîna hilpekîna dû re kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Ji bo çûyîna hilpekîna berê kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Ji bo vesazkirin û jêbirina dîmenderê kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Ji bo vesazkirina termînalê kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Ji bo guherandina sernavê termînalê kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Kurteriya klavyeyê ya ji bo darikê pêşekan tê bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Ji bo moda dîmender tije kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Ji bo pêvekirina nivîsê kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Ji bo jibergirtina nivîsê kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Ji bo girtina paceyê kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Ji bo girtina hilpekînê kurteriya klavyeyê ya tê bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Ji bo avakirina profîleke nû kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Ji bo vekirina paceyeke nû kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Ji bo vekirina hilpekîna nû kurteriya klavyeyê">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_system_font">
+							<local_schema short_desc="Bikaranîna curenivîsên pergalê">
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Ji dirbê perçekê termînalê bikaranîna rengan">
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Bandora bişkoka Jêbirinê">
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Bandora bişkoka jêbirina ber paş ve">
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Wê wêneyê rûerd çi qasî were tarîkirin">
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Şemitandina wêneyê rûerd">
+								<longdesc>Heke hatibe hilbijartin, wêneyê rûerd tevî nivîsên heyî wê bi hev re bişemitîne, lê heke nehatibe hilbijartin, wêne di cihê xwe de dihêle û nivîs li ser wê bişemite.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Wêneya zemîne">
+								<longdesc>Navê pelgeha wêneyê rûerd.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Cureyê zemînê">
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Curenivîs">
+								<longdesc>Navê curenivîsa Pango. &quot;Sans 12&quot; yan jî &quot;Monospace Bold 14&quot; mînak e.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Ji bo sepanên termînalê palet">
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Ji bo paceya termînalê îkon">
+								<longdesc>Îkona wê hilpekîn/paceyên ku di vê profîlê de ne bikar bîne.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Fermana taybet ya wê dêvila qalik were bikaranîn">
+								<longdesc>Heke custom_command hatibe hilbijartin dêvila qalik vê fermanê bixebitîne.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Dêvila qalik xebitandina fermaneke taybet">
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Dema fermanên termînalê hate destpêkirin rojanekirina tomarên têketinê">
+								<longdesc>Heke hatibe hilbijartin, dema di termînalê de sepanek were destpêkirin tomara destpêkirinê wê were rojanekirin.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Wêkî qalikê têketinê xebitandina fermana termînalê">
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema>
+								<longdesc>Heke hatibe hilbijartin, tu pêl bişkokê bike wê darikê şemitandinê bibe jêr.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Cihê darikê şemitandinê">
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Karakterên ku mirov dikare bibêje &quot;perçeyekî peyvê ye&quot;">
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Qutkirina dengê zengilê termînalê">
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Destûrdayîna nivîsa stûr">
+								<longdesc>Heke hatibe hilbijartin, sepanên ku di termînalê de dixebitin dikarin nivîsa stûr bide nivîsandin.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Sernavê termînalê">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Wê bi sernavê dînamîk çi were kirin">
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Rengê standard ya rûerdê termînalê">
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Rengê standard ya nivîsa di termînalê de ye">
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Di pace/hilpekînan de nîşandana darikê pêşekê">
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Dema paceyên termînalê werine girtin ji bo pirskirina erekirinê">
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Lîsteya kodkirinên ku dikarin werine bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Ji bo termînalên nû profîla ku wê were bikaranîn">
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Lîsteya profîlan">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-session">
+				<dir name="options">
+					<entry name="logout_prompt">
+						<local_schema short_desc="Daxwaza derketinê">
+							<longdesc>Heke hatibe hilbijartin, berî girtina danişînê gnome-session daxwaza bikarhêner dipirse.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_save_session">
+						<local_schema short_desc="Danişînan tomar bike">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome_settings_daemon">
+				<entry name="volume_step">
+					<local_schema short_desc="Rêjekirina deng">
+						<longdesc>Rêjekirina deng li gor rêjeya deng ya ji sedî.</longdesc>
+					</local_schema>
+				</entry>
+				<dir name="keybindings">
+					<entry name="play">
+						<local_schema short_desc="Lê bide (an jî lê bide/rawestîne)">
+						</local_schema>
+					</entry>
+					<entry name="www">
+						<local_schema short_desc="Geroka webê veke">
+						</local_schema>
+					</entry>
+					<entry name="calculator">
+						<local_schema short_desc="Jimêreyê bide xebitandin">
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Gerokê alîkariyê veke">
+						</local_schema>
+					</entry>
+					<entry name="screensaver">
+						<local_schema short_desc="Ekranê qifil bike">
+						</local_schema>
+					</entry>
+					<entry name="search">
+						<local_schema short_desc="Lê bigere">
+						</local_schema>
+					</entry>
+					<entry name="home">
+						<local_schema short_desc="Peldanka mal">
+						</local_schema>
+					</entry>
+					<entry name="eject">
+						<local_schema short_desc="Bavêje">
+						</local_schema>
+					</entry>
+					<entry name="power">
+						<local_schema short_desc="Derkeve">
+						</local_schema>
+					</entry>
+					<entry name="volume_up">
+						<local_schema short_desc="Deng zêde bike">
+						</local_schema>
+					</entry>
+					<entry name="volume_down">
+						<local_schema short_desc="Deng kêm bike">
+						</local_schema>
+					</entry>
+					<entry name="volume_mute">
+						<local_schema short_desc="Deng bibire">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="yelp">
+				<entry name="fixed_font">
+					<local_schema short_desc="Ji bo teksta sabît curetîp">
+						<longdesc>Ji bo nivîsa firehiya wê sabît e curetîp</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="variable_font">
+					<local_schema short_desc="Ji bo nivîsê curetîp">
+						<longdesc>Ji bo nivîsa firehiya wê guhêrbar e curetîp.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_system_fonts">
+					<local_schema short_desc="Fontên pergalê bi kar bîne">
+						<longdesc>Ji bo pergalê curetîpên pêşdanasînî bikar bîne.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_caret">
+					<local_schema short_desc="Caret bi kar bîne">
+						<longdesc>Dema şopandina rûpelan nîşandera di bin kontroliya klavyeyê de ye bikar bîne.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="metacity">
+				<dir name="window_keybindings">
+					<entry name="move_to_center">
+						<local_schema short_desc="Paceyê bibe navenda ekranê">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_w">
+						<local_schema short_desc="Paceyê bibe goşeya rojava (çep) a ekranê">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_e">
+						<local_schema short_desc="Paceyê bibe goşeya rojhilat (rast) a ekranê">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_s">
+						<local_schema short_desc="Paceyê bibe goşeya başûr (jêr) a ekranê">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_n">
+						<local_schema short_desc="Paceyê bibe goşeya bakur (jor) a ekranê">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_se">
+						<local_schema short_desc="Paceyê bibe goşeya başûr-rojhilat (jêr rast)">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_sw">
+						<local_schema short_desc="Paceyê bibe goşeya başûr-rojava (jêr çep)">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_ne">
+						<local_schema short_desc="Paceyê bibe goşeya bakur-rojhilat (jor rast)">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_nw">
+						<local_schema short_desc="Paceyê bibe goşeya bakur-rojava (jor çep)">
+						</local_schema>
+					</entry>
+					<entry name="maximize_horizontally">
+						<local_schema short_desc="Paceyê ser pahnayê mezin bike">
+						</local_schema>
+					</entry>
+					<entry name="maximize_vertically">
+						<local_schema short_desc="Paceyê ser dirêjahiyê mezin bike">
+						</local_schema>
+					</entry>
+					<entry name="lower">
+						<local_schema short_desc="Paceyan bişîne binê yên din">
+						</local_schema>
+					</entry>
+					<entry name="raise">
+						<local_schema short_desc="Paceyê bibe ser yên din">
+						</local_schema>
+					</entry>
+					<entry name="raise_or_lower">
+						<local_schema short_desc="Paceyê bilind bike ger ji aliyê paceyeke din ve hatibe pêçandin, ger na nizimtir bike">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_down">
+						<local_schema short_desc="Paceyê bibe qada xebatê ya li jêr e">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_up">
+						<local_schema short_desc="Paceyê bibe qada xebatê ya jor">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_right">
+						<local_schema short_desc="Paceyê bibe qada xebatê ya rastê">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_left">
+						<local_schema short_desc="Paceyê bibe qada xebatê ya li çepê ye">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_12">
+						<local_schema short_desc="Paceyê bişîne kargeha 12">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_11">
+						<local_schema short_desc="Paceyê bişîne kargeha 11">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_10">
+						<local_schema short_desc="Paceyê bişîne kargeha 10">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_9">
+						<local_schema short_desc="Paceya bibe qada xebatê ya 9an">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_8">
+						<local_schema short_desc="Paceya bibe qada xebatê ya 8an">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_7">
+						<local_schema short_desc="Paceyê bibe qada xebatê ya 7an">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_6">
+						<local_schema short_desc="Paceyê bibe qada xebatê ya 6an">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_5">
+						<local_schema short_desc="Paceyê bişîne kargeha 5">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_4">
+						<local_schema short_desc="Paceyê bişîne kargeha 4">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_3">
+						<local_schema short_desc="Paceyê bişîne kargeha 3">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_2">
+						<local_schema short_desc="Paceyê bişîne kargeha 2">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_1">
+						<local_schema short_desc="Paceyê bişîne kargeha 1">
+						</local_schema>
+					</entry>
+					<entry name="toggle_on_all_workspaces">
+						<local_schema short_desc="Vezeliqîne ka paceyekê wê li hemû qadên xebatê be an wê tenê li yekê be">
+						</local_schema>
+					</entry>
+					<entry name="begin_resize">
+						<local_schema short_desc="Mezinahiya paceyê biguherîne">
+						</local_schema>
+					</entry>
+					<entry name="begin_move">
+						<local_schema short_desc="Paceyê Bikşîne">
+						</local_schema>
+					</entry>
+					<entry name="close">
+						<local_schema short_desc="Paceyê bigire">
+						</local_schema>
+					</entry>
+					<entry name="minimize">
+						<local_schema short_desc="Paceyê kêmtirîn bike">
+						</local_schema>
+					</entry>
+					<entry name="unmaximize">
+						<local_schema short_desc="Paceyê bike weke berê">
+						</local_schema>
+					</entry>
+					<entry name="maximize">
+						<local_schema short_desc="Paceyê mezin bike">
+						</local_schema>
+					</entry>
+					<entry name="toggle_above">
+						<local_schema short_desc="Vezeliqîne ka wê paceyek wê herdem li seranserê paceyên din xuya bibe an na">
+						</local_schema>
+					</entry>
+					<entry name="toggle_maximized">
+						<local_schema short_desc="Rewşa raxistina dîmenderê veke yan jî bigire">
+						</local_schema>
+					</entry>
+					<entry name="toggle_fullscreen">
+						<local_schema short_desc="Moda dîmender tijî veke an jî bigire">
+						</local_schema>
+					</entry>
+					<entry name="activate_window_menu">
+						<local_schema short_desc="Menûya paceyê çalak bike">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybinding_commands">
+					<entry name="command_window_screenshot">
+						<local_schema short_desc="Fermana kişandina wêneya paceyê">
+						</local_schema>
+					</entry>
+					<entry name="command_screenshot">
+						<local_schema short_desc="Fermana kişandina wêneya sermasê">
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Hin fermanên ku wekî bersiva girêdanên bişkokan were xebitandin">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global_keybindings">
+					<entry name="run_command_terminal">
+						<local_schema short_desc="Termînalekê bimeşîne">
+						</local_schema>
+					</entry>
+					<entry name="run_command_window_screenshot">
+						<local_schema short_desc="Wêneya paceyekê bikişîne">
+						</local_schema>
+					</entry>
+					<entry name="run_command_screenshot">
+						<local_schema short_desc="Wêneya sermasê bikişîne">
+						</local_schema>
+					</entry>
+					<entry name="panel_run_dialog">
+						<local_schema short_desc="Qûtiya diyalogê ya &quot;Sepan Bimeşîne&quot; ya panelê nîşande">
+						</local_schema>
+					</entry>
+					<entry name="panel_main_menu">
+						<local_schema short_desc="Meûya sereke ya panelê nîşande">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="Hemû paceyên normal veşêre û here sermaseyê">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels_backward">
+						<local_schema short_desc="Derbasbûna ber bi paş ve ya di navbera panel û sermaseyê de zûzûka bike">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels">
+						<local_schema short_desc="Derbasbûna ya di navbera panel û sermaseyê de zûzûka bike">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows_backward">
+						<local_schema short_desc="Di navbera paceyan de şûnde veguheze zûzûka">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows">
+						<local_schema short_desc="Derbasbûna di nava paceyan de ji nişka ve bike">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group_backward">
+						<local_schema short_desc="Zûzûka di navbera paceyên sepanekê de şûnde veguheze">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels_backward">
+						<local_schema short_desc="Di navbera panel û sermaseyê de şûnde veguheze, bi paceyeke popupê">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels">
+						<local_schema short_desc="Di navbera panel û sermaseyê de veguheze, bi paceyeke popupê">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows_backward">
+						<local_schema short_desc="Di navbera paceyan de şûnde veguheze, bi paceyeke popupê">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows">
+						<local_schema short_desc="Di navbera paceyan de veguheze, bi paceyeke popupê">
+						</local_schema>
+					</entry>
+					<entry name="switch_group_backward">
+						<local_schema short_desc="Di navbera paceyên sepanekê de şûnde veguheze, bi paceyeke popupê">
+						</local_schema>
+					</entry>
+					<entry name="switch_group">
+						<local_schema short_desc="Di navbera paceyên sepanekê de veguheze, bi paceyeke popupê">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_down">
+						<local_schema short_desc="Veguhere qada xebatê a li jêra qada xebatê a heyî">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_up">
+						<local_schema short_desc="Veguhere qada xebatê a li jora qada xebatê a heyî">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_right">
+						<local_schema short_desc="Veguhere qada xebatê a li aliyê rasta qada xebatê a heyî">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_left">
+						<local_schema short_desc="Veguhere qada xebatê a li çepa qada xebatê a heyî">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_12">
+						<local_schema short_desc="Derbasî qada xebatê ya 12yan bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_11">
+						<local_schema short_desc="Derbasa kargeha 11 bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_10">
+						<local_schema short_desc="Derbasa kargeha 10 bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_9">
+						<local_schema short_desc="Derbasa kargeha 9 bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_8">
+						<local_schema short_desc="Derbasa kargeha 8 bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_7">
+						<local_schema short_desc="Derbasa kargeha 7 bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_6">
+						<local_schema short_desc="Derbasî qada xebatê ya 6an bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_5">
+						<local_schema short_desc="Derbasî qada xebatê ya 5an bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_4">
+						<local_schema short_desc="Derbasî qada xebatê ya 4an bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_3">
+						<local_schema short_desc="Derbasî qada xebatê ya 3yan bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_2">
+						<local_schema short_desc="Derbasî qada xebatê ya 2yan bibe">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_1">
+						<local_schema short_desc="Derbasa kargeha 1 bibe">
+						</local_schema>
+					</entry>
+					<entry name="run_command">
+						<local_schema short_desc="Fermaneke ku hatiye diyarkirin bixebitîne">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="workspace_names">
+					<entry name="name">
+						<local_schema short_desc="Navê qada xebatê">
+							<longdesc>Navê kargehê.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="general">
+					<entry name="disable_workarounds">
+						<local_schema short_desc="Taybetiyên çewt yên sepanên kevn yan jî sepanên çewt bigire">
+						</local_schema>
+					</entry>
+					<entry name="application_based">
+						<local_schema short_desc="(Hê nehatiye sepandin) Gerîn, ne gorî sepanan gorî paceyan dixebite.">
+						</local_schema>
+					</entry>
+					<entry name="visual_bell_type">
+						<local_schema short_desc="Cureyê Zengila Dîtbarî">
+						</local_schema>
+					</entry>
+					<entry name="audible_bell">
+						<local_schema short_desc="Zengila Pergalê tê Bihîstin">
+							<longdesc>Diyar dike ku bê ka sepan yan jî pergal wê dengê zengil derxe yan na, ji bo dengên zengil yên bêdeng dikare têkildarî &quot;zengilê dîtbarî&quot; jî were bikaranîn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell">
+						<local_schema short_desc="Zengilê Dîtbarî Çalak Bike">
+						</local_schema>
+					</entry>
+					<entry name="num_workspaces">
+						<local_schema short_desc="Hejmarên qadên xebatê">
+						</local_schema>
+					</entry>
+					<entry name="titlebar_font">
+						<local_schema short_desc="Curenivîsa sernavê paceyê">
+						</local_schema>
+					</entry>
+					<entry name="titlebar_uses_system_font">
+						<local_schema short_desc="Di sernavên paceyan de curenivîsa pergalê ya standard bikar bîne">
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Dirbê derbasdar">
+							<longdesc>Dirb, xuyaneka hêmanên weke kêlekên paceyan, darikê sernavan diyar dike.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise_delay">
+						<local_schema short_desc="Derengmayina wekî mîlîçirke ya ji bo vebijêrka bilindkirina bixweber">
+						</local_schema>
+					</entry>
+					<entry name="auto_raise">
+						<local_schema short_desc="Paceya hatiye lêhûrbûn jixweber bilind dike">
+						</local_schema>
+					</entry>
+					<entry name="action_right_click_titlebar">
+						<local_schema short_desc="Çalakiya rast-tikandina darika sernavê">
+						</local_schema>
+					</entry>
+					<entry name="action_middle_click_titlebar">
+						<local_schema short_desc="Çalakiya tikandina-navîn a li darika sernavê">
+						</local_schema>
+					</entry>
+					<entry name="action_double_click_titlebar">
+						<local_schema short_desc="Çalakiya ku dema tu du caran li darikê sernavê bitikîne">
+						</local_schema>
+					</entry>
+					<entry name="button_layout">
+						<local_schema short_desc="Pergala bişkokên ku di darikê sernavan de ye">
+						</local_schema>
+					</entry>
+					<entry name="resize_with_right_button">
+						<local_schema short_desc="Ka bila bi bişkojka rastê mezinahî were guhertin">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

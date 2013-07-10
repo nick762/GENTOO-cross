@@ -1,0 +1,1016 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="sound">
+					<entry name="theme_name">
+						<local_schema short_desc="Tonthemanaam">
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="Töne för Ereegnisse">
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="ESD aktiveren">
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Standardmischerlööpwark">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Dateibillthema">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Tostandsbalken rechts">
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Monospace Schriftart">
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="GTK IM Modul">
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="GTK IM Tostand Utsehn">
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="GTL IM Preedit Utsehn">
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Standard Schriftart">
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Gtk+ Thema">
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Gtk+ Thema">
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Billthema">
+							<longdesc>Billthema, dat för de Balken, Nautilus, etc. brukt werrn schall.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Warktüügbalken Icongröte">
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="Knöppe hebben Billers">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Warktüügbalkenutsehn">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="secondary_color">
+						<local_schema short_desc="Twejte Klöör">
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Erste Klöör">
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Billdöörschienen">
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Billdateinaam">
+							<longdesc>Datei, de as Achtergrundbill brukt werrn schall.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Billoptschoonen">
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Schrievdiskachtergrund malen">
+							<longdesc>GNOME de Schrievdiskachtergrund malen laten.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="typing_break">
+					<entry name="break_time">
+						<local_schema short_desc="Middag">
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Typtied">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Billschirm avsluten deaktiveren">
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Brukerwessel deaktiveren">
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Druckinstellen deaktiveren">
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Drucken deaktiveren">
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Dateien op de Rekner spiekern deaktiveren">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="session">
+					<entry name="default_session">
+						<local_schema short_desc="Standardtörn">
+						</local_schema>
+					</entry>
+					<dir name="required_components">
+						<entry name="filemanager">
+							<local_schema short_desc="Dateioppasser">
+							</local_schema>
+						</entry>
+						<entry name="panel">
+							<local_schema short_desc="Balken">
+							</local_schema>
+						</entry>
+						<entry name="windowmanager">
+							<local_schema short_desc="Finsteroppasser">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="accessibility">
+					<dir name="keyboard">
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Pixel per Sekunnen">
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_enable">
+							<local_schema short_desc="Muusknöppe">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="keybindings">
+					<entry name="allowed_keys">
+						<local_schema short_desc="Tolaten Knöppe">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="applications">
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="Opgaven bruken dat Terminal">
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Stadardopgav">
+								<longdesc>Stadardopgavprogramm</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="kalenner brukt Terminal">
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Standardkalenner">
+								<longdesc>Standardkalennerprogramm</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Kieker versteiht remote">
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Kieker brukt Terminal">
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Standardnetkieker">
+								<longdesc>Standardnetkieker för all URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<entry name="screen_reader_enabled">
+							<local_schema short_desc="Billschirmleser">
+							</local_schema>
+						</entry>
+						<entry name="screen_magnifier_enabled">
+							<local_schema short_desc="Billschirmgrötenännernsprogramm">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Exec Argumente">
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Terminal Programm">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Wiesergröte">
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Wieserthema">
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Wieserschriftart">
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Wieser finnen">
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Twejmol klicken">
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Eenfacher Klick">
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Eenfacher Klick">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="name">
+						<local_schema short_desc="De Fisk sien Naam">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="enable_buttons">
+						<local_schema short_desc="Verbargen-Knöppe opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Animatschoonen aktiveren">
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="Balkengröte">
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="Balkenpositschoon">
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Balkennaam">
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="Bill op vertikalen Balken dreihn">
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="Bill in Balken inpassen">
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="Achtergrundbill">
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="Achtergrundklöördöörsichtigkeit">
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="Achtergrundklöör">
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="Achtergrundtyp">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="general">
+					<entry name="toplevel_id_list">
+						<local_schema short_desc="Balken ID-List">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global">
+					<entry name="disable_force_quit">
+						<local_schema short_desc="Twangsavmellen nich tolaten">
+						</local_schema>
+					</entry>
+					<entry name="disable_log_out">
+						<local_schema short_desc="Avmellen nich tolaten">
+						</local_schema>
+					</entry>
+					<entry name="confirm_panel_remove">
+						<local_schema short_desc="Balkenlöschen bestätigen">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Animatschoonen aktiveren">
+						</local_schema>
+					</entry>
+					<entry name="tooltips_enabled">
+						<local_schema short_desc="Lütte Hölpinformatschoonen aktiveren">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="objects">
+					<entry name="launcher_location">
+						<local_schema short_desc="Starterort">
+						</local_schema>
+					</entry>
+					<entry name="locked">
+						<local_schema short_desc="Element op&apos;n Balken tackern">
+						</local_schema>
+					</entry>
+					<entry name="object_type">
+						<local_schema short_desc="Balkenobjekttyp">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="All Schrievdisks opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="Schrievdisknaamen opwiesen">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="cities">
+						<local_schema short_desc="Ortlist">
+						</local_schema>
+					</entry>
+					<entry name="internet_time">
+						<local_schema short_desc="Innernettied bruken">
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="UNIX-Tied bruken">
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="Stunnenformat">
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="Weekentalen im Kalenner opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="Tiedinstellenswarktügg">
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="UTC bruken">
+						</local_schema>
+					</entry>
+					<entry name="show_temperature">
+						<local_schema short_desc="Temperatur tosammen mit de Tied opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="show_weather">
+						<local_schema short_desc="Wetter tosammen mit de Tied opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema short_desc="Dag in lütter Popup-Informatschoon opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="Dag tosammen mit de Tied opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="Tied mit Sekunnen opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="Eegens Format vun de Klock">
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="Stunnenformat">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="control-center">
+				<dir name="network">
+					<entry name="current_location">
+						<local_schema short_desc="Aktueller Netwarkort">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="appearance">
+					<entry name="more_themes_url">
+						<local_schema short_desc="Mehr Themen URL">
+						</local_schema>
+					</entry>
+					<entry name="more_backgrounds_url">
+						<local_schema short_desc="Mehr Achtergründe URL">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="network_icon_name">
+						<local_schema short_desc="Netwarkserverbillnaam">
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_name">
+						<local_schema short_desc="Schrievdisk Papierkörv Billernaam">
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="Schrievdiskhembillnaam">
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="Schrievdiskreknerbillnaam">
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="Netwarkserverbill op&apos;m Schrievdisk opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="Papierkörvbill op Schrievdisk opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="Reknerbill op de Schrievdisk opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="Hemverteeknisbill op&apos;m Schrievdisk to sehn">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema short_desc="Just Verteeknisse in den Sietenrebeetboom opwiesen">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Standardlistzoomebene">
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Standardsorterens">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="compact_view">
+					<entry name="all_columns_have_same_width">
+						<local_schema short_desc="All Splieten hebben de sülvige Brede">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="thumbnail_size">
+						<local_schema short_desc="Standardgröte för lütte Billers">
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Standardbillerzoomebene">
+						</local_schema>
+					</entry>
+					<entry name="labels_beside_icons">
+						<local_schema short_desc="Beschrivtens op de Siet vu&apos;m Bill">
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Standardsorterens">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="Sietenrebeetansicht">
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="Sietenrebeet in nejem Finster opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="Statusbalken in nejen Finstern opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="Ortbalken in nejem Finster opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="Warktüggbalken in nejem Finster opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="Brede vu&apos;m Sietenrebeet">
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="Datumsformat">
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="Standardverteeknisopwieser">
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="Standard Achtergrund Dateinaam">
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="Standard Achtergrundklöör">
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema short_desc="Persönlicher Achtergrund">
+						</local_schema>
+					</entry>
+					<entry name="search_bar_type">
+						<local_schema short_desc="Kriterium för Sökbalkensök">
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="Schrift op&apos;m Schrievdisk">
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="Verteeknisse as erstes in Finstern opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Aktuelles Nautilusthema (nich to akzepteeren)">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_out">
+						<local_schema short_desc="Knöppboordkoortsnied, um de Schrift &apos;n beten lütter to maken">
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Knöppboordkoortsnied, um de Schrift &apos;n beten gröter to maken">
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Knöppboordkoortsnied, um de Hölp to starten">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Knöppboordkoortsnied, um to Registerkoort 12 to wesseln">
+							<longdesc>Knöppboordkoortsnied, um to Registerkoort 12 to wesseln. Utdrückt as eene Reeg im sülvigen Format, dat ook vun de GTK+ Resourcedateien brukt warrt. Wenn je de Optschoon to de spezielle Reeg &quot;deaktivert&quot; setten deist, denn givt dat för düsse Aktschoon keenen Knöppboordkortsnied.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Knöppboordkoortsnied, um to Registerkoort 11 to wesseln">
+							<longdesc>Knöppboordkoortsnied, um to Registerkoort 11 to wesseln. Utdrückt as eene Reeg im sülvigen Format, dat ook vun de GTK+ Resourcedateien brukt warrt. Wenn je de Optschoon to de spezielle Reeg &quot;deaktivert&quot; setten deist, denn givt dat för düsse Aktschoon keenen Knöppboordkortsnied.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Knöppboordkoortsnied, um to Registerkoort 10 to wesseln">
+							<longdesc>Knöppboordkoortsnied, um to Registerkoort 10 to wesseln. Utdrückt as eene Reeg im sülvigen Format, dat ook vun de GTK+ Resourcedateien brukt warrt. Wenn je de Optschoon to de spezielle Reeg &quot;deaktivert&quot; setten deist, denn givt dat för düsse Aktschoon keenen Knöppboordkortsnied.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Knöppboordkoortsnied, um to Registerkoort 9 to wesseln">
+							<longdesc>Knöppboordkoortsnied, um to Registerkoort 9 to wesseln. Utdrückt as eene Reeg im sülvigen Format, dat ook vun de GTK+ Resourcedateien brukt warrt. Wenn je de Optschoon to de spezielle Reeg &quot;deaktivert&quot; setten deist, denn givt dat för düsse Aktschoon keenen Knöppboordkortsnied.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Knöppboordkoortsnied, um to Registerkoort 8 to wesseln">
+							<longdesc>Knöppboordkoortsnied, um to Registerkoort 8 to wesseln. Utdrückt as eene Reeg im sülvigen Format, dat ook vun de GTK+ Resourcedateien brukt warrt. Wenn je de Optschoon to de spezielle Reeg &quot;deaktivert&quot; setten deist, denn givt dat för düsse Aktschoon keenen Knöppboordkortsnied.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Knöppboordkoortsnied, um to Registerkoort 7 to wesseln">
+							<longdesc>Knöppboordkoortsnied, um to Registerkoort 7 to wesseln. Utdrückt as eene Reeg im sülvigen Format, dat ook vun de GTK+ Resourcedateien brukt warrt. Wenn je de Optschoon to de spezielle Reeg &quot;deaktivert&quot; setten deist, denn givt dat för düsse Aktschoon keenen Knöppboordkortsnied.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Knöppboordkoortsnied, um to Registerkoort 6 to wesseln">
+							<longdesc>Knöppboordkoortsnied, um to Registerkoort 6 to wesseln. Utdrückt as eene Reeg im sülvigen Format, dat ook vun de GTK+ Resourcedateien brukt warrt. Wenn je de Optschoon to de spezielle Reeg &quot;deaktivert&quot; setten deist, denn givt dat för düsse Aktschoon keenen Knöppboordkortsnied.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Knöppboordkoortsnied, um to Registerkoort 5 to wesseln">
+							<longdesc>Knöppboordkoortsnied, um to Registerkoort 5 to wesseln. Utdrückt as eene Reeg im sülvigen Format, dat ook vun de GTK+ Resourcedateien brukt warrt. Wenn je de Optschoon to de spezielle Reeg &quot;deaktivert&quot; setten deist, denn givt dat för düsse Aktschoon keenen Knöppboordkortsnied.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Knöppboordkoortsnied, um to Registerkoort 4 to wesseln">
+							<longdesc>Knöppboordkoortsnied, um to Registerkoort 4 to wesseln. Utdrückt as eene Reeg im sülvigen Format, dat ook vun de GTK+ Resourcedateien brukt warrt. Wenn je de Optschoon to de spezielle Reeg &quot;deaktivert&quot; setten deist, denn givt dat för düsse Aktschoon keenen Knöppboordkortsnied.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Knöppboordkoortsnied, um to Registerkoort 3 to wesseln">
+							<longdesc>Knöppboordkoortsnied, um to Registerkoort 3 to wesseln. Utdrückt as eene Reeg im sülvigen Format, dat ook vun de GTK+ Resourcedateien brukt warrt. Wenn je de Optschoon to de spezielle Reeg &quot;deaktivert&quot; setten deist, denn givt dat för düsse Aktschoon keenen Knöppboordkortsnied.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Knöppboordkoortsnied, um to Registerkoort 2 to wesseln">
+							<longdesc>Knöppboordkoortsnied, um to Registerkoort 2 to wesseln. Utdrückt as eene Reeg im sülvigen Format, dat ook vun de GTK+ Resourcedateien brukt warrt. Wenn je de Optschoon to de spezielle Reeg &quot;deaktivert&quot; setten deist, denn givt dat för düsse Aktschoon keenen Knöppboordkortsnied.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Knöppboordkoortsnied, um to Registerkoort 1 to wesseln">
+							<longdesc>Knöppboordkoortsnied, um to Registerkoort 1 to wesseln. Utdrückt as eene Reeg im sülvigen Format, dat ook vun de GTK+ Resourcedateien brukt warrt. Wenn je de Optschoon to de spezielle Reeg &quot;deaktivert&quot; setten deist, denn givt dat för düsse Aktschoon keenen Knöppboordkortsnied.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Knöppboordkoortsnied, um to&apos;r nähsten Registerkoort to wesseln">
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Knöppboordkoortsnied, um to&apos;r lesten Registerkoort to wesseln">
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Knöppboordkoortsnied, um dat Terminal torüggtosetten un optoklaren">
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Knöppboordkoortsnied, um dat Terminal torüggtosetten">
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Knöppboordkoortsnied, um Text intofögen">
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Knöppboordkoortsnied, um Text to koperen">
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Knöppboordkoortsnied, um een Finster to sluten">
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Knöppboordkoortsnied, um eene Registerkoort to sluten">
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Knöppboordkoortsnied, um eenen nejen Togang to erstellen">
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Knöppboordkoortsnied, um een nejes Finster optomaken">
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Knöppboordkoortsnied, um eene neje Registerkoort optomaken">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="delete_binding">
+							<local_schema short_desc="Effekt vun de Löschknopp">
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Effekt vun de Torüggknopp">
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Achtergrundbill">
+								<longdesc>Dateinaam vun de Achtergrundbill.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Achtergrundtyp">
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Schriftart">
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Dat Wieserutsehn">
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Naam för Terminal">
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Standardklöör vun de Terminalachtergrund">
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Standardklöör vun de Terminaltext">
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="active_encodings">
+						<local_schema>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Profillist">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-session">
+				<dir name="options">
+					<entry name="logout_prompt">
+						<local_schema short_desc="Avmellensdialog">
+						</local_schema>
+					</entry>
+					<entry name="auto_save_session">
+						<local_schema short_desc="Törns spiekern">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome_settings_daemon">
+				<dir name="gtk-modules">
+					<entry name="gail:atk-bridge">
+						<local_schema short_desc="GTK+ Module för Togangelikheitsunnerstütten">
+							<longdesc>Düsser Slötel het Utwarken op de GTK+ Module, bi&apos;m Laden vun de Togangelikheitsunnerstütten.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybindings">
+					<entry name="media">
+						<local_schema short_desc="Medienspeeler starten">
+						</local_schema>
+					</entry>
+					<entry name="www">
+						<local_schema short_desc="Netkieker starten">
+						</local_schema>
+					</entry>
+					<entry name="calculator">
+						<local_schema short_desc="Rekner starten">
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Hölpkieker starten">
+						</local_schema>
+					</entry>
+					<entry name="screensaver">
+						<local_schema short_desc="Billschirm avsluten">
+						</local_schema>
+					</entry>
+					<entry name="email">
+						<local_schema short_desc="E-Post Programm starten">
+						</local_schema>
+					</entry>
+					<entry name="search">
+						<local_schema short_desc="Sök">
+						</local_schema>
+					</entry>
+					<entry name="home">
+						<local_schema short_desc="Hemverteeknis">
+						</local_schema>
+					</entry>
+					<entry name="eject">
+						<local_schema short_desc="Utwarfen">
+						</local_schema>
+					</entry>
+					<entry name="power">
+						<local_schema short_desc="Avmellen">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="metacity">
+				<dir name="window_keybindings">
+					<entry name="maximize_horizontally">
+						<local_schema short_desc="Finster horizontal gröter maken">
+						</local_schema>
+					</entry>
+					<entry name="maximize_vertically">
+						<local_schema short_desc="Finster vertikal gröter maken">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_12">
+						<local_schema short_desc="Finster nah Schrievdisk 12 verschuven">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_11">
+						<local_schema short_desc="Finster nah Schrievdisk 11 verschuven">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_10">
+						<local_schema short_desc="Finster nah Schrievdisk 10 verschuven">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_9">
+						<local_schema short_desc="Finster nah Schrievdisk 9 verschuven">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_8">
+						<local_schema short_desc="Finster nah Schrievdisk 8 verschuven">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_7">
+						<local_schema short_desc="Finster nah Schrievdisk 7 verschuven">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_6">
+						<local_schema short_desc="Finster nah Schrievdisk 6 verschuven">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_5">
+						<local_schema short_desc="Finster nah Schrievdisk 5 verschuven">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_4">
+						<local_schema short_desc="Finster nah Schrievdisk 4 verschuven">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_3">
+						<local_schema short_desc="Finster nah Schrievdisk 3 verschuven">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_2">
+						<local_schema short_desc="Finster nah Schrievdisk 2 verschuven">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_1">
+						<local_schema short_desc="Finster nah Schrievdisk 1 verschuven">
+						</local_schema>
+					</entry>
+					<entry name="begin_resize">
+						<local_schema short_desc="Finstergröte ännern">
+						</local_schema>
+					</entry>
+					<entry name="begin_move">
+						<local_schema short_desc="Finster verschuven">
+						</local_schema>
+					</entry>
+					<entry name="close">
+						<local_schema short_desc="Finster sluten">
+						</local_schema>
+					</entry>
+					<entry name="minimize">
+						<local_schema short_desc="Finster lütter maken">
+						</local_schema>
+					</entry>
+					<entry name="unmaximize">
+						<local_schema short_desc="Finster wedderherstellen">
+						</local_schema>
+					</entry>
+					<entry name="maximize">
+						<local_schema short_desc="Finster gröter maken">
+						</local_schema>
+					</entry>
+					<entry name="activate_window_menu">
+						<local_schema short_desc="Finstermenü aktiveren">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybinding_commands">
+					<entry name="command_screenshot">
+						<local_schema short_desc="De Billschirmbillorder">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global_keybindings">
+					<entry name="run_command_terminal">
+						<local_schema short_desc="Orderreeg lööpen laten">
+						</local_schema>
+					</entry>
+					<entry name="run_command_window_screenshot">
+						<local_schema short_desc="Billschirmbill vun ee&apos;m Finster scheten">
+						</local_schema>
+					</entry>
+					<entry name="run_command_screenshot">
+						<local_schema short_desc="Billschirmbill scheten">
+						</local_schema>
+					</entry>
+					<entry name="panel_main_menu">
+						<local_schema short_desc="Balkenhööftmenü opwiesen">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_12">
+						<local_schema short_desc="Nah Schrievdisk 12 wesseln">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_11">
+						<local_schema short_desc="Nah Schrievdisk 11 wesseln">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_10">
+						<local_schema short_desc="Nah Schrievdisk 10 wesseln">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_9">
+						<local_schema short_desc="Nah Schrievdisk 9 wesseln">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_8">
+						<local_schema short_desc="Nah Schrievdisk 8 wesseln">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_7">
+						<local_schema short_desc="Nah Schrievdisk 7 wesseln">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_6">
+						<local_schema short_desc="Nah Schrievdisk 6 wesseln">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_5">
+						<local_schema short_desc="Nah Schrievdisk 5 wesseln">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_4">
+						<local_schema short_desc="Nah Schrievdisk 4 wesseln">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_3">
+						<local_schema short_desc="Nah Schrievdisk 3 wesseln">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_2">
+						<local_schema short_desc="Nah Schrievdisk 2 wesseln">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_1">
+						<local_schema short_desc="Nah Schrievdisk 1 wesseln">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="workspace_names">
+					<entry name="name">
+						<local_schema short_desc="Schrievdisknaam">
+							<longdesc>De Naam vun ee&apos;m Schrievdisk.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="general">
+					<entry name="num_workspaces">
+						<local_schema short_desc="Schrievdiskantaal">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

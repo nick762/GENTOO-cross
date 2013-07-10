@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<gconfschemafile>
+  <schemalist>
+    <schema>
+      <key>/schemas/desktop/gnome/peripherals/smartcard/removal_action</key>
+      <applyto>/desktop/gnome/peripherals/smartcard/removal_action</applyto>
+      <owner>gnome</owner>
+      <type>string</type>
+      <default>none</default>
+      <locale name="C">
+        <short>Smartcard removal action</short>
+        <long>Set this to one of "none", "lock_screen", or "force_logout".  The action will
+              get performed when the smartcard used for log in is removed.</long>
+      </locale>
+
+      <locale name="bg">
+        <short>Действие при изключване на чип-картата</short>
+        <long>Задайте „none“ (без действие), „lock_screen“ (заключване на екрана) или „force_logout“ (принудителен изход). Действието ще се предприема, когато чип-картата, използвана за вход в системата, се изключи.</long>
+      </locale>
+
+      <locale name="ca">
+        <short>Acció d&apos;extreure la targeta intel·ligent</short>
+        <long>Establiu-ho a «none» (cap), «lock_screen» (bloqueja la pantalla) o «force_logout» (força la sortida). L&apos;acció es realitzarà quan la targeta intel·ligent utilitzada per entrar s&apos;extregui.</long>
+      </locale>
+
+      <locale name="ca@valencia">
+        <short>Acció d&apos;extreure la targeta intel·ligent</short>
+        <long>Establiu-ho a «none» (cap), «lock_screen» (bloqueja la pantalla) o «force_logout» (força la eixida). L&apos;acció es realitzarà quan la targeta intel·ligent utilitzada per entrar s&apos;extregui.</long>
+      </locale>
+
+      <locale name="cs">
+        <short>Činnost při odstranění čipové karty</short>
+        <long>Nastavte buď na &quot;none&quot;, &quot;lock_screen&quot;, nebo &quot;force_logout&quot;. Činnost bude vykonána při odstranění čipové karty použité k přihlášení.</long>
+      </locale>
+
+      <locale name="da">
+        <short>Handling for fjernelse af Smartcard</short>
+        <long>Sæt denne til en af &quot;none&quot;, &quot;lock_screen&quot; eller &quot;force_logou&quot;. Handlingen vil blive udført, når det smartcard, der bruges ved indlogning, fjernes.</long>
+      </locale>
+
+      <locale name="de">
+        <short>Smartcard-Entfernung</short>
+        <long>Setzen Sie dies auf »none« (nichts tun), »lock_screen« (Bildschirm sperren) oder »force_logout« (Abmelden erzwingen). Die Aktion wird ausgeführt, wenn die zum Anmelden benutzte Smartcard entfernt wird.</long>
+      </locale>
+
+      <locale name="el">
+        <short>Ενέργεια κατά την αφαίρεση της έξυπνης κάρτας (smartcard)</short>
+        <long>Ορίστε αυτό σε  &quot;none&quot;, &quot;lock_screen&quot;, or &quot;force_logout&quot;. Η ενέργεια αυτή θα πραγματοποιηθεί όταν η κάρτα που χρησιμοποιήθηκε για τη σύνδεση αφαιρεθεί.</long>
+      </locale>
+
+      <locale name="en@shaw">
+        <short>𐑕𐑥𐑭𐑮𐑑𐑒𐑭𐑮𐑛 𐑮𐑦𐑥𐑵𐑝𐑩𐑤 𐑨𐑒𐑖𐑩𐑯</short>
+        <long>𐑕𐑧𐑑 𐑞𐑦𐑕 𐑑 𐑢𐑳𐑯 𐑝 &quot;none&quot;, &quot;lock_screen&quot;, 𐑹 &quot;force_logout&quot;. 𐑞 𐑨𐑒𐑖𐑩𐑯 𐑢𐑦𐑤 𐑜𐑧𐑑 𐑐𐑼𐑓𐑹𐑥𐑛 𐑢𐑧𐑯 𐑞 𐑕𐑥𐑭𐑮𐑑𐑒𐑭𐑮𐑛 𐑿𐑕𐑑 𐑓𐑹 𐑤𐑪𐑜 𐑦𐑯 𐑦𐑟 𐑮𐑦𐑥𐑵𐑝𐑛.</long>
+      </locale>
+
+      <locale name="en_GB">
+        <short>Smartcard removal action</short>
+        <long>Set this to one of &quot;none&quot;, &quot;lock_screen&quot;, or &quot;force_logout&quot;. The action will get performed when the smartcard used for log in is removed.</long>
+      </locale>
+
+      <locale name="es">
+        <short>Acción al quitar la tarjeta inteligente</short>
+        <long>Establecer esto a una de las siguientes: «none» (ninguna), «lock_screen» (bloquear la pantalla) o «force_logout» (forzar la salida). La acción se realizará cuando se quite la tarjeta inteligente usada para iniciar sesión.</long>
+      </locale>
+
+      <locale name="et">
+        <short>Smartcardi eemaldamise tegevus</short>
+        <long>Määra selle väärtuseks &quot;none&quot; (puudub), &quot;lock_screen&quot; (lukustatakse ekraan) või &quot;force_logout&quot; (väljalogimise nõudmine). See tegevus käivitatakse, kui eemaldatakse smartcard, mida kasutati sisselogimiseks.</long>
+      </locale>
+
+      <locale name="eu">
+        <short>Smartcard kentzearen ekintza</short>
+        <long>Ezarri hauetariko bat: &quot;none&quot; (bat ere ez), &quot;lock_screen&quot; (blokeatu pantaila) edo &quot;force_logout&quot; (derrigortu saioa amaitzea). Ekintza landu egingo da saioa hasteko erabili den smartcard txartela kentzean.</long>
+      </locale>
+
+      <locale name="fr">
+        <short>Action quand la carte à puce est retirée</short>
+        <long>Définissez cette clé à l&apos;une des valeurs suivantes : « none » (aucune), « lock_screen » (verrouiller l&apos;écran) ou « force_logout » (forcer la déconnexion). Cette action est effectuée lorsque la carte à puce utilisée pour se connecter est retirée.</long>
+      </locale>
+
+      <locale name="gl">
+        <short>Acción ao extraer a tarxeta intelixente</short>
+        <long>Estabelecer isto a &quot;none&quot;, &quot;lock_screen&quot; ou &quot;force_logout&quot;. A acción levarase a cabo cando a tarxeta intelixente usada para iniciar a sesión se extraia.</long>
+      </locale>
+
+      <locale name="he">
+        <short>Smartcard removal action</short>
+        <long>Set this to one of &quot;none&quot;, &quot;lock_screen&quot;, or &quot;force_logout&quot;. The action will get performed when the smartcard used for log in is removed.</long>
+      </locale>
+
+      <locale name="hu">
+        <short>Intelligenskártya-eltávolítási művelet</short>
+        <long>Állítsa a „none” (semmi), „lock_screen” (képernyő zárolása) vagy „force_logout” (kijelentkeztetés) egyikére. A művelet a bejelentkezéshez használt intelligens kártya eltávolításakor kerül végrehajtásra.</long>
+      </locale>
+
+      <locale name="id">
+        <short>Aksi pencabutan smartcard</short>
+        <long>Isi dengan salah satu dari &quot;none&quot;, &quot;lock_screen&quot;, atau &quot;force_logout&quot;. Aksi akan dilakukan ketika smartcard yang dipakai untuk log masuk dicabut.</long>
+      </locale>
+
+      <locale name="it">
+        <short>Azione rimozione smartcard</short>
+        <long>Impostare questa chiave a &quot;none&quot;, &quot;lock_screen&quot; oppure &quot;force_logoout&quot;. L&apos;azione indicata viene eseguita quando si rimuove la smartcard usata per accedere.</long>
+      </locale>
+
+      <locale name="ja">
+        <short>スマートカードを抜いた時のアクション</short>
+        <long>&quot;none&quot;、&quot;lock_screen&quot;、あるいは &quot;force_logout&quot; のうちの一つを指定します。スマートカードがログインに使用されたり、取り出された場合にそのアクションが実行されます。</long>
+      </locale>
+
+      <locale name="ko">
+        <short>스마트카트 제거 동작</short>
+        <long>&quot;none&quot;, &quot;lock_screen&quot;, &quot;force_logout&quot; 중의 하나로 설정합니다. 로그인할 때 사용한 스마트카드를 제거했을 때 해당 동작을 수행합니다.</long>
+      </locale>
+
+      <locale name="lt">
+        <short>Lustinės kortelės išėmimo veiksmas</short>
+        <long>Galimos reikšmės: „none“, „lock_screen“ ir „force_logout“. Šis veiksmas bus vykdomas išėmus prisijungimui naudojamą lustinę kortelę.</long>
+      </locale>
+
+      <locale name="pa">
+        <short>ਸਮਾਰਟਕਾਰਡ ਹਟਾਉਣ ਕਾਰਵਾਈ</short>
+        <long>&quot;none (ਕੋਈ ਨਹੀਂ)&quot;, &quot;lock_screen (ਸਕਰੀਨ ਲਾਕ ਕਰੋ)&quot;, ਜਾਂ &quot;force_logout (ਧੱਕੇ ਨਾਲ ਲਾਗਆਉਟ)&quot; ਵਿੱਚੋਂ ਇੱਕ ਸੈੱਟ ਕਰੋ। ਇਹ ਕਾਰਵਾਈ ਕੀਤੀ ਜਾਵੇਗੀ, ਜਦੋਂ ਲਾਗਇਨ ਲਈ ਵਰਤਿਆ ਸਮਾਰਟ ਕਾਰਡ ਹਟਾਇਆ ਜਾਵੇਗਾ।</long>
+      </locale>
+
+      <locale name="pl">
+        <short>Czynność po wysunięciu karty smartcard</short>
+        <long>Należy ustawić na jedną z wartości: &quot;none&quot;, (nic) &quot;lock_screen&quot; (zablokowanie ekranu) lub &quot;force_logout&quot; (wymuszenie wylogowania). Czynność zostanie wykonana, kiedy użytkownik wysunie kartę smartcard użytą do zalogowania.</long>
+      </locale>
+
+      <locale name="pt">
+        <short>Acção ao remover o smartcard</short>
+        <long>Definir como um de &quot;none&quot;, &quot;lock_screen&quot;, ou &quot;force_logout&quot;. A acção será realizada quando o smartcard utilizado para iniciar sessão for removido.</long>
+      </locale>
+
+      <locale name="pt_BR">
+        <short>Ação de remoção de smartcard</short>
+        <long>Defina isto como &quot;none&quot;, &quot;lock_screen&quot;, ou &quot;force_logout&quot;. A ação irá se realizar quando o smartcard usado para se conectar for removido.</long>
+      </locale>
+
+      <locale name="ro">
+        <short>Acțiune la scoaterea smartcardului</short>
+        <long>Definiți această cheie la „none”, „lock_screen” sau „force_logout”. Acțiunea va fi efectuată când smartcardul utilizat la autentificare este scos.</long>
+      </locale>
+
+      <locale name="ru">
+        <short>Действие при извлечении смарт-карты</short>
+        <long>Установите в «none», «lock_screen» или «force_logout». Действие будет выполнено при извлечении смарт-карты, использовавшейся для входа в систему.</long>
+      </locale>
+
+      <locale name="sl">
+        <short>Dejanje odstranjevanja pametne kartice</short>
+        <long>Določiti je treba možnost &quot;none&quot; (brez), &quot;lock_screen&quot; (zakleni zaslon), ali pa &quot;force_logout&quot; (vsili odjavo). Dejanje bo izvedeno v trenutku, ko uporabnik odstrani pametno kartico uporabljeno za prijavo.</long>
+      </locale>
+
+      <locale name="sr">
+        <short>Радња пру уклањању паметне картице</short>
+        <long>Поставите на „none“ (ништа), „lock_screen“ (закључај екран) или „force_logout“ (приморај одјаву). Ове радње се примењују када се корисник пријављује путем паметне картице.</long>
+      </locale>
+
+      <locale name="sr@latin">
+        <short>Radnja pru uklanjanju pametne kartice</short>
+        <long>Postavite na „none“ (ništa), „lock_screen“ (zaključaj ekran) ili „force_logout“ (primoraj odjavu). Ove radnje se primenjuju kada se korisnik prijavljuje putem pametne kartice.</long>
+      </locale>
+
+      <locale name="sv">
+        <short>Åtgärd för utmatning av smartkort</short>
+        <long>Ställ in denna till en av &quot;none&quot;, &quot;lock_screen&quot; eller &quot;force_logout&quot;. Åtgärden kommer att genomföras när smartkortet som används för att logga in matas ut.</long>
+      </locale>
+
+      <locale name="ta">
+        <short>ஸ்மார்ட் கார்ட் நீக்க செயல்</short>
+        <long>இதை &quot;இல்லை&quot;, &quot;திரையை_பூட்டு&quot;, அல்லது &quot;வெளியேற்றத்தை_வலியுறுத்து&quot; ஆகியவற்றில் ஒண்றாக அமைக்கவும். உள்நுழைய பயன்படுத்திய ஸ்மார்ட் கார்டை  நீக்கினால் இந்த செயல் நிகழும்.</long>
+      </locale>
+
+      <locale name="zh_CN">
+        <short>智能卡移除动作</short>
+        <long>设置为“none”、“lock_screen”或“force_logout”之一。 当智能卡移除时，这个动作被执行。</long>
+      </locale>
+
+      <locale name="zh_HK">
+        <short>智慧卡移除動作</short>
+        <long>將它設定為「none」、「lock_screen」或「force_logout」之一。這個動作會在用來登入的智慧卡移除後執行。</long>
+      </locale>
+
+      <locale name="zh_TW">
+        <short>智慧卡移除動作</short>
+        <long>將它設定為「none」、「lock_screen」或「force_logout」之一。這個動作會在用來登入的智慧卡移除後執行。</long>
+      </locale>
+    </schema>
+  </schemalist>
+</gconfschemafile>

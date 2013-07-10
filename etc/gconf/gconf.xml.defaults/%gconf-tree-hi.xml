@@ -1,0 +1,3230 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="एसएमबी वर्कग्रुप">
+						<longdesc>Windows संजाल कार्यसमूह या डोमेन जिसका उपयोक्ता हिस्सा है. नये कार्यसमूह के पूरी तरह प्रभावी होने के लिये उपयोक्ता को लॉग आउट व लॉग बैक होने की जरूरत है.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="स्वचालित प्रॉक्सी विन्यास यूआरएल">
+						<longdesc>यूआरएल जो प्रॉक्सी विन्यास मूल्यों को प्रदान करते हैं.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="सॉक्स प्रॉक्सी पोर्ट">
+						<longdesc>मशीन पर पोर्ट पारिभाषित है &quot;/system/proxy/socks_host&quot; के द्वारा जिसके द्वारा आप प्रॉक्सी करते हैं.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="सॉक्स प्रॉक्सी होस्ट नाम">
+						<longdesc>मशीन नाम जिससे प्रॉक्सी सॉक्स किया जाना है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="एफ़टीपी प्रॉक्सी पोर्ट">
+						<longdesc>मशीन पर पोर्ट पारिभाषित है &quot;/system/proxy/ftp_host&quot; के द्वारा जिसके द्वारा आप प्रॉक्सी करते हैं.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="एफ़टीपी प्रॉक्सी होस्ट नाम">
+						<longdesc>मशीन नाम जिससे प्रॉक्सी एफ़टीपी किया जाना है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="सुरक्षित एचटीटीपी प्रॉक्सी पोर्ट">
+						<longdesc>मशीन पर पोर्ट पारिभाषित है &quot;/system/proxy/secure_host&quot; के द्वारा जिसके द्वारा आप प्रॉक्सी करते हैं.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="सुरक्षित एचटीटीपी प्रॉक्सी होस्ट नाम">
+						<longdesc>मशीन नाम जिससे प्रॉक्सी सिक्योर एचटीटीपी किया जाना है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="प्रॉक्सी विन्यास मोड">
+						<longdesc>प्रॉक्सी विन्यास मोड चुनें. समर्थित मूल्य हैं &quot;कुछ नहीं&quot;, &quot;हस्तचालित&quot;, &quot;स्वचालित&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="नॉन-प्रॉक्सी होस्ट्स">
+						<longdesc>यह कुंजी में मेजबानों की सूची शामिल है जो सीधे जुड़ा है, बजाय प्राक्सी से होकर (अगर .ह सक्रिय है). मान मेजबाननाम, डोमेन (using an initial wildcard like *.foo.com), IP मेजबान पता (दोनों IPv4 और IPv6) और नेटमास्क के साथ संजाल पता (कुछ इस तरह का 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="एचटीटीपी प्राक्सी पासवर्ड">
+						<longdesc>जब एचटीटीपी प्रॉक्सी कर रहे हों तो प्रामाणीकरण हेतु पास करने के लिए पासवर्ड.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="एचटीटीपी प्रॉक्सी उपयोगकर्तानाम">
+						<longdesc>जब एचटीटीपी प्रॉक्सी कर रहे हों तो प्रामाणीकरण हेतु पास करने के लिए उपयोगकर्ता नाम.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="प्रॉक्सी सर्वर कनेक्शन्स प्रामाणित करें">
+						<longdesc>अगर सही है, तब प्रॉक्सी सर्वर में संबंधन के लिये सत्यापन की जरूरत होती है. username/password कोंबो को &quot;/system/http_proxy/authentication_user&quot; औऱ &quot;/system/http_proxy/authentication_password&quot; के द्वारा परिभाषित होता है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="एचटीटीपी प्रॉक्सी पोर्ट">
+						<longdesc>मशीन पर पोर्ट पारिभाषित है &quot;/system/http_proxy/host&quot; के द्वारा जिसके द्वारा आप प्रॉक्सी करते हैं.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="एचटीटीपी प्रॉक्सी होस्ट नाम">
+						<longdesc>मशीन नाम जिससे प्रॉक्सी एचटीटीपी किया जाना है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="एचटीटीपी प्रॉक्सी उपयोग करें">
+						<longdesc>जब इंटरनेट पर एचटीटीपी एक्सेस किया जाए तो प्रॉक्सी विन्यास सक्षम करें.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="DNS-SD सेवा में देखने के लिये अतिरिक्त डोमेन">
+						<longdesc>DNS-SD डोमेन के कोमा से अलग सूची जिसे &quot;network:///&quot; स्थान में दृश्य होना चाहिये.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="स्थानीय DNS-SD सेवा कैसे दिखानी है">
+						<longdesc>संभावित मान हैं &quot;merged&quot;, &quot;separate&quot; और &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="tabs_open_position">
+						<local_schema short_desc="ब्राउज़र विंडोज़ कहाँ नए खुले टैब रखने हैं.">
+							<longdesc>यदि &quot;after_current_tab&quot; में सेट किया जाता है, तब नए टैब को मौजूदा टैब के बाद दाखिल किया जाता है. यदि &quot;end&quot; में सेट होता है, तब नए टैब को टैब सूची के अंत में जोड़ा जाता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_backup_files">
+						<local_schema short_desc="क्या बैकअप फ़ाइलें दिखाएँ">
+							<longdesc>अगर सही पर सेट किया जाता है, तब बैकअप फाइल जैसे कि Emacs द्वारा निर्मित दिखाया जाता है. ध्यानपूर्वक, सिर्फ फाइल जो (~) के रूप में समाप्त होती है को बैकअप फाइळ समझा जाता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="क्या छुपी फ़ाइलें दिखाएँ">
+							<longdesc>अगर सही पर सेट किया जाता है, तब छुपा फाइळ फाइल प्रबंधक में दिखाया गया. छुपी फाइले या तो dotfiles हैं या फोल्डर के .hidden फाइल में सूची बद्ध है.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>मेगाबाइट में कैश में लघुचित्रों की अधिकतम आयु. साफ किया जाना निष्क्रिय करने के लिए -1 पर सेट करें.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>दिनों में कैश में लघुचित्रों की अधिकतम आयु. साफ किया जाना निष्क्रिय करने के लिए -1 पर सेट करें.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="इनपुट फ़ीडबैक ध्वनि">
+							<longdesc>क्या इनपुट घटना पर ध्वनि बजाएँ या नहीं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="ध्वनि प्रसंग नाम">
+							<longdesc>घटना ध्वनि के प्रयोग के लिए XDG ध्वनि प्रसंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="घटनाओं हेतु ध्वनियाँ">
+							<longdesc>उपयोगकर्ता घटनाओं में ध्वनियाँ बजाएँ या नहीं</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="ईएसडी सक्षम करें">
+							<longdesc>ध्वनि सर्वर स्टार्टअप सक्षम करें.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="तयशुदा मिक्सर ट्रैक">
+							<longdesc>मल्टीमीडिया कुंजी बाइंडिंग के द्वारा प्रयुक्त तयशुदा मिक्सर ट्रैक.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="तयशुदा मदद युक्ति">
+							<longdesc>मल्टीमीडिया कुंजी बाइंडिंग के द्वारा प्रयुक्त तयशुदा मिक्सर युक्ति.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="फ़ाइल चिह्न प्रसंग">
+							<longdesc>फ़ाइल प्रतीक प्रदर्शित करने में प्रयुक्त प्रसंग.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="&apos;यूनीकोड नियंत्रण संप्रतीक&apos; मेनू दिखायें">
+							<longdesc>क्या प्रविष्टि और पाठ दृश्य का संदर्भ मेनू को नियंत्रण वर्ण बदलने के लिए प्रस्ताव दिया जाना चाहिए.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="&apos;इनपुट विधि&apos; मेनू दिखायें">
+							<longdesc>क्या प्रविष्टि और पाठ दृश्य का संदर्भ मेनू को इनपुट विधि बदलने के लिए प्रस्ताव दिया जाना चाहिए.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="मेनूबार त्वरक">
+							<longdesc>मेनूबार खोलने के लिये कुंजीपटल शॉर्टकट</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="जीटीके-फ़ाइल-चयनक हेतु मॉड्यूल">
+							<longdesc>GtkFileChooser विजेट के लिये फाइल तंत्र विधि के रूप में प्रयोग के लिए मॉड्यूल. &quot;gio&quot;, &quot;gnome-vfs&quot; और &quot;gtk+&quot; संभावित मान हैं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="स्थिति पट्टी दाएँ">
+							<longdesc>क्या स्थिति पट्टी मीटर दाहिने भाग में दिखाना चाहिए.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="अनुकूलित फ़ॉन्ट उपयोग करें">
+							<longdesc>क्या जीटीके+ में अनुकूलित फ़ॉन्ट उपयोग करना है</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="मोनोस्पेस फ़ॉन्ट">
+							<longdesc>मोनोस्पेस्ड (स्थिर-चौड़ाई) फ़ॉन्ट नाम जो टर्मिनल जैसे स्थानों पर प्रयुक्त होते हैं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="दस्तावेज फ़ॉन्ट">
+							<longdesc>दस्तावेज़ पढने के लिये प्रयुक्त तयशुदा फ़ॉन्ट का नाम.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="GTK IM मॉड्यूल">
+							<longdesc>इनपुट विधि मॉड्यूल का नाम जो जीटीके+ द्वारा प्रयुक्त होती है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="जीटीके आईएम स्थिति शैली">
+							<longdesc>जीटीके+ इनपुट विधि स्थिति शैली का नाम जो जीटीके+ द्वारा प्रयुक्त होता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="जीटीके आईएम प्री-एडिट शैली">
+							<longdesc>जीटीके+ इनपुट विधि प्री-एडिट शैली का नाम जो जीटीके+ द्वारा प्रयुक्त होता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="तयशुदा फ़ॉन्ट">
+							<longdesc>जीटीके+ द्वारा उपयोग किए जाने वाले तयशुदा फ़ॉन्ट का नाम</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="जीटीके+ प्रसंग">
+							<longdesc>जीटीके+ द्वारा उपयोग किए तयशुदा प्रसंग का बेसनाम.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="जीटीके+ प्रसंग">
+							<longdesc>जीटीके+ द्वारा उपयोग किए तयशुदा प्रसंग का बेसनाम.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="चिह्न प्रसंग">
+							<longdesc>फ़लक, नॉटिलस इत्यादि में उपयोग में लेने हेतु चिह्न प्रसंग</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="संकेतक टिमटिमाना समय">
+							<longdesc>कर्सर ब्लिंक चक्र, मिलीसेकेंड में</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="संकेतक टिमटिमाना">
+							<longdesc>क्या कर्सर टिमटिमाना चाहिए.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="उपकरण-पट्टी चिह्न आकार">
+							<longdesc>औज़ारपेटी में प्रतीक का आकार, या तो &quot;छोटी-औजारपेटी&quot; या &quot;बड़ी-औज़ारपेटी&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="पृथक करने योग्य उपकरण-पट्टी">
+							<longdesc>क्या उपयोक्ता औजारपट्टी अलग कर उन्हें आस-पास खिसका सकता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="पृथक करने योग्य उपकरण-पट्टी">
+							<longdesc>क्या उपयोक्ता मेन्यूपट्टी अलग कर उन्हें आस-पास खिसका सकता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="बटन प्रतीक रखने चाहिए">
+							<longdesc>क्या बटन को बटन पाठ के अलावे एक प्रतीक दिखाना चाहिए.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="मेनू में चिह्न हों">
+							<longdesc>क्या मेन्यू प्रविष्टि के बाजू से एक प्रतीक प्रदर्शित किया जाना चाहिए.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="उपकरण-पट्टी शैली">
+							<longdesc>औज़ारपट्टी शैली. वैध मूल्य हैं &quot;दोनों&quot;, &quot;दोनों_आड़े&quot;, &quot;प्रतीक&quot;, तथा &quot;पाठ&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="त्वरक को परिवर्तित कर सकता है">
+							<longdesc>क्या उपयोक्ता गतिशील रूप से नया त्वरक टाइप कर सकता है जब सक्रिय मेन्यू मद पर रखा जाता होता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="मेनू अलग करने योग्य हों">
+							<longdesc>क्या मेन्यू अलग करने योग्य होना चाहिए.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="एनीमेशन सक्षम करें">
+							<longdesc>क्या एनीमेशन्स प्रदर्शित किए जाएँ. टीपः यह एक वैश्विक कुंजी है, यह विंडो प्रबंधक, प़लक इत्यादि के व्यवहार को परिवर्तित करता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="एक्सेसिबिलिटी सक्षम">
+							<longdesc>क्या अनुप्रयोग में पहुँच समर्थन होना चाहिए.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="रंग आभा प्रकार">
+							<longdesc>पृष्ठभूमि रंग कैसे छायांकित करें. &quot;क्षैतिज-ढाल&quot;, &quot;लंबवत-ढाल&quot;, और &quot;ठोस&quot; संभावित मान हैं</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="द्वैतीयक रंग">
+							<longdesc>दायाँ या तल रंग जब अनुपात आरेखित किए जाएँ, ठोस रंगों में प्रयुक्त नहीं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="प्राथमिक रंग">
+							<longdesc>बायाँ या शीर्ष रंग जब अनुपात आरेखित किए जाएँ, या ठोस रंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="छवि अपारदर्शिता">
+							<longdesc>अपारदर्शिता जिससे पृष्ठभूमि छवि आरेखित करनी है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="छवि फ़ाइल नाम">
+							<longdesc>पृष्ठभूमि छवि में उपयोग हेतु फ़ाइल</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="छवि विकल्प">
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="डेस्कटॉप पृष्ठभूमि आरेखित करें">
+							<longdesc>गनोम को डेस्कटॉप पृष्ठभूमि आरेखित करने दें</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="सभी बाहरी थम्बनेलर्स अक्षम करें">
+							<longdesc>सभी बाह्य थंबनेलर प्रोग्राम को निष्क्रिय करने के लिये सही वे स्वतंत्र रूप से निष्क्रिय हैं या नहीं</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="application@x-font-otf">
+						<entry name="enable">
+							<local_schema short_desc="क्या ओपन टाइप फ़ॉन्ट्स की लघु छवि बनाएँ">
+								<longdesc>यदि सही पर नियत किया जाता है, ओपन-टाइप फ़ॉन्ट्स की लघु छवियाँ बनाई जाएंगी.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="ओपन टाइप फ़ॉन्ट्स हेतु लघु छवि बनाने के कमांड">
+								<longdesc>इस कुंजी को ओपन टाइप फ़ॉन्ट्स के लघु छवि बनाने के कमांड हेतु नियत करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-pcf">
+						<entry name="enable">
+							<local_schema short_desc="क्या पीसीएफ़ फ़ॉन्ट्स की लघु छवि बनाएँ">
+								<longdesc>यदि सही पर नियत किया जाता है, पीसीएफ़ फ़ॉन्ट्स की लघु छवियाँ बनाई जाएंगी.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="पीसीएफ़ फ़ॉन्ट्स हेतु लघु छवि बनाने के कमांड">
+								<longdesc>इस कुंजी को पीसीएफ़ फ़ॉन्ट्स के लघु छवि बनाने के कमांड हेतु नियत करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-type1">
+						<entry name="enable">
+							<local_schema short_desc="क्या टाइप 1 फ़ॉन्ट्स की लघु छवि बनाएँ">
+								<longdesc>यदि सही पर नियत किया जाता है, टाइप1 फ़ॉन्ट्स की लघु छवियाँ बनाई जाएंगी.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="टाइप1 फ़ॉन्ट्स हेतु लघु छवि कमांड्स">
+								<longdesc>इस कुंजी को टाइप1 फ़ॉन्ट्स के लघु छवि बनाने के कमांड हेतु नियत करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-ttf">
+						<entry name="enable">
+							<local_schema short_desc="क्या ट्रू टाइप फ़ॉन्ट्स की लघु छवि बनाएँ">
+								<longdesc>यदि सही पर नियत किया जाता है, ट्रू-टाइप फ़ॉन्ट्स की लघु छवियाँ बनाई जाएंगी.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="ट्रू टाइप फ़ॉन्ट्स हेतु लघु छवि बनाने के कमांड">
+								<longdesc>इस कुंजी को ट्रू टाइप फ़ॉन्ट्स के लघु छवि बनाने के कमांड हेतु नियत करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="कुंजीपटल तालाबंद सक्षम किया जाए या नहीं">
+							<longdesc>कुंजीपटल तालाबंद सक्षम किया जाए या नहीं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="ब्रेक स्थगित करना स्वीकारें">
+							<longdesc>टाइपिंग ब्रेक स्क्रीन स्थगित किया जाए या नहीं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="ब्रेक समय">
+							<longdesc>टाइपिंग ब्रेक इतने मिनट तक चले</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="टाइप समय">
+							<longdesc>ब्रेक मोड प्रारंभ होने से पहले का टाइपिंग समय मिनटों में</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="यूआरएल और MIME प्रकार नियंत्रक निष्क्रिय करें">
+							<longdesc>किसी URL अथवा MIME प्रकार नियंत्रक अनुप्रयोग का चलाया जाना रोकें.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="लॉक स्क्रीन निष्क्रिय करें">
+							<longdesc>इस उपयोक्ता को अपना स्क्रीन लॉक करने से रोकें.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="उपयोक्ता परिवर्तन निष्क्रिय करें">
+							<longdesc>उपयोक्ता को किसी दूसरे खाते में जाना रोकें जब यह सत्र सक्रिय है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="मुद्रण सेटअप अक्षम करें">
+							<longdesc>उपयोगकर्ता को मुद्रण विन्यास में परिवर्धन करने से रोकें. उदाहरण के लिए, यह सभी अनुप्रयोगों के &quot;मुद्रण सेटअप&quot; संवादों पर पहुँच को अक्षम कर देता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="मुद्रण अक्षम करें">
+							<longdesc>उपयोगकर्ता को मुद्रण से रोकें. उदाहरण के लिए, यह सभी अनुप्रयोगों के &quot;मुद्रण&quot; संवादों पर पहुँच को अक्षम कर देता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="डिस्क पर फ़ाइलें सहेजना अक्षम करें">
+							<longdesc>उपयोगकर्ता को डिस्क में फ़ाइल सहेजने से रोकें. उदाहरण के लिए, यह सभी अनुप्रयोगों के &quot;इस रूप में सहेजें&quot; संवादों पर पहुँच को अक्षम कर देता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="कमांड पंक्ति अक्षम करें">
+							<longdesc>उपयोगकर्ता को टर्मिनर पर पहुँच से या कमांड लाइन चलाने से रोकें. उदाहरण के लिए, यह फ़लक के &quot;अनुप्रयोग चलाएँ&quot; संवाद पर पहुँच को अक्षम कर देता है.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="session">
+					<entry name="required_components_list">
+						<local_schema short_desc="जरूरी सत्र घटक">
+							<longdesc>घटकों की सूची जो कि सत्र के हिस्से के रूप में जरूरी है. (Each element names a key under &quot;/desktop/gnome/session/required_components&quot;). स्टार्टअप अनुप्रयोग वरीयताएँ औजार उपयोक्ता को सामान्यतः अनुमति नहीं देगी सत्र से किसी जरूरी घटकों को हटाने के लिए, और सत्र प्रबंधक स्वतः जरूरी घटकोंको जोड़ेगा सत्र में लॉगिन समय पर यदि वे हटाए जाते हैं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_session">
+						<local_schema short_desc="तयशुदा सत्र">
+							<longdesc>अनुप्रयोग की सूची जो तयशुदा सत्र का हिस्सा है</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="idle_delay">
+						<local_schema short_desc="सत्र के निष्क्रिय माने जाने के पहले का समय">
+							<longdesc>सत्र के निष्क्रिय समझे जाने के पहले निष्क्रियता के मिनट की संख्या.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="required_components">
+						<entry name="filemanager">
+							<local_schema short_desc="फ़ाइल प्रबंधक">
+								<longdesc>यह फाइल प्रबंधक डेस्कटॉप प्रतीक देता है और अपनी सहेजी फाइलों से अंतःक्रिया करने की स्वीकृति देता है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="panel">
+							<local_schema short_desc="पटल">
+								<longdesc>यह पटल स्क्रीन के ऊपर या नीचे पट्टी देता है जिसमें मेन्यू, विंडो सूची, स्थिति प्रतीक, घड़ी आदि समाहित किए है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="windowmanager">
+							<local_schema short_desc="विन्डो मैनेजर">
+								<longdesc>यह विंडो प्रबंधक वह प्रोग्राम है जो विंडो के गिर्द शीर्षक पट्टी और किनारा बनाता है और आपको विंडो को खिसकाने व फिर आकार देने की छूट देता है.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="font_rendering">
+					<entry name="rgba_order">
+						<local_schema short_desc="RGBA क्रम">
+							<longdesc>किसी LCD स्क्रीन पर उपपिक्सेल तत्व के क्रम में; केवल तभी प्रयुक्त दब एंटीएलियांसिंग &quot;rgba&quot; पर सेट है. संभावित मान हैं), &quot;bgr&quot; for blue on left, &quot;vrgb&quot; for red on top, &quot;vbgr&quot; for red on bottom.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hinting">
+						<local_schema short_desc="हिंटिंग">
+							<longdesc>फ़ॉन्ट रेंडर किए जाने के लिए प्रयोग के लिए हिंटिंग का प्रकार. संभावित मान हैं: &quot;none&quot; हिंटिंग के लिए नहीं, &quot;slight&quot; आधारभूत के लिए, &quot;medium&quot; मध्यवर्तियों के लिए, और &quot;full&quot; अधिकतम हिंटिंग के लिए (किसी अक्षर प्रारूप के कारण विरूपता है).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="antialiasing">
+						<local_schema short_desc="एंटीएलियासिंग">
+							<longdesc>प्रयोग के लिए एंटीएलियासिंग जब फ़ॉन्ट रेंडरिंग किया जाता है. संभावित मान हैं: &quot;none&quot; किसी एंटीएलियासिंग के लिए नहीं, &quot;grayscale&quot; मानक ग्रेस्केलिंग एंटीएलियासिंग के लिए, और &quot;rgba&quot; उपपिक्सेल एंटीएलियासिंग (LCD केवल स्क्रीन से).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="dpi">
+						<local_schema short_desc="DPI">
+							<longdesc>फॉन्ट आकार को पिक्सेल आकार में फॉन्ट आकार को बदलने के लिए प्रयोग.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="मददगार तकनॉनाज़ी अनुप्रयोगों को प्रारंभ करें">
+								<longdesc> गनोम डेस्कटॉप में लॉगिंग के दौरान आरंभ करने के लिए मददगार तकनीक अनुप्रयोगों की सूची.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>जब परिवर्धक दबाया जाता है तो बीप करें</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>यदि दो कुंजियाँ एक साथ दबाई जाएँ तो अक्षम करें</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="न्यूनतम अंतराल मिलीसेकेंड में">
+								<longdesc>बतौर दबाए गए रूप में कोई कुंजी स्वीकारें नहीं करें जब तक कि @delay मिलिसेकेंड के लिए रोका नहीं जाए.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="आरंभिक विलम्ब मिलीसेकेंड में">
+								<longdesc>माउस गतिविधि कुंजी के कार्य करना प्रारंभ करने से पहले कितने मिलीसेकेंड तक प्रतीक्षा करें.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="मिलीसेकेंड में कितना त्वरण करें">
+								<longdesc>0 से अधिकतम गति तक पहुँचने में यह कितना मिलीसेकेंड लेता है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="पिक्सेल प्रति सेकेंड">
+								<longdesc>अधिकतम गति पर कितने पिक्सेल प्रति सेकेंड चलाना है</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="न्यूनतम अंतराल मिलीसेकेंड में">
+								<longdesc>@delay मिलीसेकेंड के अंदर  _same_ key का कई बार दबाए जाना अनदेखा करें.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_enable">
+							<local_schema short_desc="माउस कुंजी">
+								<longdesc>क्या माउस कुंजी कुंजीपट की पहुँच वरीयताएँ चालू किया है</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_enable">
+							<local_schema short_desc="धीमी कुंजी">
+								<longdesc>क्या धीमा कुंजी कुंजीपट पहुँच विशेषताएँ चालू की जानी है</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_enable">
+							<local_schema short_desc="उछलती (बाउंस) कुंजियाँ">
+								<longdesc>क्या कुंजी कुंजीपट की एक्सेसिबिलिटी वरीयताएँ चालू किया है</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_enable">
+							<local_schema short_desc="चिपकती कुंजी">
+								<longdesc>क्या स्टिकी कुंजी कुंजीपट पहुँच विशेषताएँ चालू की जानी है</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="keybindings">
+					<entry name="allowed_keys">
+						<local_schema short_desc="अनुमति प्राप्त कुंजी">
+							<longdesc>यदि गैर रिक्त है, कीबाइंडिंग को अनदेखा किया जाएगा जब तक उनकी GConf निर्देशिका सूची में नहीं है. यह लॉकडाउन के लिए उपयोगी है.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="onscreenkeyboard">
+						<entry name="action">
+							<local_schema short_desc="ऑनस्क्रीन कुंजीपट टॉगल करें">
+								<longdesc>ऑन स्क्रीन कुंजीपटल के चालू या बंद करने के लिए प्रयुक्त कमांड.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="ऑनस्क्रीन कुंजीपट टॉगल करें">
+								<longdesc>ऑन-स्क्रीन कुंजीपट टॉगल करने के लिए बाइंडिंग.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="ऑनस्क्रीन कुंजीपटल टॉगल करने के लिए कुंजीपटल शॉर्टकट का नाम">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="screenreader">
+						<entry name="action">
+							<local_schema short_desc="स्क्रीनपाठक टॉगल करें">
+								<longdesc>स्क्रीन रीडर को चालू या बंद करने के लिए प्रयुक्त कमांड.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="स्क्रीन रीडर टॉगल करने के लिए कुंजीपट शॉर्टकट का नाम.">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="स्क्रीनपाठक टॉगल करें">
+								<longdesc>स्क्रीन रीडर टॉगल करने के लिए बाइंडिंग.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="magnifier">
+						<entry name="action">
+							<local_schema short_desc="आवर्धक टॉगल करें">
+								<longdesc>आवर्द्धक के चालू या बंद करने के लिए प्रयुक्त कमांड.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="आवर्द्धक टॉगल करने के लिए कुंजीपटल शॉर्टकट का नाम">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="आवर्धक टॉगल करें">
+								<longdesc>आवर्द्धक टॉगल करने के लिए बाइंडिंग.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;h323&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;h323&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;h323&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;h323&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;callto&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;callto&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;callto&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;callto&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;aim&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;aim&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;aim&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;aim&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;mailto&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;mailto&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;mailto&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;mailto&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;https&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;https&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;https&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;https&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;http&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;http&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;http&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;http&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;man&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;man&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;man&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;man&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;info&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;info&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;info&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;info&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;ghelp&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;ghelp&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;ghelp&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;ghelp&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="प्रोग्राम टर्मिनल में चलाएँ">
+								<longdesc>सही यदि प्रोग्राम जो इस प्रकार के यूआरएल को हैंडल करने का अभ्यस्त है उसे टर्मिनल में चलाया जाना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="&quot;trash&quot; URLs के लिये नियंत्रक">
+								<longdesc>&quot;trash&quot; URLs के नियंत्रण के लिये प्रयुक्त कमांड, अगर सक्रिय किया गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="क्या निर्दिष्ट कमांड को &quot;trash&quot; URLs का नियंत्रण करना चाहिये">
+								<longdesc>सही अगर &quot;command&quot; कुंजी में निर्दिष्ट कमांड को &quot;trash&quot; URLs का नियंत्रण करना चाहिये.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="कार्य के लिए टर्मिनल की आवश्यकता है">
+								<longdesc>क्या तयशुदा कार्य अनुप्रयोग चलाने के लिए टर्मिनल की आवश्यकता है</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="तयशुदा कार्य">
+								<longdesc>तयशुदा कार्य अनुप्रयोग</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="पंचांग को टर्मिनल की जरूरत है">
+								<longdesc>क्या तयशुदा पंचांग अनुप्रयोग चलाने के लिए टर्मिनल की आवश्यकता है</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="तयशुदा पंचांग">
+								<longdesc>तयशुदा पंचांग अनुप्रयोग</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="कार्यस्थानों के नाम (पदावनत)">
+								<longdesc>प्रथम विंडो प्रबंधक कार्यस्थानों के नाम सहित सूची. इस कुंजी को GNOME 2.12 के बाद पदावनत किया जा रहा है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="कार्यस्थानों की संख्या (पदावनत)">
+								<longdesc>कार्यस्थानों की संख्या जिसका उपयोग विंडो प्रबंधक प्रयोग करेगा. इस कुंजी को GNOME 2.12 के बाद पदावनत किया जा रहा है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="उपयोगकर्ता विंडो प्रबंधक (पदावनत)">
+								<longdesc>विंडो प्रबंधक को पहले कोशिश करनी चाहिये. इस कुंजी को GNOME 2.12 के बाद पदावनत किया गया है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="फालबैक विंडो प्रबंधक (पदावनत)">
+								<longdesc>यदि उपयोगकर्ता विंडो प्रबंधक नहीं मिलेगा तो फ़ालबैक विंडो प्रबंधक पाया नहीं जा सकता. इस कुंजी को GNOME 2.12 के बाद पदावनत किया जा रहा है.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="ब्राउज़र रिमोट को समझता है">
+								<longdesc>क्या तयशुदा ब्राउज़र नेटस्केप दूरस्थ को समझता है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="ब्राउज़र को टर्मिनल की आवश्यकता है">
+								<longdesc>क्या तयशुदा ब्राउज़र चलाने के लिए टर्मिनल की आवश्यकता है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="तयशुदा ब्राउज़र">
+								<longdesc>सभी यूआरएल के लिए तयशुदा ब्राउज़र.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<entry name="screen_reader_enabled">
+							<local_schema short_desc="स्क्रीन रीडर">
+								<longdesc>क्या स्क्रीन रीडर चालू किया हुआ है</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_magnifier_enabled">
+							<local_schema short_desc="स्क्रीन आवर्द्धक">
+								<longdesc>क्या स्क्रीन आवर्द्धक चालू किया हुआ है</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_keyboard_enabled">
+							<local_schema short_desc="ऑनस्क्रीन कुंजीपटल">
+								<longdesc>क्या ऑनस्क्रीन कुंजीपट चालू किया हुआ है</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="पसंदीदा गतिशीलता मददगार तकनीक अनुप्रयोग आरंभ करें">
+									<longdesc>लॉगिन के दौरान पसंदीदा गतिशीलता मददगार तकनीक अनुप्रयोग आरंभ करने के लिए गनोम.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="पसंदीदा गतिशीलता मददगार तकनीक अनुप्रयोग">
+									<longdesc>लॉगिन, मेन्यू, या कमांड लाइन के लिए प्रयोग किए जाने के लिए पसंदीदा गतिशीलता मददगार तकनीक अनुप्रयोग.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="पसंदीदा दृष्टि मददगार तकनीक अनुप्रयोग आरंभ करें">
+									<longdesc>लॉगिन के दौरान पसंदीदा दृष्टि मददगार तकनीक अनुप्रयोग आरंभ करने के लिए गनोम.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="पसंदीदा दृष्टि मददगार तकनीक अनुप्रयोग">
+									<longdesc>लॉगिन, मेन्यू, या कमांड लाइन के लिए प्रयोग किए जाने के लिए पसंदीदा दृष्टि मददगार तकनीक अनुप्रयोग.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="डिफ़ॉल्ट अवयव प्रदर्शक अनुप्रयोग">
+								<longdesc>फाइल देखने के लिये प्रयोगार्थ अनुप्रयोग जो उनको देखने के लिये एक घटक की जरूरत समझता है. पैरामीटर %s फाइल URIs के द्वारा प्रतिस्थापित होगा, पैरामीटर %c को घटक IID से विस्थापित किया जायेगा.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="ईएक्सईसी आर्गुमेंट्स">
+								<longdesc>&apos;exec&apos; कुंजी के द्वारा परिभाषित टर्मिनल में प्रोग्राम निष्पादन के लिये तर्क.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="टर्मिनल अनुप्रयोग">
+								<longdesc>प्रयोग के लिए टर्मिनल प्रोग्राम जब अनुप्रयोग आरंभ किए जाए जिसके लिए किसी एक की जरूरत होती है.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="संकेतक आकार">
+								<longdesc>cursor_theme के द्वारा संदर्भित कर्सर का आकार.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="संकेतक प्रसंग">
+								<longdesc>कर्सर थीम का नाम. Xservers के द्वारा सिर्फ प्रयुक्त जो Xcursor का समर्थन करता है, जैसे कि XFree86 4.3 और पश्चातवर्ती.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="संकेतक फ़ॉन्ट">
+								<longdesc>कर्सर का फंट नाम. अगर सेट नहीं है तो मूलभूत फंट प्रयोग किया जाता है. यह मान हर सत्र के सिर्फ X सर्वर में भेजा जाता है, ताकि इसे बदलना कोई प्रभाव नहीं लाये जब कि आप अगली बार लॉगिन नहीं करते.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="संकेतक का पता लगाएँ">
+								<longdesc>संकेतक का मौजूदा स्थान आलोकित करें जब नियंत्रण कुंजी दबाया और छोड़ा जाता है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="डबल क्लिक समय">
+								<longdesc>दोहरे क्लिक का अंतराल.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="ड्रैग थ्रेशोल्ड">
+								<longdesc>खींचे जाने के प्रारंभ होने से पहले दूरी.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="गति थ्रेशोल्ड">
+								<longdesc>पिक्सेल में दूरी संकेतक को त्वरित माउस गति के शुरू बोने के पहले बढना चाहिये.-1 मान सिस्टम मूलभूत है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="एकल क्लिक">
+								<longdesc>माउस गति हेतु त्वरक गुणक. मूल्य -1 तंत्र तयशुदा है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="एकल क्लिक">
+								<longdesc>प्रतीक खोलने के लिए एकल क्लिक.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="माउस बटन दिशा-विन्यास">
+								<longdesc>वाम-हस्त माउस के लिए बायाँ तथा दाहिना माउस बटन अदला-बदली करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="touchpad">
+						<entry name="horiz_scroll_enabled">
+							<local_schema short_desc="क्षैतिज स्क्रॉलिंग सक्रिय करें">
+								<longdesc>इसे सही पर सेट करें क्षैतिज स्क्रॉलिंग को अनुमति देने के लिए उसी विधि से जो scroll_method कुंजी से चुनी जाती है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_method">
+							<local_schema short_desc="टचपैड स्क्रॉल विधि चुनें">
+							</local_schema>
+						</entry>
+						<entry name="tap_to_click">
+							<local_schema short_desc="टचपैड के साथ माउस क्लिक सक्रिय करें">
+								<longdesc>इसे सही पर सेट करें माउस क्लिक को टचपैड पर टैपिंग करके क्लिक करके.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="disable_while_typing">
+							<local_schema short_desc="टाइपिंग के दौरान टचपैड दिखाएँ">
+								<longdesc>इसे सही पर सेट करें यदि आपको टाइपिंग के दौरान अचानक से टतपैड को हिट करने की समस्या है.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="NumLock स्थिति याद रखें">
+								<longdesc>जब सही पर सेट किया जाये, GNOME NumLock LED की स्थिति को सत्रों के बीच याद रखेगा.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="कुंजीपटल घंटी अनुकूलित फ़ाइलनाम">
+								<longdesc>बजाई जाने वाली घंटी की ध्वनि का फ़ाइल नाम.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>संभावित मूल्य हैं &quot;चालू&quot;, &quot;बन्द&quot;, तथा &quot;अनुकूलित&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="indicator">
+							<entry name="enabledPlugins">
+								<local_schema short_desc="कुंजीपटल सूचक प्लगइन्स सक्रिय किये हुये की सूची">
+									<longdesc>कुंजीपटल सूचक प्लगइन्स सक्रिय किये हुये की सूची</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="showFlags">
+								<local_schema short_desc="ध्वज में एप्लेट देखें">
+									<longdesc>वर्तमान अभिन्यास को सूचित करने हेतु एप्लेट में ध्वज दिखाएँ</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="secondary">
+								<local_schema short_desc="सहायक समूह">
+									<longdesc>सहायक समूह</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="preview">
+							<entry name="height">
+								<local_schema short_desc="कुंजीपटल पूर्वावलोकन ऊँचाई">
+									<longdesc>कुंजीपटल पूर्वावलोकन ऊँचाई</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="width">
+								<local_schema short_desc="कुंजीपटल पूर्वावलोकन चौड़ाई">
+									<longdesc>कुंजीपटल पूर्वावलोकन चौड़ाई</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="y">
+								<local_schema short_desc="कुंजीपटल पूर्वावलोकन ऊँचाई, Y offset">
+									<longdesc>कुंजीपटल पूर्वावलोकन ऊँचाई, Y offset</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="x">
+								<local_schema short_desc="कुंजीपटल पूर्वावलोकन, X offset">
+									<longdesc>कुंजीपटल पूर्वावलोकन, X offset</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="general">
+							<entry name="disable_sysconfig_changed_warning">
+								<local_schema short_desc="&quot;X sysconfig changed&quot; चेतावनी संदेश दबायें">
+									<longdesc>&quot;X sysconfig changed&quot; चेतावनी संदेश दबायें</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="loadExtraItems">
+								<local_schema short_desc="अतिरिक्त विन्यास मद लोड करें">
+									<longdesc>अनोखा और कभी कभी प्रयुक्त लेआउट व विकल्प लोड करें</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layoutNamesAsGroupNames">
+								<local_schema short_desc="समूह नाम के बजाय लेआउट नाम दिखायें">
+									<longdesc>समूह नाम के बजाय लेआउट नाम दिखायें (सिर्फ XFree समर्थित बहुल लेआउट के संस्करण के लिये)</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="handleIndicators">
+								<local_schema short_desc="लेआउट समूह के साथ संकेतक सहेजें/पुनर्भंडारित करें">
+									<longdesc>लेआउट समूह के साथ संकेतक सहेजें/पुनर्भंडारित करें</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="groupPerWindow">
+								<local_schema short_desc="प्रति विंडो अलग समूह रखे व प्रबंधित करें">
+									<longdesc>प्रति विंडो अलग समूह रखे व प्रबंधित करें</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="defaultGroup">
+								<local_schema short_desc="मूलभूत समूह विंडो निर्माण पर नियत">
+									<longdesc>मूलभूत समूह विंडो निर्माण पर नियत</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="known_file_list">
+								<local_schema short_desc="modmap फाइल सूची">
+									<longdesc>$HOME निर्देशिका में उपलब्ध मोडमैप फाइल की सूची.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="update_handlers">
+								<local_schema short_desc="कुंजीपटल अपडेट नियंत्रक">
+									<longdesc>जबभी कुंजीपटल स्थिति फिर लोड होती है स्क्रिप्ट का एक संग्रह चलाने के लिये</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="kbd">
+							<entry name="options">
+								<local_schema short_desc="कुंजीपटल विकल्प">
+									<longdesc>कुंजीपटल विकल्प</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layouts">
+								<local_schema short_desc="कुंजीपटल अभिन्यास">
+									<longdesc>कुंजीपटल अभिन्यास</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="model">
+								<local_schema short_desc="कुंजीपटल मॉडल">
+									<longdesc>कुंजीपटल मॉडल</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="rotate">
+						<local_schema short_desc="खड़े पटल पर घुमाएँ">
+							<longdesc>यदि सत्य है, तो मछली का एनिमेशन खड़े पटल पर घुमाया हुआ दिखाया जाएगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed">
+						<local_schema short_desc="प्रति फ्रेम में रुकें">
+							<longdesc>यह कुंजी निर्दिष्ट करती है कि प्रत्येक फ्रेम कितने सेकण्ड्स तक प्रदर्शित हो.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="frames">
+						<local_schema short_desc="मछली एनीमेशन में फ्रेम्स">
+							<longdesc>यह कुंजी निर्दिष्ट करती है कि मछली के एनीमेशन हेतु कितने फ्रेम की संख्या प्रदर्शित होगी.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="क्लिक करने पर चलाया जाने वाला कमांड">
+							<longdesc>यह कुंजी निर्दिष्ट करती है कि कौन सा कमांड चलाना है, जब मछली को क्लिक किया जाए.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="image">
+						<local_schema short_desc="मछली के एनीमेशन हेतु पिक्समैप">
+							<longdesc>यह कुंजी pixmap के फाइलनाम को निर्दिष्ट करती है जो कि फिश एप्पलेट में प्रदर्शित एनीमेशन के लिये प्रयोग किया जायेगा pixmap निर्देशिका के सापेक्ष.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="मछली का नाम">
+							<longdesc>बिना नाम वाली मछली तो बहुत सुस्त होगी. इसका कोई प्यारा सा नाम देकर इसमें जीवन भरें.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="अधिकतम विंडो सूची आकार">
+							<longdesc>इस कुंजी का प्रयोग GNOME 2.20 में पदावनत किया गया था. स्कीमा को सुसंगतता के लिये पुराने संस्कऱण के साथ बनाये रखा जाता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="न्यूतम विंडो सूची आकार">
+							<longdesc>इस कुंजी का प्रयोग GNOME 2.20 में पदावनत किया गया था. स्कीमा को सुसंगतता के लिये पुराने संस्कऱण के साथ बनाये रखा जाता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_unminimized_windows">
+						<local_schema short_desc="बड़ा करने पर विंडोज़ को वर्तमान कार्यस्थान में ले जाएँ">
+							<longdesc>यदि सत्य है, तो विंडो बड़ा करने पर वर्तमान कार्यस्थान पर खिसकाएगा, अन्यथा विंडो के कार्यस्थान को स्विच करेगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="group_windows">
+						<local_schema short_desc="विंडोज़ को कब समूहबद्ध करें">
+							<longdesc>तय करता है कि विंडो को कब समूह बद्ध करें विंडो सूची के एक ही प्रकार के अनुप्रयोगों में से. सही मूल्य हैं &quot;कभी नहीं&quot;, &quot;स्वचालित&quot; तथा &quot;हमेशा&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="सभी कार्यस्थान से विंडोज़ दिखाएँ">
+							<longdesc>यदि सत्य है, तो विंडो सूची सभी कार्यस्थान से विंडोज़ दिखाएगा. अन्यथा यह वर्तमान कार्यस्थान से विंडो दिखाएगा.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="एनीमेशन गति">
+							<longdesc>गति जिससे पैनल एनीमेशन आना चाहिये. संभावित मान हैं &quot;slow&quot;, &quot;medium&quot; और &quot;fast&quot;. यह कुंजी तभी महत्वपूर्ण है अगर enable_animations कुंजी सही है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide_size">
+						<local_schema short_desc="जब छुपा हो तो दृष्टिमय पिक्सेल्स">
+							<longdesc>दृश्यान पिक्सेल की संख्या निर्दिष्ट करता है जब पैनल स्वतः कोने में छुपाया जाता है. यह तभी संदर्भ रखती है अगर auto_hide कुंजी सत्य है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unhide_delay">
+						<local_schema short_desc="पटल स्वचालित-दिखें देरी">
+							<longdesc>संकेतक के पैनल में पहुंचने के बाद मिलीसेकेंड की संख्या निर्दिष्ट करता हैइससे पहले कि पैनल स्वतः दिख जाता है. यह कुंजी तभी संदर्भ रखती है अगर auto_hide कुंजी सही है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hide_delay">
+						<local_schema short_desc="पटल स्वचालित-छुपें देरी">
+							<longdesc>संकेतक के पैनल को छोड़ने के बाद मिलीसेकेंड की संख्या निर्दिष्ट करता हैइससे पहले कि पैनल स्वतः छुप जाता है. यह कुंजी तभी संदर्भ रखती है अगर auto_hide कुंजी सही है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_arrows">
+						<local_schema short_desc="छुपाने वाले बटन में तीर सक्षम करें ( _w) ">
+							<longdesc>अगर सही है, तीर को हाइड बटन पर रखा जायेगा. यह कुंजी तभी संदर्भित है अगर enable_buttons कुंजी सही है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="बटन छुपाना सक्षम करें">
+							<longdesc>अगर सही है, पैनल के हर साइड में बटन रखा जायेगा जो पैनल को स्क्रीन के किनारे खिसकाने के लिये प्रयोग किया जायेगा, सिर्फ एक बटन को दिखाते हुये.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="एनिमेशन सक्षम करें">
+							<longdesc>यदि सत्य है, फ़लक को छुपाया जाना और दिखाया जाना एनीमेट किया जाएगा बजाए इसके कि ऐसा तत्क्षण हो.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide">
+						<local_schema short_desc="फ़लक को कोने में स्वचालित छुपाएँ">
+							<longdesc>अगर सही है, पैनल स्क्रीन के कोने में स्वतः छुप जायेगा जब संकेतक पैनल क्षेत्र को छोड़ता है. कोने में संकेतक को फिर से ले जाना पैनल के फिर से आने का कारण बनेगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_centered">
+						<local_schema short_desc="y-अक्ष पर केंद्र पटल">
+							<longdesc>अगर सही है, y कुंजी और y_bottom कुंजी अनदेखा किया जाता है और पैनल को y-अक्ष पर स्क्रीन के रखा जाता है. अगर पैनल को फिर आकार दिया जाता है तो यह पोजीशन पर रहेगा- यानी. पैनल दोनों ओर बढेगा. अगर गलत है, y कुंजी और y_bottom कुंजी पैनल की अवस्थिति को दिखाता है .</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_centered">
+						<local_schema short_desc="एक्स-अक्ष पर केंद्र पटल">
+							<longdesc>अगर सही है, x कुंजी और x_right कुंजी अनदेखा किया जाता है और पैनल को x-अक्ष पर स्क्रीन के रखा जाता है. अगर पैनल को फिर आकार दिया जाता है तो यह पोजीशन पर रहेगा- यानी. पैनल दोनों ओर बढेगा. अगर गलत है, x कुंजी और x_right कुंजी पैनल की अवस्थिति को दिखाता है .</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_bottom">
+						<local_schema short_desc="पैनल का Y निर्देशांक, स्क्रीन के नीचे से आरंभ.">
+							<longdesc>y-axis के साथ पैनल की अवस्थिति स्क्रीन के नीचे से आरंभ. यदि -1 पर सेट किया जाता है, मान अनदेखा किया जाता है और y कुंजी का मान प्रयोग किया जाता है. यदि मान 0 से अधिक है तब y कुंजी का मान अनदेखा किया जाता है. कुंजी गैर विस्तारित मोड में सिर्फ संदर्भ रखती है. विस्तारित मोड में यह कुंजी अनदेखा किया जाता है और पैनल को स्क्रीन किनारे पर रखा जाता है अभिमुखन कुंजी के द्वारा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_right">
+						<local_schema short_desc="पैनल का X निर्देशांक, स्क्रीन के नीचे से आरंभ.">
+							<longdesc>x-अक्ष के साथ पैनल की अवस्थिति स्क्रीन के दाहिने से आरंभ. यदि -1 पर सेट किया जाता है, मान अनदेखा किया जाता है और x कुंजी का मान प्रयोग किया जाता है. यदि मान 0 से अधिक है तब x कुंजी का मान अनदेखा किया जाता है. कुंजी गैर विस्तारित मोड में सिर्फ संदर्भ रखती है. विस्तारित मोड में यह कुंजी अनदेखा किया जाता है और पैनल को स्क्रीन किनारे पर रखा जाता है अभिमुखन कुंजी के द्वारा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y">
+						<local_schema short_desc="पटल का वाई-निर्देशांक">
+							<longdesc>y-axis के साथ पैनल की अवस्थिति. यह कुंजी गैर विस्तारित मोड में संदर्भ रखती है. विस्तारित मोड में यह कुंजी अनदेखा किया जाता हैऔर पैनल को स्क्रीन किनारे पर रखा जाता है अभिमुखन कुंजी के द्वारा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x">
+						<local_schema short_desc="पटल का एक्स-निर्देशांक">
+							<longdesc>x-axis के साथ पैनल की अवस्थिति. यह कुंजी गैर विस्तारित मोड में संदर्भ रखती है. विस्तारित मोड में यह कुंजी अनदेखा किया जाता हैऔर पैनल को स्क्रीन किनारे पर रखा जाता है अभिमुखन कुंजी के द्वारा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="पटल आकार">
+							<longdesc>पैनल की ऊंचाई (लंबवत पटल के लिए चौड़ाई). पैनल को कार्यसमय पर एक न्यूनतम आकार निर्धारित करेगा फंट आकार पर आधारित और अन्य संकेतक पर. स्क्रीन ऊंचाई के एक चौथाई पर अधिकतम आकार फिक्स किया जाता है (या चौड़ाई).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="पटल दिशा">
+							<longdesc>पैनल का अभिमुखीकरण. संभावित मान हैं &quot;top&quot;, &quot;bottom&quot;, &quot;left&quot;, &quot;right&quot;. विस्तारित मोड में कुंजी निर्दिष्ट करती है कि कौन से स्क्रीन किनारे पर पैनल ऑन है. गैर विस्तारित मोड में &quot;top&quot; और &quot;bottom&quot; के बीच अंतर कम महत्वपूर्ण है - दोनों बताती है कि यह क्षैतिज पैनल है - लेकिन अभी भी उपयोगी संकेत देता है कि कैसे पैनल वस्तु को आचरण करना चाहिये. उदाहरण के लिये, &quot;top&quot; पैनल पर एक मेनू बटन इसके मेनू को पैनल के नीचे पॉप अप करता है , जबकि &quot;bottom&quot; पैनल पर मेनू को पैनल के ऊपर पॉपअप किया जायेगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand">
+						<local_schema short_desc="संपूर्ण स्क्रीन चौड़ाई घेरने लायक विस्तारित करें">
+							<longdesc>अगर सही है, पैनल पूरे स्क्रीन चौड़ाई को भर देगा (ऊंचाई अगर यह लंवबत पैनल है). इस मोड में पैनल को स्क्रीन किनारे पर रखा जा सकता है. अगर गलत है, पैनल सिर्फ उतना बड़ा होगा ताकि एप्प्लेट, लांचर औऱ पैनल पर के तल को समा सके, .</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monitor">
+						<local_schema short_desc="सिनेरामा मॉनीटर जहाँ फ़लक प्रदर्शित है">
+							<longdesc>Xinerama सेटअप में, आपके पास हर निजी मॉनीटर पर पैनल हो सकता है. यह कुंजी मौजूदा मॉनीटर पहचानती है जिसपर पैनल दिखाया गया है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screen">
+						<local_schema short_desc="एक्स स्क्रीन जहाँ पटल प्रदर्शित है">
+							<longdesc>बहुल स्क्रीन सेटअप के साथ, आपके पास हर निजी स्क्रीन पर पैनल हो सकता है. यह कुंजी मौजूदा स्क्रीन को पहचानती है जिसपर पैनल दिखाया गया है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="पटल पहचान हेतु नाम">
+							<longdesc>यह मानव के पढ़ने योग्य नाम है जो पैनल को पहचानने के लिये आप प्रयोग कर सकते हैं. इसका मुख्य उद्देश्य पैनल के विंडो शीर्षक में परिसेवित करना है जो कि उपयोगी है जब पैनल के बीच संचरण किया जा रहा हो.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="खड़े पटल पर छवि घुमाएँ">
+								<longdesc>यदि सत्य है, पृष्ठभूमि छवि घुमाई जाएगी जब फ़लक की दिशा खड़े में होगी.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stretch">
+							<local_schema short_desc="छवि को पटल के मुताबिक फैलाएँ">
+								<longdesc>अगर सही है, पैनल आयाम में विंब को स्केल किया जायेगा. विंब का पहलू अनुपात का रखरखाव होगा</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="पटल के अनुसार छवि को आकार दें">
+								<longdesc>अगर सही है, विंव को स्केल किया जायेगा (छवि का पहलू अनुपान बनाए रख रहा है) पैनल ऊंचाई में (अगर क्षैतिज है).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="पृष्ठभूमि छवि">
+								<longdesc>पृष्ठभूमि विंब के लिये प्रयुक्त फाइल को निर्दिष्ट करता है. अगर विंब एक अल्फा चैनल रखता है इसे डेस्कटॉप पृष्ठभूमि विंब पर रखा जायेगा.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="पृष्ठभूमि रंग अपारदर्शिता">
+								<longdesc>पृष्ठभूमि रंग प्रारूप की अदृश्यता को निर्दिष्ट करता है. अगर रंग पूरी तरह से अपारदर्शी नहीं है (65535 से कम मान), रंग को डेस्कटॉप पृष्ठभूमि विंब पर रखा जायेगा.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="पृष्ठभूमि रंग">
+								<longdesc>फ़लक का पृष्ठभूमि रंग #आरजीबी फॉर्मेट में निर्दिष्ट करता है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="पृष्ठभूमि प्रकार">
+								<longdesc>इस पैनल के लिये किस प्रकार की पृष्ठभूमि को प्रयोग किया जायेगा. संबावित मान हैं &quot;gtk&quot; - मूलभूत GTK+ widget पृष्ठभूमि प्रयुक्त होगा, &quot;color&quot; - रंग कुंजी को पृष्ठभूमि रंग के रूप में प्रयोग किया जायेगा या &quot;image&quot; - विवंब कुंजी द्वारा निर्दिष्ट को पृष्ठभूमि के रूप में प्रयोग किया जायेगा.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="general">
+					<entry name="profiles_migrated">
+						<local_schema short_desc="पुराना प्रोफाइल विन्यास उत्प्रवासित">
+							<longdesc>बूलियन फ्लैग दिखाने के लिये कि क्या उपयोक्ता का पिछला विन्यास /apps/panel/profiles/default में /apps/panel में कॉपी किया गया है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_id_list">
+						<local_schema short_desc="फ़लक वस्तु आईडी सूची">
+							<longdesc>पैनल वस्तु IDs की सूची. हर ID एक निजी टॉपलेबल पैनल को पहचानती है (उदा. एक launcher, action button या menu button/bar). इनमें से हर पैनल में जमावट /apps/panel/objects/$(id) में जमा होती है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_id_list">
+						<local_schema short_desc="फ़लक एप्लेट आईडी सूची">
+							<longdesc>पैनल एप्प्लेट IDs की सूची. हर ID एक निजी टॉपलेबल पैनल को पहचानती है. इनमें से हर पैनल में जमावट /apps/panel/applets/$(id) में जमा होती है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id_list">
+						<local_schema short_desc="पटल आईडी सूची">
+							<longdesc>पैनल IDs की सूची. हर ID एक निजी टॉपलेबल पैनल को पहचानती है. इनमें से हर पैनल में जमावट /apps/panel/toplevels/$(id) में जमा होती है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_autocompletion">
+						<local_schema short_desc="&quot;अनुप्रयोग चलाएँ&quot; संवाद में स्वतः पूर्ण सक्षम करें">
+							<longdesc>अगर सही है, &quot;Run Application&quot; संवाद में स्वतः पूर्ण को उपलब्ध किया जा रहा है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_program_list">
+						<local_schema short_desc="&quot;अनुप्रयोग चलाएँ&quot; संवाद में प्रोग्राम सूची विस्तृत करें">
+							<longdesc>अगर सही है, &quot;Known Applications&quot; &quot;Run Application&quot; में सूचीकरण संवाद विस्तारित किया जाता है जब संवाद खुलता है. यह कुंजी सिर्फ तभी संदर्भ में हैं अगर enable_program_list key सही है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_program_list">
+						<local_schema short_desc="&quot;अनुप्रयोग चलाएँ&quot;  संवाद में प्रोग्राम सूची सक्षम करें">
+							<longdesc>अगर सही है, &quot;Known Applications&quot; &quot;Run Application&quot; में सूचीकरण संवाद उपलब्ध किया जाता है. क्या जब सूचीकरण विस्तारित किया जाता है जब संवाद को show_program_list कंजी के द्वारा नियंत्रित किया जाता है.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global">
+					<entry name="disable_force_quit">
+						<local_schema short_desc="बलपूर्वक बाहर होना अक्षम करें">
+							<longdesc>अगर सही है, पैनल उपयोक्ता को अनुमति नहीं देगा अनुप्रयोग छोड़ने के लिये जबरन छोड़े बटन में अभिगम को हटाये बिना</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_log_out">
+						<local_schema short_desc="लागिंग आउट अक्षम करें">
+							<longdesc>अगर सही है, पैनल उपयोक्ता को अनुमति नहीं देगा लॉग आउट का, लॉग आउट मेनू में अभिगम हटाये बिना</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="पदावनत">
+							<longdesc>यह कुंजी पदावनत किया गया है क्योंकि यह उचित लॉकडाउन के लिए प्रयोग नहीं किया जा सकता है. /desktop/gnome/lockdown/disable_lock_screen कुंजी का बदले में प्रयोग किया जाना चाहिए.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disabled_applets">
+						<local_schema short_desc="एप्लेट आईआईडी जिसे लोडिंग करने से अक्षम करना है">
+							<longdesc>एप्प्लेट IIDs की सूची जो पैनल अनदेखा करेगा. इस तरीके से आप कुछ एप्पलेट निष्क्रिय कर सकते हैं मेनू में लोड या दिखाने के क्रम में. उदाहरण के लिये मिनी कमांडर एप्प्लेट के निष्क्रिय करने के लिये &apos;OAFIID:GNOME_MiniCommanderApplet&apos; को सूची में जोड़ें. पैनल को जरूर फिर आरंभ होना चाहिये इसे प्रभाव में आने के लिये.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked_down">
+						<local_schema short_desc="संपूर्ण फ़लक तालाबन्द">
+							<longdesc>अगर सही है, पैनल पैनल के विन्यास में किसी प्रकार का बदलाव का अनुमति नहीं देगा. निजी एप्प्लेट को अलग से लॉक करने की जरूरत है. पैनल को फिर से शुरू करने की जरूरत है इसे प्रभावी होने के लिये</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="highlight_launchers_on_mouseover">
+						<local_schema short_desc="माउसओवर पर लांचर उभारें">
+							<longdesc>अगर सही है, लॉचर उभारा जाता है जब उपयोक्ता संकेतक इसपर चलाता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_panel_remove">
+						<local_schema short_desc="फ़लक मिटाने की पुष्टि करें">
+							<longdesc>अगर सही है, संवाद को दिखाया जाता है संपुष्टि के लिये पूछते हुये अगर उपयोक्ता पैनल को हटाना चाहता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="drawer_autoclose">
+						<local_schema short_desc="दराज स्वचालित बंद करें">
+							<longdesc>अगर सही है, ड्रॉउर स्वतः बंद कर दिया जायेगा जब उपयोक्ता एक प्रक्षेपक इसमें क्लिक करता है</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="window_screenshot_key">
+						<local_schema short_desc="पदावनत">
+						</local_schema>
+					</entry>
+					<entry name="screenshot_key">
+						<local_schema short_desc="पदावनत">
+						</local_schema>
+					</entry>
+					<entry name="run_key">
+						<local_schema short_desc="पदावनत">
+						</local_schema>
+					</entry>
+					<entry name="menu_key">
+						<local_schema short_desc="पदावनत">
+						</local_schema>
+					</entry>
+					<entry name="enable_key_bindings">
+						<local_schema short_desc="पदावनत">
+						</local_schema>
+					</entry>
+					<entry name="panel_hide_delay">
+						<local_schema short_desc="पदावनत">
+						</local_schema>
+					</entry>
+					<entry name="panel_animation_speed">
+						<local_schema short_desc="पदावनत">
+						</local_schema>
+					</entry>
+					<entry name="panel_show_delay">
+						<local_schema short_desc="पदावनत">
+						</local_schema>
+					</entry>
+					<entry name="panel_minimized_size">
+						<local_schema short_desc="पदावनत">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="एनिमेशन सक्षम करें">
+						</local_schema>
+					</entry>
+					<entry name="keep_menus_in_memory">
+						<local_schema short_desc="पदावनत">
+						</local_schema>
+					</entry>
+					<entry name="tooltips_enabled">
+						<local_schema short_desc="उपकरण-युक्तियाँ सक्षम करें">
+							<longdesc>यदि सत्य है, उपकरण युक्तियाँ फ़लक में वस्तु हेतु दिखाई जाएंगी.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="objects">
+					<entry name="action_type">
+						<local_schema short_desc="क्रिया बटन प्रकार">
+							<longdesc>क्रिया प्रकार जो यह बटन दिखाता है. संभावित मान हैं &quot;lock&quot;, &quot;logout&quot;, &quot;run&quot;, &quot;search&quot; और &quot;screenshot&quot;. यह कुंजी तभी संदर्भ में है अगर object_type कुंजी &quot;action-applet&quot; है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="launcher_location">
+						<local_schema short_desc="लांचर स्थान">
+							<longdesc>लांचर को बताता .desktop फाइल की अवस्थिति. यह कुंजी सिर्फ तभी संदर्भित है अगर object_type कुंजी &quot;launcher-object&quot; है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menu_path">
+						<local_schema short_desc="मेनू विषय-वस्तु पथ">
+							<longdesc>पथ जहां से मेनू सामग्री की रचना की जाती है. यह कुंजी सिर्फ तभी संदर्भित है अगर use_menu_path कुंजी सही है और object_type कुंजी &quot;menu-object&quot; है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_menu_path">
+						<local_schema short_desc="मेनू विषय-वस्तु हेतु अनुकूलित पथ उपयोग करें">
+							<longdesc>अगर सही है, menu_path कुंजी को एख पथ के रूप में प्रयोग किया जाता है जिससे मेनू सामग्री को बनाया जाता है. अगर गलत है, menu_path कुंजी को अनदेखा किया जाता है. यह कुंजी तबी संदर्भ रखती है अगर object_type कुंजी &quot;menu-object&quot; है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_icon">
+						<local_schema short_desc="वस्तु के बटन हेतु उपयोग में चिह्न">
+							<longdesc>वस्तु बटन के लिये प्रतीक के रूप में प्रयुक्त विंब फाइल की अवस्थिति. यह कुंजी सिर्फ तभी संदर्भित है अगर object_type कुंजी &quot;drawer-object&quot; या &quot;menu-object&quot; औऱ use_custom_icon कुंजी सही है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_icon">
+						<local_schema short_desc="वस्तु के बटन हेतु अनुकूलित चिह्न उपयोग करें">
+							<longdesc>अगर सही है, custom_icon कुंजी बटन के लिये कस्टम चिह्न के रूप में प्रयुक्त होगा. अगर गलत है , custom_icon कुंजी अनदेखा किया जाता है. यह कुंजी तभी संदर्भित है अगर object_type कुंजी &quot;menu-object&quot; या &quot;drawer-object&quot; है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="tooltip">
+						<local_schema short_desc="ड्रॉअर या मेनू हेतु प्रदर्शित उपकरणयुक्ति">
+							<longdesc>इस ड्राउर या इस मेनू के लिये दिखाने के लिये पाठ. यह कुंजी तभी संदर्भित है अगर object_type कुंजी &quot;drawer-object&quot; या &quot;menu-object&quot; है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="attached_toplevel_id">
+						<local_schema short_desc="पटल से जुड़ा दराज">
+							<longdesc>इस ड्राउर से संलग्न पैनल का पहचानकर्ता. यह कुंजी सिर्फ तभी संदर्भित है अगर object_type कुंजी &quot;drawer-object&quot; है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="bonobo_iid">
+						<local_schema short_desc="एप्लेट बोनोबो आईआईडी">
+						</local_schema>
+					</entry>
+					<entry name="locked">
+						<local_schema short_desc="वस्तु को फ़लक में तालाबन्द करें">
+							<longdesc>अगर सही है, उपयोक्ता एप्प्लेट को खिसका नहीं सकता है बिना पहले वस्तु को अनलॉक किये &quot;Unlock&quot; मेनू मद का प्रयोग किये.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="panel_right_stick">
+						<local_schema short_desc="तल/दायाँ किनारा के सापेक्ष स्थिति व्याख्या करें">
+							<longdesc>अगर सही है, वस्तु की स्थिति को पैनल के दायें किनारे के सापेक्ष (या तल अगर लंबवत है) विश्लेषित किया जाता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="position">
+						<local_schema short_desc="ऑबजेक्ट की पटल पर स्थिति">
+							<longdesc>इस पैनल वस्तु की स्थिति. स्थिति को पिक्सेल के द्वारा निर्दिष्ट किया जाता है बायें से (या शीर्ष पर अगर लंबबत है) पैनल किनारा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id">
+						<local_schema short_desc="शीर्षस्तर फ़लक जिसमें वस्तु हैं">
+							<longdesc>शीर्ष स्तर पैनल का पहचानकर्ता जो इस वस्तु को शामिल करता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_type">
+						<local_schema short_desc="पटल ऑब्जेक्ट प्रकार">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="कार्यस्थान स्विचर मे पंक्तियाँ">
+							<longdesc>जब सभी कार्यस्थान दिखाया जाए तो यह तय करता है कि कितनी आड़ी पंक्ति (क्षैतिज अभिन्यास हेतु) या खड़ी (लंबवत अभिन्यास हेतु) पंक्ति कार्यस्थान में कार्यस्थान स्विचर दिखाए. यह कुंजी सिर्फ तभी सम्बद्ध होगी यदि सभी-कार्यस्थान-दिखाएँ कुंजी सत्य होगी.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="सभी कार्यस्थान दिखाएँ">
+							<longdesc>यदि यह सत्य है तो कार्यस्थान स्विचर सभी कार्यस्थान दिखाएगा अन्यथा यह सिर्फ वर्तमान कार्यस्थान दर्शाएगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="कार्यस्थान नाम दिखाएँ">
+							<longdesc>यदि यह सत्य है तो कार्यस्थान स्विचर  कार्यस्थान के नामों को दिखाएगा. अन्यथा ये कार्यस्थान पर विंडोज़ को दर्शाएगा. यह सेटिंग सिर्फ तभी कार्य करता है जब विंडो प्रबंधक मेटासिटी है.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="speed_unit">
+						<local_schema short_desc="गति इकाई">
+							<longdesc>प्रयोग के लिए इकाई जब वायु गति दिखाया जा रहा हो.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="तापमान इकाई">
+							<longdesc>प्रयोग के लिए इकाई जब तापमान दिखाया जा रहा हो.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cities">
+						<local_schema short_desc="स्थानों की सूची">
+							<longdesc>पंचांग विंडो में स्थानों को दिखाने के लिए सूची.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="internet_time">
+						<local_schema short_desc="इंटरनेट समय उपयोग करें">
+							<longdesc>इस कुंजी का प्रयोग GNOME 2.6 में पदावनत किया गया था &apos;format&apos; कुंजी के पक्ष में. स्कीमा को सुसंगतता के लिये पुराने संस्कऱण के साथ बनाये रखा जाता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="यूनिक्स समय उपयोग करें">
+							<longdesc>इस कुंजी का प्रयोग GNOME 2.6 में पदावनत किया गया था &apos;format&apos; कुंजी के पक्ष में. स्कीमा को सुसंगतता के लिये पुराने संस्कऱण के साथ बनाये रखा जाता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="घंटा फ़ॉर्मेट">
+							<longdesc>इस कुंजी का प्रयोग GNOME 2.6 में पदावनत किया गया था &apos;format&apos; कुंजी के पक्ष में. स्कीमा को सुसंगतता के लिये पुराने संस्कऱण के साथ बनाये रखा जाता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_locations">
+						<local_schema short_desc="स्थान की सूची फैलाएं">
+							<longdesc>अगर सही है, पंचांग विंडो में व्यवसाय सूची को फैलाएँ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_weather">
+						<local_schema short_desc="मौसम सूचना की सूची फैलाएं">
+							<longdesc>अगर सही है, पंचांग विंडो में मौसम सूचना को सूची को फैलाएँ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_tasks">
+						<local_schema short_desc="कार्यों की सूची फैलाएं">
+							<longdesc>अगर सही है, पंचांग विंडो में कार्य सूची को फैलाएँ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_birthdays">
+						<local_schema short_desc="जन्मदिन की सूची फैलाएं">
+							<longdesc>अगर सही है, पंचांग विंडो में जन्मदिन सूची को फैलाएँ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_appointments">
+						<local_schema short_desc="भेंट की सूची फैलाएं">
+							<longdesc>अगर सही है, पंचांग विंडो में व्यस्तता सूची को फैलाएँ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="पंचांग में सप्ताह संख्या को दिखाये.">
+							<longdesc>अगर सही है, पंचांग में सप्ताह संख्या को दिखाये.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="समय विन्यास उपकरण">
+							<longdesc>इस कुंजी का प्रयोग आंतरिक समय विन्यास औज़ार के प्रयोग से GNOME 2.22 में पदावनत किया गया था. स्कीमा को सुसंगतता के लिये पुराने संस्कऱण के साथ बनाये रखा जाता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="यूटीसी उपयोग करें">
+						</local_schema>
+					</entry>
+					<entry name="show_temperature">
+						<local_schema short_desc="घड़ी में तापमान दिखाएँ">
+							<longdesc>अगर सही है, मौसम चिह्न के बाजू में तापमान दिखाएँ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_weather">
+						<local_schema short_desc="घड़ी में मौसम दिखाएँ">
+							<longdesc>अगर सत्य है तो मौसम प्रतीक दिखाएं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema short_desc="उपकरण-युक्ति में तिथि दर्शाएँ">
+							<longdesc>अगर सत्य है, तो जब माउस घड़ी के ऊपर हो तो उपकरण-युक्ति में तिथि दर्शाता है</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="घड़ी में तिथि दिखाएँ">
+							<longdesc>अगर सत्य है तो घड़ी में समय के साथ ही तिथि भी दर्शाएगा</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="समय सेकण्ड्स के साथ दिखाएँ">
+							<longdesc>अगर सत्य है तो समय में सेकण्ड भी दर्शाएगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="घड़ी का अनुकूलित प्रारूप">
+							<longdesc>यह कुंजी क्लॉक एप्पलेट के द्वारा प्रयुक्त को निर्दिष्ट करती है जब संरूप कुजी को &quot;custom&quot; पर सेट किया जाता है. आप रूपांतरण निर्दिष्टकर्ता का प्रयोग कर सकते हैं strftime() के द्वारा समझा गया विशिष्ट प्रारूप पाने के लिये. strftime() निर्देश पुस्तिका को अधिक सूचना के लिए देखें.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="घंटा फ़ॉर्मेट">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gweather">
+				<dir name="prefs">
+					<entry name="radar">
+						<local_schema short_desc="रेडार नक्शा का यूआरएल">
+							<longdesc>जहाँ से रेडार नक़्शा लाना है उसका पसंदीदा यूआरएल.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_radar_url">
+						<local_schema short_desc="रेडार नक्शा हेतु विशेष यूआरएल उपयोग करें">
+							<longdesc>यदि सत्य है, तो एक रेडॉर नक्शा &quot;रेडॉर&quot; कुंजी से निर्दिष्ट किए स्थान से लाएँ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="coordinates">
+						<local_schema short_desc="स्थान निर्देशांक">
+						</local_schema>
+					</entry>
+					<entry name="location4">
+						<local_schema short_desc="शहर के लिये मौसम">
+						</local_schema>
+					</entry>
+					<entry name="location3">
+						<local_schema short_desc="रडार स्थान">
+						</local_schema>
+					</entry>
+					<entry name="location2">
+						<local_schema short_desc="क्षेत्र स्थान">
+						</local_schema>
+					</entry>
+					<entry name="location1">
+						<local_schema short_desc="निकट का शहर">
+						</local_schema>
+					</entry>
+					<entry name="location0">
+						<local_schema short_desc="मौसम स्थान सूचना">
+						</local_schema>
+					</entry>
+					<entry name="enable_radar_map">
+						<local_schema short_desc="रेडार नक्शा दिखाएँ">
+							<longdesc>प्रत्येक अद्यतन पर एक रेडार नक्शा लाएँ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_detailed_forecast">
+						<local_schema short_desc="अब उपयोग नहीं होता">
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="तापमान ईकाई">
+							<longdesc>तापमान के लिये उपयोग के लिये ईकाई.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed_unit">
+						<local_schema short_desc="गति ईकाई">
+							<longdesc>वायु गति के लिये उपयोग के लिये ईकाई</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pressure_unit">
+						<local_schema short_desc="दबाव ईकाई">
+							<longdesc>दबाव के लिये उपयोग के लिये ईकाई</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="distance_unit">
+						<local_schema short_desc="दूरी ईकाई">
+							<longdesc>दृश्यता के लिये उपयोग के लिये ईकाई</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_metric">
+						<local_schema short_desc="मीट्रिक यूनिट उपयोग करें">
+							<longdesc>अंग्रेजी यूनिट के बदले मीट्रिक यूनिट उपयोग करें</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update_interval">
+						<local_schema short_desc="अद्यतन अंतराल">
+							<longdesc>स्वचालित अद्यतन करने के बीच सेकण्ड में अंतराल.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update">
+						<local_schema short_desc="डाटा स्वचालित अद्यतन करें">
+							<longdesc>निर्धारित करता है कि क्या एप्लेट इसके मौसम सांख्यिकी को स्वचालित अद्यतन करता है या नहीं.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="control-center">
+				<entry name="cc_exit_shell_on_action_upgrade_uninstall">
+					<local_schema short_desc="किए क्रिया के उन्नयन या विसंस्थापन के लिए शेल से निकलें">
+						<longdesc>बताएँ कि क्या शेल को बंद करना है जब उन्नयन या विसंस्थापन की क्रिया करनी है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_add_remove">
+					<local_schema short_desc="किए क्रिया जोड़ने या हटाने के लिए शेल से निकलें">
+						<longdesc>बताएँ कि क्या शेल को बंद करना है जब जोड़ने या हटाने की क्रिया करनी है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_help">
+					<local_schema short_desc="किए गए मदद क्रिया पर निकास शेल">
+						<longdesc>बताएँ कि क्या शेल को बंद करना है जब मदद क्रिया करनी है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_start">
+					<local_schema short_desc="किए गए आरंभ क्रिया पर निकास शेल">
+						<longdesc>बताएँ कि क्या शेल को बंद करना है जब आरंभ क्रिया करनी है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_static_action">
+					<local_schema short_desc="control-center बंद करें जब कार्य सक्रिय हो">
+						<longdesc>यदि सत्य है, control-center बंद होगा जब &quot;Common Task&quot; सक्रिय किया जाता है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_actions_list">
+					<local_schema short_desc="कार्य नाम या संबद्ध .desktop फ़ाइल">
+					</local_schema>
+				</entry>
+				<dir name="network">
+					<entry name="current_location">
+						<local_schema short_desc="मौजूदा संजाल स्थान">
+							<longdesc>अपने मौजूदा स्थान नाम में इसे सेट करें. यह उचित संजाल प्रॉक्सी विन्यास को निर्धारित करने के लिए प्रयुक्त होता है.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="appearance">
+					<entry name="more_themes_url">
+						<local_schema short_desc="अधिक प्रसंग URL">
+							<longdesc>URL जहाँ से अधिक डेस्कटॉप प्रसंग पाना है. यदि रिक्त स्ट्रिंग पर सेट किया जाता है कड़ी प्रकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="more_backgrounds_url">
+						<local_schema short_desc="अधिक पृष्ठभूमि URL">
+							<longdesc>URL जहाँ से अधिक डेस्कटॉप पृष्ठभूमि पाना है. यदि रिक्त स्ट्रिंग पर सेट किया जाता है कड़ी प्रकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="पाठ लपेट सीमा">
+							<longdesc>यह निर्दिष्ट करना पूर्णांक कि कैसे अधिक लंबे फाइलों के हिस्से निर्दिष्ट करते को डेस्कटॉप पर एलीप्सेस के द्वारा प्रतिस्थापित किया जाना चाहिए. यदि संख्या 0 से बड़ी है, फाइल नाम दिए गए पंक्ति संख्या से अधिक नहीं होगी. यदि संख्या 0 या अधिक छोटी है, प्रदर्शित पंक्ति की संख्या पर कोई सीमा नहीं लादनी चाहिए.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_name">
+						<local_schema short_desc="संजाल सर्वर प्रतीक नाम">
+							<longdesc>यह नाम नियत किया जा सकता है यदि आप डेस्कटॉप पर संजाल सर्वर प्रतीक के लिए कोई मनपसंद नाम चाहते हैं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_name">
+						<local_schema short_desc="डेस्कटॉप रद्दी चिह्न नाम">
+							<longdesc>यह नाम नियत किया जा सकता है यदि आप अपने डेस्कटॉप के रद्दी चिह्न हेतु कोई मनपसंद नाम चाहते हैं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="डेस्कटॉप घर चिह्न नाम">
+							<longdesc>यह नाम नियत किया जा सकता है यदि आप अपने डेस्कटॉप के घर चिह्न हेतु कोई मनपसंद नाम चाहते हैं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="डेस्कटॉप कंप्यूटर चिह्न नाम">
+							<longdesc>यह नाम नियत किया जा सकता है यदि आप अपने डेस्कटॉप के घर चिह्न हेतु कोई मनपसंद नाम चाहते हैं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="डेस्कटॉप दृष्टिगोच़र संजाल सर्वर चिह्न">
+							<longdesc>यदि यह सत्य पर नियत किया जाता है, संजाल सेवा पर लिंक करता आइकन डेस्कटॉप पर रखा जायेगा</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volumes_visible">
+						<local_schema short_desc="डेस्कटॉप पर माउन्टेड वॉल्यूम्स दिखाएँ">
+							<longdesc>यदि यह सत्य पर नियत किया जाता है, माउन्ट किए वॉल्यूम को लिंक करते चिह्न डेस्कटॉप पर रखे जाएँगे.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="डेस्कटॉप पर रद्दी का चिह्न दृष्टिगोच़र हो">
+							<longdesc>यदि यह सत्य पर नियत किया जाता है, रद्दी को लिंक करता चिह्न डेस्कटॉप पर रखा जाएगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="डेस्कटॉप पर कम्प्यूटर का चिह्न दृष्टिगोच़र हो">
+							<longdesc>अगर इसे सही पर सेट किया जाता है, कंप्यूटर अवस्थिति पर लिंक किया चिह्न डेस्कटॉप पर रखा जायेगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="डेस्कटॉप पर घर का चिह्न दृष्टिगोच़र होगा">
+							<longdesc>अगर इसे सही पर सेट किया जाता है, घर फोल्डर पर लिंक किया चिह्न डेस्कटॉप पर रखा जायेगा.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema short_desc="तरू बाजू पट में सिर्फ फ़ोल्डर ही दिखाएँ">
+								<longdesc>अगर सही पर सेट किया जाता है, Nautilus फोल्डर को तरू साइड पट्टी में दिखायेगा. अन्यथा यह फोल्डर व फाइल में दिखायेगा.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="सूची दृश्य में तयशुदा स्तम्भ अनुक्रम">
+							<longdesc>सूची दृश्य में तयशुदा स्तम्भ अनुक्रम.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="सूची दृश्य में दृष्टिगोच़र स्तम्भों की तयशुदा सूची">
+							<longdesc>सूची दृश्य में दृष्टिगोच़र स्तम्भों की तयशुदा सूची.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="तयशुदा सूची ज़ूम स्तर">
+							<longdesc>सूची दृश्य द्वारा प्रयुक्त तयशुदा ज़ूम स्तर.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="नए विंडोज़ में छाँटने का अनुक्रम उल्टा रखें">
+							<longdesc>अगर सही है, नये विंडो में फाइल को उल्टे क्रम में भंडारित किया जायेगा. यानी, अगर नाम के  अनुसार जमा किया जाता है तब &quot;a&quot; से &quot;z&quot; में फाइळ को छांटने के बजाय, वे &quot;z&quot; से &quot;a&quot; में छांटा जायेगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="छाँटने का तयशुदा अनुक्रम">
+							<longdesc>सूची दृश्य में मद के लिये मूलभूत छांट क्रम. &quot;name&quot;, &quot;size&quot;, &quot;type&quot;, और &quot;modification_date&quot; संभावित मान है.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="compact_view">
+					<entry name="all_columns_have_same_width">
+						<local_schema short_desc="सभी स्तंभ की समान चौड़ाई है">
+							<longdesc>यदि वरीयता सेट किया जाता है, संहत दृश्य में सभी स्तंभ की समान चौड़ाई होगी. अन्यथा, हर स्तंभ को अलग से निर्धारित किया जाएगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="तयशुदा संहत दृश्य ज़ूम स्तर">
+							<longdesc>संहत दृश्य द्वारा प्रयुक्त तयशुदा ज़ूम स्तर.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="पाठ लपेट सीमा">
+							<longdesc>यह निर्दिष्ट करता स्ट्रिंग कि कैसे अधिक लंबा फ़ाइल को दीर्घवृत्त के द्वारा प्रतिस्थापित किया जाएगा, जूम स्तर पर निर्भर करता है. सूची प्रविष्टि में से हर कोई &quot;Zoom Level:Integer&quot; रूप का है. हर निर्दिष्ट जूम स्तर के लिए, यदि दिया गया पूर्णांक 0 से बड़ा है तो फाइळ नाम दिए गए पंक्ति संख्या से अधिक नहीं होगा. यदि पूर्णांक 0 या छोटा है, निर्दिष्ट जूम स्तर पर कोई सीमा नहीं लगाई जाती है. &quot;Integer&quot; प्रारूप का तयशुदा प्रविष्टि बिना किसी निर्दिष्ट जूम स्तर के को भी अनुमति दी जाती है. यह सभी दूसरे जूम स्तर के लिए पंक्ति की अधिकतम संख्या को परिभाषित करता है. उदाहरण: 0 - हमेशा अधिक लंबा फाइल नाम दिखाता है; 3 - फ़ाइल नाम छोटा करें यदि वे तीन पंक्ति से ऊपर जाते हैं; लघुतम:5, लघुतर:4,0 - फ़ाइल नाम छोटा करें यदि वे तीन पंक्ति से ऊपर जाते हैं जूम स्तर &quot;लघुतम&quot;  के लिए.  फ़ाइल नाम छोटा करें यदि वे तीन पंक्ति से ऊपर जाते हैं जूम स्तर&quot;लघुतर&quot; के लिए. दूसरे जूम स्तर के लिए फ़ाइल नाम छोटा मत करें. उपलब्ध जूम स्तर: लघुतम (33%), लघुतर (50%), लघु (66%), मानक (100%), महत्‌ (150%), महत्तर (200%), महत्तम (400%)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_size">
+						<local_schema short_desc="तयशुदा लघुचित्र प्रतीक आकार">
+							<longdesc>प्रतीक दृश्य में किसी लघुचित्र के लिए एक प्रतीक का तयशुदा आकार.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="तयशुदा चिह्न ज़ूम स्तर">
+							<longdesc>चिह्न दृश्य द्वारा प्रयुक्त तयशुदा ज़ूम स्तर.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_manual_layout">
+						<local_schema short_desc="नए विंडो में हस्तचालित अभिन्यास उपयोग करें">
+							<longdesc>यदि सत्य है, नए विंडोज़ हस्तचालित अभिन्यास तयशुदा से उपयोग करेंगे.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="labels_beside_icons">
+						<local_schema short_desc="चिह्नों के बाजू में लेबल्स रखें">
+							<longdesc>यदि सत्य है, लेबल चिह्नों के बाजू में रखे जाएंगे बजाए उनके नीचे.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_tighter_layout">
+						<local_schema short_desc="नए विंडो में सघनतर अभिन्यास उपयोग करें">
+							<longdesc>यदि सत्य है, तयशुदा से चिह्नों को नए विंडोज़ में सघन रखा जाएगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="नए विंडोज़ में छाँटने का अनुक्रम उल्टा रखें">
+							<longdesc>अगर सही है, नये विंडो में फाइल को उल्टे क्रम में भंडारित किया जायेगा. यानी, अगर नाम के  अनुसार जमा किया जाता है तब &quot;a&quot; से &quot;z&quot; में फाइळ को छांटने के बजाय, वे &quot;z&quot; से &quot;a&quot; में छांटा जायेगा. अगर आकार के आधार पर छाटा जाता है तो वे क्रमिक रूप से घटते क्रम में छांटा जायेगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="छाँटने का तयशुदा अनुक्रम">
+							<longdesc>चिह्न दृश्य में मद के लिये मूलभूत छांट क्रम. &quot;name&quot;, &quot;size&quot;, &quot;type&quot;, &quot;modification_date&quot;, औऱ &quot;emblems&quot; संभावित मान हैं. </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="captions">
+						<local_schema short_desc="चिह्नों पर संभावित शीर्षकों की सूची">
+							<longdesc>आइकन दृश्य में एक आइकन के नीचे कैप्शन की सूची और डेस्कटॉप. दिखाये गये कैप्शन की वास्तविक संख्या जूम स्तर पर निर्भर करती है. संभावित मान हैं: &quot;size&quot;, &quot;type&quot;, &quot;date_modified&quot;, &quot;date_changed&quot;, &quot;date_accessed&quot;, &quot;owner&quot;, &quot;group&quot;, &quot;permissions&quot;, &quot;octal_permissions&quot; और &quot;mime_type&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="बाजू फ़लक दृश्य">
+							<longdesc>नये खुले विंडो में दिखाने के लिये किनारे पट्टी दृश्य.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="नए विंडोज़ में बाजू फ़लक दिखाएँ">
+							<longdesc>यदि सत्य पर नियत किया जाता है, नए खुले विंडोज़ में बाजू फ़लक दिखाई देंगे.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="नए विंडो में स्थिति-पट्टी दिखाएँ">
+							<longdesc>यदि सत्य पर नियत किया जाता है, नए खुले विंडोज़ में स्थिति पट्टी दिखाई देंगे.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="नए विंडोज़ में स्थान-पट्टी दिखाएँ">
+							<longdesc>यदि सत्य पर नियत किया जाता है, नए खुले विंडोज़ में स्थान पट्टी दिखाई देंगे.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="नए विंडो में उपकरण-पट्टी दिखाएँ">
+							<longdesc>यदि सत्य पर नियत किया जाता है, नए खुले विंडोज़ में उपकरण पट्टी दिखाई देंगे.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="बाजू फ़लक की चौड़ाई">
+							<longdesc>नये विंडो में बाजू फ़लक की तयशुदा चौड़ाई.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="तिथि फ़ॉर्मेट">
+							<longdesc>फाइल तिथि का प्रारूप. &quot;locale&quot;, &quot;iso&quot;, और &quot;informal&quot; संभावित मान हैं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="तयशुदा फ़ोल्डर प्रदर्शक">
+							<longdesc>जब एक फोल्डर पर जाया जाता है तो यह दर्शक प्रयुक्त होता है जबतक कि आपने खास फोल्डर के लिये अन्य दृश्य चयन नहीं किया है. संभावित मान हैं &quot;list_view&quot;, &quot;icon_view&quot; और &quot;compact_view&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="तयशुदा बाजू फ़लक पृष्ठभूमि फ़ाइलनाम">
+							<longdesc>मूलभूत किनारे की पट्टी पृष्ठभूमि के लिये फाइल नाम. सिर्फ तभी प्रयुक्त अगर side_pane_background_set सही हैहै.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="तयशुदा बाजू फ़लक पृष्ठभूमि रंग">
+							<longdesc>मूलभूत किनारे की पट्टी पृष्ठभूमि के लिये फाइल नाम. सिर्फ तभी प्रयुक्त अगर side_pane_background_set सही हैहै.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_set">
+						<local_schema short_desc="मनपसंद बाजू फ़लक पृष्ठभूमि नियत">
+							<longdesc>क्या एक पसंदीदा किनारा पट्टी पृष्ठभूमि सेट किया जा रहा है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="तयशुदा पृष्ठभूमि फ़ाइलनाम">
+							<longdesc>तयशुदा फ़ोल्डर पृष्ठभूमि हेतु फ़ाइलनाम. सिर्फ तभी उपयोग में जब पृष्ठभूमि नियत सत्य पर होता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="तयशुदा पृष्ठभूमि रंग">
+							<longdesc>तयशुदा फ़ोल्डर पृष्ठभूमि हेतु फ़ाइलनाम. सिर्फ तभी उपयोग में जब background_set सही होता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema short_desc="मनपसंद पृष्ठभूमि">
+							<longdesc>क्या एक मनपसंद तयशुदा फ़ोल्डर पृष्ठभूमि नियत किया गया है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search_bar_type">
+						<local_schema short_desc="ढूंढें-पट्टी में ढूंढने का मापदण्ड">
+							<longdesc>मापदंड जब मैचिंग फाइल खोज पट्टी में खोजा. अगर &quot;search_by_text&quot; में सेट किया जाता है, Nautilus फाइल के लिये सिर्फ पाइल नाम से खोजेगा. अगर &quot;search_by_text_and_properties&quot; से खोजा जाता है, तब Nautilus फाइल नाम फाइल गुण के आधार पर खोजेगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_is_home_dir">
+						<local_schema short_desc="उपयोगकर्ताओं के घर फ़ोल्डर का उपयोग नॉटिलस डेस्कटॉप के रूप में उपयोग करता है">
+							<longdesc>अगर सही पर सेट किया जाता है, तब Nautilus उपयोक्ता के घर फोल्डर को प्रयोग करेगा डेस्कटॉप के रूप में. अगर यह गलत हैं, तब यह ~/Desktop को डेस्कटॉप के रूप में प्रयोग करेगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="डेस्कटॉप फ़ॉन्ट">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="नॉटिलस डेस्कटॉप का आरेखण हैंडल करता है">
+							<longdesc>यदि यह सत्य पर नियत किया जाता है, डेस्कटॉप पर चिह्नों को  नॉटिलस आरेखित करेगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="विंडोज़ में फ़ोल्डर्स को पहले दिखाएँ">
+							<longdesc>यदि यह सत्य पर नियत किया जाता है, चिह्न तथा सूची दृश्य में नॉटिलस फ़ोल्डर्स को फ़ाइलें के पहले दिखाएगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_advanced_permissions">
+						<local_schema short_desc="फाइल गुण संवाद में उन्नत अनुमति दिखाएँ">
+							<longdesc>अगर सही पर सेट किया जाता है, तब Nautilus आपको कुछ ज्यादा फाइल के विकल्प को संपादित व दिखाने की अनुमति ज्यादा यूनिक्स तरीके से देता है कुछ ज्यादा विकल्पों का अभिगम करते हुये.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="preview_sound">
+						<local_schema short_desc="एक प्रतीक पर माऊस ले जाने पर क्या ध्वनि दिखाना है">
+							<longdesc>Speed tradeoff के लिये जब ध्वनि फाइळ का पूर्वावलोकन करना है फाइल के चिह्न पर माउस ले जाने से. अगर &quot;always&quot; परसेट किया जाता है तब हमेशा ध्वनि बजाता है, बावजूद फाइळ दूरस्थ सर्वर पर है. अगर &quot;local_only&quot; पर तब सिर्फ स्थानीय फाइळ सिस्टम पर पूर्वावलोकन दिखाता है. अगर &quot;never&quot; पर सेट है तो यह कभी ध्वनि नहीं दिखता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="directory_limit">
+						<local_schema short_desc="फ़ोल्डर में हैण्डल की जा सकने वाली अधिकतम फ़ाइलें">
+							<longdesc>इस आकार के ऊपर का फोल्डर इस आकार में लाने के लिये काटा जायेगा.इसका उद्देश्य है हीप को बिना किसी कारण के बचने के लिये और Nautilus को भारी भरकम फोल्डर पर खत्म करने के लिये. नकारात्मक मान कोई सीमा नहीं दिखाता है. सीमा अनुमानित है फोल्डर के पठन के चंक के अनुसार.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_limit">
+						<local_schema short_desc="लघुछवि बनाने में अधिकतम छवि आकार">
+							<longdesc>इस आकार से ऊपर का चित्र (in bytes) थंबनेल नहीं किया जायेगा. इस सेटिंग का उद्देश्य बड़े चित्र को थंबनेल से बचने के लिये किया जाता है जो कि मेमोरी की मात्रा को भारित करने में लंबा समय लेता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_image_thumbnails">
+						<local_schema short_desc="क्या छवि फ़ाइलों की लघु छवियाँ दिखाई जाएँ">
+							<longdesc>Speed tradeoff के लिये जब एक विंब फाइळ को थंबनेल के रूप में दिखाना है. अगर &quot;always&quot; पर सेट किया जाता है तब हमेशा थंबनेल, बावजूद कि फोल्डर एक दूरस्थ सर्वर पर है. अगर &quot;local_only&quot; पर सेट किया जाता है तब सिर्फ स्थानीय फाइळ सिस्टम के लिये थंबनेल दिखायें. अगर &quot;never&quot; पर सेट किया जाता है तब थंबनेल चित्र के लिये कभी चिंता न करें, सिर्फ एक जेनेरिक आइकन देखें.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="वर्तमान नॉटिलस प्रसंग (विरोधित)">
+							<longdesc>Nautilus थीम का नाम प्रयोग करने के लिये. इसे पदावनत किया जा रहा है Nautilus 2.2 से. कृपया चिह्न थीम का प्रयोग करें.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_back_button">
+						<local_schema short_desc="&quot;Back&quot; कमांड को ब्राउजर विंडो में सक्रिय करने के लिए माउस बटन">
+							<longdesc>माउस रखने वाले उपयोक्ता के लिए जो &quot;Forward&quot; और &quot;Back&quot; बटन रखते हैं, यह कुंजी निर्धारित करेगा कि कौन बटन  &quot;Back&quot; कमांड को सक्रिय करता है किसी ब्राउजर विंडो में. कृपया 4 से 14 के बीच का मान दें.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_forward_button">
+						<local_schema short_desc="&quot;Forward&quot; कमांड को ब्राउजर विंडो में सक्रिय करने के लिए माउस बटन">
+							<longdesc>माउस रखने वाले उपयोक्ता के लिए जो &quot;Forward&quot; और &quot;Back&quot; बटन रखते हैं, यह कुंजी निर्धारित करेगा कि कौन बटन  &quot;Forward&quot; कमांड को सक्रिय करता है किसी ब्राउजर विंडो में. कृपया 6 से 14 के बीच का मान दें.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_use_extra_buttons">
+						<local_schema short_desc="नॉटिलस ब्राउजर विंडो में अतिरिक्त माउस बटन घटना का प्रयोग करें">
+							<longdesc>माउस रखने वाले उपयोक्ता के लिए जो &quot;Forward&quot; और &quot;Back&quot; बटन रखते हैं, यह कुंजी निर्धारित करेगा कि कोई क्रिया नॉटिलस के अंदर ली गई है जब इनमें से कोई आगे बढ़ गया है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="install_mime_activation">
+						<local_schema short_desc="अज्ञात माइम प्रकार के लिए संकुल संस्थापक दिखाना है">
+							<longdesc>क्या उपयोक्ता को कोई संकुल संस्थापक संवाद दिखाना है उस स्थिति में यदि अज्ञात माइम प्रकार खोला जाता है, किसी अनुप्रयोग को इसे नियंत्रित करने के लिए खोजने के क्रम में.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="executable_text_activation">
+						<local_schema short_desc="जब चलाने योग्य पाठ फ़ाइलें सक्रिय हों तो क्या किया जाए">
+							<longdesc>निष्पादनीय पाठ फाइल के साथ क्या करना है जब वे सक्रिय किये जाते हैं (एकल या दोबार क्लिक ). संभावित मान हैं &quot;launch&quot; प्रोग्राम के रूप में लांच करने के लिये, &quot;ask&quot; पूछने के लिये क्या करना है संवाद से होकर, और &quot;display&quot; पाठ पाइल के रूप में उसे दिखाने के लिये.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="click_policy">
+						<local_schema short_desc="फ़ाइलों को चलाने/खोलने में प्रयुक्त क्लिक का प्रकार">
+							<longdesc>फाइल लांच करने के लिये &quot;single&quot; एक क्लिक में संभावित मान है, या &quot;double&quot; दो क्लिक में उसे लांच करने का संभावित मान है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_directory_item_counts">
+						<local_schema short_desc="फ़ोल्डर में वस्तुओं की संख्या कब दिखाएँ">
+							<longdesc>स्पीड ट्रैडऑफ जब फोल्डर में मद की संख्या दिखाने के लिये. अगर &quot;always&quot; पर सेट किया जाता है तब हमेशा मद गणना दिखायें, जबतक कि फोल्डर दूरस्थ सर्वर पर रहे. अगर &quot;local_only&quot; पर सेट किया जाता है तब स्थानीय फाइळ सिस्टम के लिये सिर्फ गणना दिखायें. अगर &quot;never&quot; पर सेट किया जाता है तब मद आउकन के लिये कभी चिंता न करें.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_icon_text">
+						<local_schema short_desc="चिह्नों में पूर्वावलोकन पाठ कब दिखाएँ">
+							<longdesc>Speed tradeoff के लिये जब फाइल च्हिन में पाठ फाइल सामग्री का पूर्वावलोकन देखना है. अगर &quot;always&quot; पर सेट किया जाता है तब हमेशा पूर्वावलोकन दिखाता है, बावजूद कि फोल्डर दूरस्थ सर्वर पर रहता है. अगर &quot;local_only&quot; पर सेट किया जाता है तब सिर्फ स्थानीय फाइळ सिस्टम पर पूर्वावलोकन दिखायें. अगर &quot;never&quot; पर सेट किया जाता है तब पूर्वावलोकन आंकड़ा को पढ़ने के लिये कभी चिंता न करें.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_delete">
+						<local_schema short_desc="क्या तत्काल मिटाना सक्षम करें">
+							<longdesc>अगर सही पर सेट किया है, तब Nautilus के पास फाइल को तत्काल मिटाने का फीचर होगा और रद्दी में भेजने के स्थान पर. यह फीचर खतरनाक है इशलिये सावधानी बरतें.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_trash">
+						<local_schema short_desc="फाइल मिटाने के दौरान संपुष्टि के लिए क्या पूछना है, या रद्दी खाली करनी है">
+							<longdesc>अगर सही पर सेट किया जाता है, तब Nautilus संपुष्टि के लिये पूछेगा कि कब आप फ़ाइल मिटाने का प्रयास करते हैं या रद्दी खाली करना है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_open_folder">
+						<local_schema short_desc="x-content/* प्रकार की सूची &quot;Open Folder&quot; में सेट की गई है">
+							<longdesc>x-content/* प्रकार की सूची जिसके लिए उपयोक्ता ने वरीयता कैप्लेट में &quot;Open Folder&quot; चुना है. कोई इस प्रकार के मेल खाते मीडिया के घुसाने से एक फोल्डर विंडो खोला जाएगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_ignore">
+						<local_schema short_desc="x-content/* प्रकार की सूची &quot;Do Nothing&quot; में सेट की गई है">
+							<longdesc>x-content/* प्रकार की सूची जिसके लिए उपयोक्ता ने वरीयता कैप्लेट में &quot;Do Nothing&quot; चुना है. कोई प्रांप्ट को नहीं दिखाया जाएगा और कोई मेल खाता अनुप्रयोग नहीं आरंभ किया जाएगा इस प्रकार के मेल खाते मीडिया के घुसाने से.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_start_app">
+						<local_schema short_desc="x-content/* प्रकार की सूची जहाँ वरीय अनुप्रयोग लॉन्च किए जाएंगे">
+							<longdesc>x-content/* प्रकार की सूची जिसके लिए उपयोक्ता ने वरीयता कैप्लेट में कोई अनुप्रयोग आरंभ कने के लिए चुना है. दिए प्रकार के लिए वरीय अनुप्रयोग आरंभ किया जाएगा इस प्रकार के मेल खाते मीडिया के घुसाने से.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_never">
+						<local_schema short_desc="कभी प्रांप्ट या स्वतः चालू/स्वतः आरंभ मत करें जब मीडिया घुसाई जाती है">
+							<longdesc>यदि यह सही पर नियत किया जाता है, नॉटिलस कभी प्रांप्ट नहीं करेगा और न ही माध्यम के घुसाए जाने पर स्वतः चालू/स्वतः आरंभ नहीं करेगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount_open">
+						<local_schema short_desc="क्या स्वारोहित मीडिया के लिए किसी फोल्डर को स्वतः खोलना है">
+							<longdesc>यदि सही पर सेट है, Nautilus स्वतः एक फोल्डर खोलेगा जब मीडिया स्वारोहित होता है. यह केवल उसी मीडिया में लागू होता है जहाँ कोई ज्ञात x-content/* प्रकार को जाँचा गया था जहाँ कोई ज्ञात एक्स सामग्री प्रकार जाँची जाती है, उपयोक्ता विन्यास योग्य क्रिया को बदले में लिया जाएगा </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount">
+						<local_schema short_desc="क्या मीडिया स्वतः आरोहित करने हैं">
+							<longdesc>यदि सही पर सेट है, Nautilus स्वतः मीडिया आरोहित करेगा जैसे कि उपयोक्ता दृश्य हार्ड डिस्क और विस्थापनीय मीडिया आरंभ व मीडिया घुसाने के दौरान.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_location_entry">
+						<local_schema short_desc="पथ पट्टी के बजाय हमेशा स्थान प्रविष्टि का प्रयोग करें">
+							<longdesc>अगर सही पर सेट किया जाता है, तब Nautilus ब्रॉउजर विंडो हमेशा एक पाठ आगत का प्रयोग करेगा अवस्थिति उपकरण पट्टी के लिये, पाथबार के बजाय.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_browser">
+						<local_schema short_desc="क्लॉसिक नॉटिलस व्यवहार सक्षम करता है, जहाँ सभी विंडोज़ ब्राउज़र्स हैं">
+							<longdesc>अगर सही पर सेट किया जाता है, तब सारे Nautilus विंडो ब्रॉउजर विंडो होगा. यह है कि कैसे Nautilus ने संस्करण  2.6 के पहले आचरण करता है, और कुछ व्यक्ति ऐसा आचरण पसंद करते हैं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="exit_with_last_window">
+						<local_schema short_desc="नॉटिलस बाहर निकल जाएगा जब अंतिम विंडो नष्ट की गई थी.">
+							<longdesc>If set to true, then Nautilus will exit when all windows are destroyed. This is the default setting. If set to false, it can be started without any window, so nautilus can serve as a daemon to monitor media automount, or similar tasks.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="फ़ॉन्ट को सामान्य-आकार बनाने हेतु कुंजीपट शॉर्टकट   ">
+							<longdesc>फ़ॉन्ट आकार सामान्य बनाने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;अक्षम&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="फ़ॉन्ट छोटा करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>फ़ॉन्ट छोटा करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;अक्षम&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="फ़ॉन्ट बड़ा करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>फ़ॉन्ट बड़ा करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;अक्षम&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="मदद प्रारंभ करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>मदद प्रारंभ करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;अक्षम&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="टैब 12 पर स्विच करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टैब 12 में स्विच करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="टैब 11 पर स्विच करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टैब 11 में स्विच करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="टैब 10 पर स्विच करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टैब 10 में स्विच करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="टैब 9 पर स्विच करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टैब 9 पर स्विच करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए ते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="टैब 8 पर स्विच करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टैब 8 पर स्विच करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="टैब 7 पर स्विच करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टैब 7 पर स्विच करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="टैब 6 पर स्विच करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टैब 6 पर स्विच करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="टैब 5 पर स्विच करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टैब 5 पर स्विच करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="टैब 4 पर स्विच करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टैब 4 पर स्विच करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="टैब 3 पर स्विच करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टैब 3 पर स्विच करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;अनिष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="टैब 2 पर स्विच करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टैब 2 पर स्विच करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="टैब 1 पर स्विच करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टैब 1 पर स्विच करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;अक्षम&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="त्वरक को मौजूदा टैब से अलग करने के लिए">
+							<longdesc>मौजूदा टैब से अलग करने के लिए त्वरक. जीटीके+ संसाधन फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="दायीं ओर मौजूदा टैब चलाने के लिए त्वरक चलाये">
+							<longdesc>दायीं ओर मौजूदा टैब चलाने के लिए त्वरक चलायें. जीटीके+ संसाधन फ़ाइल में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="बांयीं ओर मौजूदा टैब चलाने के लिए त्वरक चलाये">
+							<longdesc>बांयीं ओर मौजूदा टैब चलाने के लिए त्वरक चलाये. जीटीके+ संसाधन फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;अक्षम&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="अगले टैब पर स्विच करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>अगले टैब में स्विच हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="पिछले टैब में स्विच करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>पिछले टैब में स्विच करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="टर्मिनल रीसेट करने तथा साफ करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टर्मिनल को रीसेट करने तथा साफ़ करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="टर्मिनल रीसेट करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टर्मिनल रीसेट करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="टर्मिनल का शीर्षक नियत करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टर्मिनल शीर्षक नियत करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="मेन्यू पट्टी की दृश्यता को टॉगल करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>मेन्यू-पट्टी की दृश्यता टॉगल करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="पूर्ण स्क्रीन मोड टॉगल करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>पूर्ण स्क्रीन मोड टॉगल करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="पाठ चिपकाने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>क्लिपबोर्ड की सामग्री को टर्मिनल में चिपकाने के लिए कुंजीपट शॉर्टकट कुंजी. स्ट्रिंग के रूप में अभिव्यक्त GTK+ resource पाइल के लिए प्रयुक्त के समान प्रारूप. अगर आप विशेष स्टिंग &quot;disabled&quot; सेट करते हैं , तब इस क्ररिया के लिए कोई कुंजीपट शार्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="पाठ प्रतिलिपि करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>चयनित पाठ क्लिपबोर्ड पर प्रतिलिपि करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;निष्क्रिय&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="विंडो बन्द करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>विंडो बन्द करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;अक्षम&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="टैब बन्द करने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>टैब बन्द करने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;अक्षम&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="नया प्रोफ़ाइल बनाने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>प्रोफ़ाइल बनाने हेतु संवाद लाने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;अक्षम&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="एक नया विंडो खोलने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>नया विंडो खोलने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;अक्षम&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="नया टैब खोलने हेतु कुंजीपट शॉर्टकट">
+							<longdesc>नया टैब खोलने हेतु कुंजीपट शॉर्टकट. जीटीके+ रिसोर्स फ़ाइलों में उपयोग में लिए जाने वाले स्ट्रिंग के रूप में अभिव्यक्त किए जाते हैं. यदि आप विकल्प को विशिष्ट स्ट्रिंग &quot;अक्षम&quot; पर नियत करते हैं तो फिर इस क्रिया हेतु कोई भी कुंजीपट शॉर्टकट नहीं होगा.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_skey">
+							<local_schema short_desc="S/कुंजी चुनौती आलोकित करें">
+								<longdesc>एक संवाद पॉपअप करें जब एक S/key चुनौती अनुक्रिया प्रश्न जांचा जाता है और क्लिक किया जाता है. संवाद पेटी में कूटशब्द टाइप करना इसे टर्मिनल में भेजेगा.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="क्या तंत्र फ़ॉन्ट प्रयोग करना है">
+								<longdesc>अगर सही है, टर्मिनल डेस्कटॉप वैश्विक मानक फ़ॉन्ट का प्रयोग करेगा अगर यह मोनोस्पेस है (और ज्यादा समान फ़ॉन्ट यह जिसके साथ आ सकता है अन्यथा).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="क्या टर्मिनल विज़ेट हेतु प्रसंग से रंगों का उपयोग करना है">
+								<longdesc>अगर सही है, थीम रंग स्कीम पाठ प्रविष्टि बाक्स के लिए प्रयुक्त टर्मिनल के प्रयुक्त होगा, उपयोक्ता द्वारा दिये गये रंग के बजाय.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="मिटाएँ कुंजी का प्रभाव">
+								<longdesc>सेट करता है कि कौन delete कुंजी उत्पन्न करता है. संभावित मान हैं &quot;ascii-del&quot; ASCII DEL वर्ण के लिए, &quot;control-h&quot; Control-H (AKA the ASCII BS character) के लिए, &quot;escape-sequence&quot; escape श्रृंखला के लिए backspace या delete में. &quot;escape-sequence&quot; सामान्यतः Delete कंजी के लिए सही सेटिंग माना जाता है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="बैकस्पेस कुंजी का प्रभाव">
+								<longdesc>देखें कि कौन सा कोड बैकस्पेस उत्पन्न करता है. संभावित मान हैं &quot;ascii-del&quot; ASCII DEL वर्ण के लिए, &quot;control-h&quot; for Control-H (AKA the ASCII BS character), &quot;escape-sequence&quot; escape श्रृंखला backspace या delete में बंधी रहती है. &quot;ascii-del&quot; Backspace कुंजी के लिए सामान्य देखा गया.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="पृष्ठभूमि छवि को कितना गहरा करना है">
+								<longdesc>0.0 और 1.0 के बीच का मान बताता है कि पृष्ठभूमि चित्र को कितना गहरा करना है. 0.0 कोई गहरापन नहीं, 1.0 पूरी तरह से गहरा. वर्तमान कार्यान्वयन में, दो स्तर का गहरा पन संभव है, ताकि सेटिंग बुलियन के रूप में आचरण करे, जहां 0.0 गहरापन प्रभाव को निष्क्रिय करता है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="क्या पृष्ठभूमि छवि स्क्रॉल करें">
+								<longdesc>अगर सही है, पृष्ठभूमि विंब को अग्रभूमि पाठ से स्क्रॉल करें; अगर गलत है, विंव को स्थिर स्थिति में रखें और पाठ को ऊपर स्क्रॉल करें.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="पृष्ठभूमि छवि">
+								<longdesc>पृष्ठभूमि छवि का फ़ाइलनाम.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="पृष्ठभूमि प्रकार">
+								<longdesc>टर्मिनल पृष्ठभूमि का प्रकार. &quot;solid&quot; ठोस रंग के लिए ठोस हो सकता है, &quot;image&quot; एक विंब के लिए, या &quot;transparent&quot; छद्म पाररदर्शिता के लिए या तो वास्तविक पारदर्शिता यदि कंपोजिटिंग विंडो प्रबंधक चल रहा है, या छद्म पारदर्शिता अन्यथा चल रहा है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="फ़ॉन्ट">
+								<longdesc>एक पैंगो फ़ॉन्ट नाम. उदाहरण हैं &quot;संस 12&quot; या &quot;मोनोस्पेस गाढ़ा 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="टर्मिनल अनुप्रयोगों हेतु पटल">
+								<longdesc>टर्मिनल में 16-रंग पैलेट है जो कि अनुप्रयोग टर्मिनल के अंदर प्रयोग करता है. यह वह पैलेट है, रंग नाम के कॉलन से अलग के रूप में. रंग का नाम हेक्स प्रारूप में रहना चाहिए उदा. &quot;#FF00FF&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="टर्मिनल विंडो हेतु प्रतीक">
+								<longdesc>इस प्रोफ़ाइल में टैब/विंडोज़ के उपयोग हेतु चिह्न</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="शैल के बदले अनुकूलित कमांड जिसे चलाना है">
+								<longdesc>शेल पर यह कमांड चलायें, अगर use_custom_command सही है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="कर्सर रूपाकार">
+								<longdesc>संभावित मान है &quot;block&quot; किसी ब्लॉक कर्सर के प्रयोग के लिए, &quot;ibeam&quot; किसी लंबवत पंक्ति कर्सर के प्रयोग के लिए, या &quot;underline&quot; किसी रेखांकित कर्सर के प्रयोग के लिए.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="क्या संकेतक को टिमटिमाना करना है">
+								<longdesc>संभावित मान  &quot;system&quot; है जो वैश्विक कर्सर ब्लिंकिंग सेटिंग के प्रयोग के लिए, या &quot;on&quot; या &quot;off&quot; मोड को विस्तार से सेट करने के लिए.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="क्या शैल के बदले अनुकूलित कमांड चलाना है">
+								<longdesc>अगर सही है, custom_command सेटिंग का मान शेल के चलाने के बजाय प्रयुक्त होगा.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="क्या लॉगिन रिकार्ड को अद्यतन करना है जब टर्मिनल कमांड चलाएँ">
+								<longdesc>अगर सही है, सिस्टम लॉगिन utmp को रिकार्ड करता है औऱ wtmp को अद्यतन किया जायेगा जब टर्मिनल के अंदर कमांड लांच किया जाता है.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="क्या लॉगइन शैल के रूप में टर्मिनल में कमांड चलाएँ">
+								<longdesc>अगर सही है, टर्मिनल के अंदर का कमांड एक लॉगिन शेल के रूप में लांच होगा. (argv[0] इसके सामने एक हाइफन रखेगा.)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="टर्मिनल के साथ क्या किया जाए जब शिशु कमांड बाहर हो जाए">
+								<longdesc>संभावित मान &quot;close&quot; है टर्मिनल बंद करने के लिए, और &quot;restart&quot; कमांड फिर आरंभ करने के लिए.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="जब नया आउटपुट हो तो क्या तल पर स्क्रॉल करें">
+								<longdesc>यदि सही है, जब भी वहाँ एक नया आउटपुट होगा, टर्मिनल तल पर स्क्रॉल करेगा.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="जब एक कुंजी को दबाया जाए तो क्या तल पर स्क्रॉल करें">
+								<longdesc>यदि सही है, कोई कुंजी दबाने पर स्क्रॉल-पट्टी तल पर कूद जाएगा.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="स्क्रॉलबैक में रखने हेतु पंक्तियों की संख्या">
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="स्क्रॉल-पट्टी की स्थिति">
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="वर्ण जो &quot;शब्द के भाग&quot; समझे जाएँ">
+								<longdesc>जब पाठ को शब्द से चुना जाता है, इस वर्ण की श्रृंखला को एक शब्द माना जा सकता है. परिसर को  &quot;A-Z&quot; के रूप में दिया जाता है. शाब्दिक हाइफन (not expressing a range) दिया गया पहला वर्ण होना चाहिए.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="क्या टर्मिनल घंटी को चुप कराना है">
+								<longdesc>यदि सही है, जब अनुप्रयोग टर्मिनल घंटी हेतु एस्केप शृंखला भेजें.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="क्या गाढ़ा पाठ स्वीकार करना है">
+								<longdesc>यदि सही है, अनुप्रयोगों को टर्मिनल में पाठ को गहरा बनाने हेतु स्वीकारें.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="टर्मिनल हेतु शीर्षक">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="गतिमय शीर्षकों के साथ क्या किया जाए">
+								<longdesc>टर्मिनल में अगर अनुप्रयोग शीर्षक सेट करता है (व्यक्ति के पास अपना शेल है इसे करने के लिए), गतिशील सेट शीर्षक विन्यस्त शीर्षक को मिटा सकता है, इसके पहले जाने के लिए, इसके बाद जाने के लिए, या इसे हटाने के लिए. संभावित मान हैं &quot;replace&quot;, &quot;before&quot;, &quot;after&quot;, और &quot;ignore&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="टर्मिनल पृष्ठभूमि का तयशुदा रंग">
+								<longdesc>टर्मिनल पृष्ठभूमि का तयशुदा रंग, रंग विशिष्टता के रूप में (HTML-style hex digits, या रंग नाम जैसे कि  &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="टर्मिनल में पाठ का तयशुदा रंग">
+								<longdesc>टर्मिनल पृष्ठभूमि का तयशुदा रंग, रंग विशिष्टता के रूप में (HTML-style hex digits हो सकता है, या कि रंग नाम जैसे कि &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="क्या नए विंडोज़/टैब्स में मेन्यू-पट्टी दिखाना है">
+								<longdesc>सही अगर मेनूबार नये विंडो में दिखाया जाता है, इस प्रोफ़ाइल के साथ विंडो/टैब.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="प्रोफ़ाइल का मनुष्य द्वारा पढ़ सकने योग्य नाम">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="क्या जब टर्मिनल विंडो बन्द किया जाए तो पुष्टिकरण हेतु पूछें">
+							<longdesc>क्या जब टर्मिनल विंडो जिसमें एक से अधिक टैब हैं, बन्द किया जाए तो पुष्टिकरण हेतु पूछें</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="उपलब्घ एन्कोडिंग की सूची">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="क्या मेन्यू-पट्टी पहुँच हेतु मानक जीटीके शॉर्टकट सक्षम है">
+							<longdesc>सामान्यतः आप मेनूबार को F10 से अभिगम कर सकते हैं. इसे gtkrc (gtk-menu-bar-accel = &quot;whatever&quot;) से होकर पसंदीदा किया जा सकता है. यह विकल्प मानक मेनूबार त्वरक को निष्क्रिय करने की अनुमति देता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="क्या मेन्यू-पट्टी में पहुँच कुंजियाँ हैं">
+							<longdesc>क्या मेनूबार के लिए Alt+letter अभिगम कुंजी रखना है. वे टर्मिनल के अंदर चलने वाले अनुप्रयोग में व्यवधान कर सकते हैं इसलिये उन्हें ऑफ कर चलाना संभव है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="नए टर्मिनल्स के उपयोग हेतु प्रोफ़ाइल">
+							<longdesc>जब नया विंडो या टैब खोला जाए तो उपयोग में प्रोफ़ाइल. इसका प्रोफ़ाइल सूची में होना आवश्यक है. (_l)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="प्रोफ़ाइल्स की सूची">
+							<longdesc>gnome-terminal को ज्ञात प्रोफ़ाइल की सूची. सूची में /apps/gnome-terminal/profiles के सापेक्ष स्ट्रिंग नामित उपनिर्देशिका है.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-session">
+				<dir name="options">
+					<entry name="logout_prompt">
+						<local_schema short_desc="लॉगाउट संदेश">
+							<longdesc>अगर सक्षम हे तो जीनोम सत्र वंद होने से पहले उपयोगकर्ता को टोकेगा</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_save_session">
+						<local_schema short_desc="सत्रें संग्रहित करें">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome_settings_daemon">
+				<entry name="volume_step">
+					<local_schema short_desc="आवाज निर्धारक चरण">
+						<longdesc>आवाज निर्धारक चरण आवाज निर्धारक के प्रतिशत में.</longdesc>
+					</local_schema>
+				</entry>
+				<dir name="gtk-modules">
+					<entry name="gail:atk-bridge">
+						<local_schema short_desc="पहुँच समर्थन के लिए GTK+ मॉड्यूल">
+							<longdesc>यह कुंजी पहुँच समर्थन लोड करने के लिए GTK+ मॉड्यूल निर्धारित करता है.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybindings">
+					<entry name="next">
+						<local_schema short_desc="अगला ट्रैक">
+							<longdesc>अगले ट्रैक छोड़ने के लिए बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="previous">
+						<local_schema short_desc="पिछला ट्रैक">
+							<longdesc>पिछला ट्रैक छोड़ने के लिए बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="stop">
+						<local_schema short_desc="प्लेबैक रोकें">
+							<longdesc>प्लेबैक रोकने के लिए बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pause">
+						<local_schema short_desc="प्लेबैक रोकें">
+							<longdesc>प्लेबैक रोकने के लिए बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="play">
+						<local_schema short_desc="बजाएँ (या बजाएँ/ठहरें)">
+							<longdesc>प्लेबैक आरंभ करने के लिए बाइंडिंग (या toggle play/pause).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media">
+						<local_schema short_desc="मीडिया प्लेयर लॉन्च करें">
+							<longdesc>मीडिया प्लेयर लॉन्च करने के लिए बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="www">
+						<local_schema short_desc="वेब ब्राउज़र चलाएँ">
+							<longdesc>वेब ब्राउज़र लॉन्च करने के लिए बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="calculator">
+						<local_schema short_desc="कैलकुलेटर लॉन्च करें">
+							<longdesc>गणक को लॉन्च करने में बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="मदद ब्राउज़र लॉन्च करें">
+							<longdesc>मदद ब्राउज़र लॉन्च करने के लिए बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screensaver">
+						<local_schema short_desc="स्क्रीन पर ताला">
+							<longdesc>स्क्रीन लॉक करने के लिए बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="email">
+						<local_schema short_desc="ई-मेल क्लाइंट लॉन्च करें">
+							<longdesc>ईमेल क्लाइंट को लॉन्च करने के लिए शुरूआत.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search">
+						<local_schema short_desc="ढूंढें">
+							<longdesc>खोज औज़ार लॉन्च करने के लिए बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home">
+						<local_schema short_desc="घर फ़ोल्डर">
+							<longdesc>घर फ़ोल्डर खोलने के लिए बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="eject">
+						<local_schema short_desc="बाहर करें">
+						</local_schema>
+					</entry>
+					<entry name="power">
+						<local_schema short_desc="लॉग आउट">
+							<longdesc>लॉगआउट के लिए बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_up">
+						<local_schema short_desc="आवाज बढ़ाएँ">
+							<longdesc>सिस्टम आवाज बढ़ाने के लिए बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_down">
+						<local_schema short_desc="आवाज कम करें">
+							<longdesc>सिस्टम आवाज कम करने के लिए बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_mute">
+						<local_schema short_desc="आवाज मौन">
+							<longdesc>सिस्टम आयतन मौन करने के लिए बाइंडिंग.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="plugins">
+					<dir name="xsettings">
+						<entry name="active">
+							<local_schema short_desc="xsettings प्लगिन सक्रिय करें">
+								<longdesc>xsettings प्रबंधित करने में प्लगिन सक्रिय करने के लिए सही पर सेट करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="xrdb">
+						<entry name="active">
+							<local_schema short_desc="xrdb प्लगिन सक्रिय करें">
+								<longdesc>xrdb सेटिंग प्रबंधित करने में प्लगिन सक्रिय करने के लिए सही पर सेट करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="typing-break">
+						<entry name="active">
+							<local_schema short_desc="टाइपिंग ब्रेक प्लगिन सक्रिय करें">
+								<longdesc>टाइपिंग ब्रेक प्रबंधित करने में प्लगिन सक्रिय करने के लिए सही पर सेट करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="sound">
+						<entry name="active">
+							<local_schema short_desc="ध्वनि प्लगिन सक्रिय करें">
+								<longdesc>ध्वनि नमूना सेटिंग प्रबंधित करने में प्लगिन सक्रिय करने के लिए सही पर सेट करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mouse">
+						<entry name="active">
+							<local_schema short_desc="माउस प्लगिन सक्रिय करें">
+								<longdesc>माउस सेटिंग प्रबंधित करने में प्लगिन सक्रिय करने के लिए सही पर सेट करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="media-keys">
+						<entry name="active">
+							<local_schema short_desc="मीडिया कुंजी प्लगिन सक्रिय करें">
+								<longdesc>मल्टीमीडिया कुंजी सेटिंग प्रबंधित करने में प्लगिन सक्रिय करने के लिए सही पर सेट करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="active">
+							<local_schema short_desc="कीबोर्ड प्लगिन सक्रिय करें">
+								<longdesc>कुंजीपट सेटिंग प्रबंधित करने में प्लगिन सक्रिय करने के लिए सही पर सेट करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keybindings">
+						<entry name="active">
+							<local_schema short_desc="कीबाइंडिंग प्लगिन सक्रिय करें">
+								<longdesc>कीबाइंडिंग प्रबंधित करने में प्लगिन सक्रिय करने के लिए सही पर सेट करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="housekeeping">
+						<entry name="ignore_paths">
+							<local_schema short_desc="अनदेखा करने के लिए आरोह पथ">
+								<longdesc>माउंट पथ की सूची निर्दिष्ट करें जब वे जमीन पर दौड़ते हैं.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="min_notify_period">
+							<local_schema short_desc="दुहराई गई चेतावनी के लिए न्यूनतम सूचना अवधि">
+								<longdesc>मिनट में समय निर्दिष्ट करें. किसी उत्तरवर्ती चेतावनी किसी आयतन के लिए वे इस अवधि से अधिक के लिए प्रकट नहीं होगा.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_size_gb_no_notify">
+							<local_schema short_desc="मुक्त स्थान कोई सूचना थ्रेसहोल्ड नहीं">
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify_again">
+							<local_schema short_desc="उत्तरवर्ती मुक्त प्रतिशत अधिसूचना थ्रेसहोल्ड">
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify">
+							<local_schema short_desc="मुक्त प्रतिशत सूचना थ्रेसहोल्ड">
+							</local_schema>
+						</entry>
+						<entry name="active">
+							<local_schema short_desc="हाउसकीपिंग प्लगिन सक्रिय करें">
+								<longdesc>हाउस कीपिंग प्लगिन सक्रिय करने के लिए सही पर सेट करें, अस्थायी फ़ाइल कैश खत्म करने के लिए.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="font">
+						<entry name="active">
+							<local_schema short_desc="फॉन्ट प्लगिन सक्रिय करें">
+								<longdesc>फॉन्ट सेटिंग प्रबंधित करने में प्लगिन सक्रिय करने के लिए सही पर सेट करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="clipboard">
+						<entry name="active">
+							<local_schema short_desc="क्लिपबोर्ड प्लगिन सक्रिय करें">
+								<longdesc>क्लिपबोर्ड सेटिंग प्रबंधित करने में प्लगिन सक्रिय करने के लिए सही पर सेट करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="background">
+						<entry name="active">
+							<local_schema short_desc="पृष्ठभूमि प्लगिन सक्रिय करें">
+								<longdesc>डेस्कटॉप पृष्ठभूमि सेटिंग प्रबंधित करने में प्लगिन सक्रिय करने के लिए सही पर सेट करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="a11y-keyboard">
+						<entry name="active">
+							<local_schema short_desc="पहुँच कुंजीपट प्लगिन सक्षम करें">
+								<longdesc>पहुँच कुंजीपट सेटिंग प्रबंधित करने में प्लगिन सक्रिय करने के लिए सही पर सेट करें.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="xrandr">
+					<entry name="show_notification_icon">
+						<local_schema short_desc="अधिसूचना क्षेत्र में प्रदर्शन दिखाएँ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="yelp">
+				<entry name="fixed_font">
+					<local_schema short_desc="स्थिर पाठ के लिये फॉन्ट">
+						<longdesc>स्थिर चौड़ाई के साथ पाठ के लियें फॉन्ट.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="variable_font">
+					<local_schema short_desc="पाठ के लिये फॉन्ट">
+						<longdesc>परिवर्तनशील चौड़ाई के साथ पाठ के लियें फॉन्ट.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_system_fonts">
+					<local_schema short_desc="सिस्टम फॉन्ट का प्रयोग करें">
+						<longdesc>सिस्टम के लिये मूलभूत फॉन्ट सेट का प्रयोग करें.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_caret">
+					<local_schema short_desc="हंसपद का प्रयोग करें">
+						<longdesc>पृष्ठ देखने के दौरान कुंजीपटल नियंत्रक हंसपद का प्रयोग करें.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="metacity">
+				<dir name="window_keybindings">
+					<entry name="move_to_center">
+						<local_schema short_desc="विंडो को स्क्रीन के केंद्र में खिसकाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_w">
+						<local_schema short_desc="विंडो को स्क्रीन पश्चिमी (बाएँ) कोने पर खिसकाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_e">
+						<local_schema short_desc="विंडो को स्क्रीन के पूर्वी (दाहिने) हिस्से पर खिसकाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_s">
+						<local_schema short_desc="विंडो को स्क्रीन के दक्षिणी (तल) हिस्से पर खिसकाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_n">
+						<local_schema short_desc="विंडो को स्क्रीन उत्तरी (शीर्ष) हिस्से पर खिसकाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_se">
+						<local_schema short_desc="विंडो को दक्षिण पूर्व (तल दाहिना) हिस्से पर खिसकाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_sw">
+						<local_schema short_desc="विंडो को दक्षिण पश्चिम (तल बायां) हिस्से पर खिसकाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_ne">
+						<local_schema short_desc="विंडो को उत्तर पश्चिम (ऊपरी बायें) कोने पर खिसकाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_nw">
+						<local_schema short_desc="विंडो को उत्तर पश्चिम (top left) कोने पर खिसकाएँ">
+						</local_schema>
+					</entry>
+					<entry name="maximize_horizontally">
+						<local_schema short_desc="विंडो आड़ा अधिकतम करें">
+						</local_schema>
+					</entry>
+					<entry name="maximize_vertically">
+						<local_schema short_desc="विंडो खड़ा अधिकतम करें">
+						</local_schema>
+					</entry>
+					<entry name="lower">
+						<local_schema short_desc="विंडो को अन्य विंडो के नीचे रखें">
+						</local_schema>
+					</entry>
+					<entry name="raise">
+						<local_schema short_desc="विंडो को अन्य विंडो के ऊपर रखें">
+						</local_schema>
+					</entry>
+					<entry name="raise_or_lower">
+						<local_schema short_desc="विंडो ऊपर करें यदि यह दूसरे विंडो से ढ़ंका है अन्यथा नीचे रखें">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_down">
+						<local_schema short_desc="विंडो को एक कार्यस्थान नीचे लाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_up">
+						<local_schema short_desc="विंडो को एक कार्यस्थान ऊपर लाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_right">
+						<local_schema short_desc="विंडो को एक कार्यस्थान दाएँ लाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_left">
+						<local_schema short_desc="विंडो को एक कार्यस्थान बाएँ लाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_12">
+						<local_schema short_desc="विंडो को कार्यस्थान 12 पर ले जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_11">
+						<local_schema short_desc="विंडो को कार्यस्थान 11 पर ले जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_10">
+						<local_schema short_desc="विंडो को कार्यस्थान 10  पर ले जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_9">
+						<local_schema short_desc="विंडो को कार्यस्थान 9 पर ले जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_8">
+						<local_schema short_desc="विंडो को कार्यस्थान 8 पर ले जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_7">
+						<local_schema short_desc="विंडो को कार्यस्थान 7 पर ले जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_6">
+						<local_schema short_desc="विंडो को कार्यस्थान 6 पर ले जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_5">
+						<local_schema short_desc="विंडो को कार्यस्थान 5 पर ले जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_4">
+						<local_schema short_desc="विंडो को कार्यस्थान 4 पर ले जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_3">
+						<local_schema short_desc="विंडो को कार्यस्थान 3 पर ले जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_2">
+						<local_schema short_desc="विंडो को कार्यस्थान 2 पर ले जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_1">
+						<local_schema short_desc="विंडो को कार्यस्थान 1 पर ले जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="toggle_on_all_workspaces">
+						<local_schema short_desc="टॉगल करें कि विंडो सभी कार्यस्थान पर है या केवल एक">
+						</local_schema>
+					</entry>
+					<entry name="begin_resize">
+						<local_schema short_desc="विंडो का आकार बदलें">
+						</local_schema>
+					</entry>
+					<entry name="begin_move">
+						<local_schema short_desc="विंडो खिसकाएँ">
+						</local_schema>
+					</entry>
+					<entry name="close">
+						<local_schema short_desc="विंडो बंद करें">
+						</local_schema>
+					</entry>
+					<entry name="minimize">
+						<local_schema short_desc="विंडो को न्यूनतम करें">
+						</local_schema>
+					</entry>
+					<entry name="toggle_shaded">
+						<local_schema short_desc="आभायुक्त स्थिति टॉगल करें">
+						</local_schema>
+					</entry>
+					<entry name="unmaximize">
+						<local_schema short_desc="विंडो पुनर्बहाल करें">
+						</local_schema>
+					</entry>
+					<entry name="maximize">
+						<local_schema short_desc="विंडो अधिकतम करें">
+						</local_schema>
+					</entry>
+					<entry name="toggle_above">
+						<local_schema short_desc="टॉगल करें कि क्या विंडो अन्य विंडो पर हमेशा दिखेगा">
+						</local_schema>
+					</entry>
+					<entry name="toggle_maximized">
+						<local_schema short_desc="अधिकतम स्थिति टॉगल करें">
+						</local_schema>
+					</entry>
+					<entry name="toggle_fullscreen">
+						<local_schema short_desc="पूरा स्क्रीन मोड टॉगल करें">
+						</local_schema>
+					</entry>
+					<entry name="activate_window_menu">
+						<local_schema short_desc="विंडो मेनू सक्रिय करें">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybinding_commands">
+					<entry name="command_window_screenshot">
+						<local_schema short_desc="विंडो स्क्रीन-शॉट कमांड ">
+							<longdesc>कुंजी /apps/metacity/global_keybindings/run_command_window_screenshot वह कीबाइंडिंग पारिभाषित करती है जो इस विन्यास से उल्लेखित कमांड को प्रारंभ करती है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command_screenshot">
+						<local_schema short_desc="स्क्रीन-शॉट कमांड ">
+							<longdesc>कुंजी /apps/metacity/global_keybindings/run_command_screenshot वह कीबाइंडिंग पारिभाषित करती है जो इस विन्यास से उल्लेखित कमांड को प्रारंभ करती है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="कीबाइंडिंग के प्रत्युत्तर में चलाया जाने वाला कमांड">
+							<longdesc>कुंजियाँ  /apps/metacity/global_keybindings/run_command_N इन कमांड के तदनुरूप कीबाइंडिंग पारिभाषित करती हैं. run_command_N  का कीबाइंडिंग दबाने पर यह command_N को चलाएगा. </longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global_keybindings">
+					<entry name="run_command_terminal">
+						<local_schema short_desc="एक टर्मिनल चलायें">
+						</local_schema>
+					</entry>
+					<entry name="run_command_window_screenshot">
+						<local_schema short_desc="विंडो का चित्र लें">
+						</local_schema>
+					</entry>
+					<entry name="run_command_screenshot">
+						<local_schema short_desc="स्क्रीन का चित्र लें">
+						</local_schema>
+					</entry>
+					<entry name="panel_run_dialog">
+						<local_schema short_desc="पटल के &quot;अनुप्रयोग चलाएँ&quot; संवाद पेटी दिखाएँ">
+						</local_schema>
+					</entry>
+					<entry name="panel_main_menu">
+						<local_schema short_desc="फ़लक मुख्य मेनू दिखाएँ">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="सभी सामान्य विंडो को छुपाएँ और डेस्कटॉप पर फ़ोकस करें">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels_backward">
+						<local_schema short_desc="पटल तथा डेस्कटॉप के बीच तत्काल पीछे जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels">
+						<local_schema short_desc="पटल तथा डेस्कटॉप के बीच तत्काल खिसकाएँ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows_backward">
+						<local_schema short_desc="विंडोज़ के बीच तत्काल पीछे जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows">
+						<local_schema short_desc="विंडोज़ के बीच तत्काल खिसकाएँ">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group_backward">
+						<local_schema short_desc="किसी अनुप्रयोग के विंडो के बीच तत्काल पीछे जायें">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group">
+						<local_schema short_desc="तत्काल अनुप्रयोग के विंडो के बीच जायें">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels_backward">
+						<local_schema short_desc="पॉपअप के साथ पटल व डेस्कटॉप के पीछे जायें">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels">
+						<local_schema short_desc="पॉपअप के साथ पटल व डेस्कटॉप के बीच जायें">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows_backward">
+						<local_schema short_desc="पॉपअप के साथ विंडो के बीच पीछे जायें">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows">
+						<local_schema short_desc="पॉपअप के साथ विंडो के बीच जायें">
+						</local_schema>
+					</entry>
+					<entry name="switch_group_backward">
+						<local_schema short_desc="पॉपअप के साथ अनुप्रयोग के विंडो के बीच पीछे जायें">
+						</local_schema>
+					</entry>
+					<entry name="switch_group">
+						<local_schema short_desc="पॉपअप के साथ अनुप्रयोग के विंडो के बीच जायें">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_down">
+						<local_schema short_desc="मौजूदा कार्यस्थान के नीचे कार्यस्थान पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_up">
+						<local_schema short_desc="मौजूदा कार्यस्थान के ऊपर कार्यस्थान पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_right">
+						<local_schema short_desc="मौजूदा कार्यस्थान के दाहिने कार्यस्थान पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_left">
+						<local_schema short_desc="मौजूदा कार्यस्थान के बाएँ कार्यस्थान पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_12">
+						<local_schema short_desc="कार्यस्थान 12  पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_11">
+						<local_schema short_desc="कार्यस्थान 11  पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_10">
+						<local_schema short_desc="कार्यस्थान 10  पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_9">
+						<local_schema short_desc="कार्यस्थान 9 पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_8">
+						<local_schema short_desc="कार्यस्थान 8 पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_7">
+						<local_schema short_desc="कार्यस्थान 7  पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_6">
+						<local_schema short_desc="कार्यस्थान 6 पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_5">
+						<local_schema short_desc="कार्यस्थान 5 पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_4">
+						<local_schema short_desc="कार्यस्थान 4 पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_3">
+						<local_schema short_desc="कार्यस्थान 3 पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_2">
+						<local_schema short_desc="कार्यस्थान 2 पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_1">
+						<local_schema short_desc="कार्यस्थान 1 पर जाएँ">
+						</local_schema>
+					</entry>
+					<entry name="run_command">
+						<local_schema short_desc="पारिभाषित कमांड चलाएँ">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="workspace_names">
+					<entry name="name">
+						<local_schema short_desc="कार्यस्थान का नाम">
+							<longdesc>कार्यस्थान का नाम</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="general">
+					<entry name="disable_workarounds">
+						<local_schema short_desc="मिसफीचर्स असमर्थ करें जो कि पुराने या टूटे अनुप्रयोगों द्वारा वांछित होते हैं">
+							<longdesc>कुछ अनुप्रयोग विशेषता को महत्व नहीं देते हैं जो कि विंडो प्रबंधक मिसफीचर में परिणाम लाता है. यह विकल्प Metacity को काफी सही मोड में रखता है, जो कि ज्यादा संगत उपयोक्ता अंतरफलक देता है, अगर कोई गलत अनुप्रयोग नहीं चला रहा है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="application_based">
+						<local_schema short_desc="(कार्यान्वित नहीं) संचलन अनुप्रयोगों के अनुसार चलता है, विंडोज़ से नहीं">
+							<longdesc>यदि सही है तो मेटासिटी विंडो के बजाए अनुप्रयोग जैसे कार्य करेगा. परिकल्पना थोड़ी संक्षिप्त है परंतु आमतौर पर अनुप्रयोग आधारित सेटअप मैक जैसा ज्यादा होगा विंडोज़ की तरह कम. यदि आप किसी विंडो को अनुप्रयोग आधारित मोड पर फ़ोकस करेंगे तो अनुप्रयोग में के सभी विंडो ऊपर हो जाएंगे. यह भी कि अनुप्रयोग आधारित मोड में फ़ोकस क्लिक अन्य अनुप्रयोग के विंडो से होकर नहीं जाता. अनुप्रयोग आधारित मोड विस्तृत रूप से इस समय कार्यान्वित नहीं है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reduced_resources">
+						<local_schema short_desc="यदि सही है, उपयोगिता को कम साधन उपयोग के साथ बदलें">
+							<longdesc>अगर सही है, metacity उपयोक्ता को कम फीडबेक और सीधा हस्तक्षेप का कम सेंस देगा, वायरफ्रेम, एनीमेशन अनदेखा करते हुये, या अन्य साधन. यह महत्वपूर्ण कमी है कई उपयोक्ता के प्रयोग में, लेकिन कई पुरातन अनुप्रयोग व टर्मिनल सर्वर की अनुमति देते हैं कि वे कब अन्यथा रूप से अप्रायोगिक होगें. हालांकि, वायरफ्रेम फीचर को निष्क्रिय किया जाता है जब पहुंच वीयर्ड डेस्कटॉप खंडन को अनदेखा करने के लिये हो.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="compositing_manager">
+						<local_schema short_desc="कंपोजिटिंग प्रबंधक">
+							<longdesc>निर्धारित करें कि Metacity एक कंपोजिटिंग प्रबंधक है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell_type">
+						<local_schema short_desc="दृष्टिगोच़र घंटी प्रकार">
+							<longdesc>मेटासिटी को बताता है कि कैसे दृश्य संकेत काम में लिया जाए कि तंत्र घंटी या अन्य अनुप्रयोग घंटी बजाना है. वर्तमान में दो मान्य मूल्य हैं, &quot;पूरा स्क्रीन&quot;, जो फुलस्क्रीन काला-सफेद फ्लेश करता है तथा &quot;फ्रेम-फ्लैश&quot;  जो संबंधित अनुप्रयोग के टाइटलबार को फ्लेश करने हेतु संकेत करता है, जिसको घंटी संकेत भेजता है. यदि अनुप्रयोग जिसने घंटी संकेत भेजा है. अज्ञात है तो ( जैसा कि आमतौर पर डिफ़ॉल्ट &quot;तंत्र बीप&quot; में होता है), वर्तमान फ़ोकस विंडो का शीर्षक पट्टी फ्लैश करेगा. </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="audible_bell">
+						<local_schema short_desc="तंत्र घंटी सुनने योग्य है">
+							<longdesc>निर्धारित करता है कि क्या अनुप्रयोग या तंत्र सुनने योग्य बीप पैदा कर सकता है, शायद दृष्टिगोच़र घंटी के साथ उपयोग किया जाकर शांति मय बीप स्वीकारे.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell">
+						<local_schema short_desc="दृष्टिगोच़र घंटी सक्षम करें">
+							<longdesc>दृश्य संकेत चालू करना जब कोई अनुप्रयोग या तंत्र घंटी या बीप जारी करते हैं तो, शोरयुक्त वातावरण- जहाँ सुनने में कठिनाई हो या उंचा सुनने वाले के लिये उपयोगी होता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="num_workspaces">
+						<local_schema short_desc="कार्यस्थान की संख्या">
+							<longdesc>कार्यस्थान की संख्या. यह शून्य से अधिक होना चाहिए तथा इसे एक अधिकतम पर निर्धारित करना चाहिये ज्यादा कार्यस्थान की मांग करने पर आपके डेस्कटॉप को दुर्धटनावश नष्ट होने से बचाने हेतु.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_font">
+						<local_schema short_desc="विंडो शीर्षक फ़ॉन्ट">
+							<longdesc>एक फंट विवरण स्ट्रिंग विंडो शीर्षक पट्टी के लिये फंट के बारे में बता रहा है. विवरण से आकार प्रयुक्त होगा अगर titlebar_font_size विकल्प 0 में सेट किया जाता है, साथ ही, यह विकल्प निष्क्रिय किया जाता है अगर titlebar_uses_desktop_font विकल्प को सही पर सेट किया जाता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_uses_system_font">
+						<local_schema short_desc="विंडो शीर्षकों में मानक तंत्र फ़ॉन्ट प्रयोग करें">
+							<longdesc>यदि सही है, शीर्षक पट्टी फ़ॉन्ट विकल्प का अनदेखा करें तथा विंडो शीर्षकों हेतु मानक अनुप्रयोग फ़ॉन्ट का प्रयोग करें</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="वर्तमान प्रसंग">
+							<longdesc>प्रसंग, विंडो किनारा, शीर्षक पट्टी इत्यादि के रंग-रूप को निर्धारित करता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise_delay">
+						<local_schema short_desc="आटो रेस विकल्प हेतु मिलीसेकण्ड्स में देरी">
+							<longdesc>यदि auto_raise  सही पर नियत है तो विंडो ऊपर उठाने से पहले विलम्ब समय. यह विलम्ब सेकण्ड के हजारवें हिस्से में दिया जाता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise">
+						<local_schema short_desc="फ़ोकस किए विंडो को स्वचालित उठाएँ">
+							<longdesc>अगर सही पर सेट किया जाता है, और फोकस मोड या तो &quot;स्लोपी&quot; या &quot;माउस&quot; हो तब फोकस किया विंडो तब auto_raise_delay कुंजी से निर्दिष्ट विलंब से फोकस किया विंडो उठाया जायेगा. यह विंडो पर क्लिक किये जाने से संबंधित नहीं है, न तो खींचे व छोड़ें पर दाखिल होकर.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_right_click_titlebar">
+						<local_schema short_desc="शीर्षक पट्टी दाहिना-क्लिक करने पर क्रिया">
+							<longdesc>यह शीर्षक पट्टी पर दाहिने-क्लिक के असर को निर्धारित करता है. वर्तमान वैध विकल्प हैं- &apos;toggle_shade&apos; जो विंडो की छाया चालू/बन्द करते हैं, तथा &apos;toggle_maximize&apos; जो विंडो को अधिकतम/उससे बाहर करता है, &apos;toggle_maximize_horizontally&apos; और &apos;toggle_maximize_vertically&apos; जो विंडो को उसी दिशा में अधिकतम/बाहर करता है, &apos;minimize&apos; जो कि विंडो को न्यूनतम करेगा, &apos;shade&apos; जो विंडो को रॉलअप केरगा, &apos;menu&apos; जो कि विंडो मेनूय दिखाएगा, &apos;lower&apos; जो विंडो को दूसरों के पीछे रखेगा, और &apos;none&apos; जो कुछ नहीं करेगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_middle_click_titlebar">
+						<local_schema short_desc="शीर्षक पट्टी मध्य-क्लिक करने पर क्रिया">
+							<longdesc>यह शीर्षक पट्टी पर मध्य-क्लिक के असर को निर्धारित करता है. वर्तमान वैध विकल्प हैं- &apos;toggle_shade&apos; जो विंडो की छाया चालू/बन्द करते हैं, तथा &apos;toggle_maximize&apos; जो विंडो को अधिकतम/उससे बाहर करता है, &apos;toggle_maximize_horizontally&apos; और &apos;toggle_maximize_vertically&apos; जो विंडो को उसी दिशा में अधिकतम/बाहर करता है, &apos;minimize&apos; जो कि विंडो को न्यूनतम करेगा, &apos;shade&apos; जो विंडो को रॉलअप केरगा, &apos;menu&apos; जो कि विंडो मेनूय दिखाएगा, &apos;lower&apos; जो विंडो को दूसरों के पीछे रखेगा, और &apos;none&apos; जो कुछ नहीं करेगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_double_click_titlebar">
+						<local_schema short_desc="शीर्षक पट्टी में दोहरा-क्लिक करने पर क्रिया">
+							<longdesc>यह शीर्षक पट्टी पर दोहरे-क्लिक के असर को निर्धारित करता है. वर्तमान वैध विकल्प हैं- &apos;toggle_shade&apos; जो विंडो की छाया चालू/बन्द करते हैं, तथा &apos;toggle_maximize&apos; जो विंडो को अधिकतम/उससे बाहर करता है, &apos;toggle_maximize_horizontally&apos; और &apos;toggle_maximize_vertically&apos; जो विंडो को उसी दिशा में अधिकतम/बाहर करता है, &apos;minimize&apos; जो कि विंडो को न्यूनतम करेगा, &apos;shade&apos; जो विंडो को रॉलअप केरगा, &apos;menu&apos; जो कि विंडो मेनूय दिखाएगा, &apos;lower&apos; जो विंडो को दूसरों के पीछे रखेगा, और &apos;none&apos; जो कुछ नहीं करेगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="raise_on_click">
+						<local_schema short_desc="अन्य उपयोक्ता अंतःक्रिया के प्रभाव को क्या उठाया जाना चाहिये">
+							<longdesc>इस विकल्प को गलत पर सेट करना दोषपूर्ण आचरण की ओर ले जाएगा, इसलिए उपयोक्ता को बहुत अधिक हतोत्साहित किया जाता है तयशुदा से सही पर बदलने से. कई क्रिया (e.g. clicking in the client area, moving or resizing the window) विंडो को सामान्यतः बतौर साइड एफेक्ट उठाते हैं. इस विकल्प को गलत पर सेट करना, जो कि बहुत अधिक हतोत्साहित किया जाता है, जो दूसरे उपयोक्ता क्रिया से उटाने को डिकपल करेगा, और अनुप्रयोग द्वारा बनाए वृद्धि आग्रह को अनदेख. देखें http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. बावजूद कि यह विकल्प गलत है, विंडोज को किसी alt-left-click के द्वारा विंडो पर कही भी उठाया जा सकता है, विंडो डेकोरेशन पर एक सामान्य क्लिक, या पेजर से विशेष संदेश के द्वारा, जैसे कि कार्यसूची एप्लेट से सक्रिय आग्रह. यह विकल्प क्लिक से फोकस मोड में अभी निष्क्रिय है. नोट करें कि विंडो बढ़ना के तरीकों की सूची जब raise_on_click गलत है में प्रोग्राममेटिक आग्रह को शामिल नहीं करता है विंडो को बढ़ाने के लिए अनुप्रयोग से; वैसे आग्रह आग्रह के कारण के बिना अनदेखे किए जाएंगे. यदि आप अनुप्रयोग डेवलेपर हैं और उपयोक्ता है जो शिकायत करता है कि आपका अनुप्रयोग निष्क्रिय सेटिंग में काम नहीं करता है, उन्हें बताएँ कि यह अपने विंडो प्रबंधक को विगाड़ने का उनका काम है और उन्हें इस विकल्प को सही पर वापस सेट करना है निवेदित &quot;bug&quot; के साथ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_new_windows">
+						<local_schema short_desc="नियंत्रित करें कि कैसे नया विंडो फोकस पाता है">
+							<longdesc>यह विकल्प अतिरिक्त नियंत्रण देता है कि कैसे नया बनाया विंडो फोकस पाता है. इसके दो संभावित मान हैं; &quot;smart&quot; उपयोक्ता के सामान्य फोकस मोड पर लागू होता है और &quot;strict&quot; ऐसे विंडो के रूप में आता है जो टर्मिनल से फोकस नहीं किये गये रूप में आता है.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_mode">
+						<local_schema short_desc="विंडो फ़ोकस मोड">
+							<longdesc>विंडो फ़ोकस मोड जो संकेत करता है कि विंडोज़ कैसे सक्रिय हों. इसके तीन संभावित मूल्य हैं, क्लिक &quot;क्लिक&quot; मतलब विंडो को फ़ोकस करने हेतु उनमें क्लिक करना होगा, &quot;स्लॉपी&quot; मतलब विंडो तब फ़ोकस होंगे जब माउस विंडो में प्रवेश करेगा, तथा &quot;माउस&quot; मतलब विंडो तब फ़ोकस होंगे जब माउस विंडो में प्रवेश करेगा तथा फ़ोकस से बाहर होगा जब माउस विंडो से बाहर होगा.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="button_layout">
+						<local_schema short_desc="शीर्षक-पट्टी में बटनों का विन्यास">
+							<longdesc>शीर्षक-पट्टी में बटनों का विन्यास. मान स्ट्रिंग होने चाहिएँ, जैसे &quot;menu:minimize,maximize,spacer,close&quot;; कोलन विंडो के बाएँ कोने को दांए कोने से अलग करता है तथा बटन के नाम कॉमा से अलग हैं. दोहरे बटन स्वीकार्य नहीं हैं. अज्ञात बटन नाम अनदेखे किए जाते हैं ताकि भविष्य के मेटासिटी वर्सन में, पुराने संस्करण को तोड़े बगैर ये जोड़े जा सकें. विशेष स्पेसर टैग को दो साथ बटन के बीच कुछ स्थान घुसाने के लिए प्रयोग किए जा सकते हैं.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="resize_with_right_button">
+						<local_schema short_desc="दाहिने बटन को क्या फिर आकार देना है">
+							<longdesc>इसे सही पर सेट करें दाहिने बटन के साथ फिर आकार देने के लिए और मध्य बटन के साथ मेन्यू दिखाएँ जब &quot;mouse_button_modifier&quot;; में दी गई कुंजी को पकड़े हुए इसे गलत पर सेट करें इसे विलोम रूप में काम करते हुए.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_button_modifier">
+						<local_schema short_desc="विंडो क्लिक क्रिया परिवर्तन हेतु उपयोग में परिवर्धक">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

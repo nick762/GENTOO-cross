@@ -1,0 +1,11 @@
+#required by dev-libs/dbus-c++ (argument)
+=dev-libs/dbus-c++-0.9.0-r1 ~x86
+=sys-devel/gcc-4.7.2 ~x86
+=dev-util/boost-build-1.52.0-r1 ~x86
+=media-libs/mediastreamer-2.8.2 ~x86
+=app-admin/eselect-opengl-1.2.7 ~x86
+=media-libs/mediastreamer-2.8.2 ~x86
+=x11-libs/libdrm-poulsbo-2.3.0_p9-r1 ~x86
+=x11-drivers/psb-firmware-0.30_p3 ~x86
+=x11-libs/libva-1.1.1 ~x86
+=dev-libs/boost-1.52.0-r6 ~x86

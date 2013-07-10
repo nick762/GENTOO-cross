@@ -1,0 +1,1590 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="tabs_open_position">
+						<local_schema short_desc="Menegiñ a ra pelec&apos;h lakaat an ivinelloù nevez digoret er prenestroù merdeiñ.">
+							<longdesc>Mar arventennet da &quot;after_current_tab&quot; ez eo ensoc&apos;het an ivinelloù nevez war-lec&apos;h an ivinell vremanel. Mar arventennet da &quot;end&quot; ez eo ouzhpennet an ivinelloù nevez e dibenn roll an ivinelloù.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_backup_files">
+						<local_schema short_desc="Menegiñ a ra mar bez ret diskouez ar restroù gwarediñ">
+							<longdesc>Mar lakaet da wir ez eo skrammet ar restroù gwarediñ evel ar re krouet gant Emacs. Evit poent e weller ar restr oc&apos;h ec&apos;huiñ gant (~) evel restroù gwarediñ hepken.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="Menegiñ a ra mar bez ret diskouez ar restroù kuzh">
+							<longdesc>Mar lakaet da wir ez eo diskouezet ar restroù kuzh gant ardoer ar restroù. Pe ar restroù kuzh zo restroù o kregiñ gant ur pik pe ar restroù zo lakaet war ur roll e teuliad ar restroù .hidden.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="enable_esd">
+						<local_schema short_desc="Gweredekaat ESD">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="use_custom_font">
+						<local_schema short_desc="Arverañ un nodrezh personalaet">
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Tres Gtk+">
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Tres Gtk+">
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Tres Arlun">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<dir name="application@x-font-otf">
+						<entry name="enable">
+							<local_schema short_desc="Mar fell dit diskouez an nodrezhoù OpenType evel skeudennig">
+								<longdesc>Mar bez gwir e vo diskouezet an nodrezhoù OpenType evel skeudennig</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-pcf">
+						<entry name="enable">
+							<local_schema short_desc="Mar fell dit diskouez an nodrezhoù PCF evel skeudennig">
+								<longdesc>Mar bez gwir e vo diskouezet an nodrezhoù PCF evel skeudennig</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-type1">
+						<entry name="enable">
+							<local_schema short_desc="Mar fell dit diskouez an nodrezhoù Type1 evel skeudennig">
+								<longdesc>Mar bez gwir e vo diskouezet an nodrezhoù Type1 evel skeudennig.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-ttf">
+						<entry name="enable">
+							<local_schema short_desc="Mar fell dit diskouez an nodrezhoù TrueType evel skeudennig">
+								<longdesc>Mar bez gwir e vo diskouezet an nodrezhoù TrueType evel skeudennig.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="session">
+					<entry name="required_components_list">
+						<local_schema short_desc="Parzhoù ret evit an estez">
+							<longdesc>Roll ar parzhioù a ret bezañ e-barzh an estez. (Pep elfenn en deus un alc&apos;hwez anvet dindan &quot;/desktop/gnome/session/required_components&quot;). Da gustum n&apos;eo ket aotret prenestr dibarzhioù arloadoù loc&apos;hañ an arveriaded da zilemel ur parzh ret evit an estez ha war an tu ur parzh e vefe dilemel, ouzhpenne anezhañ an ardoer estezioù emgefreek e-lec&apos;h ma vo digennasket.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_session">
+						<local_schema short_desc="Estez dre ziouer">
+							<longdesc>Listennad an arloadoù liammet en estez dre ziouer.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="idle_delay">
+						<local_schema short_desc="Amzer a chom a-raok an estez e vo e-giz dioberiant">
+							<longdesc>An niver munutoù a wenedek a-raok eo bezañ an estez e-giz gwenedek.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="required_components">
+						<entry name="filemanager">
+							<local_schema short_desc="Ardoer restroù">
+								<longdesc>Merañ a ra merour restroù an arluniù burev ha gallout a rit etreoberiañ gant ho restroù.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="panel">
+							<local_schema short_desc="Panel">
+								<longdesc>Ur barrenn ez eus gant an daolenn stur, uhel ouzh izel ar skramm, gant lañseroù, listennad prenestroù, arlunioù diwall, an eurier, hag all.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="windowmanager">
+							<local_schema short_desc="ardoer prenestroù">
+								<longdesc>Gant an ardoer prenestroù e c&apos;hellit tresañ barrennad titl ha riblennoù war dro prenestroù hag e c&apos;hellit diblasañ ha mentiñ prenestroù.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="font_rendering">
+					<entry name="rgba_order">
+						<local_schema short_desc="Urzh RGBA">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="keyboard">
+						<entry name="mousekeys_enable">
+							<local_schema short_desc="Alc&apos;hwezioù al logodenn">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="keybindings">
+					<entry name="allowed_keys">
+						<local_schema short_desc="Alc&apos;hwezioù aotret">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="applications">
+					<dir name="at">
+						<entry name="screen_reader_enabled">
+							<local_schema short_desc="Lenner skramm">
+							</local_schema>
+						</entry>
+						<entry name="screen_magnifier_enabled">
+							<local_schema short_desc="Loupenn ar skramm">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec">
+							<local_schema short_desc="Arload termenell">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="rotate">
+						<local_schema short_desc="Treiñ war banelloù a blom">
+							<longdesc>Ma&apos;z eo gwir e vo diskouezet blivadur ar pesk troet war panelloù a blom.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed">
+						<local_schema short_desc="Skeudennoù dre eilenn">
+							<longdesc>Termenet e vez gant an alc&apos;hwez-se e-pad ped a eilennoù e vo diskouezet pep rann.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="frames">
+						<local_schema short_desc="Skeudennoù dre eilenn e-barzh blivadur ar pesk">
+							<longdesc>Termenet e vez gant an alc&apos;hwez-se niver ar skeudennoù dre eilenn a vo diskouezet e blivadur ar pesk.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Urzh da seveniñ pa glikoc&apos;h">
+							<longdesc>Termenet e vez gant an alc&apos;hwez-se an urzh a vo klasket lañsiñ pa vez kliket ar pesk.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="image">
+						<local_schema short_desc="Restr skeudennoù blivadur ar pesk">
+							<longdesc>Termenet e vez gant an alc&apos;hwez-se anv ar restr skeudennoù a vo implijet e-barzh blivadur ar pesk tennet deus rollad ar restroù skeudennoù.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Anv ar pesk">
+							<longdesc>Ur pesk disanv a zo ur vrav a besk e darn. Dakait buhez en ho pesk en ur reiñ un anv dezhañ.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="Ment vrasañ ar prenestr roll">
+							<longdesc>Diaotreet eo bet arver an alc&apos;hwez-mañ e GNOME 2.20. Miret eo an doare evit ar c&apos;heverlec&apos;h gant handelvoù koshoc&apos;h.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="Ment vihanañ ar prenestr roll">
+							<longdesc>Diaotreet eo bet arver an alc&apos;hwez-mañ e GNOME 2.20. Miret eo an doare evit ar c&apos;heverlec&apos;h gant handelvoù koshoc&apos;h.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_unminimized_windows">
+						<local_schema short_desc="Kas ar prenistri war an dachenn labour dibabet pa vezont divihanaet">
+							<longdesc>Mar gwir, pa vez brasaet ur prenestr ez eo dilec&apos;hiet war an dachenn labour vremanel. A-hend-all e trec&apos;haol betek tachenn labour ar prenestr.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="group_windows">
+						<local_schema short_desc="Pegoulz strollañ ar prenistri">
+							<longdesc>Divizout a ra pegoulz kenstrollañ ar prenestroù eus an hevelep arload war roll ar prenestroù. Ar gwerzhioù a vez kavet zo &quot;morse&quot;, &quot;emgefreek&quot; ha &quot;bepred&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Diskouez prenistri an holl zachennoù-labour">
+							<longdesc>Mar gwir e vo diskouezet ar prenistri diwar an holl dachennoù labour gant roll ar prenestroù. A-hend-all e skrammo prenestroù diouzh an dachenn labour vremanel hepken.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="Tizh ar bliverezh">
+							<longdesc>An tizh ma tegouezho bliverezhioù ar penel drezañ. Ar gwerzhioù a c&apos;hall bezañ zo &quot;gorrek&quot;, &quot;krenn&quot;, &quot;buan&quot;. Talvoudus eo an alc&apos;hwez-mañ mard eo gwir an alc&apos;hwez enable_animations.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide_size">
+						<local_schema short_desc="Pikseloù hewel p&apos;eo kuzh">
+							<longdesc>Erspizañ a ra an niver a bikselioù hewel pa vez kuzhet ar penel gant un doare emgefreek en ur c&apos;horn. Talvoudus eo an alc&apos;hwez mard eo gwir an alc&apos;hwez auto_hide.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unhide_delay">
+						<local_schema short_desc="Dale evit emziskouez ar penel lankañ">
+							<longdesc>Erspizañ a ra an niver a milieilennoù dale ez eus etre ar mare ma &apos;z a ar reti war maez ar panel hag ar mare ma &apos;z eo skrammet en-dro. Talvoudus eo an alc&apos;hwez mard eo gwir an alc&apos;hwez auto_hide.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hide_delay">
+						<local_schema short_desc="Koulzad emguzhat ar penel lankañ">
+							<longdesc>Erspizañ a ra an niver a milieilennoù dale ez eus etre ar mare ma &apos;z a ar reti er- maez eus maez ar panel hag ar mare ma &apos;z eo kuzhet ent emgefreek. Talvoudus eo an alc&apos;hwez mard eo gwir an alc&apos;hwez auto_hide.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_arrows">
+						<local_schema short_desc="Enaouiñ ar biroù war an afelloù-kuzhat">
+							<longdesc>Mar gwir e vo lec&apos;hiet biroù war an afelloù kuzhañ. Talvoudus eo an alc&apos;hwez-mañmard eo gwir an alc&apos;hwez enable_buttons.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="Enaouiñ an afelloù-kuzhat">
+							<longdesc>Mar gwir, lec&apos;hiet e vo afelloù da bep tu ar panel lankañ. An afelloù a vo arveret da zilec&apos;hiañ ar penel ouzh riblenn ar skramm, o leuskel un afell hepken da vezañ gwelet.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Gweredekaat ar skeudennoù fiñv">
+							<longdesc>Mar gwir, ar c&apos;huzhañ hag an diskouez eus ar penel a vo fiñvek kentoc&apos;h eget mont war wel a daol trumm.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide">
+						<local_schema short_desc="Kuzhañ ar penel lankañ er c&apos;horn ent emgefreek">
+							<longdesc>Mar gwir ez eo kuzhet ar penel lankañ en ur c&apos;horn eus ar skramm pa guita ar reti maez ar penel. Dilec&apos;hiañ ar reti war ar c&apos;horn-mañ en-dro hag ar penel a ya war wel en-dro.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_centered">
+						<local_schema short_desc="Kreizañ ar penel war an ahel-y">
+							<longdesc>Mar gwir ez eo laosket alc&apos;hwezioù y hag ahelioù-y (hedenn) ha lakaet eo ar penel lankañ e kreiz hedenn ar skramm. Mar bez admentet ar penel lankañ e chomo war al lec&apos;h-mañ - d.l.e. kreskiñ a ray ar penel a bep tu. Mar diwir ez erspiz alc&apos;hwezioù y hag ahelioù-y (hedenn) lec&apos;hiadur ar penel lankañ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_centered">
+						<local_schema short_desc="Kreizañ ar penel war an ahel-x">
+							<longdesc>Mar gwir ez eo laosket alc&apos;hwezioù x hag ahelioù-x (ledenn) ha lakaet eo ar penel lankañ e kreiz ledenn ar skramm. Mar bez admentet ar penel lankañ e chomo war al lec&apos;h-mañ - d.l.e. kreskiñ a ray ar penel a bep tu. Mar diwir ez erspiz alc&apos;hwezioù x hag ahelioù-x (ledenn) lec&apos;hiadur ar penel lankañ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_bottom">
+						<local_schema short_desc="Hedenn ar penel lankañ, o kregiñ diouzh traoñ ar skramm">
+							<longdesc>Lec&apos;hiadur ar penel lankañ a-hed an ahel-y (hedenn), o tedaouiñ diwar traoñ ar skramm. Mar arventennet da -1 e vo leuskel ar werzh a-gostez ha gwerzh an alc&apos;hwez y a vo arveret. Mar bez ar werzh brasoc&apos;h eget 0  e vo leuskel ar werzh y a-gostez. Talvoudus eo an alc&apos;hwez-mañ er mod diastenn. En ur mod astennet e vo leuskel ar an alc&apos;hwez a-gostez ha lec&apos;hiet e vo ar penel lankañ ouzh riblenn ar skramm erspizet gant alc&apos;hwez ar reteradur.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_right">
+						<local_schema short_desc="Ledenn ar penel lankañ, o kregiñ diouzh tu dehou ar skramm">
+							<longdesc>Lec&apos;hiadur ar penel lankañ a-hed an ahel-x (ledenn), o tedaouiñ diwar tu dehou ar skramm. Mar arventennet da -1 e vo leuskel ar werzh a-gostez ha gwerzh an alc&apos;hwez x a vo arveret. Mar bez ar werzh brasoc&apos;h eget 0  e vo leuskel ar werzh x a-gostez. Talvoudus eo an alc&apos;hwez-mañ er mod diastenn. En ur mod astennet e vo leuskel ar an alc&apos;hwez a-gostez ha lec&apos;hiet e vo ar penel lankañ ouzh riblenn ar skramm erspizet gant alc&apos;hwez ar reteradur.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y">
+						<local_schema short_desc="Hedenn ar penel lankañ">
+							<longdesc>Lec&apos;hiadur ar penel lankañ a-hed an ahel-y (hedenn). Talvoudus eo an alc&apos;hwez-mañ er mod diastenn. En ur mod astennet e vo leuskel ar an alc&apos;hwez a-gostez ha lec&apos;hiet e vo ar penel lankañ ouzh riblenn ar skramm erspizet gant alc&apos;hwez ar reteradur.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x">
+						<local_schema short_desc="Ledenn ar penel lankañ">
+							<longdesc>Lec&apos;hiadur ar penel lankañ a-hed an ahel-x (ledenn). Talvoudus eo an alc&apos;hwez-mañ er mod diastenn. En ur mod astennet e vo leuskel ar an alc&apos;hwez a-gostez ha lec&apos;hiet e vo ar penel lankañ ouzh riblenn ar skramm erspizet gant alc&apos;hwez ar reteradur.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="Ment ar penel lankañ">
+							<longdesc>Sav (led evit ur penel lankañ a-serzh) ar penel. E-kerz an erounit e vo despizet gant ar penel un vent izek diazezet war ment an nodrezhoù ha menegerioù all. Lakaet eo ar vent uc&apos;hek d&apos;ur c&apos;hard eus sav ar skramm (pe led).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="Reteradur ar penel lankañ">
+							<longdesc>Reteradur ar penel. Ar gwerzhioù a c&apos;hall bezañ &quot;krec&apos;h&quot;, &quot;traoñ&quot;, 	u kleiz&quot;, &quot;tu dehou&quot;. Gant ar mod astennet ez erspiz an alc&apos;hwez war peseurt riblenn skramm emañ ar penel lankañ. Gant ar mod diastennet n&apos;eo ket an difoc&apos;h etre &quot;krec&apos;h&quot; ha &quot;traoñ&quot; ken pouezus - an eil hag egile a veneg ez eo ur penel a-zremm - met titouroù talvoudus a roont a-zivout emzalc&apos;h elfennoù zo eus ar penel. Da skouer, gant ur penel &quot;krec&apos;h&quot; e tifluko afell ul lañser dindan ar penel,  ur penel &quot;traoñ&quot; e tifluko afell ul lañser a-us d&apos;ar penel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand">
+						<local_schema short_desc="Astenn a-benn ma vo leugnet led ar skramm en e bezh">
+							<longdesc>Mar gwir ez ac&apos;hub ar penel led ar skramm en e bezh (sav mard eo ur penel a-serzh). Gant ar mod-mañ e vez lec&apos;hiet ar penel ouzh riblenn ar skramm. Mar diwir e vo ar penel bras a-walc&apos;h a-benn azasaat an arloadoù, al loc&apos;herioù hag afelloù ouzh ar penel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monitor">
+						<local_schema short_desc="Ar skramm Xinerama ma vez skrammet ar penel lankañ">
+							<longdesc>Gant ur c&apos;hefluniadur Xinerama hoc&apos;h eus tro da gaout peneloù war pep skramm hiniennel. An alc&apos;hwez-mañ a ro naoudi ar skramm bremanel ma &apos;z eo skrammet ar penel warnañ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screen">
+						<local_schema short_desc="Ar skramm X ma vez skrammet ar penel lankañ">
+							<longdesc>Gant ur c&apos;hefluniadur dre liesskrammoù e c&apos;hallit kaout peneloù war bep a skramm hiniennel. An alc&apos;hwez-mañ a laka un naoudi ar skramm bremanel ma &apos;z eo skrammet ar penel warnañ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Anv evit anavezout ar penel lankañ">
+							<longdesc>Un anv den helenn a vez arveret ganeoc&apos;h eo hennezh. E bal pennañ a dalv da ditl prenestr ur penel, pezh a zo talvoudus pa vez merdeet e-touez peneloù.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="C&apos;hwelañ ar skeudenn war ar peneloù a-serzh">
+								<longdesc>Mar gwir e vo c&apos;hwelet skeudenn an drekleur pa vo reteraet ar penel a-serzh.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stretch">
+							<local_schema short_desc="Ledanaat ar skeudenn war ar penel lankañ">
+								<longdesc>Mar gwir e vo skeulaet ar skeudenn e-keñver mentoù ar penel. Ne vo ket miret keñver neuz ar skeudenn.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="Lakaat ar skeudenn da genglotañ gant ar penel lankañ">
+								<longdesc>Mar gwir e vo skeulaet ar skeudenn (o virout keñver neuz ar skeudenn) e-keñver sav ar penel (mar a-zremm).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="Skeudenn an drekleur">
+								<longdesc>Erspizañ a ra ar restr da arverañ evit skeudenn an drekleur. Mar bez ur sanell alfa er skeudenn e vo savet ul liesparzh gant skeudenn drekleur ar burev.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="Demerez liv an drekleur">
+								<longdesc>Erspizañ a ra demerez mentrezh liv an drekleur. Ma n&apos;eo ket demer al liv penn da benn (ur werzh bihanoc&apos;h eget 65535) e vo savet ul liesparzh gant skeudenn drekleur ar burev.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="Liv an drekleur">
+								<longdesc>Erspizañ a ra liv an drekleur evit ar penel lankañ gant ur mod #RGG.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="Neuz an drekleur">
+								<longdesc>Peseurt rizh drekleur da arverañ evit ar penel lankañ-mañ. Ar gwerzhioù a c&apos;hall bezañ &quot;gtk&quot; - arveret e vo widjed GTK+, &quot;liv&quot; dre ziouer - an alc&apos;hwez color a vo arveret evel liv an  drekleur pe &quot;skeudenn&quot; - arveret e vo evel drekleur ar skeudenn erspizet gant an alc&apos;hwez image.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="general">
+					<entry name="profiles_migrated">
+						<local_schema short_desc="Kefluniadur an aeladoù kozh emdizhet">
+							<longdesc>Ur banniel boolean da venegiñ hag-eñ eo eo bet eilet kefluniadur kent an arveriad hag a oa e /apps/panel/profiles/default betek al lec&apos;hiadur nevez e /apps/panel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_id_list">
+						<local_schema short_desc="Listenn ID elfennoù ar penel lankañ">
+							<longdesc>Ur roll naoudioù (ID) evit ergorennoù ar penel lankañ. Pep naoudi a ro anv un ergorenn hiniennel eus ar penel lankañ (d.l.e. ul lañser, un afell gwezhiañ pe afell ul lañser). Enrollet eo an arventennoù evit pep ergorenn e /apps/panel/objects/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_id_list">
+						<local_schema short_desc="Listenn ID arloadig ar penel lankañ">
+							<longdesc>Ur roll naoudioù (ID) evit arloadoù ar penel lankañ. Pep naoudi a ro anv arloadoù hiniennel ar penel lankañ. Enrollet eo an arventennoù evit pep arload  e /apps/panel/applets/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id_list">
+						<local_schema short_desc="Roll ID-où ar penel lankañ">
+							<longdesc>Ur roll naoudioù (ID) evit ar penel lankañ. Pep naoudi a ro anv ur penel lankañ e live uhelañ. Enrollet eo an arventennoù evit pep penel e /apps/panel/toplevels/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_autocompletion">
+						<local_schema short_desc="Gweredekaat an embeurechuiñ er voestad emziviz &quot;Lañsañ an arload&quot;">
+							<longdesc>Mar gwrir e vo lakaet da vezañ hegerz an embeurechuiñ er voestad emziviz &quot;Lañsañ an arload&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_program_list">
+						<local_schema short_desc="Astenn roll ar goulevioù er voestad emziviz &quot;Lañsañ an arload&quot;">
+							<longdesc>Mar gwir ez eo dibunet listad an &quot;Arloadoù anavezet&quot; e boestad emziviz &quot;Lañsañ un arload&quot; pa vez digoret ar voestad. Talvoudus eo an alc&apos;hwez-mañ mard eo gwir an alc&apos;hwez enable_program_list.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_program_list">
+						<local_schema short_desc="Gweredekaat roll ar goulevioù er voestad emziviz &quot;Lañsañ an arload&quot;">
+							<longdesc>Mar gwir ez eo lakaet listad an &quot;Arloadoù anavezet&quot; da vezañ hegerz e boestad emziviz &quot;Lañsañ un arload&quot;. An alc&apos;hwez show_program_list a vestroniañ skrammadur al listad pa vez diskouezet ar voestad emziviz.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global">
+					<entry name="disable_force_quit">
+						<local_schema short_desc="Lazhañ ar c&apos;huitaat dre ret">
+							<longdesc>Mar gwir n&apos;aotreo ket ar penel lankañ un arveriad da vountañ war un arload da vont kuit dre zilemel an haeziñ d&apos;an afell Bountañ da vont kuit.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_log_out">
+						<local_schema short_desc="Diweredekaat an digennaskañ">
+							<longdesc>Mar gwir n&apos;aotreo ket ar penel lankañ un arveriad da zigennaskañ dre zilemel an haeziñ da enankadoù al lañser digennaskañ</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Diaotreet">
+							<longdesc>Diaotreet eo an alc&apos;hwez-mañ ken na vez ket arveret da geflouerañ ar prennañ gant un doare dik. Gwell e vefe ober gant an alc&apos;hwez /desktop/gnome/lockdown/disable_lock_screen kentoc&apos;h.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disabled_applets">
+						<local_schema short_desc="IIDoù an arloadoù da virout ouzh bezañ karget">
+							<longdesc>Ur roll IIDoù evit arloadoù hag a vo laosket a-gostez gant ar penel. Evel-se e vez miret un darn eus an arloadoù ouzh bezañ karget pe diskouezet war al lañser. Da skouer, diweredekaat an arloadig &apos;mini-commander&apos;, ouzhpennit &apos;OAFIID:GNOME_MiniCommanderApplet&apos; war ar roll. Ret eo adloc&apos;hañ ar penel lankañ a-benn ma vo efedus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked_down">
+						<local_schema short_desc="Peurbrennadur ar penel lankañ">
+							<longdesc>Mar gwir n&apos;aotreo ket ar penel lankañ kemmoù war kefluniadur ar penel. Koulskoude e vo ret da arloadoù hiniennel bezañ prennet marteze. Ret eo deoc&apos;h adloc&apos;hañ ar penel lankañ a-benn ma vo efedus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="highlight_launchers_on_mouseover">
+						<local_schema short_desc="Usskediñ al lañserioù pa dremen al logodenn a-us dezho">
+							<longdesc>Mar gwir e vo usskedet ul loc&apos;her pa zilec&apos;hio an arveriad reti al logodenn dreisti.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_panel_remove">
+						<local_schema short_desc="kadarnaad dilamadur ar penel lankañ">
+							<longdesc>Ma &apos;z eo gwir, ur gerig a vo diskouezet a-benn goulenn kadarnaat lamadur ur penel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="drawer_autoclose">
+						<local_schema short_desc="Lakaat an diretenn da emserriñ">
+							<longdesc>Mar gwir e vo serret un diretenn ent emgefreek pa gliko an arveriad war ul loc&apos;her a zo enni.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="window_screenshot_key">
+						<local_schema short_desc="Diaotreet">
+						</local_schema>
+					</entry>
+					<entry name="screenshot_key">
+						<local_schema short_desc="Diaotreet">
+						</local_schema>
+					</entry>
+					<entry name="run_key">
+						<local_schema short_desc="Diaotreet">
+						</local_schema>
+					</entry>
+					<entry name="menu_key">
+						<local_schema short_desc="Diaotreet">
+						</local_schema>
+					</entry>
+					<entry name="enable_key_bindings">
+						<local_schema short_desc="Diaotreet">
+						</local_schema>
+					</entry>
+					<entry name="panel_hide_delay">
+						<local_schema short_desc="Diaotreet">
+						</local_schema>
+					</entry>
+					<entry name="panel_animation_speed">
+						<local_schema short_desc="Diaotreet">
+						</local_schema>
+					</entry>
+					<entry name="panel_show_delay">
+						<local_schema short_desc="Diaotreet">
+						</local_schema>
+					</entry>
+					<entry name="panel_minimized_size">
+						<local_schema short_desc="Diaotreet">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Gweredekaat ar skeudennoù fiñv">
+						</local_schema>
+					</entry>
+					<entry name="keep_menus_in_memory">
+						<local_schema short_desc="Diaotreet">
+						</local_schema>
+					</entry>
+					<entry name="tooltips_enabled">
+						<local_schema short_desc="Gweredekaat al lagadennoù tunioù">
+							<longdesc>Ma&apos;z eo gwir, lagadennoù a vez diskouezet evit elfennoù ar peneloù.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="objects">
+					<entry name="action_type">
+						<local_schema short_desc="Doare afell oberiañ">
+							<longdesc>Ar rizh gwezhiañ diskouezet gant an afell-mañ. Ar gwerzhioù a c&apos;hall bezañ &quot;prennañ&quot;, &quot;digennaskañ&quot;, &quot;loc&apos;hañ&quot;, &quot;klask&quot; ha &quot;tapadenn skramm&quot;. Talvoudus eo an alc&apos;hwez-mañ ma talv an alc&apos;hwez object_type da &quot;arloadig gwezhiañ&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="launcher_location">
+						<local_schema short_desc="Lec&apos;hiadur al loc&apos;her">
+							<longdesc>Lec&apos;hiadur ar restr mod .desktop o teskrivañ al loc&apos;her. Talvoudus eo an alc&apos;hwez-mañ ma talv an alc&apos;hwez object_type da &quot;ergorenn al loc&apos;her&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menu_path">
+						<local_schema short_desc="Treug endalc&apos;had al lañser">
+							<longdesc>An treug ma &apos;z eo savet endalc&apos;hadoù al lañser dioutañ. Talvoudus eo an alc&apos;hwez-mañ mard eo gwir an alc&apos;hwez use_menu_path ha ma talv an alc&apos;hwez object_type da &quot;ergorenn al lañser&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_menu_path">
+						<local_schema short_desc="Arverañ an treug personelaet evit endalc&apos;hadoù al lañserioù">
+							<longdesc>Mar gwir ez eo arveret an alc&apos;hwez menu_path ma tlefe bezañ savet endalc&apos;hadoù al lañser drezi. Mar diwir ez eo laosket an alc&apos;hwez menu_path a-gostez. Talvoudus eo an alc&apos;hwez ma talv an alc&apos;hwez object_type da &quot;ergorenn al lañser&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_icon">
+						<local_schema short_desc="Arlun implijet evit afell an elfenn">
+							<longdesc>Lec&apos;hiadur ar skeudenn arveret evel arlun evit afell an ergorenn.  Talvoudus eo an alc&apos;hwez-mañ ma talv an alc&apos;hwez object_type da &quot;ergorenn an diretenn&quot; pe &quot;ergorenn al lañser&quot; ha mard eo gwir an alc&apos;hwez use_custom_icon.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_icon">
+						<local_schema short_desc="Implij un arlun personelaet evit afell an elfenn">
+							<longdesc>Mar gwir ez eo arveret an alc&apos;hwez custom_icon evel un arlun personelaet evit an afell. Mar diwir ez eo laosket a-gostez. Talvoudus eo an alc&apos;hwez-mañ mard eo an alc&apos;hwez object_type un &quot;ergorenn al lañser&quot; pe &quot;ergorenn an diretenn&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="tooltip">
+						<local_schema short_desc="Lagadennoù diskouezet evit un diretenn pe ul lañser">
+							<longdesc>An destenn da skrammañ en ul lagadenn evit an diretenn-mañ pe al lañser-mañ. Talvoudus eo an alc&apos;hwez-mañ ma talv an alc&apos;hwez object_type da &quot;ergorenn an diretenn&quot; pe &quot;ergorenn al lañser&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="attached_toplevel_id">
+						<local_schema short_desc="Penel lankañ stag ouzh an diretenn">
+							<longdesc>Naoudi ar penel lankañ staget ouzh an diretenn-mañ. Talvoudus eo an alc&apos;hwez-mañ ma talv an alc&apos;hwez object_type da &quot;ergorenn an diretenn&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="bonobo_iid">
+						<local_schema short_desc="IID an arloadig Bonobo">
+						</local_schema>
+					</entry>
+					<entry name="locked">
+						<local_schema short_desc="Stagañ an elfenn war ar penel lankañ">
+							<longdesc>Mar gwir ne vo ket dilec&apos;hiet an arloadig gant an arveriad hep bezañ dibrennet an ergorenn da gentañ en ur ober gant elfenn al lañser &quot;Dibrennañ&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="panel_right_stick">
+						<local_schema short_desc="Jubenniñ lec&apos;hiadur daveel gant riblenn en traoñ/an tu dehou">
+							<longdesc>Mar gwir ez eo jubennet lec&apos;hiadur an ergorenn daveel gant tu dehou (pe draoñ mar a-serzh) riblenn ar penel lankañ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="position">
+						<local_schema short_desc="Lec&apos;hiadur an elfenn war ar penel lankañ">
+							<longdesc>Lec&apos;hiadur eus ergorenn ar penel. Erspizet eo al lec&apos;hiadur gant an niver a bikselioù diouzh riblenn a-gleiz (pe krec&apos;h mar a-serzh) ar penel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id">
+						<local_schema short_desc="Penel e live uhelañ gant ergorennoù ennañ">
+							<longdesc>Naoudi ar penel e live uhelañ gant an ergorenn-mañ ennañ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_type">
+						<local_schema short_desc="Tizh elfenn ar penel lankañ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="Linennoù er c&apos;hemmer tachennoù-labour">
+							<longdesc>An alc&apos;hwez a erspiz pet a renkadoù (evit ur c&apos;hempennadur a-zremm) pe vannoù (evit ur c&apos;hempennadur a-serzh) a vo diskouezet gant trec&apos;haoler an dachenn-labour en tachennoù-lavour. Talvoudus eo an alc&apos;hwez-mañ mard eo gwir an alc&apos;hwez display_all_workspaces.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Diskouez an holl dachennoù-labour">
+							<longdesc>Ma&apos;z eo gwir, ar c&apos;h emmer tachennoù-labour a ziskouezo an holl dachennoù-labour. Ma&apos;z eo faos, e tiskouezo an dachenn-labour en implij hepken.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="Diskouez anvioù an dachenn-labour">
+							<longdesc>Mar gwir e vo skrammet anvioù an dachenn-labour gant an dachenn-labour e trec&apos;haoler an dachenn-labour. A-hend-all e skrammint ar prenestroù war an dachenn-labour. Gant an ardoer prenestroù Metacity hepken ez a en-dro an arventennoù.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="speed_unit">
+						<local_schema short_desc="Unanenn tizh">
+							<longdesc>Un unanenn da arverañ pa ziskouez tizh an avel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="Unanenn gwrezverk">
+							<longdesc>An unanenn implijet evit diskouez ar gwrezverk.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cities">
+						<local_schema short_desc="Listenn al lec&apos;hioù">
+							<longdesc>Ul listenn lec&apos;h da ziskouez prenestr an deiziadur.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="internet_time">
+						<local_schema short_desc="Implij an eur kenrouedad">
+							<longdesc>Implij an alc&apos;hwez-se a oa bet diaotreet e GNOME 2.6 en erbed brud an alc&apos;hwez &apos;mentrezh&apos;. Dalc&apos;het e vez an tres a benn klotañ gant handelvoù koshoc&apos;h.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="Implij an eur UNIX">
+							<longdesc>Implij an alc&apos;hwez-se a oa bet diaotreet e GNOME 2.6 en erbed brud an alc&apos;hwez &apos;mentrezh&apos;. Dalc&apos;het e vez an tres a benn klotañ gant handelvoù koshoc&apos;h.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="Stumm an eur">
+							<longdesc>Implij an alc&apos;hwez-se a oa bet diaotreet e GNOME 2.6 en erbed brud an alc&apos;hwez &apos;mentrezh&apos;. Dalc&apos;het e vez an tres a benn klotañ gant handelvoù koshoc&apos;h.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_locations">
+						<local_schema short_desc="Astenn roll al lec&apos;hiadurioù">
+							<longdesc>Mar gwir, astenn roll al lec&apos;hiadurioù e prenestr an deiziataer.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_weather">
+						<local_schema short_desc="Astenn roll an titouroù a-fet hin">
+							<longdesc>Mar gwir, astenn roll an titouroù a-fet hin e prenestr an deiziataer.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_tasks">
+						<local_schema short_desc="Astenn roll an trevelloù">
+							<longdesc>Mar gwir, astenn roll an trevelloù e prenestr an deiziataer.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_birthdays">
+						<local_schema short_desc="Astenn roll an deizioù ha bloaz">
+							<longdesc>Mar gwir, astenn roll an deizioù ha bloaz e prenestr an deiziataer.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_appointments">
+						<local_schema short_desc="Astennañ roll an emgavioù">
+							<longdesc>Mar gwir, astenn roll an emgavioù e prenestr an deiziataer.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="Diskouez niverenn ar sizhun en deiziataer">
+							<longdesc>Ma&apos;z eo gwir, diskouez niveroù ar sizhun en deiziataer</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="Ostilh evit kemmañ an eur">
+							<longdesc>Diaotreet eo bet arver an alc&apos;hwez-mañ e GNOME 2.22 gant arver ar benveg kefluniañ evit an eur diabarzh. Miret eo an doare evit ar c&apos;heverlec&apos;h gant handelvoù koshoc&apos;h.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="Implij UTC">
+							<longdesc>Diaotreet eo bet arver an alc&apos;hwez-mañ e GNOME 2.28 evit arver ar gwezhidoù-eur. Miret eo an doare evit ar c&apos;heverlec&apos;h gant handelvoù koshoc&apos;h.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_temperature">
+						<local_schema short_desc="Diskouez ar gwrezverk en horolaj">
+							<longdesc>Mar gwir, diskouez ar gwrezverk e-tal arlun an hin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_weather">
+						<local_schema short_desc="Diskouez an amzer en eurier">
+							<longdesc>Mar gwir, skrammañ un arlun evit an hin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema short_desc="Diskouez an deizhiad e-barzh ul lagadenn">
+							<longdesc>Ma&apos;z eo gwir, diskouez an deizhiad e-barzh ul lagadenn gant al logodenn war an horolaj.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="Diskouez an deizhiad en horolaj">
+							<longdesc>Ma&apos;z eo gwir, diskouez an deizhiad e-barzh an horolaj, e-kichen an eur.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="Diskouez an eur gant an eilennoù">
+							<longdesc>Ma&apos;z eo gwir, diskouez eilennoù en eur.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="Stumm personelaet an horolaj">
+							<longdesc>Ar mentrezh arveret gant arload an horolaj eo erspizet gant an alc&apos;hwez-mañ pa vez arventennet an alc&apos;hwez da &quot;personelaet&quot;. Arveret e vez erspizerioù amdreiñ komprenet gant strftime() evit kaout am mentrezh spesadel. Kit da lenn dornlevr strftime()  evit gouzout hiroc&apos;h.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="Stumm an eur">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gweather">
+				<dir name="prefs">
+					<entry name="coordinates">
+						<local_schema>
+						</local_schema>
+					</entry>
+					<entry name="location4">
+						<local_schema>
+						</local_schema>
+					</entry>
+					<entry name="location1">
+						<local_schema>
+						</local_schema>
+					</entry>
+					<entry name="location0">
+						<local_schema>
+						</local_schema>
+					</entry>
+					<entry name="enable_detailed_forecast">
+						<local_schema short_desc="N&apos;eo ket ken implijet">
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="Unanenn gwrezverk">
+						</local_schema>
+					</entry>
+					<entry name="speed_unit">
+						<local_schema short_desc="Unanenn tizh">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="Bevenn berradurioù an destenn">
+							<longdesc>Ur c&apos;hevan a erspiz brasder al lodenn eus un anv restr re hir hag a vo amsavet gant tri fik war ar burev. Mar bez an niver brasoc&apos;h eget 0 ne vo ket anv ar restr brasoc&apos;h eget an niver a arroudennoù lavaret. Mar talvezo an niver da 0 pe vihanoc&apos;h ne vo bevenn ebet gant an niver a arroudennoù skrammet.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_name">
+						<local_schema short_desc="Anv arlun dafariaded ar rouedad">
+							<longdesc>Arventennet e vez an anv-mañ mar fell deoc&apos;h un anv personelaet evit arlun dafariaded ar rouedad war ar burev.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_name">
+						<local_schema short_desc="Anv arlun lastez ar burev">
+							<longdesc>Arventennet e vez an anv-mañ mar fell deoc&apos;h un anv personelaet evit arlun al lastez war ar burev.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="Anv arlun ar gêr war ar burev">
+							<longdesc>Arventennet e vez an anv-mañ mar fell deoc&apos;h un anv personelaet evit arlun Ar Gêr war ar burev.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="Anv arlun urzhiataer ar burev">
+							<longdesc>Arventennet e vez an anv-mañ mar fell deoc&apos;h un anv personelaet evit arlun an urzhiataer war ar burev.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="Arlunioù dafariad ar rouedad hewel war ar burev">
+							<longdesc>Mar arventennet da wir e vo lakaet an arlunioù, oc&apos;h eren davit dafariadoù ar rouedad, war ar burev.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volumes_visible">
+						<local_schema short_desc="Diskouez ar bezhiennoù savet war ar burev">
+							<longdesc>Mar arventennet da wir e vo lakaet an arlunioù, oc&apos;h eren davit pezhiennoù savet, war ar burev.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="Arlun al lastez hewel war ar burev">
+							<longdesc>Mar arventennet da wir e vo lakaet an arlunioù, oc&apos;h eren davit al lastez, war ar burev.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="Arlun an urzhiataer hewel war ar burev">
+							<longdesc>Mar arventennet da wir e vo lakaet an arlunioù, oc&apos;h eren davit lec&apos;hiadur an urzhiataer, war ar burev.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="Hewel eo arlun ar gêr war ar burev">
+							<longdesc>Mar arventennet da wir e vo lakaet an arlunioù, oc&apos;h eren davit teuliad Ar Gêr, war ar burev.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema short_desc="Diskouez an teuliadoù e gwezennad ar banell gostez nemetken">
+								<longdesc>Mar lakaet da wir e tiskouezo Nautilus an teuliadoù hepken war banell gostez ar gwezennad. A-henn-all e tiskouezo an teuliadoù hag ar restroù war un dro.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="Urzh ar bannoù dre ziouer war ar gwel dre roll">
+							<longdesc>Urzh ar bannoù dre ziouer war ar gwel dre roll.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="Roll dre ziouer ar bannoù hewel war ar gwel dre roll">
+							<longdesc>Roll dre ziouer ar bannoù hewel war ar gwel dre roll</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Live zoum dre ziouer ar roll">
+							<longdesc>Live zoum dre ziouer implijet gant ar gwel dre arlunioù.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Eilpennañ an urzh rummañ er prenistri nevez">
+							<longdesc>Mar gwir e vo rummet war an tu gin ar restroù en ur prenestr nevez, da lâre eo, mard int rummet dre anv e vo rummet ar restroù eus &quot;z&quot; to &quot;a&quot; e-lec&apos;h bezañ rummet eus &quot;a&quot; to &quot;z&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Urzh rummañ dre-ziouer">
+							<longdesc>An urzh rummañ dre ziouer evit an elfennoù er gwel dre roll. Ar gwerzhioù a c&apos;hall bezañ  &quot;anv&quot;, &quot;ment&quot;, &quot;rizh&quot;, &quot;deiziad_an_daskemm&quot;, ha &quot;sielloù&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="compact_view">
+					<entry name="all_columns_have_same_width">
+						<local_schema short_desc="An holl vannoù gant an hevelep led">
+							<longdesc>Mar bez arventennet an dibarzh-mañ e vo an holl vannoù heñvel o led gant ar gwel fetis. A-hend-all e vo spisaet led pep bann diouzh e dro.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Live zoum ar gwel fetis dre ziouer">
+							<longdesc>Live zoum dre ziouer arveret gant ar gwel fetis.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="Bevenn berradurioù an destenn">
+							<longdesc>Un hedad a erspiz brasder al lodenn eus un anv restr re hir hag a vo amsavet gant tri fik hervez al live zoumañ. Pep enankad eus ar roll zo e stumm &quot;Live zoumañ : Kevan&quot;. Evit pep live zoumañ erspizet, mar bez ar c&apos;hevan brasoc&apos;h eget 0 ne vo ket anv ar restr brasoc&apos;h eget an niver a arroudennoù lavaret. Mar talvezo an niver da 0 pe vihanoc&apos;h ne vo bevenn ebet gant an niver a arroudennoù skrammet. Aotreet eo un enankad dre ziouer eus ar roll zo e stumm &quot;Kevan&quot; hep ma vo erspizet ul live zoumañ ivez. Despizañ a ra an niver brasañ a arroudennoù evit an holl liveoù zoumañ all. Da skouer : 0 - skrammañ bepred anvioù restroù en o fezh ; 3 - anvioù restroù berraet mar bez muioc&apos;h eget 3 arroudenn ; smallest : 5, smaller : 4,0 - berraet e vo an anvioù mard bezint hiroc&apos;h eget 5 arroudenn evit al live zoumañ &quot;smallest&quot;. Berraet e vo an anvioù mard bezint hiroc&apos;h eget 4 arroudenn evit al live zoumañ &quot;smaller&quot;. Arabat berraat an anvioù restroù evit al liveoù zoumañ all. Liveoù zoumañ hegerz : smallest (33%), smaller (50%), small (66%), standard (100%), large (150%), larger (200%), largest (400%)</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_size">
+						<local_schema short_desc="Ment arlun ar velvenn dre ziouer">
+							<longdesc>Ment dre ziouer un arlun evit ur velvenn er gwel dre arlunioù.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Live zoum dre ziouer an arlun">
+							<longdesc>Live zoom dre ziouer implijet gant ar gwel dre arlunioù.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_manual_layout">
+						<local_schema short_desc="Arverañ ur c&apos;henaozadur dre zorn  er prenestroù nevez">
+							<longdesc>Mar gwir e vo arveret kenaozadurioù dre zorn gant ar prenestroù</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="labels_beside_icons">
+						<local_schema short_desc="Diskouez skritelloù e-kichen an arlunioù">
+							<longdesc>Mar gwir e vo lakaet ar skritelloù e-kichen an arlunioù kentoc&apos;h eget dindano.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_tighter_layout">
+						<local_schema short_desc="Arverañ ur c&apos;henaozadur tostoc&apos;h er prenestroù nevez">
+							<longdesc>Mar gwir e vo lakaet an arlunioù tostoc&apos;h an eil ouzh eben dre ziouer er prenestroù nevez.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Eilpennañ an urzh rummañ er prenistri nevez">
+							<longdesc>Mar gwir e vo rummet war an tu gin ar restroù en ur prenestr nevez, da lâre eo, mard int rummet dre anv e vo rummet ar restroù eus &quot;z&quot; to &quot;a&quot; e-lec&apos;h bezañ rummet eus &quot;a&quot; to &quot;z&quot;. Mar rummet dre vent e vint rummet war zigreskaat e-lec&apos;h war greskaat.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Urzh rummañ dre-ziouer">
+							<longdesc>An urzh rummañ dre ziouer evit an elfennoù er gwel dre arlunioù. Ar gwerzhioù a c&apos;hall bezañ  &quot;anv&quot;, &quot;ment&quot;, &quot;rizh&quot;, &quot;deiziad_an_daskemm&quot;, ha &quot;sielloù&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="captions">
+						<local_schema short_desc="Roll al leadelloù a c&apos;hall bezañ gant an arlunioù">
+							<longdesc>Ur roll isskridoù dindan un arlun war gwel dre arlunioù hag war ar burev. An niver a isskridoù bremanel diskouezet zo e keñver live ar zoum. Ar gwerzhioù a c&apos;hell bezañ :  &quot;size&quot;(ment), &quot;type&quot; (rizh), &quot;date_modified&quot;(deiziad daskemmet), &quot;date_changed&quot; (deiziad kemmet), &quot;date_accessed&quot; (deiziad an haeziñ), &quot;owner&quot; (perc&apos;henn), &quot;group&quot; (strollad), &quot;permissions&quot; (aotreoù), &quot;octal_permissions&quot; (aotreoù eizhredel) and &quot;mime_type&quot; (rizh mime).</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="Gwelout ar banell gostez">
+							<longdesc>Urgwel dre ar banell gostez da ziskouez en ur prenestr nevez digoret.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="Diskouez ar banell-gostez er prenistri nevez">
+							<longdesc>Mar lakaet da wir e vo hewel ar banell gostez gant ar prenestroù nevez digoret.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="Diskouez ar varrenn stad er prenistri nevez">
+							<longdesc>Mar lakaet da wir e vo hewel barrenn ar stad gant ar prenestroù nevez digoret.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="Diskouez ar varrenn lec&apos;hiadur er prenistri nevez">
+							<longdesc>Mar lakaet da wir e vo hewel barrenn al lec&apos;hiañ gant ar prenestroù nevez digoret.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="Diskouez ar varrenn-ostilhoù er prenistri nevez">
+							<longdesc>Mar lakaet da wir e vo hewel barrenn an ostilhoù gant ar prenestroù nevez digoret.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="Ledander ar banell gostez">
+							<longdesc>Al led dre ziouer eus ar banell gostez en ur prenestr nevez digoret.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="Stumm an deiziad">
+							<longdesc>Mentrezh ar restroù evit an deiziadoù. Ar gwerzhioù a c&apos;hall bezañ &quot;locale&quot; (lec&apos;hel), &quot;iso&quot; (heñvel), and &quot;informal&quot; (eeun).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="Gweler teuliadoù dre-ziouer">
+							<longdesc>Pa vez gweladennet un teuliad ez eo arveret ar gweler-mañ betek ma vo diuzet unan all ganeoc&apos;h evit an teuliad dibar-mañ. Ar gwerzhioù a c&apos;hall bezañ &quot;list_view&quot; (gwel dre roll), &quot;icon_view&quot; (gwel dre arlunioù) and &quot;compact_view&quot; (gwel fetis).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="Anv restr drekleur ar banell gostez dre ziouer">
+							<longdesc>Anv restr evit drekleur ar banell gostez dre ziouer. Arveret mard eo gwir side_pane_background_set.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="Liv drekleur dre ziouer ar banell gostez">
+							<longdesc>Anv restr evit drekleur ar banell gostez dre ziouer. Arveret mard eo gwir side_pane_background_set.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_set">
+						<local_schema short_desc="Arventenn drekleur ar banell gostez personelaet">
+							<longdesc>Menegiñ a ra mard eo bet arventennet drekleur personelaet ur banell gostez dre ziouer.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="Anv restr dre ziouer an drekleur">
+							<longdesc>Anv restr evit drekleur dre ziouer an teuliadoù. Implijet m&apos;eo lakaet backgrount_set da wir hepken.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="Liv dre ziouer an drekleur">
+							<longdesc>Liv evit drekleur an teuliad dre ziouer. Arveret mard eo gwir background_set hepken.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema short_desc="Drekleur personelaet">
+							<longdesc>Menegiñ a ra mard eo bet arventennet drekleur personelaet un teuliad dre ziouer.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search_bar_type">
+						<local_schema short_desc="Dezverk evit ur c&apos;hlask gant ar varrenn glask">
+							<longdesc>Dezverk pa vez kavet ur genglotadenn bet klasket er varrenn glask. Mar arventennet da &quot;search_by_text&quot; e klasko Nautilus restroù dre anv ar restroù nemetken. Mar arventennet da &quot;search_by_text_and_properties&quot; e klasko Nautilus restroù dre anvioù ar restroù ha perzhioù ar restroù.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_is_home_dir">
+						<local_schema short_desc="Nautilus a arver teuliad Ar Gêr an arveriaded evel burev">
+							<longdesc>Mar lakaet da wir ez arvero Nautilus teuliad Ar Gêr an arveriad evel ma oa ar burev. Mar diwir ez arvero ~/Burev evel burev.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="Nodrezh ar burev">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="Nautilus a ra war-dro">
+							<longdesc>Mar lakaet da wir e treso Nautilus an arlunioù war ar burev.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="Diskouez an teuliadoù da gentañ e-barzh ar prenistri">
+							<longdesc>Mar lakaet da wir e tiskouez Nautilus an teuliadoù a-raok skrammañ ar restroù gant ar gwelioù dre arlunioù ha dre roll.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_advanced_permissions">
+						<local_schema short_desc="Diskouez an aotreoù kempleshoc&apos;h e boestad emziviz perzhioù ar restr">
+							<longdesc>Mar lakaet da wir e ro Nautilus tro deoc&apos;h da gemmañ ha skrammañ aotreoù evit ar restroù gant un mod unix, o tizhout dibarzhioù kempleshoc&apos;h.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="preview_sound">
+						<local_schema short_desc="Menegiñ a ra mar bez ret selaou ar sonioù en a-raok pa dremeno al logodenn dreist un arlun">
+							<longdesc>Gwellekadur an tizh evit ar mare ma vez rakklevet ur restr son pa vez trement al logodenn dreist arlun ur restr. Mar lakaet da &quot;Bepred&quot; e vo lennet ar son bepred ha pa vefe ar restr war un dafariad a-bell. Mar lakaet da &quot;lec&apos;hel_nemetken&quot; e vo klevet ur rakklevadur hepken gant ar restroù lec&apos;hel. Mar lakaet da &quot;morse&quot; ne vo morse rakklevet ar son.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="directory_limit">
+						<local_schema short_desc="Niver brasañ a restroù degemeret en un teuliad">
+							<longdesc>An teuliadoù brasoc&apos;h eget ar vent-mañ a vo troc&apos;het tro dro d&apos;ar vent-mañ. Mirout ouzh Nautilus da vezañ sac&apos;het hag ar bern da gouezhañ eo al an dra-se. Ur werzh leiel a ziskouez bevenn ebet. Arnesadurel eo ar vevenn en abeg d&apos;al lenn dre bakad eus an teuliadoù</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_limit">
+						<local_schema short_desc="Ment _uc&apos;hek ar restroù skeudenn evit ar melvennoù :">
+							<longdesc>Ar skeudennoù brasoc&apos;h eget ar vent-mañ (e eizhbitoù) ne vint ket lakaet da velvennoù. Mirout ouzh lakaat skeudennoù re vras da velvennoù eo pal ar arventenn-mañ rak re a amzer e padfe ar c&apos;hargañ pe re a vemor a vefe arveret.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_image_thumbnails">
+						<local_schema short_desc="Pegoulz diskouez melvennoù eus restroù mod skeudenn">
+							<longdesc>Gwellekadur an tizh evit ar mare ma vez diskouezet ur restr skeudenn evel ur velvenn. Mar lakaet da &quot;Bepred&quot; e vo graet ar velvenn ha pa vefe ar restr war un dafariad a-bell. Mar lakaet da &quot;lec&apos;hel_nemetken&quot; e vo diskouezet ar melvennoù gant ar restroù lec&apos;hel hepken. Mar lakaet da &quot;morse&quot; ne vo morse diskouezet ar melvennoù, arveret e vo un arlun rumm.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Neuz Nautilus vremanel (diasantet)">
+							<longdesc>Anv neuzioù Nautilus da arverañ. N&apos;eo ket kavet dereat abaoe Nautilisus 2.2. Mar plij, grit gant an neuzioù arlunioù kentoc&apos;h.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_back_button">
+						<local_schema short_desc="Afell al logodenn evit gweredekaat an arc&apos;had &quot;War-gil&quot; en ur prenestr merdeiñ">
+							<longdesc>Evit an arveriaded o deus ul logodenn gant afelloù &quot;War-raok&quot; ha &quot;War-Gil&quot; ez erspizo an alc&apos;hwez-mañ peseurt afell a weredeka an arc&apos;had &quot;War-gil&quot; en ur prenestr merdeiñ. Ledad ar gwerzhiioù a c&apos;hell bezañ etre 6 ha 14.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_forward_button">
+						<local_schema short_desc="Afell al logodenn evit gweredekaat an arc&apos;had &quot;War-raok&quot; en ur prenestr merdeiñ">
+							<longdesc>Evit an arveriaded o deus ul logodenn gant afelloù &quot;War-raok&quot; ha &quot;War-Gil&quot; ez erspizo an alc&apos;hwez-mañ peseurt afell a weredeka an arc&apos;had &quot;War-raok&quot; en ur prenestr merdeiñ. Ledad ar gwerzhiioù a c&apos;hell bezañ etre 6 ha 14.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_use_extra_buttons">
+						<local_schema short_desc="Arverañ degouezhioù un afell ouzhpenn eus al logodenn en ur prenestr merdeiñ eus Nautilus">
+							<longdesc>Evit an arveriaded o deus ul logodenn gant afelloù &quot;War-raok&quot; ha &quot;War-Gil&quot; ez erspizo an alc&apos;hwez-mañ mar bez sevenet ur gwezhiadur bennak e-barzh Nautilus pa vez pouezet war unan pe eben.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="install_mime_activation">
+						<local_schema short_desc="Diskouez meziant staliañ ar pakadoù evit ar rizhoù MIME dianav">
+							<longdesc>Menegiñ a ra mar bez ret diskouez boestad emziviz an arveriad evit ar meziant staliañ mar befe digoret ur restr he rizh MIME dianav, a-benn klask un arload a vefe gouest d&apos;he dornata.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="executable_text_activation">
+						<local_schema short_desc="Petra ober gant ar restroù testenn erounezadus pa vezont gweredekaet">
+							<longdesc>Petra ober gant ar restroù testenn erounezadus pa vezont gweredekaet (klik pe daouglik warni). Ar gwerzhioù a c&apos;hall bezañ &quot;loc&apos;hañ&quot; a-benn o loc&apos;hañ evel arloadoù, &quot;goulenn&quot; a-benn goulenn petra ober dre ur voestad emziviz ha &quot;skrammañ&quot; a-benn o diskouez evel restroù mod testenn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="click_policy">
+						<local_schema short_desc="Rizh ar c&apos;hlik implijet evit loc&apos;hañ/digeriñ restroù">
+							<longdesc>Ar gwerzhioù a c&apos;hall bezañ &quot;single&quot; da loc&apos;hañ ar restroù dre ur c&apos;hlik nemetañ pe &quot;double&quot; da loc&apos;hañ ar restroù dre un daouglik.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_directory_item_counts">
+						<local_schema short_desc="Pegoulz diskouez an niver a elfennoù en un teuliad">
+							<longdesc>Gwellekadur an tizh evit ar mare ma vez diskouezet an niver a elfennoù en un teuliad. Mar lakaet da &quot;Bepred&quot; e vo diskouezet kontoù an elfennoù ha pa vefe ar restr war un dafariad a-bell. Mar lakaet da &quot;lec&apos;hel_nemetken&quot; e vo diskouezet kontoù an elfennoù gant ar reizhiadoù restroù lec&apos;hel hepken. Mar lakaet da &quot;morse&quot; ne vo morse jedet kontoù an elfennoù.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_icon_text">
+						<local_schema short_desc="Menegiñ a ra pegoulz diskouez un destenn alberz en arlunioù">
+							<longdesc>Gwellekadur an tizh evit ar mare ma vez diskouezet endalc&apos;had un alberz eus ur restr mod testenn e arlun ur restr. Mar lakaet da &quot;Bepred&quot; e vo diskouezet bepred ha pa vefe ar restr war un dafariad a-bell. Mar lakaet da &quot;lec&apos;hel_nemetken&quot; e vo gwelet un alberz gant ar restroù lec&apos;he lhepken. Mar lakaet da &quot;morse&quot; ne vo morse lennet roadennoù an alberz.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_delete">
+						<local_schema short_desc="Menegiñ a ra mar bez ret gweredekaat an dilamadur diouzhtu">
+							<longdesc>Mar arventennet da wir ez eus ur mollad gant Nautilus hag a ro an aotre ddeoc&apos;h da diverkañ ur restr diouzhtu war al lec&apos;h, e-lec&apos;h he c&apos;has d&apos;al lastez. Arvarus e c&apos;hall bezañ ar mollad-mañ, bezit evezhiek.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_trash">
+						<local_schema short_desc="Menegiñ a ra mar bez ret goulenn ma vo kadarnaet dilamadur ar restroù pe c&apos;houllonderadur al lastez">
+							<longdesc>Mar lakaet da wir e c&apos;houlennoù Nautilus diganeoc&apos;h ar c&apos;hadarnaat mar klaskot dilemel restroù pe c&apos;houllonderiñ al lastez.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_open_folder">
+						<local_schema short_desc="Roll ar rizhoù x-content/* arventennet da &quot;zigeriñ un teuliad&quot;">
+							<longdesc>Roll ar rizhoù eus x-content/* m&apos;en deus an arveriad dibabet &quot;Digeriñ an teuliad&quot; e arloadig a-fet deiziataer ar gwellvez evito. Prenestr un teuliad a vo digoret pa vo ensoc&apos;het ar media o klotañ gant ar rizhoù-mañ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_ignore">
+						<local_schema short_desc="Roll ar rizhoù x-content/* arventennet da &quot;ober netra&quot;">
+							<longdesc>Roll ar rizhoù eus x-content/* m&apos;en deus an arveriad dibabet &quot;Ober netra&quot; e arloadig a-fet deiziataer ar gwellvez evito. Ne vo ket diskouezet ur bedadenn pe ne vo ket loc&apos;het arloadoù o klotañ ganti pa vo ensoc&apos;het ar media o klotañ gant ar rizhoù-mañ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_start_app">
+						<local_schema short_desc="Roll ar rizhoù x-content/* ma vo loc&apos;het an arload gwell ganeoc&apos;h evito">
+							<longdesc>Roll ar rizhoù eus x-content/* m&apos;en deus an arveriad dibabet da loc&apos;hañ un arload e arloadig a-fet deiziataer ar gwellvez evito. Loc&apos;het e vo an arload gwell ganeoc&apos;h evit ar rizh lavaret pa vo ensoc&apos;het ar media o klotañ gant ar rizhoù-mañ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_never">
+						<local_schema short_desc="Ababat goulenn pe erounit meziantoù ent emgefreek pa vez ensoc&apos;het ar media.">
+							<longdesc>Mar lakaet da wir ne zelusko biken Nautilus na emloc&apos;ho goulevioù pa vo ensoc&apos;het ur mediom.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount_open">
+						<local_schema short_desc="Menegiñ a ra mar bez ret digeriñ un teuliad ent emgefreek evit ar media emsavet">
+							<longdesc>Mar arventennet da wir e vo digoret ent emgefreek un teuliad gant Nautilus pa vez emsavet ar media. Arloet e vez an dra-mañ d&apos;ar media ma n&apos;eo ket bet dinoet un endalc&apos;had e rizh x-content/* ; evit ar media gant un endalc&apos;had e rizh x-content/* bet dinoet e vo kemeret gwezhiadur kefluniadus an arveriad en e blas.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount">
+						<local_schema short_desc="Menegiñ a ra mar bez ret sevel ar media ent emgefreek">
+							<longdesc>Mar arventennet da wir e vo savet gant Nautilus ar media ent emgefreek (evel kantennoù kalet heweladus gant an arveriaded pe vedia dilamadus) gant al loc&apos;hadur hag ensoc&apos;hadur ar media.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_location_entry">
+						<local_schema short_desc="Arver bepred enankad al lec&apos;hiadur e-lec&apos;h varren an treugoù">
+							<longdesc>Mar lakaet da wir e vo arveret un enankad testennel gant prenestr merdeiñ Nautilus evit ar varrenn lec&apos;hiañ e lec&apos;h barrenn an treugoù.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_browser">
+						<local_schema short_desc="Gweredekaat a ra emzalc&apos;h klasel Nautilus : an holl brenestroù a dalv da verdeiñ">
+							<longdesc>Mar lakaet da wir e vo holl brenestroù Nautilus prenestroù merdeiñ. An doare ma oa emzalc&apos;h Nautilus kent an handelv 2.6 eo ha tuz zo a blij dezho gwell an emzalc&apos;h-mañ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="exit_with_last_window">
+						<local_schema short_desc="Kuitaat a ray Nautilus pa vo distrujet ar prenestr diwezhañ.">
+							<longdesc>Mar lakaet da wir e kuitay Nautilus pa vo distrujet an holl brenestroù. An arventenn dre ziouer eo. Mar lakaet da ziwir e vo loc&apos;het hep prenestr.  Neuze e talvezo Nautilus d&apos;ur meziant da sellout ouzh emsevel ar media pe trevelloù heñvel.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="help">
+						<local_schema short_desc="Berradenn klavier evit gwelout skoazell">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 12">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 11">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 10">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 9">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 8">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 7">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 6">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 5">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 4">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 3">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 2">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell 1">
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell war lerc&apos;h">
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Berradenn klavier evit mont d&apos;an ivinell a-raok">
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Berradenn klavier evit pegañ testenn">
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Berradenn klavier evit kopiañ testenn">
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Berradenn klavier evit serriñ ur prenestr">
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Berradenn klavier evit serriñ un ivinell">
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Berradenn klavier evit krouiñ un aelad nevez">
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Berradenn klavier evit digeriñ ur prenestr nevez">
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Berradenn klavier evit digeriñ un ivinell nevez">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="delete_binding">
+							<local_schema short_desc="Efed ar stokell Dilemel">
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Efed ar stokell Kilesaouiñ (Backspace)">
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema>
+								<longdesc>Termeniñ a ra an talvoud etre 0.0 ha 1.0 an teñvalaat eus ar skeudenn drekleur. 0.0 a dalvez n&apos;eus ket ket teñvalaat, 1.0 a dalvez teñvalaat penn da benn. En emplementadur a-vremañ, n&apos;eus nemet daou live teñval posubl, neuze e labour an arventennoù gant un doare binarel, e-lec&apos;h 0.0 a glota gant teñval ebet.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Skeudenn an drekleur">
+								<longdesc>Anv restr skeudenn drekleur.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Seurt an drekleur">
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Nodrezh">
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Arlun evit ar prenestr termenell">
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Neuz ar reti">
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Titl evit termenell">
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Liv dre ziouer drekleur termenell">
+								<longdesc>Liv dre ziouer drekleur termenell, e-giz spizadur liv (a c&apos;hall bezañ HTML-furmad c&apos;hwec&apos;hdegel niverel, pe an anv al liv da skouer &quot;red&quot; (ruz)).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Liv an testenn e-barzh an termenell dre ziouer">
+								<longdesc>Liv dre ziouer testenn termenell, e-giz spizadur liv (a c&apos;hall bezañ HTML-furmad c&apos;hwec&apos;hdegel niverel, pe an anv al liv da skouer &quot;red&quot; (ruz)).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="active_encodings">
+						<local_schema short_desc="Roll ar vonegadurioù hegerz">
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Aelad da arverañ evit an termenelloù nevez">
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Roll an aeladoù">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-session">
+				<dir name="options">
+					<entry name="logout_prompt">
+						<local_schema short_desc="Pedadenn dilugañ">
+							<longdesc>Ma vez enaouet, e kelaouo gnome-sessions an arveriad-ez a-raok echuiñ gant an estez.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_save_session">
+						<local_schema short_desc="Gwareziñ an estezioù">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome_settings_daemon">
+				<dir name="keybindings">
+					<entry name="next">
+						<local_schema short_desc="Loabr da-heul">
+						</local_schema>
+					</entry>
+					<entry name="pause">
+						<local_schema short_desc="Ehan al lenn">
+						</local_schema>
+					</entry>
+					<entry name="play">
+						<local_schema short_desc="Seniñ (pe seniñ/ehan)">
+						</local_schema>
+					</entry>
+					<entry name="screensaver">
+						<local_schema short_desc="Prennañ ar skramm">
+						</local_schema>
+					</entry>
+					<entry name="search">
+						<local_schema short_desc="Klask">
+						</local_schema>
+					</entry>
+					<entry name="home">
+						<local_schema short_desc="Teuliad ar gêr">
+						</local_schema>
+					</entry>
+					<entry name="eject">
+						<local_schema short_desc="Kas er-maez">
+						</local_schema>
+					</entry>
+					<entry name="power">
+						<local_schema short_desc="Dilugañ">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="plugins">
+					<dir name="xsettings">
+						<entry name="active">
+							<local_schema short_desc="Gweredekaat enlugellad ">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="xrdb">
+						<entry name="active">
+							<local_schema short_desc="Gweredekaat enlugellad xrdb">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="sound">
+						<entry name="active">
+							<local_schema short_desc="Gweredekaat enlugellad ar son">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mouse">
+						<entry name="active">
+							<local_schema short_desc="Gweredekaat enlugellad al logodenn">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="active">
+							<local_schema short_desc="Gweredekaat enlugellad ar c&apos;hlavier">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="font">
+						<entry name="active">
+							<local_schema short_desc="Gweredekaat enlugellad an nodrezhoù">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="clipboard">
+						<entry name="active">
+							<local_schema short_desc="Gweredekaat enlugellad ar golver">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="background">
+						<entry name="active">
+							<local_schema short_desc="Gweredekaat enlugellad an drekleur">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+			<dir name="yelp">
+				<entry name="variable_font">
+					<local_schema short_desc="Nodrezh evit an destenn">
+					</local_schema>
+				</entry>
+				<entry name="use_system_fonts">
+					<local_schema short_desc="Arverañ nodrezhoù ar reizhiad">
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="metacity">
+				<dir name="window_keybindings">
+					<entry name="maximize_horizontally">
+						<local_schema short_desc="Brasaat a-blaen ar prenestr">
+						</local_schema>
+					</entry>
+					<entry name="maximize_vertically">
+						<local_schema short_desc="Brasaat a-blom ar prenestr">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_down">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;un dachenn labour dindan">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_up">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;un dachenn labour a us">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_right">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;un dachenn labour a zehou">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_left">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;un dachenn labour a gleiz">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_12">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;an dachenn labour 12">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_11">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;an dachenn labour 11">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_10">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;an dachenn labour 10">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_9">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;an dachenn labour 9">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_8">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;an dachenn labour 8">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_7">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;an dachenn labour 7">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_6">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;an dachenn labour 6">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_5">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;an dachenn labour 5">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_4">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;an dachenn labour 4">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_3">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;an dachenn labour 3">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_2">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;an dachenn labour 2">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_1">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr d&apos;an dachenn labour 1">
+						</local_schema>
+					</entry>
+					<entry name="begin_resize">
+						<local_schema short_desc="Adventañ ar prenestr">
+						</local_schema>
+					</entry>
+					<entry name="begin_move">
+						<local_schema short_desc="Dilec&apos;hiañ ar prenestr">
+						</local_schema>
+					</entry>
+					<entry name="close">
+						<local_schema short_desc="Serriñ ar prenestr">
+						</local_schema>
+					</entry>
+					<entry name="minimize">
+						<local_schema short_desc="Bihanaat ar prenestr">
+						</local_schema>
+					</entry>
+					<entry name="maximize">
+						<local_schema short_desc="Brasaat ar prenestr">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybinding_commands">
+					<entry name="command_window_screenshot">
+						<local_schema short_desc="Arc&apos;had &apos;benn pakañ un skeudenn eus ur prenestr">
+						</local_schema>
+					</entry>
+					<entry name="command_screenshot">
+						<local_schema short_desc="Arc&apos;had &apos;benn tennañ ur pakad skrammad">
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Arc&apos;hadoù da gas pa vo pouezet war an touchennoù liammet">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global_keybindings">
+					<entry name="run_command_terminal">
+						<local_schema short_desc="Loc&apos;hañ un termenell">
+						</local_schema>
+					</entry>
+					<entry name="run_command_window_screenshot">
+						<local_schema short_desc="Tennañ ur pakad skrammad eus ur prenestr">
+						</local_schema>
+					</entry>
+					<entry name="run_command_screenshot">
+						<local_schema short_desc="Tennañ ur pakad skrammad">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_12">
+						<local_schema short_desc="Mont beteg Tachenn labour 12">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_11">
+						<local_schema short_desc="Mont beteg Tachenn labour 11">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_10">
+						<local_schema short_desc="Mont beteg Tachenn labour 10">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_9">
+						<local_schema short_desc="Mont beteg Tachenn labour 9">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_8">
+						<local_schema short_desc="Mont beteg Tachenn labour 8">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_7">
+						<local_schema short_desc="Mont beteg Tachenn labour 7">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_6">
+						<local_schema short_desc="Mont beteg Tachenn labour 6">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_5">
+						<local_schema short_desc="Mont beteg Tachenn labour 5">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_4">
+						<local_schema short_desc="Mont beteg Tachenn labour 4">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_3">
+						<local_schema short_desc="Mont beteg Tachenn labour 3">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_2">
+						<local_schema short_desc="Mont beteg Tachenn labour 2">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_1">
+						<local_schema short_desc="Mont beteg Tachenn labour 1">
+						</local_schema>
+					</entry>
+					<entry name="run_command">
+						<local_schema short_desc="Kas un arc&apos;had resis da benn">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="workspace_names">
+					<entry name="name">
+						<local_schema short_desc="Anv an dachenn labour">
+							<longdesc>Anv un dachenn labour</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="general">
+					<entry name="application_based">
+						<local_schema short_desc="(N&apos;eo ket savet c&apos;hoazh) An doare da furchal a zo liammet d&apos;ar meziantoù ha n&apos;eo ket d&apos;ar prenistri">
+						</local_schema>
+					</entry>
+					<entry name="audible_bell">
+						<local_schema short_desc="Kloc&apos;h ar reizhiad a c&apos;hell bezañ klevet">
+							<longdesc>Dibab ma c&apos;hell ar meziantoù pe ar sistem reiñ &apos;bipoù&apos; da glevet; tu &apos;zo implijout an dra-se asamblez gant ar &apos;c&apos;hloc&apos;h hewel&apos; evit kaout &apos;bipoù&apos; didrouz.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell">
+						<local_schema short_desc="Implijout kloc&apos;h hewel">
+						</local_schema>
+					</entry>
+					<entry name="num_workspaces">
+						<local_schema short_desc="kementad an tachennoù labour">
+						</local_schema>
+					</entry>
+					<entry name="titlebar_font">
+						<local_schema short_desc="Nodrezh titl ar prenestr">
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Neuz en implij">
+						</local_schema>
+					</entry>
+					<entry name="auto_raise_delay">
+						<local_schema short_desc="Amzer da c&apos;hortoz (e mili eilenoù) araog ar mont war c&apos;horre emgefreek.">
+						</local_schema>
+					</entry>
+					<entry name="auto_raise">
+						<local_schema short_desc="A gas war-eeun ar prenestr emañ ar fokus enni war c&apos;horre">
+						</local_schema>
+					</entry>
+					<entry name="action_double_click_titlebar">
+						<local_schema short_desc="Efed an doubl-klik war ar varrenn-ditl">
+						</local_schema>
+					</entry>
+					<entry name="focus_new_windows">
+						<local_schema short_desc="Merañ penaos vo tapet ar fokus gant prenistri nevez">
+						</local_schema>
+					</entry>
+					<entry name="button_layout">
+						<local_schema short_desc="Aozadur an afelloù war ar varrenn ditl">
+						</local_schema>
+					</entry>
+					<entry name="mouse_button_modifier">
+						<local_schema short_desc="Kemmer da implijout evit klikerezh kemmet er prenestr">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

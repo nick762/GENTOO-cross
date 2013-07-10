@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="interface">
+					<entry name="at-spi-corba">
+						<local_schema short_desc="CORBA негізіндегі AT-SPI инфраструктурасын іске қосу">
+							<longdesc>CORBA негізіндегі AT-SPI инфраструктурасының орны ауысқан кезде, бұл кілт /desktop/gnome/interface/accessibility бірге қолданып, CORBA негізіндегі AT-SPI инфраструктурасы іске қосуға арналған. Егер CORBA негізіндегі AT-SPI инфраструктура орны ауыспаса, ол қолданбайды.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="format">
+						<local_schema>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-terminal">
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="title">
+							<local_schema>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+			<dir name="gnome_settings_daemon">
+				<dir name="gtk-modules">
+					<entry name="gail:atk-bridge">
+						<local_schema short_desc="Арнайы мүмкіндіктерді қолдау үшін GTK+ модульдері">
+							<longdesc>Бұл кілт арнайы мүмкіндіктерді қолдау үшін жүктелетін GTK+ модульдерін анықтайды.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

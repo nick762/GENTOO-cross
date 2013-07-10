@@ -1,0 +1,2359 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB workgroup">
+						<longdesc>The Windows networking workgroup or domain that the user is part of. In order for a new workgroup to fully take effect the user may need to log out and log back in.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Automatic proxy configuration URL">
+						<longdesc>URL that provides proxy configuration values.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="SOCKS proxy port">
+						<longdesc>The port on the machine defined by &quot;/system/proxy/socks_host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="SOCKS proxy host name">
+						<longdesc>The machine name to proxy socks through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="FTP proxy port">
+						<longdesc>The port on the machine defined by &quot;/system/proxy/ftp_host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="FTP proxy host name">
+						<longdesc>The machine name to proxy FTP through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Secure HTTP proxy port">
+						<longdesc>The port on the machine defined by &quot;/system/proxy/secure_host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Secure HTTP proxy host name">
+						<longdesc>The machine name to proxy secure HTTP through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Proxy configuration mode">
+						<longdesc>Select the proxy configuration mode. Supported values are &quot;none&quot;, &quot;manual&quot;, and &quot;auto&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Non-proxy hosts">
+						<longdesc>This key contains a list of hosts which are connected to directly, rather than via the proxy (if it is active). The values can be hostnames, domains (using an initial wildcard like *.foo.com), IP host addresses (both IPv4 and IPv6) and network addresses with a netmask (something like 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="HTTP proxy password">
+						<longdesc>Password to pass as authentication when doing HTTP proxying.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="HTTP proxy username">
+						<longdesc>Username to pass as authentication when doing HTTP proxying.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Authenticate proxy server connections">
+						<longdesc>If true, then connections to the proxy server require authentication. The username/password combo is defined by &quot;/system/http_proxy/authentication_user&quot; and &quot;/system/http_proxy/authentication_password&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="HTTP proxy port">
+						<longdesc>The port on the machine defined by &quot;/system/http_proxy/host&quot; that you proxy through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="HTTP proxy host name">
+						<longdesc>The machine name to proxy HTTP through.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Use HTTP proxy">
+						<longdesc>Enables the proxy settings when accessing HTTP over the Internet.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Extra domains in which to look for DNS-SD services">
+						<longdesc>Comma-separated list of DNS-SD domains that should be visible in the &quot;network:///&quot; location.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="How to display local DNS-SD service">
+						<longdesc>Possible values are &quot;merged&quot;, &quot;separate&quot; and &quot;disabled&quot;.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="show_backup_files">
+						<local_schema short_desc="Whether to show backup files">
+							<longdesc>If set to true, then backup files such as those created by Emacs are displayed. Currently, only files ending in a tilde (~) are considered backup files.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="Whether to show hidden files">
+							<longdesc>If set to true, then hidden files are shown in the file manager. Hidden files are either dotfiles or are listed in the folder&apos;s .hidden file.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="event_sounds">
+						<local_schema short_desc="Sounds for events">
+							<longdesc>Whether to play sounds on user events.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Enable ESD">
+							<longdesc>Enable sound server startup.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="Default mixer tracks">
+							<longdesc>The default mixer tracks used by the multimedia key bindings.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Default mixer device">
+							<longdesc>The default mixer device used by the multimedia key bindings.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="File Icon Theme">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Show the &apos;Unicode Control Character&apos; menu">
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Show the &apos;Input Methods&apos; menu">
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Menubar accelerator">
+							<longdesc>Keyboard shortcut to open the menu bars.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Module for GtkFileChooser">
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Status Bar on Right">
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Use Custom Font">
+							<longdesc>Whether to use a custom font in gtk+ applications.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Monospace font">
+							<longdesc>Name of a monospaced (fixed-width) font for use in locations like terminals.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Document font">
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="GTK IM Status Style">
+							<longdesc>Name of the GTK+ input method Status Style used by gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="GTK IM Preedit Style">
+							<longdesc>Name of the GTK+ input method Preedit Style used by gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Default font">
+							<longdesc>Name of the default font used by gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Gtk+ Theme">
+							<longdesc>Basename of the default theme used by gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Gtk+ Theme">
+							<longdesc>Basename of the default theme used by gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Icon Theme">
+							<longdesc>Icon theme to use for the panel, nautilus etc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Cursor Blink Time">
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Cursor Blink">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Toolbar Icon Size">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Toolbar Detachable">
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Menubar Detachable">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Menus Have Icons">
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Toolbar Style">
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Can Change Accels">
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Menus Have Tearoff">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Enable Animations">
+							<longdesc>Whether animations should be displayed. Note: This is a global key, it changes the behaviour of the window manager, the panel etc.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Enable Accessibility">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Colour Shading Type">
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Secondary Colour">
+							<longdesc>Right or Bottom colour when drawing gradients, not used for solid colour.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Primary Colour">
+							<longdesc>Left or Top colour when drawing gradients, or the solid colour.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Picture Opacity">
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Picture Filename">
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Picture Options">
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Draw Desktop Background">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Disable all external thumbnailers">
+							<longdesc>Set to true to disable all external thumbnailer programs, independent on whether they are independently disabled/enabled.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="application@x-font-otf">
+						<entry name="enable">
+							<local_schema short_desc="Whether to thumbnail OpenType fonts">
+								<longdesc>If set to true, then OpenType fonts will be thumbnailed.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Thumbnail command for OpenType fonts">
+								<longdesc>Set this key to the command used to create thumbnails for OpenType fonts.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-pcf">
+						<entry name="enable">
+							<local_schema short_desc="Whether to thumbnail PCF fonts">
+								<longdesc>If set to true, then PCF fonts will be thumbnailed.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Thumbnail command for PCF fonts">
+								<longdesc>Set this key to the command used to create thumbnails for PCF fonts.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-type1">
+						<entry name="enable">
+							<local_schema short_desc="Whether to thumbnail Type1 fonts">
+								<longdesc>If set to true, then Type1 fonts will be thumbnailed.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Thumbnail command for Type1 fonts">
+								<longdesc>Set this key to the command used to create thumbnails for Type1 fonts.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-ttf">
+						<entry name="enable">
+							<local_schema short_desc="Whether to thumbnail TrueType fonts">
+								<longdesc>If set to true, then TrueType fonts will be thumbnailed.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Thumbnail command for TrueType fonts">
+								<longdesc>Set this key to the command used to create thumbnails for TrueType fonts.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Whether or not keyboard locking is enabled">
+							<longdesc>Whether or not keyboard locking is enabled.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Allow postponing of breaks">
+							<longdesc>Whether or not the typing break screen can be postponed.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Break time">
+							<longdesc>Number of minutes that the typing break should last.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Type time">
+							<longdesc>Number of minutes of typing time before break mode starts.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Disable lock screen">
+							<longdesc>Prevent the user from locking his screen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Disable user switching">
+							<longdesc>Prevent the user from switching to another account while his session is active.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Disable print setup">
+							<longdesc>Prevent the user from modifying print settings. For example, this would disable access to all applications&apos; &quot;Print Setup&quot; dialogues.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Disable printing">
+							<longdesc>Prevent the user from printing. For example, this would disable access to all applications&apos; &quot;Print&quot; dialogues.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Disable saving files to disk">
+							<longdesc>Prevent the user from saving files to disk. For example, this would disable access to all applications&apos; &quot;Save as&quot; dialogues.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Disable command line">
+							<longdesc>Prevent the user from accessing the terminal or specifying a command line to be executed. For example, this would disable access to the panel&apos;s &quot;Run Application&quot; dialogue.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="session">
+					<dir name="required_components">
+						<entry name="windowmanager">
+							<local_schema short_desc="Window Manager">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Startup Assistive Technology Applications">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Disable if two keys are pressed at the same time.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="Minimum interval in milliseconds">
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Initial delay in milliseconds">
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="How long to accelerate in milliseconds">
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Pixels per seconds">
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="minimum interval in milliseconds">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;h323&quot; URLs">
+								<longdesc>The command used to handle &quot;h323&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;h323&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;h323&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;callto&quot; URLs">
+								<longdesc>The command used to handle &quot;callto&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;callto&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;callto&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;aim&quot; URLs">
+								<longdesc>The command used to handle &quot;aim&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;aim&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;aim&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;mailto&quot; URLs">
+								<longdesc>The command used to handle &quot;mailto&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;mailto&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;mailto&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;https&quot; URLs">
+								<longdesc>The command used to handle &quot;https&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;https&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;https&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;http&quot; URLs">
+								<longdesc>The command used to handle &quot;http&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;http&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;http&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;man&quot; URLs">
+								<longdesc>The command used to handle &quot;man&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;man&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;man&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;info&quot; URLs">
+								<longdesc>The command used to handle &quot;info&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;info&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;info&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;ghelp&quot; URLs">
+								<longdesc>The command used to handle &quot;ghelp&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;ghelp&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;ghelp&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Run the command in a terminal">
+								<longdesc>True if the command used to handle this type of URL should be run in a terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="The handler for &quot;trash&quot; URLs">
+								<longdesc>The command used to handle &quot;trash&quot; URLs, if enabled.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Whether the specified command should handle &quot;trash&quot; URLs">
+								<longdesc>True if the command specified in the &quot;command&quot; key should handle &quot;trash&quot; URLs.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Names of the workspaces (deprecated)">
+								<longdesc>A list with names of the first window manager workspaces. This key has been deprecated since GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="The number of workspaces (deprecated)">
+								<longdesc>The number of workspaces the window manager should use This key has been deprecated since GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="User window manager (deprecated)">
+								<longdesc>Window manager to try first. This key has been deprecated since GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Fallback window manager (deprecated)">
+								<longdesc>Fallback window manager if user&apos;s window manager cannot be found. This key has been deprecated since GNOME 2.12.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Browser understands remote">
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Browser needs terminal">
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Default browser">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Start preferred Mobility assistive technology application">
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Preferred Mobility assistive technology application">
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Start preferred Visual assistive technology application">
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Preferred Visual assistive technology application">
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Default component viewer application">
+								<longdesc>The application to use for viewing files that require a component to view them. The parameter %s will be replaced by the file&apos;s URIs, and the parameter %c will be replaced by the component IID.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Exec Arguments">
+								<longdesc>Argument used to execute programs in the terminal defined by the &apos;exec&apos; key.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Terminal application">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Cursor size">
+								<longdesc>Size of the cursor referenced by cursor_theme.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Cursor theme">
+								<longdesc>Cursor theme name. Used only by Xservers that support Xcursor, such as XFree86 4.3 and later.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Cursor font">
+								<longdesc>Font name of the cursor. If unset, the default font is used. This value is only propagated to the X server start of each session, so changing it mid-session will not have an effect until the next time you log in.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Locate Pointer">
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Double Click Time">
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Drag Threshold">
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Motion Threshold">
+								<longdesc>Distance in pixels the pointer must move before accelerated mouse motion is activated. A value of -1 is the system default.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Single Click">
+								<longdesc>Acceleration multiplier for mouse motion. A value of -1 is the system default.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Single Click">
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Mouse button orientation">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Remember NumLock state">
+								<longdesc>When set to true, GNOME will remember the state of the NumLock LED between sessions.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Keyboard Bell Custom Filename">
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>possible values are &quot;on&quot;, &quot;off&quot;, and &quot;custom&quot;.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="rotate">
+						<local_schema short_desc="Rotate on vertical panels">
+							<longdesc>If true, the fish&apos;s animation will be displayed rotated on vertical panels.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed">
+						<local_schema short_desc="Pause per frame">
+							<longdesc>This key specifies the number of seconds each frame will be displayed.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="frames">
+						<local_schema short_desc="Frames in fish&apos;s animation">
+							<longdesc>This key specifies the number of frames that will be displayed in the fish&apos;s animation.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Command to execute on click">
+							<longdesc>This key specifies the command that will be tried to execute when the fish is clicked.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="image">
+						<local_schema short_desc="The fish&apos;s animation pixmap">
+							<longdesc>This key specifies the filename of the pixmap which will be used for the animation displayed in the fish applet relative to the pixmap directory.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="The fish&apos;s name">
+							<longdesc>A fish without a name is a pretty dull fish. Bring your fish to life by naming him.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="Maximum window list size">
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="Minimum window list size">
+						</local_schema>
+					</entry>
+					<entry name="move_unminimized_windows">
+						<local_schema short_desc="Move windows to current workspace when unminimized">
+							<longdesc>If true, then when unminimizing a window, move it to the current workspace. Otherwise, switch to the workspace of the window.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="group_windows">
+						<local_schema short_desc="When to group windows">
+							<longdesc>Decides when to group windows from the same application on the window list. Possible values are &quot;never&quot;, &quot;auto&quot; and &quot;always&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Show windows from all workspaces">
+							<longdesc>If true, the window list will show windows from all workspaces. Otherwise it will only display windows from the current workspace.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="Animation speed">
+							<longdesc>The speed in which panel animations should occur. Possible values are &quot;slow&quot;, &quot;medium&quot; and &quot;fast&quot;. This key is only relevant if the enable_animations key is true.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide_size">
+						<local_schema short_desc="Visible pixels when hidden">
+							<longdesc>Specifies the number of pixels visible when the panel is automatically hidden into a corner. This key is only relevant if the auto_hide key is true.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unhide_delay">
+						<local_schema short_desc="Panel autounhide delay">
+							<longdesc>Specifies the number of milliseconds delay after the pointer enters the panel area before the panel is automatically re-shown. This key is only relevant if the auto_hide key is true.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hide_delay">
+						<local_schema short_desc="Panel autohide delay">
+							<longdesc>Specifies the number of milliseconds delay after the pointer leaves the panel area before the panel is automatically hidden. This key is only relevant if the auto_hide key is true.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_arrows">
+						<local_schema short_desc="Enable arrows on hide buttons">
+							<longdesc>If true, arrows will be placed on the hide buttons. This key is only relevant if the enable_buttons key is true.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="Enable hide buttons">
+							<longdesc>If true, buttons will be placed on each side of the panel which may be used to move the panel to edge of the screen, leaving only a button showing.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Enable animations">
+							<longdesc>If true, hiding and un-hiding of this panel will be animated rather than happening instantly.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide">
+						<local_schema short_desc="Automatically hide panel into corner">
+							<longdesc>If true, the panel is automatically hidden into a corner of the screen when the pointer leaves the panel area. Moving the pointer to that corner again will cause the panel to re-appear.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_centered">
+						<local_schema short_desc="Centre panel on y-axis">
+						</local_schema>
+					</entry>
+					<entry name="x_centered">
+						<local_schema short_desc="Centre panel on x-axis">
+						</local_schema>
+					</entry>
+					<entry name="y">
+						<local_schema short_desc="Y co-ordinate of panel">
+							<longdesc>The location of the panel along the y-axis. This key is only relevant in un-expanded mode. In expanded mode this key is ignored and the panel is placed at the screen edge specified by the orientation key.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x">
+						<local_schema short_desc="X co-ordinate of panel">
+							<longdesc>The location of the panel along the x-axis. This key is only relevant in un-expanded mode. In expanded mode this key is ignored and the panel is placed at the screen edge specified by the orientation key.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="Panel size">
+							<longdesc>The height (width for a vertical panel) of the panel. The panel will determine at runtime a minimum size based on the font size and other indicators. The maximum size is fixed at one quarter of the screen height (or width).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="Panel orientation">
+							<longdesc>The orientation of the panel. Possible values are &quot;top&quot;, &quot;bottom&quot;, &quot;left&quot;, &quot;right&quot;. In expanded mode the key specifies which screen edge the panel is on. In un-expanded mode the difference between &quot;top&quot; and &quot;bottom&quot; is less important - both indicate that this is a horizontal panel - but still give a useful hint as to how some panel objects should behave. For example, on a &quot;top&quot; panel a menu button will pop up its menu below the panel, whereas on a &quot;bottom&quot; panel the menu will be popped up above the panel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand">
+						<local_schema short_desc="Expand to occupy entire screen width">
+							<longdesc>If true, the panel will occupy the entire screen width (height if this is a vertical panel). In this mode the panel can only be placed at a screen edge. If false, the panel will only be large enough to accommodate the applets, launchers and buttons on the panel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monitor">
+						<local_schema short_desc="Xinerama monitor where the panel is displayed">
+							<longdesc>In a Xinerama setup, you may have panels on each individual monitor. This key identifies the current monitor the panel is displayed on.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screen">
+						<local_schema short_desc="X screen where the panel is displayed">
+							<longdesc>With a multi-screen setup, you may have panels on each individual screen. This key identifies the current screen the panel is displayed on.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Name to identify panel">
+							<longdesc>This is a human readable name which you can use to identify a panel. Its main purpose is to serve as the panel&apos;s window title which is useful when navigating between panels.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="Rotate image on vertical panels">
+								<longdesc>If true, the background image will be rotated when the panel is oriented vertically.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stretch">
+							<local_schema short_desc="Stretch image to panel">
+								<longdesc>If true, the image will be scaled to the panel dimensions. The aspect ratio of the image will not be maintained.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="Fit image to panel">
+								<longdesc>If true, the image will be scaled (retaining the aspect ratio of the image) to the panel height (if horizontal).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="Background image">
+								<longdesc>Specifies the file to be used for the background image. If the image contains an alpha channel it will be composited onto the desktop background image.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="Background colour opacity">
+								<longdesc>Specifies the opacity of the background colour format. If the color is not completely opaque (a value of less than 65535), the colour will be composited onto the desktop background image.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="Background colour">
+								<longdesc>Specifies the background colour for the panel in #RGB format.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="Background type">
+								<longdesc>Which type of background should be used for this panel. Possible values are &quot;gtk&quot; - the default GTK+ widget background will be used, &quot;colour&quot; - the colour key will be used as background colour or &quot;image&quot; - the image specified by the image key will be used as background.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="general">
+					<entry name="profiles_migrated">
+						<local_schema short_desc="Old profile&apos;s configuration migrated">
+							<longdesc>A boolean flag to indicate whether the user&apos;s previous configuration in /apps/panel/profiles/default has been copied to the new location in /apps/panel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_id_list">
+						<local_schema short_desc="Panel object ID list">
+							<longdesc>A list of panel object IDs. Each ID identifies an individual panel object (e.g. a launcher, action button or menu button/bar). The settings for each of these objects are stored in /apps/panel/objects/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_id_list">
+						<local_schema short_desc="Panel applet ID list">
+							<longdesc>A list of panel applet IDs. Each ID identifies an individual panel applet. The settings for each of these applets are stored in /apps/panel/applets/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id_list">
+						<local_schema short_desc="Panel ID list">
+							<longdesc>A list of panel IDs. Each ID identifies an individual top-level panel. The settings for each of these panels are stored in /apps/panel/toplevels/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_autocompletion">
+						<local_schema short_desc="Enable autocompletion in &quot;Run Application&quot; dialogue">
+							<longdesc>If true, autocompletion in the &quot;Run Application&quot; dialogue is made available.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_program_list">
+						<local_schema short_desc="Expand program list in &quot;Run Application&quot; dialogue">
+							<longdesc>If true, the &quot;Known Applications&quot; listing in the &quot;Run Application&quot; dialogue is expanded when the dialogue is opened. This key is only relevant if the enable_program_list key is true.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_program_list">
+						<local_schema short_desc="Enable program list in &quot;Run Application&quot; dialogue">
+							<longdesc>If true, the &quot;Known Applications&quot; listing in the &quot;Run Application&quot; dialogue is made available. Whether or not the listing is expanded when the dialogue is shown is controlled by the show_program_list key.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global">
+					<entry name="disable_force_quit">
+						<local_schema short_desc="Disable Force Quit">
+							<longdesc>If true, the panel will not allow a user to force an application to quit by removing access to the force quit button.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_log_out">
+						<local_schema short_desc="Disable Logging Out">
+							<longdesc>If true, the panel will not allow a user to log out, by removing access to the log out menu entries.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Deprecated">
+						</local_schema>
+					</entry>
+					<entry name="disabled_applets">
+						<local_schema short_desc="Applet IIDs to disable from loading">
+							<longdesc>A list of applet IIDs that the panel will ignore. This way you can disable certain applets from loading or showing up in the menu. For example to disable the mini-commander applet add &apos;OAFIID:GNOME_MiniCommanderApplet&apos; to this list. The panel must be restarted for this to take effect.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked_down">
+						<local_schema short_desc="Complete panel lockdown">
+							<longdesc>If true, the panel will not allow any changes to the configuration of the panel. Individual applets may need to be locked down separately however. The panel must be restarted for this to take effect.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="highlight_launchers_on_mouseover">
+						<local_schema short_desc="Highlight launchers on mouseover">
+							<longdesc>If true, a launcher is highlighted when the user moves the pointer over it.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_panel_remove">
+						<local_schema short_desc="Confirm panel removal">
+							<longdesc>If true, a dialogue is shown asking for confirmation if the user wants to remove a panel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="drawer_autoclose">
+						<local_schema short_desc="Autoclose drawer">
+							<longdesc>If true, a drawer will automatically be closed when the user clicks a launcher in it.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="window_screenshot_key">
+						<local_schema short_desc="Deprecated">
+						</local_schema>
+					</entry>
+					<entry name="screenshot_key">
+						<local_schema short_desc="Deprecated">
+						</local_schema>
+					</entry>
+					<entry name="run_key">
+						<local_schema short_desc="Deprecated">
+						</local_schema>
+					</entry>
+					<entry name="menu_key">
+						<local_schema short_desc="Deprecated">
+						</local_schema>
+					</entry>
+					<entry name="enable_key_bindings">
+						<local_schema short_desc="Deprecated">
+						</local_schema>
+					</entry>
+					<entry name="panel_hide_delay">
+						<local_schema short_desc="Deprecated">
+						</local_schema>
+					</entry>
+					<entry name="panel_animation_speed">
+						<local_schema short_desc="Deprecated">
+						</local_schema>
+					</entry>
+					<entry name="panel_show_delay">
+						<local_schema short_desc="Deprecated">
+						</local_schema>
+					</entry>
+					<entry name="panel_minimized_size">
+						<local_schema short_desc="Deprecated">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Enable animations">
+						</local_schema>
+					</entry>
+					<entry name="keep_menus_in_memory">
+						<local_schema short_desc="Deprecated">
+						</local_schema>
+					</entry>
+					<entry name="tooltips_enabled">
+						<local_schema short_desc="Enable tooltips">
+							<longdesc>If true, tooltips are shown for objects in panels.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="objects">
+					<entry name="action_type">
+						<local_schema short_desc="Action button type">
+							<longdesc>The action type this button represents. Possible values are &quot;lock&quot;, &quot;logout&quot;, &quot;run&quot;, &quot;search&quot; and &quot;screenshot&quot;. This key is only relevant if the object_type key is &quot;action-applet&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="launcher_location">
+						<local_schema short_desc="Launcher location">
+							<longdesc>The location of the .desktop file describing the launcher. This key is only relevant if the object_type key is &quot;launcher-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menu_path">
+						<local_schema short_desc="Menu content path">
+							<longdesc>The path from which the menu contents is contructed. This key is only relevant if the use_menu_path key is true and the object_type key is &quot;menu-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_menu_path">
+						<local_schema short_desc="Use custom path for menu contents">
+							<longdesc>If true, the menu_path key is used as the path from which the menu contents should be constructed. If false, the menu_path key is ignored. This key is only relevant if the object_type key is &quot;menu-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_icon">
+						<local_schema short_desc="Icon used for object&apos;s button">
+							<longdesc>The location of the image file used as the icon for the object&apos;s button. This key is only relevant if the object_type key is &quot;drawer-object&quot; or &quot;menu-object&quot; and the use_custom_icon key is true.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_icon">
+						<local_schema short_desc="Use custom icon for object&apos;s button">
+							<longdesc>If true, the custom_icon key is used as a custom icon for the button. If false, the custom_icon key is ignored. This key is only relevant if the object_type key is &quot;menu-object&quot; or &quot;drawer-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="tooltip">
+						<local_schema short_desc="Tooltip displayed for drawer or menu">
+							<longdesc>The text to display in a tooltip for this drawer or this menu. This key is only relevant if the object_type key is &quot;drawer-object&quot; or &quot;menu-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="attached_toplevel_id">
+						<local_schema short_desc="Panel attached to drawer">
+							<longdesc>The identifier of the panel attached to this drawer. This key is only relevant if the object_type key is &quot;drawer-object&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="bonobo_iid">
+						<local_schema short_desc="Applet Bonobo IID">
+						</local_schema>
+					</entry>
+					<entry name="locked">
+						<local_schema short_desc="Lock the object to the panel">
+							<longdesc>If true, the user may not move the applet without first unlocking the object using the &quot;Unlock&quot; menuitem.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="panel_right_stick">
+						<local_schema short_desc="Interpret position relative to bottom/right edge">
+							<longdesc>If true, the position of the object is interpreted relative to the right (or bottom if vertical) edge of the panel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="position">
+						<local_schema short_desc="Object&apos;s position on the panel">
+							<longdesc>The position of this panel object. The position is specified by the number of pixels from the left (or top if vertical) panel edge.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id">
+						<local_schema short_desc="Toplevel panel containing object">
+							<longdesc>The identifier of the toplevel panel which contains this object.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_type">
+						<local_schema short_desc="Panel object type">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="Rows in workspace switcher">
+							<longdesc>This key specifies how many rows (for horizontal layout) or columns (for vertical layout) the workspace switcher shows the workspaces in. This key is only relevant if the display_all_workspaces key is true.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Display all workspaces">
+							<longdesc>If true, the workspace switcher will show all workspaces. Otherwise it will only show the current workspace.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="Display workspace names">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="internet_time">
+						<local_schema short_desc="Use Internet time">
+							<longdesc>The use of this key was deprecated in GNOME 2.6 in favour of the &apos;format&apos; key. The schema is retained for compatibility with older versions.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="Use UNIX time">
+							<longdesc>The use of this key was deprecated in GNOME 2.6 in favour of the &apos;format&apos; key. The schema is retained for compatibility with older versions.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="Hour format">
+							<longdesc>The use of this key was deprecated in GNOME 2.6 in favour of the &apos;format&apos; key. The schema is retained for compatibility with older versions.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="Show week numbers in calendar">
+							<longdesc>If true, show week numbers in the calendar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="Time configuration tool">
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="Use UTC">
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema short_desc="Show date in tooltip">
+							<longdesc>If true, show date in a tooltip when the pointer is over the clock.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="Show date in clock">
+							<longdesc>If true, display date in the clock, in addition to time.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="Show time with seconds">
+							<longdesc>If true, display seconds in time.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="Custom format of the clock">
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="Hour format">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gweather">
+				<dir name="prefs">
+					<entry name="radar">
+						<local_schema short_desc="URL for the radar map">
+							<longdesc>The custom url from where to retrieve a radar map.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_radar_url">
+						<local_schema short_desc="Use custom URL for the radar map">
+							<longdesc>If true, then retrieve a radar map from a location specified by the &quot;radar&quot; key.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="coordinates">
+						<local_schema short_desc="Location coordinates">
+						</local_schema>
+					</entry>
+					<entry name="location4">
+						<local_schema short_desc="Weather for a city">
+						</local_schema>
+					</entry>
+					<entry name="location3">
+						<local_schema short_desc="Radar location">
+						</local_schema>
+					</entry>
+					<entry name="location2">
+						<local_schema short_desc="Zone location">
+						</local_schema>
+					</entry>
+					<entry name="location1">
+						<local_schema short_desc="Nearby city">
+						</local_schema>
+					</entry>
+					<entry name="location0">
+						<local_schema short_desc="Weather location information">
+						</local_schema>
+					</entry>
+					<entry name="enable_radar_map">
+						<local_schema short_desc="Display radar map">
+							<longdesc>Fetch a radar map on each update.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_detailed_forecast">
+						<local_schema short_desc="Not used anymore">
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="Temperature unit">
+							<longdesc>The units to use for temperature.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed_unit">
+						<local_schema short_desc="Speed unit">
+							<longdesc>The units to use for wind speed.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pressure_unit">
+						<local_schema short_desc="Pressure unit">
+							<longdesc>The units to use for pressure.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="distance_unit">
+						<local_schema short_desc="Distance unit">
+							<longdesc>The units to use for visibility.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_metric">
+						<local_schema short_desc="Use metric units">
+							<longdesc>Use metric units instead of English units.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update_interval">
+						<local_schema short_desc="Update interval">
+							<longdesc>The interval, in seconds, between automatic updates.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update">
+						<local_schema short_desc="Update the data automatically">
+							<longdesc>Determines whether the applet automatically updates its weather statistics or not.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="network_icon_name">
+						<local_schema short_desc="Network servers icon name">
+							<longdesc>This name can be set if you want a custom name for the network servers icon on the desktop.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_name">
+						<local_schema short_desc="Desktop trash icon name">
+							<longdesc>This name can be set if you want a custom name for the trash icon on the desktop.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="Desktop home icon name">
+							<longdesc>This name can be set if you want a custom name for the home icon on the desktop.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="Desktop computer icon name">
+							<longdesc>This name can be set if you want a custom name for the computer icon on the desktop.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="Network Servers icon visible on the desktop">
+							<longdesc>If this is set to true, an icon linking to the Network Servers view will be put on the desktop.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volumes_visible">
+						<local_schema short_desc="Show mounted volumes on the desktop">
+							<longdesc>If this is set to true, icons linking to mounted volumes will be put on the desktop.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="Trash icon visible on desktop">
+							<longdesc>If this is set to true, an icon linking to the trash will be put on the desktop.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="Computer icon visible on desktop">
+							<longdesc>If this is set to true, an icon linking to the computer location will be put on the desktop.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="Home icon visible on desktop">
+							<longdesc>If this is set to true, an icon linking to the home folder will be put on the desktop.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema short_desc="Only show folders in the tree side pane">
+								<longdesc>If set to true, Nautilus will only show folders in the tree side pane. Otherwise it will show both folders and files.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="Default column order in the list view">
+							<longdesc>Default column order in the list view.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="Default list of columns visible in the list view">
+							<longdesc>Default list of columns visible in the list view.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Default list zoom level">
+							<longdesc>Default zoom level used by the list view.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Reverse sort order in new windows">
+							<longdesc>If true, files in new windows will be sorted in reverse order. ie, if sorted by name, then instead of sorting the files from &quot;a&quot; to &quot;z&quot;, they will be sorted from &quot;z&quot; to &quot;a&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Default sort order">
+							<longdesc>The default sort-order for the items in the list view. Possible values are &quot;name&quot;, &quot;size&quot;, &quot;type&quot;, and &quot;modification_date&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="thumbnail_size">
+						<local_schema short_desc="Default Thumbnail Icon Size">
+							<longdesc>The default size of an icon for a thumbnail in the icon view.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Default icon zoom level">
+							<longdesc>Default zoom level used by the icon view.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_manual_layout">
+						<local_schema short_desc="Use manual layout in new windows">
+							<longdesc>If true, new windows will use manual layout by default.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="labels_beside_icons">
+						<local_schema short_desc="Put labels beside icons">
+							<longdesc>If true, labels will be placed beside icons rather than underneath them.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_tighter_layout">
+						<local_schema short_desc="Use tighter layout in new windows">
+							<longdesc>If true, icons will be laid out tighter by default in new windows.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Reverse sort order in new windows">
+							<longdesc>If true, files in new windows will be sorted in reverse order. ie, if sorted by name, then instead of sorting the files from &quot;a&quot; to &quot;z&quot;, they will be sorted from &quot;z&quot; to &quot;a&quot;; if sorted by size, instead of being incrementally they will be sorted decrementally.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Default sort order">
+							<longdesc>The default sort-order for items in the icon view. Possible values are &quot;name&quot;, &quot;size&quot;, &quot;type&quot;, &quot;modification_date&quot;, and &quot;emblems&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="captions">
+						<local_schema short_desc="List of possible captions on icons">
+							<longdesc>A list of captions below an icon in the icon view and the desktop. The actual number of captions shown depends on the zoom level. Possible values are: &quot;size&quot;, &quot;type&quot;, &quot;date_modified&quot;, &quot;date_changed&quot;, &quot;date_accessed&quot;, &quot;owner&quot;, &quot;group&quot;, &quot;permissions&quot;, &quot;octal_permissions&quot; and &quot;mime_type&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="Side pane view">
+							<longdesc>The side pane view to show in newly opened windows.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="Show side pane in new windows">
+							<longdesc>If set to true, newly opened windows will have the side pane visible.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="Show status bar in new windows">
+							<longdesc>If set to true, newly opened windows will have the status bar visible.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="Show location bar in new windows">
+							<longdesc>If set to true, newly opened windows will have the location bar visible.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="Show toolbar in new windows">
+							<longdesc>If set to true, newly opened windows will have toolbars visible.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="Width of the side pane">
+							<longdesc>The default width of the side pane in new windows.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="Date Format">
+							<longdesc>The format of file dates. Possible values are &quot;locale&quot;, &quot;iso&quot;, and &quot;informal&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="Default folder viewer">
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="Default Side Pane Background Filename">
+							<longdesc>Filename for the default side pane background. Only used if side_pane_background_set is true.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="Default Side Pane Background Colour">
+							<longdesc>Filename for the default side pane background. Only used if side_pane_background_set is true.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_set">
+						<local_schema short_desc="Custom Side Pane Background Set">
+							<longdesc>Whether a custom default side pane background has been set.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="Default Background Filename">
+							<longdesc>Filename for the default folder background. Only used if background_set is true.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="Default Background Colour">
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema>
+							<longdesc>Whether a custom default folder background has been set.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search_bar_type">
+						<local_schema short_desc="Criteria for search bar searching">
+							<longdesc>Criteria when matching files searched for in the search bar. If set to &quot;search_by_text&quot;, then Nautilus will Search for files by file name only. If set to &quot;search_by_text_and_properties&quot;, then Nautilus will search for files by file name and file properties.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_is_home_dir">
+						<local_schema short_desc="Nautilus uses the users home folder as the desktop">
+							<longdesc>If set to true, then Nautilus will use the user&apos;s home folder as the desktop. If it is false, then it will use ~/Desktop as the desktop.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="Desktop font">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="Nautilus handles drawing the desktop">
+							<longdesc>If set to true, then Nautilus will draw the icons on the desktop.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="Show folders first in windows">
+							<longdesc>If set to true, then Nautilus shows folders prior to showing files in the icon and list views.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_advanced_permissions">
+						<local_schema>
+							<longdesc>If set to true, then Nautilus lets you edit and display file permissions in a more unix-like way, accessing some more esoteric options.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="preview_sound">
+						<local_schema short_desc="Whether to preview sounds when mousing over an icon">
+							<longdesc>Speed tradeoff for when to preview a sound file when hovering over a file&apos;s icon. If set to &quot;always&quot; then always plays the sound, even if the file is on a remote server. If set to &quot;local_only&quot; then only plays previews on local file systems. If set to &quot;never&quot; then it never previews sound.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="directory_limit">
+						<local_schema short_desc="Maximum handled files in a folder">
+							<longdesc>Folders over this size will be truncated to around this size. The purpose of this is to avoid unintentionally blowing the heap and killing Nautilus on massive folders. A negative value denotes no limit. The limit is approximate due to the reading of folders chunk-wise.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_limit">
+						<local_schema short_desc="Maximum image size for thumbnailing">
+							<longdesc>Images over this size (in bytes) won&apos;t be thumbnailed. The purpose of this setting is to avoid thumbnailing large images that may take a long time to load or use lots of memory.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_image_thumbnails">
+						<local_schema short_desc="When to show thumbnails of image files">
+							<longdesc>Speed tradeoff for when to show an image file as a thumbnail. If set to &quot;always&quot; then always thumbnail, even if the folder is on a remote server. If set to &quot;local_only&quot; then only show thumbnails for local file systems. If set to &quot;never&quot; then never bother to thumbnail images, just use a generic icon.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Current Nautilus theme (deprecated)">
+							<longdesc>Name of the Nautilus theme to use. This has been deprecated as of Nautilus 2.2. Please use the icon theme instead.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="executable_text_activation">
+						<local_schema short_desc="What to do with executable text files when activated">
+							<longdesc>What to do with executable text files when they are activated (single or double clicked). Possible values are &quot;launch&quot; to launch them as programs, &quot;ask&quot; to ask what to do via a dialogue, and &quot;display&quot; to display them as text files.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="click_policy">
+						<local_schema short_desc="Type of click used to launch/open files">
+							<longdesc>Possible values are &quot;single&quot; to launch files on a single click, or &quot;double&quot; to launch them on a double click.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_directory_item_counts">
+						<local_schema short_desc="When to show number of items in a folder">
+							<longdesc>Speed tradeoff for when to show the number of items in a folder. If set to &quot;always&quot; then always show item counts, even if the folder is on a remote server. If set to &quot;local_only&quot; then only show counts for local file systems. If set to &quot;never&quot; then never bother to compute item counts.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_icon_text">
+						<local_schema short_desc="When to show preview text in icons">
+							<longdesc>Speed tradeoff for when to show a preview of text file contents in the file&apos;s icon. If set to &quot;always&quot; then always show previews, even if the folder is on a remote server. If set to &quot;local_only&quot; then only show previews for local file systems. If set to &quot;never&quot; then never bother to read preview data.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_delete">
+						<local_schema short_desc="Whether to enable immediate deletion">
+							<longdesc>If set to true, then Nautilus will have a feature allowing you to delete a file immediately and in-place, instead of moving it to the trash. This feature can be dangerous, so use caution.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_trash">
+						<local_schema short_desc="Whether to ask for confirmation when deleting files, or emptying Trash">
+							<longdesc>If set to true, then Nautilus will ask for confirmation when you attempt to delete files, or empty the Trash.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_location_entry">
+						<local_schema short_desc="Always use the location entry, instead of the pathbar">
+							<longdesc>If set to true, then Nautilus browser windows will always use a textual input entry for the location toolbar, instead of the pathbar.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_browser">
+						<local_schema short_desc="Enables the classic Nautilus behaviour, where all windows are browsers">
+							<longdesc>If set to true, then all Nautilus windows will be browser windows. This is how Nautilus used to behave before version 2.6, and some people prefer this behaviour.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Keyboard shortcut to make font normal-size">
+							<longdesc>Keyboard shortcut key for making font the normal size. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Keyboard shortcut to make font smaller">
+							<longdesc>Keyboard shortcut key for making font smaller. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Keyboard shortcut to make font larger">
+							<longdesc>Keyboard shortcut key for making font larger. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Keyboard shortcut to launch help">
+							<longdesc>Keyboard shortcut key for launching help. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Keyboard shortcut to switch to tab 12">
+							<longdesc>Keyboard shortcut key for switch to tab 12. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Keyboard shortcut to switch to tab 11">
+							<longdesc>Keyboard shortcut key for switch to tab 11. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Keyboard shortcut to switch to tab 10">
+							<longdesc>Keyboard shortcut key for switch to tab 10. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Keyboard shortcut to switch to tab 9">
+							<longdesc>Keyboard shortcut key for switch to tab 9. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Keyboard shortcut to switch to tab 8">
+							<longdesc>Keyboard shortcut key for switch to tab 8. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Keyboard shortcut to switch to tab 7">
+							<longdesc>Keyboard shortcut key for switch to tab 7. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Keyboard shortcut to switch to tab 6">
+							<longdesc>Keyboard shortcut key for switch to tab 6. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Keyboard shortcut to switch to tab 5">
+							<longdesc>Keyboard shortcut key for switch to tab 5. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Keyboard shortcut to switch to tab 4">
+							<longdesc>Keyboard shortcut key for switch to tab 4. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Keyboard shortcut to switch to tab 3">
+							<longdesc>Keyboard shortcut key for switch to tab 3. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Keyboard shortcut to switch to tab 2">
+							<longdesc>Keyboard shortcut key for switch to tab 2. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Keyboard shortcut to switch to tab 1">
+							<longdesc>Keyboard shortcut key for switch to tab 1. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Accelerator to detach current tab.">
+							<longdesc>Accelerator key to detach current tab. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keybinding for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Accelerator to move the current tab to the right.">
+							<longdesc>Accelerator key to move the current tab to the right. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keybinding for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Accelerator to move the current tab to the left.">
+							<longdesc>Accelerator key to move the current tab to the left. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keybinding for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Keyboard shortcut to switch to the next tab">
+							<longdesc>Keyboard shortcut key to switch to the next tab. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Keyboard shortcut to switch to the previous tab">
+							<longdesc>Keyboard shortcut key to switch to the previous tab. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Keyboard shortcut to reset and clear the terminal">
+							<longdesc>Keyboard shortcut key to reset and clear the terminal. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Keyboard shortcut to reset the terminal">
+							<longdesc>Keyboard shortcut key to reset the terminal. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Keyboard shortcut to set the terminal title">
+							<longdesc>Keyboard shortcut key to set the terminal title. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Keyboard shortcut to toggle the visibility of the menubar">
+							<longdesc>Keyboard shortcut key to toggle the visibility of the menubar. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Keyboard shortcut to toggle full screen mode">
+							<longdesc>Keyboard shortcut key for toggling full screen mode. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Keyboard shortcut to paste text">
+							<longdesc>Keyboard shortcut key for pasting the contents of the clipboard into the terminal. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Keyboard shortcut to copy text">
+							<longdesc>Keyboard shortcut key for copying selected text to the clipboard. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Keyboard shortcut to close a window">
+							<longdesc>Keyboard shortcut key for closing a window. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Keyboard shortcut to close a tab">
+							<longdesc>Keyboard shortcut key for closing a tab. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Keyboard shortcut to create a new profile">
+							<longdesc>Keyboard shortcut key for bringing up the dialogue for profile creation. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Keyboard shortcut to open a new window">
+							<longdesc>Keyboard shortcut key for opening a new window. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Keyboard shortcut to open a new tab">
+							<longdesc>Keyboard shortcut key for opening a new tab. Expressed as a string in the same format used for GTK+ resource files. If you set the option to the special string &quot;disabled&quot;, then there will be no keyboard shortcut for this action.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_skey">
+							<local_schema short_desc="Highlight S/Key challenges">
+								<longdesc>Pop up a dialogue when an S/Key challenge response query is detected and clicked on. Typing a password into the dialogue will send it to the terminal.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="Whether to use the system font">
+								<longdesc>If true, the terminal will use the desktop-global standard font if it&apos;s monospace (and the most similar font it can come up with otherwise).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Whether to use the colours from the theme for the terminal widget">
+								<longdesc>If true, the theme colour scheme used for text entry boxes will be used for the terminal, instead of colours provided by the user.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Effect of the Delete key">
+								<longdesc>Sets what code the delete key generates. Possible values are &quot;ascii-del&quot; for the ASCII DEL character, &quot;control-h&quot; for Control-H (AKA the ASCII BS character), &quot;escape-sequence&quot; for the escape sequence typically bound to backspace or delete. &quot;escape-sequence&quot; is normally considered the correct setting for the Delete key.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Effect of the Backspace key">
+								<longdesc>Sets what code the backspace key generates. Possible values are &quot;ascii-del&quot; for the ASCII DEL character, &quot;control-h&quot; for Control-H (AKA the ASCII BS character), &quot;escape-sequence&quot; for the escape sequence typically bound to backspace or delete. &quot;ascii-del&quot; is normally considered the correct setting for the Backspace key.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="How much to darken the background image">
+								<longdesc>A value between 0.0 and 1.0 indicating how much to darken the background image. 0.0 means no darkness, 1.0 means fully dark. In the current implementation, there are only two levels of darkness possible, so the setting behaves as a boolean, where 0.0 disables the darkening effect.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Whether to scroll background image">
+								<longdesc>If true, scroll the background image with the foreground text; if false, keep the image in a fixed position and scroll the text above it.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Background image">
+								<longdesc>Filename of a background image.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Background type">
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Font">
+								<longdesc>An Pango font name. Examples are &quot;Sans 12&quot; or &quot;Monospace Bold 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Palette for terminal applications">
+								<longdesc>Terminals have a 16-colour palette that applications inside the terminal can use. This is that palette, in the form of a colon-separated list of colour names. Colour names should be in hex format e.g. &quot;#FF00FF&quot;</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Icon for terminal window">
+								<longdesc>Icon to use for tabs/windows containing this profile.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Custom command to use instead of the shell">
+								<longdesc>Run this command in place of the shell, if use_custom_command is true.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Whether to blink the cursor">
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Whether to run a custom command instead of the shell">
+								<longdesc>If true, the value of the custom_command setting will be used in place of running a shell.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Whether to update login records when launching terminal command">
+								<longdesc>If true, the system login records utmp and wtmp will be updated when the command inside the terminal is launched.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Whether to launch the command in the terminal as a login shell">
+								<longdesc>If true, the command inside the terminal will be launched as a login shell. (argv[0] will have a hyphen in front of it.)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="What to do with the terminal when the child command exits">
+								<longdesc>Possible values are &quot;close&quot; to close the terminal, and &quot;restart&quot; to restart the command.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Whether to scroll to the bottom when there&apos;s new output">
+								<longdesc>If true, whenever there&apos;s new output the terminal will scroll to the bottom.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Whether to scroll to the bottom when a key is pressed">
+								<longdesc>If true, pressing a key jumps the scrollbar to the bottom.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Number of lines to keep in scrollback">
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Position of the scrollbar">
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Characters that are considered &quot;part of a word&quot;">
+								<longdesc>When selecting text by word, sequences of these characters are considered single words. Ranges can be given as &quot;A-Z&quot;. Literal hyphen (not expressing a range) should be the first character given.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Whether to silence terminal bell">
+								<longdesc>If true, don&apos;t make a noise when applications send the escape sequence for the terminal bell.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Whether to allow bold text">
+								<longdesc>If true, allow applications in the terminal to make text boldface.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Title for terminal">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="What to do with dynamic title">
+								<longdesc>If the application in the terminal sets the title (most typically people have their shell set up to do this), the dynamically-set title can erase the configured title, go before it, go after it, or replace it. The possible values are &quot;replace&quot;, &quot;before&quot;, &quot;after&quot;, and &quot;ignore&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Default colour of terminal background">
+								<longdesc>Default colour of terminal background, as a colour specification (can be HTML-style hex digits, or a colour name such as &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Default colour of text in the terminal">
+								<longdesc>Default colour of text in the terminal, as a colour specification (can be HTML-style hex digits, or a colour name such as &quot;red&quot;).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Whether to show menubar in new windows/tabs">
+								<longdesc>True if the menubar should be shown in new windows, for windows/tabs with this profile.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Human-readable name of the profile">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Whether to ask for confirmation when closing terminal windows">
+							<longdesc>Whether to ask for confirmation when closing a terminal window which has more than one open tab.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="List of available encodings">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Whether the standard GTK shortcut for menubar access is enabled">
+							<longdesc>Normally you can access the menubar with F10. This can also be customized via gtkrc (gtk-menu-bar-accel = &quot;whatever&quot;). This option allows the standard menubar accelerator to be disabled.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Whether the menubar has access keys">
+							<longdesc>Whether to have Alt+letter access keys for the menubar. They may interfere with some applications run inside the terminal so it&apos;s possible to turn them off.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Profile to use for new terminals">
+							<longdesc>Profile to be used when opening a new window or tab. Must be in profile_list.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="List of profiles">
+							<longdesc>List of profiles known to gnome-terminal. The list contains strings naming subdirectories relative to /apps/gnome-terminal/profiles.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-session">
+				<dir name="options">
+					<entry name="logout_prompt">
+						<local_schema short_desc="Logout prompt">
+							<longdesc>If enabled, gnome-session will prompt the user before ending a session.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_save_session">
+						<local_schema short_desc="Save sessions">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome_settings_daemon">
+				<entry name="volume_step">
+					<local_schema short_desc="Volume step">
+						<longdesc>Volume step as percentage of volume.</longdesc>
+					</local_schema>
+				</entry>
+				<dir name="keybindings">
+					<entry name="play">
+						<local_schema short_desc="Play (or play/pause)">
+						</local_schema>
+					</entry>
+					<entry name="www">
+						<local_schema short_desc="Launch web browser">
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Launch help browser">
+						</local_schema>
+					</entry>
+					<entry name="screensaver">
+						<local_schema short_desc="Lock screen">
+						</local_schema>
+					</entry>
+					<entry name="search">
+						<local_schema short_desc="Search">
+						</local_schema>
+					</entry>
+					<entry name="home">
+						<local_schema short_desc="Home folder">
+						</local_schema>
+					</entry>
+					<entry name="eject">
+						<local_schema short_desc="Eject">
+						</local_schema>
+					</entry>
+					<entry name="power">
+						<local_schema short_desc="Log out">
+						</local_schema>
+					</entry>
+					<entry name="volume_up">
+						<local_schema short_desc="Volume up">
+						</local_schema>
+					</entry>
+					<entry name="volume_down">
+						<local_schema short_desc="Volume down">
+						</local_schema>
+					</entry>
+					<entry name="volume_mute">
+						<local_schema short_desc="Volume mute">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="yelp">
+				<entry name="fixed_font">
+					<local_schema short_desc="Font for fixed text">
+						<longdesc>Font for text with fixed width.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="variable_font">
+					<local_schema short_desc="Font for text">
+						<longdesc>Font for text with variable width.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_system_fonts">
+					<local_schema short_desc="Use system fonts">
+						<longdesc>Use the default fonts set for the system.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_caret">
+					<local_schema short_desc="Use caret">
+						<longdesc>Use a keyboard-controllable caret when viewing pages.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="metacity">
+				<dir name="window_keybindings">
+					<entry name="maximize_horizontally">
+						<local_schema short_desc="Maximize window horizontally">
+						</local_schema>
+					</entry>
+					<entry name="maximize_vertically">
+						<local_schema short_desc="Maximize window vertically">
+						</local_schema>
+					</entry>
+					<entry name="lower">
+						<local_schema short_desc="Lower window below other windows">
+						</local_schema>
+					</entry>
+					<entry name="raise">
+						<local_schema short_desc="Raise window above other windows">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_down">
+						<local_schema short_desc="Move window one workspace down">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_up">
+						<local_schema short_desc="Move window one workspace up">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_right">
+						<local_schema short_desc="Move window one workspace to the right">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_left">
+						<local_schema short_desc="Move window one workspace to the left">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_12">
+						<local_schema short_desc="Move window to workspace 12">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_11">
+						<local_schema short_desc="Move window to workspace 11">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_10">
+						<local_schema short_desc="Move window to workspace 10">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_9">
+						<local_schema short_desc="Move window to workspace 9">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_8">
+						<local_schema short_desc="Move window to workspace 8">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_7">
+						<local_schema short_desc="Move window to workspace 7">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_6">
+						<local_schema short_desc="Move window to workspace 6">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_5">
+						<local_schema short_desc="Move window to workspace 5">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_4">
+						<local_schema short_desc="Move window to workspace 4">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_3">
+						<local_schema short_desc="Move window to workspace 3">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_2">
+						<local_schema short_desc="Move window to workspace 2">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_1">
+						<local_schema short_desc="Move window to workspace 1">
+						</local_schema>
+					</entry>
+					<entry name="begin_resize">
+						<local_schema short_desc="Resize window">
+						</local_schema>
+					</entry>
+					<entry name="begin_move">
+						<local_schema short_desc="Move window">
+						</local_schema>
+					</entry>
+					<entry name="close">
+						<local_schema short_desc="Close window">
+						</local_schema>
+					</entry>
+					<entry name="minimize">
+						<local_schema short_desc="Minimize window">
+						</local_schema>
+					</entry>
+					<entry name="toggle_shaded">
+						<local_schema short_desc="Toggle shaded state">
+						</local_schema>
+					</entry>
+					<entry name="maximize">
+						<local_schema short_desc="Maximize window">
+						</local_schema>
+					</entry>
+					<entry name="toggle_maximized">
+						<local_schema short_desc="Toggle maximization state">
+						</local_schema>
+					</entry>
+					<entry name="toggle_fullscreen">
+						<local_schema short_desc="Toggle fullscreen mode">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybinding_commands">
+					<entry name="command_window_screenshot">
+						<local_schema short_desc="The window screenshot command">
+							<longdesc>The /apps/metacity/global_keybindings/run_command_window_screenshot key defines a keybinding which causes the command specified by this setting to be invoked.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command_screenshot">
+						<local_schema short_desc="The screenshot command">
+							<longdesc>The /apps/metacity/global_keybindings/run_command_screenshot key defines a keybinding which causes the command specified by this setting to be invoked.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Commands to run in response to keybindings">
+							<longdesc>The /apps/metacity/global_keybindings/run_command_N keys define keybindings that correspond to these commands. Pressing the keybinding for run_command_N will execute command_N.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global_keybindings">
+					<entry name="run_command_terminal">
+						<local_schema short_desc="Open a terminal window">
+						</local_schema>
+					</entry>
+					<entry name="run_command_window_screenshot">
+						<local_schema short_desc="Take a screenshot of a window">
+						</local_schema>
+					</entry>
+					<entry name="run_command_screenshot">
+						<local_schema short_desc="Take a screenshot">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels_backward">
+						<local_schema short_desc="Move backward between panels and the desktop immediately">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels">
+						<local_schema short_desc="Move between panels and the desktop immediately">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows">
+						<local_schema short_desc="Move between windows immediately">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group">
+						<local_schema short_desc="Move between windows of an application immediately">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_12">
+						<local_schema short_desc="Switch to workspace 12">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_11">
+						<local_schema short_desc="Switch to workspace 11">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_10">
+						<local_schema short_desc="Switch to workspace 10">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_9">
+						<local_schema short_desc="Switch to workspace 9">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_8">
+						<local_schema short_desc="Switch to workspace 8">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_7">
+						<local_schema short_desc="Switch to workspace 7">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_6">
+						<local_schema short_desc="Switch to workspace 6">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_5">
+						<local_schema short_desc="Switch to workspace 5">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_4">
+						<local_schema short_desc="Switch to workspace 4">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_3">
+						<local_schema short_desc="Switch to workspace 3">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_2">
+						<local_schema short_desc="Switch to workspace 2">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_1">
+						<local_schema short_desc="Switch to workspace 1">
+						</local_schema>
+					</entry>
+					<entry name="run_command">
+						<local_schema short_desc="Run a defined command">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="workspace_names">
+					<entry name="name">
+						<local_schema short_desc="Name of workspace">
+							<longdesc>The name of a workspace.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="general">
+					<entry name="disable_workarounds">
+						<local_schema short_desc="Disable misfeatures that are required by old or broken applications">
+							<longdesc>Some applications disregard specifications in ways that result in window manager misfeatures. This option puts Metacity in a rigorously correct mode, which gives a more consistent user interface, provided one does not need to run any misbehaving applications.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="application_based">
+						<local_schema short_desc="(Not implemented) Navigation works in terms of applications not windows">
+							<longdesc>If true, then Metacity works in terms of applications rather than windows. The concept is a bit abstract, but in general an application-based setup is more like the Mac and less like Windows. When you focus a window in application-based mode, all the windows in the application will be raised. Also, in application-based mode, focus clicks are not passed through to windows in other applications. Application-based mode is, however, largely unimplemented at the moment.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reduced_resources">
+						<local_schema short_desc="If true, trade off usability for less resource usage">
+							<longdesc>If true, metacity will give the user less feedback by using wireframes, avoiding animations, or other means. This is a significant reduction in usability for many users, but may allow legacy applications to continue working, and may also be a useful tradeoff for terminal servers. However, the wireframe feature is disabled when accessibility is on.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="compositing_manager">
+						<local_schema short_desc="Compositing Manager">
+							<longdesc>Determines whether Metacity is a compositing manager.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell_type">
+						<local_schema short_desc="Visual Bell Type">
+							<longdesc>Tells Metacity how to implement the visual indication that the system bell or another application &apos;bell&apos; indicator has been rung. Currently there are two valid values, &quot;fullscreen&quot;, which causes a fullscreen white-black flash, and &quot;frame_flash&quot; which causes the titlebar of the application which sent the bell signal to flash. If the application which sent the bell is unknown (as is usually the case for the default &quot;system beep&quot;), the currently focused window&apos;s titlebar is flashed.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="audible_bell">
+						<local_schema short_desc="System Bell is Audible">
+							<longdesc>Determines whether applications or the system can generate audible &apos;beeps&apos;; may be used in conjunction with &apos;visual bell&apos; to allow silent &apos;beeps&apos;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell">
+						<local_schema short_desc="Enable Visual Bell">
+							<longdesc>Turns on a visual indication when an application or the system issues a &apos;bell&apos; or &apos;beep&apos;; useful for the hard-of-hearing and for use in noisy environments.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="num_workspaces">
+						<local_schema short_desc="Number of workspaces">
+							<longdesc>Number of workspaces. Must be more than zero, and has a fixed maximum to prevent making the desktop unusable by accidentally asking for too many workspaces.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_font">
+						<local_schema short_desc="Window title font">
+							<longdesc>A font description string describing a font for window titlebars. The size from the description will only be used if the titlebar_font_size option is set to 0. Also, this option is disabled if the titlebar_uses_desktop_font option is set to true.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_uses_system_font">
+						<local_schema short_desc="Use standard system font in window titles">
+							<longdesc>If true, ignore the titlebar_font option, and use the standard application font for window titles.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Current theme">
+							<longdesc>The theme determines the appearance of window borders, titlebar, and so forth.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise_delay">
+						<local_schema short_desc="Delay in milliseconds for the auto raise option">
+							<longdesc>The time delay before raising a window if auto_raise is set to true. The delay is given in thousandths of a second.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise">
+						<local_schema short_desc="Automatically raises the focused window">
+							<longdesc>If set to true, and the focus mode is either &quot;sloppy&quot; or &quot;mouse&quot; then the focused window will be automatically raised after a delay specified by the auto_raise_delay key. This is not related to clicking on a window to raise it, nor to entering a window during drag-and-drop.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_right_click_titlebar">
+						<local_schema short_desc="Action on title bar right-click">
+						</local_schema>
+					</entry>
+					<entry name="action_middle_click_titlebar">
+						<local_schema short_desc="Action on title bar middle-click">
+						</local_schema>
+					</entry>
+					<entry name="action_double_click_titlebar">
+						<local_schema short_desc="Action on title bar double-click">
+						</local_schema>
+					</entry>
+					<entry name="raise_on_click">
+						<local_schema short_desc="Whether raising should be a side-effect of other user interactions">
+						</local_schema>
+					</entry>
+					<entry name="focus_new_windows">
+						<local_schema short_desc="Control how new windows get focus">
+							<longdesc>This option provides additional control over how newly created windows get focus. It has two possible values; &quot;smart&quot; applies the user&apos;s normal focus mode, and &quot;strict&quot; results in windows started from a terminal not being given focus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_mode">
+						<local_schema short_desc="Window focus mode">
+							<longdesc>The window focus mode indicates how windows are activated. It has three possible values; &quot;click&quot; means windows must be clicked in order to focus them, &quot;sloppy&quot; means windows are focused when the mouse enters the window, and &quot;mouse&quot; means windows are focused when the mouse enters the window and unfocused when the mouse leaves the window.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="button_layout">
+						<local_schema short_desc="Arrangement of buttons on the titlebar">
+						</local_schema>
+					</entry>
+					<entry name="mouse_button_modifier">
+						<local_schema short_desc="Modifier to use for modified window click actions">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

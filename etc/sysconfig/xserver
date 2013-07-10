@@ -1,0 +1,3 @@
+XSERVER="Xorg"
+XMODULE="vesa"
+XDESC="Intel Corporation System Controller Hub (SCH Poulsbo) Graphics Controller"

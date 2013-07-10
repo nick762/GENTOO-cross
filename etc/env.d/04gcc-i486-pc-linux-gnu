@@ -1,0 +1,6 @@
+PATH="/usr/i486-pc-linux-gnu/gcc-bin/4.7.2"
+ROOTPATH="/usr/i486-pc-linux-gnu/gcc-bin/4.7.2"
+GCC_SPECS=""
+MANPATH="/usr/share/gcc-data/i486-pc-linux-gnu/4.7.2/man"
+INFOPATH="/usr/share/gcc-data/i486-pc-linux-gnu/4.7.2/info"
+MULTIOSDIRS="../lib"

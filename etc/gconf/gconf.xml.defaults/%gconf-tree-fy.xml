@@ -1,0 +1,424 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="session">
+					<entry name="required_components_list">
+						<local_schema short_desc="Easke sesje komponinten">
+							<longdesc>Lyst fan komponinten dy&apos;t nedich binne as in part fan de sesje. (Elts elemint neamt in kaai ûnder &quot;/desktop/gnome/session/required_components&quot;). It Start Applikaasje ynstellings ark lit brûkers gjin easke komponinten út de sesje fuortsmite, en de sesje behearder sil automatysk de easke komponinten by it oanmelden wer tafoegje oan de sesje wannear&apos;t sy dochs fuortsmiten binne.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_session">
+						<local_schema short_desc="Standaardsesje">
+							<longdesc>Lyst mei applikaasjes dy&apos;t in part binne fan de standerdsesje</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="idle_delay">
+						<local_schema short_desc="Tiid foardat de sesje is sjoen as neatdwaande">
+							<longdesc>It oantal minuten fan wachttid foar&apos;t de sesje as non-aktyf beskôge wurd.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="required_components">
+						<entry name="filemanager">
+							<local_schema short_desc="Triembehearder">
+								<longdesc>De triem ûnderhâlder jout de buroblêd byldkaikes en makket it jo mooglik om mei jo bewarre triemen te wurkjen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="panel">
+							<local_schema short_desc="Paniel">
+								<longdesc>De paniel levert in balke boppe as ûnder jo skerm en befetted menus, the finster list, status byldkaaikes, de klok, ens.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="windowmanager">
+							<local_schema short_desc="Finsterbehearder">
+								<longdesc>De finster ûnderhâlder is de applikaasje dat de titelbalke tekent mei rânen rûnom de finsters, en makket it mooglik om de finsters te verpleatsen en fan formaat te feroarjen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="speed">
+						<local_schema short_desc="Skoft it byld">
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="De namme fan de fisk">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="Maksimum fan finster list grutte">
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="Minimum fan finster list grutte">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="Animaasjegong">
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="Knoppen ferbergje ynskeakelje">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Animaasjes ynskeakelje">
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="Panielgrutte">
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="Panieloriïntaasje">
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Namme om it paniel te identifisearje">
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="stretch">
+							<local_schema short_desc="De ôfbylding nei it paniel útrekke">
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="Eftergrûnofbylding">
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="Eftergrûnkleuruntrochsichtichheid">
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="Eftergrûnkleur">
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="Eftergrûntype">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="general">
+					<entry name="toplevel_id_list">
+						<local_schema short_desc="Paniel-ID-list">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global">
+					<entry name="disable_force_quit">
+						<local_schema short_desc="Ophâlde-forsearje útskeakelje">
+						</local_schema>
+					</entry>
+					<entry name="disable_log_out">
+						<local_schema short_desc="Ôfmelde útskeakelje">
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Ferâldere">
+						</local_schema>
+					</entry>
+					<entry name="confirm_panel_remove">
+						<local_schema short_desc="Wiskje fan paniel befêstigje">
+						</local_schema>
+					</entry>
+					<entry name="window_screenshot_key">
+						<local_schema short_desc="Ferâldere">
+						</local_schema>
+					</entry>
+					<entry name="screenshot_key">
+						<local_schema short_desc="Ferâldere">
+						</local_schema>
+					</entry>
+					<entry name="run_key">
+						<local_schema short_desc="Ferâldere">
+						</local_schema>
+					</entry>
+					<entry name="menu_key">
+						<local_schema short_desc="Ferâldere">
+						</local_schema>
+					</entry>
+					<entry name="enable_key_bindings">
+						<local_schema short_desc="Ferâldere">
+						</local_schema>
+					</entry>
+					<entry name="panel_hide_delay">
+						<local_schema short_desc="Ferâldere">
+						</local_schema>
+					</entry>
+					<entry name="panel_animation_speed">
+						<local_schema short_desc="Ferâldere">
+						</local_schema>
+					</entry>
+					<entry name="panel_show_delay">
+						<local_schema short_desc="Ferâldere">
+						</local_schema>
+					</entry>
+					<entry name="panel_minimized_size">
+						<local_schema short_desc="Ferâldere">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Animaasjes ynskeakelje">
+						</local_schema>
+					</entry>
+					<entry name="keep_menus_in_memory">
+						<local_schema short_desc="Ferâldere">
+						</local_schema>
+					</entry>
+					<entry name="tooltips_enabled">
+						<local_schema short_desc="Tekstballonnen ynskeakelje">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="objects">
+					<entry name="action_type">
+						<local_schema short_desc="Aksje knop soart">
+						</local_schema>
+					</entry>
+					<entry name="launcher_location">
+						<local_schema short_desc="Starter lokaasje">
+						</local_schema>
+					</entry>
+					<entry name="menu_path">
+						<local_schema short_desc="Menuynhâldpaad">
+						</local_schema>
+					</entry>
+					<entry name="custom_icon">
+						<local_schema short_desc="Ikoan brûkt foar knop fan objekt">
+						</local_schema>
+					</entry>
+					<entry name="attached_toplevel_id">
+						<local_schema short_desc="Paniel taheake oan opburchlaad">
+						</local_schema>
+					</entry>
+					<entry name="applet_iid">
+						<local_schema short_desc="Panielunderdiel-IID">
+						</local_schema>
+					</entry>
+					<entry name="bonobo_iid">
+						<local_schema short_desc="Panielunderdiel Bonobo-IID">
+						</local_schema>
+					</entry>
+					<entry name="position">
+						<local_schema short_desc="Objekt&apos;s posysje on it paniel">
+						</local_schema>
+					</entry>
+					<entry name="object_type">
+						<local_schema short_desc="Panielobjekt-type">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="Rigelje yn de wurkromte scheakler">
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Sjen litte fan alle wurkromten">
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="Sjen litte fan alle wurkromten nammen">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="speed_unit">
+						<local_schema short_desc="Faasje-ienheid">
+							<longdesc>De lenheid om te brûke at de wynfaasje sjen litten wurd.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="Temperatuerienheid">
+							<longdesc>De lenheid om te brûke at de temperatuer sjen litten wurd.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cities">
+						<local_schema short_desc="List fan lokaasjes">
+							<longdesc>In list mei lokaasjes om sjen te litten yn it kalinder finster.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="internet_time">
+						<local_schema short_desc="Ynternettiid brûke">
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="UNIX-tiid brûke">
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="Oereopmaak">
+						</local_schema>
+					</entry>
+					<entry name="expand_locations">
+						<local_schema short_desc="Útvouwe fan de list fan lokaasjes">
+						</local_schema>
+					</entry>
+					<entry name="expand_weather">
+						<local_schema short_desc="Útvouwe fan de list fan waar ynformaasje">
+						</local_schema>
+					</entry>
+					<entry name="expand_tasks">
+						<local_schema short_desc="Útvouwe fan de list fan opjeften">
+						</local_schema>
+					</entry>
+					<entry name="expand_birthdays">
+						<local_schema short_desc="Útvouwe fan de list fan Jierdeis">
+						</local_schema>
+					</entry>
+					<entry name="expand_appointments">
+						<local_schema short_desc="Útvouwe fan de list fan agendapuntje ">
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="Wikenûmers sjen litte yn kalinder">
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="Tiidkonfiguraasje-ark">
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="UTC brûke">
+						</local_schema>
+					</entry>
+					<entry name="show_temperature">
+						<local_schema short_desc="Temperatuer sjen litte yn de klok">
+						</local_schema>
+					</entry>
+					<entry name="show_weather">
+						<local_schema short_desc="Waar sjen litte yn de klok">
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema short_desc="Datum sjen litte yn in tekstballon">
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="Datum sjen litte yn de klok">
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="Tiid sjen litte mei sekonden">
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="Oanpast formaat fan de klok">
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="Oereopmaak">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="trash_icon_name">
+						<local_schema short_desc="Buroblêd jiskefetikoannamme">
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="Buroblêd thúsikoannamme">
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="Buroblêd kompûterikoannamme">
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="Thúsikoan sichtber on buroblêd">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Standert lystseamnivo">
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Standert sortearfolchoarder">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Standert ikoan seamnivo">
+						</local_schema>
+					</entry>
+					<entry name="labels_beside_icons">
+						<local_schema short_desc="Pleats labels neist ikoanen">
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Standert sortearfolchoarder">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="date_format">
+						<local_schema short_desc="Datumopmaak">
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="Standert mapwerjefter">
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="Standert Eftergrûnkleur">
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema short_desc="Oanpaste Eftergrûn">
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="Buroblêdlettertype">
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_open_folder">
+						<local_schema short_desc="Lyst fan &apos;x-content/*&apos;-types set nei &quot;Map Iepenje&quot;">
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_ignore">
+						<local_schema short_desc="Lyst fan &apos;x-content/*&apos;-types set nei &quot;Doch Niks&quot;">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-session">
+				<dir name="options">
+					<entry name="logout_prompt">
+						<local_schema short_desc="Útlogfinster">
+							<longdesc>As dit ynskakele is, sil gnome-session de bruker freegje foar&apos;t hij de sesje beeindiget.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_save_session">
+						<local_schema short_desc="Sesjes opslaan">
+							<longdesc>As dit ynskakele is, sil gnome-session de sesje automatysk bewarje.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

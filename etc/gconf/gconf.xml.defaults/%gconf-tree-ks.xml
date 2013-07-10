@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="yelp">
+				<entry name="fixed_font">
+					<local_schema short_desc="बराबर टैक्सट खत्तर: फॉन्ट">
+						<longdesc>बराबर खजरूक टैक्सट खत्तर: फॉन्ट</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="variable_font">
+					<local_schema short_desc="टैक्सट खत्तर: फॉन्ट">
+						<longdesc>वेरेबल खजरूक टैक्सट खत्तर: फॉन्ट</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_system_fonts">
+					<local_schema short_desc="सिस्टम फॉन्ट करिव इस्तेमाल">
+						<longdesc>सिस्टम खत्तर: करिव डिफाल्ट फोंटुक इस्तेमाल</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_caret">
+					<local_schema short_desc="केरेट करिव इस्तेमाल">
+						<longdesc>पेज वुच्छन विज किबोड केरेट इस्तिमाल</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

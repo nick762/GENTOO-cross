@@ -1,0 +1,5 @@
+cross-armv5tel-softfloat-linux-gnueabi/binutils cross-armv5tel-softfloat-linux-gnueabi/binutils.conf
+cross-armv5tel-softfloat-linux-gnueabi/gcc cross-armv5tel-softfloat-linux-gnueabi/gcc.conf
+cross-armv5tel-softfloat-linux-gnueabi/linux-headers cross-armv5tel-softfloat-linux-gnueabi/linux-headers.conf
+cross-armv5tel-softfloat-linux-gnueabi/glibc cross-armv5tel-softfloat-linux-gnueabi/glibc.conf
+cross-armv5tel-softfloat-linux-gnueabi/gdb cross-armv5tel-softfloat-linux-gnueabi/gdb.conf

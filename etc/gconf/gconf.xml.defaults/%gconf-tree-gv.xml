@@ -1,0 +1,901 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="tabs_open_position">
+						<local_schema short_desc="Cr&apos;aad dy cur tabyn foashlit noa ayns uinnag jeaghydeyr.">
+							<longdesc>Myr currit er &quot;lurg_tab_troa&quot;, ta tayn noa currit stiagh lurg yn tab troa. Myr currit dy cur dys &quot;jerrey&quot;, ta ny tabyn noa currit er scuirr dys yn jerrey j&apos;eh yn rolley tab.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_backup_files">
+						<local_schema short_desc="Lhisagh eh soilshaghey coadanyn sauchey">
+							<longdesc>Myr currit er dy firrinagh, bee coadanyn sauçhey gorrish adsyn jean liorish Emacs v&apos;eh soilshit. Ec y traa t&apos;ayn, bee eh just ny coadanyn lesh ny tilde  (~) ec y jerrey ta coadanyn sauçhey. </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="Lhisagh eh soilshaghey coadanyn follaghit">
+							<longdesc>Myr t&apos;eh firrinagh, ta ny coadanyn follaghit soilshit ayns yn reireyder coadanyn. Ta coadanyn follaghit coadanyn ponk ny tad ayn syn rolley coodagh jeh ny .coadanyn follaghit.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="rotate">
+						<local_schema short_desc="Cur yn raad elley mygeayrt er pannylyn pontreilagh">
+							<longdesc>Myr currit er dy firrinagh, bee yn animaght yn eeast soilshit yn raad elley mygeayrt er pannylyn pontreilagh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed">
+						<local_schema short_desc="Scuirr dagh framey">
+							<longdesc>Ta&apos;n orgher shoh reih yn earroo dy grigyn bee dagh framey soilshit.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="frames">
+						<local_schema short_desc="Framey &apos;syn animaght eeast">
+							<longdesc>Ta&apos;n orgher shoh reih yn earroo dy framey bee soilshit sy animaght eeast.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Sarey dy roie traa t&apos;ow crig">
+							<longdesc>Ta&apos;n orgher reih yn sarey bee prowal dy roie traa ta phiagh crig er yn eeast.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="image">
+						<local_schema short_desc="Yn kaart çheerey pic jeh&apos;n animaght yn eeast">
+							<longdesc>Ta&apos;n orgher shoh reih yn ennym coadan jeh&apos;n kaart çheerey bee jannoo ymmydit son yn animaght soilshit &apos;sy claare veg eeast gorrish yn ynnyd kaart çheerey pix.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Yn ennym jeh&apos;n eeast">
+							<longdesc>Ta ny eeast gyn ennym ny eeasht dree. Cur yn eeasht bio liorish cur eh ny ennym.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="Mooadys rolley uinnag cooid smoo">
+							<longdesc>Va&apos;n ymmyd jeh yn orgher shoh ceau neose er GNOME 2.20. Va&apos;n cooish freayllt son freggyrtagh lesh sorçhyn shenn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="Mooadys rolley uinnag cooid sloo">
+							<longdesc>Va&apos;n ymmyd jeh yn orgher shoh ceau neose er GNOME 2.20. Va&apos;n cooish freayllt son freggyrtagh lesh sorçhyn shenn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_unminimized_windows">
+						<local_schema short_desc="Gleashaghey uinnagyn dys yn reaymys obbree &apos;sy traa t&apos;ayn traa cha nel eh currit ny sloo">
+							<longdesc>Myr currit er dy firrinagh, traa jannoo ny uinnag ny sloo, cur eh dys yn reaymys obbree sy traa t&apos;ayn. Myr cha nel, caghlaa dys ny reaymysyn obbree jeh&apos;n uinnag.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="group_windows">
+						<local_schema short_desc="Traa dy cur uinnagyn ayns possanyn">
+							<longdesc>Reih craad dy cur uinnagyn ayns possanyn voish yn claa cheddin er yn rolley uinnagyn. Ta ny towsyn abyl dy v&apos;eh &quot;cha nel riaue&quot;, &quot;hene&quot; as &quot;dagh traa&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Soilshaghey uinnagyn voish oilley ny reaymysyn obbree">
+							<longdesc>Myr currit er dy firrinagh, bee&apos;n rolley uinnag soilshaghey uinnagyn voish oilley ny reaymysyn obbree. Myr cha nel bee eh just soilshaghey yn reaymys obbree &apos;sy traa t&apos;ayn</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="Tappeid animaght">
+							<longdesc>Yn tappeid lhisagh ny animaghtyn pannyl taghyrt. Ta ny towsyn abyl dy veh &quot;moal&quot;, &quot;veeanagh&quot; as &quot;tappee&quot;. Ta&apos;n orgher shoh just ymmydoil myr ta&apos;n orgher animaghtyn _lhiggey da dy firrinagh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide_size">
+						<local_schema short_desc="Pixelyn dy akin traa follaghit">
+							<longdesc>Reih yn earroo dy pixelyn dy akin traa ta&apos;n pannyl follaghit ayns uillin hene. Ta&apos;n orgher just ymmydoil myr ta&apos;n follaghey _orgher hene dy firrinagh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unhide_delay">
+						<local_schema short_desc="Fuirraght follaghey hene pannyl.">
+						</local_schema>
+					</entry>
+					<entry name="hide_delay">
+						<local_schema short_desc="Furaghtyn pannyl follagheyhene">
+						</local_schema>
+					</entry>
+					<entry name="enable_arrows">
+						<local_schema short_desc="Lhiggey da fleityn er ny crammany follaghey">
+							<longdesc>Myr dy firrinagh, bee fleityn currit er ny crammanyn follaghey</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="Lhiggey da crammanyn follaghey">
+							<longdesc>Myr dy firrinagh, bee crammanyn currit er dagh çheu jeh&apos;n pannyl foddee bee ymmydit dy gleashaghey yn pannyl dys yn çheu yn fastee, just faagail ny cramman dy akin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Lhiggey da animaght">
+							<longdesc>Myr dy firrinagh, bee&apos;n follaghey as neu-follaghey jeh&apos;n pannyl shoh v&apos;eh currit ayns ynimaght as cha bee eh tagyrt dy çhelleeragh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide">
+						<local_schema short_desc="Follaghey pannyl &apos;sy uillin hene">
+							<longdesc>Myr dy firrimagh, bee&apos;n pannyl follaghit hene dys ny uillan jeh&apos;n fastee traa ta&apos;n poynter faagail yn boayl pannyl. Myr tow gleashaghey yn poynter reesht bee&apos;n pannyl cheet er reesht.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_centered">
+						<local_schema short_desc="Pannyl veeanagh er y-essylys">
+							<longdesc>Myr dy firrinagh, bee ny orgheryn y as y_bun geillit as bee yn pannyl currit er yn veean jeh&apos;n y-essylys er yn fastee. Myr ta&apos;n mooadys jeh yn fastee caghlaarit er yn boayl shen i.e. bee&apos;n pannyl gaase er dagh çheu. Myr cha nel eh dy firrinagh, bee ny orgheryn y as y_bun cowraghey yn boayl jeh&apos;n pannyl.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_centered">
+						<local_schema short_desc="Pannyl veeanagh er x-essylys">
+							<longdesc>Myr dy firrinagh, Cha bee geill currit da ny orgheryn x as x_yesh as ta&apos;n pannyl currit er yn veean jeh&apos;n x-essylys jeh&apos;n fastee. Myr ta&apos;n mooadys yn fastee caghlaarit bee eh tannaghtyn ec yn boayl shen - i.e. bee&apos;n  pannyl gaase er ny daa çheughyn. Myr cha nel dy firrinagh, ta ny orgheryn x as x_yesh cowraghey yn boayl jeh&apos;n Pannyl.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_bottom">
+						<local_schema short_desc="Yn esslys y jeh&apos;n pannyl goaill toshiaght er yn bun jeh&apos;n fastee">
+							<longdesc>Yn boayl jeh&apos;n pannyl harrish yn y-esslys, goaill toshiaght voish yn bun jeh&apos;n fastee. Myr currit dys -1 cha bee gaill currit dys yn towse as bee yn towse jeh&apos;n orgher y jannoo ymmydit. Myr ta&apos;n towse ny smoo ny 0, eisht cha bee geill currit dys yn orgher y. Ta&apos;n orgher just ymmydoil ayns mod cha nel mooadaghit. Ayns mod mooadaghit cha nel geill currit dys yn orgher shoh as ta&apos;n pannyl currit er yn çheu jeh&apos;n fastee reih&apos;t liorish yn orgher stuirey.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_right">
+						<local_schema short_desc="Yn esslys x jeh&apos;n pannyl, goaill toshiaght voish yn yesh jeh&apos;n fastee">
+							<longdesc>Yn boayl jeh&apos;n pannyl harrish yn x-esslys, goaill toshiaght voish yn çheu yesh jeh&apos;n fastee. Myr currit dys -1 cha bee geill currit dys yn towse as bee yn towse jeh&apos;n orgher x ymmydit. Myr ta&apos;n towse ny smoo ny 0, eisht cha bee geill currit dys yn orgher x. Ta&apos;n orgher just ymmydoil just ymmydoil ayns mod cha nel mooadaghit. Ayns mod mooadaghit cha nel geill currit dys yn orgher as ta&apos;n pannyl  currit er yn çheu fastee reihghit liorish yn orgher stuirey.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y">
+						<local_schema short_desc="Yn Y co`oardaghey jeh&apos;n pannyl">
+							<longdesc>Yn boayl jeh&apos;n pannyl harrish yn y-esslys. Ta&apos;n orgher just ymmydoil myr ta eh ayns mod cha nel moodaghit. Ayns mod mooadaghit cha nel geill currit dys yn orgher shoh as bee&apos;n pannyl  currit er yn çheu yn fastee liorish yn orgher stuirey.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x">
+						<local_schema short_desc="Yn Y co`oardaghey jeh&apos;n pannyl">
+							<longdesc>Yn boayl jeh&apos;n pannylharrish yn x-esslys. Ta&apos;ǹ orgher just ymmydoil ayns mod cha nel mooadaghit. Ayns mod mooadaghit che bee geill currit dys yn orgher as bee yn pannyl currit</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="Mooadys pannyl">
+							<longdesc>Yn yrdjit (lheead son ny pannyl pontreilagh) jeh&apos;n pannyl. Bee&apos;n pannyl feddyn magh ec traa roie ny mooadagh cooid sloo soit er yn mooadys lauescreeuee as cowraghyn elley. Ta&apos;n mooadys cooid smoo currit er un kerroo jeh&apos;n yrjid jeh&apos;n fastee (ny lheead).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="Stuirey pannyl">
+							<longdesc>Yn stuirey jeh&apos;n pannyl. Ta ny towsyn abyl dy veh  &quot;mullagh&quot;, &quot;bun&quot;, &quot;hoshtal&quot;, &quot;yesh&quot; Ayns mod mooadaghit ta&apos;n orgher reih cren çheu fastee ta&apos;n pannyl er. Ayns mod cha nel mooadaghit cha nel an anchaslys eddyr &quot;yn mullagh&quot; and &quot;as yn vun&quot; cho scanshoil- ta daa jah ad soilshaghey dy vel shoh ny pannyl pontreilagh- oght t&apos;eh cur ny faaue ymmydoil c&apos;ren aght lhisagh kiuse dy nheeghyn pannyl ymmyrkey. Myr sampleyr, er ny pannylyn&quot;vullagh&quot;  bee ny cramman rolley frap heose  yn rolley echey fo yn pannyl, ogh er ny paneyl &quot;fo&quot; bee ny rolley frap heose er yn vullagh jeh&apos;n paneyl.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand">
+						<local_schema short_desc="Mooadaghey dy goaill stiagh yn lheead fastee clen">
+							<longdesc>Myr dy firrinagh, bee&apos;n pannyl goaill stiagh yn clen lheead fastee (yrdjid myr ta shoh ny pannyl pontreilagh). &apos;Syn mod shoh ta&apos;n pannyl  just abyl dy veh currit er yn çheu jeh&apos;n fastee. Myr cha nel eh firrinagh bee&apos;n pannyl just vooar dy lioor dy aaghtey ny claaghyn veg, laadeyderyn as crammanyn er yn pannyl</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monitor">
+						<local_schema short_desc="Fastee Xinerama c&apos;raad ta&apos;n pannyl soilshit">
+							<longdesc>Ayns ny cur er Xinerama , t&apos;ow abyl dy geddyn yn pannyl er dagh fastee er dagh fastee reggyr. Ta&apos;n orgher feddyn magh yn fastee &apos;sy traa t&apos;ayn ta&apos;n pannyl soilshit er.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screen">
+						<local_schema short_desc="Fatee x c&apos;raad ta&apos;n pannyl soilshit">
+							<longdesc>Lesh ny cur stiagh ny smoo ny un fastee, t&apos;ow abyl dy geddyn er dagh fastee reggyr. Ta&apos;n orgher feddyn magh yn fastee ta&apos;n pannyl soilshit er &apos;Sy traa t&apos;ayn</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Ennym dy feddyn magh pannyl">
+							<longdesc>Ta shoh ny ennym ta peiagh erbee abyl dy lhaih t&apos;ow abyl dy jannoo ymmyd jeh dy feddyn magh stoo mychoine yn pannyl. Ta&apos;n ymmyd ard dy veh jannoo ymmydit myr ny enmys uinnag pannyl ta ymmydoil traa stuirey eddyr pannylyn.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="Queeyllaghey jalloo er yn pannyl pontreilagh">
+								<longdesc>Myr dy firrinagh, bee&apos;n jalloo cooylrey v&apos;eh queeyllagh traa ta&apos;n pannyl stuirit pontreilagh.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stretch">
+							<local_schema short_desc="Sheeyney jalloo dys yn pannyl">
+								<longdesc>Myr dy firrinagh, bee yn jalloo veh schliggeraghey dys ny towshan pannyl. Cha bee yn corrilagh reayrtys jeh yn jalloo cummit seose.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="Tarn jalloo dys fastee">
+								<longdesc>Myr dy firrinagh, bee&apos;n jalloo shliggeragh (freyll yn corrillagh eayrtys jeh&apos;n jalloo) dys yn yrjid pannyl (myr chochruinnagh.)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="Jalloo cooylrey">
+								<longdesc>Reih yn coadan dy v&apos;eh jannoo ymmydit myr jalloo cooylrey. Myr ta&apos;n jalloo lesh ammyr alpha bee eh currit er yn claare buird myr jalloo cooylrey.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="Daa cooylrey dullyraght">
+								<longdesc>Reih dullyraght jeh&apos;n aght daa cooylrey. Myr cha nel yn daa dullyraght slane (ny towse ny sloo ny 65535), bee&apos;n daa currit myr yn daa cooylrey yn claare buird.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="Daa coylrey">
+								<longdesc>Reih yn daa cooylrey son yn pannyl ayns aght #RGB</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="Sorçh cooylrey">
+								<longdesc>Yn sorçh dy cooylrey lhisagh veh ymmydit son yn pannyl shoh. Ta ny towsyn abyl dy veh &quot;gtk&quot; - Bee&apos;n cooylrey greie GTK+ veh jannoo ymmydit &quot;daa&quot;- bee&apos;n daa v&apos;eh jannoo ymmydit myr daa cooylrey  ny ny &quot;jalloo&quot; -bee&apos;n jalloo reih&apos;t liorish yn jalloo veh jannoo ymmydit myr ny cooylrey.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="general">
+					<entry name="profiles_migrated">
+						<local_schema short_desc="Va&apos;n Caghlaader reihghyn persoonagh shenn goll ersooyl">
+							<longdesc>Ny brattagh boolean dy cowraghey myr va coip jeant jeh ny reihghyn jeh&apos;n ymmydeyr s&apos;jeree ayns /apps/panel/profiles/default dys boayl noa /apps/panel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_id_list">
+						<local_schema short_desc="Rolley caart enmey nhee pannyl">
+							<longdesc>Ny rolley dy caart enmyn nhee pannyl Ta dagh caart enmey cur enney er ny nhee pannyl reggyr (e.g. ny laadeyder, ny cramman jantagh ny, ny barr/cramman rolley. Ta ny reihghyn son dagh jeh ny nheeghyn shoh ayns /apps/panel/objects/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_id_list">
+						<local_schema short_desc="Rolley claaghyn veg caart enmey pannyl">
+							<longdesc>Ny rolley dy claaghyn veg caart enmyn pannyl. Ta dagh caart enmey cur enney er yn claare veg pannyl echey. Ta ny reihghyn son dagh jeh ny claaghyn veg shoh ayns /apps/panel/applets/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id_list">
+						<local_schema short_desc="Panyl rolley caart enmey">
+							<longdesc>Ny rolley jeh caart enmey pannylyn Ta dagh caart enmey cowraghey magh ny pannyl keim mullagh. Ta ny reihghyn son ny pannylyn shoh ayns /apps/panel/toplevels/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_autocompletion">
+						<local_schema short_desc="Lhiggey da creaghneyhene ayns ny screeuynyn&quot;Roie claare&quot;">
+							<longdesc>Myr dy firrinagh, bee creaghneyhene ayn screeuynyn  &quot;Roie claare&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_program_list">
+						<local_schema short_desc="Jean yn rolley claaghyn ny smoo &apos;sy screeuynyn&quot;Roie claare&quot;">
+							<longdesc>Myr er dy firrinagh ta&apos;n rolley jeh  &quot;Claaghyn lesh fys&quot; &apos;Sy screeuynyn &quot;Roie Claare&quot; jeant ny smoo traa ta screeuyn foashlit. Ta&apos;n orgher just bentyn da myr ta&apos;n orgher _rolley_lhiggey_da claaghyn er dy firrinagh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_program_list">
+						<local_schema short_desc="Lhiggey da rolley claaghyn &apos;sy screeuynyn &quot;Roie claare&quot;">
+							<longdesc>Myr currit er dy firrinagh, ta yn rolley  &quot;Claaghyn fys&quot; &apos;sy screeuyn  &quot;Roie claare&quot; ayn. Myr t&apos;eh ny  cha nel yn rolley jeant ny smoo traa ta&apos;n claare stuirit liorish yn orgher _rolley_claaghyn_soilshit.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global">
+					<entry name="disable_force_quit">
+						<local_schema short_desc="Cur bac er dooney lesh niart">
+							<longdesc>Myr dy firrinagh, cha bee yn pannyl lhiggey da&apos;n ymmydeyr niartaghey ny claare dy dooney liorish geddyn rey jeh&apos;n entreilys dys yn cramman dooney lesh niart.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_log_out">
+						<local_schema short_desc="Cur bac er hurrys magh">
+							<longdesc>Myr dy firrinagh, che bee yn paney lhiggey da ny ymmydeyr dy hurrys magh, liorish geddyn rey lesh dys ny entreilysyn rolley.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Ceau neose er">
+							<longdesc>Ta&apos;n orgher shoh ceauit neose as cha nod eh veh jannoo ymmydit son ghlass neose kiart. Lhisagh yn fastee ghlass claare buird. Lhisagh yn /claare buird/gnome/ghlass neose/cur_bac_er_ghlass_yn_fastee veh jannoo ymmydit ayns ymmyd jeh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disabled_applets">
+						<local_schema short_desc="Caart enmyn IIDyn dy cur bac er voish laadey">
+							<longdesc>Ny rolley dy claaghyn cha bee yn pannyl cur geill da. Yn raad shoh tow abyl dy cur bac er kiuse dy claaghyn voish laadey ny soilshaghey &apos;sy rolley. Myr sampleyr yn dy cur bac er yn claare veg sarey cur  &apos;OAFIID:GNOME_MiniCommanderApplet&apos; dys yn rolley shoh. Ta feym ec yn pannyl dy veh laadit son shoh dy tagyrt.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked_down">
+						<local_schema short_desc="Cur yn ghlass neose pannyl dys y jerrey">
+							<longdesc>Myr dy firrinagh, cha bee yn pannyl lhiggey da caghlaaghyn dys ny reihghyn yn pannyl. Bee feym ec claaghyn veg reggyr v&apos;eh ghlassit neose &apos;nane lhurg &apos;nane. Bee feym ec yn pannyl v&apos;eh laadit reesht son shoh dy taggyrt.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="highlight_launchers_on_mouseover">
+						<local_schema short_desc="Teih laadeyderyn traa ta lught harrish">
+						</local_schema>
+					</entry>
+					<entry name="confirm_panel_remove">
+						<local_schema short_desc="Firrinaghey geddyn rey lesh yn pannyl">
+							<longdesc>Myr dy firrinagh, ta screeuyn soilshit briaght myr ta&apos;n ymmydeyr gearree geddyn rey lesh yn pannyl.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="drawer_autoclose">
+						<local_schema short_desc="kishteig hayrn dooneyhene">
+							<longdesc>Myr dy firrinagh, bee ny kishteig hayrn veh doont hene traa ta&apos;n ymmydeyr crig er ny laadeyder er eh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="window_screenshot_key">
+						<local_schema short_desc="Ceau neose er">
+						</local_schema>
+					</entry>
+					<entry name="screenshot_key">
+						<local_schema short_desc="Ceau neose er">
+						</local_schema>
+					</entry>
+					<entry name="run_key">
+						<local_schema short_desc="Ceau neose er">
+						</local_schema>
+					</entry>
+					<entry name="menu_key">
+						<local_schema short_desc="Ceau neose er">
+						</local_schema>
+					</entry>
+					<entry name="enable_key_bindings">
+						<local_schema short_desc="Ceau neose er">
+						</local_schema>
+					</entry>
+					<entry name="panel_hide_delay">
+						<local_schema short_desc="Ceau neose er">
+						</local_schema>
+					</entry>
+					<entry name="panel_animation_speed">
+						<local_schema short_desc="Ceau neose er">
+						</local_schema>
+					</entry>
+					<entry name="panel_show_delay">
+						<local_schema short_desc="Ceau neose er">
+						</local_schema>
+					</entry>
+					<entry name="panel_minimized_size">
+						<local_schema short_desc="Ceau neose er">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Lhiggey da animaght">
+						</local_schema>
+					</entry>
+					<entry name="keep_menus_in_memory">
+						<local_schema short_desc="Ceau neose er">
+						</local_schema>
+					</entry>
+					<entry name="tooltips_enabled">
+						<local_schema short_desc="Lhiggey da faaueyn greie">
+							<longdesc>Myr dy firrinagh, bee  faaueyngreie soilshait son nheeghyn ayns pannylyn.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="objects">
+					<entry name="action_type">
+						<local_schema short_desc="Sorçh cramman jantagh">
+							<longdesc>Ta&apos;n sorçh jantagh Ta&apos;n cramman cowraghey. Ta ny towsyn abyl dy veh &quot;cur ghlass&quot;, &quot;roie&quot;,  &quot;shirrey&quot; as  &quot;jalloo fastee&quot;. Ta&apos;n orgher shoh just ymmydoil myr ta&apos;n sorçh _nhee  &quot;claare veg-jantys&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="launcher_location">
+						<local_schema short_desc="Boyl laadeyder">
+							<longdesc>Yn boayl jeh&apos;n coadan .claare buird loayrt mychoine yn laadeyder. Ta&apos;n orgher just ymmydoil myr ta&apos;n sorçh _nhee &quot;nhee-laadeyder&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menu_path">
+						<local_schema short_desc="Raad cummal rolley">
+							<longdesc>Yn raad c&apos;red ta ny cummalyn rolley troggit. Ta&apos;n orgher just ymmydoil myr ta&apos;n jannoo_ymmyd_jeh_orgher_raad dy firrinagh as ta&apos;n orgher sorçh_nhee &quot;nhee-rolley&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_menu_path">
+						<local_schema short_desc="Jannoo ymmyd jeh raad cadjin son cummalyn rolley">
+							<longdesc>Myr currit er dy firrinagh, ta&apos;n orgher  _raad rolley jannoo ymmydit jeh myr raad ta lhisagh ny cummalyn rolley veh troggit. Myr cha nel eh firrinagh,bee&apos;n orgher _raad rolley dyn geillt. Ta&apos;n orgher just bentyn da myr ta&apos;n orgher sorçh _nhee &quot;nhee-rolley&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_icon">
+						<local_schema short_desc="Jallooveg jannoo ymmydit son yn cramman yn nhee">
+							<longdesc>Yn boayl jeh&apos;n coadan jalloo jannoo ymmydit myr yn jallooveg son yn cramman nhee. Ta&apos;n orgher just ymmydoil myr ta&apos;n sorçh _nhee &quot;nhee-kishteig hayrn&quot; ny &quot;nhee-rolley&quot; as ta&apos;n jannoo_ymmyd_jeh_jallooveg_reighit dy firrinagh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_icon">
+						<local_schema short_desc="Jannoo ymmyd jeh&apos;n jallooveg cadjin som cramman nheeghyn">
+							<longdesc>Myr dy firrinagh, ta&apos;n jalloo _veg cadjin orgher jannoo ymmydit myr cramman jalloo veg cadjin. Myr cha nel eh dy firrinagh, cha nel geill currit dys yn  _jalloo veg orgher cadjin. Ta&apos;n orgher shoh just ymmydoil myr ta&apos;n sorçh _nhee ny  &quot;nhee-rolley&quot; ny ny &quot;nhee-kishteig hayrn&quot;.kishteig hayrn</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="tooltip">
+						<local_schema short_desc="Faauegreie soilshit son kishteig hayrn ny rolley">
+							<longdesc>Yn teks dy soilshaghey myr ny faauegreie son yn kishteig hayrn jeh&apos;n rolley shoh. Ta&apos;n orgher just ymmydoil myr ta&apos;n sorçh _nhee ny &quot;nhee-kishteig hayrn,&quot; ny ny &quot;nhee-rolley&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="attached_toplevel_id">
+						<local_schema short_desc="Pannyl kianglt rish yn kishteig hayrn">
+							<longdesc>Ta&apos;n enneydey jeh&apos;n pannyl kianglt rish yn kishteig hayrn shoh. Ta&apos;n orgher just ymmydoil myr ta&apos;n  sorçh _nhee &quot;nhee-kishteig hayrn&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="bonobo_iid">
+						<local_schema short_desc="Claare veg IID  Bonobo">
+						</local_schema>
+					</entry>
+					<entry name="locked">
+						<local_schema short_desc="Cur ghlass er yn nhee dys yn pannyl">
+							<longdesc>Myr dy firrinagh, cha bee yn ymmydeyr abyl dy gleashaghey yn claare veg gyn cur yn ghlass ersooyl jannoo ymmyd jeh&apos;n nheerolley &quot;Cur ghlass ersooyl&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="position">
+						<local_schema short_desc="Boayl yn nhee er yn pannyl">
+							<longdesc>Yn boayl jeh&apos;n ny pannylyn shoh. Ta&apos;n boayl &apos;sy traa t&apos;ayn currit stiagh myr earroo dy pixelyn voish yn hoshtal (ny yn mullagh myr  pontreilagh) çheu pannyl.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id">
+						<local_schema short_desc="Pannyl ard-keim lesh nhee">
+							<longdesc>Ta&apos;n enneydeyr jeh&apos;n pannyl ard keim ta lesh yn nhee shoh</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_type">
+						<local_schema short_desc="Sorçh nhee pannyl">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="Rhenkyn ayns caghlaader reaymys obbree">
+							<longdesc>Ta&apos;n orgher reih quoid rhenkyn (son aght rea) ny collooyn (son aght pontreilagh) Ta&apos;n caghlaader reamys obbree soilshaghey ny reaymysyn obbree ayns. Ta&apos;n orgher just bentyn da traa ta&apos;n orgher soilshaghey_oilley_ny reaymysyn obbree dy firrinagh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Soilshaghey oilley ny boaylyn obbree">
+							<longdesc>Myr er dy firrinagh, bee&apos;n caghlaader reaymys obbree soilshaghey oilley ny reaymysyn obbree. Myr che nel bee eh just soilshaghey yn reaymysyn obbree &apos;sy traa t&apos;ayn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="Soilshaghey enmyn boaylyn obbree">
+							<longdesc>Myr currit er dy firrinagh, bee&apos;n reaymys obbree sy caghlaader reaymys obree soilshaghey ny enmyn jeh ny reaymysyn obbree. Myr cha nel bee ad soilshaghey ny uinnagyn sy reaymysn obbree. Ta&apos;n reih shoh just gobbraghey traa ta&apos;n reireyder uinnag ayd&apos;s Metacity.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="speed_unit">
+						<local_schema short_desc="Unnid tappeid">
+							<longdesc>Yn unnid dy jannoo ymmyd jeh traa t&apos;eh soilshaghey yn tappeid geay.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="Unnid çhiassid">
+							<longdesc>Yn unnid dy jannoo ymmyd jeh traa t&apos;eh soilshaghey çhiassidyn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cities">
+						<local_schema short_desc="Rolley dy boaylyn">
+							<longdesc>Ny rolley jeh boaylyn dy soilshaghey &apos;sy uinnag smoodeyder.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="internet_time">
+						<local_schema short_desc="Jannoo ymmyd jeh traa eddyr-voggyl">
+							<longdesc>Va&apos;n ymmyd jeh&apos;n orgher shoh ceau neose er GNOME 2.6 ayns foayr  da yn orgher aght. Va&apos;n cooish freayllt voish freggyrtagh ayns sorçhyn shenn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="Jannoo ymmyd jeh traa UNIX">
+							<longdesc>Va&apos;n ymmyd jeh&apos;n orgher shoh ceau neose er GNOME 2.6 ayns foayr  da yn orgher aght. Va&apos;n cooish freayllt voish freggyrtagh ayns sorçhyn shenn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="Aght oor">
+							<longdesc>Va&apos;n ymmyd jeh&apos;n orgher shoh ceau neose er GNOME 2.6 ayns foayr  da yn orgher aght. Va&apos;n cooish freayllt voish freggyrtagh ayns sorçhyn shenn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_locations">
+						<local_schema short_desc="Jean yn rolley ny smoo dy boaylyn">
+							<longdesc>Myr currit er dy firrinagh, jean yn rolley jeh boaylyn ny smoo &apos;sy uinnag smoodeyder.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_weather">
+						<local_schema short_desc="Jean yn rolley dy fysseree emshir">
+							<longdesc>Myr currit er dy firrinagg, jean yn rolley dy fysseree emshir ny smoo sy uinnag smoodeyder.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_tasks">
+						<local_schema short_desc="Jean yn rolley ny smoo jeh reddyn dy jannoo">
+							<longdesc>Myr currit er dy firrinagh, jean yn rolley dy stoo da jannoo ny smoo &apos;sy uinnag smoodeyder.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_birthdays">
+						<local_schema short_desc="Jean yn rolley ny smoo jeh laa laa ruggyreeyn">
+							<longdesc>Myr currit er dy firrinagh, jean yn rolley jeh laaghyn laa ruggyree ny smoo sy uinnag smoodeyder.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_appointments">
+						<local_schema short_desc="Jean yn rolley ny smoo jeh currymyn">
+							<longdesc>Myr currit er dy firrinagh, jean an rolley dy currymyn ny smoo &apos;sy uinnag smoodeyder.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="Soilshaghey ny earrooyn shiaghtyn sy smoodeyder">
+							<longdesc>Myr currit er dy firrinagh, soilshaghey earrooyn shiaghtyn sy  smoodeyder.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="Greie caghlaa traa">
+							<longdesc>Va&apos;n ymmyd jeh&apos;n orgher shoh ceau neose er GNOME 2.22 lesh ymmyd jeh&apos;n greie reireydys traa sthie. Va&apos;n cooish freayllt son freggyrtagh lesh sorçhyn shenn</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="Jannoo ymmyd jeh UTC">
+							<longdesc>Va&apos;n ymmyd jeh&apos;n orgher shoh ceau neose er GNOME 2.28 ayns foayr jeh ny cryssyn traa. Va&apos;n cooish freayllt voish freggyrtagh lesh sorçhyn shenn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_temperature">
+						<local_schema short_desc="Soilshaghey yn çhiassid sy clag">
+							<longdesc>Myr currit er dy firrinagh, soilshaghey yn çhiassid myrish yn jallooveg emshir.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_weather">
+						<local_schema short_desc="Soilshaghey yn emshir &apos;sy clag">
+							<longdesc>Myr currit er dy firrinagh soilshaghey ny jallooveg emshir.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema short_desc="Soilshaghey yn dait sy faaue greie">
+							<longdesc>Myr currit er dy firrinagh, soilshaghey yn dait ayns yn faaue greie.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="Soilshaghey yn dait &apos;sy clag">
+							<longdesc>Myr currit er dy firrinagh, soilshaghey yn dait &apos;sy clag, as yn traa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="Soilshaghey traa lesh grigyn">
+							<longdesc>Myr currit er dy firrinagh, soilshaghey ny grigyn &apos;sy traa</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="Aght reih&apos;t son yn clag">
+							<longdesc>Ta&apos;n orgher shoh reih yn aght jannoo ymmydit liorish yn claare veg clag traa ta&apos;n orgher aght currit er &quot;reih&apos;t&quot;. T&apos;ow abyl dy jannoo ymmyd jeh sonraghyn coloayrtys toiggit liorish strftime()  dy freayll ny aght reih&apos;t. Jeeagh er yn laue-lioar strftime() son toilley fysseree.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="Aght oor">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="Lowaltys Fockle-vaihaghey teks">
+							<longdesc>Ny slane-earroo graa quoid dy  redyn jeh ennymyn coadan ta ro liauyr lhisagh ellipsyn v&apos;eh currit aayns ynnyd j&apos;eh er yn Buirdclaaghyn. Myr ta&apos;n earroo ny smoo ny 0, cha bee yn coadan goll harish yn earroo dy linnaghyn currit. Myr ta&apos;n earroo 0 ny ny sloo, cha nel lowaltys er yn earroo dylinnaghyn taishbuinys</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_name">
+						<local_schema short_desc="Ennym ">
+							<longdesc>Ta&apos;n ennym abyl dy v&apos;eh currit myr t&apos;ow gearree ny ennym reih&apos;t son yn jalloveg servern eddyr-voggyl er yn buirdclaaghyn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema>
+							<longdesc>Ta&apos;n ennym abyl dy v&apos;eh currit myr t&apos;ow gearree ny ennym reih&apos;t son yn jalloveg thaie er yn buirdclaaghyn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema>
+							<longdesc>Ta&apos;n ennym abyl dy v&apos;eh currit er ennym reih&apos;t son yn jallooveg co`earrooder er yn buirdclaaghyn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="Jalloo veg server eddyr-voggyl dy akin sy buirdclaaghyn">
+							<longdesc>Myr t&apos;eh currit er firrinagh, bee jallooveg lesh kiangley dys ny serveryn ynnyd-eggey v&apos;eh currit er yn buirdclaaghyn</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volumes_visible">
+						<local_schema short_desc="Soilshaghey ny ym-lioaryn chianglit er yn buird claaghyn">
+							<longdesc>Myr t&apos;eh currit er firrinagh, bee jallooyn veg lesh kiangleyn dys ny yl-lioaryn lesh yn co`earrooder v&apos;eh currit er yn buirdclaaghyn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="Yn jalloveg trustyr dy akin er yn buirdclaaghyn">
+							<longdesc>Myr t&apos;eh currit er firrinagh, bee jalloo veg lesh kiangley dys yn trustyr v&apos;eh currit er y co`earrooder.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="Jalloo veg co`earrooder dy akin er yn Buirdclaaghyn">
+							<longdesc>Myr t&apos;eh currit er dy firrinagh, be jallloveg lesh kiangley dys yn boayl voish yn co&apos;earrooder v&apos;eh currit er yn Buirdclaaghyn.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="Jalloveg Thaie dy akin sy buirdclaaghyn">
+							<longdesc>Myr t&apos;eh currit er firrinagh, bee jalloveg lesh kiangley dys yn coodagh thaie v&apos;eh currit er yn buirdclaaaghyn.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema short_desc="Just soilshaghey coodaghyn syn errn  billey çheu ">
+								<longdesc>Myr currit er firrinagh, Bee Nautilus just soilshaghey coodaghyn sy kerrin çheu billey. Mannagh vel bee eh soilshaghey coodaghyn as coadanyn</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="Oardagh colloo cadjin ayns reayrtys rolley">
+							<longdesc>Oardagh colloo cadjin ayns reayrys rolley.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="Rolley cadin dy colloyn dy akin sy rolley reayrt">
+							<longdesc>Rolley cadjin dy colloyn dy akin syn reayrt rolley.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema>
+							<longdesc>Laare zoom cadjin ta&apos;n reayrt rolley jannoo ymmyd j&apos;eh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema>
+							<longdesc>Myr firrinagh, bee oilley ny coadanyn ayns uinnagyn v&apos;eh caghlaarit ayns oardagh ergooyl.ie, myr ayns oardagh lhurg ennym, cha bee eh ayns oardagh voish &quot;a&quot; dys &quot;z&quot;, bee eh ayns oardagh voish &quot;z&quot; dys &quot;a&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Oardagh reaghydys  cadjin">
+							<longdesc>Yn oardagh sorçhal cadjin som ny nheeghyn sy roley reayrt. Ta ny towsyn abyl dy v&apos;eh &quot;ennym&quot;, &quot;mooadys&quot;, &quot;sorçh&quot;, as &quot;dait _Caghlaarit&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="compact_view">
+					<entry name="all_columns_have_same_width">
+						<local_schema short_desc="Ta dagh ooilley kione Screeunyn lesh yn lheead cheddin">
+							<longdesc>Myr ta&apos;n reih reih&apos;t, be oilley ny colloyn ayns yn reayrt cumir geddyn yn lheead cheddin. Mannagh vel, yn reih shoh er bee&apos;n lheead jea dagh colloo ve&apos;h reiht myr tad gearree.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema>
+							<longdesc>Laare zoom Ta&apos;n reayrt reayrt cumir jannoo ymmyd j&apos;eh</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="Lowaltys Fockle-vaihaghey teks">
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_size">
+						<local_schema short_desc="Moodys cadjin moodys jalloo veg as ingaan ordaag">
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Laare Zoom Jallo veg cadjin">
+							<longdesc>Laare zoom cadjin Ta&apos;n reayrt jalloo veg jannoo ymmyd j&apos;eh</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_manual_layout">
+						<local_schema short_desc="Jannoo ymmyd jeh aght hene ayns uinnagyn noa">
+							<longdesc>Myr dy firrinagh, bee uinnagyn noa jannoo ymmyd jeh aght hene dy cadjin</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="labels_beside_icons">
+						<local_schema>
+							<longdesc>Myr firrinagh, bee ny lipaidyn currit liorish ny jallooynveg as cha nel fo ad.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_tighter_layout">
+						<local_schema short_desc="Jannoo ymmyd J&apos;eh aght ny smoo chionn ayns uinnagyn noa">
+							<longdesc>Myr firrinagh, bee ny jalloyn veg ve&apos;h currit magh neughiastyllagh dy cadjin ayns uinnagyn noa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema>
+							<longdesc>Myr dy firrinagh, bee coadanyn ayns uinnagyn ayn veh soilshit ayns oardagh raad elley myrgeart. ie, myr sorçhit liorish ennym eisht dyn dy sorçhal coadanyn voish &quot;a&quot; dys &quot;z&quot; bee ad sorchit voish &quot;z&quot; dys &quot;a&quot;; myr sorçhit liorish mooadys, as dyn dy v&apos;eh ry-cheilley cha  be ad sorçhit ry-cheilley.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Oardagh reaghydys  cadjin">
+							<longdesc>Yn oardagh sorçhal cadjin son nheeghyn sy reayrt jallooyn veg. Ta ny towsyn abyl dy v&apos;eh &quot;ennym&quot;, &quot;mooadys&quot;, &quot;sorçh&quot;, &quot;dait _caghlaarit&quot;, as &quot;cowraghyn&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="captions">
+						<local_schema short_desc="Rolley jeh ny colloyn er ny jallooyn veg foddee ta ayn.">
+							<longdesc>Ny rolley dy collooyn fo ny jallooveg ayns yn reayrt jallooveg as yn buirdclaaghyn. Ta&apos;n earroo kiart dy collooyn soilshit goll er yn keimmeiaght zoom. Ta ny towsyn abyl dy v&apos;eh: &quot;mooadys&quot;, &quot;sorçh&quot;, &quot;dait va phiagh goll er ny caghlaa&quot;, &quot;Dait_Caghlaarit&quot;, &quot;Dait va phiagh erniagh_goll er&quot;, &quot;Shellooder&quot;, &quot;possan&quot;, &quot;kiedyn&quot;, &quot;Kiedyn_octal&quot; as &quot;sorçh_mime&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="Reayrt barr kerrin">
+							<longdesc>Soilshaghey yn kerrin cheu ayns uinnagyn foashlit noa</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="Soilshaghey yn kerrincheu ayns uinnagyn noa">
+							<longdesc>Myr currit er dy firrinagh, be uinnagyn foshlit noa geddyn yn kerrin çheu dy akin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="Soilshaghey yn barr keimmeiaght ayn uinnagyn noa">
+							<longdesc>Myr currit er dy firrinagh, be uinnagyn foshlitnoa  geddyn yn barr keimeeaght dy akin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="Soilshaghey yn barrynnydyn ayns uinnagyn noa">
+							<longdesc>Myr currit er firrinagh, bee Uinnagyn foashlit noa geddyn yn barr ynnydyn dy akin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="Soilshaghey yn barrgreie ayns uinnagyn noa">
+							<longdesc>yr currit er dy firrinagh, be uinnagyn foshlit noa geddyn yn barr keimeeaght dy akin.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="Yn lheead jeh&apos;n kerrin çheu">
+							<longdesc>Yn lheead cadjin jeh&apos;n kerrincheu ayns uinnagyn noa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="Aght Dait">
+							<longdesc>Yn aght dy daityn coadan, Ta ny towsyn abyl dy v&apos;eh &quot;ynnydagh&quot;, &quot;iso&quot;, as &quot;cha nel formoil&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="Jeaghydeyr coodagh cadjin">
+							<longdesc>Traa ta phiagh goll er ny coodagh ta&apos;n ymmydyr shoh jannoo ymmydyt, myr cha nel oo er reih ny reayrt elley son yn coodagh shen. Ta ny towsyn abyl dy v&apos;eh &quot;Reayrt tolley&quot;, &quot;reay_rt jallooyn veg&quot; as&quot;reayrt_cu_mir&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="Kerrin cheu cadjin ennym coadan cooylrey">
+							<longdesc>Ennym coadan son yn cooylrey cadjin son yn çheu kerrin. Tow just abyl dy jannoo ymmyd j&apos;eh traa ta&apos;n _cooylrey_reaghydeyr _kerrin_çheu er firrinagh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="Kerrin cheu cadjin daa cooylrey">
+							<longdesc>Ennym coadan son yn cooylrey cadjin son yn çheu kerrin. Tow just abyl dy jannoo ymmyd j&apos;eh traa ta&apos;n _cooylrey_reaghydeyr _kerrin_çheu er firrinagh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_set">
+						<local_schema short_desc="Cheu kerrin cliaghtey as reaghys cooylrey">
+							<longdesc>Vel ny cooylrey barrcheu cadjin reih&apos;t currit er. </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="Ennym coadan cooylrey cadjin">
+							<longdesc>Ennym coadan son yn cooylrey coodagh cadjin. Cha nel oo abyl dy jannoo ymmyd jeh mannagh vel yn _reaghydeyr cooylrey firrinagh</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="Daa cooylrey cadjin">
+							<longdesc>Daa son yn cooylrey coodagh cadjin. Tow just abyl dy jannoo ymmyd jeh myr ta&apos;n reaghys _cooylrey firrinagh</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema short_desc="Cooylrey Cadjin">
+							<longdesc>Myr ta cooylrey coodagh cadjin reih&apos;t currit er.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search_bar_type">
+						<local_schema short_desc="Cooish son shirrey er yn barr shirrey">
+							<longdesc>Cooish traa ta towsyn j&apos;eh coadanyn shirrit son ayns yn barrshirrey. Myr currit er &quot;Shirrey_liorish_teks&quot;, Bee Nautilus shirrey son coadanyn just liorish yn ennym coadan as reighyn yn coadan</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_is_home_dir">
+						<local_schema short_desc="Ta Nautilus jannoo ymmyd jeh yn coodagh thaie yn ymmydeyr thaie myr yn buirdclaaghyn">
+							<longdesc>Myr currit er dy firrinagh, bee Nautilus jannoo ymmyd j&apos;eh yn coodagh thaie jeh&apos;n ymmydeyr myr buirdclaaghyn Myr cha nel eh firrinagh, be eh jannoo ymmyd jeh ~/Buirdclaaghyn myr yn Buirdclaaghyn/</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="laue screeuee Buirdclaaghyn">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="Tow abyl dy er yn buird claaghyn">
+							<longdesc>Myr currit er dy firrinagh, bee Nautilus tayrn ny jallo veg er yn buirclaaghyn</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="Soilshaghey ny coodaghyn sy toshiaght ayns windows">
+							<longdesc>Myr currit er dy firrinagh, bee Nautilus soilshaghey coodaghyn roish t&apos;eh soilshaghey coadanyn ayns yn reayrtys jalloyn veg as rolley.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_advanced_permissions">
+						<local_schema short_desc="Soilshaghey ny kiedyn ard sy rolley reighyn">
+							<longdesc>Myr currit er dy firrinagh be Nautilus lhiggey dou caghlaa as soilshaghey kiedyn lesh ny smoo jeh ny unix aght, goll er ny smoo reighyn folliaghtagh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="preview_sound">
+						<local_schema>
+							<longdesc>Dellal tappee ass dy jannoo ymmyd jeh dy jeaghyn er ny roie-haishbynys jeh ny coadan sheean traa ta&apos;n lugh harrish yn jalloo veg harrish ny coadanyn.Myr currit er &quot;dagh traa&quot; eisht cloie yn sheean dagh traa. Nish traa t&apos;eh er server ynnydagh. Myr currit er &quot;_Just ynnydagh&quot; eish just ckiue roie-haishbyny er corysyn coadan ynnydagh. Myr currit er &quot;Cha nel riaue&quot;</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="directory_limit">
+						<local_schema short_desc="Yn cooid smoo coadanyn tow abyl dy cur ayns coodagh">
+							<longdesc>Bee coodaghyn ny smoo ny yn moodys shoh v&apos;eh giarrit dys mys yn moodys shoh. Ta&apos;n resooney j&apos;eh shoh dy scapail gyn gearree geayraghey yn carnane as marroo Nautilus j&apos;eh ny coodaghyn mooar.Ta ny towse jiooldagh soilshaghey magh gyn  lowaltys. Ta&apos;n lowaltys mysh, er yn faa ta fem echey lhaih ny coodaghyn ayns raad-glout.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_limit">
+						<local_schema short_desc="Yn Moodys jalloo cooid smoo son inaganyn ordaag">
+							<longdesc>Cha bee jalloo ny smoo ny moodys shoh (ayns byten) V&apos;eh currit dys ingaan ordaag. Ta&apos;n resoon jeh yn reih shoh dyn dy jannoo jallooyn vooar dys ingaany ordaag bee foddee goaill ram traa dy laadey ny jannoo ymmyd jeh ram reamys.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_image_thumbnails">
+						<local_schema short_desc="C&apos;raad dy soilshaghey ingaanyn ordaag jeh coadanyn jalloo">
+							<longdesc>Della ltappee ass dy soilshaghey ny jalloo ny ny ingaan ordaag. Myr currit er &quot;dagh traa&quot; eisht ingaan ordaag dagh traa, scummey myr ta&apos;n coodagh er server foddey ersooyl. Myr currit er                           &quot;_Just ynnydagh&quot; eisht just soilshaghey ingaanyn ordaag son corysyn coadan ynnydagh. Myr currit er &quot;cha nel riaue&quot; eisht ny jean jannoo ass jallooyn ingaanyn ordaag, just jannoo ymmy jeh yn Jallooveg keintagh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Yn  jeeagh Nautilus (Currit neose)">
+							<longdesc>Ennym j&apos;eh yn cooish Nautils dy jannoo ymmyd jeh. V&apos;eh feedynit magh dy vel oo er t&apos;ow er jannoo ymmydyt j&apos;eh myr Nautilus.Jean ymmyd jeh yn cooish jalloo veg ayns ynnyd jeh mysailltch.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_back_button">
+						<local_schema short_desc="Crammag lught dy cur jantys da yn sarey  &quot;erash&quot; sy&apos;n uinnag jeaghydeyr">
+							<longdesc>Son ymmyderyn lesh lughyn lesh crammanyn son &quot;erash&quot; as &quot;er oaie&quot; er, be yn cramman shoh cur jantys er yn crammag &quot;Erash&quot; ayns uinnag jeaghydeyr. Ta ny towsyn abyl dy v&apos;eh eddyr 6 as 14.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_forward_button">
+						<local_schema short_desc="Crammag lught dy cur jantys da yn sarey &quot;Er oaie&quot;  s&apos;yn uinnag jeaghydeyr">
+							<longdesc>Son ymmyderyn lesh lughyn lesh crammanyn son &quot;erash&quot; as &quot;er oaie&quot; , be yn crammag shoh reih cren cramman ta cur jantys  da &quot;erash&quot; ayns yn uinnag jeaghydeyr. Ta ny towsyn abyl dy v&apos;eh eddyr 6 as 14.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_use_extra_buttons">
+						<local_schema>
+							<longdesc>Son ymmyderyn lesh lughyn lesh crammanyn &quot;erash&quot; as &quot;er oaie&quot; er, be yn crammag shoh feddyn magh myr ta jantys taghyrt ayns Nautilus traa ta&apos;d broojit.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="click_policy">
+						<local_schema short_desc="Yn sorch dy click ta ymmydyt dy foashley coadanyn">
+							<longdesc>Ta ny towsyn abyl dy v&apos;eh &quot;ynrican&quot; dy foashley coadanyn er ny click ynrican, ny &quot;dooblit&quot; sy foashley ad er click dooblit.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_directory_item_counts">
+						<local_schema>
+							<longdesc>Dellalass tappee ass son ym traa dy soilshaghey yn earroo dy nheeghyn ayns coodagh. Myr currit er &quot;dagh traa&quot; eisht soilshaghey coontaghyn nhee, cummey myr t&apos;eh er server foddey ersooyl. Myr currit er &quot;_Just ynnydagh&quot; eish just soilshaghey coontyn son corysyn coadan ynnydagh. Myr cyrrut er &quot;Cha nel riaue&quot; eisht ny jean co`earroo ny nheegn coontey.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_icon_text">
+						<local_schema short_desc="Craad dy soilshaghey teks roie-haishbynys ayns jalloyn veg">
+							<longdesc>Dellal tappee son traa dy soilshaghey yn taishbynys-roish jeh cummal coadan teks ayns yn jallooveg yn coadan. Myr currit er &quot;dagh traa&quot; eisht soilshaghey roie-haishbynys, scummey ogh t&apos;eh er server foddey ersooyl. Myr currit er &quot;Just ynnydagh&quot; eisht just soilshaghey roie-haishbynys son corysyn coadan ynnydagh. Myr currit er &quot;cha nel riaue&quot;eisht ny jean riaue jannoo roie-haishbynys fysseree.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_delete">
+						<local_schema short_desc="Lhisagh eh lhiggey da dy doll magh chelleeragh">
+							<longdesc>Myr currit er dy firrinagh, bee reih er Nautilus lhiggey da us doll magh coadan dy çhelleeragh as ayns ynnyd jeh gleashaghey eh dys trustyr. Ta&apos;n reih shoh abyl dy veh danjeyragh, so gow kiarail.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_trash">
+						<local_schema short_desc="Lhisagh eh briaght us roish doll magh coadanyn, ny geddyn rey lesh yn trustyr">
+							<longdesc>Myr currit er dy firrinagh, bee Nautilus briaght son jannoo traa tow prowal dy doll magh coadanyn, ny geddyn reh lesh yn trustyr.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_open_folder">
+						<local_schema short_desc="Rolley jeh sorchyn x-cummal/ dy cur dys &quot;Coodagh Foashlit&quot;">
+							<longdesc>Rolley jeh sorçhyn dy x-cummal/* va&apos;n ymmydeyr reih &quot;Foashley yn coodagh&quot; sy claa veg reighyn. Be coodagh foashlit traa ta shean ny feeshan currit stiagh jeh yn sorçh shoh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_ignore">
+						<local_schema short_desc="Rolley dy x-cummal/* sorchyn dy veh currit dys  &quot;ny jean jannoo red erbee&quot;">
+							<longdesc>Rolley jeh sorçhyn dy x-cummal/* va&apos;n ymmydeyr reih &quot;Dyn jannoo red abbee&quot; ayns yn claa veg. Cha be chaghteragh v&apos;eh soilshit as cha bee yn claa foashlit traa tow cur stiagh shean ny feeshan jeh yn sorçh shoh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_start_app">
+						<local_schema short_desc="Rolley jeh sorchyn x-cummal/* yn boayl bee yn claa reih&apos;t foashlit ">
+							<longdesc>Rolley jeh sorçhyn dy x-cummal/*  son yn ymmydeyr va reih dy foashley ny claa ayns ny reighyn claa veg. Bee&apos;n claa reiht son yn sorçh currit v&apos;eh currit er traa ta feeshan ny shean currit stiagh lesh yn sorçh shoh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_never">
+						<local_schema short_desc="Ny jean cur er ny roiehene/Goailltoshiaghthene claaghyn traa ta feeshan ny sheean currit stiagh">
+							<longdesc>Myr currit er dy firrinagh, cha bee Nautilus roie claaghyn ta roie/ ny claaghyn ta roie ec y toshiaght traa ta red currit stiagh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount_open">
+						<local_schema short_desc="Lhisagh eh foashley ny coodagh hene son shean as feeshan jea-chianglit">
+						</local_schema>
+					</entry>
+					<entry name="media_automount">
+						<local_schema short_desc="Lisagh eh Cochiangley shean as  feeshan hene.">
+							<longdesc>Myr currit er dy firrinagh, bee Nautilus chianglit shean as feeshan hene gorrish Disk creoe t&apos;ow abyl dy akin as shean as feeshan er y claa goll toshiaght as soieaghey stiagh shean as feeshan</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_location_entry">
+						<local_schema short_desc="Jannoo ymmyd j&apos;eh yn enmys ynnyd dagh traa, as cha nel yn barrynnyd">
+							<longdesc>Myr currit er dy firrinagh, be yn Nautilus jeaghydeyr uinnag  geddyn dagh oilley traa ny cur stiagh teks enmys, as cha nel yn Barrraad</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_browser">
+						<local_schema short_desc="Lhiggey da yn classicagh ymmyrkey Nautilus, traa ta oilley ny Uinnagyn jeaghyderyn eddyr-voggyl.">
+							<longdesc>Myr currit er dy firrinagh, be oilley ny uinniagyn ayns Nautilus V&apos;eh uinnagyn jeaghydeyr eddyr-voggyl. Ta shoh yn aght v&apos;eh ymmyrkey ayns sorçh 2.6, as smie lesh kiuse dy pobble yn ymmyrkey shoh.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="exit_with_last_window">
+						<local_schema short_desc="Bee Nautilus dooney traa ta&apos;n uinnag s&apos;jeree stroit.">
+							<longdesc>Myr currit er dy firrinagh, bee Nautilus dooiney traa ta oilley ny uinnaghyn doint. Ta shoh ny reih cadjin. Myr t&apos;eh currit er  cha nel firrinagh, t&apos;eh abyl dy foashley gyn uinnag, so ta nautilus abyl dy veh ny jouyl Dy jeaghyn er chiangley shean as feeshan as reddyn elly.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

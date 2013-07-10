@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="name">
+						<local_schema short_desc="דעם פֿישס נאָמען">
+							<longdesc>אַ פֿיש אָן אַ נאָמען איז װי אַ ייִד אָן אַ היטל.  זײַ אים מחיה מיט אַ נאָמען.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

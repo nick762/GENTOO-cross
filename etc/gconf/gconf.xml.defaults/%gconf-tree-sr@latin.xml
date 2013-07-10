@@ -1,0 +1,3362 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="system">
+			<dir name="smb">
+				<entry name="workgroup">
+					<local_schema short_desc="SMB radna grupa">
+						<longdesc>Radna grupa ili domen Windows mreže čiji je korisnik član. Da bi nova radna grupa uzela maha korisnik će možda morati da se odjavi i ponovo prijavi.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="proxy">
+				<entry name="autoconfig_url">
+					<local_schema short_desc="Adresa za samopodešavanje posrednika">
+						<longdesc>Adresa koja obezbeđuje vrednosti za podešavanje posrednika.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_port">
+					<local_schema short_desc="Port SOCKS posrednika">
+						<longdesc>Port mašine određene pomoću „/system/proxy/socks_proxy“ koja je posrednik.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="socks_host">
+					<local_schema short_desc="Ime SOCKS posrednika">
+						<longdesc>Ime računara za SOCKS posredovanje.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_port">
+					<local_schema short_desc="Port FTP posrednika">
+						<longdesc>Port računara datog u „/system/proxy/ftp_proxy“ kroz koji posreduje.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="ftp_host">
+					<local_schema short_desc="Ime FTP posrednika">
+						<longdesc>Ime računara za FTP posredovanje.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_port">
+					<local_schema short_desc="Port bezbednog HTTP posrednika">
+						<longdesc>Port računara datog u „/system/proxy/secure_proxy“ kroz koji posreduje.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="secure_host">
+					<local_schema short_desc="Ime bezbednog HTTP posrednika">
+						<longdesc>Ime računara za bezbedno veb (HTTPS) posredovanje.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="mode">
+					<local_schema short_desc="Način podešavanja posrednika">
+						<longdesc>Izaberite režim podešavanja posrednika. Dopuštene vrednosti su „none“, „manual“ i „auto“.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="http_proxy">
+				<entry name="ignore_hosts">
+					<local_schema short_desc="Besposredničke adrese">
+						<longdesc>Ovaj ključ sadrži spisak računara koji su neposredno povezani, umesto putem posrednika (ukoliko je u dejstvu). Ove vrednosti mogu biti imena računara, domeni (pomoću početnih navoda kao što je *.nešto.iju), IP adrese računara (bilo IP4 bilo IP6) i adrese mreža uz mrežnu masku (nešto kao što je 192.168.0.0/24).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_password">
+					<local_schema short_desc="Lozinka HTTP posrednika">
+						<longdesc>Lozinka koja se koristi za identifikaciju kod veb posrednika.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="authentication_user">
+					<local_schema short_desc="Korisnik HTTP posrednika">
+						<longdesc>Korisničko ime koje se šalje pri identifikaciji kod veb posrednika.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_authentication">
+					<local_schema short_desc="Identifikuj veze sa posredničkim serverom">
+						<longdesc>Ukoliko je postavljeno, veze sa posredničkim serverom se identifikuju. Par korisnik/lozinka se uzima iz „/system/http_proxy/authentication_user“ i „/system/http_proxy/authentication_password“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="port">
+					<local_schema short_desc="Port HTTP posrednika">
+						<longdesc>Port računara datog u „/system/http_proxy/host“ kroz koji posreduje.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="host">
+					<local_schema short_desc="Ime HTTP posrednika">
+						<longdesc>Ime računara za veb (HTTP) posredovanje.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_http_proxy">
+					<local_schema short_desc="Koristi veb posrednika">
+						<longdesc>Uključuje podešavanja posrednika pri pristupu vebu preko Interneta.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="dns_sd">
+				<entry name="extra_domains">
+					<local_schema short_desc="Dopunski domeni na kojima da traži DNS-SD usluge">
+						<longdesc>Zapetom razdvojen spisak DNS-SD domena koji su dostupni na putanji „network:///.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display_local">
+					<local_schema short_desc="Kako da prikazuje lokalnu DNS-SD uslugu">
+						<longdesc>Dopuštene vrednosti su „merged“ (spojeno), „separate“ (razdvojeno) i „disabled“ (isključeno).</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="tabs_open_position">
+						<local_schema short_desc="Gde smestiti nove listove u prozoru razgledača.">
+							<longdesc>Ukoliko je postavljeno na „after_current_tab“ umeće nove listove pokraj već postojećeg lista. Ukoliko je postavljeno na „end“ dodaje nove listove nakon svih otvorenih listova.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_backup_files">
+						<local_schema short_desc="Da li da prikazujem rezervne primerke datoteka">
+							<longdesc>Ukoliko je postavljeno na „true“, onda će se prikazivati rezervni primerci datoteka. Trenutno, samo datoteke čije se ime završava tildom (~) se smatraju rezervnim datotekama.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="Da li da prikazujem sakrivene datoteke">
+							<longdesc>Ukoliko je postavljeno na „true“, sakrivene datoteke će se prikazivati u upravniku datoteka. Sakrivene datoteke su ili datoteke čije ime počinje tačkom, ili su uključene u datoteci .hidden u fascikli.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnail_cache">
+					<entry name="maximum_size">
+						<local_schema>
+							<longdesc>Maksimalna veličina ostave malih prikaza, u megabajtima. Postavite na -1 da onemogućite uklanjanje.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="maximum_age">
+						<local_schema>
+							<longdesc>Maksimalna starost malih prikaza u ostavi, u danima. Postavite na -1 da onemogućite uklanjanje.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sound">
+					<entry name="input_feedback_sounds">
+						<local_schema short_desc="Zvučno obaveštenje o unosu">
+							<longdesc>Da li da pusti zvuk pri korisnikovim događajima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme_name">
+						<local_schema short_desc="Ime zvučne teme">
+							<longdesc>XDG zvučna tema koja se koristi za zvuke na događaje.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="event_sounds">
+						<local_schema short_desc="Zvuci za događaje">
+							<longdesc>Da li da pusti zvuk pri korisnikovim događajima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_esd">
+						<local_schema short_desc="Omogući ESD">
+							<longdesc>Pokreni zvučni server pri pokretanju.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_tracks">
+						<local_schema short_desc="Uobičajni kanali uređaja za zvuk">
+							<longdesc>Uobičajni kanali uređaja za zvuk na koje će se odnositi multimedijalne prečice na tastaturi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_mixer_device">
+						<local_schema short_desc="Uobičajeni uređaj za zvuk">
+							<longdesc>Uobičajni uređaj za zvuk na koji će se odnositi multimedijalne prečice na tastaturi.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="file-views">
+					<entry name="icon_theme">
+						<local_schema short_desc="Tema ikona za datoteke">
+							<longdesc>Tema koja se koristi za prikazivanje ikona za datoteke.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="interface">
+					<entry name="at-spi-corba">
+						<local_schema short_desc="Uključi AT-SPI strukturu baziranu na KORBI">
+							<longdesc>U kombinaciji sa /desktop/gnome/interface/accessibility, ovaj ključ uključuje AT-SPI strukturu baziranu na KORBI, ukoliko je ona premeštena. U suprotnom, ovo se zanemaruje.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_unicode_menu">
+						<local_schema short_desc="Pokaži meni Upravljački Unikod znak">
+							<longdesc>Da li pomoćni meniji u poljima za unos i prikaz teksta treba da ponude mogućnost umetanja kontrolnih znakova.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_input_method_menu">
+						<local_schema short_desc="Prikaži meni „Način unosa“">
+							<longdesc>Da li pomoćni meniji u poljima za unos i prikaz teksta treba da ponude mogućnost promene načina unosa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_accel">
+						<local_schema short_desc="Prečica za osnovni meni">
+							<longdesc>Prečica sa tastature za otvaranje menija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="file_chooser_backend">
+						<local_schema short_desc="Deo za izbor datoteka (GtkFileChooser)">
+							<longdesc>Deo za način izbora datoteka pomoću elementa GtkFileChooser. Dozvoljene vrednosti su „gio“, „gnome-vfs“ i „gtk+“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="status_bar_meter_on_right">
+						<local_schema short_desc="Stanje na desnoj strani">
+							<longdesc>Da li da prikaže merač na desnoj strani trake sa stanjem.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_font">
+						<local_schema short_desc="Prilagodi slovni lik">
+							<longdesc>Da li da koristi proizvoljni font u Gtk+ programima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monospace_font_name">
+						<local_schema short_desc="Slovni lik utvrđene širine">
+							<longdesc>Ime slovnog lika podjednake širine koji se koriste na mestima kao što je npr. terminal.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="document_font_name">
+						<local_schema short_desc="Slovni lik za dokumente">
+							<longdesc>Ime uobičajenog fonta za čitanje dokumenata.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-module">
+						<local_schema short_desc="GTK IM modul">
+							<longdesc>Ime modula za Gtk+ metodu unosa koji koristi Gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-status-style">
+						<local_schema short_desc="GTK IM Stil stanja">
+							<longdesc>Ime Gtk+ IM stila stanja koji koristi Gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk-im-preedit-style">
+						<local_schema short_desc="GTK IM Stil predunosa">
+							<longdesc>Ime Gtk+ IM stila predunosa koji koristi Gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="font_name">
+						<local_schema short_desc="Uobičajen slovni lik">
+							<longdesc>Ime uobičajenog pisma koje koristi Gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_key_theme">
+						<local_schema short_desc="Gtk+ tema">
+							<longdesc>Osnovno ime uobičajene teme koju koristi Gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gtk_theme">
+						<local_schema short_desc="Gtk+ tema">
+							<longdesc>Osnovno ime uobičajene teme koju koristi Gtk+.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="icon_theme">
+						<local_schema short_desc="Tema ikona">
+							<longdesc>Tema ikona koja se koristi za panel, Nautilus, itd.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink_time">
+						<local_schema short_desc="Period treptaja kursora">
+							<longdesc>Dužina perioda treperenja kursora, u milisekundama.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cursor_blink">
+						<local_schema short_desc="Treperenje kursora">
+							<longdesc>Da li kursor treba da treperi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_icons_size">
+						<local_schema short_desc="Veličina ikona na paleti alatki">
+							<longdesc>Veličina ikona u traci alata, „small-toolbar“ (male) ili „large-toolbar“ (velike).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_detachable">
+						<local_schema short_desc="Odvojive alatke">
+							<longdesc>Da li korisnik može da odvoji alatke i da ih pomera naokolo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menubar_detachable">
+						<local_schema short_desc="Odvojiv osnovni meni">
+							<longdesc>Da li korisnik može da odvoji osnovne menije i da ih pomera naokolo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="buttons_have_icons">
+						<local_schema short_desc="Dugmići sadrže ikone">
+							<longdesc>Da li se prikazuje ikona pored teksta na dugmićima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_icons">
+						<local_schema short_desc="Meniji sadrže ikone">
+							<longdesc>Da li se prikazuje ikona pored stavke u meniju.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toolbar_style">
+						<local_schema short_desc="Stil palete alatki">
+							<longdesc>Stil alatki. Dozvoljene vrednosti su „both“, „both_horiz“, „icons“ i „text“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="can_change_accels">
+						<local_schema short_desc="Dozvoljena izmena prečica">
+							<longdesc>Da li korisnik može dinamički da postavi novu prečicu kada je označena stavka u meniju.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menus_have_tearoff">
+						<local_schema short_desc="Meni se može otkinuti">
+							<longdesc>Da li je menije moguće otkinuti.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Omogući animacije">
+							<longdesc>Da li se prikazuju animacije. Napomena: ovo je opšti ključ, i izmeniće ponašanje upravnika prozora, panela, itd.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="accessibility">
+						<local_schema short_desc="Omogući pristupačnost">
+							<longdesc>Da li programi sadrže podršku za pristupačnost.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="background">
+					<entry name="color_shading_type">
+						<local_schema short_desc="Vrsta pretapanja boja">
+							<longdesc>Kako da pretapa boje pozadine. Moguće vrednosti su „horizontal-gradient“, „vertical-gradient“ i „solid“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="secondary_color">
+						<local_schema short_desc="Dodatna boja">
+							<longdesc>Boja na dnu ili desnoj strani pri iscrtavanju pretapanja boja; ne koristi se za jednobojnu pozadinu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="primary_color">
+						<local_schema short_desc="Osnovna boja">
+							<longdesc>Boja na vrhu ili levoj strani pri iscrtavanju pretapanja boja, ili boja jednobojne pozadine.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_opacity">
+						<local_schema short_desc="Neprovidnost slike">
+							<longdesc>Neprovidnost kojom da iscrta pozadinsku sliku.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_filename">
+						<local_schema short_desc="Datoteka sa slikom">
+							<longdesc>Koju datoteku da koristi za pozadinsku sliku.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="picture_options">
+						<local_schema short_desc="Izbori za sliku">
+							<longdesc>Određuje kako se iscrtava slika postavljena pomoću wallpaper_filename. Moguće vrednosti su „none“ (ništa), „wallpaper“ (pozadina), „centered“ (centrirano), „scaled“ (preko celog ekrana), „stretched“ (razvučeno), „zoom“ (uvećano) i „spanned“ (protegnuto).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="draw_background">
+						<local_schema short_desc="Iscrtaj pozadinu radne površine">
+							<longdesc>Da li da Gnom iscrta pozadinu radne površine.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="thumbnailers">
+					<entry name="disable_all">
+						<local_schema short_desc="Isključi sve spoljašnje prikazivače">
+							<longdesc>Postavite da biste isključili sve spoljašnje programe za pravljenje malih prikaza, nezavisno od toga da li su oni samostalno isključeni ili uključeni.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="application@x-font-otf">
+						<entry name="enable">
+							<local_schema short_desc="Da li da uključim umanjeni prikaz OpenTajp fontova">
+								<longdesc>Ako je postavljeno, onda će se za OpenTajp fontove koristiti umanjeni prikaz.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Naredba za umanjeni prikaz kod OpenTajp fontova">
+								<longdesc>Dodeli ovaj taster naredbi koja se koristi za pravljenje umanjenog prikaza kod OpenTajp fontova.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-pcf">
+						<entry name="enable">
+							<local_schema short_desc="Da li da uključim umanjeni prikaz PCF fontova">
+								<longdesc>Ako je postavljeno, onda će se za PCF fontove koristiti umanjeni prikaz.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Naredba za umanjeni prikaz kod PCF fontova">
+								<longdesc>Dodeli ovaj taster naredbi koja se koristi za pravljenje umanjenog prikaza kod PCF fontove.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-type1">
+						<entry name="enable">
+							<local_schema short_desc="Da li da uključim umanjeni prikaz Tajp1 fontova">
+								<longdesc>Ako je postavljeno, onda će se za Tajp1 fontove koristiti umanjeni prikaz</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Naredba za umanjeni prikaz kod Tajp1 fonta">
+								<longdesc>Dodeli ovaj taster naredbi koja se koristi za pravljenje umanjenog prikaza kod Tajp1 fontova.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="application@x-font-ttf">
+						<entry name="enable">
+							<local_schema short_desc="Da li da uključim umanjeni prikaz TruTajp fontova">
+								<longdesc>Ako je postavljeno, onda će se za TruTajp fontove koristiti umanjeni prikaz</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Naredba za umanjeni prikaz kod TruTajp fontova">
+								<longdesc>Dodeli ovaj taster naredbi koja se koristi za pravljenje umanjenog prikaza kod TruTajp fontova.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="typing_break">
+					<entry name="enabled">
+						<local_schema short_desc="Da li je ili nije uključeno zaključavanje tastature">
+							<longdesc>Da li je ili nije uključeno zaključavanje tastature.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="allow_postpone">
+						<local_schema short_desc="Dopusti odlaganje odmora">
+							<longdesc>Da li se može odložiti ekran za odmor od kucanja.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="break_time">
+						<local_schema short_desc="Vreme za odmor">
+							<longdesc>Koliko minuta treba da traje odmor od kucanja.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="type_time">
+						<local_schema short_desc="Vreme kucanja">
+							<longdesc>Broj minuta kucanja pre nego što počne odmor.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="lockdown">
+					<entry name="disable_application_handlers">
+						<local_schema short_desc="Unemogući baratanje URL adresama i MIME vrstama">
+							<longdesc>Spreči pokretanje programa koji prihvataju URL adrese i MIME tipove.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Isključi zaključavanje ekrana">
+							<longdesc>Spreči korisnika da zaključa ekran.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_user_switching">
+						<local_schema short_desc="Isključi promenu korisnika">
+							<longdesc>Spreči korisnika da se prijavi pod drugim nalogom dok je njegova sesija u toku.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_print_setup">
+						<local_schema short_desc="Isključi podešavanje štampe">
+							<longdesc>Spreči korisnika da menja podešavanja štampe.  Na primer, ovo će onemogućiti pristup prozorčetu „Podešavanje štampe“ iz svakog programa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_printing">
+						<local_schema short_desc="Isključi štampu">
+							<longdesc>Spreči korisnika da štampa.  Na primer, ovo će onemogućiti pristup prozorčetu „Štampaj“ iz svakog programa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_save_to_disk">
+						<local_schema short_desc="Isključi čuvanje datoteka na disk">
+							<longdesc>Spreči korisnika da čuva datoteke na disku.  Na primer, ovo će onemogućiti pristup prozorčetu „Sačuvaj kao“ iz svakog programa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_command_line">
+						<local_schema short_desc="Isključi red naredbi">
+							<longdesc>Spreči korisnika da pristupa terminalu ili da izdaje naredbu za izvršenje.  Na primer, ovo će onemogućiti pristup prozorčetu „Pokreni program“ sa panela.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="session">
+					<entry name="required_components_list">
+						<local_schema short_desc="Potrebni delovi sesije">
+							<longdesc>Spisak delova koje su sastavni deo sesije. (Svaki element imenuje ključ u „/desktop/gnome/session/required-components“.) Postavke programa za pokretanje po učitavanju neće dozvoliti korisnicima da uklone potrebni deo iz sesije i upravnik sesijama će sam dodati potrebne komponente u sesiju ukoliko one budu uklonjene.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_session">
+						<local_schema short_desc="Podrazumevana sesija">
+							<longdesc>Spisak programa koji su deo podrazumevane sesije.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="idle_delay">
+						<local_schema short_desc="Vreme nakon koga je sesija neaktivna">
+							<longdesc>Broj minuta nakon kojih se sesija smatra neaktivnom.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="required_components">
+						<entry name="filemanager">
+							<local_schema short_desc="Upravnik datotekama">
+								<longdesc>Upravnik datotekama ističe ikonice na radnoj površi i omogućava rad sa sačuvanim datotekama.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="panel">
+							<local_schema short_desc="Panel">
+								<longdesc>Panel postavlja liniju na vrh ili dno radne površi koja sadrži menije, spisak prozora, obaveštajne ikonice, sat i drugo.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="windowmanager">
+							<local_schema short_desc="Upravnik prozora">
+								<longdesc>Upravnik prozorima iscrtava naslovnu liniju i okvire prozora i omogućava pomeranje i promenu veličine prozora.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="font_rendering">
+					<entry name="rgba_order">
+						<local_schema short_desc="Redosled RGBA">
+							<longdesc>Redosled elemenata za doterivanje ispod piksela na LCD ekranu. Koristi se samo kada je umekšavanje ivica postavljeno na „rgba“. Moguće vrednosti su: „rgb“ za crvenu sleva (najkorišćenije), „bgr“ za zelenu sleva, „vrgb“ za crvenu odozgo i „vbgr“ za crvenu odozdo.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hinting">
+						<local_schema short_desc="Doterivanje">
+							<longdesc>Vrsta doterivanja prilikom iscrtavanja fontova. Moguće vrednosti su: „none“ za isključivanje doterivanja, „slight“ za osnovno doterivanje, „medium“ za srednji nivo doterivanja i „full“ za najveće doterivanje (može da napravi izobličenja u formama pisma).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="antialiasing">
+						<local_schema short_desc="Umekšavanje ivica">
+							<longdesc>Vrsta umekšavanja ivica prilikom iscrtavanja fontova. Dozvoljene vrednosti su: „none“ za isključivanje umekšavanja, „grayscale„ za standardno umekšavanje u sivim tonovima i „rgba„ za doterivanje ispod piksela (samo za LCD ekrane).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="dpi">
+						<local_schema short_desc="TPI">
+							<longdesc>Rezolucija koja se koristi za prevođenje veličine fontova na veličinu slike (u tačkama po inču)</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="accessibility">
+					<dir name="startup">
+						<entry name="exec_ats">
+							<local_schema short_desc="Programi za ispomoć na početku">
+								<longdesc>Spisak programa za ispomoć koji se pokreću pri prijavi u Gnomovo radno okruženje.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="stickykeys_modifier_beep">
+							<local_schema>
+								<longdesc>Svirni pri pritisku na izmenjivač.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_two_key_off">
+							<local_schema>
+								<longdesc>Isključi ukoliko su dva tastera pritisnuta istovremeno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_delay">
+							<local_schema short_desc="Najmanji period u milisekundama">
+								<longdesc>Ne smatraj taster pritisnutim dok se ne drži bar @delay milisekundi.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_init_delay">
+							<local_schema short_desc="Početno odugovlačenje u milisekundama">
+								<longdesc>Koliko vremena (u milisekundama) treba da prođe pre nego što tasteri za pomeranje miša počnu da rade.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_accel_time">
+							<local_schema short_desc="Koliko dugo (u milisekundama) da ubrzava">
+								<longdesc>Koliko vremena (u milisekundama) treba da dođe od nule do najveće brzine.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_max_speed">
+							<local_schema short_desc="Tačaka po sekundi">
+								<longdesc>Koliko tačaka u sekundi da prelazi pri najvećoj brzini.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_delay">
+							<local_schema short_desc="najmanji period u milisekundama">
+								<longdesc>Zanemari višestruki pritisak na _isti_ taster u rasponu od @delay milisekundi.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="mousekeys_enable">
+							<local_schema short_desc="Tasteri miša">
+								<longdesc>Određuje da li je uključena pristupačnost tastera miša preko tastature.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="slowkeys_enable">
+							<local_schema short_desc="Spori tasteri">
+								<longdesc>Određuje da li je uključena pristupačnost sporih tastera.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bouncekeys_enable">
+							<local_schema short_desc="Odskačući tasteri">
+								<longdesc>Određuje da li su uključeni odskačući tasteri u sklopu podrške za pristupačnost.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stickykeys_enable">
+							<local_schema short_desc="Lepljivi tasteri">
+								<longdesc>Određuje da li je uključena pristupačnost lepljivih tastera.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="keybindings">
+					<entry name="allowed_keys">
+						<local_schema short_desc="Dozvoljeni ključevi">
+							<longdesc>Ukoliko je upisano, ignoriše prečice, osim ukoliko je njihov Gkonf direktorijum unutar spiska. Ovo je korisno za zaključavanje.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="onscreenkeyboard">
+						<entry name="action">
+							<local_schema short_desc="Prikaz tastature na ekranu">
+								<longdesc>Naredba za uključivanje ili isključivanje tastature na ekranu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="Prikaz tastature na ekranu">
+								<longdesc>Vezujem za uključivanje tastature na ekranu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="Naziv prečice na tastaturi koja uključuje tastaturu na ekranu">
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="screenreader">
+						<entry name="action">
+							<local_schema short_desc="Prikaz čitača ekrana">
+								<longdesc>Naredba za uključivanje ili isključivanje čitača ekrana.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="Naziv prečice na tastaturi koja uključuje čitača ekrana">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="Prikaz čitača ekrana">
+								<longdesc>Vezuje za uključivanje čitača ekrana.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="magnifier">
+						<entry name="action">
+							<local_schema short_desc="Prikaz lupe">
+								<longdesc>Naredba za uključivanje ili isključivanje lupe.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="name">
+							<local_schema short_desc="Naziv prečice na tastaturi koja uključuje lupu">
+							</local_schema>
+						</entry>
+						<entry name="binding">
+							<local_schema short_desc="Prikaz lupe">
+								<longdesc>Vezujem za uključivanje lupe.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="url-handlers">
+					<dir name="h323">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pokreni naredbu u terminalu">
+								<longdesc>Uključeno ako naredba koja se koristi za ove adrese treba da se pokreće u terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Rukovaoc „h323“ adresama">
+								<longdesc>Naredba korišćena za baratanje „h323“ adresama, ako je uključeno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Da li navedena naredba treba da se koristi za „h323“ adrese.">
+								<longdesc>Uključeno ako naredba navedena u ključu „command“ treba da se koristi za „h323“ adrese.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="callto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pokreni naredbu u terminalu">
+								<longdesc>Uključeno ako naredba koja se koristi za ove adrese treba da se pokreće u terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Rukovaoc „callto“ adresama">
+								<longdesc>Naredba korišćena za baratanje „callto“ adresama, ako je uključeno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Da li navedena naredba treba da se koristi za „callto“ adrese.">
+								<longdesc>Uključeno ako naredba navedena u ključu „command“ treba da se koristi za „callto“ adrese.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="aim">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pokreni naredbu u terminalu">
+								<longdesc>Uključeno ako naredba koja se koristi za ove adrese treba da se pokreće u terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Rukovaoc „aim“ adresama">
+								<longdesc>Naredba korišćena za baratanje „aim“ adresama, ako je uključeno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Da li navedena naredba treba da se koristi za „aim“ adrese.">
+								<longdesc>Uključeno ako naredba navedena u ključu „command“ treba da se koristi za „aim“ adrese.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mailto">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pokreni naredbu u terminalu">
+								<longdesc>Uključeno ako naredba koja se koristi za ove adrese treba da se pokreće u terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Rukovaoc „mailto“ adresama">
+								<longdesc>Naredba korišćena za baratanje „mailto“ adresama, ako je uključeno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Da li navedena naredba treba da se koristi za „mailto“ adrese.">
+								<longdesc>Uključeno ako naredba navedena u ključu „command“ treba da se koristi za „mailto“ adrese.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="https">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pokreni naredbu u terminalu">
+								<longdesc>Uključeno ako naredba koja se koristi za ove adrese treba da se pokreće u terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Rukovaoc „https“ adresama">
+								<longdesc>Naredba korišćena za baratanje „https“ adresama, ako je uključeno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Da li navedena naredba treba da se koristi za „https“ adrese.">
+								<longdesc>Uključeno ako naredba navedena u ključu „command“ treba da se koristi za „https“ adrese.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="http">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pokreni naredbu u terminalu">
+								<longdesc>Uključeno ako naredba koja se koristi za ove adrese treba da se pokreće u terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Rukovaoc „http“ adresama">
+								<longdesc>Naredba korišćena za baratanje „http“ adresama, ako je uključeno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Da li navedena naredba treba da se koristi za „http“ adrese.">
+								<longdesc>Uključeno ako naredba navedena u ključu „command“ treba da se koristi za „http“ adrese.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="man">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pokreni naredbu u terminalu">
+								<longdesc>Uključeno ako naredba koja se koristi za ove adrese treba da se pokreće u terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Rukovaoc „man“ adresama">
+								<longdesc>Naredba korišćena za baratanje „man“ adresama, ako je uključeno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Da li navedena naredba treba da se koristi za „man“ adrese.">
+								<longdesc>Uključeno ako naredba navedena u ključu „command“ treba da se koristi za „man“ adrese.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="info">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pokreni naredbu u terminalu">
+								<longdesc>Uključeno ako naredba koja se koristi za ove adrese treba da se pokreće u terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Rukovaoc „info“ adresama">
+								<longdesc>Naredba korišćena za baratanje „info“ adresama, ako je uključeno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Da li navedena naredba treba da se koristi za „info“ adrese.">
+								<longdesc>Uključeno ako naredba navedena u ključu „command“ treba da se koristi za „info“ adrese.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="ghelp">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pokreni naredbu u terminalu">
+								<longdesc>Uključeno ako naredba koja se koristi za ove adrese treba da se pokreće u terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Rukovaoc „ghelp“ adresama">
+								<longdesc>Naredba korišćena za baratanje „ghelp“ adresama, ako je uključeno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Da li navedena naredba treba da se koristi za „ghelp“ adrese.">
+								<longdesc>Uključeno ako naredba navedena u ključu „command“ treba da se koristi za „ghelp“ adrese.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="trash">
+						<entry name="needs_terminal">
+							<local_schema short_desc="Pokreni naredbu u terminalu">
+								<longdesc>Uključeno ako naredba koja se koristi za ove adrese treba da se pokreće u terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="command">
+							<local_schema short_desc="Rukovaoc „trash“ adresama">
+								<longdesc>Naredba korišćena za baratanje „trash“ adresama, ako je uključeno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="enabled">
+							<local_schema short_desc="Da li navedena naredba treba da se koristi za „trash“ adrese.">
+								<longdesc>Uključeno ako naredba navedena u ključu „command“ treba da se koristi za „trash“ adrese.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="applications">
+					<dir name="tasks">
+						<entry name="needs_term">
+							<local_schema short_desc="Poslovnik zahteva terminal">
+								<longdesc>Da li je uobičajenom programu za zaduženja neophodan terminal za izvršavanje</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Podrazumeana sveska zaduženja">
+								<longdesc>Podrazumevani program za zaduženja</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="calendar">
+						<entry name="needs_term">
+							<local_schema short_desc="Kalendar zahteva terminal">
+								<longdesc>Da li je uobičajenom programu za kalendar neophodan terminal za izvršavanje</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Podrazumevani kalendar">
+								<longdesc>Podrazumevani program za kalendar</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="window_manager">
+						<entry name="workspace_names">
+							<local_schema short_desc="Imena radnih površina (zastarelo)">
+								<longdesc>Spisak imena prvih radnih površina upravnika prozora. Ovaj ključ je zastareo počevši od Gnoma 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="number_of_workspaces">
+							<local_schema short_desc="Broj radnih površina (zastarelo)">
+								<longdesc>Broj radnih površina koje koristi upravnik prozora. Ovaj ključ je zastareo počevši od Gnoma 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="current">
+							<local_schema short_desc="Korisnikov upravnik prozora (zastarelo)">
+								<longdesc>Prvi upravnik prozora koji probati. Ovaj ključ je zastareo počevši od Gnoma 2.12.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default">
+							<local_schema short_desc="Rezervni upravnik prozora (zastarelo)">
+								<longdesc>Rezervni upravnik prozora ukoliko ne može da pronađe korisnikov upravnik. Ovaj ključ je zastareo počevši od Gnoma 2.12.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="browser">
+						<entry name="nremote">
+							<local_schema short_desc="Čitač razume udaljeno">
+								<longdesc>Da li uobičajeni čitač razume udaljene Netskejp naredbe.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="needs_term">
+							<local_schema short_desc="Čitač zahteva terminal">
+								<longdesc>Da li je uobičajenom čitaču neophodan terminal za izvršavanje.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Uobičajeni čitač">
+								<longdesc>Uobičajeni čitač za sve adrese.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="at">
+						<entry name="screen_reader_enabled">
+							<local_schema short_desc="Čitač ekrana">
+								<longdesc>Određuje da li je uključen čitač ekrana.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_magnifier_enabled">
+							<local_schema short_desc="Lupa">
+								<longdesc>Određuje da li je uključena lupa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="screen_keyboard_enabled">
+							<local_schema short_desc="Tastatura na ekranu">
+								<longdesc>Određuje da li je uključena tastatura na ekranu.</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="mobility">
+							<entry name="startup">
+								<local_schema short_desc="Pokreni omiljeni program za motoričku ispomoć">
+									<longdesc>Da li Gnom treba da pokrene omiljeni program za motoričku ispomoć pri prijavi u okruženje.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Omiljeni program za motoričku ispomoć">
+									<longdesc>Omiljeni program za motoričku ispomoć koji će se koristiti za prijavu, meni ili rad u komandnoj liniji.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="visual">
+							<entry name="startup">
+								<local_schema short_desc="Pokreni omiljeni program za vizuelnu ispomoć">
+									<longdesc>Da li Gnom treba da pokrene omiljeni program za vizuelnu ispomoć pri prijavi u okruženje.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="exec">
+								<local_schema short_desc="Omiljeni program za vizuelnu ispomoć">
+									<longdesc>Omiljeni program za vizuelnu ispomoć koji se koristi za prijavu, meni ili rad u komandnoj liniji.</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+					<dir name="component_viewer">
+						<entry name="exec">
+							<local_schema short_desc="Podrazumevani program za pregled delova">
+								<longdesc>Program koji se koristi za pregledanje datoteka koje zahtevaju komponentu za pregled. Parametar %s će biti zamenjen adresom datoteke, a parametar %c će biti zamenjen IID-om komponente.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="terminal">
+						<entry name="exec_arg">
+							<local_schema short_desc="Argumenti izvršenja">
+								<longdesc>Argument sa kojim se izvršavaju programi u terminalu definisanom pomoću „exec“ ključa.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exec">
+							<local_schema short_desc="Terminalski program">
+								<longdesc>Terminalski program koji se koristi za pokretanje programa kojima je isti potreban.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="peripherals">
+					<dir name="mouse">
+						<entry name="cursor_size">
+							<local_schema short_desc="Veličina kursora">
+								<longdesc>Veličina kursora na koju ukazuje tema kursora.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_theme">
+							<local_schema short_desc="Tema kursora">
+								<longdesc>Ime teme za kursor. Koriste je samo Iks serveri koji podržavaju Xcursor kao što su XFree86 4.3 ili naknadni.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_font">
+							<local_schema short_desc="Font za kursor">
+								<longdesc>Ime slovnog lika za kursor. Ukoliko nije postavljeno, koristi se uobičajeni. Ova vrednost sa šalje Iks serveru samo na početku rada, pa izmene u toku rada neće imati uticaja dok se ponovo ne prijavite.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="locate_pointer">
+							<local_schema short_desc="Pronađi pokazivač">
+								<longdesc>Ističe trenutnu poziciju pokazivača kada se pritisne ili otpusti Control taster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="double_click">
+							<local_schema short_desc="Vreme dvostrukog pritiska">
+								<longdesc>Dužina dvostrukog pritiska.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="drag_threshold">
+							<local_schema short_desc="Prag prevlačenja">
+								<longdesc>Rastojanje pre početka prevlačenja.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_threshold">
+							<local_schema short_desc="Prag kretanja">
+								<longdesc>Rastojanje u tačkama koje pokazivač mora da pređe pre nego što se pokrene ubrzano kretanje miša. Uobičajena sistemska vrednost je -1.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="motion_acceleration">
+							<local_schema short_desc="Jednostruki pritisak">
+								<longdesc>Faktor ubrzanja za kretanje miša. Uobičajena sistemska vrednost je -1.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="single_click">
+							<local_schema short_desc="Jednostruki pritisak">
+								<longdesc>Jednostrukim pritiskom miša se otvaraju ikone.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="left_handed">
+							<local_schema short_desc="Zamena dugmeta miša">
+								<longdesc>Zameni levo i desno dugme miša, za levoruke.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="smartcard">
+						<entry name="removal_action">
+							<local_schema short_desc="Radnja pru uklanjanju pametne kartice">
+								<longdesc>Postavite na „none“ (ništa), „lock_screen“ (zaključaj ekran) ili „force_logout“ (primoraj odjavu). Ove radnje se primenjuju kada se korisnik prijavljuje putem pametne kartice.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="touchpad">
+						<entry name="touchpad_enabled">
+							<local_schema short_desc="Uključi dodirnu površ">
+								<longdesc>Postavite na „TRUE“ (tačno) da uključite sve dodirne table.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="horiz_scroll_enabled">
+							<local_schema short_desc="Uključi horizontalno klizanje">
+								<longdesc>Postavite na „TRUE“ (tačno) da dozvolite horizontalno klizanje na isti način kao za vertikalno, što određuje ključ scroll_method.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_method">
+							<local_schema short_desc="Izaberite režim klizanja preko dodirne table">
+								<longdesc>Izaberite režim klizanja preko dodirne table. Dozvoljene su vrednosti: „0“ (isključeno klizanje), „1“ (klizanje ivicom dodirne table) i „2“ (klizanje sa dva prsta)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="tap_to_click">
+							<local_schema short_desc="Uključi klik na dodirnoj tabli">
+								<longdesc>Postavite na „TRUE“ (tačno) da uključite levi klik miša tapkanjem na dodirnoj tabli.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="disable_while_typing">
+							<local_schema short_desc="Isključi dodirnu tablu dok kucam">
+								<longdesc>Postavite na „TRUE“ (tačno) ukoliko slučajno zakačinjete dodirnu tablu u toku kucanja.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="remember_numlock_state">
+							<local_schema short_desc="Zapamti stanje numeričke tastature">
+								<longdesc>Kada je uključeno, Gnom će zapamtiti stanje lampice numeričke tastature između sesija.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_custom_file">
+							<local_schema short_desc="Izbor datoteke za zvuk zvona tastature">
+								<longdesc>Ime datoteke u kojoj se nalazi zvuk zvona koji treba pustiti.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bell_mode">
+							<local_schema>
+								<longdesc>dozvoljene vrednosti su „on“, „off“ i „custom“.</longdesc>
+							</local_schema>
+						</entry>
+						<dir name="indicator">
+							<entry name="enabledPlugins">
+								<local_schema short_desc="Lista omogućenih dodataka pokazivača tastature">
+									<longdesc>Lista omogućenih dodataka pokazivača tastature</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="backgroundColor">
+								<local_schema short_desc="Boja pozadine">
+									<longdesc>Boja pozadine u pokazivaču rasporeda tastature</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="foregroundColor">
+								<local_schema short_desc="Boja fonta">
+									<longdesc>Boja fonta u pokazivaču rasporeda tastature</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="fontSize">
+								<local_schema short_desc="Veličina fonta">
+									<longdesc>Veličina finta u pokazivaču rasporeda tastature</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="fontFamily">
+								<local_schema short_desc="Font">
+									<longdesc>Font u pokazivaču rasporeda tastature</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="showFlags">
+								<local_schema short_desc="Prikaži zastavice u programčetu">
+									<longdesc>Prikaži zastavice u programčetu kako koje će ukazivati na trenutni raspored</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="secondary">
+								<local_schema short_desc="Sekungarne grupe">
+									<longdesc>Sekungarne grupe</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="preview">
+							<entry name="height">
+								<local_schema short_desc="Pregled tastature, visina">
+									<longdesc>Pregled tastature, visina</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="width">
+								<local_schema short_desc="Pregled tastature, širina">
+									<longdesc>Pregled tastature, širina</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="y">
+								<local_schema short_desc="Pregled tastature, Y pomeraj">
+									<longdesc>Pregled tastature, Y pomeraj</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="x">
+								<local_schema short_desc="Pregled tastature, X pomeraj">
+									<longdesc>Pregled tastature, X pomeraj</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="general">
+							<entry name="disable_sysconfig_changed_warning">
+								<local_schema short_desc="Sakrij upozorenje „izmenjena sistemska podešavanja Iksa“">
+									<longdesc>Sakrij upozorenje „izmenjena sistemska podešavanja Iksa“</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="loadExtraItems">
+								<local_schema short_desc="Učitava dodatne stavke za podešavanje">
+									<longdesc>Učitava čudne, retko korišćenje rasporede i opcije</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layoutNamesAsGroupNames">
+								<local_schema short_desc="Prikaži nazive rasporeda umesto imena grupa">
+									<longdesc>Prikaži nazive rasporeda umesto imena grupa (samo za XFree izdanja koja podržavaju više rasporeda)</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="handleIndicators">
+								<local_schema short_desc="Sačuvaj/vrati pokazatelje zajedno sa grupama rasporeda">
+									<longdesc>Sačuvaj/vrati pokazatelje zajedno sa grupama rasporeda</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="groupPerWindow">
+								<local_schema short_desc="Drži i radi sa odvojenom grupom po prozoru">
+									<longdesc>Drži i radi sa odvojenom grupom po prozoru</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="defaultGroup">
+								<local_schema short_desc="Podrazumevana grupa, dodeljena po pravljenju prozora">
+									<longdesc>Podrazumevana grupa, dodeljena po pravljenju prozora</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="known_file_list">
+								<local_schema short_desc="spisak modmap datoteka">
+									<longdesc>Spisak modmap datoteka dostupnih u $HOME direktorijumu.</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="update_handlers">
+								<local_schema short_desc="Baratanje osvežavanjem tastature:">
+									<longdesc>Skup skripti za pokretanje kad god se izmeni stanje tastature. Korisno za ponovno uključivanje xmodmap izmena</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+						<dir name="kbd">
+							<entry name="options">
+								<local_schema short_desc="Opcije tastature">
+									<longdesc>Opcije tastature</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="layouts">
+								<local_schema short_desc="Raspored tastature">
+									<longdesc>raspored tastature</longdesc>
+								</local_schema>
+							</entry>
+							<entry name="model">
+								<local_schema short_desc="Model tastature">
+									<longdesc>model tastature</longdesc>
+								</local_schema>
+							</entry>
+						</dir>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="rotate">
+						<local_schema short_desc="Rotiraj na uspravnim panelima">
+							<longdesc>Ukoliko je postavljeno, animacija ribe će biti rotirana kada je panel usmeren uspravno.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed">
+						<local_schema short_desc="Pauza po kadru">
+							<longdesc>Ovaj ključ navodi trajanje svakog kadra u sekundama.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="frames">
+						<local_schema short_desc="Broj kadrova u animaciji ribe">
+							<longdesc>Ovaj ključ navodi broj kadrova u animaciji ribe.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Naredba za izvršenje po kliku">
+							<longdesc>Ovaj ključ navodi naredbu za izvršenje po kliku na ribu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="image">
+						<local_schema short_desc="Sličica za animaciju ribe">
+							<longdesc>Ovaj ključ navodi ime datoteke sa slikom koja se koristi za animaciju ribe, datu u odnosu na direktorijum sa slikama.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Ime ribe">
+							<longdesc>Riba bez imena je prilično glupa riba. Oživite vašu ribu dajući joj ime.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="Najveća veličina spiska prozora">
+							<longdesc>Upotreba ovog ključa je prevaziđena u Gnomu 2.20. Šema je zadržana zarad saglasnosti sa starijim izdanjima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="Najmanja veličina spiska prozora">
+							<longdesc>Upotreba ovog ključa je prevaziđena u Gnomu 2.20. Šema je zadržana zarad saglasnosti sa starijim izdanjima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_unminimized_windows">
+						<local_schema short_desc="Prebaci umanjene prozore na trenutnu radnu površinu pri prikazu">
+							<longdesc>Ukoliko je ovo uključeno, kada prikazujete umanjeni prozor, prebaci ga na tekuću radnu površinu. Inače, prebacuje na njegovu matičnu radnu površinu. </longdesc>
+						</local_schema>
+					</entry>
+					<entry name="group_windows">
+						<local_schema short_desc="Kada grupisati prozore">
+							<longdesc>Određuje kada grupisati prozore iz istog programa u Spisku prozora. Dozvoljene vrednosti su „never“ (nikad), „auto“ (automatski) i „always“ (uvek).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Prikaži prozore sa svih radnih površina">
+							<longdesc>Ukoliko je ovo uključeno, spisak prozora prikazuje prozore sa svih radnih površina, a inače samo sa tekuće.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="Brzina animacije">
+							<longdesc>Brzina kojom se odvijaju animacije. Postoje tri moguće vrednosti: „slow“, „medium“ i „fast“. Ova postavka je značajna jedino kade je enable_animations postavljeno.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide_size">
+						<local_schema short_desc="Broj vidljivih tačaka kada je sakriven">
+							<longdesc>Određuje koliko je tačaka vidljivo kada je panel sakriven u ćošku. Ova postavka je značajna jedino ako je auto_hide postavljeno.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unhide_delay">
+						<local_schema short_desc="Vreme otkrivanja panela">
+							<longdesc>Određuje koliko milisekundi se čeka nakon što pokazivač uđe na površ panela pre otkrivanja panela. Ova postavka je značajna jedino ako je auto_hide postavljeno.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hide_delay">
+						<local_schema short_desc="Vreme sakrivanja panela">
+							<longdesc>Određuje koliko milisekundi se čeka nakon što pokazivač napusti površ panela pre skrivanja panela. Ova postavka je značajna jedino ako je auto_hide postavljeno.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_arrows">
+						<local_schema short_desc="Prikaži strelice na dugmićima za skrivanje">
+							<longdesc>Ukoliko je postavljeno, strelice će se smestiti na dugmiće za skrivanje. Ova postavka je značajna jedino ako je postavljeno enable_buttons.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="Omogući dugmiće za skrivanje">
+							<longdesc>Ukoliko je postavljeno, sa svake strane panela će se prikazati dugmići kojima se panel može pomeriti na ivicu ekrana, tako da samo dugme ostane prikazano.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Uključi animacije">
+							<longdesc>Ukoliko je postavljeno, skrivanje i otkrivanje ovog panela će biti animirano umesto da se odigra trenutno.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_hide">
+						<local_schema short_desc="Automatski sakrij panel u ćošak">
+							<longdesc>Ukoliko je postavljeno, kada pokazivač miša napusti površinu panela, on se samosakriva u ćošak ekrana. Pomeranjem pokazivača u taj ćošak će se ponovo prikazati panel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_centered">
+						<local_schema short_desc="Centriraj panel uspravno">
+							<longdesc>Ukoliko je postavljeno, zanemaruje se uspravni položaj naveden u ključevima „y“ i „y_bottom“ i panel se centrira uspravno. Ukoliko se izmeni veličina panela, ostaće na istoj poziciji — porašće sa svake strane. Ukoliko nije postavljeno, ključevi „y“ i „y_bottom“ određuju položaj panela.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_centered">
+						<local_schema short_desc="Centriraj panel vodoravno">
+							<longdesc>Ukoliko je postavljeno, zanemaruje se vodoravni položaj naveden u ključevima „x“ i „x_right“ i panel se centrira vodoravno. Ukoliko se izmeni veličina panela, ostaće na istoj poziciji — porašće sa svake strane. Ukoliko nije postavljeno, ključevi „x“ i „x_right“ određuju položaj panela.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y_bottom">
+						<local_schema short_desc="Uspravna koordinata panela, u odnosu na dno ekrana">
+							<longdesc>Pozicija panela na uspravnoj osi u odnosu na donju ivicu ekrana. Ako se postavi na -1, vrednost se zanemaruje i koristi se vrednost ključa „y“. Ako je vrednost veća od 0, onda se vrednost ključa „y“ zanemaruje. Ova vrednost je značajna jedino pri neraširenom prikazivanju. Pri raširenom prikazivanju se ova vrednost zanemaruje i panel se postavlja uz ivicu ekrana kako je naznačeno u usmerenju.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x_right">
+						<local_schema short_desc="Vodoravna koordinata panela, u odnosu na desnu stranu ekrana">
+							<longdesc>Pozicija panela na vodoravnoj osi u odnosu na desnu ivicu ekrana. Ako se postavi na -1, vrednost se zanemaruje i koristi se vrednost ključa „x“. Ako je vrednost veća od 0, onda se vrednost ključa „x“ zanemaruje. Ova vrednost je značajna jedino pri neraširenom prikazivanju. Pri raširenom prikazivanju se ova vrednost zanemaruje i panel se postavlja uz ivicu ekrana kako je naznačeno u usmerenju.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="y">
+						<local_schema short_desc="Uspravna koordinata panela">
+							<longdesc>Pozicija panela na uspravnoj osi. Ova vrednost je značajna jedino pri neraširenom prikazivanju. Pri raširenom prikazivanju se ova vrednost zanemaruje i panel se postavlja uz ivicu ekrana kako je naznačeno u usmerenju.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="x">
+						<local_schema short_desc="Vodoravna koordinata panela">
+							<longdesc>Pozicija panela na vodoravnoj osi. Ova vrednost je značajna jedino pri neraširenom prikazivanju. Pri raširenom prikazivanju se ova vrednost zanemaruje i panel se postavlja uz ivicu ekrana kako je naznačeno u usmerenju.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="Veličina panela">
+							<longdesc>Visina (širina za uspravne panele) panela. U toku rada panel će odrediti najmanju veličinu na osnovu veličine slovnog lika i ostalih pokazatelja. Najveća veličina je utvrđena na četvrtinu visine (širine) ekrana.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="Usmerenje panela">
+							<longdesc>Usmerenje panela. Postoje četiri dozvoljene vrednosti: „top“, „bottom“, „left“ i „right“. Pri raširenom prikazivanju, ova vrednost označava uz koju ivicu se postavlja panel. Pri neraširenom prikazivanju, razlika između „top“ i „bottom“ je manje značajna — oba označavaju da se radi o vodoravnom panelu — ali ipak daje i nagoveštaj kako neki objekti na panelu treba da se ponašaju. Na primer, na „top“ panelu će se meniji prikazivati ispod panela, dok će se na „bottom“ panelu meniji prikazivati iznad panela.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand">
+						<local_schema short_desc="Raširi da zauzme celu širinu ekrana">
+							<longdesc>Ukoliko je postavljeno, panel će zauzeti celu širinu ekrana (visinu ako se radi o uspravnom panelu). Na ovaj način se panel može postaviti jedino uz ivicu ekrana. Ukoliko nije postavljeno, panel će biti taman toliki da na njega može da stane svako programče, pokretač i dugme.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="monitor">
+						<local_schema short_desc="Ksinerama ekran na kojem je prikazan panel">
+							<longdesc>Kada se koristi Ksinerama, možete imati panele na svakom ekranu. Ovaj ključ određuje tekući ekran na kojem se prikazuje panel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screen">
+						<local_schema short_desc="Iks ekran na kojem je prikazan panel">
+							<longdesc>U sistemu sa više ekrana, možete imati panele na svakom od ekrana. Ovaj ključ određuje tekući ekran na kom se prikazuje panel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Ime kojim se raspoznaje ovaj panel">
+							<longdesc>Ovo je ljudima razumljivo ime koje možete koristiti za raspoznavanje panela. Njegova jedina svrha je da služi kao naslov prozora panela što može pomoći pri biranju panela.</longdesc>
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="Rotiraj sliku na uspravnim panelima">
+								<longdesc>Ukoliko je postavljeno, slika za pozadinu će biti rotirana kada je panel usmeren uspravno.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="stretch">
+							<local_schema short_desc="Razvuci sliku na panelu">
+								<longdesc>Ukoliko je postavljeno, slika će se razvući tako da odgovara dimenzijama panela. Neće se očuvati odnos visine i širine slike.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="Razvuci sliku da odgovara panelu">
+								<longdesc>Ukoliko je postavljeno, slika će biti uvećana na visinu (ako je vodoravan) panela tako da se sačuva odnos visine i širine.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="Slika za pozadinu">
+								<longdesc>Određuje datoteku koja se koristi kao slika za pozadinu. Ako je slika poluprovidna, onda će se ukomponovati sa pozadinskom slikom radne površine.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="Providnost boje pozadine">
+								<longdesc>Određuje providnost pozadinske boje. Ukoliko je boja providna (vrednost manja od 65535), boje će se ukomponovati sa pozadinskom slikom radne površine.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="Boja pozadine">
+								<longdesc>Postavlja boju pozadine panela u obliku #RGB.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="Vrsta pozadine">
+								<longdesc>Koje je vrste pozadina ovog panela. Postoje tri dozvoljene vrednosti: „gtk“ — koristi se uobičajena pozadina za Gtk+ elemente; „color“ — koristi se postavljena boja za pozadinu; ili „image“ — izabrana slika se koristi za pozadinu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="general">
+					<entry name="profiles_migrated">
+						<local_schema short_desc="Preneta su stara podešavanja postavki">
+							<longdesc>Istinitosna vrednost koja označava da li su prethodna podešavanja korisnika iz /apps/panel/profiles/default prebačena na novo mesto u /apps/panel.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_id_list">
+						<local_schema short_desc="Spisak IB-a objekata na panelu">
+							<longdesc>Spisak IB-a objekata na panelu. Svaki IB određuje jedan objekat na panelu (npr. pokretač, dugme ili meni). Podešavanja za svaki objekat se nalaze u /apps/panel/objects/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_id_list">
+						<local_schema short_desc="Spisak IB-a programčeta na panelu">
+							<longdesc>Spisak IB-a programčeta na panelu. Svaki IB određuje jedno programče na panelu. Podešavanja za svako programče se nalaze u /apps/panel/applets/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id_list">
+						<local_schema short_desc="Spisak IB-a panela">
+							<longdesc>Spisak IB-a panela. Svaki IB određuje jedan panel prvog nivoa. Podešavanja za svaki od ovih panela se nalaze u /apps/panel/toplevels/$(id).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_autocompletion">
+						<local_schema short_desc="Omogući samodopunu u prozorčetu za pokretanje naredbi.">
+							<longdesc>Ukoliko je postavljeno, samodopuna će biti dostupna u prozorčetu za pokretanje naredbi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_program_list">
+						<local_schema short_desc="Razgranaj spisak programa u prozorčetu za pokretanje naredbi">
+							<longdesc>Ukoliko je postavljeno, spisak poznatih programa u prozorčetu za pokretanje programa je razgranat. Ovo podešavanje je značajno jedino ako je postavljeno enable_program_list.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_program_list">
+						<local_schema short_desc="Prikaži spisak programa u prozorčetu za pokretanje naredbi.">
+							<longdesc>Ukoliko je postavljeno, prikazuje se spisak poznatih programa u prozorčetu za pokretanje programa. Da li je spisak razgranat pri prikazivanju prozorčeta se podešava pomoću show_program_list.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global">
+					<entry name="disable_force_quit">
+						<local_schema short_desc="Onemogući prinudu zatvaranja">
+							<longdesc>Ukoliko je postavljeno, panel neće dozvoliti korisniku da prinudno zatvori program uklanjanjem dugmeta za prinudno zatvaranje.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_log_out">
+						<local_schema short_desc="Onemogući odjavu">
+							<longdesc>Ukoliko je postavljeno, panel neće dozvoliti korisniku da se odjavi, uklanjanjem stavki menija za odjavu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disable_lock_screen">
+						<local_schema short_desc="Zastarelo">
+							<longdesc>Ovaj ključ je prevaziđen i ne možete ga koristiti za pravilno zaključavanje ekrana. Umesto njega, koristite /desktop/gnome/lockdown/disable_lock_screen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="disabled_applets">
+						<local_schema short_desc="IID-i programčeta za isključivanje učitavanja">
+							<longdesc>Spisak IID-a programčića koje će panel zanemarivati. Na ovaj način možete da sprečite učitavanje ili prikazivanje u meniju nekih programčića. Na primer, da isključite programče mali-narednik, dodajte „OAFIID:GNOME_MiniCommanderApplet“ u ovaj spisak. Panel je neophodno ponovo pokrenuti da bi ovo uzelo maha.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked_down">
+						<local_schema short_desc="Potpuno zaključavanje panela">
+							<longdesc>Ukoliko je postavljeno, panel neće dozvoliti izmene u mojim podešavanjima panela. Pojedinačni programčići se mogu zasebno zaključati. Panel je neophodno iznova pokenuti da bi ovo uzelo maha.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="highlight_launchers_on_mouseover">
+						<local_schema short_desc="Osvetli pokretače pri prelasku mišem">
+							<longdesc>Ukoliko je postavljeno, pokretač se osvetljava kada korisnik pređe mišem preko njega.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_panel_remove">
+						<local_schema short_desc="Potvrdi uklanjanje panela">
+							<longdesc>Ukoliko je postavljeno, prikazuje se prozorče u kojem se traži odobrenje korisnika za uklanjanje panela.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="drawer_autoclose">
+						<local_schema short_desc="Samozatvarajuća fioka">
+							<longdesc>Ukoliko je postavljeno, fioka će se sama zatvoriti kada korisnik klikne pokretač na njoj.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="window_screenshot_key">
+						<local_schema short_desc="Zastarelo">
+						</local_schema>
+					</entry>
+					<entry name="screenshot_key">
+						<local_schema short_desc="Zastarelo">
+						</local_schema>
+					</entry>
+					<entry name="run_key">
+						<local_schema short_desc="Zastarelo">
+						</local_schema>
+					</entry>
+					<entry name="menu_key">
+						<local_schema short_desc="Zastarelo">
+						</local_schema>
+					</entry>
+					<entry name="enable_key_bindings">
+						<local_schema short_desc="Zastarelo">
+						</local_schema>
+					</entry>
+					<entry name="panel_hide_delay">
+						<local_schema short_desc="Zastarelo">
+						</local_schema>
+					</entry>
+					<entry name="panel_animation_speed">
+						<local_schema short_desc="Zastarelo">
+						</local_schema>
+					</entry>
+					<entry name="panel_show_delay">
+						<local_schema short_desc="Zastarelo">
+						</local_schema>
+					</entry>
+					<entry name="panel_minimized_size">
+						<local_schema short_desc="Zastarelo">
+						</local_schema>
+					</entry>
+					<entry name="enable_animations">
+						<local_schema short_desc="Uključi animacije">
+						</local_schema>
+					</entry>
+					<entry name="keep_menus_in_memory">
+						<local_schema short_desc="Zastarelo">
+						</local_schema>
+					</entry>
+					<entry name="tooltips_enabled">
+						<local_schema short_desc="Uključi kratka uputstva">
+							<longdesc>Ukoliko je postavljeno, prikazuju se kratka uputstva za objekte na panelu.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="objects">
+					<entry name="action_type">
+						<local_schema short_desc="Vrsta akcije">
+							<longdesc>Vrsta akcije koju ovo dugme predstavlja. Moguće vrednosti su „lock“, „logout“, „run“, „search“ i „screenshot“. Ovo podešavanje je značajno jedino ako je vrsta objekta „action-applet“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="launcher_location">
+						<local_schema short_desc="Pozicija pokretača">
+							<longdesc>Mesto .desktop datoteke koja opisuje ovaj pokretač. Ovo podešavanje je značajno jedino ako je vrsta objekta „launcher-object“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="menu_path">
+						<local_schema short_desc="Putanja sadržaja menija">
+							<longdesc>Putanja iz koje se izvlači sadržaj menija. Ovo podešavanje je značajno jedino ako je postavljeno use_menu_path, a vrsta objekta je „menu-object“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_menu_path">
+						<local_schema short_desc="Koristi putanju po izboru za sadržaj menija">
+							<longdesc>Ukoliko je postavljeno, podešavanje menu_path se koristi kao putanja iz koje se izvlači sadržaj menija. Ukoliko nije postavljeno, zanemaruje se podešavanje menu_path. Ovo je značajno jedino ukoliko je vrsta objekta „menu-object“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_icon">
+						<local_schema short_desc="Ikona koja se koristi za dugme objekta">
+							<longdesc>Mesto datoteke sa slikom koja se koristi kao ikona za dugme ovog objekta. Ovo podešavanje je značajno jedino ako je vrsta objekta „drawer-object“ ili „menu-object“, a postavljeno je use_custom_icon.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_icon">
+						<local_schema short_desc="Koristi ikonu po izboru za dugme objekta">
+							<longdesc>Ukoliko je postavljeno, koristi se custom_icon kao izabrana ikona za dugme. Ukoliko nije postavljeno, zanemaruje se podešavanje custom_icon. Ovo podešavanje je značajno jedino ako je vrsta objekta „menu-object“ ili „drawer-object“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="tooltip">
+						<local_schema short_desc="Prikazuje se oblačić za fioku ili meni">
+							<longdesc>Tekst koji se prikazuje u oblačiću za ovu fioku ili meni. Ovo podešavanje je značajno jedino ako je ključ object_type postavljen na vrstu objekta „drawer-object“ ili „menu-object“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="attached_toplevel_id">
+						<local_schema short_desc="Panel pripojen ovoj fioci">
+							<longdesc>Identifikator panela koji je vezan za ovu fioku. Ovo podešavanje je značajno jedino ako je vrsta objekta „drawer-object“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="applet_iid">
+						<local_schema short_desc="IB programčeta">
+						</local_schema>
+					</entry>
+					<entry name="bonobo_iid">
+						<local_schema short_desc="Bonobo IID programčeta">
+							<longdesc>Ovaj ključ je zastareo, zbog prelazak na novije biblioteke. Bonobo IB implementacije programčeta — npr. „OAFIID:GNOME_ClockApplet“. Ovo podešavanje je značajno jedino ako je „object_type“ (vrsta objekta) postavljena na „bonobo-applet“ (Bonobovo programče).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="locked">
+						<local_schema short_desc="Priveži objekat za panel">
+							<longdesc>Ukoliko je postavljeno, korisnik ne može da premesti programče ukoliko prethodno ne oslobodi objekat pomoću stavke „Odveži“ iz menija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="panel_right_stick">
+						<local_schema short_desc="Pozicija je data u odnosu na donju/desnu ivicu">
+							<longdesc>Ukoliko je postavljeno, pozicija objekta se posmatra u odnosu na desnu (ili donju — ukoliko je uspravan) ivicu panela.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="position">
+						<local_schema short_desc="Pozicija objekta na panelu">
+							<longdesc>Pozicija ovog objekta na panelu. Navodi se kao broj tačaka u odnosu na levu (ili gornju — ako je uspravan) ivicu panela.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toplevel_id">
+						<local_schema short_desc="Panel prvog nivoa koji sadrži ovaj objekat">
+							<longdesc>Identifikator panela prvog nivoa koji sadrži ovaj objekat.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="object_type">
+						<local_schema short_desc="Vrsta objekta na panelu">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="Broj redova u izmeni radnih površina">
+							<longdesc>Ovaj ključ određuje koliko redova (za vodoravno pružanje) ili kolona (za uspravno pružanje) će prikazivati izmena radnih površina. Ovaj ključ ima značaja jedino ako je ključ display_all_workspaces postavljen.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Prikaži sve radne površine">
+							<longdesc>Ukoliko je ovo uključeno, izmena radnih površina prikazuje sve radne površine, inače prikazuje samo trenutnu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="Prikaži imena radnih površina">
+							<longdesc>Ukoliko je ovo uključeno, radne površine u programčetu će prikazivati imena radnih površina. Inače će prikazivati sadržaj radne površine. Ovo radi samo ako se koristi Metasiti kao upravljač prozorima.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="speed_unit">
+						<local_schema short_desc="Jedinica za brzinu">
+							<longdesc>Jedinica koja se koristi za brzinu vetra.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="Jedinica za temperaturu">
+							<longdesc>Jedinica koja se koristi za temperaturu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="cities">
+						<local_schema short_desc="Spisak mesta">
+							<longdesc>Spisak mesta za prikaz u kelendaru.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="internet_time">
+						<local_schema short_desc="Koristi Internet vreme">
+							<longdesc>Upotreba ovog ključa je prevaziđena u Gnomu 2.6 u korist ključa „format“. Šema je zadržana zarad saglasnosti sa starijim izdanjima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="Koristi UNIX vreme">
+							<longdesc>Upotreba ovog ključa je prevaziđena u Gnomu 2.6 u korist ključa „format“. Šema je zadržana zarad saglasnosti sa starijim izdanjima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="Vrsta časovnika">
+							<longdesc>Upotreba ovog ključa je prevaziđena u Gnomu 2.6 u korist ključa „format“. Šema je zadržana zarad saglasnosti sa starijim izdanjima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_locations">
+						<local_schema short_desc="Raširi spisak mesta">
+							<longdesc>Ukoliko je postavljeno, proširuje spisak mesta kalendaru.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_weather">
+						<local_schema short_desc="Raširi spisak vremenskih prilika">
+							<longdesc>Ukoliko je postavljeno, prikaži vremenske prilike u kalendaru.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_tasks">
+						<local_schema short_desc="Raširi spisak zadataka">
+							<longdesc>Ukoliko je postavljeno, prikaži spisak zadataka u kalendaru.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_birthdays">
+						<local_schema short_desc="Raširi spisak rođendana">
+							<longdesc>Ukoliko je postavljeno, prikazuje spisak rođendana u kalendaru.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_appointments">
+						<local_schema short_desc="Raširi spisak sastanaka">
+							<longdesc>Ukoliko je postavljeno, prikazuje spisak sastanaka u kalendaru.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="Prikaži brojeve nedelja u kalendaru">
+							<longdesc>Ukoliko je postavljeno, prikazuje brojeve nedelja u kalendaru.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="Alat za podešavanje vremena">
+							<longdesc>Upotreba ovog ključa je prevaziđena u Gnomu 2.22 u korist sopstvenog alata za podešavanje. Šema je zadržana zarad saglasnosti sa starijim izdanjima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="Koristi UT">
+							<longdesc>Upotreba ovog ključa je prevaziđena u Gnomu 2.28 u korist ključa „timezones“. Šema je zadržana zarad saglasnosti sa starijim izdanjima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_temperature">
+						<local_schema short_desc="Prikaži temperaturu u časovniku">
+							<longdesc>Ukoliko je postavljeno, prikazuje temperaturu pored vremenskih prilika.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_weather">
+						<local_schema short_desc="Prikaži bremenske prilike u časovniku">
+							<longdesc>Ukoliko je postavljeno, prikazuje ikonicu sa vremenskim prilikama.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema short_desc="Prikaži datum u oblačiću">
+							<longdesc>Ukoliko je postavljeno, prikaži oblačić kada se mišem pređe preko časovnika.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="Prikaži datum u časovniku">
+							<longdesc>Ukoliko je postavljeno, prikazuje datum u časovniku, pored vremena</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="Prikaži vreme sa sekundama">
+							<longdesc>Ukoliko je postavljeno, prikazuje sekunde sa vremenom.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="Proizvoljan oblik časovnika">
+							<longdesc>Ovaj ključ navodi oblik časovnika koji se koristi u programčetu kada je oblik postavljen na „custom“. Možete koristiti oznake koje razume strftime() radi dobijanja željenog oblika. Pogledajte strftime() uputstvo za detalje.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="Vrsta časovnika">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gweather">
+				<dir name="prefs">
+					<entry name="radar">
+						<local_schema short_desc="Adresa za radarsku mapu">
+							<longdesc>Adresa po izboru odakle se dovlači radarska mapa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_custom_radar_url">
+						<local_schema short_desc="Koristi adresu po izboru za radarsku mapu">
+							<longdesc>Ukoliko je postavljeno, dovlači radarsku mapu sa adrese navedene pomoću ključa „radar“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="coordinates">
+						<local_schema short_desc="Koordinate mesta">
+						</local_schema>
+					</entry>
+					<entry name="location4">
+						<local_schema short_desc="Vremenske prilike za grad">
+						</local_schema>
+					</entry>
+					<entry name="location3">
+						<local_schema short_desc="Položaj radara">
+						</local_schema>
+					</entry>
+					<entry name="location2">
+						<local_schema short_desc="Mesto zone">
+						</local_schema>
+					</entry>
+					<entry name="location1">
+						<local_schema short_desc="Obližnji grad">
+						</local_schema>
+					</entry>
+					<entry name="location0">
+						<local_schema short_desc="Podaci o mestu za prognozu">
+						</local_schema>
+					</entry>
+					<entry name="enable_radar_map">
+						<local_schema short_desc="Prikaži radarsku mapu">
+							<longdesc>Preuzmi radarsku mapu pri svakom osvežavanju.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_detailed_forecast">
+						<local_schema short_desc="Više se ne koristi">
+						</local_schema>
+					</entry>
+					<entry name="temperature_unit">
+						<local_schema short_desc="Jedinice temperature">
+							<longdesc>Koje jedinice koristiti za temperaturu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="speed_unit">
+						<local_schema short_desc="Jedinice brzine">
+							<longdesc>Koje jedinice koristiti za brzinu vetra.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pressure_unit">
+						<local_schema short_desc="Jedinice pritiska">
+							<longdesc>Koje jedinice koristiti za pritisak.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="distance_unit">
+						<local_schema short_desc="Jedinice rastojanja">
+							<longdesc>Koje jedinice koristiti za vidljivost.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_metric">
+						<local_schema short_desc="Koristiti metrički sistem jedinica">
+							<longdesc>Koristi metrički sistem jedinica umesto engleskog sistema.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update_interval">
+						<local_schema short_desc="Vreme između dopuna">
+							<longdesc>Razmak, u sekundama, između dva osvežavanja.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_update">
+						<local_schema short_desc="Osveži podatke automatski">
+							<longdesc>Određuje da li programče automatski osvežava prognozu ili ne.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="control-center">
+				<entry name="cc_exit_shell_on_action_upgrade_uninstall">
+					<local_schema short_desc="Zatvori ljusku po ažuriranju ili uklanjanju stavke">
+						<longdesc>Određuje da li će se školjka zatvoriti nakon obavljenog ažuriranja ili uklanjanja stavke.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_add_remove">
+					<local_schema short_desc="Zatvori školjku po obavljenom dodavanju ili uklanjanju akcije">
+						<longdesc>Određuje da li će se školjka zatvoriti nakon obavljenog dodavanja ili uklanjanja stavke.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_help">
+					<local_schema short_desc="Zatvori školjku po aktiviranju pomoći">
+						<longdesc>Određuje da li će se školjka zatvoriti po aktiviranju pomoći.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_action_start">
+					<local_schema short_desc="Zatvori ljusku po pokretanju stavke">
+						<longdesc>Određuje da li će se školjka zatvoriti po aktiviranju stavke.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_exit_shell_on_static_action">
+					<local_schema short_desc="Zatvori upravljački centar po aktiviranju stavke">
+						<longdesc>ako je uključeno, glavni prozor upravljačkog centra će se zatvoriti po pokretanju njegovih stavki.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="cc_actions_list">
+					<local_schema short_desc="Imena stavki i pridruženih .desktop datoteka">
+					</local_schema>
+				</entry>
+				<dir name="network">
+					<entry name="current_location">
+						<local_schema short_desc="Trenutno mrežno mesto">
+							<longdesc>Postavite ovo na naziv vaše trenutne lokacije. Ona se koristi za određivanje podešavanja mrežnog posrednika.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="appearance">
+					<entry name="more_themes_url">
+						<local_schema short_desc="Još adresa sa temama">
+							<longdesc>Adresa sa koje se preuzimaju dodatne teme. Ukoliko ostavite prazno, veza se neće prikazati.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="more_backgrounds_url">
+						<local_schema short_desc="Još adresa sa pozadinama">
+							<longdesc>Adresa sa koje se preuzimaju dodatne pozadine za radnu površ. Ukoliko ostavite prazno, veza se neće prikazati.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="Skraćivanje teksta">
+							<longdesc>Celi broj koji određuje kako će biti skraćena imena datoteka koja se preklapaju na radnoj površi. Ako je broj veći od 0 imena neće preći zadati broj linija, a ako je broj 0 ili manje neće postojati limit na broj linija.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_name">
+						<local_schema short_desc="Ime ikonice za mrežne servere">
+							<longdesc>Ovo ime se može postaviti ukoliko želite prilagođeno ime za ikonicu mrežnih servera na radnoj površi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_name">
+						<local_schema short_desc="Ime za smeće na radnoj površini">
+							<longdesc>Ovo ime se može postaviti ukoliko želite prilagođeno ime za smeće na radnoj površini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="Ime za ličnu ikonicu na radnoj površini">
+							<longdesc>Ovo ime se može postaviti ukoliko želite prilagođeno ime za ličnu ikonicu na radnoj površini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="Ime za ikonicu računara na radnoj površini">
+							<longdesc>Ovo ime se može postaviti ukoliko želite prilagođeno ime za ikonicu računara na radnoj površini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="Ikonica mrežnih mesta je prikazana na radnoj površini">
+							<longdesc>Ukoliko je ovo postavljeno na „true“, ikonica koja ukazuje na mrežna mesta će biti stavljena na radnu površinu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volumes_visible">
+						<local_schema short_desc="Prikaži montirane diskove na radnoj površini">
+							<longdesc>Ukoliko je ovo postavljeno na „true“, ikonica koja ukazuje na montirane diskove će biti stavljena na radnu površinu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="Ikonica za smeće se nalazi na radnoj površini">
+							<longdesc>Ukoliko je ovo postavljeno na „true“, ikonica koja ukazuje na smeće će biti stavljena na radnu površinu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="Ikonica računara prikazana na radnoj površini">
+							<longdesc>Ukoliko je ovo postavljeno na „true“, ikonica koja ukazuje na putanju računara će biti stavljena na radnu površinu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="Prikazuje ličnu ikonicu na radnoj površini">
+							<longdesc>Ukoliko je ovo postavljeno na „true“, ikonica koja ukazuje na ličnu fasciklu će biti stavljena na radnu površinu.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema short_desc="Prikaži samo fascikle u bočnoj površi">
+								<longdesc>Ukoliko je postavljeno na „true“, Nautilus će prikazati jedino fascikle u bočnoj površi. Inače, prikazivaće i fascikle i datoteke.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="Podrazumevan redosled kolona pri prikazu spiska">
+							<longdesc>Podrazumevan redosled kolona pri prikazu spiska.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="Podrazumevano prikazane kolone pri prikazu spiska">
+							<longdesc>Podrazumevano prikazane kolone pri prikazu spiska.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Podrazumevano uvećanje za spisak">
+							<longdesc>Podrazumevano uvećanje koje se koristi pri prikazu spiska.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Obrni uređenje u novim prozorima">
+							<longdesc>Ukoliko je postavljeno na „true“, datoteke u novim prozorima će biti poređane u obrnutom redosledu. Npr. ako su uređene po imenu, onda će se umesto ređanja od „a“ do „š“, ređati od „š“ do „a“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Podrazumevani poredak">
+							<longdesc>Uobičajeni poredak za stavke pri prikazivanju pomoću spiska. Dozvoljene vrednosti su „name“, „size“, „type“ i „modification_date“.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="compact_view">
+					<entry name="all_columns_have_same_width">
+						<local_schema short_desc="Sve kolone imaju istu širinu">
+							<longdesc>Ukoliko je postavljeno na „true“, sve kolone u zbijenom pregledu će imati istu širinu. U suprotnom, širina svake kolone se određuje zasebno.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Podrazumevano uvećanje zbijenog prikaza">
+							<longdesc>Podrazumevano uvećanje koje se koristi za zbijeni prikaz.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="text_ellipsis_limit">
+						<local_schema short_desc="Skraćivanje teksta">
+							<longdesc>Lista kao niska koja određuje kako će biti skraćena imena datoteka koja se preklapaju, zavisno od stepena uvećanja. Svaki unos u listi razdvojen zapetom je oblika „Uvećanje:Ceo broj“. Za svaki stepen uvećanja (najmanje „smallest“ /33%/, manje „smaller“ /50%/, malo „small“ /66%/, obično „standard“ /100%/, veliko „large“ /150%/, veće „larger“ /200%/ i najveće „largest“ /400%/) ako je broj veći od 0 ime datoteke neće preći taj broj redova. Ako je broj 0 ili manje neće postojati limit na tom uvećanju. Dozvoljen je i unos samo celog broja što će biti primenjeno kao podrazumevana vrednost za sve stepene uvećanja. Na primer: „0“ — uvek prikaži dugačko ime; „3“ — uvek skrati ime ako prelazi tri reda; „smallest:5, smaller:4“ — skrati ime ako prelazi pet redova na najmanjem uvećanju, četiri na manjem uvećanju, inače ne skraćuj.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_size">
+						<local_schema short_desc="Podrazumevana veličina malih prikaza">
+							<longdesc>Podrazumevana veličina malog prikaza pri prikazu ikonica.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Podrazumevano uvećanje ikonica">
+							<longdesc>Podrazumevano uvećanje koje se koristi pri prikazu ikonica.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_manual_layout">
+						<local_schema short_desc="Koristi ručni raspored u novim prozorima">
+							<longdesc>Ukoliko je postavljeno na „true“, novi prozori će uobičajeno koristiti ručni raspored.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="labels_beside_icons">
+						<local_schema short_desc="Postavi oznake pored ikonica">
+							<longdesc>Ukoliko je postavljeno na „true“, oznake će biti smeštene pored ikonica umesto ispod njih.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_tighter_layout">
+						<local_schema short_desc="Koristi zgusnuti raspored u novim prozorima">
+							<longdesc>Ukoliko je postavljeno na „true“, ikonice će uobičajeno biti zgusnuto izložene u novim prozorima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Obrni uređenje u novim prozorima">
+							<longdesc>Ukoliko je postavljeno na „true“, datoteke u novim prozorima će biti poređane u obrnutom redosledu. Npr. ako su uređene po imenu, onda će se umesto ređanja od „a“ do „š“, ređati od „š“ do „a“; ukoliko su uređene po veličini, umesto u rastućem, biće u opadajućem poretku.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Podrazumevani poredak">
+							<longdesc>Uobičajeni poredak za stavke pri prikazivanju pomoću ikonica. Dozvoljene vrednosti su „name“, „size“, „type“, „modification_date“ i „emblems“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="captions">
+						<local_schema short_desc="Spisak dostupnih oznaka ikonica">
+							<longdesc>Spisak naslova ispod ikonice u prikazu pomoću ikonice ili na radnoj površini. Pravi broj oznaka zavisi od nivoa uvećanja. Dozvoljene vrednosti su: „size“, „type“, „date_modified“, „date_changed“, „date_accessed“, „owner“, „group“, „permissions“, „octal_permissions“ and „mime_type“.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="Pregled u bočnoj površi">
+							<longdesc>Pregled u bočnoj površi koji se prikazuje u novootvorenim prozorima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="Prikaži bočnu površ u novim prozorima">
+							<longdesc>Ukoliko je postavljeno na „true“, u novotvorenim prozorima će se prikazivati površ postrance.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="Prikaži liniju sa stanjem u novim prozorima">
+							<longdesc>Ukoliko je postavljeno na „true“, u novotvorenim prozorima će se prikazivati stanje u podnožju.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="Prikaži polje za adresu u novim prozorima">
+							<longdesc>Ukoliko je postavljeno na „true“, u novotvorenim prozorima će se prikazivati polje za unos adrese.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="Prikaži glavne alatke u novim prozorima">
+							<longdesc>Ukoliko je postavljeno na „true“, u novotvorenim prozorima će se prikazivati glavne alatke.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="Širina bočne površi">
+							<longdesc>Podrazumevana širina bočne površi u novim prozorima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="Oblik datuma">
+							<longdesc>Oblik datuma datoteka. Dopuštene vrednosti su „locale“, „iso“ i „informal“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="Uobičajeni pregledač fascikli">
+							<longdesc>Ovaj pregled se koristi kada posetite fasciklu, osim ako ne izaberete neki drugi za tu fasciklu. Dozvoljene vrednosti su „list_view“, „icon_view“ i „compact_view“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="Podrazumevana datoteka za pozadinu bočne površi">
+							<longdesc>Ime datoteke za uobičajenu pozadinu bočne površi. Koristi se jedino ako je postavljeno side_background_set.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="Podrazumevana boja pozadine bočne površi">
+							<longdesc>Ime datoteke za uobičajenu pozadinu bočne površi. Koristi se jedino ako je postavljeno side_background_set.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_set">
+						<local_schema short_desc="Izabrana je pozadina bočne površi">
+							<longdesc>Da li je postavljena proizvoljna podrazumevana pozadina za bočnu površ.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="Podrazumevana datoteka za pozadinu">
+							<longdesc>Ime datoteke za uobičajenu pozadinu fascikle. Koristi se jedino ako je postavljeno background_set.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="Podrazumevana boja pozadine">
+							<longdesc>Boja za uobičajenu pozadinu fascikle. Koristi se jedino ako je postavljeno background_set.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema short_desc="Proizvoljna pozadina">
+							<longdesc>Da li je postavljena proizvoljna podrazumevana pozadina fascikle.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search_bar_type">
+						<local_schema short_desc="Kriterijum za pretragu">
+							<longdesc>Kriterijum za pretragu datoteka u traci za pretragu. Ukoliko je postavljeno na „search_by_text“, onda će Nautilus tražiti datoteke samo prema imenu. Ukoliko je postavljeno na „search_by_text_and_properties“, onda će Nautilus tražiti datoteke po imenu i po osobinama datoteke.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_is_home_dir">
+						<local_schema short_desc="Nautilus koristi ličnu fasciklu korisnika za radnu površinu">
+							<longdesc>Ukoliko je postavljeno na „true“, Nautilus će koristiti ličnu fasciklu korisnika za radnu površinu. Ukoliko nije postavljeno, onda će koristiti ~/Desktop za radnu površinu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="Font radne površine">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="Nautilus upravlja iscrtavanjem radne površine">
+							<longdesc>Ukoliko je postavljeno na „true“, Nautilus će iscrtavati ikonice na radnoj površini.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="Prikaži prvo fascikle u prozorima">
+							<longdesc>Ukoliko je postavljeno na „true“, Nautilus će prikazati fascikle pre prikazivanja datoteka pri prikazu pomoću ikonica ili spiska.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_advanced_permissions">
+						<local_schema short_desc="Prikaži napredne postavke dozvola u prozorčetu sa osobinama datoteke">
+							<longdesc>Ukoliko je postavljeno na „true“, Nautilus će vam omogućiti da uredite i pogledate dozvole nad datotekama na način bliži uniksu, dajući vam pristup egzotičnijim opcijama.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="preview_sound">
+						<local_schema short_desc="Da li da puštam zvuk pri prelasku mišem preko ikonice">
+							<longdesc>Gubitak brzine radi pregleda zvučnih datoteka pri prelasku miša preko ikonica datoteka. Ukoliko je postavljeno na „always“ uvek se pušta zvuk, čak i ako je datoteka na udaljenom računaru. Ukoliko je postavljeno na „local_only“, pušta se zvuk samo za lokalne datoteke. Ukoliko je postavljeno na „never“, nikad se ne pušta zvuk.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="directory_limit">
+						<local_schema short_desc="Najveći broj datoteka u fascikli">
+							<longdesc>Fascikle veće od ovoga će biti odsečene na približno ovu veličinu. Cilj je da se izbegne slučajno prepunjavanje memorije i ubijanje Nautilusa u prevelikim fasciklama. Negativna vrednost označava da nema ograničenja. Granica je približna pošto se fascikle čitaju u blokovima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_limit">
+						<local_schema short_desc="Najveća veličina slike za prikazivanje umanjenog primerka">
+							<longdesc>Za slike koje prelaze ovu veličinu (u bajtovima) neće biti prikazana umanjena slika. Svrha ovoga je da se izbegne umanjivanje velikih slika što može oduzeti mnogo vremena ili memorije.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_image_thumbnails">
+						<local_schema short_desc="Kada prikazati umanjene slike">
+							<longdesc>Gubitak brzine radi pregleda umanjenih slika za slike. Ukoliko je postavljeno na „always“ uvek se prikazuje umanjena slika, čak i ako je fascikla na udaljenom računaru. Ukoliko je postavljeno na „local_only“, prikazuje se umanjena slika samo za lokalne datoteke. Ukoliko je postavljeno na „never“ koristi se opšta ikonica.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Tekući motiv za Nautilus (prevaziđeno)">
+							<longdesc>Ime motiva za Nautilus. Ovo je zastarela mogućnost od Nautilusa 2.2. Koristite temu za ikonice.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_back_button">
+						<local_schema short_desc="Dugme miša za radnju „Nazad“ u pregledniku">
+							<longdesc>Određuje koje dugme miša izvršava neredbu „Nazad“ unutar preglednika. Moguće su vrednosti od 6 do 14.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_forward_button">
+						<local_schema short_desc="Dugme miša za radnju „Napred“ u pregledniku">
+							<longdesc>Određuje koje dugme miša izvršava neredbu „Napred“ unutar pregledača. Moguće su vrednosti od 6 do 14.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_use_extra_buttons">
+						<local_schema short_desc="Koristi dodatne dugmiće miša za radnje u Nautilusu">
+							<longdesc>Određuje da li da se primenjuje radnja miša za dugmiće „Nazad“ i „Napred“ unutar Nautilusa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="install_mime_activation">
+						<local_schema short_desc="Prikaži upravnika paketima za nepoznate vrste datoteka">
+							<longdesc>Određuje da li da prikaže korisniku prozorče upravnika paketima, ukoliko pokuša da otvori datoteku sa nepoznatim sadržajem, kako bi pronašao program koji može da je otvori.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="executable_text_activation">
+						<local_schema short_desc="Šta treba uraditi kada se aktiviraju izvršne tekstualne datoteke">
+							<longdesc>Šta treba da uradi sa izvršnim tekstualnim datotekama pri njihovom aktiviranju (jednostruki ili dvostruki klik). Moguće vrednosti su „launch“ za pokretanje istih kao programa, „ask“ za postavljanje pitanja pomoću prozorčeta, i „display“ za prikazivanje kao tekstualnih datoteka.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="click_policy">
+						<local_schema short_desc="Vrsta klika kojom se pokreću/otvaraju datoteke">
+							<longdesc>Dozvoljene vrednosti su „single“ za pokretanje datoteka pomoću jednog klika, ili „double“ za pokretanje pomoću dvostrukog klika.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_directory_item_counts">
+						<local_schema short_desc="Kada prikazati broj stavki u fascikli">
+							<longdesc>Gubitak brzine radi prikazivanja broja stavki u fascikli. Ukoliko je postavljeno na „always“ uvek se prikazuje broj stavki, čak i ako je fascikla na udaljenom računaru. Ukoliko je postavljeno na „local_only“, prikazuje se broj stavki samo za lokalne fascikle. Ukoliko je postavljeno na „never“, onda se nikad ne prikazuje broj stavki.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_icon_text">
+						<local_schema short_desc="Kada prikazati sadržaj teksta u ikonicama">
+							<longdesc>Gubitak brzine radi pregleda sadržaja tekstualnih datoteka u ikonici datoteke. Ukoliko je postavljeno na „always“ uvek se prikazuje pregled, čak i ako je fascikla na udaljenom računaru. Ukoliko je postavljeno na „local_only“, prikazuje se pregled samo za lokalne datoteke. Ukoliko je postavljeno na „never“, nikad se ne prikazuje pregled.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="enable_delete">
+						<local_schema short_desc="Da li da omogućim trenutno brisanje">
+							<longdesc>Ukoliko je postavljeno na „true“, Nautilus će sadržati mogućnost za trenutno brisanje datoteka, umesto premeštanja u smeće. Ova mogućnost može biti opasna, pa koristite uz dosta pažnje.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_trash">
+						<local_schema short_desc="Da li tražiti odobrenje pri brisanju datoteka ili pražnjenju smeća?">
+							<longdesc>Ukoliko je postavljeno na „true“, Nautilus će tražiti odobrenje pri brisanju datoteka ili pražnjenju smeća.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="navigation_window_saved_maximized">
+						<local_schema short_desc="Da li da upravljački prozor bude podrazumevano umanjen.">
+							<longdesc>Da li da upravljački prozor bude podrazumevano uvećan.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="navigation_window_saved_geometry">
+						<local_schema short_desc="Niska sa veličinom upravljačkog prozora.">
+							<longdesc>Niska koja sadrži sačuvanu veličinu i koordinate upravljačkih prozora.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_open_folder">
+						<local_schema short_desc="Spisak vrsta sadržaja (x-content/*) postavljenih na „Otvori fasciklu“">
+							<longdesc>Spisak vrsta sadržaja (x-content/*) za koje je izabrano „Otvori fasciklu“ u postavkama. Nakon ubacivanja ovakvog medijuma biće pokrenut prozor sa njegovim sadržajem.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_ignore">
+						<local_schema short_desc="Spisak vrsta sadržaja (x-content/*) postavljenih na „Ne radi ništa“">
+							<longdesc>Spisak vrsta sadržaja (x-content/*) za koje je izabrano „Ne radi ništa“ u postavkama. Nikakvo pitanje neće biti postavljeno niti će odgovarajući program biti pokrenut po ubacivanju medijuma sa ovim sadržajem.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_start_app">
+						<local_schema short_desc="Spisak vrsta sadržaja (x-content/*) za koje se pokreće odgovarajući program">
+							<longdesc>Spisak vrsta sadržaja (x-content/*) za koje je u postavkama izabrano da se pokrene određen program. Nakon ubacivanja ovakvog medijuma biće pokrenut izabrani program.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_never">
+						<local_schema short_desc="Ne pokreći programe i ne pitaj po ubacivanju medijuma">
+							<longdesc>Ukoliko je postavljeno na „true“, Nautilus neće sam pokretati programe niti pitati po ubacivanju medijuma.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount_open">
+						<local_schema short_desc="Da li da sam otvorim fasciklu montiranog medijuma">
+							<longdesc>Ukoliko je postavljeno na „true“, Nautilus će sam otvoriti fasciklu nakon montiranja medijuma. Ovo se odnosi samo na medijume za koje se ne zna sadržaj (x-content/*), dok za medijume sa poznatim sadržajem morate postaviti željenu radnju.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_automount">
+						<local_schema short_desc="Da li da sam montiram medijume">
+							<longdesc>Ukoliko je postavljeno na „true“, Nautilus će sam montirati medijume kao što su čvrsti diskovi (dostupni korisniku) i uklonjivi medijumi nakon njihovog priključivanja.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_location_entry">
+						<local_schema short_desc="Uvek koristi polje za putanju, umesto trake za putanju">
+							<longdesc>Ukoliko je postavljeno na „true“, razgledački prozori Nautilusa će uvek koristiti tekstualno polje za unos putanje umesto trake sa dugmićima putanje.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="always_use_browser">
+						<local_schema short_desc="Uključuje obično ponašanje Nautilusa, gde su svi prozori razgledači">
+							<longdesc>Ukoliko je postavljeno na „true“, svi prozori Nautilusa će biti razgledački prozori. Ovako se Nautilus ponašao pre izdanja 2.6, a neki ljudi više vole ovakav način rada.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="exit_with_last_window">
+						<local_schema short_desc="Nautilus će izaći kada se zatvori poslednji prozor.">
+							<longdesc>Ukoliko je postavljeno na „true“, Nautilus će izaći nakon zatvaranja svih prozora. Ovo podešavanje je podrazumevano. Ukoliko ga postavite na „false“, možete koristiti Nautilus kao upravljački program za praćenje montiranja diskova i slične zadatke.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-terminal">
+				<dir name="keybindings">
+					<entry name="zoom_normal">
+						<local_schema short_desc="Prečica za postavljanje obične veličine slovnog lika">
+							<longdesc>Prečica za postavljanje obične veličine fonta. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_out">
+						<local_schema short_desc="Prečica za umanjivanje veličine slovnog lika">
+							<longdesc>Prečica za umanjivanje fonta. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="zoom_in">
+						<local_schema short_desc="Prečica za uvećanje slovnog lika">
+							<longdesc>Prečica za uvećanje fonta. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Prečica za prikazivanje pomoći">
+							<longdesc>Prečica za prikazivanje pomoći. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_12">
+						<local_schema short_desc="Prečica za prebacivanje na 12. list">
+							<longdesc>Prečica za prebacivanje na 12. list. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_11">
+						<local_schema short_desc="Prečica za prebacivanje na 11. list">
+							<longdesc>Prečica za prebacivanje na 11. list. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_10">
+						<local_schema short_desc="Prečica za prebacivanje na 10. list">
+							<longdesc>Prečica za prebacivanje na 10. list. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_9">
+						<local_schema short_desc="Prečica za prebacivanje na 9. list">
+							<longdesc>Prečica za prebacivanje na 9. list. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_8">
+						<local_schema short_desc="Prečica za prebacivanje na 8. list">
+							<longdesc>Prečica za prebacivanje na 8. list. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_7">
+						<local_schema short_desc="Prečica za prebacivanje na 7. list">
+							<longdesc>Prečica za prebacivanje na 7. list. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_6">
+						<local_schema short_desc="Prečica za prebacivanje na 6. list">
+							<longdesc>Prečica za prebacivanje na 6. list. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_5">
+						<local_schema short_desc="Prečica za prebacivanje na 5. list">
+							<longdesc>Prečica za prebacivanje na 5. list. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_4">
+						<local_schema short_desc="Prečica za prebacivanje na 4. list">
+							<longdesc>Prečica za prebacivanje na 4. list. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_3">
+						<local_schema short_desc="Prečica za prebacivanje na 3. list">
+							<longdesc>Prečica za prebacivanje na 3. list. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_2">
+						<local_schema short_desc="Prečica za prebacivanje na 2. list">
+							<longdesc>Prečica za prebacivanje na 2. list. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="switch_to_tab_1">
+						<local_schema short_desc="Prečica za prebacivanje na 1. list">
+							<longdesc>Prečica za prebacivanje na 1. list. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="detach_tab">
+						<local_schema short_desc="Prečica sa tastature za odvajanje tekućeg lista.">
+							<longdesc>Prečica za odvajanje tekućeg lista. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_right">
+						<local_schema short_desc="Prečica za premeštanje tekućeg lista na desno.">
+							<longdesc>Prečica za premeštanje tekućeg lista na desno. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="move_tab_left">
+						<local_schema short_desc="Prečica za premeštanje tekućeg lista na levo.">
+							<longdesc>Prečica za premeštanje tekučeg lista na levo. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="next_tab">
+						<local_schema short_desc="Prečica za prebacivanje na sledeći list">
+							<longdesc>Prečica za prebacivanje na sledeći list. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="prev_tab">
+						<local_schema short_desc="Prečica za prebacivanje na prethodni list">
+							<longdesc>Prečica za prebacivanje na prethodni list. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset_and_clear">
+						<local_schema short_desc="Prečica za resetovanje i čišćenje terminala">
+							<longdesc>Prečica za resetovanje i čišćenje terminala. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reset">
+						<local_schema short_desc="Prečica za resetovanje terminala">
+							<longdesc>Prečica za resetovanje terminala. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="set_terminal_title">
+						<local_schema short_desc="Prečica za postavljanje naslova terminala">
+							<longdesc>Prečica za postavljanje naslova terminala. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="toggle_menubar">
+						<local_schema short_desc="Prečica za izmenu vidljivosti glavnog menija">
+							<longdesc>Prečica za izmenu vidljivosti glavnog menija. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="full_screen">
+						<local_schema short_desc="Prečica za prebacivanje u režim prikaza preko celog ekrana">
+							<longdesc>Prečica za prebacivanje na režim celog ekrana. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="paste">
+						<local_schema short_desc="Prečica za ubacivanje teksta">
+							<longdesc>Prečica za ubacivanje sadržaja spiska isečaka u terminal. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="copy">
+						<local_schema short_desc="Prečica za umnožavanje teksta">
+							<longdesc>Prečica za ubacivanje izabranog teksta u spisak isečaka. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_window">
+						<local_schema short_desc="Prečica za zatvaranje prozora">
+							<longdesc>Prečica za zatvaranje prozora. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="close_tab">
+						<local_schema short_desc="Prečica za zatvaranje lista">
+							<longdesc>Prečica za zatvaranje lista. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="save_contents">
+						<local_schema short_desc="Prečica za obrazovanje novih profila">
+							<longdesc>Prečica za čuvanje sadržaja trenutnog lista u datoteku. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_profile">
+						<local_schema short_desc="Prečica za obrazovanje novih profila">
+							<longdesc>Prečica za pozivanje prozorčeta za pravljenje profila. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_window">
+						<local_schema short_desc="Prečica za otvaranje novog prozora">
+							<longdesc>Prečica za otvaranje novog prozora. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="new_tab">
+						<local_schema short_desc="Prečica za otvaranje novog lista">
+							<longdesc>Prečica za otvaranje novog lista. Izražava se kao niska na isti način kako se koristi i u datotekama sa Gtk+ resursima. Ukoliko postavite opciju na „disabled“ (onemogućeno) neće biti dodeljena prečica ovoj akciji.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="profiles">
+					<dir name="Default">
+						<entry name="use_skey">
+							<local_schema short_desc="Istakni S/Key">
+								<longdesc>Iskače prozorče kada se prepozna odgovor na S/Key challenge upit i kada se klikne na njega. Ukucavanje lozinke u prozorče će je poslati terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_system_font">
+							<local_schema short_desc="Da li da koristi sistemski slovni lik">
+								<longdesc>Ako je postavljeno na „true“ (tačno) terminal će koristiti opšti font radne površine ako je on utvrđene širine (ili najsličniji font koji pronađe u suprotnom).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_theme_colors">
+							<local_schema short_desc="Da li da koristi boje iz teme za terminalski element">
+								<longdesc>Ako je postavljeno na „true“ (tačno) koristiće boje iz teme za polja za unos teksta u terminalu, umesto boja koje je podesio korisnik.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="delete_binding">
+							<local_schema short_desc="Dejstvo tastera Delete">
+								<longdesc>Postavlja koji kod šalje Delete taster. Dozvoljene vrednosti su „ascii-del“ za ASCII DEL znak, „control-h“ za Control-H (ili ASCII BS znak), „escape-sequence“ za niz koji je obično vezan za Backspace ili Delete. „escape-sequence“ se obično smatra ispravnim podešavanjem za Delete taster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="backspace_binding">
+							<local_schema short_desc="Dejstvo tastera Backspace">
+								<longdesc>Postavlja koji kod šalje Backspace taster. Dozvoljene vrednosti su „ascii-del“ za ASCII DEL znak, „control-h“ za Control-H (ili ASCII BS znak), „escape-sequence“ za niz koji je obično vezan za Backspace ili Delete. „ascii-del“ se obično smatra ispravnim podešavanjem za Backspace taster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_darkness">
+							<local_schema short_desc="Koliko da zatamni sliku u pozadini">
+								<longdesc>Vrednost između 0.0 i 1.0 označava koliko zatamniti sliku u pozadini. 0.0 znači da se ne zatamnjuje, a 1.0 da bude potpuno tamno. Trenutno su omogućena samo dva nivoa zatamnjenja, pa se ovo podešavanje ponaša kao istinitosna vrednost, gde 0.0 isključuje zatamnjivanje.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_background">
+							<local_schema short_desc="Da li da pomera sliku u pozadini">
+								<longdesc>Ako je postavljeno na „true“ (tačno) pomera sliku u pozadini zajedno sa tekstom; ako nije postavljeno, zadrži sliku na utvrđenom mestu i pomera tekst preko nje.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_image">
+							<local_schema short_desc="Slika u pozadini">
+								<longdesc>Datoteka sa slikom za pozadinu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_type">
+							<local_schema short_desc="Vrsta pozadine">
+								<longdesc>Vrsta pozadine terminala. Može biti „solid“ za čistu boju, „image“ za sliku ili „transparent“ za oponašanje bilo prave providnosti (ukoliko je pokrenut kompozitni upravnik prozorima) ili lažne providnosti (u suprotnom).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="font">
+							<local_schema short_desc="Slovni lik">
+								<longdesc>Ime fonta za Pango. Primeri su &quot;Sans 12&quot; ili &quot;Monospace Bold 14&quot;.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="palette">
+							<local_schema short_desc="Paleta za terminalske programe">
+								<longdesc>Terminali imaju 16-bojnu paletu koju mogu da koriste programi unutar terminala. Ovo je ta paleta, gde su date boje razdvojene dvotačkom. Imena boja treba da budu u heksadekadnom zapisu, npr. „#FF00FF“</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="icon">
+							<local_schema short_desc="Ikona za prozor terminala">
+								<longdesc>Ikona koja se koristi u listovima/prozorima koji sadrži ovaj profil.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="custom_command">
+							<local_schema short_desc="Prilagođena naredba koja se koristi umesto ljuske">
+								<longdesc>Pokreni ovu naredbu umesto ljuske, ako je postavljeno use_custom_command.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_shape">
+							<local_schema short_desc="Izgled kursora">
+								<longdesc>Dozvoljene vrednosti su „block“ za kvadratni kursor, „ibeam“ za kursor u vidu vertikalne crte ili „underline“ za kursor u vidu donje crte.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="cursor_blink_mode">
+							<local_schema short_desc="Da li kursor da trepće">
+								<longdesc>Dozvoljene vrednosti su „system“ koja koristi opšta podešavanja treptanja kursora ili „on“ i „off“ za neposredno uključivanje ili isključivanje treperenja.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_command">
+							<local_schema short_desc="Da li da pokrene naredbu po izboru umesto ljuske">
+								<longdesc>Ako je postavljeno na „true“ (tačno) vrednost custom_command će se koristiti umesto pokretanja ljuske.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="update_records">
+							<local_schema short_desc="Da li da osvežava polja o prijavi pri pokretanju naredbe u terminalu">
+								<longdesc>Ako je postavljeno na „true“ (tačno) sistemski podaci o prijavi utmp i wtmp će se dopunjavati kada se pokrene naredba unutar terminala.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="login_shell">
+							<local_schema short_desc="Da li da pokrene naredbu u terminalu kao prijavnu ljusku">
+								<longdesc>Ako je postavljeno na „true“ (tačno) naredba unutar terminala će biti pokrenuta kao prijavna ljuska. (argv[0] će sadržati crticu na početku.)</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="exit_action">
+							<local_schema short_desc="Šta da radi sa terminalom kada se izvrši zavisna naredba">
+								<longdesc>Dozvoljene vrednosti su „close“ za zatvaranje terminala i „restart“ za ponovno pokretanje naredbe.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_output">
+							<local_schema short_desc="Da li da pomeri na dno kada ima novog izlaza">
+								<longdesc>Ako je postavljeno na „true“ (tačno) kada god ima novog izlaza, terminal će vas prebaciti na kraj.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scroll_on_keystroke">
+							<local_schema short_desc="Da li da pomeri na dno kada se pritisne taster">
+								<longdesc>Ako je postavljeno na „true“ (tačno) pritisak na taster prebacuje na kraj terminala.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_unlimited">
+							<local_schema short_desc="Broj linija koje se pamte">
+								<longdesc>Ako je postavljeno na „true“ (tačno) ispisane linije neće biti zaboravljane. Istorijat se čuva privremeno na disk, tako da možete ostati bez prostora na disku ako ima puno linija u terminalu.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollback_lines">
+							<local_schema short_desc="Broj linija koje se pamte">
+								<longdesc>Broj linija koje se pamte. Možete ići unazad u terminalu za ovaj broj linija; linije koje nisu stale se zanemaruju. Budite pažljivi sa ovim podešavanjem; ono je osnovni činilac koji određuje koliko memorije vaš terminal koristi.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="scrollbar_position">
+							<local_schema short_desc="Mesto za klizač">
+								<longdesc>Gde da smesti klizač terminala. Moguće je „left“ (levo), „right“ (desno) i „hidden“ (sakriveno).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_rows">
+							<local_schema short_desc="Podrazumevani broj redova">
+								<longdesc>Broj redova u novim prozorima terminala. Ključ se zanemaruje ukoliko „use_custom_default_size“ (koristi podravumevanu proizvoljnu veličinu) nije postavljen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_size_columns">
+							<local_schema short_desc="Podrazumevani broj kolona">
+								<longdesc>Broj kolona u novim prozorima terminala. Ključ se zanemaruje ukoliko „use_custom_default_size“ (koristi podravumevanu proizvoljnu veličinu) nije postavljen.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="use_custom_default_size">
+							<local_schema short_desc="Da li da postavim proizvoljnu veličinu novih prozora">
+								<longdesc>Ukoliko je postavljeno na „true“ (tačno) novi prozor terminala će imati proizvoljnu veličinu na osnovu ključeva „default_size_columns“ (broj kolona) i „default_size_rows“ (broj redova).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="word_chars">
+							<local_schema short_desc="Znaci koji se smatraju &quot;delom reči&quot;">
+								<longdesc>Kada se bira tekst prema reči, niz ovih znakova se posmatra kao pojedinačna reč. Opseg može biti dat kao „A-Š“. Crtica (koja ne označava opseg) treba da bude prvi navedeni znak.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="silent_bell">
+							<local_schema short_desc="Da li da isključi terminalsko zvonce">
+								<longdesc>Ako je postavljeno na „true“ (tačno) ne pravi buku kada programi pošalju oznaku za zvonce.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="allow_bold">
+							<local_schema short_desc="Da li da dozvoli zacrnjen tekst">
+								<longdesc>Ako je postavljeno na „true“ (tačno) dozvoljava programima u terminalu da zacrne tekst.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="title">
+							<local_schema short_desc="Naslov za terminal">
+							</local_schema>
+						</entry>
+						<entry name="title_mode">
+							<local_schema short_desc="Šta da radi sa dinamičkim naslovom">
+								<longdesc>Ako program u terminalu postavi naslov (najčešće ljudi postave njihove ljuske da to urade), tako postavljen naslov može obrisati podešeni naslov, ići ispred njega, iza njega, ili ga zameniti. Dozvoljene vrednosti su „replace“, „before“, „after“ i „ignore“.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color_same_as_fg">
+							<local_schema short_desc="Da li je podebljani tekst iste boje kao i uobičajeni tekst">
+								<longdesc>Ako je postavljeno na „true“ (tačno) podebljani tekst će biti ispisan u istoj boji kao i uobičajeni tekst.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="bold_color">
+							<local_schema short_desc="Podrazumevana boja podebljanog teksta u terminalu">
+								<longdesc>Podrazumevana boja podebljanog teksta u terminalu, kao navod boje (može biti data kao HTML boja pomoću heksadekadnih cifara, ili ime boje na engleskom jeziku kao što je „red“ za crvenu). Ovo će biti zanemareno ukoliko je bold_color_same_as_fg postavljen na „true“ (tačno).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="background_color">
+							<local_schema short_desc="Podrazumevana boja pozadine terminala">
+								<longdesc>Podrazumevana boja pozadine terminala, kao navod boje (može biti data kao HTML boja pomoću heksadekadnih cifara, ili ime boje na engleskom jeziku kao što je „red“ za crvenu).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="foreground_color">
+							<local_schema short_desc="Podrazumevana boja teksta u terminalu">
+								<longdesc>Podrazumevana boja teksta u terminalu, kao navod boje (može biti data kao HTML boja pomoću heksadekadnih cifara, ili ime boje na engleskom jeziku kao što je „red“ za crvenu).</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="default_show_menubar">
+							<local_schema short_desc="Da li da prikazuje glavni meni u novim prozorima/listovima">
+								<longdesc>Postavljeno ako glavni meni treba da bude prikazanu novim prozorima, za prozore/listove sa ovim profilom.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="visible_name">
+							<local_schema short_desc="Čoveku razumljivo ime profila">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="global">
+					<entry name="confirm_window_close">
+						<local_schema short_desc="Da li da traži potvrdu pre zatvaranja prozora terminala">
+							<longdesc>Da li da traži potvrdu pre zatvaranja prozora terminala koji sa više od jednog otvorenog lista.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="active_encodings">
+						<local_schema short_desc="Spisak dostupnih rasporeda">
+						</local_schema>
+					</entry>
+					<entry name="use_menu_accelerators">
+						<local_schema short_desc="Da li je uključena obična podrška za Gtk prečice za meni">
+							<longdesc>Obično možete pristupiti glavnom meniju sa F10. Ovo se može prilagoditi i pomoću gtkrc (gtk-menu-bar-accell = &quot;šta god&quot;). Ova opcija omogućava da se isključi standardna prečica za glavni meni.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="use_mnemonics">
+						<local_schema short_desc="Da li glavni meni sadrži prečice">
+							<longdesc>Da li da koristi Alt+slovo prečice za glavni meni. One mogu da se sudaraju sa nekim programima koji se pokreću unutar terminala pa ih je moguće isključiti.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_profile">
+						<local_schema short_desc="Profil koji se koristi za nove terminale">
+							<longdesc>Profil koji se koristi pri otvaranju novog prozora ili lista. Mora biti u profile_list.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="profile_list">
+						<local_schema short_desc="Spisak profila">
+							<longdesc>Spisak profila koji su prisutni za Gnomov terminal. Spisak sadrži niske koje imenuju poddirektorijume u /apps/gnome-terminal/profiles.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome-session">
+				<dir name="options">
+					<entry name="logout_prompt">
+						<local_schema short_desc="Pitanje pred odjavu">
+							<longdesc>Ukoliko je uključeno, gnome-session će pitati korisnika pre okončanja sesije.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_save_session">
+						<local_schema short_desc="Sačuvaj sesije">
+							<longdesc>Ukoliko je uključeno, Gnomova sesija će biti sama sačuvana.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="gnome_settings_daemon">
+				<entry name="volume_step">
+					<local_schema short_desc="Korak jačine zvuka">
+						<longdesc>Korak jačine zvuka kao postotak jačine.</longdesc>
+					</local_schema>
+				</entry>
+				<dir name="gtk-modules">
+					<entry name="gail:atk-bridge">
+						<local_schema short_desc="GTK+ moduli podrške za pristupačnost">
+							<longdesc>Ovaj ključ određuje GTK+ module koji se učitavaju radi podrške za pristupačnost.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybindings">
+					<entry name="next">
+						<local_schema short_desc="Puštanje naredne numere">
+							<longdesc>Vezujem za prelazak na narednu numeru.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="previous">
+						<local_schema short_desc="Puštanje prethodne numere">
+							<longdesc>Vezujem za prelazak na prethodnu numeru.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="stop">
+						<local_schema short_desc="Zaustavljanje numere">
+							<longdesc>Vezujem za zaustavljanje muzike/filma.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pause">
+						<local_schema short_desc="Pauziranje numere">
+							<longdesc>Vezujem za pauziranje muzike/filma.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="play">
+						<local_schema short_desc="Puštanje (ili puštanje/pauziranje)">
+							<longdesc>Vezujem za puštanje muzike/filma (ili puštanje/pauzu).</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media">
+						<local_schema short_desc="Pokretanje programa za zvuk i filmove">
+							<longdesc>Vezujem za pokretanje programa za zvuk i video.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="www">
+						<local_schema short_desc="Pokretanje Internet preglednika">
+							<longdesc>Vezujem za pokretanje internet preglednika.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="calculator">
+						<local_schema short_desc="Pokretanje kalkulatora">
+							<longdesc>Vezujem za pokretanje kalkulatora.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="help">
+						<local_schema short_desc="Pokretanje pregledača pomoći">
+							<longdesc>Vezujem za pokretanje pregledača pomoći.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="screensaver">
+						<local_schema short_desc="Zaključavanje ekrana">
+							<longdesc>Vezujem za zaključavanje ekrana.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="email">
+						<local_schema short_desc="Pokretanje program za e-poštu">
+							<longdesc>Vezujem za pokretanje programa za e-poštu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="search">
+						<local_schema short_desc="Pretraga">
+							<longdesc>Vezujem za pokretanje programa za pretragu.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home">
+						<local_schema short_desc="Otvaranje lične fascikle">
+							<longdesc>Vezujem za otvaranje lične fascikle.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="eject">
+						<local_schema short_desc="Izbacivanje medijuma">
+							<longdesc>Vezujem za izbacivanje optičkog diska.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="power">
+						<local_schema short_desc="Odjavljivanje sa sistema">
+							<longdesc>Vezujem za odjavu sa sistema.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_up">
+						<local_schema short_desc="Pojačavanje zvuka">
+							<longdesc>Vezujem za pojačavanje zvuka.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_down">
+						<local_schema short_desc="Utišavanje zvuka">
+							<longdesc>Vezujem za utišavanje zvuka.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volume_mute">
+						<local_schema short_desc="Isključivanje zvuka">
+							<longdesc>Vezujem za isključivanje zvuka.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="touchpad">
+						<local_schema short_desc="Uključivanje/isključivanje dodirne table">
+							<longdesc>Vezujem uključivanje/isključivanje dodirne table.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="plugins">
+					<dir name="xsettings">
+						<entry name="active">
+							<local_schema short_desc="Uključi dodatak za podešavanja Iksa">
+								<longdesc>Uključite za pokretanje dodatka koji podešava postavke Iksa.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="xrdb">
+						<entry name="active">
+							<local_schema short_desc="Uključi xrdb dodatak">
+								<longdesc>Uključite za pokretanje dodatka koji podešava xrdb.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="xrandr">
+						<entry name="active">
+							<local_schema short_desc="Uključi IksRandR dodatak">
+								<longdesc>Postavite na „True“ (tačno) kako bo dodatak upravljao IksRandR podešavanjima.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="typing-break">
+						<entry name="active">
+							<local_schema short_desc="Uključi dodatak za prekide prilikom kucanja">
+								<longdesc>Uključite za pokretanje dodatka koji podešava odmor prilikom kucanja.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="sound">
+						<entry name="active">
+							<local_schema short_desc="Uključi dodatak za zvuk">
+								<longdesc>Uključite za pokretanje dodatka koji upravlja ostavom zvučnih isečaka.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="smartcard">
+						<entry name="active">
+							<local_schema short_desc="Uključi dodatak za pametne kartice">
+								<longdesc>Postavite na „True“ (tačno) kako bi dodatak zaključao ekran pri uklanjanju pametne kartice.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="mouse">
+						<entry name="active">
+							<local_schema short_desc="Uključi dodatak za miša">
+								<longdesc>Uključite za pokretanje dodatka koji podešava miša.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="media-keys">
+						<entry name="active">
+							<local_schema short_desc="Uključi dodatak za multimedijalne tastere">
+								<longdesc>Uključite za pokretanje dodatka koji podešava multimedijalne tastere.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keyboard">
+						<entry name="active">
+							<local_schema short_desc="Uključi dodatak za tastaturu">
+								<longdesc>Uključite za pokretanje dodatka koji podešava tastaturu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="keybindings">
+						<entry name="active">
+							<local_schema short_desc="Uključi dodatak za prečice">
+								<longdesc>Uključite za pokretanje dodatka koji podešava prečice na tastaturi.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="housekeeping">
+						<entry name="ignore_paths">
+							<local_schema short_desc="Putanje za montiranje koje treba zanemariti">
+								<longdesc>Izaberite spisak montiranih putanja koje treba zanemariti ako preostane malo slobodnog prostora.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="min_notify_period">
+							<local_schema short_desc="Najmanji period obaveštavanja za ponovljena upozorenja">
+								<longdesc>Odredite vreme u minutima. Upozorenja za disk se neće ponovo prikazati pre isteka ovog vremena.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_size_gb_no_notify">
+							<local_schema short_desc="Prag obaveštenja o slobodnom prostoru">
+								<longdesc>Odredite veličinu u gigabajtima. Upozorenja se neće prikazivati ukoliko je slobodan prostor veći od ove vrednosti.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify_again">
+							<local_schema short_desc="Prag za ponovnog obaveštenja o procentu slobodnog prostora">
+								<longdesc>Odredite koliko procenta od slobodnog prostora treba popuniti pre nego što se ponovo ispiše upozorenje.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="free_percent_notify">
+							<local_schema short_desc="Prag obaveštenja o procentu slobodnog prostora">
+								<longdesc>Prag zauzetosti u procentima pri kome se ispisuju upozorenja o malo slobodnog prostora na disku. Ukoliko procenat padne ispod ove vrednosti, upozorenje će biti prikazano.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="active">
+							<local_schema short_desc="Uključi dodatak za čišćenje">
+								<longdesc>Uključite radi pokretanja dodatka za čišćenje sistema koji uklanja privremene datoteke.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="font">
+						<entry name="active">
+							<local_schema short_desc="Uključi dodatak za font">
+								<longdesc>Uključite za pokretanje dodatka koji podešava fontove.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="clipboard">
+						<entry name="active">
+							<local_schema short_desc="Uključi dodatak za spisak isečaka">
+								<longdesc>Uključite za pokretanje dodatka koji podešava spisak isečaka.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="background">
+						<entry name="active">
+							<local_schema short_desc="Uključi dodatak za pozadinsku sliku">
+								<longdesc>Uključite za pokretanje dodatka koji podešava pozadinsku sliku.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+					<dir name="a11y-keyboard">
+						<entry name="active">
+							<local_schema short_desc="Uključi dodatak za pristupačnost tastature">
+								<longdesc>Uključite za pokretanje dodatka koji podešava pristupačnost tastature.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="xrandr">
+					<entry name="default_configuration_file">
+						<local_schema short_desc="Datoteka za podrazumevana RandR podešavanja">
+							<longdesc>IksRandR dodatak će tražiti podrazumevana podešavanja u datoteci iz ovog ključa. Ovo je slično kao ~/.config/monitors.xml koja se obično čuva u ličnom direktorijumu korisnika. Datoteka iz ovog ključa se koristi ukoliko nema takve datoteke, ili se ona ne poklapa sa podešavanjima ekrana.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="turn_on_laptop_monitor_at_startup">
+						<local_schema short_desc="Uključi ekran prenosnog računara nakon pokretanja">
+							<longdesc>Uključuje ekran prenosnog računara pri podizanju sistema ukoliko korisnik priključi spoljni ekran.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="turn_on_external_monitors_at_startup">
+						<local_schema short_desc="Uključi spoljni ekran nakon pokretanja">
+							<longdesc>Uključuje spoljni ekran pri podizanju sistema ukoliko ga korisnik priključi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_notification_icon">
+						<local_schema short_desc="Prikaži ekrane u obaveštajnoj zoni">
+							<longdesc>Određuje da li da se prikazuje ikonica sa stavkama vezanim za ekrane unutar panela.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="yelp">
+				<entry name="fixed_font">
+					<local_schema short_desc="Slovni lik za tekst utvrđene širine">
+						<longdesc>Slovni lik za tekst utvrđene širine.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="variable_font">
+					<local_schema short_desc="Slovni lik za tekst">
+						<longdesc>Slovni lik za tekst promenljive širine.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_system_fonts">
+					<local_schema short_desc="Koristi slovni lik sa sistema">
+						<longdesc>Koristi podrazumevani slovni lik postavljen na sistem.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="use_caret">
+					<local_schema short_desc="Koristi kurzor.">
+						<longdesc>Koristi kurzor kojim se upravlja sa tastature pri pregledu strana.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="metacity">
+				<dir name="window_keybindings">
+					<entry name="move_to_center">
+						<local_schema short_desc="Premesti prozor na sredinu ekrana">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_w">
+						<local_schema short_desc="Premesti prozor uz levu ivicu ekrana">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_e">
+						<local_schema short_desc="Premesti prozor uz desnu ivicu ekrana">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_s">
+						<local_schema short_desc="Premesti prozor u dno ekrana">
+						</local_schema>
+					</entry>
+					<entry name="move_to_side_n">
+						<local_schema short_desc="Premesti prozor u vrh ekrana">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_se">
+						<local_schema short_desc="Premesti prozor u donji, desni ćošak">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_sw">
+						<local_schema short_desc="Premesti prozor u donji, levi ćošak">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_ne">
+						<local_schema short_desc="Premesti prozor u gornji, desni ćošak">
+						</local_schema>
+					</entry>
+					<entry name="move_to_corner_nw">
+						<local_schema short_desc="Premesti prozor u gornji, levi ćošak">
+						</local_schema>
+					</entry>
+					<entry name="maximize_horizontally">
+						<local_schema short_desc="Uvećaj prozor horizontalno">
+						</local_schema>
+					</entry>
+					<entry name="maximize_vertically">
+						<local_schema short_desc="Uvećaj prozor vertikalno">
+						</local_schema>
+					</entry>
+					<entry name="lower">
+						<local_schema short_desc="Spusti prozor ispod ostalih prozora">
+						</local_schema>
+					</entry>
+					<entry name="raise">
+						<local_schema short_desc="Podigni prozor iznad ostalih prozora">
+						</local_schema>
+					</entry>
+					<entry name="raise_or_lower">
+						<local_schema short_desc="Podigni prozor ukoliko ga drugi prozor zaklanja, u protivnom ga spusti">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_down">
+						<local_schema short_desc="Premesti prozor za jedan radni prostor na dole">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_up">
+						<local_schema short_desc="Premesti prozor za jedan radni prostor na gore">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_right">
+						<local_schema short_desc="Premesti prozor za jedan sledeći radni prostor udesno">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_left">
+						<local_schema short_desc="Premesti prozor za jedan sledeći radni prostor ulevo">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_12">
+						<local_schema short_desc="Premesti prozor na radni prostor broj 12">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_11">
+						<local_schema short_desc="Premesti prozor na radni prostor broj 11">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_10">
+						<local_schema short_desc="Premesti prozor na radni prostor broj 10">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_9">
+						<local_schema short_desc="Premesti prozor na radni prostor broj 9">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_8">
+						<local_schema short_desc="Premesti prozor na radni prostor broj 8">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_7">
+						<local_schema short_desc="Premesti prozor na radni prostor broj 7">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_6">
+						<local_schema short_desc="Premesti prozor na radni prostor broj 6">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_5">
+						<local_schema short_desc="Premesti prozor na radni prostor broj 5">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_4">
+						<local_schema short_desc="Premesti prozor na radni prostor broj 4">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_3">
+						<local_schema short_desc="Premesti prozor na radni prostor broj 3">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_2">
+						<local_schema short_desc="Premesti prozor na radni prostor broj 2">
+						</local_schema>
+					</entry>
+					<entry name="move_to_workspace_1">
+						<local_schema short_desc="Premesti prozor na radni prostor broj 1">
+						</local_schema>
+					</entry>
+					<entry name="toggle_on_all_workspaces">
+						<local_schema short_desc="Prikazuje prozor na svim ili samo na jednoj radnoj površi">
+						</local_schema>
+					</entry>
+					<entry name="begin_resize">
+						<local_schema short_desc="Promeni veličinu prozoru">
+						</local_schema>
+					</entry>
+					<entry name="begin_move">
+						<local_schema short_desc="Premesti prozor">
+						</local_schema>
+					</entry>
+					<entry name="close">
+						<local_schema short_desc="Zatvori prozor">
+						</local_schema>
+					</entry>
+					<entry name="minimize">
+						<local_schema short_desc="Umanji prozor">
+						</local_schema>
+					</entry>
+					<entry name="toggle_shaded">
+						<local_schema short_desc="Promeni stanje zasenčenosti">
+						</local_schema>
+					</entry>
+					<entry name="unmaximize">
+						<local_schema short_desc="Vrati veličinu prozoru">
+						</local_schema>
+					</entry>
+					<entry name="maximize">
+						<local_schema short_desc="Uvećaj prozor">
+						</local_schema>
+					</entry>
+					<entry name="toggle_above">
+						<local_schema short_desc="Određuje da li se prozor uvek prikazuje iznad ostalih">
+						</local_schema>
+					</entry>
+					<entry name="toggle_maximized">
+						<local_schema short_desc="Promeni stanje uvećanja">
+						</local_schema>
+					</entry>
+					<entry name="toggle_fullscreen">
+						<local_schema short_desc="Isključi/uključi prikaz preko celog ekrana">
+						</local_schema>
+					</entry>
+					<entry name="activate_window_menu">
+						<local_schema short_desc="Aktiviraj meni prozora">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="keybinding_commands">
+					<entry name="command_window_screenshot">
+						<local_schema short_desc="Naredba za uzimanje snimka prozora">
+							<longdesc>Ključ /apps/metacity/global_keybindings/run_command_window_screenshot definiše funkciju tastera kojim se pokreće naredba navedena pomoću njega.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command_screenshot">
+						<local_schema short_desc="Naredba za snimak ekrana">
+							<longdesc>Ključ /apps/metacity/global_keybindings/run_command_N definiše funkciju tastera kojim se pokreće naredba navedena pomoću njega.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Komanda koju treba pokrenuti kao odgovor na pritisak tastera">
+							<longdesc>Ključ /apps/metacity/global_keybindings/run_command_N definiše tastere koji odgovaraju ovim komandama. Pritiskom kombinacije tastera za pokreni_komadu_N će izvršiti komandu_N.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="global_keybindings">
+					<entry name="run_command_terminal">
+						<local_schema short_desc="Pokreni terminal">
+						</local_schema>
+					</entry>
+					<entry name="run_command_window_screenshot">
+						<local_schema short_desc="Uzmi snimak prozora">
+						</local_schema>
+					</entry>
+					<entry name="run_command_screenshot">
+						<local_schema short_desc="Uzmi snimak ekrana">
+						</local_schema>
+					</entry>
+					<entry name="panel_run_dialog">
+						<local_schema short_desc="Prikaži prozorče za pokretanje programa u panelu">
+						</local_schema>
+					</entry>
+					<entry name="panel_main_menu">
+						<local_schema short_desc="Prikaži glavni meni panela">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema short_desc="Sakrij sve obične prozore i prikaži radnu površinu">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels_backward">
+						<local_schema short_desc="Premesti odmah unazad između panela i radne površine">
+						</local_schema>
+					</entry>
+					<entry name="cycle_panels">
+						<local_schema short_desc="Premesti odmah između panela i radne površine">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows_backward">
+						<local_schema short_desc="Premesti odmah unazad između prozora">
+						</local_schema>
+					</entry>
+					<entry name="cycle_windows">
+						<local_schema short_desc="Premesti odmah između prozora">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group_backward">
+						<local_schema short_desc="Premesti odmah unazad između prozora programa">
+						</local_schema>
+					</entry>
+					<entry name="cycle_group">
+						<local_schema short_desc="Premesti odmah između prozora programa">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels_backward">
+						<local_schema short_desc="Premesti unazad između panela i radne površine uz iskakanje">
+						</local_schema>
+					</entry>
+					<entry name="switch_panels">
+						<local_schema short_desc="Premesti između panela i radne površine uz iskakanje">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows_backward">
+						<local_schema short_desc="Premesti unazad između prozora uz iskakanje">
+						</local_schema>
+					</entry>
+					<entry name="switch_windows">
+						<local_schema short_desc="Premesti između prozora uz iskakanje">
+						</local_schema>
+					</entry>
+					<entry name="switch_group_backward">
+						<local_schema short_desc="Premesti unazad između prozora programa uz iskakanje">
+						</local_schema>
+					</entry>
+					<entry name="switch_group">
+						<local_schema short_desc="Premesti između prozora programa uz iskakanje">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_down">
+						<local_schema short_desc="Prebaci se na radni prostor ispod ovog">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_up">
+						<local_schema short_desc="Prebaci se na radni prostor iznad ovog">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_right">
+						<local_schema short_desc="Prebaci se na radni prostor na desno">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_left">
+						<local_schema short_desc="Prebaci se na radni prostor na levo">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_12">
+						<local_schema short_desc="Prebaci se na radni prostor 12">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_11">
+						<local_schema short_desc="Prebaci se na radni prostor 11">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_10">
+						<local_schema short_desc="Prebaci se na radni prostor 10">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_9">
+						<local_schema short_desc="Prebaci se na radni prostor 9">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_8">
+						<local_schema short_desc="Prebaci se na radni prostor 8">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_7">
+						<local_schema short_desc="Prebaci se na radni prostor 7">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_6">
+						<local_schema short_desc="Prebaci se na radni prostor 6">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_5">
+						<local_schema short_desc="Prebaci se na radni prostor 5">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_4">
+						<local_schema short_desc="Prebaci se na radni prostor 4">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_3">
+						<local_schema short_desc="Prebaci se na radni prostor 3">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_2">
+						<local_schema short_desc="Prebaci se na radni prostor 2">
+						</local_schema>
+					</entry>
+					<entry name="switch_to_workspace_1">
+						<local_schema short_desc="Prebaci se na radni prostor 1">
+						</local_schema>
+					</entry>
+					<entry name="run_command">
+						<local_schema short_desc="Pokreni definisanu komandu">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="workspace_names">
+					<entry name="name">
+						<local_schema short_desc="Ime radnog prostora">
+							<longdesc>Ime radne površine.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="general">
+					<entry name="disable_workarounds">
+						<local_schema short_desc="Isključi loše mogućnosti koje su obavezne za stare ili loše programe">
+							<longdesc>Neki programi ne poštuju specifikacije na način koji vodi do toga da upravnik prozora ne može da funkcioniše. Ovo podešavanje postavlja Metasiti u strog režim rada koji doprinosi pravilnijem ponašanju, pod uslovom da se ne pokušava pokretanje neispravnih programa.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="application_based">
+						<local_schema short_desc="(Nije ugrađeno) Navigacija radi u kontekstu programa, ne i prozora">
+							<longdesc>Ako je tačno, metasiti rada u kontekstu programa, a ne prozora. Koncept je pomalo čudan, ali u opštem slučaju postavke bazirane na programu su više slične Mac sistemu, a manje slične Windows sistemu. Kada postavite prozor u fokus u ovom načinu rada, svi prozori te aplikacije će biti podignuti. Takođe, u ovom načinu rada, fokusni klik se ne šalje prozorima drugih programa. Takođe ovaj način rada je uveliko nedovršen u  sadašnjim verzijama.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="reduced_resources">
+						<local_schema short_desc="Ukoliko je postavljeno, žrtvuj upotrebljivost zarad upotrebe manje resursa">
+							<longdesc>Ako je postavljeno, Metasiti će korisniku prikazati manje podataka i manje osećaja o „neposrednom upravljanju“, upotrebom linija, izbegavanjem animacija ili drugim sredstvima. Ovo je značajni nedostatak po pitanju upotrebljivosti za mnoge korisnike, ali može omogućiti starim programima i terminalskim serverima da rade kada bi inače bili nepraktični. Takođe, upotreba linija je onemogućena kada je uključena pristupačnost.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="compositing_manager">
+						<local_schema short_desc="Kompozitni upravnik">
+							<longdesc>Određuje da li je Metasiti kompozitni upravnik.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell_type">
+						<local_schema short_desc="Vrsta vizelnog zvonceta">
+							<longdesc>Naređuje Metasitiju da prikaže nešto kada zazvoni sistemsko zvonce ili neki drugi program zazvoni. Trenutno su moguće dve vrednosti, „fullscreen“ kojim ceo ekran treperi crno-belo, i „frame_flash“ kada treperi samo naslovna linija prozora koji je zazvonio. Ukoliko nije poznat program koji je zazvonio (kao što je to obično slučaj sa „sistemskim zvoncetom“), trepereće naslovna linija prozora koji je trenutno u žiži.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="audible_bell">
+						<local_schema short_desc="Sistemsko zvonce se čuje">
+							<longdesc>Određuje da li programi ili sistem mogu da puste zvučne signale; može se koristiti uz „vizuelne zvuke“ radi dozvoljavanja tihih zvukova.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="visual_bell">
+						<local_schema short_desc="Omogući vizuelne zvuke">
+							<longdesc>Uključuje vizuelni prikaz kada program ili sistem „zazvoni“; korisno u bučnim uslovima.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="num_workspaces">
+						<local_schema short_desc="Broj radnih prostora">
+							<longdesc>Broj radnih prostora. Mora biti veći od nule, i imati fiksiran maksimum kako biste sprečili da slučajno uništite radnu površinu tražeći previše radnih prostora.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_font">
+						<local_schema short_desc="Slovni lik naslova prozora">
+							<longdesc>Niz karaktera koji opisuje slovni lik za naslovnu liniju prozora. Veličina iz opisa će biti korišćena samo ako je opcija titlebar_font_size podešena na 0. Takođe, ova opcija je isključena ako je opcijatitlebar_uses_desktop_font postavljena na „true“.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="titlebar_uses_system_font">
+						<local_schema short_desc="Koristi standardni sistemski slovni lik za naslov prozora">
+							<longdesc>Ako je tačno, ignoriše se opcija titlebar_font, i metasiti će koristiti standardan slovni lik programa za slovni lik naslova prozora.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Trenutna tema">
+							<longdesc>Tema utvrđuje izgled ivica prozora, naslovne linije i svega ostalog sličnog.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise_delay">
+						<local_schema short_desc="Vremenski period u milisekundama za automatsko podizanje prozora">
+							<longdesc>Vremenski period pre podizanja prozora ako je opcija auto_raise postavljena na „true“. Period se izražava u hiljaditim delovima sekunde.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="auto_raise">
+						<local_schema short_desc="Automatski podigni prozor sa fokusom">
+							<longdesc>Ako je tačno, a način fokusa je ili „sloppy“ ili „mouse“ onda će prozor u fokusu biti automatski podignut nakon isteka vremenskog perioda (koji je podešen preko auto_raise_delay ključa). Ovo nije povezano sa podizanjem prozora klikom, niti sa fokusiranjem u toku povuci-i-ispusti.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_right_click_titlebar">
+						<local_schema short_desc="Akcija za desni klik na traku sa naslovom">
+							<longdesc>Ova mogućnost određuje efekat desnog klika na naslovnu liniju prozora. Trenutno ispravni su „toggle_shade“ što će zamotati/odmotati prozor, „toggle_maximize“ što će uvećati ili poništiti uvećanje prozora, „toggle_maximize_horizontally“ i „toggle_maximize_vertically“, što će uvećati ili poništiti uvećanje prozora samo u horizontalno ili uspravno, „minimize“ što će umanjiti prozor, „shade“ što će zamotat prozor, „menu“ što će prikazati meni prozora, „lower“ što će postaviti prozor iza ostalih i „none“ čime se ne obavlja nikakva radnja.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_middle_click_titlebar">
+						<local_schema short_desc="Akcija za srednji klik na traku sa naslovom">
+							<longdesc>Ova mogućnost određuje efekat srednjeg klika na naslovnu liniju prozora. Trenutno ispravni su „toggle_shade“ što će zamotati/odmotati prozor, „toggle_maximize“ što će uvećati ili poništiti uvećanje prozora, „toggle_maximize_horizontally“ i „toggle_maximize_vertically“, što će uvećati ili poništiti uvećanje prozora samo u horizontalno ili uspravno, „minimize“ što će umanjiti prozor, „shade“ što će zamotat prozor, „menu“ što će prikazati meni prozora, „lower“ što će postaviti prozor iza ostalih i „none“ čime se ne obavlja nikakva radnja.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="action_double_click_titlebar">
+						<local_schema short_desc="Akcija za dupli klik na traku sa naslovom">
+							<longdesc>Ova mogućnost određuje efekat duplog klika na naslovnu liniju prozora. Trenutno ispravni su „toggle_shade“ što će zamotati/odmotati prozor, „toggle_maximize“ što će uvećati ili poništiti uvećanje prozora, „toggle_maximize_horizontally“ i „toggle_maximize_vertically“, što će uvećati ili poništiti uvećanje prozora samo u horizontalno ili uspravno, „minimize“ što će umanjiti prozor, „shade“ što će zamotat prozor, „menu“ što će prikazati meni prozora, „lower“ što će postaviti prozor iza ostalih i „none“ čime se ne obavlja nikakva radnja.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="raise_on_click">
+						<local_schema short_desc="Da li podizanje prozora treba da bude bočni efekat nekih drugih korisnikovih radnji">
+							<longdesc>Postavljanje ove opcije na „false“ (netačno) može prouzrokovati neispravno ponašanje programa, pa nije preporučljivo. Mnoge naredbe (npr. klik usred oblasti klijenta, pomeranje ili promena veličine prozora) obično ujedno i podižu prozor. Isključivanjem ove opcije će razdvojiti podizanje prozora od ostalih radnji i zanemariti zahteve za podizanje prozora od strane programa. Pogledajte http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Čak i ukoliko isključite ovu opciju, prozore možete podići levim klikom unutar prozora uz držanje tastera Alt, običnim klikom na naslovnu liniju prozora ili preko posebnih poruka iz prebacivača radnih površina (kao što je uključivanje zahteva iz programčeta sa spiskom zadataka). Ova opcija je trenutno isključena u režimu „click-to-focus“ (klik za fokus). Spisak načina za podizanje prozora kada je „raise_on_click“ (podigni na klik) postavljen na „false“ (netačno) ne uključuje zahteve iz programa za podizanje prozora, pa će takvi zahtevi biti zanemareni bez obzira na na razlog. Ukoliko pišete sopstveni program i dobijete primedbe od strane korisnika kako vaš program ne radi po isključivanju ove opcije, kažite im da je njihova krivica za neispravan rad upravnika prozorima i da vrate opciju na „true“ (tačno) ili da se naviknu na propratne pojave.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_new_windows">
+						<local_schema short_desc="Kako novi prozor dobija fokus">
+							<longdesc>Ova opcija pruža dodatnu kontrolu nad načinom na koji novi prozori ulaze u fokus. Ima dve moguće vrednosti: „smart“ postavlja normalni režim fokusa i „strict“ kada prozori pokrenuti iz komandne linije ne ulaze u fokus.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="focus_mode">
+						<local_schema short_desc="Način fokusa prozora">
+							<longdesc>Fokus prozora podešava kako će prozori biti aktivirani. Ima tri moguće vrednosti „click“ znači da prozor mora biti selektovan da bi dobio fokus, „sloppy“ znači da prozor dobija fokus kada pokazivač miša uđe u prozor i „mouse“ štp znači da će prozor biti fokusitan kada pokazivačka strelica miša uđe u prozor i biti defokusiran kada strelica izađe iz prozora.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="button_layout">
+						<local_schema short_desc="Raspored dugmića na liniji sa naslovom">
+							<longdesc>Raspored dugmića na naslovnoj liniji. Vrednost treba da bude niz karaktera, kao na primer „menu:minimize,maximize,close“; dve tačke razdvajaju levi ugao prozora od desnog, a dugmići su razdvojeni zapetama. Dupliranje dugmića nije dozvoljeno. Nepoznata imena dugmića se ignorišu tako da dugmići koji u budućnosti budu dodati u metasiti ne razbiju podešavanja starijih izdanja. Mogu se koristiti specijalne oznaka za razdvajanje kako bi se napravilo mesta između dva susedna dugmeta.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="resize_with_right_button">
+						<local_schema short_desc="Da li da promeni veličinu desnim tasterom">
+							<longdesc>Postavite na „true“ za promenu veličine prozora desnim tasterom i prikaz menija srednjim tasterom uz držanje zadatog tastera preko ključa „mouse_button_modifier“. Postavite na „false“ kako bi koristili obrnut raspored tastera.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="mouse_button_modifier">
+						<local_schema short_desc="Tipka koja će se koristiti za promenu akcije klika na prozor">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

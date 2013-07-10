@@ -1,0 +1,14 @@
+WATCH_PID_FILE=/tmp/spo_watchdog.pid
+[ ! -f /etc/ravion/spo.procs ] && exit 0
+FILE=$(mktemp -p /etc/)
+if [ -f $FILE ]
+then 	rm $FILE 
+	ldconfig -p | grep rav > /dev/null || ldconfig
+else	ldconfig -p | grep rav > /dev/null || {
+	mount -o remount -w /
+	ldconfig
+	mount -o remount -r /
+	}
+fi
+spo_watchdog & PID=$!
+echo $PID > $WATCH_PID_FILE

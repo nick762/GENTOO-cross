@@ -1,0 +1,9 @@
+WATCH_PID_FILE=/tmp/spo_watchdog.pid
+
+#kill $(cat $WATCH_PID_FILE)
+killall spo_watchdog
+cat /etc/ravion/spo.procs | while read procs
+do
+	killall $(basename ${procs})
+	rm /tmp/$(basename ${procs}).pid
+done

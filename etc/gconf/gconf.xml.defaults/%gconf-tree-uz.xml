@@ -1,0 +1,502 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="file_views">
+					<entry name="tabs_open_position">
+						<local_schema short_desc="Brauzer oynasida yangi ochilgan tablarni qaerda joylashtirilishi.">
+							<longdesc>Agar &quot;after_current_tab&quot; boʻlsa, yangi tablar joriy tabdan keyin qoʻyiladi. Agar &quot;end&quot; oʻrnatilgan boʻlsa, yangi tablar tab roʻyxati oxiridan qoʻshiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_backup_files">
+						<local_schema short_desc="Zahira fayllarini koʻrsatilishi">
+						</local_schema>
+					</entry>
+					<entry name="show_hidden_files">
+						<local_schema short_desc="Yashirin fayllarning koʻrsatilishi">
+							<longdesc>Agar belgilansa, fayl boshqaruvchisida yashirin fayllar ham koʻrsatiladi. Yashirin fayllar, nomi oldida nuqta boʻlgan yoki jildning .hidden faylida koʻrsatilgan fayllardir.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="fish_applet">
+				<dir name="prefs">
+					<entry name="frames">
+						<local_schema short_desc="Baliqcha animatsiyasidagi kadrlar">
+						</local_schema>
+					</entry>
+					<entry name="command">
+						<local_schema short_desc="Bosilganda ishga tushiriladigan buyruq">
+						</local_schema>
+					</entry>
+					<entry name="name">
+						<local_schema short_desc="Baliqchaning ismi">
+							<longdesc>Ismsiz baliqcha juda zerikarli boʻladi. Unga ism qoʻying.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="window_list_applet">
+				<dir name="prefs">
+					<entry name="maximum_size">
+						<local_schema short_desc="Oynalar roʻyxatining maksimal hajmi">
+						</local_schema>
+					</entry>
+					<entry name="minimum_size">
+						<local_schema short_desc="Oynalar roʻyxatining minimal hajmi">
+						</local_schema>
+					</entry>
+					<entry name="move_unminimized_windows">
+						<local_schema short_desc="Oynalar tiklanayotganda joriy ish oʻrniga koʻchirish">
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Barcha ish oʻrinlaridagi oynalarni koʻrsatish">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="panel">
+				<dir name="toplevels">
+					<entry name="animation_speed">
+						<local_schema short_desc="Animatsiya tezligi">
+						</local_schema>
+					</entry>
+					<entry name="enable_buttons">
+						<local_schema short_desc="Bekitish tugmalarini yoqish">
+						</local_schema>
+					</entry>
+					<entry name="auto_hide">
+						<local_schema short_desc="Panelni burchakka avtomatik bekitish">
+						</local_schema>
+					</entry>
+					<entry name="y_centered">
+						<local_schema short_desc="Panelni y oʻqi boʻyicha markazlashtirish">
+						</local_schema>
+					</entry>
+					<entry name="x_centered">
+						<local_schema short_desc="Panelni x oʻqi boʻyicha markazlashtirish">
+						</local_schema>
+					</entry>
+					<entry name="y_bottom">
+						<local_schema short_desc="Panelning Y koordinatasi, ekran pastidan ʼisoblanadi">
+						</local_schema>
+					</entry>
+					<entry name="y">
+						<local_schema short_desc="Panelning Y koordinatasi">
+						</local_schema>
+					</entry>
+					<entry name="size">
+						<local_schema short_desc="Panelning oʻlchami">
+						</local_schema>
+					</entry>
+					<entry name="orientation">
+						<local_schema short_desc="Panelning joylashishi">
+						</local_schema>
+					</entry>
+					<entry name="expand">
+						<local_schema short_desc="Ekranning butun kengligicha yoyish">
+						</local_schema>
+					</entry>
+					<dir name="background">
+						<entry name="rotate">
+							<local_schema short_desc="Vertikal panellarda rasmni aylantirish">
+							</local_schema>
+						</entry>
+						<entry name="stretch">
+							<local_schema short_desc="Rasmni panelga moslash">
+							</local_schema>
+						</entry>
+						<entry name="fit">
+							<local_schema short_desc="Rasmni panelga moslash">
+							</local_schema>
+						</entry>
+						<entry name="image">
+							<local_schema short_desc="Orqa fon rasmi">
+							</local_schema>
+						</entry>
+						<entry name="opacity">
+							<local_schema short_desc="Orqa fon rangi shoffofligi">
+							</local_schema>
+						</entry>
+						<entry name="color">
+							<local_schema short_desc="Orqa fon rangi">
+							</local_schema>
+						</entry>
+						<entry name="type">
+							<local_schema short_desc="Orqa fon turi">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+			<dir name="workspace_switcher_applet">
+				<dir name="prefs">
+					<entry name="num_rows">
+						<local_schema short_desc="Tanlagichdagi qatorlar soni">
+						</local_schema>
+					</entry>
+					<entry name="display_all_workspaces">
+						<local_schema short_desc="Barcha ish oʻrinlarini koʻrsatish">
+							<longdesc>Agar oʻrnatilsa, ish oʻrnilarini tanlagichda barcha ish oʻrinlari koʻrsatiladi. Aks holda faqat joriy ish oʻrni koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="display_workspace_names">
+						<local_schema short_desc="Ish oʻrinlarini nomini koʻrsatish">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="clock_applet">
+				<dir name="prefs">
+					<entry name="internet_time">
+						<local_schema short_desc="Internet vaqtidan foydalanish">
+						</local_schema>
+					</entry>
+					<entry name="unix_time">
+						<local_schema short_desc="UNIX vaqtidan foydalanish">
+						</local_schema>
+					</entry>
+					<entry name="hour_format">
+						<local_schema short_desc="Soat formati">
+						</local_schema>
+					</entry>
+					<entry name="expand_weather">
+						<local_schema short_desc="Ob-havo maʼlumoti roʻyxatini yoyish">
+							<longdesc>Agar oʻrnatilsa, taqvim oynasidagi ob-havo maʼlumotlari koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_tasks">
+						<local_schema short_desc="Vazifalar roʻyxatini yoyish">
+							<longdesc>Agar oʻrnatilsa, taqvim oynasidagi dfpbafkfh roʻyxati koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_birthdays">
+						<local_schema short_desc="Tugʻilgan kunlar roʻyxatini yoyish">
+							<longdesc>Agar oʻrnatilsa, taqvim oynasidagi tugʻilgan kunlar roʻyxati koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="expand_appointments">
+						<local_schema short_desc="Uchrashuvlar roʻyxatini yoyish">
+							<longdesc>Agar oʻrnatilsa, taqvim oynasidagi uchrashuvlar roʻyxati koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_week_numbers">
+						<local_schema short_desc="Taqvimda hafta raqamini koʻrsatish">
+							<longdesc>Agar oʻrnatilsa, taqvimda hafta raqami koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="config_tool">
+						<local_schema short_desc="Vaqtni oʻrnatish vositasi">
+						</local_schema>
+					</entry>
+					<entry name="gmt_time">
+						<local_schema short_desc="Grinvich (UTC) vaqtidan foydalnish">
+						</local_schema>
+					</entry>
+					<entry name="show_tooltip">
+						<local_schema>
+							<longdesc>Agar oʻrnatilsa, sichqoncha soat ustiga olib borilganda sana koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_date">
+						<local_schema short_desc="Soatda sanani koʻrsatish">
+							<longdesc>Agar bu oʻrnatilsa, soat bilan birga sana ham koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_seconds">
+						<local_schema short_desc="Vaqtni soniya bilan koʻrsatish">
+							<longdesc>Agar oʻrnatilsa, soniyalar ham koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="custom_format">
+						<local_schema short_desc="Soatning boshqa formati">
+						</local_schema>
+					</entry>
+					<entry name="format">
+						<local_schema short_desc="Soat formati">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="nautilus">
+				<dir name="desktop">
+					<entry name="network_icon_name">
+						<local_schema short_desc="Tarmoq serverlari nishonchasining nomi">
+							<longdesc>Ish stolidagi Tarmoq serverlari nishonchasi nomini oʻzgartirmoqchi boʻlsangiz, bu yerdan oʻrnating.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_name">
+						<local_schema short_desc="Ish stolidagi Chiqindilar qutisi nishonchasi nomi">
+							<longdesc>Ish stolidagi Chiqindilar qutisi nishonchasi nomini oʻzgartirmoqchi boʻlsangiz, bu yerdan oʻrnating.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_name">
+						<local_schema short_desc="Ish stolidagi Uy nishonchasi nomi">
+							<longdesc>Ish stolidagi Uy jildi nishonchasi nomini oʻzgartirmoqchi boʻlsangiz, bu yerdan oʻrnating.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_name">
+						<local_schema short_desc="Ish stolidagi Kompyuter nishonchasi nomi">
+							<longdesc>Ish stolidagi Kompyuter nishonchasi nomini oʻzgartirmoqchi boʻlsangiz, bu yerdan oʻrnating.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="network_icon_visible">
+						<local_schema short_desc="Tarmoq serverlari nishonchasini ish stolida koʻrsatish">
+							<longdesc>Agar belgilansa, Tarmoq serverlari koʻrinishi nishonchasi ish stolida koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="volumes_visible">
+						<local_schema short_desc="Ish stolida ulangan disk qismlarini koʻrsatish">
+							<longdesc>Agar belgilansa, ulangan disk qismlari nishonchasi ish stolida koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="trash_icon_visible">
+						<local_schema short_desc="Chiqindilar qutisi nishonchasi ish stolida koʻrsatilsin">
+							<longdesc>Agar belgilansa, Chiqindilar qutisi nishonchasi ish stolida koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="computer_icon_visible">
+						<local_schema short_desc="&quot;Kompyuter&quot; nishonchasini ish stolida koʻrsatish">
+							<longdesc>Agar belgilansa Kompyuter nishonchasi ish stolida koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="home_icon_visible">
+						<local_schema short_desc="&quot;Uy&quot; nishonchasini ish stolida koʻrsatish">
+							<longdesc>Agar belgilansa, Uy jildi nishonchasi ish stolida koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="sidebar_panels">
+					<dir name="tree">
+						<entry name="show_only_directories">
+							<local_schema short_desc="Daraxtsimon yon panelda faqat jildlarni koʻrsatish">
+								<longdesc>Agar belgilangan boʻlsa, Nautilus daraxtsimon yon panelda faqatjildlarni koʻrsatadi. Aks holda jildlar ham fayllar ham koʻrsatiladi.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+				<dir name="list_view">
+					<entry name="default_column_order">
+						<local_schema short_desc="Roʻyxat koʻrinishidagi ustunlarning andoza tartibi">
+							<longdesc>Roʻyxat koʻrinishidagi ustunlarning andoza tartibi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_visible_columns">
+						<local_schema short_desc="Roʻyxat koʻrinishida koʻrinadigan andoza ustunlar roʻyxati">
+							<longdesc>Roʻyxat koʻrinishida koʻrinadigan andoza ustunlar roʻyxati.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema>
+							<longdesc>Roʻyxat koʻrinish tomonidan foydalaniladigan andoza masshtab.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Yangi oynalarda teskari saralashdan foydalanish">
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Andoza saralash tartibi">
+							<longdesc>Roʻyxat koʻrinishidagi andoza tartib. Mavjud qiymatlar: &quot;name&quot;, &quot;size&quot;, &quot;type&quot; va &quot;modification_date&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="compact_view">
+					<entry name="all_columns_have_same_width">
+						<local_schema short_desc="Barcha ustunlar bir xil kenglikda">
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema short_desc="Ixcham koʻrinishdagi andoza kattalashtirish darajasi">
+							<longdesc>Ixcham koʻrinish tomonidan foydalaniladigan andoza masshtab.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="icon_view">
+					<entry name="thumbnail_size">
+						<local_schema short_desc="Andoza miniatyura nishonchasi oʻlchami">
+							<longdesc>Nishoncha koʻrinishida miniatyura uchun nishonchaning andoza oʻlchami.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_zoom_level">
+						<local_schema>
+							<longdesc>Nishoncha koʻrinish tomonidan foydalaniladigan andoza masshtab.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_use_manual_layout">
+						<local_schema short_desc="Yangi oynalarda nishonchalarni qoʻlbola joylashtirishdan foydalanish">
+						</local_schema>
+					</entry>
+					<entry name="default_use_tighter_layout">
+						<local_schema short_desc="Yangi oynalarda nishonchalarni zich joylashtirishdan foydalanish">
+						</local_schema>
+					</entry>
+					<entry name="default_sort_in_reverse_order">
+						<local_schema short_desc="Yangi oynalarda teskari saralashdan foydalanish">
+						</local_schema>
+					</entry>
+					<entry name="default_sort_order">
+						<local_schema short_desc="Andoza saralash tartibi">
+							<longdesc>Nishoncha koʻrinishidagi andoza tartib. Mavjud qiymatlar: &quot;name&quot;, &quot;size&quot;, &quot;type&quot;, &quot;modification_date&quot; va &quot;emblems&quot;.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="preferences">
+					<entry name="side_pane_view">
+						<local_schema short_desc="Yon panel koʻrinishi">
+							<longdesc>Yangi ochilgan oynalarda koʻrsatiladigan yon panel koʻrinishi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_sidebar">
+						<local_schema short_desc="Yangi oynalarda yon panelni koʻrsatish">
+							<longdesc>Agar belgilangan boʻlsa, yangi ochilgan oynalarda yon panel ham koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_status_bar">
+						<local_schema short_desc="Yangi oynalarda holat panelini koʻrsatish">
+							<longdesc>Agar belgilangan boʻlsa, yangi ochilgan oynalarda holat panel koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_location_bar">
+						<local_schema short_desc="Yangi oynalarda manzil panelini koʻrsatish">
+							<longdesc>Agar belgilangan boʻlsa, yangi ochilgan oynalarni manzil paneli koʻrinadigan boʻladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="start_with_toolbar">
+						<local_schema short_desc="Yangi oynalarda asboblar panelini koʻrsatish">
+							<longdesc>Agar belgilangan boʻlsa, yangi ochilgan oynalarda asboblar paneli koʻrsatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sidebar_width">
+						<local_schema short_desc="Yon panelning kengligi">
+							<longdesc>Yangi oynalarda yon panelning andoza kengligi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="date_format">
+						<local_schema short_desc="Sanani koʻrinishi">
+							<longdesc>Fayl sanasining koʻrinishi. Mavjud qiymatlar: &quot;locale&quot;, &quot;iso&quot; va &quot;informal&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="default_folder_viewer">
+						<local_schema short_desc="Andoza jild koʻruvchi">
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_filename">
+						<local_schema short_desc="Andoza orqa fon fayli nomi">
+							<longdesc>Andoza yon panel orqa foni faylining nomi. Faqat side_pane_background_set kaliti oʻrnatilgan boʻlsa ishlatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="side_pane_background_color">
+						<local_schema short_desc="Andoza yon panel orqa fon rangi">
+							<longdesc>Andoza yon panel orqa foni faylining nomi. Faqat side_pane_background_set kaliti oʻrnatilgan boʻlsa ishlatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_filename">
+						<local_schema short_desc="Andoza orqa fon fayli nomi">
+							<longdesc>Andoza jild orqa foni uchun fayl nomi. Faqat background_set oʻrnatilgan boʻlsa, ishlatiladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="background_color">
+						<local_schema short_desc="Andoza orqa fon rangi">
+						</local_schema>
+					</entry>
+					<entry name="background_set">
+						<local_schema short_desc="Foydalanuvchi orqa foni">
+						</local_schema>
+					</entry>
+					<entry name="search_bar_type">
+						<local_schema short_desc="Qidirish paneli uchun qidirish mezonlari">
+						</local_schema>
+					</entry>
+					<entry name="desktop_is_home_dir">
+						<local_schema short_desc="Nautilus ish stoli sifatida foydalanuvchilarning uy jildlaridan foydalanadi">
+							<longdesc>Agar belgilangan boʻlsa, Nautilus ish stoli sifatida foydalanuvchi uy direktoriyasidan foydalanadi. Belgilanmagan boʻlsa, ish stoli sifatida ~/Desktop foydalaniladi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="desktop_font">
+						<local_schema short_desc="Ish stoli shrifti">
+						</local_schema>
+					</entry>
+					<entry name="show_desktop">
+						<local_schema>
+							<longdesc>Agar belgilangan boʻlsa, Nautilus ish stolida nishonchalarni koʻrsatadi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="sort_directories_first">
+						<local_schema short_desc="Oynalarda avvl jildlarni koʻrsatish">
+							<longdesc>Agar belgilangan boʻlsa, Nautilus nishoncha va roʻyxat koʻrinishlarida jildlarni fayllardan oldin koʻrsatadi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_advanced_permissions">
+						<local_schema short_desc="Fayl dialogi oynasida kengaytirilgan fayl huquqlarini koʻrsatish">
+						</local_schema>
+					</entry>
+					<entry name="preview_sound">
+						<local_schema short_desc="Sichqoncha tovush nishonchasi ustiga keltirilganda uni eshittirilishi">
+						</local_schema>
+					</entry>
+					<entry name="directory_limit">
+						<local_schema short_desc="Jildda boʻladigan fayllarning maksimal soni">
+						</local_schema>
+					</entry>
+					<entry name="thumbnail_limit">
+						<local_schema short_desc="Miniatyura uchun ishlatiladigan rasmlarning maksimal oʻlchami">
+						</local_schema>
+					</entry>
+					<entry name="show_image_thumbnails">
+						<local_schema short_desc="Rasm fayllarning miniatyurasi koʻrsatilishi">
+						</local_schema>
+					</entry>
+					<entry name="theme">
+						<local_schema short_desc="Joriy Nautilus mavzusi (qoʻllanilmaydi)">
+							<longdesc>Qoʻllaniladigan Nautilus mavzusi nomi. Bu xususiyat Nautilus 2.2 dan boshlab ishlatilmaydi. Uning oʻrniga nishoncha mavzusidan foydalaning.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="click_policy">
+						<local_schema short_desc="Fayllarni ishga tushirish/ochishda qoʻllaniladigan chertish turi">
+							<longdesc>Mavjud qiymatlar: fayllarni bir marta chertib ochish uchun &quot;single&quot;, ikki marta chertib ochish uchun &quot;double&quot;.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="show_directory_item_counts">
+						<local_schema short_desc="Jilddagi elementlar sonini koʻrsatilishi">
+						</local_schema>
+					</entry>
+					<entry name="enable_delete">
+						<local_schema short_desc="Darhol olib tashlashni yoqilishi">
+							<longdesc>Agar belgilansa, Nautilus faylni chiqindilar qutisiga tashlamasdan, butunlay olib tashlaydi. Bu imkoniyat xavfli boʻlganligi uchun ehtiyot boʻlib foydalaning.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="confirm_trash">
+						<local_schema short_desc="Fayllar olib tashlanayotganda yoki chiqindilar qutisi tozalanayotganda tasdiqlashni soʻralishi.">
+							<longdesc>Agar belgilangan boʻlsa, Nautilus faylni olib tashlashda yoki chiqindilar qutisini tozalashda tasdiqlashni soʻraydi.</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_open_folder">
+						<local_schema short_desc="&quot;Jildni ochish&quot; sifatida oʻrnatilgan x-content/* turlarining roʻyxati">
+						</local_schema>
+					</entry>
+					<entry name="media_autorun_x_content_ignore">
+						<local_schema short_desc="&quot;Hech narsa qilinmasin&quot; sifatida oʻrnatilgan x-content/* turlarining roʻyxati">
+						</local_schema>
+					</entry>
+					<entry name="media_automount_open">
+						<local_schema short_desc="Avto ulangan maʼlumot tashuvchi uchun jildni avtomatik ochilishi">
+						</local_schema>
+					</entry>
+					<entry name="media_automount">
+						<local_schema short_desc="Maʼlumot tashuvchini avtomatik ulanishi">
+						</local_schema>
+					</entry>
+					<entry name="always_use_location_entry">
+						<local_schema short_desc="Yoʻl paneli oʻrnida har doim manzilni kiritishdan foydalanish">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

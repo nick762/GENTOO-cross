@@ -1,0 +1,1481 @@
+<?xml version="1.0"?>
+<gconfschemafile>
+    <schemalist>
+		<schema>
+		<key>/schemas/apps/gnome_settings_daemon/plugins/housekeeping/free_percent_notify</key>
+	    <applyto>/apps/gnome_settings_daemon/plugins/housekeeping/free_percent_notify</applyto>
+	    <type>float</type>
+	    <default>0.05</default>
+	    <locale name="C">
+	        <short>Free percentage notify threshold</short>
+		<long>Percentage free space threshold for initial warning of low disk space.
+				If the percentage free space drops below this, a warning will be shown.</long>
+	    </locale>
+
+	    <locale name="as">
+	        <short>সতৰ্কতামূলক সূচনা উৎপন্ন কৰাৰ বাবে চিহ্নিত অৱশিষ্ট শতাংশৰ পৰিমাণৰ প্ৰান্তিক মাপ</short>
+		
+	    </locale>
+
+	    <locale name="ast">
+	        <short>Umbral de notificación pal espaciu llibre</short>
+		
+	    </locale>
+
+	    <locale name="bg">
+	        <short>Праг на свободното място, при който да се предупреждава</short>
+		<long>Процент свободно място за първо предупреждение за липса на място. Ако свободното място падне под този процент, ще се покаже предупреждение.</long>
+	    </locale>
+
+	    <locale name="bn">
+	        <short>সতর্কতামূলক সূচনা উৎপন্ন করার জন্য চিহ্নিত অবশিষ্ট শতাংশের পরিমাণের প্রান্তিক মাপ</short>
+		
+	    </locale>
+
+	    <locale name="bn_IN">
+	        <short>সতর্কতামূলক সূচনা উৎপন্ন করার জন্য চিহ্নিত অবশিষ্ট শতাংশের পরিমাণের প্রান্তিক মাপ</short>
+		
+	    </locale>
+
+	    <locale name="ca">
+	        <short>Llindar per notificar el percentatge lliure</short>
+		<long>El percentatge del llindar d&apos;espai lliure per a l&apos;avís inicial de poc espai de disc. Si el percentatge d&apos;espai lliure baixa per sota d&apos;aquest, es mostrarà un avís.</long>
+	    </locale>
+
+	    <locale name="ca@valencia">
+	        <short>Llindar per notificar el percentatge lliure</short>
+		<long>El percentatge del llindar d&apos;espai lliure per a l&apos;avís inicial de poc espai de disc. Si el percentatge d&apos;espai lliure baixa per sota d&apos;este, es mostrarà un avís.</long>
+	    </locale>
+
+	    <locale name="crh">
+	        <short>Boş yüzdesi bildirme eşiği</short>
+		
+	    </locale>
+
+	    <locale name="cs">
+	        <short>Práh upozorňování na procenta volného</short>
+		<long>Práh v procentech volného místa u prvního varování o docházejícím místě na disku. Pokud procento volného místa spadne pod tuto hodnotu, bude zobrazeno varování.</long>
+	    </locale>
+
+	    <locale name="da">
+	        <short>Påmindelsestærskel for fri plads i procent</short>
+		<long>Mængden af fri plads i procent, der giver anledning til første advarsel om lav diskplads. Hvis procentdelen af fri plads kommer under dette, vises en advarsel.</long>
+	    </locale>
+
+	    <locale name="de">
+	        <short>Freier Platz (in Prozent) zum Auslösen einer Warnung</short>
+		<long>Prozentsatz des freien Plattenplatzes als Auslöseschwelle für die erstmalige Warnung. Falls der Prozentsatz des freien Platzes unter diesen Wert fällt, wird eine Warnung angezeigt.</long>
+	    </locale>
+
+	    <locale name="el">
+	        <short>Κατώφλι ενημέρωσης για ελεύθερο χώρο σε ποσοστό</short>
+		<long>Το κατώτατο όριο του ποσοστού ελεύθερου χώρου στον δίσκο για την πρώτη προειδοποίηση εξάντλησης του χώρου στον δίσκο. Εάν το ποσοστό του ελεύθερου χώρου πέσει κάτω από αυτό, θα εμφανιστεί μια προειδοποίηση.</long>
+	    </locale>
+
+	    <locale name="en@shaw">
+	        <short>𐑓𐑮𐑰 𐑐𐑼𐑕𐑧𐑯𐑑𐑦𐑡 𐑯𐑴𐑑𐑦𐑓𐑲 𐑔𐑮𐑧𐑖𐑴𐑤𐑛</short>
+		<long>𐑐𐑼𐑕𐑧𐑯𐑑𐑦𐑡 𐑓𐑮𐑰 𐑕𐑐𐑱𐑕 𐑔𐑮𐑧𐑖𐑴𐑤𐑛 𐑓𐑹 𐑦𐑯𐑦𐑖𐑩𐑤 𐑢𐑹𐑯𐑦𐑙 𐑝 𐑤𐑴 𐑛𐑦𐑕𐑒 𐑕𐑐𐑱𐑕. 𐑦𐑓 𐑞 𐑐𐑼𐑕𐑧𐑯𐑑𐑦𐑡 𐑓𐑮𐑰 𐑕𐑐𐑱𐑕 𐑛𐑮𐑭𐑐𐑕 𐑚𐑩𐑤𐑴 𐑞𐑦𐑕, 𐑩 𐑢𐑹𐑯𐑦𐑙 𐑢𐑦𐑤 𐑚𐑰 𐑖𐑴𐑯.</long>
+	    </locale>
+
+	    <locale name="en_GB">
+	        <short>Free percentage notify threshold</short>
+		<long>Percentage free space threshold for initial warning of low disk space. If the percentage free space drops below this, a warning will be shown.</long>
+	    </locale>
+
+	    <locale name="es">
+	        <short>Umbral de notificación para el espacio libre</short>
+		<long>Porcentaje de umbral de espacio libre para la advertencia inicial de espacio bajo. Si el porcentaje de espacio es inferior al porcentaje se mostrará una advertencia.</long>
+	    </locale>
+
+	    <locale name="et">
+	        <short>Vaba kettaruumi protsendi teavituslävi</short>
+		<long>Vaba kettaruumi lävi protsentides, mil kuvatakse esimene hoiatus. Kui vaba kettaruumi jääb määratud protsendist vähem, kuvatakse hoiatus.</long>
+	    </locale>
+
+	    <locale name="eu">
+	        <short>Leku librearen ehunekoaren jakinarazpenaren atalasea</short>
+		<long>Leku librearen ehunekoaren atalasea, diskoan leku libre baxua dagoela abisu emateko. Leku librearen ehunekoa mugaren azpira erortzen bada, abisu bat erakutsiko da.</long>
+	    </locale>
+
+	    <locale name="fi">
+	        <short>Vapaan prosenttimäärän huomautusraja</short>
+		
+	    </locale>
+
+	    <locale name="fr">
+	        <short>Seuil d&apos;avertissement en pourcentage d&apos;espace libre</short>
+		<long>Seuil en pourcentage d&apos;espace libre pour l&apos;alerte initiale d&apos;espace disque faible. Si le pourcentage d&apos;espace libre tombe en dessous de ce seuil, une alerte sera affichée.</long>
+	    </locale>
+
+	    <locale name="gl">
+	        <short>Limiar de notificación de porcentaxe libre</short>
+		<long>Limiar de porcentaxe de espazo libre para iniciar o aviso de pouco espazo en disco. Se a porcentaxe de espazo libre cae por baixo del, mostrarase un aviso.</long>
+	    </locale>
+
+	    <locale name="gu">
+	        <short>મુક્ત ટકાવારી થ્રેશોલ્ડનું સૂચન કરે છે</short>
+		
+	    </locale>
+
+	    <locale name="he">
+	        <short>Free percentage notify threshold</short>
+		<long>Percentage free space threshold for initial warning of low disk space. If the percentage free space drops below this, a warning will be shown.</long>
+	    </locale>
+
+	    <locale name="hi">
+	        <short>मुक्त प्रतिशत सूचना थ्रेसहोल्ड</short>
+		
+	    </locale>
+
+	    <locale name="hu">
+	        <short>Szabad hely százalékos arányának értesítési küszöbe</short>
+		<long>Szabad hely százalékos arányának küszöbértéke az első figyelmeztetéshez a kevés szabad helyről. Ha a szabad terület százalékos aránya ez alá csökken, akkor megjelenik egy figyelmeztetés.</long>
+	    </locale>
+
+	    <locale name="id">
+	        <short>Ambang pemberitahuan persentase bebas</short>
+		<long>Ambang persentase ruang bebas untuk peringatan awal atas rendahnya ruang disk. Bila persentase ruang bebas kurang dari ini, suatu peringatan akan ditampilkan</long>
+	    </locale>
+
+	    <locale name="it">
+	        <short>Limite di percentuale libera per notifica</short>
+		<long>Limite di percentuale di spazio libero per l&apos;avvertimento iniziale di spazio disco in esaurimento. Se la percentuale di spazio libero scende sotto questo valore, viene mostrato un avvertimento.</long>
+	    </locale>
+
+	    <locale name="ja">
+	        <short>空きパーセンテージ通知の閾値</short>
+		<long>ディスクの残り容量が少なくなった時に最初に警告する閾値となる残り容量のパーセンテージ。残り容量のパーセンテージがこの値を下まわれば、警告が表示されます。</long>
+	    </locale>
+
+	    <locale name="kn">
+	        <short>ಮುಕ್ತ ಪ್ರತಿಶತ ಸೂಚನೆಯ ಮಿತಿ</short>
+		
+	    </locale>
+
+	    <locale name="ko">
+	        <short>남은 퍼센트 알림 값</short>
+		<long>디스크 공간이 부족할 때 처음 경고할 남은 공간 퍼센트 값. 남은 공간의 퍼센트 값이 이보다 떨어지면 경고를 표시합니다.</long>
+	    </locale>
+
+	    <locale name="lt">
+	        <short>Laisvos vietos nuošimčių pranešimo slenkstis</short>
+		<long>Laisvos vietos nuošimčių slenkstis pradiniam įspėjimui apie vietos trūkumą diske. Jei laisvos vietos bus mažiau negu nurodyta, bus parodytas įspėjimas.</long>
+	    </locale>
+
+	    <locale name="lv">
+	        <short>Brīvā vieta procentos, lai paziņotu</short>
+		
+	    </locale>
+
+	    <locale name="ml">
+	        <short>Free percentage notify threshold</short>
+		
+	    </locale>
+
+	    <locale name="mr">
+	        <short>मोकळी टक्केवारी सूचना मर्यादा</short>
+		
+	    </locale>
+
+	    <locale name="nb">
+	        <short>Terskel for varsling av ledig plass</short>
+		
+	    </locale>
+
+	    <locale name="nl">
+	        <short>Vrije ruimte percentagenotificatiedrempel</short>
+		
+	    </locale>
+
+	    <locale name="nn">
+	        <short>Terskelen for ledig plass i prosent før varsling</short>
+		
+	    </locale>
+
+	    <locale name="or">
+	        <short>ମୁକ୍ତ ପ୍ରତିଶତ ବିଜ୍ଞପ୍ତି</short>
+		
+	    </locale>
+
+	    <locale name="pa">
+	        <short>ਖਾਲੀ ਫੀਸਦੀ ਸੂਚਨਾ ਥਰੈਸ਼ਹੋਲਡ</short>
+		<long>ਘੱਟ ਡਿਸਕ ਥਾਂ ਦੀ ਸ਼ੁਰੂਆਤੀ ਚੇਤਾਵਨੀ ਦੇਣ ਲਈ ਫੀਸਦੀ ਖਾਲੀ ਥਾਂ ਥਰੈਸ਼ਹੋਲਡ ਹੈ। ਜੇ ਫੀਸਦੀ ਖਾਲੀ ਥਾਂ ਇਸ ਤੋਂ ਘੱਟ ਜਾਵੇਗੀ ਤਾਂ ਚੇਤਾਵਨੀ ਵੇਖਾਈ ਜਾਵੇਗੀ।</long>
+	    </locale>
+
+	    <locale name="pl">
+	        <short>Próg ostrzegania o wolnym miejscu na dysku w procentach</short>
+		<long>Próg wolnego miejsca w procentach dla początkowego ostrzeżenie o małej ilości miejsca na dysku. Jeśli procent wolnego miejsca spadnie poniżej tej wartości, wyświetlone zostanie ostrzeżenie.</long>
+	    </locale>
+
+	    <locale name="pt">
+	        <short>Tolerância de notificação de percentagem livre</short>
+		<long>Tolerância de percentagem de espaço livre para o aviso inicial de pouco espaço disponível. Se a percentagem de espaço livre descer abaixo desta, será apresentado um aviso.</long>
+	    </locale>
+
+	    <locale name="pt_BR">
+	        <short>Limiar de notificação de porcentagem livre</short>
+		<long>Limiar da percentagem de espaço livre para aviso inicial de pouco espaço em disco. Se a percentagem de espaço livre descer abaixo disto, um aviso será mostrado.</long>
+	    </locale>
+
+	    <locale name="ro">
+	        <short>Prag pentru notificare procent liber</short>
+		<long>Procentul pragului de spațiu liber pentru avertizarea inițială de spațiu liber redus pe disc. Dacă procentul spațiului liber scade sub această valoare, se va afișa o avertizare.</long>
+	    </locale>
+
+	    <locale name="ru">
+	        <short>Процент свободного места для предупреждения</short>
+		<long>Порог (в процентах) для отображения первого оповещения о нехватке свободного места. Если процент свободного места на диске опускается ниже этого значения, то будет показано предупреждение.</long>
+	    </locale>
+
+	    <locale name="sk">
+	        <short>Prah oznamovania percent voľného miesta</short>
+		
+	    </locale>
+
+	    <locale name="sl">
+	        <short>Prag obveščanja o deležu prostora na voljo</short>
+		<long>Odstotek prostora, ki določa prag za začetek obveščanja o zasedenosti diska. V primeru, da odstotek prostora pade pod tu določeno vrednost, se pokaže opozorilo.</long>
+	    </locale>
+
+	    <locale name="sr">
+	        <short>Праг обавештења о проценту слободног простора</short>
+		<long>Праг заузетости у процентима при коме се исписују упозорења о мало слободног простора на диску. Уколико проценат падне испод ове вредности, упозорење ће бити приказано.</long>
+	    </locale>
+
+	    <locale name="sr@latin">
+	        <short>Prag obaveštenja o procentu slobodnog prostora</short>
+		<long>Prag zauzetosti u procentima pri kome se ispisuju upozorenja o malo slobodnog prostora na disku. Ukoliko procenat padne ispod ove vrednosti, upozorenje će biti prikazano.</long>
+	    </locale>
+
+	    <locale name="sv">
+	        <short>Tröskelvärde för notifiering om ledigt utrymme (procent)</short>
+		<long>Tröskelvärde för ledigt utrymme (procent) för initial varning för lågt diskutrymme. Om procentandelen ledigt utrymme sjunker under detta värde så kommer en varning att visas.</long>
+	    </locale>
+
+	    <locale name="ta">
+	        <short>அறிவிப்பு விளிம்புக்கு காலி சதவிகிதம்.</short>
+		<long>வட்டு இடம் குறையும் போது முதல் முறை எச்சரிக்க இட விளிம்பின் சதவிகிதம். இதற்குக்கீழே காலி இடம் குறைந்தால் அறிவிப்பு வெளியாகும்.</long>
+	    </locale>
+
+	    <locale name="te">
+	        <short>ఉచిత శాతము తెలుపు త్రెష్‌హోల్డు</short>
+		
+	    </locale>
+
+	    <locale name="th">
+	        <short>ร้อยละขีดเริ่มของที่ว่างที่จะเริ่มแจ้งเหตุ</short>
+		
+	    </locale>
+
+	    <locale name="tr">
+	        <short>Boş yüzdesi bildirme eşiği</short>
+		
+	    </locale>
+
+	    <locale name="uk">
+	        <short>Поріг у відсотках сповіщення про брак вільного місця</short>
+		
+	    </locale>
+
+	    <locale name="vi">
+	        <short>Ngưỡng thông báo phần trăm vùng trống</short>
+		
+	    </locale>
+
+	    <locale name="zh_CN">
+	        <short>触发通知的最低可用百分比</short>
+		<long>触发低硬盘空间初次警告的最低可用空间百分比。如果可用空间的百分比低于该值，将显示一个警告</long>
+	    </locale>
+
+	    <locale name="zh_HK">
+	        <short>可用空間百分比通知界限</short>
+		<long>開始警告磁碟空間不足的剩餘空間百分比界限。如果可用空間的百分比低於這個值就會顯示警告。</long>
+	    </locale>
+
+	    <locale name="zh_TW">
+	        <short>可用空間百分比通知界限</short>
+		<long>開始警告磁碟空間不足的剩餘空間百分比界限。如果可用空間的百分比低於這個值就會顯示警告。</long>
+	    </locale>
+		</schema>
+		
+		<schema>
+		<key>/schemas/apps/gnome_settings_daemon/plugins/housekeeping/free_percent_notify_again</key>
+	    <applyto>/apps/gnome_settings_daemon/plugins/housekeeping/free_percent_notify_again</applyto>
+	    <type>float</type>
+	    <default>0.01</default>
+	    <locale name="C">
+	        <short>Subsequent free percentage notify threshold</short>
+		<long>Specify the percentage that the free disk space should reduce by before issuing a subsequent warning.</long>
+	    </locale>
+
+	    <locale name="as">
+	        <short>পৰবৰ্তী সূচনাবাৰ্তাৰ ক্ষেত্ৰত প্ৰযোজ্য ৰিক্ত স্থানৰ শতাংশৰ প্ৰান্তিক মাপ</short>
+		
+	    </locale>
+
+	    <locale name="ast">
+	        <short>Umbrales de notificación d&apos;espaciu llibre subsecuentes</short>
+		
+	    </locale>
+
+	    <locale name="bg">
+	        <short>Праг за повторно предупреждение за свободното дисково пространство</short>
+		<long>Процент, с който трябва да намалее свободното пространство на диска, преди да се покаже ново предупреждение.</long>
+	    </locale>
+
+	    <locale name="bn">
+	        <short>পরবর্তী সূচনাবার্তার ক্ষেত্রে প্রযোজ্য ফাঁকা স্থানের শতাংশের প্রান্তিক মাপ</short>
+		
+	    </locale>
+
+	    <locale name="bn_IN">
+	        <short>পরবর্তী সূচনাবার্তার ক্ষেত্রে প্রযোজ্য ফাঁকা স্থানের শতাংশের প্রান্তিক মাপ</short>
+		
+	    </locale>
+
+	    <locale name="ca">
+	        <short>Llindar de notificació de percentatge lliure subseqüent</short>
+		<long>Especifica el percentatge d&apos;espai de disc lliure que s&apos;hauria de reduir abans de mostrar més avisos.</long>
+	    </locale>
+
+	    <locale name="ca@valencia">
+	        <short>Llindar de notificació de percentatge lliure subseqüent</short>
+		<long>Especifica el percentatge d&apos;espai de disc lliure que s&apos;hauria de reduir abans de mostrar més avisos.</long>
+	    </locale>
+
+	    <locale name="crh">
+	        <short>Ard arda boş yüzdesi bildirim eşiği</short>
+		
+	    </locale>
+
+	    <locale name="cs">
+	        <short>Práh upozorňování na procenta volného místa</short>
+		<long>Zadejte procentuální hodnotu, o kterou by se mělo snížit volné místo na disku před vysláním následného varování.</long>
+	    </locale>
+
+	    <locale name="da">
+	        <short>Efterfølgende påmindelsestærskel for fri plads i procent</short>
+		<long>Angiv procentdelen hvormed mængden af fri plads skal reduceres yderligere, før der bliver givet endnu en advarsel.</long>
+	    </locale>
+
+	    <locale name="de">
+	        <short>Schwellwert in Prozent für wiederholte Warnungen</short>
+		<long>Geben Sie den Prozentsatz des freien Plattenplatzes an, der unterschritten werden muss, um wiederholte Warnungen auszulösen.</long>
+	    </locale>
+
+	    <locale name="el">
+	        <short>Το επόμενο ελεύθερο όριο σε ποσοστό για ενημέρωση</short>
+		<long>Καθορίστε το ποσοστό που ο ελεύθερος χώρος του δίσκου θα πρέπει να μειωθεί πριν εκδοθεί η επόμενη προειδοποίηση.</long>
+	    </locale>
+
+	    <locale name="en@shaw">
+	        <short>𐑕𐑳𐑚𐑕𐑩𐑒𐑢𐑩𐑯𐑑 𐑓𐑮𐑰 𐑐𐑼𐑕𐑧𐑯𐑑𐑦𐑡 𐑯𐑴𐑑𐑦𐑓𐑲 𐑔𐑮𐑧𐑖𐑴𐑤𐑛</short>
+		<long>𐑕𐑐𐑧𐑕𐑦𐑓𐑲 𐑞 𐑐𐑼𐑕𐑧𐑯𐑑𐑦𐑡 𐑞𐑨𐑑 𐑞 𐑓𐑮𐑰 𐑛𐑦𐑕𐑒 𐑕𐑐𐑱𐑕 𐑖𐑫𐑛 𐑮𐑦𐑛𐑿𐑕 𐑚𐑲 𐑚𐑦𐑓𐑹 𐑦𐑕𐑿𐑦𐑙 𐑩 𐑕𐑳𐑚𐑕𐑩𐑒𐑢𐑩𐑯𐑑 𐑢𐑹𐑯𐑦𐑙.</long>
+	    </locale>
+
+	    <locale name="en_GB">
+	        <short>Subsequent free percentage notify threshold</short>
+		<long>Specify the percentage that the free disk space should reduce by before issuing a subsequent warning.</long>
+	    </locale>
+
+	    <locale name="es">
+	        <short>Umbrales de notificación de espacio libre subsecuentes</short>
+		<long>Especificar el porcentaje de disco libre que debe reducirse antes de mostrar una advertencia subsecuente.</long>
+	    </locale>
+
+	    <locale name="et">
+	        <short>Vaba kettaruumi protsendi muutus enne kordushoiatust</short>
+		<long>Mitme protsendini peab vaba kettaruum enne kordushoiatuse näitamist kahanema.</long>
+	    </locale>
+
+	    <locale name="eu">
+	        <short>Leku librearen ehunekoaren jakinarazpenaren atalasearen geroztiko abisuen errepikapena</short>
+		<long>Diskoaren leku libreak murriztu beharko lukeen ehunekoa zehaztu beharko luke dagokion geroztiko abisua jaurti aurretik.</long>
+	    </locale>
+
+	    <locale name="fi">
+	        <short>Seuraavan huomautuksen vapaan prosenttiosuuden raja</short>
+		
+	    </locale>
+
+	    <locale name="fr">
+	        <short>Seuil de répétition d&apos;avertissement en pourcentage d&apos;espace libre</short>
+		<long>Indique le pourcentage de réduction d&apos;espace disque avant d&apos;émettre un nouvel avertissement.</long>
+	    </locale>
+
+	    <locale name="gl">
+	        <short>Limiar de notificación de porcentaxe libre subsecuente</short>
+		<long>Especificar a porcentaxe do espazo libre que se debería reducir antes de producir o aviso subsecuente</long>
+	    </locale>
+
+	    <locale name="gu">
+	        <short>અનુગામી મુક્ત ટકાવારી થ્રેશોલ્ડનુ સૂચન કરે છે</short>
+		
+	    </locale>
+
+	    <locale name="he">
+	        <short>Subsequent free percentage notify threshold</short>
+		<long>Specify the percentage that the free disk space should reduce by before issuing a subsequent warning.</long>
+	    </locale>
+
+	    <locale name="hi">
+	        <short>उत्तरवर्ती मुक्त प्रतिशत अधिसूचना थ्रेसहोल्ड</short>
+		
+	    </locale>
+
+	    <locale name="hu">
+	        <short>Szabad hely fogyásáról szóló újabb értesítés küszöbértéke</short>
+		<long>Adja meg azt a százalékos arányt, amelyet a szabad lemezterületnek el kell érnie újabb figyelmeztetés kiadásához.</long>
+	    </locale>
+
+	    <locale name="id">
+	        <short>Ambang pemberitahun persentase bebas selanjutnya</short>
+		<long>Nyatakan persentase berkurangnya ruang disk bebas sebelum menerbitkan peringatan selanjutnya </long>
+	    </locale>
+
+	    <locale name="it">
+	        <short>Limite di successiva percentuale libera per notifica</short>
+		<long>Specifica di quanto lo spazio libero su disco si debba ridurre in percentuale prima di emettere un ulteriore avvertimento.</long>
+	    </locale>
+
+	    <locale name="ja">
+	        <short>空き容量の連続通知のパーセンテージの閾値</short>
+		<long>空き容量の警告を連続して出す前に、何パーセント空き容量を減らさなくてはならないかを指定</long>
+	    </locale>
+
+	    <locale name="kn">
+	        <short>ಆನಂತರದ ಮುಕ್ತ ಪ್ರತಿಶತ ಸೂಚನಾ ಮಿತಿ</short>
+		
+	    </locale>
+
+	    <locale name="ko">
+	        <short>다음 남은 공간 퍼센트 알림 값</short>
+		<long>다음 경고를 표시할 때 남은 공간이 줄어들어야 하는 퍼센트 값을 지정합니다.</long>
+	    </locale>
+
+	    <locale name="lt">
+	        <short>Tolesnė laisvos vietos nuošimčių pranešimo riba</short>
+		<long>Nurodykite procentais, kiek turi sumažėti laisva disko vieta prieš parodant tolesnį įspėjimą.</long>
+	    </locale>
+
+	    <locale name="lv">
+	        <short>Sekojošo paziņojumu slieksnis brīvās vietas procentos </short>
+		
+	    </locale>
+
+	    <locale name="ml">
+	        <short>Subsequent free percentage notify threshold</short>
+		
+	    </locale>
+
+	    <locale name="mr">
+	        <short>परस्पर रिमाकी टक्केवारी सूचना मर्यादा</short>
+		
+	    </locale>
+
+	    <locale name="nl">
+	        <short>Volgende vrije ruimte percentagenotificatiedrempel</short>
+		
+	    </locale>
+
+	    <locale name="nn">
+	        <short>Terskelen for følgjande ledig plass i prosent før varsling</short>
+		
+	    </locale>
+
+	    <locale name="or">
+	        <short>ପରବର୍ତ୍ତୀ ମୁକ୍ତ ପ୍ରତିଶତ ବିଜ୍ଞପ୍ତି ଦ୍ୱାର</short>
+		
+	    </locale>
+
+	    <locale name="pa">
+	        <short>ਅਗਲਾ ਖਾਲੀ ਫੀਸਦੀ ਸੂਚਨਾ ਥਰੈਸ਼ਹੋਲਡ</short>
+		<long>ਫੀਸਦੀ ਦਿਓ, ਜਿਸ ਲਈ ਖਾਲੀ ਡਿਸਕ ਥਾਂ ਅਗਲੀ ਚੇਤਾਵਨੀ ਤੋਂ ਪਹਿਲਾਂ ਘੱਟ ਜਾਵੇ।</long>
+	    </locale>
+
+	    <locale name="pl">
+	        <short>Próg powiadamiania o małej ilości wolnego miejsca na dysku przed kolejnym ostrzeżeniem, w procentach</short>
+		<long>Określenie procentu, o jaką wolne miejsce powinno się zmniejszyć przed wyświetleniem kolejnego ostrzeżenia.</long>
+	    </locale>
+
+	    <locale name="pt">
+	        <short>Tolerância de notificação subsequente de percentagem livre</short>
+		<long>Especifique a percentagem que deverá diminuir de espaço livre para que seja emitido novo aviso.</long>
+	    </locale>
+
+	    <locale name="pt_BR">
+	        <short>Limiar subsequente do notificador de percentagem livre</short>
+		<long>Especifique a percentagem que o espaço livre em disco deve reduzir antes de emitir um aviso subsequente.</long>
+	    </locale>
+
+	    <locale name="ro">
+	        <short>Prag procentaj spațiu liber pentru notificare subsecventă</short>
+		<long>Specifică procentajul de reducere a spațiului liber înainte de a trimite un o nouă avertizare.</long>
+	    </locale>
+
+	    <locale name="ru">
+	        <short>Процент свободного места для повторного оповещения</short>
+		<long>Укажите процент свободного места, при достижении ниже которого нужно отобразить повторное предупреждение</long>
+	    </locale>
+
+	    <locale name="sk">
+	        <short>Prah nasledujúceho oznamovania percent voľného miesta</short>
+		
+	    </locale>
+
+	    <locale name="sl">
+	        <short>Prag obveščanja o deležu prostora na voljo</short>
+		<long>Določitev zmanjšanega odstotka prostora na disku, preden se prikaže opozorilo.</long>
+	    </locale>
+
+	    <locale name="sr">
+	        <short>Праг за поновног обавештења о проценту слободног простора</short>
+		<long>Одредите колико процента од слободног простора треба попунити пре него што се поново испише упозорење.</long>
+	    </locale>
+
+	    <locale name="sr@latin">
+	        <short>Prag za ponovnog obaveštenja o procentu slobodnog prostora</short>
+		<long>Odredite koliko procenta od slobodnog prostora treba popuniti pre nego što se ponovo ispiše upozorenje.</long>
+	    </locale>
+
+	    <locale name="sv">
+	        <short>Tröskelvärde för efterföljande varning om lågt diskutrymme (procent)</short>
+		<long>Ange procentandelen som det lediga diskutrymme ska minskas med innan en efterföljande varning ska visas.</long>
+	    </locale>
+
+	    <locale name="ta">
+	        <short>அடுத்த காலி சதவிகித அறிவிப்பு விளிம்பு</short>
+		<long>அடுத்த எச்சரிக்கைக்கு முன் குறைய வேண்டிய வட்டு இடத்தை சதவிகிதமாக குறிக்கவும்.</long>
+	    </locale>
+
+	    <locale name="te">
+	        <short>అనంతరం పంపు ఖాళీ శాతము తెలిపే త్రెష్‌హోల్డు</short>
+		
+	    </locale>
+
+	    <locale name="th">
+	        <short>ร้อยละขีดเริ่มของการแจ้งเหตุเกี่ยวกับเนื้อที่ว่างครั้งต่อไป</short>
+		
+	    </locale>
+
+	    <locale name="tr">
+	        <short>Ard arda boş yüzdesi bildirim eşiği</short>
+		
+	    </locale>
+
+	    <locale name="uk">
+	        <short>Поріг у відсотках для сповіщення про брак вільного місця</short>
+		
+	    </locale>
+
+	    <locale name="vi">
+	        <short>Ngưỡng thông báo phần trăm vùng trống lần sau</short>
+		
+	    </locale>
+
+	    <locale name="zh_CN">
+	        <short>触发通知的最低后续可用空间百分比</short>
+		<long>在发布一个后续警告之前，指定应减少的可用硬盘空间百分比。</long>
+	    </locale>
+
+	    <locale name="zh_HK">
+	        <short>後續可用百分比通知門檻</short>
+		<long>指定可用磁碟空間減少時發出後續警告前的百分比。</long>
+	    </locale>
+
+	    <locale name="zh_TW">
+	        <short>後續可用百分比通知門檻</short>
+		<long>指定可用磁碟空間減少時發出後續警告前的百分比。</long>
+	    </locale>
+		</schema>
+		
+		<schema>
+		<key>/schemas/apps/gnome_settings_daemon/plugins/housekeeping/free_size_gb_no_notify</key>
+	    <applyto>/apps/gnome_settings_daemon/plugins/housekeeping/free_size_gb_no_notify</applyto>
+	    <type>int</type>
+	    <default>2</default>
+	    <locale name="C">
+	        <short>Free space no notify threshold</short>
+		<long>Specify an amount in GB. If the amount of free space is more than this, no warning will be shown.</long>
+	    </locale>
+
+	    <locale name="as">
+	        <short>সতৰ্কতামূলক সূচনা উৎপন্ন নকৰাৰ বাবে চিহ্নিত অৱশিষ্ট শতাংশৰ পৰিমাণৰ প্ৰান্তিক মাপ</short>
+		
+	    </locale>
+
+	    <locale name="ast">
+	        <short>Umbral de notificación pa nun notificar espaciu llibre</short>
+		
+	    </locale>
+
+	    <locale name="bg">
+	        <short>Праг на свободното място, при който да не се предупреждава</short>
+		<long>Обем в GB. Ако наличното свободно място е повече, няма да се показва предупреждение.</long>
+	    </locale>
+
+	    <locale name="bn">
+	        <short>সতর্কতামূলক সূচনা উৎপন্ন না করার জন্য চিহ্নিত অবশিষ্ট শতাংশের পরিমাণের প্রান্তিক মাপ</short>
+		
+	    </locale>
+
+	    <locale name="bn_IN">
+	        <short>সতর্কতামূলক সূচনা উৎপন্ন না করার জন্য চিহ্নিত অবশিষ্ট শতাংশের পরিমাণের প্রান্তিক মাপ</short>
+		
+	    </locale>
+
+	    <locale name="ca">
+	        <short>Llindar per no notificar el percentatge lliure</short>
+		<long>Especifica una quantitat en GB. Si l&apos;espai lliure és més gran, no es mostrarà cap avís.</long>
+	    </locale>
+
+	    <locale name="ca@valencia">
+	        <short>Llindar per no notificar el percentatge lliure</short>
+		<long>Especifica una quantitat en GB. Si l&apos;espai lliure és més gran, no es mostrarà cap avís.</long>
+	    </locale>
+
+	    <locale name="crh">
+	        <short>Boş alan bildirim eşiği</short>
+		
+	    </locale>
+
+	    <locale name="cs">
+	        <short>Práh neupozorňování na volné místo</short>
+		<long>Zadejte velikost v GB. Je-li množství volného místa větší než tato hodnota, nebude zobrazeno žádné varování.</long>
+	    </locale>
+
+	    <locale name="da">
+	        <short>Tærskel for ikke at give påmindelser om fri plads</short>
+		<long>Angiv en pladsmængde i GB. Hvis mængden af fri plads er større end denne, vil ingen advarsel blive vist.</long>
+	    </locale>
+
+	    <locale name="de">
+	        <short>Freier Platz zum Auslösen einer Warnung</short>
+		<long>Geben Sie eine Größe in GB an. Falls die Menge des freien Plattenplatzes größer als dieser Wert ist, wird keine Warnung angezeigt.</long>
+	    </locale>
+
+	    <locale name="el">
+	        <short>Κατώφλι μη ενημέρωσης για ελεύθερο χώρο</short>
+		<long>Ορίστε ένα μέγεθος σε GB. Αν το μέγεθος του ελεύθερου χώρου είναι μεγαλύτερο από αυτό, δεν θα εμφανιστεί καμία προειδοποίηση.</long>
+	    </locale>
+
+	    <locale name="en@shaw">
+	        <short>𐑓𐑮𐑰 𐑕𐑐𐑱𐑕 𐑯𐑴 𐑯𐑴𐑑𐑦𐑓𐑲 𐑔𐑮𐑧𐑖𐑴𐑤𐑛</short>
+		<long>𐑕𐑐𐑧𐑕𐑦𐑓𐑲 𐑩𐑯 𐑩𐑥𐑬𐑯𐑑 𐑦𐑯 GB. 𐑦𐑓 𐑞 𐑩𐑥𐑬𐑯𐑑 𐑝 𐑓𐑮𐑰 𐑕𐑐𐑱𐑕 𐑦𐑟 𐑥𐑹 𐑞𐑨𐑯 𐑞𐑦𐑕, 𐑯𐑴 𐑢𐑹𐑯𐑦𐑙 𐑢𐑦𐑤 𐑚𐑰 𐑖𐑴𐑯.</long>
+	    </locale>
+
+	    <locale name="en_GB">
+	        <short>Free space no notify threshold</short>
+		<long>Specify an amount in GB. If the amount of free space is more than this, no warning will be shown.</long>
+	    </locale>
+
+	    <locale name="es">
+	        <short>Umbral de notificación para no notificar el espacio libre</short>
+		<long>Especificar el tamaño en GiB. Si el espacio libre es mayor que esto, no se mostrará ninguna advertencia.</long>
+	    </locale>
+
+	    <locale name="et">
+	        <short>Vaba kettaruumi teavitusläve piir</short>
+		<long>Määra maht GB-des. Kui vaba ruumi on rohkem, kui see väärtus, ei näidata mingit hoiatust.</long>
+	    </locale>
+
+	    <locale name="eu">
+	        <short>Leku librea ez jakinarazteko atalasea</short>
+		<long>Zehaztu kopurua GBtan. Leku librearen kopurua hori baino handiagoa bada, ez da abisurik erakutsiko.</long>
+	    </locale>
+
+	    <locale name="fi">
+	        <short>Vapaan tilan ei-huomautusta-raja</short>
+		
+	    </locale>
+
+	    <locale name="fr">
+	        <short>Seuil de non avertissement en Go d&apos;espace libre</short>
+		<long>Indique une taille en Go. Si la quantité d&apos;espace disque disponible est supérieure à ce paramètre, aucune alerte ne sera affichée.</long>
+	    </locale>
+
+	    <locale name="gl">
+	        <short>Limiar de non notificación de espazo libre</short>
+		<long>Especificar unha cantidade en GB. Se a cantidade de espazo libre é máis ca esta, non se mostrará ningún aviso.</long>
+	    </locale>
+
+	    <locale name="gu">
+	        <short>મુક્ત જગ્યા થ્રેશોલ્ડનું સૂચન કરતુ નથી</short>
+		
+	    </locale>
+
+	    <locale name="he">
+	        <short>Free space no notify threshold</short>
+		<long>Specify an amount in GB. If the amount of free space is more than this, no warning will be shown.</long>
+	    </locale>
+
+	    <locale name="hi">
+	        <short>मुक्त स्थान कोई सूचना थ्रेसहोल्ड नहीं</short>
+		
+	    </locale>
+
+	    <locale name="hu">
+	        <short>Szabad hely értesítés letiltásának küszöbe</short>
+		<long>Adjon meg egy értéket GB-ban. Ha a szabad hely mennyisége ennél több, nem jelenik meg figyelmeztetés.</long>
+	    </locale>
+
+	    <locale name="id">
+	        <short>Ambang tanpa pemberitahuan ruang bebas</short>
+		<long>Nyatakan banyaknya dalam GB. Bila ruang bebas lebih dari ini, tak ada peringatan yang ditampilkan.</long>
+	    </locale>
+
+	    <locale name="it">
+	        <short>Limite di spazio libero senza notifica</short>
+		<long>Specifica una quantità in GB. Se la quantità di spazio libero è maggiore di questo valore, non viene mostrato alcun avvertimento.</long>
+	    </locale>
+
+	    <locale name="ja">
+	        <short>空き容量の警告の閾値</short>
+		<long>容量をGB単位で指定します。空き容量がこの値を上まわれば、警告は表示されません。</long>
+	    </locale>
+
+	    <locale name="kn">
+	        <short>ಮುಕ್ತ ಸ್ಥಳದ ಸೂಚನೆ ಇರದ ಮಿತಿ</short>
+		
+	    </locale>
+
+	    <locale name="ko">
+	        <short>남은 용량 알리지 않음 값</short>
+		<long>용량을 GB 단위로 지정합니다. 남은 공간이 이보다 많으면 경고를 표시하지 않습니다.</long>
+	    </locale>
+
+	    <locale name="lt">
+	        <short>Laisvos vietos nuošimčių nepranešinėjimo slenkstis</short>
+		<long>Nurodykite kiekį gigabaitais. Jei laisvos vietos skaičius didesnis, pranešimas nebus rodomas.</long>
+	    </locale>
+
+	    <locale name="lv">
+	        <short>Brīvās vietas slieksnis, lai paziņotu</short>
+		
+	    </locale>
+
+	    <locale name="ml">
+	        <short>Free space no notify threshold</short>
+		
+	    </locale>
+
+	    <locale name="mr">
+	        <short>मोकळी जागा क्रमांक सूचना मर्यादा</short>
+		
+	    </locale>
+
+	    <locale name="nb">
+	        <short>Terskel for å stoppe varsling om ledig plass</short>
+		
+	    </locale>
+
+	    <locale name="nl">
+	        <short>Vrije ruimte geen notificatiedrempel</short>
+		
+	    </locale>
+
+	    <locale name="nn">
+	        <short>Terskelen for ledig plass med inga varsling</short>
+		
+	    </locale>
+
+	    <locale name="or">
+	        <short>ମୁକ୍ତ ସ୍ଥାନ କୌଣସି ବିଜ୍ଞପ୍ତି ନାହିଁ</short>
+		
+	    </locale>
+
+	    <locale name="pa">
+	        <short>ਖਾਲੀ ਥਾਂ ਨਾ ਸੂਚਨਾ ਥਰੈਸ਼ਹੋਲਡ</short>
+		<long>ਮਾਤਰਾ GB ਵਿੱਚ ਦਿਓ। ਜੇ ਖਾਲੀ ਥਾਂ ਦੀ ਮਾਤਰਾ ਇਸ ਤੋਂ ਵੱਧ ਹੋਵੇ ਤਾਂ ਕੋਈ ਵੀ ਚੇਤਾਵਨੀ ਨਹੀਂ ਵੇਖਾਈਗੀ।</long>
+	    </locale>
+
+	    <locale name="pl">
+	        <short>Próg nieostrzegania o wolnym miejscu na dysku</short>
+		<long>Określenie liczby w gigabajtach. Jeśli ilość wolnego miejsca jest większa niż ta wartość, żadne ostrzeżenie nie zostanie wyświetlone.</long>
+	    </locale>
+
+	    <locale name="pt">
+	        <short>Tolerância de notificação de espaço livre</short>
+		<long>Especifique uma quantidade em GB. Se a quantidade de espaço livre for superior a esta, não será apresentado qualquer aviso.</long>
+	    </locale>
+
+	    <locale name="pt_BR">
+	        <short>Nenhum limiar de notificação de espaço livre</short>
+		<long>Especifique uma quantia em GB. Se a quantidade de espaço livre é mais do que isso, nenhum aviso será mostrado.</long>
+	    </locale>
+
+	    <locale name="ro">
+	        <short>Prag fără notificare procent liber</short>
+		<long>Specifică o valoare în GB. Dacă spațiul liber este mai mare, nu se va afișa nicio avertizare.</long>
+	    </locale>
+
+	    <locale name="ru">
+	        <short>Объем свободного места для предупреждения</short>
+		<long>Укажите объём в ГБ. Если объём свободного места больше, то предупреждение не будет показано.</long>
+	    </locale>
+
+	    <locale name="sk">
+	        <short>Prah neoznamovania voľného miesta</short>
+		
+	    </locale>
+
+	    <locale name="sl">
+	        <short>Prag obveščanja o deležu zasedenega prostora</short>
+		<long>Določitev prostora v GB. V primeru, da je prosto manj kot je tu določena vrednost v GB, se pokaže opozorilo.</long>
+	    </locale>
+
+	    <locale name="sr">
+	        <short>Праг обавештења о слободном простору</short>
+		<long>Одредите величину у гигабајтима. Упозорења се неће приказивати уколико је слободан простор већи од ове вредности.</long>
+	    </locale>
+
+	    <locale name="sr@latin">
+	        <short>Prag obaveštenja o slobodnom prostoru</short>
+		<long>Odredite veličinu u gigabajtima. Upozorenja se neće prikazivati ukoliko je slobodan prostor veći od ove vrednosti.</long>
+	    </locale>
+
+	    <locale name="sv">
+	        <short>Tröskelvärde för notifiering om ledigt utrymme (utrymme)</short>
+		<long>Ange en mängd i GB. Om mängden ledigt utrymme är mer än detta så kommer ingen varning att visas.</long>
+	    </locale>
+
+	    <locale name="ta">
+	        <short>அறிவிப்பு தவிர்க்க  விளிம்புக்கு காலி இடம்.</short>
+		<long>இடத்தை ஜிபி அளவில் குறிக்கவும். இதற்கு அதிகமாக காலி இடம் இருப்பின் எச்சரிக்கை காட்டப்பட மாட்டாது. </long>
+	    </locale>
+
+	    <locale name="te">
+	        <short>ఉచిత జాగా తెలుపబడిన త్రెష్‌హోల్డు లేదు</short>
+		
+	    </locale>
+
+	    <locale name="th">
+	        <short>เนื้อที่ว่างขีดเริ่มที่จะไม่แจ้งเหตุ</short>
+		
+	    </locale>
+
+	    <locale name="tr">
+	        <short>Boş alan bildirim eşiği</short>
+		
+	    </locale>
+
+	    <locale name="uk">
+	        <short>Поріг сповіщення про брак вільного місця</short>
+		
+	    </locale>
+
+	    <locale name="vi">
+	        <short>Ngưỡng thông báo không còn chỗ chứa</short>
+		
+	    </locale>
+
+	    <locale name="zh_CN">
+	        <short>不触发通知的最低可用空间</short>
+		<long>以 GB 为单位指定某个量。如果可用空间超过该值，将不再显示警告。</long>
+	    </locale>
+
+	    <locale name="zh_HK">
+	        <short>可用空間不通知界限</short>
+		<long>指定一個 GB 數值。如果可用空間大於此數值，就不會顯示警告。</long>
+	    </locale>
+
+	    <locale name="zh_TW">
+	        <short>可用空間不通知界限</short>
+		<long>指定一個 GB 數值。如果可用空間大於此數值，就不會顯示警告。</long>
+	    </locale>
+		</schema>
+		
+		<schema>
+		<key>/schemas/apps/gnome_settings_daemon/plugins/housekeeping/min_notify_period</key>
+	    <applyto>/apps/gnome_settings_daemon/plugins/housekeeping/min_notify_period</applyto>
+	    <type>int</type>
+	    <default>10</default>
+	    <locale name="C">
+	        <short>Minimum notify period for repeated warnings</short>
+		<long>Specify a time in minutes. Subsequent warnings for a volume will not appear more often than this period.</long>
+	    </locale>
+
+	    <locale name="as">
+	        <short>নিয়মিত সৰ্তকতামূলক বাৰ্তাৰ ক্ষেত্ৰত সৰ্বনিম্ন সূচনাপ্ৰদানৰ সময়কাল</short>
+		<long>মিনিট অনুযায়ী সময় ধাৰ্য কৰক । কোনো ভলিউম সম্পৰ্কে সতৰ্কতামূলক বাৰ্তাসমূহ প্ৰদৰ্শন এই সময়ৰ অবকাল অবধি সীমিত ৰখা হ&apos;ব ।</long>
+	    </locale>
+
+	    <locale name="ast">
+	        <short>Periodu mínimu de notificación p&apos;avisos repetíos</short>
+		<long>Especificar tiempu en minutos. Los subsecuentes avisos pa un volume nun apaecerán más de siguío qu&apos;esti periodu.</long>
+	    </locale>
+
+	    <locale name="bg">
+	        <short>Минимален интервал между предупрежденията</short>
+		<long>Интервал в минути. Повторните предупреждения за файловата система ще се появяват не по-често от този период.</long>
+	    </locale>
+
+	    <locale name="bn">
+	        <short>নিয়মিত সর্তকতামূলক বার্তার ক্ষেত্রে সর্বনিম্ন সূচনাপ্রদানের সময়কাল</short>
+		<long>মিনিট অনুযায়ী সময় ধার্য করুন। কোনো ভলিউম সম্পর্কে সতর্কতামূলক বার্তাগুলি প্রদর্শন এই সময়ের অবকাল অবধি সীমিত রাখা হবে।</long>
+	    </locale>
+
+	    <locale name="bn_IN">
+	        <short>নিয়মিত সর্তকতামূলক বার্তার ক্ষেত্রে সর্বনিম্ন সূচনাপ্রদানের সময়কাল</short>
+		<long>মিনিট অনুযায়ী সময় ধার্য করুন। কোনো ভলিউম সম্পর্কে সতর্কতামূলক বার্তাগুলি প্রদর্শন এই সময়ের অবকাল অবধি সীমিত রাখা হবে।</long>
+	    </locale>
+
+	    <locale name="ca">
+	        <short>Període mínim entre notificacions d&apos;avisos repetits</short>
+		<long>Especifica un temps en minuts. Els pròxims avisos per a un volum no apareixeran abans d&apos;aquest període de temps.</long>
+	    </locale>
+
+	    <locale name="ca@valencia">
+	        <short>Període mínim entre notificacions d&apos;avisos repetits</short>
+		<long>Especifica un temps en minuts. Els pròxims avisos per a un volum no apareixeran abans d&apos;este període de temps.</long>
+	    </locale>
+
+	    <locale name="crh">
+	        <short>Tekrarlanan uyarılar için azami süre</short>
+		<long>Dakika olarak bir süre belirleyin. Bir birim için birbirini izleyen uyarılar bu dönemden daha sık gösterilmeyecek.</long>
+	    </locale>
+
+	    <locale name="cs">
+	        <short>Minimální doba upozorňování u opakovaných varování</short>
+		<long>Zadejte čas v minutách. Následná varování u svazku se nezobrazí dříve než po této době.</long>
+	    </locale>
+
+	    <locale name="da">
+	        <short>Minimal påmindelsesperiode for gentagne advarsler</short>
+		<long>Angiv en tid i minutter. Efterfølgende advarsler for en diskenhed vil ikke blive vist oftere end dette interval.</long>
+	    </locale>
+
+	    <locale name="de">
+	        <short>Minimaler Warnintervall für wiederholte Warnungen</short>
+		<long>Geben Sie eine Zeit in Minuten an. Wiederholte Warnungen für einen Datenträger erscheinen nicht öfter als in diesem Abstand.</long>
+	    </locale>
+
+	    <locale name="el">
+	        <short>Η ελάχιστη περίοδος ενημέρωσης για τις επαναλαμβανόμενες προειδοποιήσεις</short>
+		<long>Καθορίστε τον χρόνο σε λεπτά. Οι επόμενες προειδοποιήσεις για έναν τόμο δεν θα εμφανίζωνται συχνότερα από αυτήν την περίοδο.</long>
+	    </locale>
+
+	    <locale name="en@shaw">
+	        <short>𐑥𐑦𐑯𐑩𐑥𐑩𐑥 𐑯𐑴𐑑𐑦𐑓𐑲 𐑐𐑽𐑦𐑩𐑛 𐑓𐑹 𐑮𐑦𐑐𐑰𐑑𐑩𐑛 𐑢𐑪𐑮𐑯𐑦𐑙𐑟</short>
+		<long>𐑕𐑐𐑧𐑕𐑦𐑓𐑲 𐑩 𐑑𐑲𐑥 𐑦𐑯 𐑥𐑦𐑯𐑦𐑑𐑕. 𐑕𐑳𐑚𐑕𐑩𐑒𐑢𐑩𐑯𐑑 𐑢𐑪𐑮𐑯𐑦𐑙𐑟 𐑓𐑹 𐑩 𐑝𐑪𐑤𐑿𐑥 𐑢𐑦𐑤 𐑯𐑪𐑑 𐑩𐑐𐑽 𐑥𐑹 𐑪𐑓𐑩𐑯 𐑞𐑨𐑯 𐑞𐑦𐑕 𐑐𐑽𐑦𐑩𐑛.</long>
+	    </locale>
+
+	    <locale name="en_GB">
+	        <short>Minimum notify period for repeated warnings</short>
+		<long>Specify a time in minutes. Subsequent warnings for a volume will not appear more often than this period.</long>
+	    </locale>
+
+	    <locale name="es">
+	        <short>Periodo mínimo de notificación para advertencias repetidas</short>
+		<long>Especificar tiempo en minutos. Las subsecuentes advertencias para un volumen no aparecerán más a menudo que este periodo.</long>
+	    </locale>
+
+	    <locale name="et">
+	        <short>Kordushoiatuste intervall</short>
+		<long>Määra aeg minutites. Kordushoiatused sama köite kohta ei ilmu tihedamini kui määratud vahemik.</long>
+	    </locale>
+
+	    <locale name="eu">
+	        <short>Gutxieneko jakinarazpen aldiak abisu errepikakorrentzat</short>
+		<long>Zehaztu denbora minututan. Ondorengo abisuak ez dira epe hori baino lehenago agertuko.</long>
+	    </locale>
+
+	    <locale name="fi">
+	        <short>Lyhin huomautusväli toistuville varoituksille</short>
+		<long>Määritä aika minuutteina. Seuraavat varoitukset taltiolle eivät näy useammin kuin tämän aikavälin kuluttua.</long>
+	    </locale>
+
+	    <locale name="fr">
+	        <short>Intervalle minimum de répétition des avertissements</short>
+		<long>Indique un intervalle en minutes. Ce paramètre constitue l&apos;intervalle de temps minimum entre plusieurs alertes pour un même volume.</long>
+	    </locale>
+
+	    <locale name="gl">
+	        <short>Período mínimo de notificación para avisos repetidos</short>
+		<long>Especificar tempo en minutos. Os avisos subsecuentes para un volume non se repetirán máis a miúdo que ese período.</long>
+	    </locale>
+
+	    <locale name="gu">
+	        <short>પુનરાવર્તિત ચેતવણીઓ માટે ન્યૂનત્તમ સૂચન સમયગાળો</short>
+		<long>મિનિટોમાં સમયને સ્પષ્ટ કરો. અવાજ માટે અનુગામી ચેતવણીઓ આ સમયગાળા કરતા વધારે વારંવાર દેખાશે નહિં.</long>
+	    </locale>
+
+	    <locale name="he">
+	        <short>Minimum notify period for repeated warnings</short>
+		<long>Specify a time in minutes. Subsequent warnings for a volume will not appear more often than this period.</long>
+	    </locale>
+
+	    <locale name="hi">
+	        <short>दुहराई गई चेतावनी के लिए न्यूनतम सूचना अवधि</short>
+		<long>मिनट में समय निर्दिष्ट करें. किसी उत्तरवर्ती चेतावनी किसी आयतन के लिए वे इस अवधि से अधिक के लिए प्रकट नहीं होगा.</long>
+	    </locale>
+
+	    <locale name="hu">
+	        <short>Minimális értesítési időköz ismételt figyelmeztetésekhez</short>
+		<long>A kötetre vonatkozó figyelmeztetések nem jelennek meg ennyi percnél gyakrabban.</long>
+	    </locale>
+
+	    <locale name="id">
+	        <short>Perioda pemberitahuan minimum bagi peringatan berulang</short>
+		<long>Nyatakan waktu dalam menit. Peringatan berikutnya bagi suatu volume tidak akan muncul lebih sering dari perioda ini.</long>
+	    </locale>
+
+	    <locale name="it">
+	        <short>Intervallo di notifica minimo per avvertimenti ripetuti</short>
+		<long>Specifica un tempo in minuti. I successivi avvertimenti per un volume non appaiono più frequentemente di quanto qui indicato.</long>
+	    </locale>
+
+	    <locale name="ja">
+	        <short>警告の繰り返しの最小通知間隔</short>
+		<long>時間を分単位で指定します。この時間より短い間隔で容量の警告を表示することはありません。</long>
+	    </locale>
+
+	    <locale name="kn">
+	        <short>ಪುನರಾವರ್ತಿತ ಎಚ್ಚರಿಕೆಗಳ ಕನಿಷ್ಟ ಸೂಚನಾ ಕಾಲಾವಧಿ</short>
+		<long>ಸಮಯವನ್ನು ನಿಮಿಷದಲ್ಲಿ ಸೂಚಿಸಿ. ಒಂದು ಪರಿಮಾಣಕ್ಕೆ ತರುವಾಯದ ಎಚ್ಚರಿಕೆಗಳು ಈ ಕಾಲಾವಧಿಯ ನಂತರ ಕಾಣಿಸಿಕೊಳ್ಳುವುದಿಲ್ಲ.</long>
+	    </locale>
+
+	    <locale name="ko">
+	        <short>반복된 경고를 알리는 최소 간격</short>
+		<long>시간을 분 단위로 지정합니다. 이 시간만큼 지나기 전에는 볼륨에 대해 같은 경고가 나타나지 않습니다.</long>
+	    </locale>
+
+	    <locale name="lt">
+	        <short>Mažiausias pranešimų periodas kartojamiems įspėjimams</short>
+		<long>Nurodykite laiką minutėmis. Tolesni pranešimai skirsniui bus rodomi ne dažniau kaip tokiu periodu.</long>
+	    </locale>
+
+	    <locale name="lv">
+	        <short>Minimālais paziņojumu periods atkārtotiem brīdinājumiem</short>
+		<long>Norādiet laiku minūtēs. Atkārtojošies brīdinājumi netiks rādīti biežāk kā norādītajā periodā.</long>
+	    </locale>
+
+	    <locale name="ml">
+	        <short>ആവര്‍ത്തിച്ചുള്ള മുന്നറിയിപ്പുകള്‍ക്കുള്ള ഏറ്റവും കുറഞ്ഞ അറിയിപ്പു് സമയം</short>
+		<long>സമയം മിനിറ്റുകളില്‍ വ്യക്തമാക്കുക. ഈ സമയത്തിലല്ലാതെ, ഒരു വോള്യത്തിനുള്ള മുന്നറിയിപ്പുകള്‍ ലഭ്യമാകുന്നതല്ല.</long>
+	    </locale>
+
+	    <locale name="mr">
+	        <short>सतत सावधानतासाठी कमाल सूचना कालावधी</short>
+		<long>वेळ मिनीटांत निर्देशीत करा. खंडकरीता या कालावधीपेक्षा जास्तवेळी सावधानता वारंवार आढळणार नाही.</long>
+	    </locale>
+
+	    <locale name="nb">
+	        <short>Minste varslingsperiode for gjentatte advarsler</short>
+		
+	    </locale>
+
+	    <locale name="nl">
+	        <short>Minimum notificatieperiode voor herhaalde waarschuwingen</short>
+		<long>Specificeer een tijd in minuten, zodat waarschuwingen voor een volume niet vaker zullen verschijnen dan deze periode.</long>
+	    </locale>
+
+	    <locale name="nn">
+	        <short>Minimal tid mellom åtvaringar</short>
+		<long>Oppgje ei tid i minutt. Etterfølgjande varsel for ei lagringseining vil ikkje visast oftare enn den gjevne tida.</long>
+	    </locale>
+
+	    <locale name="or">
+	        <short>ପୁନଃପୌନିକ ଚେତାବନୀ ପାଇଁ ସର୍ବନିମ୍ନ ବିଜ୍ଞପ୍ତି ଅବଧି</short>
+		<long>ମିନଟରେ ସମୟ ଉଲ୍ଲେଖ କରନ୍ତୁ। ଏହି ଅବଧି ଅପେକ୍ଷା ଭଲ୍ୟୁମ ପାଇଁ ପାଖାପାଖି ଚେତାବନୀ ଦୃଶ୍ୟମାନ ହୋଇନଥାଏ।</long>
+	    </locale>
+
+	    <locale name="pa">
+	        <short>ਦੁਹਰਾਉ ਚੇਤਾਵਨੀ ਲਈ ਘੱਟੋ-ਘੱਟ ਸੂਚਨਾ ਸਮਾਂ</short>
+		<long>ਸਮਾਂ ਮਿੰਟਾਂ ਵਿੱਚ ਦਿਉ। ਵਾਲੀਅਮ ਲਈ ਅਗਲੀ ਚੇਤਾਵਨੀ ਇਸ ਸਮੇਂ ਤੋਂ ਪਹਿਲਾਂ ਨਹੀਂ ਵੇਖਾਈ ਜਾਵੇਗੀ।</long>
+	    </locale>
+
+	    <locale name="pl">
+	        <short>Minimalny okres powiadamiania dla powtarzanych ostrzeżeń</short>
+		<long>Określenie czasu w minutach. Kolejne ostrzeżenia dla woluminu nie będą pojawiały się częściej niż ten okres.</long>
+	    </locale>
+
+	    <locale name="pt">
+	        <short>Período mínimo de notificação para avisos repetidos</short>
+		<long>Especifique um período em minutos. Avisos subsequentes para uma unidade não serão apresentados mais frequentemente do que este período.</long>
+	    </locale>
+
+	    <locale name="pt_BR">
+	        <short>Período mínimo de notificação para avisos repetidos</short>
+		<long>Especifique um tempo em minutos. Avisos subsequentes para um volume não aparecerão com mais frequência que este período.</long>
+	    </locale>
+
+	    <locale name="ro">
+	        <short>Perioada minimă de notificare pentru avertizările repetitive</short>
+		<long>Specifică un interval de timp în minute. Avertizări repetate pentru un volum nu vor apărea mai des decât acest interval.</long>
+	    </locale>
+
+	    <locale name="ru">
+	        <short>Период между повторением оповещений</short>
+		<long>Укажите время в минутах. Последующие предупреждения об объёме свободного места для раздела не будут отображаться чаще чем один раз в этот период.</long>
+	    </locale>
+
+	    <locale name="sk">
+	        <short>Minimálna perióda oznamovania opakovaných upozornení</short>
+		<long>Zadajte čas v minútach. Nasledujúce upozornenia pre zväzok sa nezobrazia častejšie ako s touto periódou.</long>
+	    </locale>
+
+	    <locale name="sl">
+	        <short>Najkrajši čas ponovnega obveščanja ponavljajočih se opozoril.</short>
+		<long>Določitev pogostosti pojavljanja opozoril za razdelek v minutah.</long>
+	    </locale>
+
+	    <locale name="sr">
+	        <short>Најмањи период обавештавања за поновљена упозорења</short>
+		<long>Одредите време у минутима. Упозорења за диск се неће поново приказати пре истека овог времена.</long>
+	    </locale>
+
+	    <locale name="sr@latin">
+	        <short>Najmanji period obaveštavanja za ponovljena upozorenja</short>
+		<long>Odredite vreme u minutima. Upozorenja za disk se neće ponovo prikazati pre isteka ovog vremena.</long>
+	    </locale>
+
+	    <locale name="sv">
+	        <short>Minsta notifieringsperioden för upprepade varningar</short>
+		<long>Ange en tid i minuter. Efterföljande varningar för en volym kommer inte att visas oftare än denna tidsperiod.</long>
+	    </locale>
+
+	    <locale name="ta">
+	        <short>மீண்டும் மீண்டும் அறிவிக்க குறைந்த பட்ச நேர இடைவெளி</short>
+		<long>நேரத்தை நிமிடங்களில் குறிக்கவும். ஒரு தொகுதிக்காக  பின் வரும் எச்சரிக்கைகள் இந்த நேரத்துக்கும் குறைவாக தோன்றா.</long>
+	    </locale>
+
+	    <locale name="te">
+	        <short>పునరావృత హెచ్చరికలు తెలుపుటకు కనీస సమయం</short>
+		<long>నిముషాలలో సమయాన్ని తెలుపుము. ఈ సమయంకు మించి తరచుగా వాల్యూమ్ గురించి హెచ్చరికలు కనిపించవు.</long>
+	    </locale>
+
+	    <locale name="th">
+	        <short>ช่วงเวลาต่ำสุดของการแจ้งเตือนซ้ำ</short>
+		<long>ระบุเวลาเป็นนาที การเตือนเกี่ยวกับเนื้อที่ว่างในโวลุมในครั้งถัดๆ ไป จะถี่ไม่เกินช่วงที่กำหนดนี้</long>
+	    </locale>
+
+	    <locale name="tr">
+	        <short>Tekrarlanan uyarılar için azami süre</short>
+		<long>Dakika olarak bir süre belirleyin. Bir birim için birbirini izleyen uyarılar bu dönemden daha sık gösterilmeyecek.</long>
+	    </locale>
+
+	    <locale name="uk">
+	        <short>Мінімальний період попереджень про брак вільного місця</short>
+		<long>Вкажіть час у хвилинах. Подальші попередження про заповнення тому не виводитимуться частіше ніж цей період.</long>
+	    </locale>
+
+	    <locale name="vi">
+	        <short>Khoảng đợi tối thiểu đối với cảnh báo lặp đi lặp lại</short>
+		<long>Xác định thời gian theo phút. Các cảnh báo tiếp sau cho khối tin này sẽ không xuất hiện thường xuyên hơn khoảng đợi này.</long>
+	    </locale>
+
+	    <locale name="zh_CN">
+	        <short>重复警告的最小通知周期</short>
+		<long>以分钟为单位指定某个时间。该周期内不会多次显示某个卷的后续警告。</long>
+	    </locale>
+
+	    <locale name="zh_HK">
+	        <short>重覆警示的最小通知期間</short>
+		<long>以分鐘指定的時間。後續的儲存區警告出現頻率不會高於這個週期。</long>
+	    </locale>
+
+	    <locale name="zh_TW">
+	        <short>重覆警示的最小通知期間</short>
+		<long>以分鐘指定的時間。後續的儲存區警告出現頻率不會高於這個週期。</long>
+	    </locale>
+		</schema>
+		
+		<schema>
+		<key>/schemas/apps/gnome_settings_daemon/plugins/housekeeping/ignore_paths</key>
+	    <applyto>/apps/gnome_settings_daemon/plugins/housekeeping/ignore_paths</applyto>
+	    <type>list</type>
+	    <list_type>string</list_type>
+	    <default>[]</default>
+	    <locale name="C">
+	        <short>Mount paths to ignore</short>
+		<long>Specify a list of mount paths to ignore when they run low on space.</long>
+	    </locale>
+
+	    <locale name="as">
+	        <short>উপেক্ষা কৰাৰ বাবে চিহ্নিত মাউন্ট পথ</short>
+		<long>অৱশিষ্ট স্থান হ্ৰাস হ&apos;লে উপেক্ষা কৰাৰ বাবে চিহ্নিত মাউন্ট পইন্টৰ তালিকা ।</long>
+	    </locale>
+
+	    <locale name="ast">
+	        <short>Puntos de montaxe pa inorar</short>
+		<long>Especificar una llista de puntos de montaxe pa inorar cuando tán baxos d&apos;espaciu.</long>
+	    </locale>
+
+	    <locale name="bg">
+	        <short>Монтирани пътища, които да се пренебрегват</short>
+		<long>Списък с монтирани пътища, които да не се взимат под внимание за предупрежденията за свободното място.</long>
+	    </locale>
+
+	    <locale name="bn">
+	        <short>উপেক্ষা করার জন্য চিহ্নিত মাউন্ট পাথ</short>
+		<long>অবশিষ্ট স্থান হ্রাস হলে, উপেক্ষা করার জন্য চিহ্নিত মাউন্ট পয়েন্টের তালিকা।</long>
+	    </locale>
+
+	    <locale name="bn_IN">
+	        <short>উপেক্ষা করার জন্য চিহ্নিত মাউন্ট পাথ</short>
+		<long>অবশিষ্ট স্থান হ্রাস হলে, উপেক্ষা করার জন্য চিহ্নিত মাউন্ট পয়েন্টের তালিকা।</long>
+	    </locale>
+
+	    <locale name="ca">
+	        <short>Camins de muntatge a ignorar</short>
+		<long>Especifica una llista de camins de muntatge a ignorar quan els queda poc espai lliure.</long>
+	    </locale>
+
+	    <locale name="ca@valencia">
+	        <short>Camins de muntatge a ignorar</short>
+		<long>Especifica una llista de camins de muntatge a ignorar quan els queda poc espai lliure.</long>
+	    </locale>
+
+	    <locale name="crh">
+	        <short>Yok sayılacak bağlama yolları</short>
+		<long>Boş alanı düşük olduğunda gözardı edilecek bağlama yollarının listesini belirtin.</long>
+	    </locale>
+
+	    <locale name="cs">
+	        <short>Cesty připojení, které se mají ignorovat</short>
+		<long>Zadejte seznam cest připojení, které se mají ignorovat, pokud jim dochází místo.</long>
+	    </locale>
+
+	    <locale name="da">
+	        <short>Monteringsstier, der skal ignoreres</short>
+		<long>Angiv en liste af monteringsstier, der ignoreres når de er ved at løbe tør for diskplads.</long>
+	    </locale>
+
+	    <locale name="de">
+	        <short>Zu ignorierende Einhängepfade</short>
+		<long>Geben Sie eine Liste der Einhängepfade an, die bei wenig Plattenplatz ignoriert werden sollen.</long>
+	    </locale>
+
+	    <locale name="el">
+	        <short>Διαδρομές προσάρτησης για παράλειψη</short>
+		<long>Ορίστε μια λίστα διαδρομών προσάρτησης για παράλειψη όταν λιγοστεύει ο χώρος τους.</long>
+	    </locale>
+
+	    <locale name="en@shaw">
+	        <short>𐑥𐑬𐑯𐑑 𐑐𐑭𐑞𐑟 𐑑 𐑦𐑜𐑯𐑹</short>
+		<long>𐑕𐑐𐑧𐑕𐑦𐑓𐑲 𐑩 𐑤𐑦𐑕𐑑 𐑝 𐑥𐑬𐑯𐑑 𐑐𐑭𐑞𐑟 𐑑 𐑦𐑜𐑯𐑹 𐑢𐑧𐑯 𐑞𐑱 𐑮𐑳𐑯 𐑤𐑴 𐑪𐑯 𐑕𐑐𐑱𐑕.</long>
+	    </locale>
+
+	    <locale name="en_GB">
+	        <short>Mount paths to ignore</short>
+		<long>Specify a list of mount paths to ignore when they run low on space.</long>
+	    </locale>
+
+	    <locale name="es">
+	        <short>Puntos de montaje para ignorar</short>
+		<long>Especificar una lista de puntos de montaje para ignorar cuando están bajos de espacio.</long>
+	    </locale>
+
+	    <locale name="et">
+	        <short>Eiratavad haakepunktid</short>
+		<long>Määra haakepunktid, mille kettaruumi vähesust eiratakse.</long>
+	    </locale>
+
+	    <locale name="eu">
+	        <short>Muntaien bide-izenak ezikusi egiteko</short>
+		<long>Zehaztu muntaien bide-izenen zerrenda bat, leku gutxi dagoenean hauei ezikusi egiteko.</long>
+	    </locale>
+
+	    <locale name="fi">
+	        <short>Ohitettavat liitospolut</short>
+		<long>Määritä luettelo liitospoluista, jotka ohitetaan vaikka niissä olisi vähän tilaa jäljellä.</long>
+	    </locale>
+
+	    <locale name="fr">
+	        <short>Chemins de montage à ignorer</short>
+		<long>Indique une liste de chemins de montage à ignorer lorsque leur espace disque est faible.</long>
+	    </locale>
+
+	    <locale name="gl">
+	        <short>Montar os camiños para ignorar</short>
+		<long>Especificar unha lista de camiños de montaxe para ignorar cando estean baixos de espazo.</long>
+	    </locale>
+
+	    <locale name="gu">
+	        <short>અવગણવા માટે માઉન્ટ પાથો</short>
+		<long>જ્યારે જગ્યા પર ઓછાને ચલાવતા હોય ત્યારે અવગણવા માટે માઉન્ટ પાથોની યાદીને સ્પષ્ટ કરો.</long>
+	    </locale>
+
+	    <locale name="he">
+	        <short>Mount paths to ignore</short>
+		<long>Specify a list of mount paths to ignore when they run low on space.</long>
+	    </locale>
+
+	    <locale name="hi">
+	        <short>अनदेखा करने के लिए आरोह पथ</short>
+		<long>माउंट पथ की सूची निर्दिष्ट करें जब वे जमीन पर दौड़ते हैं.</long>
+	    </locale>
+
+	    <locale name="hu">
+	        <short>Figyelmen kívül hagyandó csatolások</short>
+		<long>Adja meg azon csatolási útvonalak listáját, amelyeken az elfogyó szabad hely figyelmen kívül hagyandó.</long>
+	    </locale>
+
+	    <locale name="id">
+	        <short>Path pengaitan yang diabaikan</short>
+		<long>Nyatakan daftar path pengaitan yang diabaikan ketika mereka hampir penuh.</long>
+	    </locale>
+
+	    <locale name="it">
+	        <short>Percorsi di mount da ignorare</short>
+		<long>Specifica un elenco di percorsi di mount da ignorare quando lo spazio sta per esaurirsi.</long>
+	    </locale>
+
+	    <locale name="ja">
+	        <short>無視するマウント・パス</short>
+		<long>残り容量が少なくても無視するマウント・パスの一覧を指定します</long>
+	    </locale>
+
+	    <locale name="kn">
+	        <short>ಆಲಕ್ಷಿಸಬೇಕಿರುವ ಆರೋಹಣಾ ಮಾರ್ಗಗಳು</short>
+		<long>ಸ್ಥಳಾವಕಾಶವು ಕಡಿಮೆ ಇದ್ದಾಗ ಯಾವ ಆರೋಹಣಾ ಮಾರ್ಗಗಳ ಪಟ್ಟಿಯನ್ನು ಆಲಕ್ಷಿಸಬೇಕು ಎಂದು ಸೂಚಿಸಿ.</long>
+	    </locale>
+
+	    <locale name="ko">
+	        <short>무시할 마운트 경로</short>
+		<long>남은 공간이 부족할 때 무시할 마운트 경로의 목록을 지정합니다.</long>
+	    </locale>
+
+	    <locale name="lt">
+	        <short>Nepaisytini prijungimo keliai</short>
+		<long>Nurodykite skirsnių kelius, kuriuose laisvos vietos trūkumas turėtų būti ignoruojamas.</long>
+	    </locale>
+
+	    <locale name="lv">
+	        <short>Montēšanas ceļi, kurus ignorēt</short>
+		<long>Norādiet sarakstu ar montēšanas ceļiem, kuriem neskatīties, cik atlicis brīvās vietas.</long>
+	    </locale>
+
+	    <locale name="ml">
+	        <short>അവഗണിക്കുവാനുള്ള മൌണ്ട് പാഥുകള്‍</short>
+		<long>സ്ഥലം കുറവാകുമ്പോള്‍ അവഗണിക്കുവാനുള്ള മൌണ്ട് പാഥുകളുടെ പട്ടിക വ്യക്തമാക്കുക.</long>
+	    </locale>
+
+	    <locale name="mr">
+	        <short>दुर्लक्ष करण्याजोगी माऊंट मार्गे</short>
+		<long>जागा कमी पडत असल्यास दुर्लक्ष करण्याजोगी माऊंट मार्गांची सूची निर्देशीत करा.</long>
+	    </locale>
+
+	    <locale name="nb">
+	        <short>Monteringsstier som skal ignoreres</short>
+		
+	    </locale>
+
+	    <locale name="nl">
+	        <short>Te negeren aankoppelpaden</short>
+		<long>Specificeer een lijst met te negeren aankoppelpaden bij weinig schijfruimte.</long>
+	    </locale>
+
+	    <locale name="nn">
+	        <short>Monteringsstiger å ignorera</short>
+		<long>Oppgje ei liste med monteringsstiger å oversjå når dei har lite diskplass.</long>
+	    </locale>
+
+	    <locale name="or">
+	        <short>ଅଗ୍ରହଣୀୟ କରିବା ପାଇଁ ପଥଗୁଡ଼ିକୁ ସ୍ଥାପନ କରନ୍ତୁ</short>
+		<long>ସ୍ଥାପନ ପଥର ଗୋଟିଏ ତାଲିକା ଉଲ୍ଲେଖ କରନ୍ତୁ ଯେତେବେଳେ ସେମାନେ ସ୍ଥାନ ଅଭାବରେ ଚାଲିଥାନ୍ତି।</long>
+	    </locale>
+
+	    <locale name="pa">
+	        <short>ਅਣਡਿੱਠਾ ਕਰਨ ਲਈ ਮਾਊਂਟ ਪਾਥ</short>
+		<long>ਮਾਊਂਟ ਪਾਥ ਦੀ ਲਿਸਟ ਦਿਓ, ਜੋ ਕਿ ਘੱਟ ਥਾਂ ਹੋਣ ਦੀ ਸੂਚਨਾ ਦੇਣ ਲਈ ਅਣਡਿੱਠਾ ਕੀਤਾ ਜਾਣਗੇ।</long>
+	    </locale>
+
+	    <locale name="pl">
+	        <short>Ignorowane ścieżki montowania</short>
+		<long>Określenie listy ścieżek montowania do zignorowania, kiedy jest mało miejsca.</long>
+	    </locale>
+
+	    <locale name="pt">
+	        <short>Caminhos de montagem a ignorar</short>
+		<long>Especifique uma lista de caminhos de montagem a ignorar caso fiquem com pouco espaço livre.</long>
+	    </locale>
+
+	    <locale name="pt_BR">
+	        <short>Caminhos montados para ignorar</short>
+		<long>Especifique uma lista de caminhos montados para ignorar quando ficarem com espaço reduzido.</long>
+	    </locale>
+
+	    <locale name="ro">
+	        <short>Căi de montare de ignorat</short>
+		<long>Specifică o listă de căi pentru montare ce vor fi ignorate atunci când mai au puțin spațiu liber.</long>
+	    </locale>
+
+	    <locale name="ru">
+	        <short>Игнорируемые точки монтирования</short>
+		<long>Список точек монтирования, которые не будут отслеживаться на нехватку свободного места.</long>
+	    </locale>
+
+	    <locale name="sk">
+	        <short>Ignorované cesty pripojenia</short>
+		<long>Zadajte zoznam ciest prípojných bodov, na ktorých bude ignorovaný nedostatok voľného miesta.</long>
+	    </locale>
+
+	    <locale name="sl">
+	        <short>Prezrte poti priklopa</short>
+		<long>Določitev seznama priklopnih poti, ki so prezrte pri ugotavljanju zasedenosti prostora.</long>
+	    </locale>
+
+	    <locale name="sr">
+	        <short>Путање за монтирање које треба занемарити</short>
+		<long>Изаберите списак монтираних путања које треба занемарити ако преостане мало слободног простора.</long>
+	    </locale>
+
+	    <locale name="sr@latin">
+	        <short>Putanje za montiranje koje treba zanemariti</short>
+		<long>Izaberite spisak montiranih putanja koje treba zanemariti ako preostane malo slobodnog prostora.</long>
+	    </locale>
+
+	    <locale name="sv">
+	        <short>Monteringssökvägar att ignorera</short>
+		<long>Ange en lista över monteringssökvägar att ignorera när de får lågt diskutrymme.</long>
+	    </locale>
+
+	    <locale name="ta">
+	        <short>தவிர்க்க வேண்டிய ஏற்றப்பாதைகள்</short>
+		<long>வட்டு இடம் குறையும் போது தவிர்க்க வேண்டிய ஏற்றப்பாதைகள்.</long>
+	    </locale>
+
+	    <locale name="te">
+	        <short>వదిలివేయవలసిన మౌంట్ పాత్‌లు</short>
+		<long>తక్కువ డిస్కు జాగానందు నడుచునప్పుడు వదిలివేయవలసిన మౌంట్ పాత్‌ల జాబితాను తెలుపుము.</long>
+	    </locale>
+
+	    <locale name="th">
+	        <short>พาธเมานท์ต่างๆ ที่ไม่สนใจ</short>
+		<long>ระบุรายชื่อพาธเมานท์ต่างๆ ที่ไม่ต้องเตือนเมื่อเหลือเนื้อที่น้อย</long>
+	    </locale>
+
+	    <locale name="tr">
+	        <short>Yok sayılacak bağlama yolları</short>
+		<long>Boş alanı düşük olduğunda gözardı edilecek bağlama yollarının listesini belirtin.</long>
+	    </locale>
+
+	    <locale name="uk">
+	        <short>Точки монтування, що ігноруються</short>
+		<long>Вкажіть список точок монтування, що ігноруються у попередженні про брак вільного місця.</long>
+	    </locale>
+
+	    <locale name="vi">
+	        <short>Đường kết nối cần bỏ qua</short>
+		<long>Xác định danh sách đường dẫn gắn kết cần bỏ qua kể cả khi còn ít vùng trống.</long>
+	    </locale>
+
+	    <locale name="zh_CN">
+	        <short>要忽略的挂载路径</short>
+		<long>指定当运行在低硬盘空间时要忽略的挂载路径清单</long>
+	    </locale>
+
+	    <locale name="zh_HK">
+	        <short>要忽略的掛載路徑</short>
+		<long>指定要忽略磁碟空間不足的掛載路徑清單。</long>
+	    </locale>
+
+	    <locale name="zh_TW">
+	        <short>要忽略的掛載路徑</short>
+		<long>指定要忽略磁碟空間不足的掛載路徑清單。</long>
+	    </locale>
+		</schema>
+    </schemalist>
+</gconfschemafile>
